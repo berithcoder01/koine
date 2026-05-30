@@ -28,7 +28,7 @@ export const TPRExercise: React.FC<Props> = ({ exercise, onAnswer }) => {
         {exercise.image_url && (
           <img src={exercise.image_url} alt="" className="w-32 h-32 mx-auto mb-4 rounded-xl object-cover" />
         )}
-        <p className="text-textPrimary text-xl font-semibold">{exercise.question_pt}</p>
+        <p className="text-text-primary text-xl font-semibold">{exercise.question_pt}</p>
         {exercise.question_greek && (
           <GreekText text={exercise.question_greek} size="lg" className="mt-2" />
         )}

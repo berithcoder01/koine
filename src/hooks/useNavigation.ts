@@ -25,6 +25,7 @@ export const useAppNavigation = () => {
     goToProfile: () => navigate(ROUTES.PROFILE),
     goToSettings: () => navigate(ROUTES.SETTINGS),
     goToPaywall: () => navigate(ROUTES.PAYWALL),
+    goToLexicon: () => navigate(ROUTES.LEXICON),
     goBack: () => navigate(-1),
   };
 };

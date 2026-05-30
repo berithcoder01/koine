@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "594880756211",
+    "project_id": "koine-ded49",
+    "storage_bucket": "koine-ded49.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594880756211:android:5acb377b46bfc8fe3c3a86",
+        "android_client_info": {
+          "package_name": "com.berith.koineapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594880756211-ub3itmptppqg55u2l4r531q25flkfeg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9hWf595188TytoBCZZ3mjSzV2MzlSO2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594880756211-ub3itmptppqg55u2l4r531q25flkfeg3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

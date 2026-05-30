@@ -13,7 +13,7 @@ export const FlashcardExercise: React.FC<Props> = ({ exercise, onAnswer }) => {
 
   return (
     <div className="flex flex-col items-center justify-center h-full gap-6">
-      <p className="text-textSecondary text-sm font-medium uppercase tracking-wide">
+      <p className="text-text-secondary text-sm font-medium uppercase tracking-wide">
         Toque para revelar
       </p>
 
@@ -45,7 +45,7 @@ export const FlashcardExercise: React.FC<Props> = ({ exercise, onAnswer }) => {
               {JSON.parse(exercise.correct_answer)}
             </p>
             {exercise.hint_text && (
-              <p className="text-textSecondary text-sm text-center">{exercise.hint_text}</p>
+              <p className="text-text-secondary text-sm text-center">{exercise.hint_text}</p>
             )}
           </div>
         </div>

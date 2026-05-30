@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Input, Button } from '@heroui/react';
+import { Input, Button } from '@/components/ui';
 import { ROUTES } from '@/constants/routes';
 import { signUpWithEmail } from '@/services/auth';
 
@@ -97,7 +97,7 @@ export const RegisterPage: React.FC = () => {
           Criar Conta
         </Button>
 
-        <p className="text-center text-textSecondary text-sm mt-4">
+        <p className="text-center text-text-secondary text-sm mt-4">
           7 dias grátis do Premium • Sem cartão de crédito
         </p>
 

@@ -17,4 +17,5 @@ export const ROUTES = {
   PROFILE_ACHIEVEMENTS: '/profile/achievements',
   SETTINGS: '/settings',
   PAYWALL: '/paywall',
+  LEXICON: '/lexicon',
 } as const;

@@ -1,7 +1,7 @@
 // src/services/database/queries.ts
 import { databaseService } from './sqlite';
 import { format } from 'date-fns';
-import type { GreekLetter, SRSCard } from '@/types/greek.types';
+import type { GreekLetter, SRSCard, StrongEntry } from '@/types/greek.types';
 
 export const dbQueries = {
   // ─── LETRAS ─────────────────────────────────────────────────
@@ -47,6 +47,7 @@ export const dbQueries = {
   // ─── VOCABULÁRIO ─────────────────────────────────────────────
 
   getVocabularyByModule: async (moduleId: string) => {
+    await databaseService.waitForReady();
     const db = databaseService.getDB();
     const parts = moduleId.split('-');
     const cycle = parseInt(parts[0].replace('C', ''));
@@ -90,6 +91,7 @@ export const dbQueries = {
   // ─── EXERCÍCIOS ────────────────────────────────────────────────
 
   getExercisesByModule: async (moduleId: string) => {
+    await databaseService.waitForReady();
     const db = databaseService.getDB();
     const result = await db.query(
       'SELECT * FROM exercises WHERE module_id = ? ORDER BY exercise_order',
@@ -115,6 +117,50 @@ export const dbQueries = {
     const result = await db.query(
       'SELECT * FROM modules WHERE cycle_id = ? ORDER BY module_order',
       [cycleId],
+    );
+    return result.values ?? [];
+  },
+
+  // ─── STRONG ──────────────────────────────────────────────────
+
+  getStrongById: async (id: string): Promise<StrongEntry | null> => {
+    const db = databaseService.getDB();
+    const result = await db.query('SELECT * FROM strong WHERE id = ?', [id]);
+    const row = result.values?.[0];
+    return row ? mapStrongRow(row) : null;
+  },
+
+  searchStrong: async (query: string): Promise<StrongEntry[]> => {
+    const db = databaseService.getDB();
+    const result = await db.query(
+      `SELECT * FROM strong
+       WHERE greek LIKE ? OR translit LIKE ? OR id LIKE ?
+       ORDER BY number LIMIT 50`,
+      [`%${query}%`, `%${query}%`, `%${query}%`],
+    );
+    return (result.values ?? []).map((row: any) => mapStrongRow(row)!);
+  },
+
+  searchStrongByPortuguese: async (query: string): Promise<StrongEntry[]> => {
+    const db = databaseService.getDB();
+    const likeQuery = `%${query}%`;
+    const result = await db.query(
+      `SELECT * FROM strong
+       WHERE name LIKE ? OR definitions LIKE ?
+       ORDER BY number LIMIT 50`,
+      [likeQuery, likeQuery],
+    );
+    return (result.values ?? []).map((row: any) => mapStrongRow(row)!);
+  },
+
+  // ─── LESSON CONTENT ──────────────────────────────────────────
+
+  getLessonContent: async (moduleId: string) => {
+    await databaseService.waitForReady();
+    const db = databaseService.getDB();
+    const result = await db.query(
+      'SELECT * FROM lesson_content WHERE module_id = ? ORDER BY content_order',
+      [moduleId],
     );
     return result.values ?? [];
   },
@@ -188,4 +234,19 @@ export const dbQueries = {
       [key, value],
     );
   },
+};
+
+const mapStrongRow = (row: any): StrongEntry | null => {
+  if (!row) return null;
+  return {
+    id: row.id,
+    number: row.number,
+    greek: row.greek,
+    translit: row.translit ?? '',
+    pronunciation: row.pronunciation ?? '',
+    pos: row.pos ?? '',
+    origin: row.origin ?? '',
+    definitions: JSON.parse(row.definitions ?? '[]'),
+    name: row.name ?? '',
+  };
 };

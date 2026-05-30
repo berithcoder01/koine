@@ -26,7 +26,7 @@ export const NarrationExercise: React.FC<Props> = ({ exercise, onAnswer }) => {
         {exercise.question_greek && (
           <GreekText text={exercise.question_greek} size="md" className="mb-3" />
         )}
-        <p className="text-textPrimary font-semibold">{exercise.question_pt}</p>
+        <p className="text-text-primary font-semibold">{exercise.question_pt}</p>
       </div>
 
       <div className="flex flex-col gap-3">
@@ -41,7 +41,7 @@ export const NarrationExercise: React.FC<Props> = ({ exercise, onAnswer }) => {
                 : 'border-border bg-surface',
             )}
           >
-            <span className="text-textPrimary">{option}</span>
+            <span className="text-text-primary">{option}</span>
           </button>
         ))}
       </div>

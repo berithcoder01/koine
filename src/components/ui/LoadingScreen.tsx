@@ -1,5 +1,5 @@
 import React from 'react';
-import { Spinner } from '@heroui/react';
+import { Spinner } from './Spinner';
 
 interface LoadingScreenProps {
   message?: string;

@@ -32,7 +32,9 @@ interface GamificationState {
 const loadState = (): Partial<GamificationState> => {
   try {
     const saved = localStorage.getItem('koine-gamification');
-    return saved ? JSON.parse(saved) : {};
+    if (!saved) return {};
+    const parsed = JSON.parse(saved);
+    return parsed && typeof parsed === 'object' ? parsed : {};
   } catch { return {}; }
 };
 

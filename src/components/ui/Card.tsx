@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card as HeroCard } from '@heroui/react';
+import { clsx } from 'clsx';
 
 interface CardProps {
   children: React.ReactNode;
@@ -10,10 +10,10 @@ interface CardProps {
 }
 
 const paddingMap = {
-  none: 0,
-  sm: 8,
-  md: 16,
-  lg: 24,
+  none: 'p-0',
+  sm: 'p-2', // 8px
+  md: 'p-4', // 16px
+  lg: 'p-6', // 24px
 };
 
 export const Card: React.FC<CardProps> = ({
@@ -22,14 +22,20 @@ export const Card: React.FC<CardProps> = ({
   padding = 'md',
   shadow = true,
   onClick,
-}) => (
-  <HeroCard
-    isPressable={!!onClick}
-    onPress={onClick}
-    className={`${shadow ? 'shadow-md' : ''} ${className}`}
-    radius="xl"
-    style={{ padding: paddingMap[padding] }}
-  >
-    {children}
-  </HeroCard>
-);
+}) => {
+  const Component = onClick ? 'button' : 'div';
+  return (
+    <Component
+      onClick={onClick}
+      className={clsx(
+        'rounded-3xl border border-border/40 dark:border-border/10 bg-surface text-text-primary text-left transition-all duration-200 block w-full outline-none',
+        onClick && 'active:scale-[0.98] cursor-pointer hover:bg-surface-alt/50',
+        shadow ? 'shadow-sm' : '',
+        paddingMap[padding],
+        className
+      )}
+    >
+      {children}
+    </Component>
+  );
+};

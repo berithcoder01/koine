@@ -1,7 +1,8 @@
 /* src/index.css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
-@source '../node_modules/@heroui/theme/dist';
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 
 /* SBL Greek */
 @font-face {
@@ -25,13 +26,40 @@
   --color-success: #2D7A4F;
   --color-error: #C0392B;
   --color-warning: #E67E22;
-  --color-background: #FAFAFA;
+  --color-background: #FAF9F6;
   --color-surface: #FFFFFF;
   --color-surface-alt: #F4F4F5;
   --color-text-primary: #18181B;
   --color-text-secondary: #71717A;
   --color-text-disabled: #A1A1AA;
   --color-border: #E4E4E7;
+
+  /* Pastel Card Colors (Light Mode) */
+  --color-card-rose: #FFF1F2;
+  --color-card-rose-border: #FECDD3;
+  --color-card-rose-text: #9F1239;
+
+  --color-card-amber: #FEF3C7;
+  --color-card-amber-border: #FDE68A;
+  --color-card-amber-text: #92400E;
+
+  --color-card-blue: #EFF6FF;
+  --color-card-blue-border: #BFDBFE;
+  --color-card-blue-text: #1E40AF;
+
+  --color-card-green: #ECFDF5;
+  --color-card-green-border: #A7F3D0;
+  --color-card-green-text: #065F46;
+
+  --color-card-purple: #FAF5FF;
+  --color-card-purple-border: #E9D5FF;
+  --color-card-purple-text: #6B21A8;
+
+  /* Custom Border Radius */
+  --radius-card-sm: 12px;
+  --radius-card-md: 16px;
+  --radius-card-lg: 24px;
+  --radius-card-xl: 32px;
 
   --font-greek: 'SBL Greek', 'Gentium Plus', serif;
 
@@ -58,6 +86,27 @@
   --color-text-secondary: #A1A1AA;
   --color-text-disabled: #52525B;
   --color-border: #3F3F46;
+
+  /* Pastel Card Colors (Dark Mode) */
+  --color-card-rose: #1A1113;
+  --color-card-rose-border: #E11D48;
+  --color-card-rose-text: #FDA4AF;
+
+  --color-card-amber: #1C160C;
+  --color-card-amber-border: #D97706;
+  --color-card-amber-text: #FDE68A;
+
+  --color-card-blue: #0E1726;
+  --color-card-blue-border: #2563EB;
+  --color-card-blue-text: #BFDBFE;
+
+  --color-card-green: #061F14;
+  --color-card-green-border: #059669;
+  --color-card-green-text: #A7F3D0;
+
+  --color-card-purple: #17111D;
+  --color-card-purple-border: #7C3AED;
+  --color-card-purple-text: #E9D5FF;
 }
 
 /* ─── IONIC OVERRIDES ────────────────────────────────────── */

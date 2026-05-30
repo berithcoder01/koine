@@ -55,7 +55,7 @@ export const OnboardingPage: React.FC = () => {
       <div className="min-h-screen bg-background flex flex-col">
         <div className="flex justify-end p-4 pt-safe">
           {step > 0 && (
-            <button onClick={handleSkip} className="text-textSecondary text-sm">
+            <button onClick={handleSkip} className="text-text-secondary text-sm">
               Pular
             </button>
           )}
@@ -63,10 +63,10 @@ export const OnboardingPage: React.FC = () => {
 
         <div className="flex-1 flex flex-col items-center justify-center px-8 animate-fadeIn">
           <span className="text-8xl mb-8">{slide.icon}</span>
-          <h1 className="text-2xl font-bold text-textPrimary text-center mb-4">
+          <h1 className="text-2xl font-bold text-text-primary text-center mb-4">
             {slide.title}
           </h1>
-          <p className="text-textSecondary text-center leading-relaxed">
+          <p className="text-text-secondary text-center leading-relaxed">
             {slide.description}
           </p>
         </div>
@@ -97,10 +97,10 @@ export const OnboardingPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <div className="flex-1 flex flex-col px-6 pt-safe pt-12 animate-fadeIn">
-        <h1 className="text-2xl font-bold text-textPrimary mb-2">
+        <h1 className="text-2xl font-bold text-text-primary mb-2">
           Qual é sua meta diária?
         </h1>
-        <p className="text-textSecondary mb-8">
+        <p className="text-text-secondary mb-8">
           Você pode mudar isso depois nas configurações.
         </p>
 
@@ -117,8 +117,8 @@ export const OnboardingPage: React.FC = () => {
             >
               <span className="text-3xl">{goal.icon}</span>
               <div className="flex-1 text-left">
-                <p className="font-bold text-textPrimary">{goal.label}</p>
-                <p className="text-textSecondary text-sm">{goal.desc}</p>
+                <p className="font-bold text-text-primary">{goal.label}</p>
+                <p className="text-text-secondary text-sm">{goal.desc}</p>
               </div>
               {selectedGoal === goal.type && (
                 <span className="text-primary text-xl">✓</span>

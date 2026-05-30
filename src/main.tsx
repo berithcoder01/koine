@@ -2,7 +2,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { IonApp, setupIonicReact } from '@ionic/react';
-import { HeroUIProvider } from '@heroui/react';
 import { initializeDatabase } from './services/database';
 
 /* Ionic CSS */
@@ -27,11 +26,9 @@ initializeDatabase()
   .then(() => {
     root.render(
       <React.StrictMode>
-        <HeroUIProvider>
-          <IonApp>
-            <App />
-          </IonApp>
-        </HeroUIProvider>
+        <IonApp>
+          <App />
+        </IonApp>
       </React.StrictMode>
     );
   })
@@ -39,11 +36,9 @@ initializeDatabase()
     console.error('[Main] Database initialization failed:', error);
     root.render(
       <React.StrictMode>
-        <HeroUIProvider>
-          <IonApp>
-            <App />
-          </IonApp>
-        </HeroUIProvider>
+        <IonApp>
+          <App />
+        </IonApp>
       </React.StrictMode>
     );
   });

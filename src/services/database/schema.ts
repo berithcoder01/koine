@@ -43,8 +43,7 @@ export const SCHEMA_SQL = `
     lemma       TEXT NOT NULL,
     strongs_id  TEXT,
     parsing     TEXT,
-    gloss_pt    TEXT,
-    FOREIGN KEY (lemma) REFERENCES vocabulary(lemma)
+    gloss_pt    TEXT
   );
 
   CREATE INDEX IF NOT EXISTS idx_nt_reference
@@ -112,6 +111,39 @@ export const SCHEMA_SQL = `
     size_bytes  INTEGER DEFAULT 0,
     cycle_id    INTEGER
   );
+
+  CREATE TABLE IF NOT EXISTS strong (
+    id          TEXT PRIMARY KEY,
+    number      INTEGER NOT NULL,
+    greek       TEXT NOT NULL,
+    translit    TEXT,
+    pronunciation TEXT,
+    pos         TEXT,
+    origin      TEXT,
+    definitions TEXT NOT NULL,
+    name        TEXT
+  );
+
+  CREATE INDEX IF NOT EXISTS idx_strong_greek
+    ON strong (greek);
+
+  CREATE INDEX IF NOT EXISTS idx_strong_number
+    ON strong (number);
+
+  CREATE TABLE IF NOT EXISTS lesson_content (
+    id            TEXT PRIMARY KEY,
+    module_id     TEXT NOT NULL,
+    content_order INTEGER NOT NULL,
+    type          TEXT NOT NULL,
+    title         TEXT NOT NULL,
+    body          TEXT NOT NULL,
+    greek_example TEXT,
+    strongs_refs  TEXT,
+    FOREIGN KEY (module_id) REFERENCES modules(id)
+  );
+
+  CREATE INDEX IF NOT EXISTS idx_content_module
+    ON lesson_content (module_id, content_order);
 
   CREATE TABLE IF NOT EXISTS user_settings (
     key     TEXT PRIMARY KEY,

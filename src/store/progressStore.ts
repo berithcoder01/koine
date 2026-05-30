@@ -22,7 +22,9 @@ interface ProgressState {
 const loadState = (): Partial<ProgressState> => {
   try {
     const saved = localStorage.getItem('koine-progress');
-    return saved ? JSON.parse(saved) : {};
+    if (!saved) return {};
+    const parsed = JSON.parse(saved);
+    return parsed && typeof parsed === 'object' ? parsed : {};
   } catch { return {}; }
 };
 

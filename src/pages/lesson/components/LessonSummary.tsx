@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/Button';
 import { XPBadge } from '@/components/ui/XPBadge';
+import { SafeArea } from '@/components/layout/SafeArea';
 
 interface Props {
   score: number;
@@ -18,10 +19,10 @@ export const LessonSummary: React.FC<Props> = ({
   const emoji = score >= 80 ? '🎉' : score >= 60 ? '📚' : '💪';
 
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center justify-center px-6 gap-8">
+    <SafeArea withBottomNav={false} className="h-dvh overflow-hidden flex flex-col items-center justify-center px-6 gap-8 bg-background">
       <div className="text-center">
         <p className="text-7xl mb-4">{emoji}</p>
-        <h1 className="text-2xl font-bold text-textPrimary mb-2">
+        <h1 className="text-2xl font-bold text-text-primary mb-2">
           {score >= 80 ? 'Módulo Concluído!' : 'Bom progresso!'}
         </h1>
         {isPerfect && (
@@ -32,15 +33,15 @@ export const LessonSummary: React.FC<Props> = ({
       <div className="w-full max-w-sm grid grid-cols-3 gap-3">
         <div className="bg-surface rounded-2xl p-4 text-center shadow-sm">
           <p className="text-2xl font-bold text-primary">{score}%</p>
-          <p className="text-xs text-textSecondary mt-1">Acerto</p>
+          <p className="text-xs text-text-secondary mt-1">Acerto</p>
         </div>
         <div className="bg-surface rounded-2xl p-4 text-center shadow-sm">
           <p className="text-2xl font-bold text-success">{correctCount}</p>
-          <p className="text-xs text-textSecondary mt-1">Corretas</p>
+          <p className="text-xs text-text-secondary mt-1">Corretas</p>
         </div>
         <div className="bg-surface rounded-2xl p-4 text-center shadow-sm">
-          <p className="text-2xl font-bold text-textPrimary">{totalCount - correctCount}</p>
-          <p className="text-xs text-textSecondary mt-1">Erros</p>
+          <p className="text-2xl font-bold text-text-primary">{totalCount - correctCount}</p>
+          <p className="text-xs text-text-secondary mt-1">Erros</p>
         </div>
       </div>
 
@@ -49,6 +50,6 @@ export const LessonSummary: React.FC<Props> = ({
       <div className="w-full max-w-sm">
         <Button label="Continuar" onClick={onContinue} fullWidth size="lg" />
       </div>
-    </div>
+    </SafeArea>
   );
 };

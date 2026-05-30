@@ -17,6 +17,7 @@ import { ReviewPage } from '@/pages/review/ReviewPage';
 import { ProfilePage } from '@/pages/profile/ProfilePage';
 import { PaywallPage } from '@/pages/profile/PaywallPage';
 import { SettingsPage } from '@/pages/profile/SettingsPage';
+import { LexiconPage } from '@/pages/lexicon/LexiconPage';
 
 const PrivateRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { isAuthenticated, isLoading } = useAuth();
@@ -60,6 +61,7 @@ export const App: React.FC = () => {
           <Route path={ROUTES.PROFILE} element={<PrivateRoute><ProfilePage /></PrivateRoute>} />
           <Route path={ROUTES.PAYWALL} element={<PrivateRoute><PaywallPage /></PrivateRoute>} />
           <Route path={ROUTES.SETTINGS} element={<PrivateRoute><SettingsPage /></PrivateRoute>} />
+          <Route path={ROUTES.LEXICON} element={<PrivateRoute><LexiconPage /></PrivateRoute>} />
 
           <Route path="/" element={<Navigate to={ROUTES.TRAIL} replace />} />
           <Route path="*" element={<Navigate to={ROUTES.TRAIL} replace />} />

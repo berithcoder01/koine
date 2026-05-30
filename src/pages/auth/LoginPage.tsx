@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Input, Button, Divider } from '@heroui/react';
+import { Input, Button, Divider } from '@/components/ui';
 import { ROUTES } from '@/constants/routes';
 import { signInWithEmail, signInWithGoogle } from '@/services/auth';
 
@@ -93,7 +93,7 @@ export const LoginPage: React.FC = () => {
 
         <div className="flex items-center gap-3 my-6">
           <Divider className="flex-1" />
-          <span className="text-textSecondary text-sm">ou</span>
+          <span className="text-text-secondary text-sm">ou</span>
           <Divider className="flex-1" />
         </div>
 
@@ -124,7 +124,7 @@ export const LoginPage: React.FC = () => {
           </Button>
         </div>
 
-        <p className="text-center text-textSecondary text-sm mt-4">
+        <p className="text-center text-text-secondary text-sm mt-4">
           7 dias grátis do Premium • Sem cartão de crédito
         </p>
       </div>

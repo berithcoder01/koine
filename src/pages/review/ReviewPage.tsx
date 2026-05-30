@@ -79,7 +79,7 @@ export const ReviewPage: React.FC = () => {
     return (
       <SafeArea>
         <div className="px-4 pt-4 pb-24">
-          <h1 className="text-xl font-bold text-textPrimary mb-4">Revisão SRS</h1>
+          <h1 className="text-xl font-bold text-text-primary mb-4">Revisão SRS</h1>
 
           {cards.length === 0 ? (
             <EmptyState
@@ -93,12 +93,12 @@ export const ReviewPage: React.FC = () => {
             <div className="space-y-4">
               <div className="bg-surface rounded-2xl p-6 shadow-sm text-center">
                 <p className="text-4xl font-bold text-primary mb-2">{cards.length}</p>
-                <p className="text-textSecondary">cartões para revisar</p>
+                <p className="text-text-secondary">cartões para revisar</p>
               </div>
 
               <div className="bg-secondary/10 rounded-2xl p-4">
                 <p className="text-secondary font-bold text-sm mb-1">Como funciona?</p>
-                <p className="text-textSecondary text-xs leading-relaxed">
+                <p className="text-text-secondary text-xs leading-relaxed">
                   Revise o vocabulário usando repetição espaçada. Palavras difíceis aparecem mais frequentemente.
                 </p>
               </div>
@@ -118,11 +118,11 @@ export const ReviewPage: React.FC = () => {
   return (
     <SafeArea withBottomNav={false}>
       <div className="flex items-center gap-4 px-4 pt-safe pt-4 pb-3 bg-surface shadow-sm">
-        <button onClick={() => setReviewing(false)} className="text-textSecondary text-2xl">✕</button>
+        <button onClick={() => setReviewing(false)} className="text-text-secondary text-2xl">✕</button>
         <div className="flex-1">
           <ProgressBar value={progress} color="bg-primary" height={6} />
         </div>
-        <span className="text-xs text-textSecondary font-medium">
+        <span className="text-xs text-text-secondary font-medium">
           {currentIndex + 1}/{cards.length}
         </span>
       </div>
@@ -135,11 +135,11 @@ export const ReviewPage: React.FC = () => {
         ) : (
           <div className="w-full space-y-4 animate-fadeIn">
             <div className="bg-surface rounded-2xl p-4 shadow-sm text-center">
-              <p className="text-textPrimary font-bold text-xl mb-1">{card.glossPT}</p>
-              <p className="text-textSecondary text-sm">Intervalo: {card.interval} dias</p>
+              <p className="text-text-primary font-bold text-xl mb-1">{card.glossPT}</p>
+              <p className="text-text-secondary text-sm">Intervalo: {card.interval} dias</p>
             </div>
 
-            <p className="text-textSecondary text-sm text-center">Quão bem você sabia?</p>
+            <p className="text-text-secondary text-sm text-center">Quão bem você sabia?</p>
 
             <div className="grid grid-cols-4 gap-2">
               {[
@@ -166,7 +166,7 @@ export const ReviewPage: React.FC = () => {
 
       {completed > 0 && (
         <div className="px-6 pb-4">
-          <p className="text-textSecondary text-sm text-center">
+          <p className="text-text-secondary text-sm text-center">
             ✅ {completed} revisões concluídas
           </p>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Chip } from '@heroui/react';
+import { Chip } from './Chip';
 
 interface StreakBadgeProps {
   streak: number;

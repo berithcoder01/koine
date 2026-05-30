@@ -9,8 +9,8 @@ export const PaywallPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col items-center justify-center px-6">
       <p className="text-6xl mb-4">👑</p>
-      <h1 className="text-xl font-bold text-textPrimary mb-2">Koiné Premium</h1>
-      <p className="text-textSecondary text-center mb-6">
+      <h1 className="text-xl font-bold text-text-primary mb-2">Koiné Premium</h1>
+      <p className="text-text-secondary text-center mb-6">
         Desbloqueie todos os ciclos e funcionalidades
       </p>
       <Button label="Voltar" onClick={navigation.goBack} variant="ghost" />

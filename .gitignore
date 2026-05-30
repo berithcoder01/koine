@@ -5,7 +5,20 @@ node_modules/
 dist/
 
 # Android (Capacitor)
-android/
+# Permitimos rastrear o código fonte e as configurações do Android nativo,
+# mas excluímos arquivos gerados automaticamente, segredos de assinatura e caches locais.
+android/.gradle/
+android/local.properties
+android/project.properties
+android/app/build/
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+android/.idea/
+android/*.iml
+android/app/*.iml
+android/captures/
+*.jks
+*.keystore
 
 # Projeto
 .agent/

@@ -146,8 +146,8 @@ export const CanvasPage: React.FC = () => {
   return (
     <SafeArea withBottomNav={false}>
       <div className="flex items-center justify-between px-4 py-3">
-        <button onClick={navigation.goBack} className="text-2xl text-textSecondary">←</button>
-        <h1 className="font-bold text-textPrimary">Escreva a letra</h1>
+        <button onClick={navigation.goBack} className="text-2xl text-text-secondary">←</button>
+        <h1 className="font-bold text-text-primary">Escreva a letra</h1>
         <div className="w-8" />
       </div>
 
@@ -156,8 +156,8 @@ export const CanvasPage: React.FC = () => {
           <div className="flex items-center justify-center gap-6 px-4 py-4">
             <GreekText text={`${letter.upperCase} ${letter.lowerCase}`} size="xl" />
             <div>
-              <p className="text-textPrimary font-bold text-lg capitalize">{letter.name}</p>
-              <p className="text-textSecondary text-sm">Som: {letter.sound}</p>
+              <p className="text-text-primary font-bold text-lg capitalize">{letter.name}</p>
+              <p className="text-text-secondary text-sm">Som: {letter.sound}</p>
             </div>
           </div>
 
@@ -189,7 +189,7 @@ export const CanvasPage: React.FC = () => {
               <p className={`text-2xl font-bold ${feedback === 'pass' ? 'text-success' : 'text-error'}`}>
                 {feedback === 'pass' ? '✅' : '❌'} {score}/100
               </p>
-              <p className="text-textSecondary text-sm mt-1">
+              <p className="text-text-secondary text-sm mt-1">
                 {feedback === 'pass'
                   ? `+${XP_VALUES.CANVAS_FIRST_TRY} XP`
                   : `Tentativa ${attempts + 1}/${APP_CONFIG.CANVAS_MAX_ATTEMPTS}`}

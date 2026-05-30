@@ -37,6 +37,18 @@ export interface GreekLetter {
   frequency: 'alta' | 'media' | 'baixa';
 }
 
+export interface StrongEntry {
+  id: string;
+  number: number;
+  greek: string;
+  translit: string;
+  pronunciation?: string;
+  origin: string;
+  pos: string;
+  definitions: string[];
+  name?: string;
+}
+
 export interface SRSCard {
   wordId: string;
   token: string;

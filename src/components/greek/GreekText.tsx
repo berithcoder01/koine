@@ -1,6 +1,7 @@
 // src/components/greek/GreekText.tsx
 import React from 'react';
 import { clsx } from 'clsx';
+import { stripGreekPunctuation } from '@/utils/greek';
 
 interface GreekTextProps {
   text: string;
@@ -40,7 +41,7 @@ export const GreekText: React.FC<GreekTextProps> = ({
       {words.map((word, index) => (
         <span
           key={`${word}-${index}`}
-          onClick={() => onWordPress(word, index)}
+          onClick={() => onWordPress(stripGreekPunctuation(word), index)}
           className="cursor-pointer active:text-secondary transition-colors duration-150 px-0.5 rounded min-h-[48px] inline-flex items-center"
         >
           {word}{index < words.length - 1 ? ' ' : ''}
