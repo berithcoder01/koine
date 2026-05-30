@@ -1,0 +1,21 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+
+# Android (Capacitor)
+android/
+
+# Projeto
+.agent/
+inspirações/
+Tarefaz/
+WikiProjeto/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
