@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "moduleId": "C3-M07",
+  "moduleTitle": "do Ciclo 3: Preposicoes com Casos",
+  "audioFile": "/audio/C3-M07/C3-M07.mp3",
+  "duration": 233.08,
+  "generatedAt": "2026-06-12T17:46:11.692652Z",
+  "narrationFile": "C3-M07.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 7 do Ciclo 3: Preposicoes com Casos",
+      "startTime": 0.0,
+      "endTime": 3.16
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao setimo modulo do Ciclo 3. Ate agora voce aprendeu os quatro casos do grego koine. Neste modulo, voce vai aprender as preposicoes que regem cada caso — e os significados especificos que ca",
+      "startTime": 5.16,
+      "endTime": 25.78
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Preposicoes com acusativo: eis, pros, kata",
+      "startTime": 26.78,
+      "endTime": 30.47
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Eis e a preposicao grega mais comum com acusativo, significando \"para dentro\" ou \"em direcao a\". No Novo Testamento, eis aparece mais de 1.700 vezes. E usada com movimento em direcao a um destino: eis",
+      "startTime": 31.47,
+      "endTime": 65.47
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "O sentido basico de eis e direcao — movimento para dentro de um espaco. Visualize uma seta entrando em um circulo.",
+      "startTime": 65.97,
+      "endTime": 72.05
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "pisteuo eis ton theon — Joao, capitulo 14, versiculo 1.",
+      "startTime": 73.55,
+      "endTime": 77.04
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "As preposicoes de acusativo indicam movimento ou direcao. Agora vamos ver as de genitivo, que indicam origem ou procedencia.",
+      "startTime": 78.54,
+      "endTime": 85.3
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Preposicoes com genitivo: ek, ex, apo, dia",
+      "startTime": 86.8,
+      "endTime": 90.93
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Ek (antes de vogal: ex) significa \"de dentro, a partir de\". Rege o caso genitivo. E a preposicao usada para expressar origem, procedencia, fonte. No Novo Testamento: ek tou theou — \"de Deus\" (origem d",
+      "startTime": 91.93,
+      "endTime": 121.9
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Ek responde a \"de onde?\" — origem. Apo responde a \"desde quando/onde?\" — ponto de partida. Dia responde a \"por quem/que?\" — agente ou meio.",
+      "startTime": 122.4,
+      "endTime": 129.15
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "ek tou theou — Primeira Joao, capitulo 4, versiculo 7.",
+      "startTime": 130.65,
+      "endTime": 134.47
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "As preposicoes de genitivo apontam para tras — origem, fonte, procedencia. Agora as de dativo apontam para o lugar — onde as coisas estao.",
+      "startTime": 135.97,
+      "endTime": 143.36
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Preposicoes com dativo: en, syn",
+      "startTime": 144.86,
+      "endTime": 148.04
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "En e a preposicao mais frequente de todo o Novo Testamento — cerca de 2.750 ocorrencias. Rege o caso dativo e significa \"em, no, na\" — indicando posicao estatica, esfera ou meio. O verso mais famoso c",
+      "startTime": 149.04,
+      "endTime": 181.81
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "En e o \"em\" grego — localizacao espacial, temporal ou esferica. Se a pergunta for \"onde?\", a resposta provavelmente comeca com en mais dativo.",
+      "startTime": 182.31,
+      "endTime": 190.48
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "En arche en ho logos — Joao, capitulo 1, versiculo 1.",
+      "startTime": 191.98,
+      "endTime": 195.25
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Estas tres preposicoes — en, eis e ek — sao as mais frequentes do Novo Testamento e formam a base do sistema preposicional grego. No proximo modulo, voce fara a grande revisao de todo o Ciclo 3.",
+      "startTime": 196.75,
+      "endTime": 208.23
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo 7 concluido! Voce aprendeu as preposicoes mais frequentes do Novo Testamento com seus respectivos casos: en com dativo, eis com acusativo, ek com genitivo. Agora sabe dizer \"em\", \"para dentro\" ",
+      "startTime": 209.73,
+      "endTime": 232.08
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C3-M07-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C3-M07-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C3-M07-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C3-M07-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C3-M07-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C3-M07-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

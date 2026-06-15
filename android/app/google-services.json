@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "594880756211-49bdb45hah19q97f9fjkcib08p1g3151.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.berith.koineapp",
+            "certificate_hash": "307ef62f2031e3cddceafd27142392722578c40a"
+          }
+        },
+        {
           "client_id": "594880756211-ub3itmptppqg55u2l4r531q25flkfeg3.apps.googleusercontent.com",
           "client_type": 3
         }

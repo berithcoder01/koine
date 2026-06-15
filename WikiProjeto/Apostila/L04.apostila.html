@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Koine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Apostila L04 — Consoantes Dentais (δ, τ, θ)</h1>
+<p><strong>ID:</strong> apostila-L04
+<strong>Título:</strong> Lição 4 — Consoantes com a Língua
+<strong>Descrição:</strong> Delta, Tau, Teta
+<strong>Página:</strong> 7
+<strong>Tempo estimado:</strong> 10 min
+<strong>XP:</strong> 35</p>
+<hr>
+<h2>🎯 Objetivo da Lição</h2>
+<p>Aprender as três consoantes dentais do grego koiné: <strong>Delta (δ)</strong>, <strong>Tau (τ)</strong> e <strong>Teta (θ)</strong> — sons produzidos com a língua nos dentes.</p>
+<blockquote>
+<p>📄 <strong>Abra sua apostila na Página 7</strong></p>
+</blockquote>
+<hr>
+<h2>🔤 Referência Rápida: Consoantes Dentais</h2>
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Nome</th>
+<th>Maiúscula</th>
+<th>Minúscula</th>
+<th>Som</th>
+<th>Exemplo PT / EN</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>δ</td>
+<td>delta</td>
+<td>Δ</td>
+<td>δ</td>
+<td>d</td>
+<td>dado</td>
+</tr>
+<tr>
+<td>τ</td>
+<td>tau</td>
+<td>Τ</td>
+<td>τ</td>
+<td>t</td>
+<td>tudo</td>
+</tr>
+<tr>
+<td>θ</td>
+<td>teta</td>
+<td>Θ</td>
+<td>θ</td>
+<td>th aspirado (inglês)</td>
+<td>think (EN)</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🏁 Step 1: intro</h2>
+<p><strong>Tipo:</strong> Abertura
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Hoje vamos estudar as consoantes dentais. Esses sons são produzidos com a língua nos dentes: delta, tau e teta. Abra sua apostila na página 7.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Abra sua apostila na Página 7&quot;</code></p>
+<hr>
+<h2>🔺 Step 2: word_intro — Delta (Δ δ)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A primeira letra é o delta. Maiúsculo: Δ. Minúsculo: δ. O som é &#39;d&#39;, como em &#39;dado&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Delta (Δ δ) — a primeira consoante dental&quot;</code></p>
+<p><strong>Grego:</strong> Δ δ
+<strong>Transliteração:</strong> delta
+<strong>Pronúncia:</strong> d (como em &#39;dado&#39;)
+<strong>Significado:</strong> Letra Delta
+<strong>Etiologia:</strong> Do Dalet hebraico (ד); forma triangular foi usada para representar o rio Nilo — daí &#39;delta&#39;
+<strong>Contexto Bíblico:</strong> João 1:14 — &quot;O Verbo se fez carne (σάρξ)&quot; — δ aparece em δόξα (glória) e δύναμις (poder)</p>
+<hr>
+<h2>🖋️ Step 3: alphabet_trace — Delta (δ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> δ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do delta minúsculo:</p>
+<ol>
+<li>Arco curvo da esquerda para baixo formando um semicírculo aberto</li>
+<li>Haste vertical à direita, levemente inclinada</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 4: write_practice — Delta (δ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> δ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 1 da apostila — Delta minúsculo (δ)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o delta minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva δ 8 vezes nesta linha:</p>
+<pre><code>[Linha 1: δ δ δ δ δ δ δ δ ]
+</code></pre>
+<hr>
+<h2>🆃 Step 5: word_intro — Tau (Τ τ)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A segunda letra é o tau. Maiúsculo: Τ. Minúsculo: τ. O som é &#39;t&#39;, como em &#39;tudo&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Tau (Τ τ) — a segunda consoante dental&quot;</code></p>
+<p><strong>Grego:</strong> Τ τ
+<strong>Transliteração:</strong> tau
+<strong>Pronúncia:</strong> t (como em &#39;tudo&#39;)
+<strong>Significado:</strong> Letra Tau
+<strong>Etiologia:</strong> Do Taw hebraico (ת); forma em cruz (+) foi associada pelos primeiros cristãos à cruz de Cristo
+<strong>Contexto Bíblico:</strong> Ezequiel 9:4 (citado em Apocalipse) — &quot;...marca o τ (tau) na testa&quot; — sinal de proteção na tradição judaica</p>
+<hr>
+<h2>🖋️ Step 6: alphabet_trace — Tau (τ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> τ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do tau minúsculo:</p>
+<ol>
+<li>Barra horizontal de cima para baixo</li>
+<li>Haste vertical curta no centro, abaixo da barra</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 7: write_practice — Tau (τ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> τ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 2 da apostila — Tau minúsculo (τ)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o tau minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva τ 8 vezes nesta linha:</p>
+<pre><code>[Linha 2: τ τ τ τ τ τ τ τ ]
+</code></pre>
+<hr>
+<h2>Θ Step 8: word_intro — Teta (Θ θ)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A terceira letra é o teta. Maiúsculo: Θ. Minúsculo: θ. O som é &#39;th&#39; aspirado, como em &#39;think&#39; do inglês.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Teta (Θ θ) — a terceira consoante dental&quot;</code></p>
+<p><strong>Grego:</strong> Θ θ
+<strong>Transliteração:</strong> teta
+<strong>Pronúncia:</strong> th aspirado (como &#39;think&#39; em inglês)
+<strong>Significado:</strong> Letra Teta
+<strong>Etiologia:</strong> Aspirada dental; não tem equivalente em português — soa como &#39;th&#39; do inglês &#39;think&#39;
+<strong>Contexto Bíblico:</strong> João 1:1 — &quot;...e Deus (θεός) era o Verbo&quot; — θ inicia θεός, θέλω, θάνατος (morte)</p>
+<hr>
+<h2>🖋️ Step 9: alphabet_trace — Teta (θ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> θ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do teta minúsculo:</p>
+<ol>
+<li>Círculo fechado completo</li>
+<li>Traço horizontal no centro do círculo</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 10: write_practice — Teta (θ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> θ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 3 da apostila — Teta minúsculo (θ)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o teta minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva θ 8 vezes nesta linha:</p>
+<pre><code>[Linha 3: θ θ θ θ θ θ θ θ ]
+</code></pre>
+<hr>
+<h2>🧠 Step 11: pause</h2>
+<p><strong>Tipo:</strong> Revisão Guiada
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Excelente! Você aprendeu as três consoantes dentais: delta, tau e teta. Antes de continuar, olhe para o que escreveu e compare com o modelo.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<pre><code>Compare sua escrita com o modelo na apostila.
+Quando estiver pronto, continue.
+</code></pre>
+<hr>
+<h2>📓 Step 12: dictation — Delta</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: delta.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;delta&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Δ δ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Δ δ aqui:</p>
+<pre><code>[Resposta: δ ]
+</code></pre>
+<hr>
+<h2>📓 Step 13: dictation — Tau</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: tau.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;tau&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Τ τ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Τ τ aqui:</p>
+<pre><code>[Resposta: τ ]
+</code></pre>
+<hr>
+<h2>📓 Step 14: dictation — Teta</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: teta.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;teta&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Θ θ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Θ θ aqui:</p>
+<pre><code>[Resposta: θ ]
+</code></pre>
+<hr>
+<h2>🎉 Fim da Lição L04</h2>
+<p>Parabéns! Você concluiu <strong>Lição 4 — Consoantes Dentais (δ, τ, θ)</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi δ (delta)</li>
+<li><input disabled="" type="checkbox"> Aprendi τ (tau)</li>
+<li><input disabled="" type="checkbox"> Aprendi θ (teta)</li>
+</ul>
+<p>📖 <strong>Próxima lição:</strong> L05 — ...</p>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "H2-M03",
+  "moduleTitle": "Modulo H2-M03: A Semana da Pascoa — O Que Estava Acontecendo na Cidade",
+  "audioFile": "/audio/H2-M03/H2-M03.mp3",
+  "duration": 233.15,
+  "generatedAt": "2026-06-12T15:47:07.443502Z",
+  "narrationFile": "H2-M03.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo H2-M03: A Semana da Pascoa — O Que Estava Acontecendo na Cidade",
+      "startTime": 0.0,
+      "endTime": 5.04
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Voce ja ouviu falar da Semana Santa centenas de vezes. Mas sabe o que realmente estava acontecendo em Jerusalem naquela semana? A Pascoa era a maior festa do calendario judaico — uma cidade superlotad",
+      "startTime": 7.04,
+      "endTime": 28.71
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — O que era a Pascoa no seculo primeiro",
+      "startTime": 29.71,
+      "endTime": 32.33
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A Pascoa era a maior das tres festas de peregrinacao. Judeus de toda a diaspora tentavam ir a Jerusalem. A populacao da cidade multiplicava por 4 ou 5 — de 60 mil para ate 300 mil pessoas. Flavio Jose",
+      "startTime": 33.33,
+      "endTime": 68.77
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Joao capitulo 18 versiculo 28 registra uma ironia cortante: os sacerdotes nao entraram no pretorio para nao se contaminar antes da Pascoa — enquanto entregavam um inocente a morte.",
+      "startTime": 69.27,
+      "endTime": 79.8
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "Joao, capitulo 18, versículo 28. \"Eles nao entraram no pretorio, para nao se contaminarem, mas poderem comer a Pascoa.\"",
+      "startTime": 81.3,
+      "endTime": 88.87
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora, a cronologia da semana — dia a dia, do domingo ao domingo.",
+      "startTime": 90.37,
+      "endTime": 94.11
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — A cronologia da Semana Santa",
+      "startTime": 95.61,
+      "endTime": 98.14
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A sequencia dos Evangelhos cobre aproximadamente sete dias. Domingo: entrada triunfal. Segunda-feira: maldicao da figueira e expulsao dos cambistas. Terca-feira: debates no Templo e discurso escatolog",
+      "startTime": 99.14,
+      "endTime": 134.39
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Um terco de Marcos e sobre uma unica semana. A Paixao e o centro do Evangelho.",
+      "startTime": 134.89,
+      "endTime": 139.34
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "Marcos, capitulo 11 a 16. A sequencia completa da ultima semana de Jesus.",
+      "startTime": 140.84,
+      "endTime": 145.87
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora, o metodo romano de execucao e o que aconteceu na cruz.",
+      "startTime": 147.37,
+      "endTime": 151.07
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Crucificacao: o metodo romano",
+      "startTime": 152.57,
+      "endTime": 155.61
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A crucificacao era reservada para escravos, rebeldes e inimigos do Estado. Nunca para cidadaos romanos. Era maxima desumanizacao: publica, lenta, projetada para destruir a dignidade. O processo comeca",
+      "startTime": 156.61,
+      "endTime": 195.03
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Joao capitulo 19 versiculo 35 diz: \"o que viu testificou.\" A linguagem de testemunha ocular percorre todo o relato.",
+      "startTime": 195.53,
+      "endTime": 202.45
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "Joao, capitulo 19, versiculos 16 a 37. \"Tomaram a Jesus e o levaram... onde o crucificaram, e com ele outros dois.\"",
+      "startTime": 203.95,
+      "endTime": 211.58
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo H2-M03 concluido. Agora voce entende a escala da Pascoa, a sequencia dia a dia da ultima semana de Jesus, e o metodo romano de crucificacao. Quando voce ler os relatos da Paixao, sabe o que est",
+      "startTime": 213.08,
+      "endTime": 232.15
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "H2-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "H2-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "H2-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "H2-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "H2-M03-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

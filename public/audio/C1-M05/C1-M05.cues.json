@@ -1,0 +1,241 @@
+{
+  "version": "1.0",
+  "moduleId": "C1-M05",
+  "moduleTitle": "Novas Consoantes — Pi, Rô, Mi",
+  "audioFile": "/audio/C1-M05/C1-M05.mp3",
+  "duration": 581.36,
+  "generatedAt": "2026-06-04T04:16:42.734317Z",
+  "narrationFile": "C1-M05.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Novas Consoantes — Pi, Rô, Mi",
+      "startTime": 0.0,
+      "endTime": 1.96
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Módulo 5 do Koiné App — Novas Consoantes.\n\nHoje você vai conhecer três consoantes essenciais do grego: pi, rô e mi. Pi é uma letra com forma de portal — e tem um papel central na matemáti",
+      "startTime": 3.96,
+      "endTime": 61.66
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Pi",
+      "startTime": 62.66,
+      "endTime": 63.71
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Pi é a décima sexta letra do alfabeto grego, e uma das mais importantes da matemática. Pi maiúsculo tem a forma de um portal — duas hastes verticais conectadas por uma barra horizontal no topo. Imagin",
+      "startTime": 64.71,
+      "endTime": 142.92
+    },
+    {
+      "id": "u1_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre \"patêr\" — o acento circunflexo no primeiro \"e\" — e sobre outras palavras gregas se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifique apenas ",
+      "startTime": 143.42,
+      "endTime": 158.03
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Pi maiúsculo parece um portal — duas colunas com um teto em cima. É a entrada de um templo grego. O som não muda entre maiúsculo e minúsculo: sempre \"p\", sempre puro, sem sopro.",
+      "startTime": 159.03,
+      "endTime": 168.74
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora desta unidade é \"patêr\" (com acento circunflexo), que significa \"pai\" em grego, encontrada em João, capítulo 17, versículo 11. A frase completa, da qual esta é a palavra central, é: \"",
+      "startTime": 170.24,
+      "endTime": 186.84
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Você acabou de aprender pi, a letra do portal — e do pi matemático. Agora vamos para a segunda consoante, e a mais traiçoeira: rô, que parece P mas soa R.",
+      "startTime": 188.34,
+      "endTime": 197.92
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Rô",
+      "startTime": 199.42,
+      "endTime": 200.67
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Rô é a décima sétima letra do alfabeto grego, e a mais traiçoeira do Ciclo I. Atenção máxima: rô maiúsculo é IDÊNTICO ao P do português. Mesma forma, mesma posição, mesmo tamanho. Mas o som é completa",
+      "startTime": 201.67,
+      "endTime": 270.49
+    },
+    {
+      "id": "u2_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre \"rhêmata\" — o acento circunflexo no \"e\" do meio — e o sinal sobre o rho inicial se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifique apenas ",
+      "startTime": 270.99,
+      "endTime": 295.06
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Rô maiúsculo é idêntico ao P do português, mas o som é \"r\". Pense: \"Parece P, soa R.\" Rô minúsculo tem uma haste que desce abaixo da linha de base — é a única letra grega que faz isso. Lembre-se: quan",
+      "startTime": 296.06,
+      "endTime": 313.08
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora desta unidade é \"rhêmata\" (com acento circunflexo no \"e\"), que significa \"palavras\" em grego, encontrada em João, capítulo 6, versículo 63. A frase completa, da qual esta é a palavra ",
+      "startTime": 314.58,
+      "endTime": 329.95
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Muito bem! Você aprendeu rô, a letra mais traiçoeira do Ciclo I. Lembre-se: parece P, soa R. Agora a terceira e última consoante deste módulo: mi, a mais fácil.",
+      "startTime": 331.45,
+      "endTime": 341.44
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Mi",
+      "startTime": 342.94,
+      "endTime": 344.22
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Mi é a décima segunda letra do alfabeto grego, e provavelmente a mais fácil para falantes de português — porque tem o som e quase a forma do M.\n\nMi maiúsculo tem forma idêntica ao M do português: quat",
+      "startTime": 345.22,
+      "endTime": 421.67
+    },
+    {
+      "id": "u3_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre \"mathêtés\" — o acento agudo no segundo \"e\" — se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifique apenas a letra mi dentro da palavra. O som",
+      "startTime": 422.17,
+      "endTime": 434.94
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Mi maiúsculo é o M que você conhece. Mi minúsculo é uma ponte de três arcos suaves — pense em três ondinhas conectadas. O som não muda entre maiúsculo e minúsculo: sempre \"m\".",
+      "startTime": 435.94,
+      "endTime": 446.12
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora desta unidade é \"mathêtai\" (plural de mathêtés), que significa \"discípulos\" em grego, encontrada em João, capítulo 13, versículo 35. A frase completa, da qual esta é a palavra central",
+      "startTime": 447.62,
+      "endTime": 466.01
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Parabéns! Você concluiu as três unidades deste módulo e agora conhece três consoantes a mais do grego: pi, com forma de portal; rô, que parece P mas soa R; e mi, com forma de M. A partir deste módulo,",
+      "startTime": 467.51,
+      "endTime": 493.54
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar o Módulo 5 — Novas Consoantes.\n\nAgora você conhece três consoantes a mais do grego: pi, rô e mi. Você também descobriu a armadilha visual mais grave de todo o alfabeto grego: rô",
+      "startTime": 495.04,
+      "endTime": 580.36
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_nota_diacriticos",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C1-M05-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C1-M05-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_nota_diacriticos",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C1-M05-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C1-M05-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_nota_diacriticos",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C1-M05-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C1-M05-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

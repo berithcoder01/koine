@@ -1,0 +1,263 @@
+{
+  "version": "1.0",
+  "moduleId": "H1-M02",
+  "moduleTitle": "O Império Romano — Poder, Estradas e a Máquina Administrativa",
+  "audioFile": "/audio/H1-M02/H1-M02.mp3",
+  "duration": 291.01,
+  "generatedAt": "2026-06-09T20:19:02.900148Z",
+  "narrationFile": "H1-M02.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "O Império Romano — Poder, Estradas e a Máquina Administrativa",
+      "startTime": 0.0,
+      "endTime": 3.98
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "No módulo anterior, você viu como o grego se tornou a língua do mundo mediterrâneo e como a diáspora judaica espalhou comunidades que Paulo depois visitaria. Agora, vamos entrar dentro da máquina que ",
+      "startTime": 5.98,
+      "endTime": 23.23
+    },
+    {
+      "id": "transicao",
+      "marker": "TRANSICAO",
+      "text": "Primeiro: como Roma governava suas províncias.",
+      "startTime": 24.23,
+      "endTime": 26.84
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Como Roma governava províncias",
+      "startTime": 28.34,
+      "endTime": 31.04
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O Império Romano não era governado de forma uniforme. Roma dividia seus territórios em dois tipos: províncias senatoriais — estáveis, administradas pelo Senado — e províncias imperiais — zonas de fron",
+      "startTime": 32.04,
+      "endTime": 79.11
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "A Inscrição de Pilatos é o único artefato arqueológico que menciona Pôncio Pilatos por nome. Ela confirma historicamente o que os Evangelhos narram.",
+      "startTime": 79.61,
+      "endTime": 87.3
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "Lucas, capítulo 3, versículos 1 e 2. \"No décimo quinto ano do reinado de Tibério César, sendo Pôncio Pilatos governador da Judeia, Herodes tetrarca da Galileia, e Filipe, seu irmão, tetrarca da Iturei",
+      "startTime": 88.8,
+      "endTime": 107.72
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Roma governava com mão de ferro. Mas mantinha suas províncias conectadas por algo que durou séculos.",
+      "startTime": 109.22,
+      "endTime": 114.58
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — As estradas romanas e o correio",
+      "startTime": 116.08,
+      "endTime": 118.93
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Roma construiu aproximadamente 85 mil quilômetros de estradas pavimentadas em todo o Império — uma rede que durou séculos. Estradas eram primariamente militares, para movimentar legiões, mas tornaram-",
+      "startTime": 119.93,
+      "endTime": 161.98
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "As mesmas estradas que Alexandre percorreu como conquistador, Paulo percorreu como missionário. 350 anos depois, as rotas eram as mesmas — o motivo era outro.",
+      "startTime": 162.48,
+      "endTime": 171.78
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "Romanos, capítulo 15, versículos 24 a 28. \"Espero que, ao ir para a Espanha, passar por aí, e que vocês me ajudem a chegar lá... depois que isso estiver acabado e eu tiver selado essa coleta, passarei",
+      "startTime": 173.28,
+      "endTime": 186.6
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Estradas conectavam o império. Mas quem podia viajar livremente por elas?",
+      "startTime": 188.1,
+      "endTime": 192.4
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Cidadania romana e seus privilégios",
+      "startTime": 193.9,
+      "endTime": 197.08
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Ser cidadão romano no século I era uma distinção enorme — dava direito a julgamento em Roma, proteção contra punições sumárias, e acesso a cargos e comércio privilegiados. Em 212 d.C. todos os habitan",
+      "startTime": 198.08,
+      "endTime": 231.66
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Paulo preferia a cidadania celestial. Em Filipenses, capítulo 3, versículo 20, ele declara que sua cidadania está nos céus — mesmo tendo a romana.",
+      "startTime": 232.16,
+      "endTime": 240.95
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "Atos, capítulo 22, versículos 25 a 29. \"Quiseram açoitá-lo, mas, quando Paulo declarou que era cidadão romano e que eles não tinham direito de açoitar um cidadão romano sem julgamento, o tribuno teve ",
+      "startTime": 242.45,
+      "endTime": 256.04
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora, vamos testar o que você aprendeu sobre a máquina administrativa de Roma.",
+      "startTime": 257.54,
+      "endTime": 261.99
+    },
+    {
+      "id": "unidade",
+      "marker": "UNIDADE",
+      "text": "Aplicação",
+      "startTime": 263.49,
+      "endTime": 264.35
+    },
+    {
+      "id": "transicao_2",
+      "marker": "TRANSICAO",
+      "text": "Última questão deste módulo.",
+      "startTime": 265.35,
+      "endTime": 266.87
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Você acabou de conhecer a máquina que mantinha o império funcionando: províncias administradas com mão de ferro, estradas que conectavam continentes, e cidadania que dava poder — e proteção — a quem a",
+      "startTime": 268.37,
+      "endTime": 290.01
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_trans_app",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "H1-M02-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "H1-M02-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "H1-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "H1-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "H1-M02-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "H1-M02-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "unidade"
+      ],
+      "unitId": "H1-M02-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao_2"
+      ],
+      "unitId": "H1-M02-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

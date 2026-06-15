@@ -1,0 +1,263 @@
+{
+  "version": "1.0",
+  "moduleId": "H1-M03",
+  "moduleTitle": "A Palestina sob Roma — Herodes, Procuradores e a Tensão Permanente",
+  "audioFile": "/audio/H1-M03/H1-M03.mp3",
+  "duration": 286.03,
+  "generatedAt": "2026-06-09T20:23:04.224059Z",
+  "narrationFile": "H1-M03.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "A Palestina sob Roma — Herodes, Procuradores e a Tensão Permanente",
+      "startTime": 0.0,
+      "endTime": 3.75
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Você já viu como o grego se tornou a língua do mundo, como Roma mantinha suas províncias conectadas, e como a cidadania funcionava. Agora vamos entrar dentro da província mais tensa do Império: a Jude",
+      "startTime": 5.75,
+      "endTime": 24.21
+    },
+    {
+      "id": "transicao",
+      "marker": "TRANSICAO",
+      "text": "Começamos pelo homem que construiu o Templo e massacrou seus próprios filhos.",
+      "startTime": 25.21,
+      "endTime": 29.23
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Herodes, o Grande: o rei construtor",
+      "startTime": 30.73,
+      "endTime": 33.87
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Herodes governou a Judeia de 37 a 4 a.C. como \"rei dos judeus\" — não por linhagem davídica, mas por conveniência política. Era idumeu, não judeu de nascença, o que nunca foi perdoado pelo povo. Seu pr",
+      "startTime": 34.87,
+      "endTime": 75.42
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "A frase \"Herodes ficou perturbado, e com ele toda Jerusalém\" em Mateus 2, versículo 3, é histórica — a cidade sabia do que Herodes era capaz.",
+      "startTime": 75.92,
+      "endTime": 84.66
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "Mateus, capítulo 2, versículos 1 a 3. \"Quando Jesus nasceu em Belém da Judeia, nos dias do rei Herodes, vieram do oriente a Jerusalém uns magos, perguntando: Onde é que está o rei dos judeus que acabo",
+      "startTime": 86.16,
+      "endTime": 102.11
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Herodes morreu em 4 a.C. Mas seu reino não ficou vazio — foi dividido entre seus filhos.",
+      "startTime": 103.61,
+      "endTime": 108.75
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Herodes Antipas e a herança dividida",
+      "startTime": 110.25,
+      "endTime": 113.13
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Quando Herodes morreu, seu reino foi dividido entre três filhos. Arquelaos ficou com a Judeia, mas foi tão violento que Roma o exilou em 6 d.C. Herodes Filipe ficou com os territórios a nordeste. Hero",
+      "startTime": 114.13,
+      "endTime": 151.54
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "A pergunta que Pilatos faz a Jesus — \"És tu o rei dos judeus?\" — não é apenas religiosa. É política. Neste contexto, \"rei\" significava ameaça ao poder romano.",
+      "startTime": 152.04,
+      "endTime": 160.82
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "Lucas, capítulo 23, versículos 7 a 9. \"Quando Herodes viu Jesus, ficou muito contente, porque há muito tempo queria vê-lo... Jesus não lhe respondeu uma palavra.\"",
+      "startTime": 162.32,
+      "endTime": 171.45
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Herodes e seus filhos eram governantes locais. Mas quem realmente mandava na Judeia?",
+      "startTime": 172.95,
+      "endTime": 177.67
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Pôncio Pilatos e os procuradores romanos",
+      "startTime": 179.17,
+      "endTime": 182.6
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Pilatos governou a Judeia de 26 a 36 d.C. — o período inteiro do ministério de João Batista, de Jesus e dos primeiros anos da Igreja primitiva. Fontes romanas e judaicas o descrevem como administrativ",
+      "startTime": 183.6,
+      "endTime": 223.88
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "A frase \"O que escrevi, escrevi\" de João 19, versículo 22, usa o perfeito grego — ação concluída com efeito permanente. Uma decisão irrevogável.",
+      "startTime": 224.38,
+      "endTime": 233.34
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "João, capítulo 19, versículos 21 e 22. \"Os principais dos sacerdotes disseram a Pilatos: Não escreva: O rei dos judeus... Pilatos respondeu: O que escrevi, escrevi.\"",
+      "startTime": 234.84,
+      "endTime": 245.37
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora, vamos testar o que você aprendeu sobre os governantes da Palestina.",
+      "startTime": 246.87,
+      "endTime": 250.83
+    },
+    {
+      "id": "unidade",
+      "marker": "UNIDADE",
+      "text": "Aplicação",
+      "startTime": 252.33,
+      "endTime": 253.25
+    },
+    {
+      "id": "transicao_2",
+      "marker": "TRANSICAO",
+      "text": "Última questão deste módulo.",
+      "startTime": 254.25,
+      "endTime": 255.72
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Você acabou de conhecer os três atores que governavam a Palestina quando Jesus viveu: Herodes, o Grande, que construiu o Templo e massacrou seus filhos; Herodes Antipas, que executou João Batista e re",
+      "startTime": 257.22,
+      "endTime": 285.03
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_trans_app",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "H1-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "H1-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "H1-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "H1-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "H1-M03-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "H1-M03-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "unidade"
+      ],
+      "unitId": "H1-M03-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao_2"
+      ],
+      "unitId": "H1-M03-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

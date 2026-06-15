@@ -21,35 +21,36 @@ interface StrongEntry {
   greek: string;
 }
 
-// Internal MorphGNT ref codes → our abbreviations/book names
+// Internal MorphGNT ref codes → SBLGNT abbreviations / book names
+// Convention: app uses SBLGNT abbreviations (AC, RO, 1CO, JA, RE — no trailing R).
 const BOOK_MAP: Record<string, { abbr: string; name: string }> = {
   '01': { abbr: 'MT', name: 'Mateus' },
   '02': { abbr: 'MK', name: 'Marcos' },
   '03': { abbr: 'LK', name: 'Lucas' },
   '04': { abbr: 'JN', name: 'João' },
-  '05': { abbr: 'ACT', name: 'Atos' },
-  '06': { abbr: 'ROM', name: 'Romanos' },
-  '07': { abbr: '1COR', name: '1 Coríntios' },
-  '08': { abbr: '2COR', name: '2 Coríntios' },
-  '09': { abbr: 'GAL', name: 'Gálatas' },
-  '10': { abbr: 'EPH', name: 'Efésios' },
-  '11': { abbr: 'PHP', name: 'Filipenses' },
-  '12': { abbr: 'COL', name: 'Colossenses' },
+  '05': { abbr: 'AC', name: 'Atos' },
+  '06': { abbr: 'RO', name: 'Romanos' },
+  '07': { abbr: '1CO', name: '1 Coríntios' },
+  '08': { abbr: '2CO', name: '2 Coríntios' },
+  '09': { abbr: 'GA', name: 'Gálatas' },
+  '10': { abbr: 'EP', name: 'Efésios' },
+  '11': { abbr: 'PH', name: 'Filipenses' },
+  '12': { abbr: 'CO', name: 'Colossenses' },
   '13': { abbr: '1TH', name: '1 Tessalonicenses' },
   '14': { abbr: '2TH', name: '2 Tessalonicenses' },
   '15': { abbr: '1TI', name: '1 Timóteo' },
   '16': { abbr: '2TI', name: '2 Timóteo' },
-  '17': { abbr: 'TIT', name: 'Tito' },
+  '17': { abbr: 'TI', name: 'Tito' },
   '18': { abbr: 'PHM', name: 'Filemom' },
-  '19': { abbr: 'HEB', name: 'Hebreus' },
-  '20': { abbr: 'JAS', name: 'Tiago' },
+  '19': { abbr: 'HE', name: 'Hebreus' },
+  '20': { abbr: 'JA', name: 'Tiago' },
   '21': { abbr: '1PE', name: '1 Pedro' },
   '22': { abbr: '2PE', name: '2 Pedro' },
   '23': { abbr: '1JN', name: '1 João' },
   '24': { abbr: '2JN', name: '2 João' },
   '25': { abbr: '3JN', name: '3 João' },
-  '26': { abbr: 'JUD', name: 'Judas' },
-  '27': { abbr: 'REV', name: 'Apocalipse' },
+  '26': { abbr: 'JUDE', name: 'Judas' },
+  '27': { abbr: 'RE', name: 'Apocalipse' },
 };
 
 const FILE_NAMES: Record<string, string> = {
@@ -73,10 +74,14 @@ function parseLine(line: string): { ref: string; pos: string; parsing: string; t
   };
 }
 
+function stripGreekAccents(s: string): string {
+  return s.normalize('NFD').replace(/[\u0300-\u036f\u0340-\u0345]/g, '').normalize('NFC');
+}
+
 function buildLemmaMap(strong: StrongEntry[]): Map<string, string> {
   const map = new Map<string, string>();
   for (const entry of strong) {
-    const greekLower = entry.greek.toLowerCase().trim();
+    const greekLower = stripGreekAccents(entry.greek.toLowerCase().trim());
     if (!map.has(greekLower)) {
       map.set(greekLower, entry.id);
     }
@@ -134,7 +139,7 @@ async function main() {
       position++;
 
       const id = `${bookMeta.abbr}-${chapter}-${verse}-${position}`;
-      const lemmaLower = parsed.lemma.toLowerCase().trim();
+      const lemmaLower = stripGreekAccents(parsed.lemma.toLowerCase().trim());
       const strongsId = lemmaMap.get(lemmaLower) || null;
 
       allTokens.push({

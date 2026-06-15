@@ -1,0 +1,185 @@
+{
+  "version": "1.0",
+  "moduleId": "C5-M08",
+  "moduleTitle": "do Ciclo 5: Grande Revisao e Trofeu — Mateus 5:14",
+  "audioFile": "/audio/C5-M08/C5-M08.mp3",
+  "duration": 197.51,
+  "generatedAt": "2026-06-14T22:15:12.889842Z",
+  "narrationFile": "C5-M08.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 8 do Ciclo 5: Grande Revisao e Trofeu — Mateus 5:14",
+      "startTime": 0.0,
+      "endTime": 4.62
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Este e o ultimo modulo do Ciclo 5. Vamos revisar tudo que voce aprendeu: adjetivos, atributivo versus predicativo, pronomes demonstrativos e relativos. E vamos celebrar com o versiculo trofeu: Mateus ",
+      "startTime": 6.62,
+      "endTime": 20.16
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Revisao SRS",
+      "startTime": 21.16,
+      "endTime": 23.55
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O Ciclo 5 cobriu quatro grandes topicos. Primeiro: adjetivos da segunda e primeira declinacao — agathos, agathe, agathon — concordancia em genero, numero e caso. Segundo: atributivo versus predicativo",
+      "startTime": 24.55,
+      "endTime": 73.44
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "A diferenca entre houtos e ekeinos nao e so distancia fisica — e tambem distancia TEOLOGICA em Joao.",
+      "startTime": 73.94,
+      "endTime": 79.85
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "humeis este to phos tou kosmou — Mateus, capitulo 5, versiculo 14.",
+      "startTime": 81.35,
+      "endTime": 86.07
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora vamos celebrar o versiculo trofeu do ciclo.",
+      "startTime": 87.57,
+      "endTime": 90.21
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Versiculo Trofeu: Mateus 5:14",
+      "startTime": 91.71,
+      "endTime": 95.31
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Mateus 5 versiculo 14: \"humeis este to phos tou kosmou\" — Vos sois a luz do mundo. Analise gramatical completa: humeis e pronome segunda pessoa do plural nominativo, enfatico: \"VOS\". Este e segunda pe",
+      "startTime": 96.31,
+      "endTime": 134.44
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Por que Jesus diz \"vos SOIS a luz\" e nao \"vos refletis a luz\"? Porque eimi indica identidade inerente, nao funcao externa. O discipulo nao e uma lampada que reflete — ele PARTICIPA da luz.",
+      "startTime": 134.94,
+      "endTime": 144.85
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "humeis este to phos tou kosmou — Mateus, capitulo 5, versiculo 14.",
+      "startTime": 146.35,
+      "endTime": 150.88
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora vamos ao quiz final do Ciclo 5.",
+      "startTime": 152.38,
+      "endTime": 154.61
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Quiz do Ciclo 5",
+      "startTime": 156.11,
+      "endTime": 158.2
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Vinte questoes abrangendo todo o conteudo do Ciclo 5. Responda com calma — esta e a consolidacao de tudo que voce aprendeu: paradigmas de adjetivos, atributivo versus predicativo, pronomes demonstrati",
+      "startTime": 159.2,
+      "endTime": 173.59
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens por completar o Ciclo 5 do Koine App! Voce aprendeu adjetivos, a diferenca entre atributivo e predicativo, pronomes demonstrativos e relativos. E agora guarda Mateus 5 versiculo 14 como trofe",
+      "startTime": 174.09,
+      "endTime": 196.51
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C5-M08-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C5-M08-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C5-M08-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C5-M08-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao"
+      ],
+      "unitId": "C5-M08-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

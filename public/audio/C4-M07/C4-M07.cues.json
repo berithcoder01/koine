@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C4-M07",
+  "moduleTitle": "do Ciclo 4: Voz Media e Depoentes",
+  "audioFile": "/audio/C4-M07/C4-M07.mp3",
+  "duration": 281.48,
+  "generatedAt": "2026-06-12T17:58:47.175879Z",
+  "narrationFile": "C4-M07.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 7 do Ciclo 4: Voz Media e Depoentes",
+      "startTime": 0.0,
+      "endTime": 3.33
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Modulo 7 do Ciclo 4. Nos modulos anteriores, voce aprendeu o presente ativo com luo, os imperativos com lue e luete, e os verbos contractos com poio. Agora voce vai aprender a voz media —",
+      "startTime": 5.33,
+      "endTime": 38.14
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — As terminacoes da voz media",
+      "startTime": 39.14,
+      "endTime": 41.7
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Assim como a voz ativa tem suas terminacoes — o, eis, ei, omen, ete, ousi — a voz media tambem tem terminacoes proprias. Sao elas: primeira singular \"omai\", segunda singular \"ei\" com iota subscripto q",
+      "startTime": 42.7,
+      "endTime": 88.82
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Memorize as terminacoes medias contrastando com as ativas: omai contra o, ei contra eis, etai contra ei, ometha contra omen, esthe contra ete, ontai contra ousi.",
+      "startTime": 89.32,
+      "endTime": 98.92
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "erkhomai — palavra-ancora do modulo, um verbo depoente que usa terminacoes medias com sentido ativo.",
+      "startTime": 100.42,
+      "endTime": 105.93
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora que voce conhece as terminacoes medias, vamos aplica-las a quatro verbos depoentes muito comuns no Novo Testamento.",
+      "startTime": 107.43,
+      "endTime": 114.18
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Depoentes comuns no Novo Testamento",
+      "startTime": 115.68,
+      "endTime": 118.74
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Os verbos depoentes tem forma medio-passiva mas sentido ativo. Voce ja conhece erkhomai — \"eu venho\" ou \"eu vou\". Agora vamos expandir para mais tres depoentes muito frequentes. Primeiro, poreuomai — ",
+      "startTime": 119.74,
+      "endTime": 159.19
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Erkhomai e poreuomai sao quase sinonimos, mas erkhomai enfatiza movimento em direcao ao falante — \"vir\" — enquanto poreuomai enfatiza a jornada — \"caminhar, ir\". Boulomai e vontade deliberada; thelo —",
+      "startTime": 159.69,
+      "endTime": 172.98
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "poreuomai hetoimasai topon humin — Joao, capitulo 14, versiculo 2.",
+      "startTime": 174.48,
+      "endTime": 179.0
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora que voce conhece os depoentes, vamos ver um fenomeno importante: verbos que mudam de sentido quando passam da voz ativa para a media.",
+      "startTime": 180.5,
+      "endTime": 188.26
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Voz media com sentido distinto",
+      "startTime": 189.76,
+      "endTime": 192.39
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Alguns verbos mudam de significado quando passam da voz ativa para a media. Nao se trata apenas de \"acao com interesse\" — o sentido lexical muda completamente. Exemplo classico: \"pauo\" na voz ativa si",
+      "startTime": 193.39,
+      "endTime": 228.59
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Quando encontrar um verbo que voce conhece na ativa mas ele aparece na forma media, pergunte-se: o sujeito esta fazendo a acao PARA SI MESMO? Se sim, provavelmente e voz media com mudanca de sentido.",
+      "startTime": 229.09,
+      "endTime": 239.84
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "pauomai — palavra-ancora de exemplo.",
+      "startTime": 241.34,
+      "endTime": 242.99
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens por completar o Modulo 7 do Ciclo 4! Voce aprendeu as seis terminacoes da voz media, quatro verbos depoentes comuns do Novo Testamento — erkhomai, poreuomai, boulomai e dekhomai — e a diferen",
+      "startTime": 244.49,
+      "endTime": 280.48
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C4-M07-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C4-M07-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C4-M07-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C4-M07-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C4-M07-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "moduleId": "L14",
+  "moduleTitle": "Lição 14 — Comunidade e Ministério",
+  "audioFile": "/audio/L14/L14.mp3",
+  "duration": 99.19,
+  "generatedAt": "2026-06-15T18:02:59.221874Z",
+  "narrationFile": "L14.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 14 — Comunidade e Ministério",
+      "startTime": 0.0,
+      "endTime": 2.22
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Lição 14 — Comunidade e ministério. Palavras que descrevem o povo de Deus: ekklesía, adelphós, apóstolos, profétes e dûlos. Abra sua apostila na página 29.",
+      "startTime": 4.22,
+      "endTime": 13.89
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "ἐκκλησία, igreja. Em Mateus 16:18, Jesus promete: 'Sobre esta pedra edificarei a minha igreja (ἐκκλησίαν).'",
+      "startTime": 14.89,
+      "endTime": 20.93
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ἐκκλησία cinco vezes na linha 1. Pronuncie: e-kle-SÍ-a.",
+      "startTime": 21.43,
+      "endTime": 25.38
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "ἀδελφός, irmão. Em Romanos 8:29: 'Para que ele seja o primogênito entre muitos irmãos (ἀδελφοῖς).'",
+      "startTime": 25.88,
+      "endTime": 30.74
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ἀδελφός cinco vezes na linha 2. Pronuncie: a-del-FÓS.",
+      "startTime": 31.24,
+      "endTime": 35.7
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "ἀπόστολος, apóstolo. Em Efésios 2:20: 'Edificados sobre o fundamento dos apóstolos (ἀποστόλων) e profetas.'",
+      "startTime": 36.2,
+      "endTime": 41.59
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ἀπόστολος cinco vezes na linha 3. Pronuncie: a-PÓS-to-los.",
+      "startTime": 42.09,
+      "endTime": 46.41
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "προφήτης, profeta. Em Atos 2:17: 'Os vossos filhos e as vossas filhas profetizarão (προφητεύσουσιν).'",
+      "startTime": 46.91,
+      "endTime": 51.88
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva προφήτης cinco vezes na linha 4. Pronuncie: pro-FÊ-tes.",
+      "startTime": 52.38,
+      "endTime": 56.85
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "δοῦλος, servo. Em Romanos 1:1, Paulo se identifica: 'Paulo, servo (δοῦλος) de Jesus Cristo, chamado para ser apóstolo.'",
+      "startTime": 57.35,
+      "endTime": 63.84
+    },
+    {
+      "id": "exposicao_10",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva δοῦλος cinco vezes na linha 5. Pronuncie: DÛ-los.",
+      "startTime": 64.34,
+      "endTime": 67.85
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Igreja, irmãos, apóstolos, profetas, servos — esta é a comunidade de Deus. Releia estas palavras.",
+      "startTime": 68.35,
+      "endTime": 74.78
+    },
+    {
+      "id": "exposicao_11",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'igreja'.",
+      "startTime": 76.78,
+      "endTime": 79.39
+    },
+    {
+      "id": "exposicao_12",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'irmão'.",
+      "startTime": 79.89,
+      "endTime": 82.33
+    },
+    {
+      "id": "exposicao_13",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'apóstolo'.",
+      "startTime": 82.83,
+      "endTime": 85.42
+    },
+    {
+      "id": "exposicao_14",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'profeta'.",
+      "startTime": 85.92,
+      "endTime": 88.59
+    },
+    {
+      "id": "exposicao_15",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'servo'.",
+      "startTime": 89.09,
+      "endTime": 91.63
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 14 — Comunidade e Ministério! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 92.13,
+      "endTime": 98.19
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "exposicao_10",
+        "pausa",
+        "exposicao_11",
+        "exposicao_12",
+        "exposicao_13",
+        "exposicao_14",
+        "exposicao_15"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

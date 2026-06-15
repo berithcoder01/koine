@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C5-M07",
+  "moduleTitle": "do Ciclo 5: Pronomes Relativos — hos, he, ho",
+  "audioFile": "/audio/C5-M07/C5-M07.mp3",
+  "duration": 200.2,
+  "generatedAt": "2026-06-14T22:14:11.155754Z",
+  "narrationFile": "C5-M07.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 7 do Ciclo 5: Pronomes Relativos — hos, he, ho",
+      "startTime": 0.0,
+      "endTime": 4.01
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Agora vamos aprender o pronome relativo grego: hos, he, ho — \"que, o qual, a qual\". Este pronome e essencial para formar frases complexas. Com ele, voce podera ler oracoes como \"a mensagem QUE dele ou",
+      "startTime": 6.01,
+      "endTime": 19.83
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — O paradigma de hos",
+      "startTime": 20.83,
+      "endTime": 22.8
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O pronome relativo grego hos se declina em todos os casos, generos e numeros. Paradigma completo: nominativo singular hos para masculino, he para feminino, ho para neutro. Acusativo singular hon para ",
+      "startTime": 23.8,
+      "endTime": 63.85
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Genero e numero VEM do antecedente. Caso VEM da funcao dentro da oracao relativa. Pergunte: \"qual palavra fora da oracao?\" e \"qual funcao dentro?\"",
+      "startTime": 64.35,
+      "endTime": 72.71
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "hosoi de elabon auton — Joao, capitulo 1, versiculo 12.",
+      "startTime": 74.21,
+      "endTime": 77.77
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora vamos analisar Joao 1:12, que contem um relativo composto importante: hosoi.",
+      "startTime": 79.27,
+      "endTime": 84.11
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Hosoi em Joao 1:12",
+      "startTime": 85.61,
+      "endTime": 87.67
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Joao 1 versiculo 12 contem um relativo composto: \"hosoi\" — que e hos mais o sufixo \"oi\" que generaliza: \"todos quantos, todos os que\". Analise completa: \"Hosoi de elabon auton, edoken autois exousian ",
+      "startTime": 88.67,
+      "endTime": 120.34
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Hosoi significa \"todos os que.\" E um relativo generalizante — refere-se a QUALQUER pessoa que receber a Cristo.",
+      "startTime": 120.84,
+      "endTime": 126.58
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "hosoi de elabon auton, edoken autois exousian tekna theou genesthai — Joao, capitulo 1, versiculo 12.",
+      "startTime": 128.08,
+      "endTime": 134.06
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora vamos analisar mais exemplos de oracoes relativas no Novo Testamento.",
+      "startTime": 135.56,
+      "endTime": 139.41
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Oracoes relativas no NT",
+      "startTime": 140.91,
+      "endTime": 143.41
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Em Joao 1 versiculo 3, o relativo esta IMPLICITO: \"panta di autou egeneto\" — \"Todas as coisas foram feitas por meio dele.\" O relativo neutro \"a\" estaria subentendido: \"todas as coisas QUE foram feitas",
+      "startTime": 144.41,
+      "endTime": 171.42
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Para analisar uma oracao relativa: primeiro ache o antecedente. Depois veja genero e numero. Depois veja o caso do relativo para saber sua funcao.",
+      "startTime": 171.92,
+      "endTime": 179.98
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "aute estin he angelia hen akeakoamen ap autou — Primeira Joao, capitulo 1, versiculo 5.",
+      "startTime": 181.48,
+      "endTime": 186.55
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens! Voce aprendeu o pronome relativo hos, he, ho e sua regra de concordancia. No proximo modulo, a grande revisao do Ciclo 5 com o versiculo trofeu Mateus 5:14. Ate la!",
+      "startTime": 188.05,
+      "endTime": 199.2
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C5-M07-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C5-M07-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C5-M07-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C5-M07-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C5-M07-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

@@ -22,7 +22,7 @@ export default {
       },
       fontFamily: {
         greek: ['SBL Greek', 'Gentium Plus', 'serif'],
-        ui: ['Inter', 'sans-serif'],
+        ui: ['Montserrat', 'Inter', 'sans-serif'],
       },
       fontSize: {
         'greek-sm': ['18px', '1.6'],

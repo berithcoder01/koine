@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!--
+  TEMPLATE T04 — CTA CARROSSEL ALFABETO (v1 Editorial)
+  Formato: SQ 1080×1080  |  Estilo: Bold Action
+  Propósito: Chamada para instalar o app após aprender sobre a letra
+
+  SLOTS:
+    {{LETTER_UPPER}}       -> ex: "Α" (GREGO U+0391)
+    {{LETTER_LOWER}}       -> ex: "α" (GREGO U+03B1)
+    {{CTA_HEADLINE}}       -> ex: "Aprenda grego de verdade"
+    {{CTA_BODY}}           -> ex: "Baixe o Koiné App e aprenda as letras que conectam você às Escrituras"
+    {{CTA_APP_STORE}}      -> ex: "App Store"
+    {{CTA_GOOGLE_PLAY}}    -> ex: "Google Play"
+    {{LETTER_INDEX}}       -> ex: "Letra 1 de 24"
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --koine-primary: #26422A;
+    --koine-accent: #EA662C;
+    --koine-white: #FFFFFF;
+    --font-greek: 'Gentium Plus', serif;
+    --font-serif: 'Libre Baskerville', serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; overflow: hidden; background-color: var(--koine-accent); font-family: var(--font-sans); position: relative; }
+  .bg-accent { position: absolute; inset: 0; background-image: radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.12) 0%, transparent 50%), radial-gradient(ellipse at 20% 80%, rgba(0,0,0,0.10) 0%, transparent 50%); pointer-events: none; }
+  .deco-letter { position: absolute; right: -20px; top: 50%; transform: translateY(-50%); font-family: var(--font-greek); font-size: 500px; line-height: 1; color: var(--koine-white); opacity: 0.08; pointer-events: none; user-select: none; }
+  .layout { position: relative; z-index: 1; width: 1080px; height: 1080px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 80px 100px; }
+  .header { position: absolute; top: 56px; left: 100px; right: 100px; display: flex; justify-content: space-between; align-items: center; }
+  .slide-label { font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--koine-white); opacity: 0.60; }
+  .pagination { display: flex; gap: 6px; }
+  .page-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--koine-white); opacity: 0.30; }
+  .page-dot--active { background: var(--koine-white); opacity: 1; width: 24px; border-radius: 100px; }
+  .letter-pair { display: flex; align-items: baseline; gap: 16px; margin-bottom: 40px; }
+  .letter-u { font-family: var(--font-greek); font-size: 140px; line-height: 0.9; color: var(--koine-white); opacity: 0.9; }
+  .letter-l { font-family: var(--font-greek); font-size: 80px; line-height: 0.9; color: var(--koine-white); opacity: 0.25; }
+  .index-ref { font-size: 15px; font-weight: 600; color: var(--koine-white); opacity: 0.40; letter-spacing: 0.08em; margin-bottom: 32px; }
+  .cta-headline { font-family: var(--font-serif); font-size: 56px; font-weight: 700; color: var(--koine-white); line-height: 1.2; margin-bottom: 20px; max-width: 700px; }
+  .cta-body { font-size: 22px; line-height: 1.60; color: var(--koine-white); opacity: 0.80; max-width: 600px; margin-bottom: 48px; }
+  .cta-buttons { display: flex; gap: 20px; }
+  .btn { display: inline-flex; align-items: center; gap: 12px; font-size: 18px; font-weight: 700; padding: 20px 40px; border-radius: 100px; text-decoration: none; }
+  .btn--primary { background: var(--koine-white); color: var(--koine-accent); }
+  .btn--secondary { background: transparent; color: var(--koine-white); border: 2px solid var(--koine-white); }
+  .btn-icon { width: 24px; height: 24px; border-radius: 6px; background: currentColor; opacity: 0.25; }
+  .footer { position: absolute; bottom: 56px; left: 100px; right: 100px; display: flex; justify-content: space-between; align-items: center; }
+  .brand { font-family: var(--font-greek); font-size: 38px; font-weight: 700; color: var(--koine-white); opacity: 0.50; letter-spacing: 0.10em; }
+  .footer-page { font-size: 14px; color: var(--koine-white); opacity: 0.35; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="bg-accent"></div>
+  <div class="deco-letter">{{LETTER_UPPER}}</div>
+  <div class="layout">
+    <div class="header">
+      <span class="slide-label">Slide 5 de 5</span>
+      <div class="pagination">
+        <span class="page-dot"></span>
+        <span class="page-dot"></span>
+        <span class="page-dot"></span>
+        <span class="page-dot"></span>
+        <span class="page-dot page-dot--active"></span>
+      </div>
+    </div>
+    <div class="letter-pair">
+      <span class="letter-u">{{LETTER_UPPER}}</span>
+      <span class="letter-l">{{LETTER_LOWER}}</span>
+    </div>
+    <div class="index-ref">{{LETTER_INDEX}}</div>
+    <div class="cta-headline">{{CTA_HEADLINE}}</div>
+    <div class="cta-body">{{CTA_BODY}}</div>
+    <div class="cta-buttons">
+      <a href="#" class="btn btn--primary">
+        <span class="btn-icon"></span>
+        {{CTA_APP_STORE}}
+      </a>
+      <a href="#" class="btn btn--secondary">
+        <span class="btn-icon"></span>
+        {{CTA_GOOGLE_PLAY}}
+      </a>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="brand">&#922;&#959;&#953;&#957;&#942;</span>
+    <span class="footer-page">5 / 5</span>
+  </div>
+</body>
+</html>

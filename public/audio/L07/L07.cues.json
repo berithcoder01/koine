@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "moduleId": "L07",
+  "moduleTitle": "Lição 7 — Palavras de Fé e Graça",
+  "audioFile": "/audio/L07/L07.mp3",
+  "duration": 136.09,
+  "generatedAt": "2026-06-15T17:49:41.573729Z",
+  "narrationFile": "L07.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 7 — Palavras de Fé e Graça",
+      "startTime": 0.0,
+      "endTime": 2.62
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Lição 7 — Palavras de fé e graça. Hoje você vai aprender cinco das palavras mais importantes do Novo Testamento: ágape, pístis, cháris, eirene e zoe. Estas palavras aparecem centenas de vezes nas cart",
+      "startTime": 4.62,
+      "endTime": 19.84
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A primeira palavra é ἀγάπη — agápē. Pronuncie: a-GÁ-pe. Significa amor incondicional — não qualquer amor, mas o amor que escolhe o bem do outro independentemente de sentimentos.",
+      "startTime": 20.84,
+      "endTime": 31.33
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ἀγάπη cinco vezes na linha 1 da sua apostila. Pronuncie em voz alta cada vez que escrever: a-GÁ-pe.",
+      "startTime": 31.83,
+      "endTime": 38.23
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "A segunda palavra é πίστις — pístis. Pronuncie: PÍS-tis. Significa fé, confiança ativa — não é apenas acreditar que algo é verdade, mas confiar ativamente.",
+      "startTime": 38.73,
+      "endTime": 48.33
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva πίστις cinco vezes na linha 2 da sua apostila. Pronuncie: PÍS-tis.",
+      "startTime": 48.83,
+      "endTime": 53.35
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "A terceira palavra é χάρις — cháris. Pronuncie: CÁ-ris. Significa graça, favor imerecido — a base da teologia paulina da salvação.",
+      "startTime": 53.85,
+      "endTime": 61.56
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva χάρις cinco vezes na linha 3 da sua apostila. Pronuncie: CÁ-ris.",
+      "startTime": 62.06,
+      "endTime": 66.64
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "A quarta palavra é εἰρήνη — eirḗnē. Pronuncie: ei-RÊ-ne. Significa paz — não apenas ausência de conflito, mas completude total, inteireza, como o hebraico shalom.",
+      "startTime": 67.14,
+      "endTime": 79.38
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva εἰρήνη cinco vezes na linha 4 da sua apostila. Pronuncie: ei-RÊ-ne.",
+      "startTime": 79.88,
+      "endTime": 85.08
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "A quinta palavra é ζωή — zōḗ. Pronuncie: zo-Ê. Significa vida — não a vida biológica (bíos), mas a vida em sua plenitude qualitativa, a vida eterna e abundante.",
+      "startTime": 85.58,
+      "endTime": 97.44
+    },
+    {
+      "id": "exposicao_10",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ζωή cinco vezes na linha 5 da sua apostila. Pronuncie: zo-Ê.",
+      "startTime": 97.94,
+      "endTime": 103.39
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Excelente! Você escreveu as cinco palavras fundamentais. Antes de continuar, releia o que escreveu na apostila. Cada palavra carrega séculos de teologia.",
+      "startTime": 103.89,
+      "endTime": 112.61
+    },
+    {
+      "id": "exposicao_11",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: amor incondicional.",
+      "startTime": 114.61,
+      "endTime": 117.45
+    },
+    {
+      "id": "exposicao_12",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: fé.",
+      "startTime": 117.95,
+      "endTime": 120.02
+    },
+    {
+      "id": "exposicao_13",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: graça.",
+      "startTime": 120.52,
+      "endTime": 122.75
+    },
+    {
+      "id": "exposicao_14",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: paz.",
+      "startTime": 123.25,
+      "endTime": 125.46
+    },
+    {
+      "id": "exposicao_15",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: vida eterna.",
+      "startTime": 125.96,
+      "endTime": 128.3
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 7 — Palavras de Fé e Graça! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 128.8,
+      "endTime": 135.09
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "exposicao_10",
+        "pausa",
+        "exposicao_11",
+        "exposicao_12",
+        "exposicao_13",
+        "exposicao_14",
+        "exposicao_15"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

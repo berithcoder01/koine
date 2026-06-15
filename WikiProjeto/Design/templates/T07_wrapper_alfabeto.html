@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!--
+  TEMPLATE T07 — CARROSSEL ALFABETO VERTICAL (v2 Editorial)
+  Formato: CAR — 1080 × (1080 × 5)
+  Conteúdo: 5 slides — capa + origem + palavra + versículo + CTA
+
+  Metodologia: ORQUESTRADOR_EDITORIAL.md
+  v2: corrigido markdown → HTML, conteúdo condensado, fontes maiores
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --koine-primary: #26422A;
+    --koine-accent: #EA662C;
+    --koine-cream: #FAF6EE;
+    --koine-charcoal: #1A1A1A;
+    --koine-charcoal-soft: #42302D;
+    --koine-white: #FFFFFF;
+    --font-greek: 'Gentium Plus', serif;
+    --font-serif: 'Libre Baskerville', serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: auto; background: transparent; font-family: var(--font-sans); }
+  .slide { width: 1080px; height: 1080px; position: relative; overflow: hidden; }
+
+  /* ── SLIDE 1: CAPA ── */
+  .s1-bg { position: absolute; inset: 0; background-color: #1A1A1A; background-image: radial-gradient(ellipse at 20% 80%, rgba(38,66,42,0.30) 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, rgba(234,102,44,0.12) 0%, transparent 50%); }
+  .s1-card { position: absolute; top: 100px; left: 80px; right: 80px; bottom: 100px; background: var(--koine-cream); border-radius: 24px; padding: 48px; display: flex; flex-direction: column; box-shadow: 0 24px 64px rgba(0,0,0,0.4); }
+  .s1-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+  .s1-ig { font-family: 'Times New Roman', serif; font-size: 22px; font-style: italic; color: var(--koine-charcoal); }
+  .s1-acts { display: flex; gap: 20px; }
+  .s1-ico { width: 24px; height: 24px; border: 2px solid var(--koine-charcoal); border-radius: 4px; position: relative; }
+  .s1-ico::after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 8px; height: 8px; border: 2px solid var(--koine-charcoal); border-radius: 50%; }
+  .s1-body { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .s1-pair { display: flex; align-items: baseline; gap: 24px; margin-bottom: 16px; }
+  .s1-up { font-family: var(--font-greek); font-size: 200px; line-height: 0.85; color: var(--koine-accent); font-weight: 700; }
+  .s1-lo { font-family: var(--font-greek); font-size: 120px; line-height: 0.85; color: var(--koine-charcoal); opacity: 0.25; }
+  .s1-nm { font-size: 48px; font-weight: 800; color: var(--koine-charcoal); margin-bottom: 8px; }
+  .s1-sd { font-size: 22px; color: var(--koine-charcoal); opacity: 0.48; margin-bottom: 28px; }
+  .s1-tg { font-family: var(--font-serif); font-size: 26px; line-height: 1.55; color: var(--koine-charcoal-soft); font-style: italic; max-width: 650px; }
+  .s1-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(26,26,26,0.10); }
+  .s1-eng { display: flex; gap: 20px; align-items: center; }
+  .s1-heart::before { content: '\2665'; font-size: 24px; color: var(--koine-accent); }
+  .s1-dots { display: flex; gap: 6px; margin-left: 40px; }
+  .s1-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(26,26,26,0.15); }
+  .s1-dot--on { background: var(--koine-accent); width: 24px; border-radius: 100px; }
+  .s1-idx { position: absolute; top: 42px; left: 88px; font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.55); letter-spacing: 0.08em; }
+  .s1-br { position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); font-family: var(--font-greek); font-size: 38px; font-weight: 700; color: var(--koine-accent); opacity: 0.85; letter-spacing: 0.10em; line-height: 1; white-space: nowrap; }
+
+  /* ── SLIDES 2-4: INTERNO ── */
+  .sx-grid { position: absolute; inset: 0; display: grid; grid-template-columns: 340px 1fr; }
+  .sx-left { background: var(--koine-primary); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+  .sx-left::before { content: ''; position: absolute; inset: 0; background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='60' height='60' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E"); pointer-events: none; }
+  .sx-vis { font-family: var(--font-greek); font-size: 130px; line-height: 1; color: var(--koine-white); opacity: 0.92; position: relative; z-index: 1; text-align: center; }
+  .sx-vsub { margin-top: 20px; font-size: 20px; font-weight: 500; color: var(--koine-white); opacity: 0.50; letter-spacing: 0.06em; text-align: center; line-height: 1.6; position: relative; z-index: 1; }
+  .sx-right { padding: 60px 56px 48px 48px; display: flex; flex-direction: column; position: relative; z-index: 1; background: var(--koine-cream); }
+  .sx-ch { display: flex; justify-content: space-between; align-items: center; margin-bottom: 36px; }
+  .sx-sl { font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--koine-accent); }
+  .sx-pg { display: flex; gap: 6px; }
+  .sx-pd { width: 8px; height: 8px; border-radius: 50%; background: rgba(26,26,26,0.15); }
+  .sx-pa { background: var(--koine-accent); width: 24px; border-radius: 100px; }
+  .sx-title { font-family: var(--font-serif); font-size: 40px; font-weight: 700; color: var(--koine-primary); margin-bottom: 36px; line-height: 1.25; }
+  .sx-sec { margin-bottom: 32px; }
+  .sx-lab { font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--koine-accent); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .sx-lab::after { content: ''; flex: 1; height: 1px; background: rgba(234,102,44,0.20); }
+  .sx-txt { font-size: 24px; line-height: 1.65; color: var(--koine-charcoal-soft); }
+  .sx-txt strong { color: var(--koine-primary); font-weight: 700; }
+  .sx-txt em { font-style: italic; }
+  .sx-div { width: 40px; height: 2px; background: rgba(234,102,44,0.25); margin: 28px 0; }
+  .sx-ft { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 20px; border-top: 1px solid rgba(38,66,42,0.10); }
+  .sx-fp { font-size: 14px; color: var(--koine-charcoal); opacity: 0.35; font-weight: 600; }
+  .sx-br { font-family: var(--font-greek); font-size: 38px; font-weight: 700; color: var(--koine-accent); opacity: 0.85; letter-spacing: 0.10em; }
+
+  /* ── SLIDE 5: CTA ── */
+  .s5-bg { position: absolute; inset: 0; background-color: var(--koine-accent); background-image: radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.12) 0%, transparent 50%), radial-gradient(ellipse at 20% 80%, rgba(0,0,0,0.10) 0%, transparent 50%); }
+  .s5-deco { position: absolute; right: -20px; top: 50%; transform: translateY(-50%); font-family: var(--font-greek); font-size: 500px; line-height: 1; color: var(--koine-white); opacity: 0.08; pointer-events: none; }
+  .s5-lay { position: relative; z-index: 1; width: 1080px; height: 1080px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 80px 100px; }
+  .s5-hd { position: absolute; top: 56px; left: 100px; right: 100px; display: flex; justify-content: space-between; align-items: center; }
+  .s5-sl { font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--koine-white); opacity: 0.60; }
+  .s5-pg { display: flex; gap: 6px; }
+  .s5-pd { width: 8px; height: 8px; border-radius: 50%; background: var(--koine-white); opacity: 0.30; }
+  .s5-pa { background: var(--koine-white); opacity: 1; width: 24px; border-radius: 100px; }
+  .s5-pair { display: flex; align-items: baseline; gap: 16px; margin-bottom: 40px; }
+  .s5-up { font-family: var(--font-greek); font-size: 140px; line-height: 0.9; color: var(--koine-white); opacity: 0.9; }
+  .s5-lo { font-family: var(--font-greek); font-size: 80px; line-height: 0.9; color: var(--koine-white); opacity: 0.25; }
+  .s5-ref { font-size: 15px; font-weight: 600; color: var(--koine-white); opacity: 0.40; letter-spacing: 0.08em; margin-bottom: 32px; }
+  .s5-ch { font-family: var(--font-serif); font-size: 56px; font-weight: 700; color: var(--koine-white); line-height: 1.2; margin-bottom: 20px; max-width: 700px; }
+  .s5-cb { font-size: 22px; line-height: 1.60; color: var(--koine-white); opacity: 0.80; max-width: 600px; margin-bottom: 48px; }
+  .s5-btns { display: flex; gap: 20px; }
+  .s5-btn { display: inline-flex; align-items: center; gap: 12px; font-size: 18px; font-weight: 700; padding: 20px 40px; border-radius: 100px; text-decoration: none; }
+  .s5-bp { background: var(--koine-white); color: var(--koine-accent); }
+  .s5-bs { background: transparent; color: var(--koine-white); border: 2px solid var(--koine-white); }
+  .s5-bico { width: 24px; height: 24px; border-radius: 6px; background: currentColor; opacity: 0.25; }
+  .s5-ft { position: absolute; bottom: 56px; left: 100px; right: 100px; display: flex; justify-content: space-between; align-items: center; }
+  .s5-br { font-family: var(--font-greek); font-size: 38px; font-weight: 700; color: var(--koine-white); opacity: 0.50; letter-spacing: 0.10em; }
+  .s5-fp { font-size: 14px; color: var(--koine-white); opacity: 0.35; font-weight: 600; }
+</style>
+</head>
+<body>
+
+  <!-- SLIDE 1 — CAPA: Alfa -->
+  <div class="slide" data-slide="1">
+    <div class="s1-bg"></div>
+    <div class="s1-idx">Letra 1 de 24</div>
+    <div class="s1-card">
+      <div class="s1-head">
+        <span class="s1-ig">Instagram</span>
+        <div class="s1-acts">
+          <div class="s1-ico"></div>
+          <div class="s1-ico"></div>
+          <div class="s1-ico"></div>
+        </div>
+      </div>
+      <div class="s1-body">
+        <div class="s1-pair">
+          <span class="s1-up">&#913;</span>
+          <span class="s1-lo">&#945;</span>
+        </div>
+        <div class="s1-nm">Alfa</div>
+        <div class="s1-sd">/a/ &#8212; como "a" em "pai"</div>
+        <div class="s1-tg">A primeira letra do alfabeto &#8212; e n&#227;o &#233; acaso que Cristo &#233; chamado "o Alfa e o &#212;mega".</div>
+      </div>
+      <div class="s1-foot">
+        <div class="s1-eng">
+          <span class="s1-heart"></span>
+          <div class="s1-dots">
+            <span class="s1-dot s1-dot--on"></span>
+            <span class="s1-dot"></span>
+            <span class="s1-dot"></span>
+            <span class="s1-dot"></span>
+            <span class="s1-dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="s1-br">&#922;&#959;&#953;&#957;&#942;</div>
+  </div>
+
+  <!-- SLIDE 2 — ORIGEM -->
+  <div class="slide" data-slide="2">
+    <div class="sx-grid">
+      <div class="sx-left">
+        <div class="sx-vis">&#913; &#945;</div>
+        <div class="sx-vsub">mai&#250;scula e min&#250;scula</div>
+      </div>
+      <div class="sx-right">
+        <div class="sx-ch">
+          <span class="sx-sl">Como se escreve</span>
+          <div class="sx-pg">
+            <span class="sx-pd"></span>
+            <span class="sx-pd sx-pa"></span>
+            <span class="sx-pd"></span>
+            <span class="sx-pd"></span>
+            <span class="sx-pd"></span>
+          </div>
+        </div>
+        <div class="sx-title">De onde vem o Alfa</div>
+        <div class="sx-sec">
+          <div class="sx-lab">Origem</div>
+          <div class="sx-txt"><strong>&#913;</strong> vem do <em>aleph</em> sem&#237;tico, uma letra que h&#225; 3.500 anos representava uma cabe&#231;a de boi. &#201; a raiz do <strong>A</strong> que voc&#234; digita hoje.</div>
+        </div>
+        <div class="sx-div"></div>
+        <div class="sx-sec">
+          <div class="sx-lab">Forma</div>
+          <div class="sx-txt"><strong>&#913; mai&#250;sculo</strong> &#233; id&#234;ntico ao A do portugu&#234;s. <strong>&#945; min&#250;sculo</strong> &#233; arredondado com la&#231;o inferior &#8212; como um "a" de m&#227;o.</div>
+        </div>
+        <div class="sx-ft">
+          <span class="sx-fp">2 / 5</span>
+          <span class="sx-br">&#922;&#959;&#953;&#957;&#942;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3 — PALAVRA-EXEMPLO -->
+  <div class="slide" data-slide="3">
+    <div class="sx-grid">
+      <div class="sx-left">
+        <div class="sx-vis">&#7936;&#947;&#940;&#960;&#951;</div>
+        <div class="sx-vsub">amor<br>116&#215; no NT</div>
+      </div>
+      <div class="sx-right">
+        <div class="sx-ch">
+          <span class="sx-sl">Palavra-exemplo</span>
+          <div class="sx-pg">
+            <span class="sx-pd"></span>
+            <span class="sx-pd"></span>
+            <span class="sx-pd sx-pa"></span>
+            <span class="sx-pd"></span>
+            <span class="sx-pd"></span>
+          </div>
+        </div>
+        <div class="sx-title">&#7936;&#947;&#940;&#960;&#951; &#8212; Amor</div>
+        <div class="sx-sec">
+          <div class="sx-lab">A palavra</div>
+          <div class="sx-txt"><strong>&#7936;&#947;&#940;&#960;&#951;</strong> &#233; o amor sacrificial &#8212; diferente de <em>&#7956;&#961;&#969;&#962;</em> (rom&#225;ntico) e <em>&#966;&#953;&#955;&#943;&#945;</em> (amizade). No NT ela se torna a palavra central para o amor de Deus.</div>
+        </div>
+        <div class="sx-div"></div>
+        <div class="sx-sec">
+          <div class="sx-lab">No vers&#237;culo</div>
+          <div class="sx-txt">"<strong>&#8001; &#952;&#949;&#8056;&#962; &#7936;&#947;&#940;&#960;&#951; &#7952;&#963;&#964;&#943;&#957;</strong>" &#8212; 1 Jo&#227;o 4:8. A primeira letra que voc&#234; viu &#233; a primeira letra desta palavra: <strong>&#7936;</strong>.</div>
+        </div>
+        <div class="sx-ft">
+          <span class="sx-fp">3 / 5</span>
+          <span class="sx-br">&#922;&#959;&#953;&#957;&#942;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 4 — VERSÍCULO -->
+  <div class="slide" data-slide="4">
+    <div class="sx-grid">
+      <div class="sx-left">
+        <div class="sx-vis" style="font-size:64px;line-height:1.4;">&#7952;&#947;&#8060; &#949;&#7984;&#956;&#8054; &#7956;&#957;&#945;<br>&#8001; &#913; &#954;&#945;&#8054; &#8001; &#937;</div>
+        <div class="sx-vsub">Apocalipse 1:8</div>
+      </div>
+      <div class="sx-right">
+        <div class="sx-ch">
+          <span class="sx-sl">No Texto</span>
+          <div class="sx-pg">
+            <span class="sx-pd"></span>
+            <span class="sx-pd"></span>
+            <span class="sx-pd"></span>
+            <span class="sx-pd sx-pa"></span>
+            <span class="sx-pd"></span>
+          </div>
+        </div>
+        <div class="sx-title">"Eu sou o Alfa e o &#212;mega"</div>
+        <div class="sx-sec">
+          <div class="sx-lab">O vers&#237;culo</div>
+          <div class="sx-txt">"<strong>&#7952;&#947;&#8060; &#949;&#7984;&#956;&#8054; &#7956;&#957;&#945; &#8001; &#913; &#954;&#945;&#8054; &#8001; &#937;</strong> &#8212; diz o Senhor Deus." Jesus usa a primeira e a &#250;ltima letra grega para declarar: eu sou o princ&#237;pio e o fim.</div>
+        </div>
+        <div class="sx-div"></div>
+        <div class="sx-sec">
+          <div class="sx-lab">Dica</div>
+          <div class="sx-txt"><strong>Alfa</strong> = primeiro. <strong>&#212;mega</strong> = &#250;ltimo. Da mesma raiz vem <em>alfabeto</em> (alfa + beta). Quando vir <strong>&#913;</strong>, lembre: &#233; a letra que Jesus usou para Se descrever.</div>
+        </div>
+        <div class="sx-ft">
+          <span class="sx-fp">4 / 5</span>
+          <span class="sx-br">&#922;&#959;&#953;&#957;&#942;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5 — CTA -->
+  <div class="slide" data-slide="5">
+    <div class="s5-bg"></div>
+    <div class="s5-deco">&#913;</div>
+    <div class="s5-lay">
+      <div class="s5-hd">
+        <span class="s5-sl">Slide 5 de 5</span>
+        <div class="s5-pg">
+          <span class="s5-pd"></span>
+          <span class="s5-pd"></span>
+          <span class="s5-pd"></span>
+          <span class="s5-pd"></span>
+          <span class="s5-pd s5-pa"></span>
+        </div>
+      </div>
+      <div class="s5-pair">
+        <span class="s5-up">&#913;</span>
+        <span class="s5-lo">&#945;</span>
+      </div>
+      <div class="s5-ref">Letra 1 de 24</div>
+      <div class="s5-ch">Comece gr&#225;tis</div>
+      <div class="s5-cb">Teste os primeiros m&#243;dulos gr&#225;tis. Desbloqueie todo o conte&#250;do com uma assinatura.</div>
+      <div class="s5-btns">
+        <a href="#" class="s5-btn s5-bp"><span class="s5-bico"></span>App Store</a>
+        <a href="#" class="s5-btn s5-bs"><span class="s5-bico"></span>Google Play</a>
+      </div>
+    </div>
+    <div class="s5-ft">
+      <span class="s5-br">&#922;&#959;&#953;&#957;&#942;</span>
+      <span class="s5-fp">5 / 5</span>
+    </div>
+  </div>
+
+</body>
+</html>

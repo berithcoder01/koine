@@ -1,0 +1,241 @@
+{
+  "version": "1.0",
+  "moduleId": "C1-M04",
+  "moduleTitle": "Consoantes de Alta Frequência — Sigma, Capa, Lambda",
+  "audioFile": "/audio/C1-M04/C1-M04.mp3",
+  "duration": 516.13,
+  "generatedAt": "2026-06-04T04:06:22.168240Z",
+  "narrationFile": "C1-M04.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Consoantes de Alta Frequência — Sigma, Capa, Lambda",
+      "startTime": 0.0,
+      "endTime": 3.3
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Módulo 4 do Koiné App — Consoantes de Alta Frequência.\n\nHoje você vai conhecer três novas consoantes do alfabeto grego: sigma, capa e lambda. Sigma é a mais especial de todas — é a única ",
+      "startTime": 5.3,
+      "endTime": 58.87
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Sigma",
+      "startTime": 59.87,
+      "endTime": 61.07
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Sigma é a décima oitava letra do alfabeto grego, e a única que tem DUAS formas diferentes. É um caso único em todo o alfabeto — nenhuma outra letra grega varia conforme a posição.\n\nSigma maiúsculo é f",
+      "startTime": 62.07,
+      "endTime": 135.78
+    },
+    {
+      "id": "u1_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre a palavra \"sarx\" — o acento grave sobre o alfa — e os acentos em \"ho\", \"logos\", \"egeneto\" se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifiq",
+      "startTime": 136.28,
+      "endTime": 154.62
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Sigma medial no meio da palavra, sigma final no fim — como se a letra ficasse cansada e curvasse ao pousar. O som não muda, só a forma: a posição na palavra decide qual dos dois sigmas usar.",
+      "startTime": 155.62,
+      "endTime": 166.6
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora desta unidade é \"sarx\", que significa \"carne\" em grego, encontrada em João, capítulo 1, versículo 14. A frase completa, da qual esta é a palavra central, é: \"Ho logos sarx egeneto\" — ",
+      "startTime": 168.1,
+      "endTime": 181.65
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Você acabou de aprender a letra mais especial do módulo: sigma, a única que muda de forma conforme a posição na palavra. Agora vamos para a segunda consoante, que é muito mais simples: capa",
+      "startTime": 183.15,
+      "endTime": 194.09
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Capa",
+      "startTime": 195.59,
+      "endTime": 196.96
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Capa é a décima letra do alfabeto grego, e provavelmente a mais subestimada.\n\nCapa maiúsculo é praticamente idêntico ao K do português — duas hastes diagonais que se encontram no centro, com uma haste",
+      "startTime": 197.96,
+      "endTime": 258.5
+    },
+    {
+      "id": "u2_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre \"kosmos\" — o acento circunflexo sobre o primeiro ômicron — e os acentos em outras palavras como \"houtôs\", \"egapêsen\", \"theon\" se chamam diacríticos. Você aprende tudo sobre el",
+      "startTime": 259.0,
+      "endTime": 276.35
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Capa maiúsculo é igual ao K. Capa minúsculo é um K mais curvo — como se a letra tivesse relaxado e perdido os ângulos retos.",
+      "startTime": 277.35,
+      "endTime": 285.06
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora desta unidade é \"kosmos\", que significa \"mundo\" em grego, encontrada em João, capítulo 3, versículo 16. A frase completa, da qual esta é a palavra central, é: \"Houtôs gar egapêsen ho ",
+      "startTime": 286.56,
+      "endTime": 301.65
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Muito bem! Você aprendeu capa, que tem o som e quase a forma do K do português. Agora a terceira e última consoante deste módulo: lambda, a letra que abre a palavra mais importante do Evangelho de Joã",
+      "startTime": 303.15,
+      "endTime": 314.43
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Lambda",
+      "startTime": 315.93,
+      "endTime": 317.36
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Lambda é a décima primeira letra do alfabeto grego, e a que abre a palavra mais importante do Evangelho de João: \"logos\" (com acento agudo no primeiro ômicron), que significa \"Verbo\".\n\nLambda maiúscul",
+      "startTime": 318.36,
+      "endTime": 392.51
+    },
+    {
+      "id": "u3_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre \"logos\" — o acento agudo no primeiro ômicron — e sobre as outras palavras do versículo se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifique ",
+      "startTime": 393.01,
+      "endTime": 407.99
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Lambda maiúsculo parece uma tenda aberta — ou um A sem a barra do meio. Lambda minúsculo é um traço curvo e um traço diagonal, juntos — como uma pequena foice.",
+      "startTime": 408.99,
+      "endTime": 417.9
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora desta unidade é \"logos\", que significa \"Verbo\" em grego, encontrada em João, capítulo 1, versículo 1. A frase completa é: \"En arje en ho logos\" — \"No princípio era o Verbo.\"",
+      "startTime": 419.4,
+      "endTime": 429.73
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Parabéns! Você concluiu as três unidades deste módulo e agora conhece três consoantes de alta frequência do grego: sigma, com suas duas formas únicas; capa, com a forma e o som do K; e lambda, a letra",
+      "startTime": 431.23,
+      "endTime": 449.43
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar o Módulo 4 — Consoantes de Alta Frequência.\n\nAgora você conhece três consoantes a mais do grego: sigma, capa e lambda. Você também descobriu uma das curiosidades mais marcantes ",
+      "startTime": 450.93,
+      "endTime": 515.13
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_nota_diacriticos",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C1-M04-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C1-M04-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_nota_diacriticos",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C1-M04-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C1-M04-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_nota_diacriticos",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C1-M04-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C1-M04-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

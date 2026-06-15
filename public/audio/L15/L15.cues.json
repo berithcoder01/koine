@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "moduleId": "L15",
+  "moduleTitle": "Lição 15 — O Mundo Criado",
+  "audioFile": "/audio/L15/L15.mp3",
+  "duration": 121.83,
+  "generatedAt": "2026-06-15T18:05:05.013586Z",
+  "narrationFile": "L15.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 15 — O Mundo Criado",
+      "startTime": 0.0,
+      "endTime": 1.74
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Lição 15 — O mundo criado. Hoje vamos aprender palavras que descrevem a criação de Deus: kosmos, ouranós, gê, hydor e artos. Abra sua apostila na página 31.",
+      "startTime": 3.74,
+      "endTime": 13.71
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "κόσμος significa mundo, ordem, universo. Originalmente significava 'ordem' ou 'adorno' — deu origem a 'cosmético' e 'cosmos'. Em João 3:16, lemos: 'Porque Deus amou o mundo de tal maneira'. A palavra ",
+      "startTime": 14.71,
+      "endTime": 28.75
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva κόσμος cinco vezes na linha 1. Pronuncie: KÓS-mos.",
+      "startTime": 29.25,
+      "endTime": 32.62
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "οὐρανός significa céu, morada divina. Deu nome ao planeta Urano. Em hebraico שָׁמַיִם (shamayim) tem raiz de 'lá em cima'. Em Mateus 6:9, oramos: 'Pai nosso que estás nos céus'. Pronuncia-se ou-ra-NÓS",
+      "startTime": 33.12,
+      "endTime": 48.28
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva οὐρανός cinco vezes na linha 2. Pronuncie: ou-ra-NÓS.",
+      "startTime": 48.78,
+      "endTime": 53.01
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "γῆ significa terra, solo, país. Deu origem a 'geografia' e 'geologia'. A deusa Gaia da mitologia grega tem este nome. Em Mateus 5:5, Jesus diz: 'Bem-aventurados os mansos, porque eles herdarão a terra",
+      "startTime": 53.51,
+      "endTime": 67.16
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva γῆ cinco vezes na linha 3. Pronuncie: GÊ.",
+      "startTime": 67.66,
+      "endTime": 70.99
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "ὕδωρ significa água. Deu origem a 'hidráulica' e 'hidrogênio'. Em João 4:14, Jesus promete água viva. Pronuncia-se HÍ-dor.",
+      "startTime": 71.49,
+      "endTime": 79.04
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ὕδωρ cinco vezes na linha 4. Pronuncie: HÍ-dor.",
+      "startTime": 79.54,
+      "endTime": 83.09
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "ἄρτος significa pão, alimento. Em João 6:35, Jesus se declara ὁ ἄρτος τῆς ζωῆς — o pão da vida. Uma referência direta ao maná do deserto. Pronuncia-se ÁR-tos.",
+      "startTime": 83.59,
+      "endTime": 92.95
+    },
+    {
+      "id": "exposicao_10",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ἄρτος cinco vezes na linha 5. Pronuncie: ÁR-tos.",
+      "startTime": 93.45,
+      "endTime": 97.16
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Céus, terra, água, pão — o mundo criado aponta para o Criador. Releia estas palavras.",
+      "startTime": 97.66,
+      "endTime": 102.89
+    },
+    {
+      "id": "exposicao_11",
+      "marker": "EXPOSICAO",
+      "text": "Escreva no papel: mundo.",
+      "startTime": 104.89,
+      "endTime": 106.53
+    },
+    {
+      "id": "exposicao_12",
+      "marker": "EXPOSICAO",
+      "text": "Escreva no papel: céu.",
+      "startTime": 107.03,
+      "endTime": 108.57
+    },
+    {
+      "id": "exposicao_13",
+      "marker": "EXPOSICAO",
+      "text": "Escreva no papel: terra.",
+      "startTime": 109.07,
+      "endTime": 110.68
+    },
+    {
+      "id": "exposicao_14",
+      "marker": "EXPOSICAO",
+      "text": "Escreva no papel: água.",
+      "startTime": 111.18,
+      "endTime": 112.82
+    },
+    {
+      "id": "exposicao_15",
+      "marker": "EXPOSICAO",
+      "text": "Escreva no papel: pão.",
+      "startTime": 113.32,
+      "endTime": 114.84
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 15 — O Mundo Criado! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 115.34,
+      "endTime": 120.83
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "exposicao_10",
+        "pausa",
+        "exposicao_11",
+        "exposicao_12",
+        "exposicao_13",
+        "exposicao_14",
+        "exposicao_15"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

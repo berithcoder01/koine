@@ -1,0 +1,241 @@
+{
+  "version": "1.0",
+  "moduleId": "C2-M04",
+  "moduleTitle": "do Ciclo 2: Artigo Definido no Nominativo",
+  "audioFile": "/audio/C2-M04/C2-M04.mp3",
+  "duration": 244.65,
+  "generatedAt": "2026-06-12T12:03:20.143476Z",
+  "narrationFile": "C2-M04.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 4 do Ciclo 2: Artigo Definido no Nominativo",
+      "startTime": 0.0,
+      "endTime": 3.78
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "O artigo definido grego e diferente do portugues: ele varia em genero, numero e caso. Neste modulo, voce aprende as tres formas do nominativo singular — ho (masculino), he (feminino), to (neutro) — e ",
+      "startTime": 5.78,
+      "endTime": 20.62
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Os tres artigos: ho, he, to",
+      "startTime": 21.62,
+      "endTime": 24.55
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O artigo definido grego no nominativo singular tem tres formas, uma para cada genero: ho (masculino, \"o\"), he (feminino, \"a\"), to (neutro, \"o\"). Diferente do portugues, onde o artigo so varia em gener",
+      "startTime": 25.55,
+      "endTime": 58.42
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Os tres artigos formam uma triade facil de memorizar: ho e uma curva com traco (masculino), he parece H mas soa \"e\" longo (feminino), to tem acento agudo para lembrar que e neutro.",
+      "startTime": 58.92,
+      "endTime": 69.23
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "En arche en ho logos — Joao, capitulo 1, versiculo 1.",
+      "startTime": 70.73,
+      "endTime": 74.06
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Dois substantivos que voce ja conhece com seus artigos: logos e zoe.",
+      "startTime": 75.56,
+      "endTime": 79.77
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — ho logos e he zoe: masculino e feminino",
+      "startTime": 81.27,
+      "endTime": 84.55
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Dois substantivos familiares, agora com seus artigos: ho logos — \"a palavra\" (masculino, o Logos de Joao capitulo 1 versiculo 1) e he zoe — \"a vida\" (feminino). Observe como o artigo revela o genero d",
+      "startTime": 85.55,
+      "endTime": 114.72
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Ho logos e he zoe formam um par que atravessa todo o Evangelho de Joao. Memorize os dois juntos: masculino e feminino.",
+      "startTime": 115.22,
+      "endTime": 121.64
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "ego eimi he hodos kai he aletheia kai he zoe — Joao, capitulo 14, versiculo 6.",
+      "startTime": 123.14,
+      "endTime": 128.39
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "O artigo neutro e especial: e o unico dos tres que tem acento proprio.",
+      "startTime": 129.89,
+      "endTime": 133.8
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — to phos: o artigo neutro",
+      "startTime": 135.3,
+      "endTime": 137.87
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O artigo neutro to acompanha substantivos neutros. O exemplo mais emblematico e to phos — \"a luz\", de Joao capitulo 1 versiculo 5: \"to phos en te skotia phainei\", \"a luz brilha na escuridao\". O substa",
+      "startTime": 138.87,
+      "endTime": 167.14
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Lembre-se de \"to\" como o artigo diferente: e o unico que tem acento, o unico que termina em \"o\" oxitono, e acompanha palavras que podem surpreender pelo genero.",
+      "startTime": 167.64,
+      "endTime": 176.24
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "to phos en te skotia phainei — Joao, capitulo 1, versiculo 5.",
+      "startTime": 177.74,
+      "endTime": 181.82
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora a Aula do Versiculo do Bloco B. O versiculo que usa os dois artigos que voce acabou de aprender.",
+      "startTime": 183.32,
+      "endTime": 188.77
+    },
+    {
+      "id": "u3_versiculo_2",
+      "marker": "VERSICULO",
+      "text": "ego eimi ho poimen ho kalos — Joao, capitulo 10, versiculo 11. \"Eu sou o bom pastor.\" ego: eu, eimi: sou, ho poimen: o pastor, ho kalos: o bom.",
+      "startTime": 190.27,
+      "endTime": 199.47
+    },
+    {
+      "id": "u3_exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Note os dois artigos: ho poimen e ho kalos. O adjetivo kalos em grego significa tanto \"bom\" moralmente quanto \"belo\" esteticamente. Joao escolhe kalos, nao agathos (bom moralmente) — o pastor bom e be",
+      "startTime": 200.97,
+      "endTime": 229.16
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo 4 concluido! Agora voce sabe os tres artigos do grego e como eles funcionam. No proximo modulo, voce aprende os substantivos da segunda declinacao — as palavras que terminam em \"os\" e formam o ",
+      "startTime": 229.66,
+      "endTime": 243.65
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C2-M04-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C2-M04-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C2-M04-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C2-M04-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C2-M04-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C2-M04-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_versiculo_2",
+        "u3_exposicao_2"
+      ],
+      "unitId": "C2-M04-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

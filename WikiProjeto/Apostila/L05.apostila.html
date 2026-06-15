@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Koine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Apostila L05 — Velares e Líquidas (γ, κ, χ, λ, ρ)</h1>
+<p><strong>ID:</strong> apostila-L05
+<strong>Título:</strong> Lição 5 — Velares e Líquidas
+<strong>Descrição:</strong> Gama, Capa, Chi, Lambda, Rô
+<strong>Página:</strong> 9
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 35</p>
+<hr>
+<h2>🎯 Objetivo da Lição</h2>
+<p>Aprender as cinco consoantes velares (produzidas no fundo da garganta): <strong>Gama (γ)</strong>, <strong>Capa (κ)</strong>, <strong>Chi (χ)</strong>, e as líquidas <strong>Lambda (λ)</strong> e <strong>Rô (ρ)</strong>.</p>
+<blockquote>
+<p>📄 <strong>Abra sua apostila na Página 9</strong></p>
+</blockquote>
+<hr>
+<h2>🔤 Referência Rápida: Velares e Líquidas</h2>
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Nome</th>
+<th>Maiúscula</th>
+<th>Minúscula</th>
+<th>Som</th>
+<th>Exemplo PT / EN</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>γ</td>
+<td>gama</td>
+<td>Γ</td>
+<td>γ</td>
+<td>g (como em &#39;gato&#39;)</td>
+<td>gato</td>
+</tr>
+<tr>
+<td>κ</td>
+<td>capa</td>
+<td>Κ</td>
+<td>κ</td>
+<td>k (como em &#39;casa&#39;)</td>
+<td>casa</td>
+</tr>
+<tr>
+<td>χ</td>
+<td>chi</td>
+<td>Χ</td>
+<td>χ</td>
+<td>ch aspirado (Bach em alemão)</td>
+<td>Bach (DE)</td>
+</tr>
+<tr>
+<td>λ</td>
+<td>lambda</td>
+<td>Λ</td>
+<td>λ</td>
+<td>l (como em &#39;lua&#39;)</td>
+<td>lua</td>
+</tr>
+<tr>
+<td>ρ</td>
+<td>rô</td>
+<td>Ρ</td>
+<td>ρ</td>
+<td>r vibrante (como em &#39;rato&#39;)</td>
+<td>rato</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🏁 Step 1: intro</h2>
+<p><strong>Tipo:</strong> Abertura
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Hoje vamos aprender cinco letras: as velares (produzidas no fundo da garganta) gama, capa e chi, e as líquidas lambda e rô. Abra sua apostila na página 9.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Abra sua apostila na Página 9&quot;</code></p>
+<hr>
+<h2>Γ Step 2: word_intro — Gama (Γ γ)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A primeira letra é o gama. Maiúsculo: Γ. Minúsculo: γ. O som é &#39;g&#39;, como em &#39;gato&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Gama (Γ γ) — a primeira consoante velar&quot;</code></p>
+<p><strong>Grego:</strong> Γ γ
+<strong>Transliteração:</strong> gama
+<strong>Pronúncia:</strong> g (como em &#39;gato&#39;)
+<strong>Significado:</strong> Letra Gama
+<strong>Etiologia:</strong> Do Gimel hebraico (ג); antes do κ em grego (γγ) faz som nasal: &#39;ng&#39;
+<strong>Contexto Bíblico:</strong> Mateus 28:18 — &quot;...todo o poder (πᾶσα ἐξουσία) me foi dado&quot; — γ inicia γῆ (terra) e γράφω (escrever)</p>
+<hr>
+<h2>🖋️ Step 3: alphabet_trace — Gama (γ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> γ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do gama minúsculo:</p>
+<ol>
+<li>Traço horizontal curto no topo</li>
+<li>Traço vertical descendente que faz uma curva suave para a direita na base, como um gancho</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 4: write_practice — Gama (γ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> γ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 1 da apostila — Gama minúsculo (γ)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o gama minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva γ 8 vezes nesta linha:</p>
+<pre><code>[Linha 1: γ γ γ γ γ γ γ γ ]
+</code></pre>
+<hr>
+<h2>Κ Step 5: word_intro — Capa (Κ κ)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A segunda letra é o capa. Maiúsculo: Κ. Minúsculo: κ. O som é &#39;k&#39;, como em &#39;casa&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Capa (Κ κ) — a segunda consoante velar&quot;</code></p>
+<p><strong>Grego:</strong> Κ κ
+<strong>Transliteração:</strong> capa
+<strong>Pronúncia:</strong> k (como em &#39;casa&#39;)
+<strong>Significado:</strong> Letra Capa
+<strong>Etiologia:</strong> Do Qoph hebraico (ק); deu origem ao &#39;Q&#39; latino; em grego substituiu o qoppa arcaico
+<strong>Contexto Bíblico:</strong> João 1:3 — &quot;...por ele tudo foi feito (ἐγένετο)&quot; — κ inicia κόσμος (mundo) e καρδία (coração)</p>
+<hr>
+<h2>🖋️ Step 6: alphabet_trace — Capa (κ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> κ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do capa minúsculo:</p>
+<ol>
+<li>Haste vertical de cima para baixo</li>
+<li>Primeiro ramo diagonal saindo da haste para baixo e à esquerda</li>
+<li>Segundo ramo diagonal saindo da haste para baixo e à direita</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 7: write_practice — Capa (κ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> κ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 2 da apostila — Capa minúsculo (κ)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o capa minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva κ 8 vezes nesta linha:</p>
+<pre><code>[Linha 2: κ κ κ κ κ κ κ κ ]
+</code></pre>
+<hr>
+<h2>Χ Step 8: word_intro — Chi (Χ χ)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A terceira letra é o chi. Maiúsculo: Χ. Minúsculo: χ. O som é &#39;ch&#39; aspirado, como &#39;Bach&#39; em alemão.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Chi (Χ χ) — a terceira consoante velar&quot;</code></p>
+<p><strong>Grego:</strong> Χ χ
+<strong>Transliteração:</strong> chi
+<strong>Pronúncia:</strong> ch aspirado (como &#39;Bach&#39; em alemão)
+<strong>Significado:</strong> Letra Chi
+<strong>Etiologia:</strong> Aspirada velar; deu origem ao &#39;X&#39; latino quando usado na grafia de palavras gregas (ex: Χριστός = Christus)
+<strong>Contexto Bíblico:</strong> Filipenses 1:21 — &quot;Para mim o viver é Cristo (Χριστός)&quot; — χ é a inicial de Χριστός</p>
+<hr>
+<h2>🖋️ Step 9: alphabet_trace — Chi (χ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> χ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do chi minúsculo:</p>
+<ol>
+<li>Diagonal da esquerda para baixo e para a direita</li>
+<li>Diagonal da direita para baixo e para a esquerda (cruzando a primeira no centro)</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 10: write_practice — Chi (χ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> χ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 3 da apostila — Chi minúsculo (χ)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o chi minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva χ 8 vezes nesta linha:</p>
+<pre><code>[Linha 3: χ χ χ χ χ χ χ χ ]
+</code></pre>
+<hr>
+<h2>Λ Step 11: word_intro — Lambda (Λ λ)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A quarta letra é o lambda. Maiúsculo: Λ. Minúsculo: λ. O som é &#39;l&#39;, como em &#39;lua&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Lambda (Λ λ) — a primeira consoante líquida&quot;</code></p>
+<p><strong>Grego:</strong> Λ λ
+<strong>Transliteração:</strong> lambda
+<strong>Pronúncia:</strong> l (como em &#39;lua&#39;)
+<strong>Significado:</strong> Letra Lambda
+<strong>Etiologia:</strong> Do Lamed hebraico (ל); forma triangular representava balança ou estaca; deu origem ao &#39;L&#39; latino
+<strong>Contexto Bíblico:</strong> Lucas 1:1 — &quot;...visto que muitos (πολλοί)&quot; — λ aparece em λόγος, λαός (povo)</p>
+<hr>
+<h2>🖋️ Step 12: alphabet_trace — Lambda (λ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> λ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do lambda minúsculo:</p>
+<ol>
+<li>Arco curvo da esquerda para baixo e para a direita</li>
+<li>Haste diagonal curta saindo da parte inferior direita do arco (forma de &#39;v&#39; invertido assimétrico)</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 13: write_practice — Lambda (λ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> λ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 4 da apostila — Lambda minúsculo (λ)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o lambda minúsculo oito vezes na linha 4 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva λ 8 vezes nesta linha:</p>
+<pre><code>[Linha 4: λ λ λ λ λ λ λ λ ]
+</code></pre>
+<hr>
+<h2>Ρ Step 14: word_intro — Rô (Ρ ρ)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A quinta letra é o rô. Maiúsculo: Ρ. Minúsculo: ρ. O som é &#39;r&#39; vibrante, como em &#39;rato&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Rô (Ρ ρ) — a segunda consoante líquida&quot;</code></p>
+<p><strong>Grego:</strong> Ρ ρ
+<strong>Transliteração:</strong> rô
+<strong>Pronúncia:</strong> r vibrante (como em &#39;rato&#39;)
+<strong>Significado:</strong> Letra Rô
+<strong>Etiologia:</strong> Do Resh hebraico (ר); corresponde ao &#39;R&#39; latino; no início de palavra pode ser aspirado (ῥ)
+<strong>Contexto Bíblico:</strong> Romanos 1:16 — &quot;...para todo aquele que crê (πιστεύοντι)&quot; — ρ aparece em ῥῆμα (palavra falada)</p>
+<hr>
+<h2>🖋️ Step 15: alphabet_trace — Rô (ρ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> ρ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do rô minúsculo:</p>
+<ol>
+<li>Círculo fechado no topo</li>
+<li>Haste vertical descendente saindo da base do círculo</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 16: write_practice — Rô (ρ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ρ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 5 da apostila — Rô minúsculo (ρ)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o rô minúsculo oito vezes na linha 5 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva ρ 8 vezes nesta linha:</p>
+<pre><code>[Linha 5: ρ ρ ρ ρ ρ ρ ρ ρ ]
+</code></pre>
+<hr>
+<h2>🧠 Step 17: pause</h2>
+<p><strong>Tipo:</strong> Revisão Guiada
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Muito bem! Você aprendeu as velares e líquidas. Antes de continuar, olhe para o que escreveu nas cinco linhas e compare com o modelo.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<pre><code>Compare sua escrita com o modelo na apostila.
+Quando estiver pronto, continue.
+</code></pre>
+<hr>
+<h2>📓 Step 18: dictation — Gama</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: gama.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;gama&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Γ γ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Γ γ aqui:</p>
+<pre><code>[Resposta: γ ]
+</code></pre>
+<hr>
+<h2>📓 Step 19: dictation — Capa</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: capa.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;capa&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Κ κ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Κ κ aqui:</p>
+<pre><code>[Resposta: κ ]
+</code></pre>
+<hr>
+<h2>📓 Step 20: dictation — Chi</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: chi.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;chi&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Χ χ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Χ χ aqui:</p>
+<pre><code>[Resposta: χ ]
+</code></pre>
+<hr>
+<h2>📓 Step 21: dictation — Lambda</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: lambda.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;lambda&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Λ λ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Λ λ aqui:</p>
+<pre><code>[Resposta: λ ]
+</code></pre>
+<hr>
+<h2>📓 Step 22: dictation — Rô</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: rô.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;rô&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Ρ ρ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ρ ρ aqui:</p>
+<pre><code>[Resposta: ρ ]
+</code></pre>
+<hr>
+<h2>🎉 Fim da Lição L05</h2>
+<p>Parabéns! Você concluiu <strong>Lição 5 — Velares e Líquidas (γ, κ, χ, λ, ρ)</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi γ (gama)</li>
+<li><input disabled="" type="checkbox"> Aprendi κ (capa)</li>
+<li><input disabled="" type="checkbox"> Aprendi χ (chi)</li>
+<li><input disabled="" type="checkbox"> Aprendi λ (lambda)</li>
+<li><input disabled="" type="checkbox"> Aprendi ρ (rô)</li>
+</ul>
+<p>📖 <strong>Próxima lição:</strong> L06 — Nasais, Sigma e Letras Duplas (μ, ν, σ/ς, ζ, ξ, ψ)</p>
+
+</body>
+</html>

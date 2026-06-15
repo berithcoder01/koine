@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!--
+  TEMPLATE T06 — FEATURE DO APP (v4 Redesenhado)
+  Formato: SQ 1080×1080  |  Estilo: Phone Mockup
+  Layout: celular flutuante + feature do app em destaque
+
+  SLOTS:
+    {{FEATURE_TITLE}}
+    {{FEATURE_BODY}}
+    {{SCREEN_LABEL}}
+    {{SCREEN_CONTENT_A}}
+    {{SCREEN_CONTENT_B}}
+    {{SCREEN_CONTENT_C}}
+    {{APP_STORE_LINK}}
+    {{GOOGLE_PLAY_LINK}}
+-->
+<link rel="stylesheet" href="../css/design_tokens.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px; height: 1080px;
+    overflow: hidden;
+    background-color: var(--koine-dark-bg);
+    font-family: var(--font-sans);
+    position: relative;
+  }
+
+  /* Fundo gradiente com profundidade */
+  .bg-gradient {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(38, 66, 42, 0.60) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(234, 102, 44, 0.25) 0%, transparent 40%),
+      radial-gradient(ellipse at 20% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 40%),
+      linear-gradient(180deg, rgba(0,0,0,0.15) 0%, transparent 50%, rgba(0,0,0,0.15) 100%);
+    pointer-events: none;
+  }
+  /* Mancha sutil extra */
+  .bg-glow {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(38,66,42,0.20) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  /* Layout */
+  .layout {
+    position: relative;
+    width: 1080px; height: 1080px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+    z-index: 1;
+  }
+
+  /* Lado esquerdo — texto */
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 64px 80px 100px;
+  }
+  .feature-badge {
+    font-size: 12px; font-weight: 700;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--koine-accent);
+    margin-bottom: 24px;
+  }
+  .feature-title {
+    font-family: var(--font-serif);
+    font-size: 44px; font-weight: 700;
+    color: var(--koine-white);
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .feature-body {
+    font-size: 17px; line-height: 1.75;
+    color: var(--koine-white-60);
+    margin-bottom: 40px;
+    max-width: 420px;
+  }
+  .feature-buttons {
+    display: flex; gap: 12px;
+  }
+  .btn-sm {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 700;
+    padding: 12px 24px;
+    border-radius: var(--radius-pill);
+    text-decoration: none;
+    color: var(--koine-white);
+    background: var(--koine-white);
+    color: var(--koine-dark-bg);
+  }
+  .btn-sm--outline {
+    background: transparent;
+    color: var(--koine-white-80);
+    border: 1.5px solid var(--koine-white-40);
+  }
+  .btn-icon-sm {
+    width: 16px; height: 16px;
+    border-radius: 3px;
+    background: currentColor;
+    opacity: 0.3;
+  }
+
+  /* Lado direito — celular */
+  .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* Celular mockup */
+  .phone {
+    width: 320px; height: 620px;
+    background: linear-gradient(145deg, var(--koine-dark-card), #1C1917);
+    border-radius: 44px;
+    border: 2px solid rgba(255,255,255,0.08);
+    position: relative;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 2px rgba(255,255,255,0.04),
+      0 30px 80px rgba(0,0,0,0.5);
+  }
+  /* Status bar */
+  .phone-status {
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+    position: relative; z-index: 2;
+  }
+  .phone-time {
+    font-size: 14px; font-weight: 600;
+    color: var(--koine-white);
+    opacity: 0.6;
+  }
+  .phone-icons {
+    display: flex; gap: 5px;
+  }
+  .phone-icon {
+    width: 14px; height: 10px;
+    background: var(--koine-white);
+    opacity: 0.5;
+    border-radius: 2px;
+  }
+  /* Notch + Dynamic Island */
+  .phone-notch {
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 110px; height: 30px;
+    background: #1C1917;
+    border-radius: 0 0 20px 20px;
+    z-index: 3;
+  }
+
+  /* Tela do app */
+  .phone-screen {
+    position: absolute;
+    top: 10px; left: 10px; right: 10px; bottom: 10px;
+    background: var(--koine-cream);
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .screen-header {
+    padding: 32px 20px 20px;
+    background: var(--koine-primary);
+  }
+  .screen-label {
+    font-size: 12px; font-weight: 700;
+    color: var(--koine-white);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+  .screen-title {
+    font-family: var(--font-greek);
+    font-size: 28px; font-weight: 700;
+    color: var(--koine-white);
+    margin-top: 4px;
+  }
+  .screen-body {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .screen-item {
+    background: var(--koine-white);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .screen-item-label {
+    font-size: 11px; font-weight: 600;
+    color: var(--koine-accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .screen-item-text {
+    font-size: 14px; line-height: 1.5;
+    color: var(--koine-charcoal);
+    font-family: var(--font-greek);
+  }
+
+  /* Home indicator */
+  .phone-home {
+    width: 120px; height: 4px;
+    background: var(--koine-charcoal);
+    opacity: 0.15;
+    border-radius: var(--radius-pill);
+    margin: 8px auto;
+  }
+
+  /* Marca — Logo padronizado */
+  .brand {
+    position: absolute;
+    bottom: 48px; left: 100px;
+    font-family: var(--font-greek);
+    font-size: 70px; font-weight: 700;
+    color: var(--koine-white);
+    opacity: 0.50;
+    letter-spacing: 0.06em;
+  }
+</style>
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="bg-glow"></div>
+
+  <div class="layout">
+    <!-- Lado esquerdo -->
+    <div class="left-side">
+      <div class="feature-badge">Feature do App</div>
+      <div class="feature-title">{{FEATURE_TITLE}}</div>
+      <div class="feature-body">{{FEATURE_BODY}}</div>
+      <div class="feature-buttons">
+        <a href="{{APP_STORE_LINK}}" class="btn-sm">
+          <span class="btn-icon-sm"></span>
+          App Store
+        </a>
+        <a href="{{GOOGLE_PLAY_LINK}}" class="btn-sm btn-sm--outline">
+          <span class="btn-icon-sm"></span>
+          Google Play
+        </a>
+      </div>
+    </div>
+
+    <!-- Lado direito -->
+    <div class="right-side">
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-status">
+          <span class="phone-time">9:41</span>
+          <div class="phone-icons">
+            <div class="phone-icon"></div>
+            <div class="phone-icon"></div>
+            <div class="phone-icon"></div>
+          </div>
+        </div>
+        <div class="phone-screen">
+          <div class="screen-header">
+            <div class="screen-label">{{SCREEN_LABEL}}</div>
+            <div class="screen-title">{{SCREEN_TITLE}}</div>
+          </div>
+          <div class="screen-body">
+            <div class="screen-item">
+              <div class="screen-item-label">{{SCREEN_ITEM_1}}</div>
+              <div class="screen-item-text">{{SCREEN_CONTENT_A}}</div>
+            </div>
+            <div class="screen-item">
+              <div class="screen-item-label">{{SCREEN_ITEM_2}}</div>
+              <div class="screen-item-text">{{SCREEN_CONTENT_B}}</div>
+            </div>
+            <div class="screen-item">
+              <div class="screen-item-label">{{SCREEN_ITEM_3}}</div>
+              <div class="screen-item-text">{{SCREEN_CONTENT_C}}</div>
+            </div>
+          </div>
+          <div class="phone-home"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="brand">Κοινή</div>
+</body>
+</html>

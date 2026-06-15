@@ -1,0 +1,161 @@
+{
+  "version": "1.0",
+  "moduleId": "H4-M03",
+  "moduleTitle": "Modulo H4-M03: A Septuaginta e o Antigo Testamento que Paulo Conhecia",
+  "audioFile": "/audio/H4-M03/H4-M03.mp3",
+  "duration": 158.33,
+  "generatedAt": "2026-06-12T16:22:38.394817Z",
+  "narrationFile": "H4-M03.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo H4-M03: A Septuaginta e o Antigo Testamento que Paulo Conhecia",
+      "startTime": 0.0,
+      "endTime": 5.28
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Voce sabia que quando o Novo Testamento cita o Antigo, nao esta citando o texto hebraico original, mas uma traducao grega? Esta e a Septuaginta, a Biblia dos apostolos. E neste modulo voce tambem vai ",
+      "startTime": 7.28,
+      "endTime": 20.92
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — A Septuaginta: origem e importancia",
+      "startTime": 21.92,
+      "endTime": 25.12
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A Septuaginta, tambem chamada LXX, e a traducao do Antigo Testamento hebraico para o grego, produzida em Alexandria entre 250 e 150 a.C. para os judeus da diaspora que ja nao liam hebraico. A lenda di",
+      "startTime": 26.12,
+      "endTime": 51.43
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Mas como os autores do Novo Testamento usavam o Antigo Testamento?",
+      "startTime": 51.93,
+      "endTime": 55.32
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Como os autores do NT citam o AT",
+      "startTime": 56.82,
+      "endTime": 59.89
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Os autores do Novo Testamento nao citavam o Antigo como fazemos hoje com aspas e nota de rodape. Usavam metodos judaicos: cumprimento direto, tipologia e pesher. Um exemplo: Mateus capitulo 1 versicul",
+      "startTime": 60.89,
+      "endTime": 87.14
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "E os manuscritos que confirmam a fidelidade do texto?",
+      "startTime": 87.64,
+      "endTime": 90.53
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Os Manuscritos do Mar Morto",
+      "startTime": 92.03,
+      "endTime": 94.7
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Em 1947, um pastor beduino jogou uma pedra numa caverna perto de Qumran e ouviu jarros se quebrando. Eram os Manuscritos do Mar Morto, escondidos pelos essenios antes de 68 d.C. Eles incluem fragmento",
+      "startTime": 95.7,
+      "endTime": 126.41
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "Lucas, capitulo 4, versiculos 17 a 19. \"E, abrindo o livro, achou o lugar em que estava escrito: 'O Espirito do Senhor esta sobre mim.'\"",
+      "startTime": 126.91,
+      "endTime": 135.35
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens! Voce completou toda a Trilha de Historia do Novo Testamento — 15 modulos. De Alexandre Magno aos Manuscritos do Mar Morto, voce percorreu o mundo que produziu o Novo Testamento. A ultima pal",
+      "startTime": 136.85,
+      "endTime": 157.33
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao"
+      ],
+      "unitId": "H4-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "H4-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao"
+      ],
+      "unitId": "H4-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "H4-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_versiculo"
+      ],
+      "unitId": "H4-M03-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

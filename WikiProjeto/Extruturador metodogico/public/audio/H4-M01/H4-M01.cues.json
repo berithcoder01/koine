@@ -1,0 +1,153 @@
+{
+  "version": "1.0",
+  "moduleId": "H4-M01",
+  "moduleTitle": "Modulo H4-M01: Do Papiro ao Codice — Como os Textos Eram Escritos e Copiados",
+  "audioFile": "/audio/H4-M01/H4-M01.mp3",
+  "duration": 142.54,
+  "generatedAt": "2026-06-12T16:21:23.493798Z",
+  "narrationFile": "H4-M01.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo H4-M01: Do Papiro ao Codice — Como os Textos Eram Escritos e Copiados",
+      "startTime": 0.0,
+      "endTime": 5.5
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Voce ja se perguntou como o Novo Testamento foi escrito fisicamente? Em que material? Com que tinta? Quem copiava? Neste modulo, voce vai descobrir o mundo fisico por tras dos textos sagrados.",
+      "startTime": 7.5,
+      "endTime": 18.39
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Materiais de escrita no seculo primeiro",
+      "startTime": 19.39,
+      "endTime": 22.35
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O papiro era o suporte primario para documentos no mundo mediterraneo — feito das camadas do caule da planta Cyperus papyrus, cultivada principalmente no Egito. Uma folha de papiro era barata mas frag",
+      "startTime": 23.35,
+      "endTime": 54.22
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Os judeus usavam rolos. Os cristaos inventaram o livro.",
+      "startTime": 54.72,
+      "endTime": 57.98
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — A transicao do rolo ao codice",
+      "startTime": 59.48,
+      "endTime": 62.1
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Os judeus e o mundo greco-romano usavam rolos — fitas longas enroladas em bastao. O codice, folhas dobradas e costuradas, precursor do livro moderno, era usado para rascunhos. Os cristaos, ja no secul",
+      "startTime": 63.1,
+      "endTime": 91.43
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora, como os textos eram copiados antes da imprensa?",
+      "startTime": 91.93,
+      "endTime": 95.03
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — A copia dos manuscritos",
+      "startTime": 96.53,
+      "endTime": 99.06
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Antes da imprensa em 1450, cada copia do Novo Testamento era feita a mao em scriptoria monasticos. Temos mais de 5.800 manuscritos gregos do Novo Testamento — mais que qualquer obra antiga. Homero tem",
+      "startTime": 100.06,
+      "endTime": 129.43
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo H4-M01 concluido. Voce conhece agora o suporte fisico do Novo Testamento — papiro, codice e copistas. No proximo modulo, como esses manuscritos se tornaram o canone que conhecemos.",
+      "startTime": 129.93,
+      "endTime": 141.54
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao"
+      ],
+      "unitId": "H4-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "H4-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao"
+      ],
+      "unitId": "H4-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "H4-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao"
+      ],
+      "unitId": "H4-M01-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

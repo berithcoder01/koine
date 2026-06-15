@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "H2-M04",
+  "moduleTitle": "Modulo H2-M04: Cafarnaum, Galileia e os Caminhos de Jesus",
+  "audioFile": "/audio/H2-M04/H2-M04.mp3",
+  "duration": 243.92,
+  "generatedAt": "2026-06-12T15:47:10.824824Z",
+  "narrationFile": "H2-M04.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo H2-M04: Cafarnaum, Galileia e os Caminhos de Jesus",
+      "startTime": 0.0,
+      "endTime": 4.57
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Jesus nao comecou seu ministerio em Jerusalem. Comecou na Galileia — uma regiao de fronteira, desprezada pelos judeus do sul, chamada de \"Galileia dos Gentios\". Neste modulo, voce vai descobrir por qu",
+      "startTime": 6.57,
+      "endTime": 21.37
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Galileia: a regiao e seu estigma",
+      "startTime": 22.37,
+      "endTime": 25.42
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A Galileia era uma regiao de fronteira no norte da Palestina, separada da Judeia pela Samaria. O Reino do Norte havia sido conquistado pela Assiria em 722 antes de Cristo e repovoado com povos de vari",
+      "startTime": 26.42,
+      "endTime": 74.33
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Nazare era tao insignificante que nem um galileu esperava nada dela. Jesus comecou no lugar mais improvável.",
+      "startTime": 74.83,
+      "endTime": 80.51
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "Joao, capitulo 1, versículo 46. \"Pode algo bom vir de Nazare?\"",
+      "startTime": 82.01,
+      "endTime": 86.53
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "De Nazare para Cafarnaum — a cidade que Jesus escolheu como base.",
+      "startTime": 88.03,
+      "endTime": 91.49
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Cafarnaum: a base de operacoes",
+      "startTime": 92.99,
+      "endTime": 95.85
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Cafarnaum era uma cidade de pescadores as margens do lago, na rota comercial que ligava a Siria ao Mediterraneo. Jesus a escolheu como base depois de deixar Nazare. A casa de Pedro ficava em Cafarnaum",
+      "startTime": 96.85,
+      "endTime": 134.98
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "A casa de Pedro foi escavada. Voce pode ver hoje as ruínas do que a tradicao identifica como o local onde Jesus curou a sogra de Pedro.",
+      "startTime": 135.48,
+      "endTime": 142.68
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "Marcos, capitulo 1, versiculos 21 a 34. \"Entraram em Cafarnaum. E, logo no sabado, ensinava na sinagoga... e foram a casa de Simao e Andre... A sogra de Simao estava de cama com febre.\"",
+      "startTime": 144.18,
+      "endTime": 155.66
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora, as rotas que Jesus percorria — de Galileia a Jerusalem.",
+      "startTime": 157.16,
+      "endTime": 160.53
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — As rotas de Jesus: Galileia a Jerusalem",
+      "startTime": 162.03,
+      "endTime": 165.35
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A principal rota de Galileia a Jerusalem passava pela Samaria, ou contornava pelo vale do Jordao, passando por Jerico — a rota preferida por quem queria evitar os samaritanos. A distancia de Cafarnaum",
+      "startTime": 166.35,
+      "endTime": 203.52
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "A parabola do bom samaritano nao acontece numa estrada generica. A estrada de Jerusalem a Jerico existe, a descida e real, o perigo era notorio — e Jesus usou tudo isso para ensinar.",
+      "startTime": 204.02,
+      "endTime": 214.09
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "Lucas, capitulo 10, versículo 30. \"Certo homem descia de Jerusalem a Jerico e caiu nas maos de salteadores.\"",
+      "startTime": 215.59,
+      "endTime": 222.21
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo H2-M04 concluido — e com ele, o Bloco H2 inteiro. Agora voce conhece a Galileia estigmatizada, a Cafarnaum arqueologica, e as rotas que Jesus percorria a pe. Esses quatro modulos da trilha de h",
+      "startTime": 223.71,
+      "endTime": 242.92
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "H2-M04-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "H2-M04-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "H2-M04-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "H2-M04-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "H2-M04-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

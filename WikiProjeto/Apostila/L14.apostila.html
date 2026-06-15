@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Koine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Apostila L14 — Comunidade e Ministério</h1>
+<p><strong>ID:</strong> apostila-L14
+<strong>Título:</strong> Lição 14 — Comunidade e Ministério
+<strong>Descrição:</strong> ἐκκλησία, ἀδελφός, ἀπόστολος, προφήτης, δοῦλος
+<strong>Página:</strong> 29
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 45</p>
+<hr>
+<h2>Step 01: intro</h2>
+<p><strong>Tipo:</strong> Introdução
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Lição 14 — Comunidade e ministério. Palavras que descrevem o povo de Deus: ekklesía, adelphós, apóstolos, profétes e dûlos. Abra sua apostila na página 29.&quot;
+<strong>Exibição:</strong> Abra sua apostila na Página 29</p>
+</blockquote>
+<hr>
+<h2>Step 02: word_intro</h2>
+<p><strong>Tipo:</strong> Introdução à Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ἐκκλησία, igreja. Em Mateus 16:18, Jesus promete: &#39;Sobre esta pedra edificarei a minha igreja (ἐκκλησίαν).&#39;&quot;
+<strong>Grego:</strong> ἐκκλησία
+<strong>Transliteração:</strong> ekklēsía
+<strong>Pronúncia:</strong> e-kle-SÍ-a
+<strong>Significado:</strong> igreja / assembleia convocada
+<strong>Etiologia:</strong> ἐκ (de fora) + καλέω (chamar); assembleia dos cidadãos convocados da cidade para deliberar
+<strong>Contexto Bíblico:</strong> Mateus 16:18 — &quot;Sobre esta pedra edificarei a minha igreja (ἐκκλησίαν)&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 03: write_practice</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ἐκκλησία × 5
+<strong>Instrução:</strong> &quot;Linha 1 da apostila — ἐκκλησία&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva ἐκκλησία cinco vezes na linha 1. Pronuncie: e-kle-SÍ-a.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 04: word_intro</h2>
+<p><strong>Tipo:</strong> Introdução à Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ἀδελφός, irmão. Em Romanos 8:29: &#39;Para que ele seja o primogênito entre muitos irmãos (ἀδελφοῖς).&#39;&quot;
+<strong>Grego:</strong> ἀδελφός
+<strong>Transliteração:</strong> adelphós
+<strong>Pronúncia:</strong> a-del-FÓS
+<strong>Significado:</strong> irmão / membro da família de fé
+<strong>Etiologia:</strong> ἀ (mesmo) + δελφύς (útero); literalmente &quot;do mesmo útero&quot;; Paulo expande para irmãos em Cristo
+<strong>Contexto Bíblico:</strong> Romanos 8:29 — &quot;Para que ele seja o primogênito entre muitos irmãos (ἀδελφοῖς)&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 05: write_practice</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ἀδελφός × 5
+<strong>Instrução:</strong> &quot;Linha 2 da apostila — ἀδελφός&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva ἀδελφός cinco vezes na linha 2. Pronuncie: a-del-FÓS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 06: word_intro</h2>
+<p><strong>Tipo:</strong> Introdução à Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ἀπόστολος, apóstolo. Em Efésios 2:20: &#39;Edificados sobre o fundamento dos apóstolos (ἀποστόλων) e profetas.&#39;&quot;
+<strong>Grego:</strong> ἀπόστολος
+<strong>Transliteração:</strong> apóstolos
+<strong>Pronúncia:</strong> a-PÓS-to-los
+<strong>Significado:</strong> apóstolo / enviado
+<strong>Etiologia:</strong> De ἀποστέλλω, enviar com autoridade e representando quem envia
+<strong>Contexto Bíblico:</strong> Efésios 2:20 — &quot;Edificados sobre o fundamento dos apóstolos (ἀποστόλων) e profetas&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 07: write_practice</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ἀπόστολος × 5
+<strong>Instrução:</strong> &quot;Linha 3 da apostila — ἀπόστολος&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva ἀπόστολος cinco vezes na linha 3. Pronuncie: a-PÓS-to-los.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 08: word_intro</h2>
+<p><strong>Tipo:</strong> Introdução à Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;προφήτης, profeta. Em Atos 2:17: &#39;Os vossos filhos e as vossas filhas profetizarão (προφητεύσουσιν).&#39;&quot;
+<strong>Grego:</strong> προφήτης
+<strong>Transliteração:</strong> prophḗtēs
+<strong>Pronúncia:</strong> pro-FÊ-tes
+<strong>Significado:</strong> profeta / porta-voz
+<strong>Etiologia:</strong> πρό (antes/em favor de) + φημί (falar); não apenas prevê o futuro, mas fala em nome de Deus
+<strong>Contexto Bíblico:</strong> Atos 2:17 — &quot;Os vossos filhos e as vossas filhas profetizarão (προφητεύσουσιν)&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 09: write_practice</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> προφήτης × 5
+<strong>Instrução:</strong> &quot;Linha 4 da apostila — προφήτης&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva προφήτης cinco vezes na linha 4. Pronuncie: pro-FÊ-tes.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 10: word_intro</h2>
+<p><strong>Tipo:</strong> Introdução à Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;δοῦλος, servo. Em Romanos 1:1, Paulo se identifica: &#39;Paulo, servo (δοῦλος) de Jesus Cristo, chamado para ser apóstolo.&#39;&quot;
+<strong>Grego:</strong> δοῦλος
+<strong>Transliteração:</strong> doûlos
+<strong>Pronúncia:</strong> DÛ-los
+<strong>Significado:</strong> servo / escravo
+<strong>Etiologia:</strong> Paulo se identifica como δοῦλος em Rm 1:1 — paradoxo: o maior título vem da maior humildade
+<strong>Contexto Bíblico:</strong> Romanos 1:1 — &quot;Paulo, servo (δοῦλος) de Jesus Cristo, chamado para ser apóstolo&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 11: write_practice</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> δοῦλος × 5
+<strong>Instrução:</strong> &quot;Linha 5 da apostila — δοῦλος&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva δοῦλος cinco vezes na linha 5. Pronuncie: DÛ-los.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 12: pause</h2>
+<p><strong>Tipo:</strong> Pausa para Revisão
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Igreja, irmãos, apóstolos, profetas, servos — esta é a comunidade de Deus. Releia estas palavras.&quot;
+<strong>Exibição:</strong>
+Releia as cinco palavras na sua apostila.
+Quando estiver pronto, continue.</p>
+</blockquote>
+<hr>
+<h2>Step 13: dictation</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;igreja&#39;.&quot;
+<strong>Exibição:</strong> &quot;igreja&quot;
+<strong>Resposta Esperada:</strong> ἐκκλησία</p>
+</blockquote>
+<hr>
+<h2>Step 14: dictation</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;irmão&#39;.&quot;
+<strong>Exibição:</strong> &quot;irmão&quot;
+<strong>Resposta Esperada:</strong> ἀδελφός</p>
+</blockquote>
+<hr>
+<h2>Step 15: dictation</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;apóstolo&#39;.&quot;
+<strong>Exibição:</strong> &quot;apóstolo&quot;
+<strong>Resposta Esperada:</strong> ἀπόστολος</p>
+</blockquote>
+<hr>
+<h2>Step 16: dictation</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;profeta&#39;.&quot;
+<strong>Exibição:</strong> &quot;profeta&quot;
+<strong>Resposta Esperada:</strong> προφήτης</p>
+</blockquote>
+<hr>
+<h2>Step 17: dictation</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;servo&#39;.&quot;
+<strong>Exibição:</strong> &quot;servo&quot;
+<strong>Resposta Esperada:</strong> δοῦλος</p>
+</blockquote>
+
+</body>
+</html>

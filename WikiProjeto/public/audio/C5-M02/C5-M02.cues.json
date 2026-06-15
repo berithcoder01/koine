@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C5-M02",
+  "moduleTitle": "do Ciclo 5: Adjetivos Irregulares — megas, polus, pas",
+  "audioFile": "/audio/C5-M02/C5-M02.mp3",
+  "duration": 192.82,
+  "generatedAt": "2026-06-14T22:08:18.829012Z",
+  "narrationFile": "C5-M02.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 2 do Ciclo 5: Adjetivos Irregulares — megas, polus, pas",
+      "startTime": 0.0,
+      "endTime": 4.53
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "No modulo anterior, voce aprendeu o paradigma regular de agathos. Agora vai aprender tres adjetivos muito importantes que fogem do padrao: megas — grande, polus — muito, e pas — todo. Cada um tem suas",
+      "startTime": 6.53,
+      "endTime": 22.98
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — megas e polus",
+      "startTime": 23.98,
+      "endTime": 25.85
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Megas e o adjetivo irregular mais comum do Novo Testamento, com cerca de 242 ocorrencias. No singular, o masculino nominativo e megas — nao megos —, o feminino e megale, e o neutro e mega. No plural, ",
+      "startTime": 26.85,
+      "endTime": 59.38
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Polu em Joao 3:16 nao e adjetivo — e adverbio: \"amou tanto, grandemente.\"",
+      "startTime": 59.88,
+      "endTime": 64.84
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "houtos gar egapesen ho theos ton kosmon — Joao, capitulo 3, versiculo 16.",
+      "startTime": 66.34,
+      "endTime": 71.4
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora vamos ao adjetivo mais frequente de todo o Novo Testamento: pas.",
+      "startTime": 72.9,
+      "endTime": 76.75
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — pas, pasa, pan",
+      "startTime": 78.25,
+      "endTime": 80.24
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Pas e o adjetivo mais frequente do Novo Testamento, com cerca de 1.243 ocorrencias. Significa \"todo, cada, inteiro\". Sua declinacao e mista — usa terminacoes da terceira declinacao no masculino e neut",
+      "startTime": 81.24,
+      "endTime": 111.44
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Panta, neutro plural, significa \"todas as coisas\" — um conceito filosofico e teologico central. O Logos criou tudo.",
+      "startTime": 111.94,
+      "endTime": 118.98
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "panta di autou egeneto — Joao, capitulo 1, versiculo 3.",
+      "startTime": 120.48,
+      "endTime": 124.19
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora vamos ao ultimo topico do modulo: comparativos e superlativos.",
+      "startTime": 125.69,
+      "endTime": 129.96
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Comparativo e superlativo",
+      "startTime": 131.46,
+      "endTime": 134.33
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O grego tem sufixos para comparativo e superlativo. O comparativo usa \"teros\", \"tera\", \"teron\". Exemplo: meizon — maior, comparativo irregular de megas. O superlativo usa \"tatos\", \"tate\", \"taton\". Exe",
+      "startTime": 135.33,
+      "endTime": 163.75
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Paulo em Primeira Corintios 13:13 usa meizon, comparativo, mas o sentido e superlativo — \"o MAIOR de todos.\"",
+      "startTime": 164.25,
+      "endTime": 170.91
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "meizon de touton he agape — Primeira Corintios, capitulo 13, versiculo 13.",
+      "startTime": 172.41,
+      "endTime": 177.05
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens! Voce aprendeu os adjetivos irregulares megas, polus e pas, e tambem os comparativos e superlativos. No proximo modulo, voce vai aprender a diferenca crucial entre adjetivo atributivo e predi",
+      "startTime": 178.55,
+      "endTime": 191.82
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C5-M02-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C5-M02-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C5-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C5-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C5-M02-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

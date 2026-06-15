@@ -1,0 +1,129 @@
+{
+  "version": "1.0",
+  "moduleId": "L19",
+  "moduleTitle": "Lição 19 — Eu Sou o Caminho",
+  "audioFile": "/audio/L19/L19.mp3",
+  "duration": 86.46,
+  "generatedAt": "2026-06-15T18:12:27.940622Z",
+  "narrationFile": "L19.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 19 — Eu Sou o Caminho",
+      "startTime": 0.0,
+      "endTime": 1.8
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "João 14:6 — uma das sete declarações 'Eu Sou' de Jesus. Esta frase contém três predicados que definem Jesus. Abra sua apostila na página 40.",
+      "startTime": 3.8,
+      "endTime": 12.59
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "ἐγώ — 'eu'. Em grego o pronome geralmente está oculto no verbo. Quando está explícito, como aqui, é enfático. Pronuncia-se: e-GÔ.",
+      "startTime": 13.59,
+      "endTime": 20.77
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "εἰμι — 'sou'. Primeira pessoa de εἰμί. Ἐγώ εἰμι são exatamente as palavras de Êxodo 3:14 na Septuaginta — o título divino. Pronuncia-se: ei-MÍ.",
+      "startTime": 21.27,
+      "endTime": 28.9
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "ἡ ὁδός — 'o caminho'. Substantivo feminino; não apenas um caminho físico, mas o modo de vida. O artigo ἡ é o artigo feminino. Pronuncia-se: ho-DÓS.",
+      "startTime": 29.4,
+      "endTime": 38.02
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "καί — 'e'. A conjunção mais comum do NT, com cerca de 9.000 ocorrências. Pronuncia-se: cá-i.",
+      "startTime": 38.52,
+      "endTime": 44.02
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "ἡ ἀλήθεια — 'a verdade'. Você já aprendeu esta palavra na Lição 12. Pronuncia-se: a-LÊ-tei-a.",
+      "startTime": 44.52,
+      "endTime": 50.79
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "ἡ ζωή — 'a vida'. Você já aprendeu na Lição 7. Vida em plenitude. Pronuncia-se: zo-Ê.",
+      "startTime": 51.29,
+      "endTime": 57.65
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Esta frase tem 10 palavras. Leia-a devagar na apostila: egō eimi hē hodos kai hē alētheia kai hē zōē.",
+      "startTime": 58.15,
+      "endTime": 64.14
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "Agora copie a frase completa três vezes. É a frase mais longa — vá com calma.",
+      "startTime": 66.14,
+      "endTime": 70.71
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Ouça: egō eimi hē hodos kai hē alētheia kai hē zōē. Repita em voz alta duas vezes.",
+      "startTime": 71.21,
+      "endTime": 75.99
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "Escreva em grego: 'Eu sou o caminho, a verdade e a vida'.",
+      "startTime": 76.49,
+      "endTime": 79.61
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 19 — Eu Sou o Caminho! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 80.11,
+      "endTime": 85.46
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "pausa",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

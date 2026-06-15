@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!--
+  TEMPLATE T02 — CAPA CARROSSEL ALFABETO (v1 Editorial)
+  Formato: SQ 1080×1080  |  Estilo: Instagram Mockup
+  Propósito: Apresentar a letra do alfabeto grego com capa de Instagram
+
+  Metodologia: ORQUESTRADOR_EDITORIAL.md — 1.1 A (forma visual), B (nome e som)
+  Tom: Professor apresentando a letra pela primeira vez
+
+  SLOTS:
+    {{LETTER_UPPER}}     -> ex: "Α" (GREGO U+0391)
+    {{LETTER_LOWER}}     -> ex: "α" (GREGO U+03B1)
+    {{LETTER_NAME}}      -> ex: "Alfa"
+    {{LETTER_SOUND}}     -> ex: "/a/ — como 'a' em 'pai'"
+    {{LETTER_INDEX}}     -> ex: "Letra 1 de 24"
+    {{TAGLINE}}          -> ex: "A letra que abre o alfabeto é a mesma que abre o Apocalipse"
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --koine-primary: #26422A;
+    --koine-accent: #EA662C;
+    --koine-cream: #FAF6EE;
+    --koine-charcoal: #1A1A1A;
+    --koine-charcoal-soft: #42302D;
+    --koine-white: #FFFFFF;
+    --font-greek: 'Gentium Plus', serif;
+    --font-serif: 'Libre Baskerville', serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; overflow: hidden; background-color: #1A1A1A; font-family: var(--font-sans); position: relative; }
+  .bg-dark { position: absolute; inset: 0; background-image: radial-gradient(ellipse at 20% 80%, rgba(38,66,42,0.30) 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, rgba(234,102,44,0.12) 0%, transparent 50%); pointer-events: none; }
+  .ig-card { position: absolute; top: 100px; left: 80px; right: 80px; bottom: 100px; background: var(--koine-cream); border-radius: 24px; padding: 48px; display: flex; flex-direction: column; box-shadow: 0 24px 64px rgba(0,0,0,0.4); }
+  .ig-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+  .ig-logo { font-family: 'Times New Roman', serif; font-size: 22px; font-style: italic; color: var(--koine-charcoal); }
+  .ig-actions { display: flex; gap: 20px; }
+  .ig-icon { width: 24px; height: 24px; border: 2px solid var(--koine-charcoal); border-radius: 4px; position: relative; }
+  .ig-icon::after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 8px; height: 8px; border: 2px solid var(--koine-charcoal); border-radius: 50%; }
+  .card-content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .letter-pair { display: flex; align-items: baseline; gap: 24px; margin-bottom: 16px; }
+  .letter-upper { font-family: var(--font-greek); font-size: 200px; line-height: 0.85; color: var(--koine-accent); font-weight: 700; }
+  .letter-lower { font-family: var(--font-greek); font-size: 120px; line-height: 0.85; color: var(--koine-charcoal); opacity: 0.25; }
+  .letter-name { font-size: 48px; font-weight: 800; color: var(--koine-charcoal); margin-bottom: 8px; letter-spacing: -0.01em; }
+  .letter-sound { font-size: 22px; color: var(--koine-charcoal); opacity: 0.48; margin-bottom: 28px; font-weight: 400; }
+  .tagline { font-family: var(--font-serif); font-size: 26px; line-height: 1.55; color: var(--koine-charcoal-soft); font-style: italic; max-width: 650px; }
+  .ig-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(26,26,26,0.10); }
+  .ig-engagement { display: flex; gap: 20px; align-items: center; }
+  .ig-heart::before { content: '\2665'; font-size: 24px; color: var(--koine-accent); }
+  .ig-dots { display: flex; gap: 6px; margin-left: 40px; }
+  .ig-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(26,26,26,0.15); }
+  .ig-dot--active { background: var(--koine-accent); width: 24px; border-radius: 100px; }
+  .index-badge { position: absolute; top: 42px; left: 88px; font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.55); letter-spacing: 0.08em; }
+  .brand { position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); font-family: var(--font-greek); font-size: 38px; font-weight: 700; color: var(--koine-accent); opacity: 0.85; letter-spacing: 0.10em; line-height: 1; white-space: nowrap; }
+</style>
+</head>
+<body>
+  <div class="bg-dark"></div>
+  <div class="index-badge">{{LETTER_INDEX}}</div>
+  <div class="ig-card">
+    <div class="ig-header">
+      <span class="ig-logo">Instagram</span>
+      <div class="ig-actions">
+        <div class="ig-icon"></div>
+        <div class="ig-icon"></div>
+        <div class="ig-icon"></div>
+      </div>
+    </div>
+    <div class="card-content">
+      <div class="letter-pair">
+        <span class="letter-upper">{{LETTER_UPPER}}</span>
+        <span class="letter-lower">{{LETTER_LOWER}}</span>
+      </div>
+      <div class="letter-name">{{LETTER_NAME}}</div>
+      <div class="letter-sound">{{LETTER_SOUND}}</div>
+      <div class="tagline">{{TAGLINE}}</div>
+    </div>
+    <div class="ig-footer">
+      <div class="ig-engagement">
+        <span class="ig-heart"></span>
+        <div class="ig-dots">
+          <span class="ig-dot ig-dot--active"></span>
+          <span class="ig-dot"></span>
+          <span class="ig-dot"></span>
+          <span class="ig-dot"></span>
+          <span class="ig-dot"></span>
+        </div>
+      </div>
+      <div class="ig-bookmark" style="width:24px;height:28px;border:2px solid var(--koine-charcoal);border-radius:0 0 4px 4px;position:relative;"></div>
+    </div>
+  </div>
+  <div class="brand">&#922;&#959;&#953;&#957;&#942;</div>
+</body>
+</html>

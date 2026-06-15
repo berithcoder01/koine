@@ -1,0 +1,249 @@
+{
+  "version": "1.0",
+  "moduleId": "L06",
+  "moduleTitle": "Lição 6 — Nasais, Sigma e Letras Duplas",
+  "audioFile": "/audio/L06/L06.mp3",
+  "duration": 179.55,
+  "generatedAt": "2026-06-15T18:33:45.723604Z",
+  "narrationFile": "L06.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 6 — Nasais, Sigma e Letras Duplas",
+      "startTime": 0.0,
+      "endTime": 2.86
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Esta é a última lição do alfabeto. Hoje você vai completar as 24 letras com as nasais mu e nu, o sigma (com sua forma final), e as letras duplas zeta, xi e psi. Abra sua apostila na página 12.",
+      "startTime": 4.86,
+      "endTime": 16.9
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A primeira letra é o mu. Maiúsculo: Μ. Minúsculo: μ. O som é 'm', como em 'mar'.",
+      "startTime": 17.9,
+      "endTime": 23.25
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra μ. Acompanhe a animação na tela.",
+      "startTime": 23.75,
+      "endTime": 27.6
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o mu minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 28.1,
+      "endTime": 33.9
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "A segunda letra é o nu. Maiúsculo: Ν. Minúsculo: ν. O som é 'n', como em 'nós'.",
+      "startTime": 34.4,
+      "endTime": 39.85
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra ν. Acompanhe a animação na tela.",
+      "startTime": 40.35,
+      "endTime": 44.25
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o nu minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 44.75,
+      "endTime": 50.59
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "A terceira letra é o sigma. Maiúsculo: Σ. Minúsculo: σ. O sigma tem duas formas: σ (sigma normal) quando aparece no início ou meio da palavra, e ς (sigma final) quando aparece no final. Veja a diferen",
+      "startTime": 51.09,
+      "endTime": 70.3
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra σ. Acompanhe a animação na tela.",
+      "startTime": 70.8,
+      "endTime": 74.85
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o sigma minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 75.35,
+      "endTime": 81.45
+    },
+    {
+      "id": "exposicao_10",
+      "marker": "EXPOSICAO",
+      "text": "A quarta letra é o zeta. Maiúsculo: Ζ. Minúsculo: ζ. O som é 'z', como em 'zebra'.",
+      "startTime": 81.95,
+      "endTime": 88.02
+    },
+    {
+      "id": "exposicao_11",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra ζ. Acompanhe a animação na tela.",
+      "startTime": 88.52,
+      "endTime": 92.75
+    },
+    {
+      "id": "exposicao_12",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o zeta minúsculo oito vezes na linha 4 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 93.25,
+      "endTime": 99.6
+    },
+    {
+      "id": "exposicao_13",
+      "marker": "EXPOSICAO",
+      "text": "A quinta letra é o xi. Maiúsculo: Ξ. Minúsculo: ξ. O som é 'ks', como em 'táxi'.",
+      "startTime": 100.1,
+      "endTime": 105.62
+    },
+    {
+      "id": "exposicao_14",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra ξ. Acompanhe a animação na tela.",
+      "startTime": 106.12,
+      "endTime": 110.14
+    },
+    {
+      "id": "exposicao_15",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o xi minúsculo oito vezes na linha 5 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 110.64,
+      "endTime": 116.71
+    },
+    {
+      "id": "exposicao_16",
+      "marker": "EXPOSICAO",
+      "text": "A sexta letra é o psi. Maiúsculo: Ψ. Minúsculo: ψ. O som é 'ps', como em 'psicologia'.",
+      "startTime": 117.21,
+      "endTime": 123.34
+    },
+    {
+      "id": "exposicao_17",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra ψ. Acompanhe a animação na tela.",
+      "startTime": 123.84,
+      "endTime": 127.9
+    },
+    {
+      "id": "exposicao_18",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o psi minúsculo oito vezes na linha 6 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 128.4,
+      "endTime": 134.45
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Parabéns! Você acaba de aprender todas as 24 letras do alfabeto grego. O mesmo alfabeto que os discípulos de Jesus usavam. O mesmo alfabeto do apóstolo Paulo. Agora você pode começar a ler as primeira",
+      "startTime": 134.95,
+      "endTime": 154.38
+    },
+    {
+      "id": "ditado",
+      "marker": "DITADO",
+      "text": "Escreva no papel: mu.",
+      "startTime": 156.38,
+      "endTime": 157.87
+    },
+    {
+      "id": "ditado_2",
+      "marker": "DITADO",
+      "text": "Escreva no papel: nu.",
+      "startTime": 158.87,
+      "endTime": 160.4
+    },
+    {
+      "id": "ditado_3",
+      "marker": "DITADO",
+      "text": "Escreva no papel: sigma.",
+      "startTime": 161.4,
+      "endTime": 163.16
+    },
+    {
+      "id": "ditado_4",
+      "marker": "DITADO",
+      "text": "Escreva no papel: zeta.",
+      "startTime": 164.16,
+      "endTime": 165.9
+    },
+    {
+      "id": "ditado_5",
+      "marker": "DITADO",
+      "text": "Escreva no papel: xi.",
+      "startTime": 166.9,
+      "endTime": 168.38
+    },
+    {
+      "id": "ditado_6",
+      "marker": "DITADO",
+      "text": "Escreva no papel: psi.",
+      "startTime": 169.38,
+      "endTime": 170.9
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 6 — Nasais, Sigma e Letras Duplas! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 171.9,
+      "endTime": 178.55
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "exposicao_10",
+        "exposicao_11",
+        "exposicao_12",
+        "exposicao_13",
+        "exposicao_14",
+        "exposicao_15",
+        "exposicao_16",
+        "exposicao_17",
+        "exposicao_18",
+        "pausa",
+        "ditado",
+        "ditado_2",
+        "ditado_3",
+        "ditado_4",
+        "ditado_5",
+        "ditado_6"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

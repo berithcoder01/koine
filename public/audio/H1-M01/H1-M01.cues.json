@@ -1,0 +1,255 @@
+{
+  "version": "1.0",
+  "moduleId": "H1-M01",
+  "moduleTitle": "O Mediterrâneo no Século I — Por Que o Grego?",
+  "audioFile": "/audio/H1-M01/H1-M01.mp3",
+  "duration": 269.77,
+  "generatedAt": "2026-06-09T20:15:32.489639Z",
+  "narrationFile": "H1-M01.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "O Mediterrâneo no Século I — Por Que o Grego?",
+      "startTime": 0.0,
+      "endTime": 2.39
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Você está prestes a abrir um mapa que os autores do Novo Testamento tinham na cabeça quando escreveram. Não um mapa geográfico — um mapa de línguas, de impérios, de migrações. Um mapa que explica por ",
+      "startTime": 4.39,
+      "endTime": 26.92
+    },
+    {
+      "id": "transicao",
+      "marker": "TRANSICAO",
+      "text": "Primeiro: como o grego se tornou a língua do mundo mediterrâneo.",
+      "startTime": 27.92,
+      "endTime": 31.12
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Alexandre e o grego como língua global",
+      "startTime": 32.62,
+      "endTime": 35.81
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Alexandre Magno começou a conquistar o mundo aos 20 anos. Em 13 anos, do Egito à Índia, ele espalhou uma língua — o grego koiné. Não era o grego elegante de Platão. Era uma versão simplificada, mescla",
+      "startTime": 36.81,
+      "endTime": 75.6
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Paulo não precisou aprender idiomas para evangelizar. Alexandre já tinha feito esse trabalho 350 anos antes.",
+      "startTime": 76.1,
+      "endTime": 82.66
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "João, capítulo 12, versículos 20 e 21. \"Havia alguns gregos entre os que tinham subido para adorar na festa. Esses se aproximaram de Filipe... e lhe pediram: Senhor, queremos ver Jesus.\"",
+      "startTime": 84.16,
+      "endTime": 94.93
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Alexandre deu ao NT sua língua. Mas quem falava essa língua fora da Grécia?",
+      "startTime": 96.43,
+      "endTime": 100.88
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — A Diáspora Judaica e o grego koiné",
+      "startTime": 102.38,
+      "endTime": 105.59
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Após as conquistas assíria, em 722 a.C., e babilônica, em 586 a.C., judeus se espalharam por todo o Mediterrâneo. Na época de Jesus, estimava-se que mais judeus viviam fora da Palestina do que dentro ",
+      "startTime": 106.59,
+      "endTime": 141.44
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "A maioria dos judeus do tempo de Jesus falava grego como primeira língua. O aramaico era a língua do lar; o grego, a língua do comércio e da fé.",
+      "startTime": 141.94,
+      "endTime": 149.36
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "A língua estava pronta. As comunidades estavam espalhadas. Faltava um império que mantivesse tudo conectado.",
+      "startTime": 150.86,
+      "endTime": 156.67
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Augusto e a Pax Romana",
+      "startTime": 158.17,
+      "endTime": 160.69
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "César Augusto é o imperador no trono quando Jesus nasce. A Pax Romana — paz romana — não era paz no sentido moderno. Era a supressão violenta de toda resistência. Mas seu efeito prático era estabilida",
+      "startTime": 161.69,
+      "endTime": 202.92
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "A logística do Império Romano moveu uma família grávida 120 quilômetros — de Nazaré a Belém — para que uma profecia de Miqueias, capítulo 5, versículo 2, se cumprisse.",
+      "startTime": 203.42,
+      "endTime": 213.78
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "Lucas, capítulo 2, versículos 1 a 7. \"Aconteceu que naqueles dias saiu um decreto de César Augusto para que todo o mundo fosse recenseado. Isto foi quando Quirínio era governador da Síria. E todos iam",
+      "startTime": 215.28,
+      "endTime": 230.23
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora, vamos testar o que você aprendeu sobre o mundo que viu Jesus nascer.",
+      "startTime": 231.73,
+      "endTime": 235.58
+    },
+    {
+      "id": "unidade",
+      "marker": "UNIDADE",
+      "text": "Aplicação",
+      "startTime": 237.08,
+      "endTime": 237.94
+    },
+    {
+      "id": "transicao_2",
+      "marker": "TRANSICAO",
+      "text": "Última questão deste módulo.",
+      "startTime": 238.94,
+      "endTime": 240.5
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Você acabou de percorrer 400 anos de história — das conquistas de Alexandre até o censo de Augusto. Viu como o grego se tornou a língua do NT, como a diáspora judaica criou comunidades onde o evangelh",
+      "startTime": 242.0,
+      "endTime": 268.77
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_trans_app",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "H1-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "H1-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica"
+      ],
+      "unitId": "H1-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "H1-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "H1-M01-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "H1-M01-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "unidade"
+      ],
+      "unitId": "H1-M01-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao_2"
+      ],
+      "unitId": "H1-M01-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

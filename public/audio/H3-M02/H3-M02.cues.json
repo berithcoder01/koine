@@ -1,0 +1,153 @@
+{
+  "version": "1.0",
+  "moduleId": "H3-M02",
+  "moduleTitle": "Modulo H3-M02: Joao — Efeso, a Comunidade Joanina e o Evangelho do Amor",
+  "audioFile": "/audio/H3-M02/H3-M02.mp3",
+  "duration": 171.07,
+  "generatedAt": "2026-06-12T16:14:37.068219Z",
+  "narrationFile": "H3-M02.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo H3-M02: Joao — Efeso, a Comunidade Joanina e o Evangelho do Amor",
+      "startTime": 0.0,
+      "endTime": 5.31
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Dos doze apostolos, Joao viveu mais tempo. Foi para Efeso, a maior cidade da Asia Menor, e la pastoreou uma comunidade que produziu um Evangelho radicalmente diferente dos outros. Neste modulo, voce v",
+      "startTime": 7.31,
+      "endTime": 21.82
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Joao filho de Zebedeu: da Galileia a Efeso",
+      "startTime": 22.82,
+      "endTime": 26.32
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A tradicao antiga registra que Joao viveu em Efeso ate idade avancada, cerca de 95 a 100 d.C., e que Maria, a mae de Jesus, foi com ele. Efeso era a maior cidade da Asia Menor capital da provincia, ce",
+      "startTime": 27.32,
+      "endTime": 55.47
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — O Evangelho de Joao: diferencas e teologia",
+      "startTime": 55.97,
+      "endTime": 59.58
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Joao e radicalmente diferente dos Sinoticos. Nao tem parabolas — as historias mais famosas de Jesus sao todas de Mateus, Marcos e Lucas. Em vez disso, Joao tem longos discursos e sete sinais, milagres",
+      "startTime": 60.58,
+      "endTime": 97.33
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "Joao, capitulo 1, versiculo 1. \"No principio era o Logos, e o Logos estava com Deus, e o Logos era Deus.\"",
+      "startTime": 97.83,
+      "endTime": 103.94
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "E o Apocalipse? Escrito no exilio, em linguagem codificada.",
+      "startTime": 105.44,
+      "endTime": 109.06
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — O Apocalipse: Patmos, as sete igrejas e o contexto",
+      "startTime": 110.56,
+      "endTime": 114.73
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O Apocalipse foi escrito em Patmos, uma ilha Grega a 60 quilometros de Efeso, usada pelos romanos como local de exilio. Joao estava la por causa da palavra de Deus e do testemunho de Jesus — sob perse",
+      "startTime": 115.73,
+      "endTime": 149.47
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "Apocalipse, capitulo 1, versiculo 9. \"Eu, Joao, vosso irmao e companheiro na tribulacao, estava na ilha de Patmos.\"",
+      "startTime": 149.97,
+      "endTime": 157.27
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo H3-M02 concluido. Joao, o apostolo que viveu mais tempo, nos deu o Evangelho mais profundo. No proximo modulo, Lucas — o medico historiador que escreveu um quarto do Novo Testamento.",
+      "startTime": 158.77,
+      "endTime": 170.07
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao"
+      ],
+      "unitId": "H3-M02-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_versiculo"
+      ],
+      "unitId": "H3-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "H3-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_versiculo"
+      ],
+      "unitId": "H3-M02-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

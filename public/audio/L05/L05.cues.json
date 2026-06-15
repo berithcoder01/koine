@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "moduleId": "L05",
+  "moduleTitle": "Lição 5 — Velares e Líquidas",
+  "audioFile": "/audio/L05/L05.mp3",
+  "duration": 129.85,
+  "generatedAt": "2026-06-15T18:30:43.042754Z",
+  "narrationFile": "L05.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 5 — Velares e Líquidas",
+      "startTime": 0.0,
+      "endTime": 2.07
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Hoje vamos aprender cinco letras: as velares (produzidas no fundo da garganta) gama, capa e chi, e as líquidas lambda e rô. Abra sua apostila na página 9.",
+      "startTime": 4.07,
+      "endTime": 12.92
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A primeira letra é o gama. Maiúsculo: Γ. Minúsculo: γ. O som é 'g', como em 'gato'.",
+      "startTime": 13.92,
+      "endTime": 19.76
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra γ. Acompanhe a animação na tela.",
+      "startTime": 20.26,
+      "endTime": 24.21
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o gama minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 24.71,
+      "endTime": 30.49
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "A segunda letra é o capa. Maiúsculo: Κ. Minúsculo: κ. O som é 'k', como em 'casa'.",
+      "startTime": 30.99,
+      "endTime": 36.74
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra κ. Acompanhe a animação na tela.",
+      "startTime": 37.24,
+      "endTime": 41.44
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o capa minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 41.94,
+      "endTime": 47.97
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "A terceira letra é o chi. Maiúsculo: Χ. Minúsculo: χ. O som é 'ch' aspirado, como 'Bach' em alemão.",
+      "startTime": 48.47,
+      "endTime": 54.9
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra χ. Acompanhe a animação na tela.",
+      "startTime": 55.4,
+      "endTime": 59.4
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o chi minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 59.9,
+      "endTime": 65.87
+    },
+    {
+      "id": "exposicao_10",
+      "marker": "EXPOSICAO",
+      "text": "A quarta letra é o lambda. Maiúsculo: Λ. Minúsculo: λ. O som é 'l', como em 'lua'.",
+      "startTime": 66.37,
+      "endTime": 72.02
+    },
+    {
+      "id": "exposicao_11",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra λ. Acompanhe a animação na tela.",
+      "startTime": 72.52,
+      "endTime": 76.56
+    },
+    {
+      "id": "exposicao_12",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o lambda minúsculo oito vezes na linha 4 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 77.06,
+      "endTime": 83.07
+    },
+    {
+      "id": "exposicao_13",
+      "marker": "EXPOSICAO",
+      "text": "A quinta letra é o rô. Maiúsculo: Ρ. Minúsculo: ρ. O som é 'r' vibrante, como em 'rato'.",
+      "startTime": 83.57,
+      "endTime": 89.63
+    },
+    {
+      "id": "exposicao_14",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra ρ. Acompanhe a animação na tela.",
+      "startTime": 90.13,
+      "endTime": 94.06
+    },
+    {
+      "id": "exposicao_15",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o rô minúsculo oito vezes na linha 5 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 94.56,
+      "endTime": 100.51
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Muito bem! Você aprendeu as velares e líquidas. Antes de continuar, olhe para o que escreveu nas cinco linhas e compare com o modelo.",
+      "startTime": 101.01,
+      "endTime": 108.19
+    },
+    {
+      "id": "ditado",
+      "marker": "DITADO",
+      "text": "Escreva no papel: gama.",
+      "startTime": 110.19,
+      "endTime": 111.78
+    },
+    {
+      "id": "ditado_2",
+      "marker": "DITADO",
+      "text": "Escreva no papel: capa.",
+      "startTime": 112.78,
+      "endTime": 114.41
+    },
+    {
+      "id": "ditado_3",
+      "marker": "DITADO",
+      "text": "Escreva no papel: chi.",
+      "startTime": 115.41,
+      "endTime": 116.92
+    },
+    {
+      "id": "ditado_4",
+      "marker": "DITADO",
+      "text": "Escreva no papel: lambda.",
+      "startTime": 117.92,
+      "endTime": 119.55
+    },
+    {
+      "id": "ditado_5",
+      "marker": "DITADO",
+      "text": "Escreva no papel: rô.",
+      "startTime": 120.55,
+      "endTime": 122.0
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 5 — Velares e Líquidas! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 123.0,
+      "endTime": 128.85
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "exposicao_10",
+        "exposicao_11",
+        "exposicao_12",
+        "exposicao_13",
+        "exposicao_14",
+        "exposicao_15",
+        "pausa",
+        "ditado",
+        "ditado_2",
+        "ditado_3",
+        "ditado_4",
+        "ditado_5"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

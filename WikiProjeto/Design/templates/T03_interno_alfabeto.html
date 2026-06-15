@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!--
+  TEMPLATE T03 — SLIDE INTERNO CARROSSEL ALFABETO (v1 Editorial)
+  Formato: SQ 1080×1080  |  Estilo: Editorial Spread
+  Propósito: Ensinar um aspecto da letra (origem, palavra-exemplo, versículo)
+
+  Metodologia: ORQUESTRADOR_EDITORIAL.md — Secões 1.1 A-E
+  Tom: Professor explicando com profundidade, não dicionário
+
+  SLOTS:
+    {{SLIDE_TOPIC}}        -> ex: "Como se escreve" / "Palavra-exemplo" / "No Texto"
+    {{SLIDE_CURRENT}}      -> ex: "2"
+    {{SLIDE_TOTAL}}        -> ex: "5"
+    {{LEFT_PRIMARY}}       -> HTML: letra grande ou palavra grega (ex: "Α α" ou "ἀγάπη")
+    {{LEFT_SECONDARY}}     -> HTML: texto auxiliar abaixo do visual (ex: "= amor" ou "som /a/")
+    {{MAIN_TITLE}}         -> ex: "De onde vem o Alfa"
+    {{SECTION_A_LABEL}}    -> ex: "Origem"
+    {{SECTION_A_TEXT}}     -> ex: "Vem do aleph semítico... há 3.500 anos"
+    {{SECTION_B_LABEL}}    -> ex: "Forma"
+    {{SECTION_B_TEXT}}     -> ex: "Maiúscula idêntica ao A do português..."
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --koine-primary: #26422A;
+    --koine-accent: #EA662C;
+    --koine-cream: #FAF6EE;
+    --koine-charcoal: #1A1A1A;
+    --koine-charcoal-soft: #42302D;
+    --koine-white: #FFFFFF;
+    --font-greek: 'Gentium Plus', serif;
+    --font-serif: 'Libre Baskerville', serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; overflow: hidden; background-color: var(--koine-cream); font-family: var(--font-sans); position: relative; }
+
+  /* Grid editorial 2 colunas */
+  .editorial-grid { position: absolute; inset: 0; display: grid; grid-template-columns: 340px 1fr; }
+  .bg-texture { position: absolute; inset: 0; background: radial-gradient(ellipse at 80% 20%, rgba(234,102,44,0.05) 0%, transparent 40%), radial-gradient(ellipse at 20% 80%, rgba(38,66,42,0.04) 0%, transparent 40%); pointer-events: none; }
+
+  /* Coluna esquerda — visual hero */
+  .left-col { background: var(--koine-primary); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+  .left-col::before { content: ''; position: absolute; inset: 0; background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='60' height='60' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E"); pointer-events: none; }
+  .left-primary { font-family: var(--font-greek); font-size: 120px; line-height: 1; color: var(--koine-white); opacity: 0.92; position: relative; z-index: 1; text-align: center; }
+  .left-secondary { margin-top: 16px; font-size: 18px; font-weight: 500; color: var(--koine-white); opacity: 0.50; letter-spacing: 0.06em; text-align: center; line-height: 1.6; position: relative; z-index: 1; }
+
+  /* Coluna direita — conteúdo editorial */
+  .right-col { padding: 64px 56px 56px 48px; display: flex; flex-direction: column; position: relative; z-index: 1; }
+
+  /* Header */
+  .content-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+  .slide-label { font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--koine-accent); }
+  .pagination { display: flex; gap: 6px; align-items: center; }
+  .page-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(26,26,26,0.15); }
+  .page-dot--active { background: var(--koine-accent); width: 24px; border-radius: 100px; }
+
+  /* Main title */
+  .main-title { font-family: var(--font-serif); font-size: 36px; font-weight: 700; color: var(--koine-primary); margin-bottom: 32px; line-height: 1.3; }
+
+  /* Sections */
+  .section { margin-bottom: 28px; }
+  .section-label { font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--koine-accent); margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+  .section-label::after { content: ''; flex: 1; height: 1px; background: rgba(234,102,44,0.20); }
+  .section-text { font-size: 20px; line-height: 1.70; color: var(--koine-charcoal-soft); }
+  .section-text strong { color: var(--koine-primary); font-weight: 700; }
+
+  /* Divider */
+  .section-divider { width: 40px; height: 2px; background: rgba(234,102,44,0.25); margin: 24px 0; }
+
+  /* Footer */
+  .content-footer { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 20px; border-top: 1px solid rgba(38,66,42,0.10); }
+  .footer-page { font-size: 14px; color: var(--koine-charcoal); opacity: 0.35; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .brand { font-family: var(--font-greek); font-size: 38px; font-weight: 700; color: var(--koine-accent); opacity: 0.85; letter-spacing: 0.10em; }
+</style>
+</head>
+<body>
+  <div class="bg-texture"></div>
+  <div class="editorial-grid">
+    <div class="left-col">
+      <div class="left-primary">{{LEFT_PRIMARY}}</div>
+      <div class="left-secondary">{{LEFT_SECONDARY}}</div>
+    </div>
+    <div class="right-col">
+      <div class="content-header">
+        <span class="slide-label">{{SLIDE_TOPIC}}</span>
+        <div class="pagination">
+          <span class="page-dot"></span>
+          <span class="page-dot page-dot--active"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+          <span class="page-dot"></span>
+        </div>
+      </div>
+
+      <div class="main-title">{{MAIN_TITLE}}</div>
+
+      <div class="section">
+        <div class="section-label">{{SECTION_A_LABEL}}</div>
+        <div class="section-text">{{SECTION_A_TEXT}}</div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="section">
+        <div class="section-label">{{SECTION_B_LABEL}}</div>
+        <div class="section-text">{{SECTION_B_TEXT}}</div>
+      </div>
+
+      <div class="content-footer">
+        <span class="footer-page">{{SLIDE_CURRENT}} / {{SLIDE_TOTAL}}</span>
+        <span class="brand">&#922;&#959;&#953;&#957;&#942;</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

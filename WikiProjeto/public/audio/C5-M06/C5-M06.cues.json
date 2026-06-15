@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C5-M06",
+  "moduleTitle": "do Ciclo 5: Pronomes Demonstrativos — ekeinos",
+  "audioFile": "/audio/C5-M06/C5-M06.mp3",
+  "duration": 181.5,
+  "generatedAt": "2026-06-14T22:12:37.366731Z",
+  "narrationFile": "C5-M06.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 6 do Ciclo 5: Pronomes Demonstrativos — ekeinos",
+      "startTime": 0.0,
+      "endTime": 3.9
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "No modulo anterior, voce aprendeu houtos — \"este\". Agora vai aprender seu oposto: ekeinos — \"aquele\". O paradigma de ekeinos e mais regular que o de houtos, e seu uso no Novo Testamento tem nuances te",
+      "startTime": 5.9,
+      "endTime": 18.46
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — O paradigma de ekeinos",
+      "startTime": 19.46,
+      "endTime": 21.62
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Ekeinos e o demonstrativo de distancia — \"aquele\". O paradigma e regular: segue o padrao de agathos, com masculino em \"os\", feminino em \"e\" com eta, neutro em \"o\". Paradigma completo: nominativo ekein",
+      "startTime": 22.62,
+      "endTime": 51.78
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Ekeinos e mais facil de declinar que houtos — segue o padrao regular de adjetivos. A unica diferenca e o acento no \"e\" inicial.",
+      "startTime": 52.28,
+      "endTime": 59.62
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "ekeinon dei auxanein, eme de elattousthai — Joao, capitulo 3, versiculo 30.",
+      "startTime": 61.12,
+      "endTime": 65.91
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora vamos comparar houtos e ekeinos no uso do Novo Testamento.",
+      "startTime": 67.41,
+      "endTime": 70.87
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Houtos vs. Ekeinos",
+      "startTime": 72.37,
+      "endTime": 75.01
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A distincao entre houtos e ekeinos nao e apenas espacial. Em grego, houtos tende a referir-se ao topico PRINCIPAL ou mais RECENTE, enquanto ekeinos marca contraste ou distanciamento. Em Joao 3 versicu",
+      "startTime": 76.01,
+      "endTime": 105.13
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Quando Joao usa ekeinos para Jesus, ha um tom de reverencia e distancia — \"Aquele que veio de cima.\"",
+      "startTime": 105.63,
+      "endTime": 111.02
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "ekeinon dei auxanein, eme de elattousthai — Joao, capitulo 3, versiculo 30.",
+      "startTime": 112.52,
+      "endTime": 117.48
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora vamos ver o uso teologico de ekeinos para Jesus em Joao.",
+      "startTime": 118.98,
+      "endTime": 122.15
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Ekeinos em Joao",
+      "startTime": 123.65,
+      "endTime": 125.69
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Joao usa ekeinos para Jesus em passagens-chave, criando um efeito teologico de \"alteridade\" — Jesus e o OUTRO, o que veio do Pai. Em Primeira Joao 3 versiculo 5: \"ekeinos ephanerothe\" — \"Ele se manife",
+      "startTime": 126.69,
+      "endTime": 154.47
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Preste atencao quando Joao troca de houtos para ekeinos. Geralmente ha uma mudanca teologica — nao apenas gramatical.",
+      "startTime": 154.97,
+      "endTime": 161.25
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "ekeinos ephanerothe, hina tas hamartias are — Primeira Joao, capitulo 3, versiculo 5.",
+      "startTime": 162.75,
+      "endTime": 168.35
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens! Voce aprendeu o demonstrativo de distancia ekeinos e sua importância teologica em Joao. No proximo modulo, voce vai aprender os pronomes relativos: hos, he, ho. Ate la!",
+      "startTime": 169.85,
+      "endTime": 180.5
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C5-M06-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C5-M06-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C5-M06-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C5-M06-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C5-M06-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

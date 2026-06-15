@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C3-M04",
+  "moduleTitle": "do Ciclo 3: Revisao dos Casos — Joao 14:6",
+  "audioFile": "/audio/C3-M04/C3-M04.mp3",
+  "duration": 261.71,
+  "generatedAt": "2026-06-12T18:06:14.643467Z",
+  "narrationFile": "C3-M04.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 4 do Ciclo 3: Revisao dos Casos — Joao 14:6",
+      "startTime": 0.0,
+      "endTime": 4.27
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Modulo 4 do Ciclo 3. Este e um modulo de revisao. Voce ja aprendeu os quatro casos do grego koiné: nominativo, acusativo, genitivo e dativo. Agora e hora de juntar tudo em uma tabela comp",
+      "startTime": 6.27,
+      "endTime": 30.63
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Tabela completa do artigo singular",
+      "startTime": 31.63,
+      "endTime": 34.31
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Esta e a tabela completa do artigo definido singular nos quatro casos. Masculino: nominativo \"ho\", acusativo \"ton\", genitivo \"tou\", dativo \"to\". Feminino: nominativo \"he\", acusativo \"ten\", genitivo \"t",
+      "startTime": 35.31,
+      "endTime": 66.69
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Memorize a sequencia de cada genero como uma musica: masc = ho, ton, tou, to — fem = he, ten, tes, te — neutro = to, to, tou, to. O neutro e o mais facil: so tem tres formas diferentes.",
+      "startTime": 67.19,
+      "endTime": 79.69
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "pisteuomen to theo — Primeira Pedro, capitulo 1, versiculo 21.",
+      "startTime": 81.19,
+      "endTime": 85.19
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora que voce revisou o artigo, vamos aplica-lo ao substantivo modelo da segunda declinacao.",
+      "startTime": 86.69,
+      "endTime": 91.92
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Paradigma da segunda declinacao: logos",
+      "startTime": 93.42,
+      "endTime": 96.79
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Este e o paradigma completo da segunda declinacao masculina singular, usando \"logos\" como modelo. Os quatro casos sao: nominativo \"logos\" com terminacao \"os\" para o sujeito, acusativo \"logon\" com term",
+      "startTime": 97.79,
+      "endTime": 133.75
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Os paradigmas sao sua ferramenta mais poderosa. Decore \"logos, logon, logou, logo\" como uma sequencia. Substantivos masculinos da segunda declinacao que terminam em \"os\" seguem exatamente este modelo.",
+      "startTime": 134.25,
+      "endTime": 145.45
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "en arche en ho logos — Joao, capitulo 1, versiculo 1.",
+      "startTime": 146.95,
+      "endTime": 150.39
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Agora a Aula do Versiculo: uma das declaracoes mais famosas de Jesus.",
+      "startTime": 151.89,
+      "endTime": 156.76
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Aula do Versiculo: Joao 14:6",
+      "startTime": 158.26,
+      "endTime": 161.84
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Joao capitulo 14 versiculo 6: \"legei auto Iesous ego eimi he hodos kai he aletheia kai he zoe\" — \"Diz-lhe Jesus: Eu sou o caminho e a verdade e a vida\". Analise gramatical completa: \"legei\" e terceira",
+      "startTime": 162.84,
+      "endTime": 214.62
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "\"Hodos\" e o substantivo mais famoso que e segunda declinacao mas feminino. Memorize: se termina em \"os\", geralmente e masculino, mas ha excecoes — e o artigo revela o genero verdadeiro. \"He hodos\" sig",
+      "startTime": 215.12,
+      "endTime": 228.06
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "legei auto Iesous ego eimi he hodos kai he aletheia kai he zoe — Joao, capitulo 14, versiculo 6.",
+      "startTime": 229.56,
+      "endTime": 235.87
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens por completar o Modulo 4 do Ciclo 3! Voce revisou a tabela completa do artigo nos quatro casos, aprendeu o paradigma da segunda declinacao com \"logos\" como modelo, e leu Joao capitulo 14 vers",
+      "startTime": 237.37,
+      "endTime": 260.71
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C3-M04-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C3-M04-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C3-M04-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C3-M04-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C3-M04-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

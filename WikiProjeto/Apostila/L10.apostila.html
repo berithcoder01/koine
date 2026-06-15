@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Koine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Apostila L10 — Palavra e Ação (λόγος, ῥῆμα, γράφω, λέγω, ποιέω)</h1>
+<p><strong>ID:</strong> apostila-L10
+<strong>Título:</strong> Lição 10 — Palavra e Ação
+<strong>Descrição:</strong> λόγος, ῥῆμα, γράφω, λέγω, ποιέω
+<strong>Página:</strong> 21
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 40</p>
+<hr>
+<h2>Step 1: intro</h2>
+<p><strong>Tipo:</strong> Introdução da lição
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Lição 10 — Palavra e ação. Hoje você vai aprender verbos e substantivos fundamentais: lógos, rhema, grápho, légo e poiéo. Palavras que nos ensinam como Deus se comunica e age. Abra sua apostila na página 21.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;Abra sua apostila na Página 21&quot;
+</code></pre>
+<hr>
+<h2>Step 2: word_intro — λόγος</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;λόγος (lógos) — palavra / razão / discurso. No princípio era o Verbo, e o Verbo estava com Deus. A razão que ordena o cosmos.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;λόγος — Palavra&quot;
+</code></pre>
+<p><strong>Grego:</strong> λόγος
+<strong>Transliteração:</strong> lógos
+<strong>Pronúncia:</strong> LÓ-gos
+<strong>Significado:</strong> Palavra / Razão / Discurso
+<strong>Etiologia:</strong> Raiz *leg-, colher/ordenar; na filosofia grega, a razão que ordena o cosmos
+<strong>Contexto Bíblico:</strong> João 1:1 — &quot;No princípio era o Verbo (Λόγος), e o Verbo estava com Deus&quot;</p>
+<hr>
+<h2>Step 3: write_practice — λόγος</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> λόγος × 5
+<strong>Instrução:</strong> &quot;Linha 1 da apostila — λόγος&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva λόγος cinco vezes na linha 1. Pronuncie: LÓ-gos.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 4: word_intro — ῥῆμα</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ῥῆμα (rhēma) — palavra falada / declaração. A fé vem pelo ouvir, e o ouvir pela palavra de Deus. É a palavra como evento sonoro.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;ῥῆμα — Palavra Falada&quot;
+</code></pre>
+<p><strong>Grego:</strong> ῥῆμα
+<strong>Transliteração:</strong> rhēma
+<strong>Pronúncia:</strong> RÊ-ma
+<strong>Significado:</strong> Palavra Falada / Declaração
+<strong>Etiologia:</strong> De ῥέω, fluir; é a palavra como evento sonoro, o que foi dito em um momento específico
+<strong>Contexto Bíblico:</strong> Romanos 10:17 — &quot;A fé vem pelo ouvir, e o ouvir pela palavra (ῥήματος) de Deus&quot;</p>
+<hr>
+<h2>Step 5: write_practice — ῥῆμα</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> ῥῆμα × 5
+<strong>Instrução:</strong> &quot;Linha 2 da apostila — ῥῆμα&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva ῥῆμα cinco vezes na linha 2. Pronuncie: RÊ-ma.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 6: word_intro — γράφω</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;γράφω (gráphō) — escrever. Jesus fez muitos outros sinais... que não estão escritos neste livro. Deu origem a &#39;grafia&#39;, &#39;gráfico&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;γράφω — Escrever&quot;
+</code></pre>
+<p><strong>Grego:</strong> γράφω
+<strong>Transliteração:</strong> gráphō
+<strong>Pronúncia:</strong> GRÁ-fo
+<strong>Significado:</strong> Escrever
+<strong>Etiologia:</strong> Deu origem a &quot;grafia&quot;, &quot;gráfico&quot;, &quot;gravura&quot;; inicialmente significava riscar, desenhar
+<strong>Contexto Bíblico:</strong> João 20:30 — &quot;Jesus fez muitos outros sinais... que não estão escritos (γεγραμμένα) neste livro&quot;</p>
+<hr>
+<h2>Step 7: write_practice — γράφω</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> γράφω × 5
+<strong>Instrução:</strong> &quot;Linha 3 da apostila — γράφω&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva γράφω cinco vezes na linha 3. Pronuncie: GRÁ-fo.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 8: word_intro — λέγω</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;λέγω (légō) — dizer / falar. Eis o Cordeiro de Deus, que tira o pecado do mundo — disse João. Um dos verbos mais frequentes do NT.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;λέγω — Dizer&quot;
+</code></pre>
+<p><strong>Grego:</strong> λέγω
+<strong>Transliteração:</strong> légō
+<strong>Pronúncia:</strong> LÉ-go
+<strong>Significado:</strong> Dizer / Falar
+<strong>Etiologia:</strong> Um dos verbos mais frequentes do NT (~2.350 ocorrências); base de λόγος
+<strong>Contexto Bíblico:</strong> João 1:29 — &quot;Eis o Cordeiro de Deus, que tira o pecado do mundo&quot; — disse (λέγει) João</p>
+<hr>
+<h2>Step 9: write_practice — λέγω</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> λέγω × 5
+<strong>Instrução:</strong> &quot;Linha 4 da apostila — λέγω&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva λέγω cinco vezes na linha 4. Pronuncie: LÉ-go.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 10: word_intro — ποιέω</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ποιέω (poiéō) — fazer / criar / agir. Jesus fez este primeiro sinal em Caná. Deu origem a &#39;poema&#39; (ποίημα): obra-prima.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;ποιέω — Fazer&quot;
+</code></pre>
+<p><strong>Grego:</strong> ποιέω
+<strong>Transliteração:</strong> poiéō
+<strong>Pronúncia:</strong> poi-É-o
+<strong>Significado:</strong> Fazer / Criar / Agir
+<strong>Etiologia:</strong> Deu origem ao inglês &quot;poem&quot; (ποίημα); o que é criado/feito. Efésios 2:10: ποίημα (obra-prima)
+<strong>Contexto Bíblico:</strong> João 2:11 — &quot;Jesus fez (ἐποίησεν) este primeiro sinal em Caná&quot;</p>
+<hr>
+<h2>Step 11: write_practice — ποιέω</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> ποιέω × 5
+<strong>Instrução:</strong> &quot;Linha 5 da apostila — ποιέω&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva ποιέω cinco vezes na linha 5. Pronuncie: poi-É-o.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 12: pause</h2>
+<p><strong>Tipo:</strong> Pausa para reflexão
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Excelente! Você aprendeu palavras que descrevem como Deus se revela: pela Palavra e pela ação.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>Releia as cinco palavras na sua apostila.
+Quando estiver pronto, continue.
+</code></pre>
+<hr>
+<h2>Step 13: dictation — λόγος</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;palavra&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;palavra&quot;
+<strong>Resposta Esperada:</strong> λόγος</p>
+<hr>
+<h2>Step 14: dictation — ῥῆμα</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;palavra falada&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;palavra falada&quot;
+<strong>Resposta Esperada:</strong> ῥῆμα</p>
+<hr>
+<h2>Step 15: dictation — γράφω</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;escrever&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;escrever&quot;
+<strong>Resposta Esperada:</strong> γράφω</p>
+<hr>
+<h2>Step 16: dictation — λέγω</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;dizer&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;dizer&quot;
+<strong>Resposta Esperada:</strong> λέγω</p>
+<hr>
+<h2>Step 17: dictation — ποιέω</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;fazer&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;fazer&quot;
+<strong>Resposta Esperada:</strong> ποιέω</p>
+<hr>
+<h2>Fim da Lição L10</h2>
+<p>Parabéns! Você concluiu <strong>Lição 10 — Palavra e Ação (λόγος, ῥῆμα, γράφω, λέγω, ποιέω)</strong>.</p>
+<p><strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> λόγος (palavra)</li>
+<li><input disabled="" type="checkbox"> ῥῆμα (palavra falada)</li>
+<li><input disabled="" type="checkbox"> γράφω (escrever)</li>
+<li><input disabled="" type="checkbox"> λέγω (dizer)</li>
+<li><input disabled="" type="checkbox"> ποιέω (fazer)</li>
+</ul>
+
+</body>
+</html>

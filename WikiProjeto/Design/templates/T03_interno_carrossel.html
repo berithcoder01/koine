@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!--
+  TEMPLATE T03 — SLIDE INTERNO DO CARROSSEL (v5 App Features)
+  Formato: SQ 1080×1080  |  Estilo: Feature Showcase
+  Propósito: Mostrar uma funcionalidade do app por slide
+
+  SLOTS:
+    {{FEATURE_ICON}}        -> ex: "📖" (emoji ou Unicode)
+    {{FEATURE_TITLE}}       -> ex: "Modo Interlinear"
+    {{FEATURE_DESCRIPTION}} -> ex: "Leia o Novo Testamento em grego com tradução palavra a palavra"
+    {{FEATURE_DETAIL}}      -> ex: "Toque em qualquer palavra para ver a definição completa"
+    {{SLIDE_CURRENT}}       -> ex: "2"
+    {{SLIDE_TOTAL}}         -> ex: "5"
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --koine-primary: #26422A;
+    --koine-accent: #EA662C;
+    --koine-cream: #FAF6EE;
+    --koine-charcoal: #1A1A1A;
+    --koine-charcoal-soft: #42302D;
+    --koine-white: #FFFFFF;
+    --font-greek: 'Gentium Plus', serif;
+    --font-serif: 'Libre Baskerville', serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; overflow: hidden; background-color: var(--koine-cream); font-family: var(--font-sans); position: relative; }
+
+  /* Background texture */
+  .bg-texture { position: absolute; inset: 0; background-image: radial-gradient(ellipse at 80% 20%, rgba(234,102,44,0.06) 0%, transparent 40%), radial-gradient(ellipse at 20% 80%, rgba(38,66,42,0.04) 0%, transparent 40%); pointer-events: none; }
+
+  /* Layout */
+  .layout { position: relative; z-index: 1; width: 1080px; height: 1080px; display: flex; flex-direction: column; padding: 56px 88px; }
+
+  /* Header */
+  .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 48px; }
+  .slide-label { font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--koine-accent); }
+  .pagination { display: flex; gap: 6px; align-items: center; }
+  .page-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(26,26,26,0.15); }
+  .page-dot--active { background: var(--koine-accent); width: 24px; border-radius: 100px; }
+
+  /* Feature area */
+  .feature-area { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+  .feature-icon { font-size: 80px; margin-bottom: 32px; line-height: 1; }
+  .feature-title { font-family: var(--font-serif); font-size: 48px; font-weight: 700; color: var(--koine-primary); margin-bottom: 24px; line-height: 1.2; }
+  .feature-desc { font-size: 22px; line-height: 1.70; color: var(--koine-charcoal-soft); max-width: 700px; margin-bottom: 32px; }
+  .feature-detail { display: inline-flex; align-items: center; gap: 12px; background: var(--koine-primary); color: var(--koine-white); padding: 16px 32px; border-radius: 100px; font-size: 16px; font-weight: 600; letter-spacing: 0.04em; }
+  .detail-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--koine-accent); flex-shrink: 0; }
+
+  /* Footer */
+  .footer { display: flex; justify-content: space-between; align-items: center; padding-top: 24px; border-top: 1px solid rgba(38,66,42,0.10); }
+  .footer-page { font-size: 14px; color: var(--koine-charcoal); opacity: 0.35; font-weight: 600; }
+  .brand { font-family: var(--font-greek); font-size: 38px; font-weight: 700; color: var(--koine-accent); opacity: 0.85; letter-spacing: 0.10em; }
+</style>
+</head>
+<body>
+  <div class="bg-texture"></div>
+  <div class="layout">
+    <div class="header">
+      <span class="slide-label">Slide {{SLIDE_CURRENT}} de {{SLIDE_TOTAL}}</span>
+      <div class="pagination">
+        <span class="page-dot"></span>
+        <span class="page-dot page-dot--active"></span>
+        <span class="page-dot"></span>
+        <span class="page-dot"></span>
+        <span class="page-dot"></span>
+      </div>
+    </div>
+
+    <div class="feature-area">
+      <div class="feature-icon">{{FEATURE_ICON}}</div>
+      <div class="feature-title">{{FEATURE_TITLE}}</div>
+      <div class="feature-desc">{{FEATURE_DESCRIPTION}}</div>
+      <div class="feature-detail">
+        <span class="detail-dot"></span>
+        {{FEATURE_DETAIL}}
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="footer-page">{{SLIDE_CURRENT}} / {{SLIDE_TOTAL}}</span>
+      <span class="brand">&#922;&#959;&#953;&#957;&#942;</span>
+    </div>
+  </div>
+</body>
+</html>

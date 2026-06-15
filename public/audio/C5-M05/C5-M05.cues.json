@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C5-M05",
+  "moduleTitle": "do Ciclo 5: Pronomes Demonstrativos — houtos, haute, touto",
+  "audioFile": "/audio/C5-M05/C5-M05.mp3",
+  "duration": 191.18,
+  "generatedAt": "2026-06-14T22:11:24.543479Z",
+  "narrationFile": "C5-M05.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 5 do Ciclo 5: Pronomes Demonstrativos — houtos, haute, touto",
+      "startTime": 0.0,
+      "endTime": 4.71
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Agora vamos estudar os pronomes demonstrativos — palavras como \"este\", \"esta\", \"isto\" em portugues. O pronome mais importante e houtos, o mais frequente do Novo Testamento com cerca de 1.387 ocorrenci",
+      "startTime": 6.71,
+      "endTime": 22.5
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — O paradigma de houtos",
+      "startTime": 23.5,
+      "endTime": 25.66
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Houtos e o pronome demonstrativo de proximidade — \"este\". O paradigma tem uma peculiaridade: o nominativo singular masculino houtos e feminino haute comecam com \"ou\" ou \"au\", mas TODOS os outros casos",
+      "startTime": 26.66,
+      "endTime": 64.73
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Se comeca com \"t\" — touton, tauten, toutou — nao e nominativo singular. Se comeca com \"ou\" ou \"au\" — houtos, haute — e nominativo singular.",
+      "startTime": 65.23,
+      "endTime": 73.2
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "houtos estin ho huios mou — Mateus, capitulo 3, versiculo 17.",
+      "startTime": 74.7,
+      "endTime": 79.06
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora vamos ver como houtos e usado nas frases do Novo Testamento.",
+      "startTime": 80.56,
+      "endTime": 84.43
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Uso anafórico",
+      "startTime": 85.93,
+      "endTime": 87.88
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O uso mais comum de houtos no Novo Testamento e ANAFORICO — refere-se a algo ou alguem mencionado antes. Em Mateus 3 versiculo 17, a voz do ceu aponta para Jesus: \"houtos estin ho huios mou\" — \"Este e",
+      "startTime": 88.88,
+      "endTime": 118.55
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Tauta, neutro plural, significa \"estas coisas\". E uma palavra-ponte em Joao: \"tauta lego\", \"tauta gegonen\", \"meta tauta\".",
+      "startTime": 119.05,
+      "endTime": 126.01
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "haute estin he agape — Primeira Joao, capitulo 4, versiculo 10.",
+      "startTime": 127.51,
+      "endTime": 131.69
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora vamos ver o neutro touto em frases importantes.",
+      "startTime": 133.19,
+      "endTime": 136.0
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — O neutro touto",
+      "startTime": 137.5,
+      "endTime": 139.41
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O neutro touto e usado para referir-se a objetos, conceitos ou situacoes. A frase mais sagrada da instituicao da Ceia: \"touto estin to soma mou\" — \"Isto e o meu corpo\" em Mateus 26 versiculo 26. Em Pr",
+      "startTime": 140.41,
+      "endTime": 165.47
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Touto, neutro, pode referir-se a uma ideia ou situacao inteira, nao apenas a um objeto. \"Isto\" em portugues faz o mesmo.",
+      "startTime": 165.97,
+      "endTime": 172.46
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "touto estin to soma mou — Mateus, capitulo 26, versiculo 26.",
+      "startTime": 173.96,
+      "endTime": 178.72
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens! Voce aprendeu o pronome demonstrativo houtos — o mais frequente do Novo Testamento. No proximo modulo, voce vai aprender seu oposto: ekeinos — \"aquele\". Ate la!",
+      "startTime": 180.22,
+      "endTime": 190.18
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C5-M05-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C5-M05-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C5-M05-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C5-M05-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C5-M05-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

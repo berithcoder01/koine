@@ -1,0 +1,185 @@
+{
+  "version": "1.0",
+  "moduleId": "L01",
+  "moduleTitle": "Lição 1 — As Primeiras Vogais",
+  "audioFile": "/audio/L01/L01.mp3",
+  "duration": 117.22,
+  "generatedAt": "2026-06-15T17:37:52.428164Z",
+  "narrationFile": "L01.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 1 — As Primeiras Vogais",
+      "startTime": 0.0,
+      "endTime": 1.9
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo à Intro. Siga as instruções na apostila e acompanhe comigo.",
+      "startTime": 3.9,
+      "endTime": 7.63
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Conheça a letra alfa (Α α). Sua pronúncia é a (como em \"pai\"). Significa Letra Alfa. 📜 Originou o \"A\" latino e o Alef hebraico; primeira letra de todos os alfabetos semíticos",
+      "startTime": 8.63,
+      "endTime": 18.75
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra α. Acompanhe a animação na tela.",
+      "startTime": 19.25,
+      "endTime": 23.3
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o alfa minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 23.8,
+      "endTime": 29.75
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "Conheça a letra épsilon (Ε ε). Sua pronúncia é e breve (como em \"pé\"). Significa Letra Épsilon. 📜 ε + ψιλόν significa \"e simples\", para distinguir do ditongo αι",
+      "startTime": 30.25,
+      "endTime": 39.76
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra ε. Acompanhe a animação na tela.",
+      "startTime": 40.26,
+      "endTime": 44.4
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Linha 2 da apostila — Épsilon minúsculo (ε)",
+      "startTime": 44.9,
+      "endTime": 47.9
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "Conheça a letra éta (Η η). Sua pronúncia é ê longo (como em \"mês\"). Significa Letra Éta. 📜 Derivado do Chet hebraico (ח); representa o \"e\" longo do grego clássico",
+      "startTime": 48.4,
+      "endTime": 59.0
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra η. Acompanhe a animação na tela.",
+      "startTime": 59.5,
+      "endTime": 63.75
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "Linha 3 da apostila — Éta minúsculo (η)",
+      "startTime": 64.25,
+      "endTime": 66.87
+    },
+    {
+      "id": "exposicao_10",
+      "marker": "EXPOSICAO",
+      "text": "Conheça a letra iôta (Ι ι). Sua pronúncia é i (como em \"fio\"). Significa Letra Iota. 📜 Origem no Yod hebraico (י); a menor letra do alfabeto, mencionada por Jesus em Mateus 5:18",
+      "startTime": 67.37,
+      "endTime": 78.7
+    },
+    {
+      "id": "exposicao_11",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra ι. Acompanhe a animação na tela.",
+      "startTime": 79.2,
+      "endTime": 83.33
+    },
+    {
+      "id": "exposicao_12",
+      "marker": "EXPOSICAO",
+      "text": "Linha 4 da apostila — Iota minúsculo (ι)",
+      "startTime": 83.83,
+      "endTime": 86.8
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Muito bem! Você acabou de aprender as quatro primeiras vogais gregas. Antes de continuar, olhe para o que escreveu e compare com o modelo na apostila. Cada letra deve ter a mesma forma que o modelo.",
+      "startTime": 87.3,
+      "endTime": 97.85
+    },
+    {
+      "id": "ditado",
+      "marker": "DITADO",
+      "text": "Escreva no papel: alfa.",
+      "startTime": 99.85,
+      "endTime": 101.44
+    },
+    {
+      "id": "ditado_2",
+      "marker": "DITADO",
+      "text": "Escreva no papel: épsilon.",
+      "startTime": 102.44,
+      "endTime": 104.19
+    },
+    {
+      "id": "ditado_3",
+      "marker": "DITADO",
+      "text": "Escreva no papel: éta.",
+      "startTime": 105.19,
+      "endTime": 106.79
+    },
+    {
+      "id": "ditado_4",
+      "marker": "DITADO",
+      "text": "Escreva no papel: iota.",
+      "startTime": 107.79,
+      "endTime": 109.56
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 1 — As Primeiras Vogais! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 110.56,
+      "endTime": 116.22
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "exposicao_10",
+        "exposicao_11",
+        "exposicao_12",
+        "pausa",
+        "ditado",
+        "ditado_2",
+        "ditado_3",
+        "ditado_4"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

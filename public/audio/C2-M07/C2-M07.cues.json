@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C2-M07",
+  "moduleTitle": "do Ciclo 2: Primeiros Verbos — lego, echo, pisteuo",
+  "audioFile": "/audio/C2-M07/C2-M07.mp3",
+  "duration": 211.84,
+  "generatedAt": "2026-06-12T12:06:46.820202Z",
+  "narrationFile": "C2-M07.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 7 do Ciclo 2: Primeiros Verbos — lego, echo, pisteuo",
+      "startTime": 0.0,
+      "endTime": 4.17
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Ate agora, voce aprendeu apenas um verbo: eimi (ser). Neste modulo, voce triplica seu vocabulario verbal com tres dos verbos mais importantes do Novo Testamento: lego (dizer), echo (ter) e pisteuo (cr",
+      "startTime": 6.17,
+      "endTime": 17.75
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — lego: eu digo, eu falo",
+      "startTime": 18.75,
+      "endTime": 21.36
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Lego e o verbo \"dizer\" ou \"falar\" — o verbo de discurso mais frequente do Novo Testamento, com 2.354 ocorrencias. Sempre que voce le nos Evangelhos \"Jesus disse\", o verbo grego e quase sempre lego ou ",
+      "startTime": 22.36,
+      "endTime": 51.73
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Lego gerou \"logica\", \"dialogo\", \"monologo\". Toda palavra que termina em \"logo\" ou \"logia\" vem desta raiz.",
+      "startTime": 52.23,
+      "endTime": 58.05
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "legei auto Iesous — Joao, capitulo 11, versiculo 25.",
+      "startTime": 59.55,
+      "endTime": 63.5
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "O segundo verbo — echo — aparece em um dos versiculos mais importantes sobre a vida eterna.",
+      "startTime": 65.0,
+      "endTime": 69.93
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — echo: eu tenho, possuo",
+      "startTime": 71.43,
+      "endTime": 73.98
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Echo (\"ter\", \"possuir\") e um verbo central no Novo Testamento, com 708 ocorrencias. Diferente de lego e pisteuo, echo expressa posse, estado e relacao. Em Joao capitulo 3 versiculo 36, o versiculo mai",
+      "startTime": 74.98,
+      "endTime": 111.09
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Echo sobrevive em portugues em palavras como \"ecleretico\" (que tem boa compleicao). Sempre que vir \"exia\" ou \"equia\", pense em \"ter\", \"possuir\".",
+      "startTime": 111.59,
+      "endTime": 118.52
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "ho pisteuon eis ton huion echei zoen aionion — Joao, capitulo 3, versiculo 36.",
+      "startTime": 120.02,
+      "endTime": 125.52
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "O terceiro verbo — pisteuo — e o verbo central do Evangelho de Joao. A palavra \"crer\" nunca mais sera a mesma depois deste modulo.",
+      "startTime": 127.02,
+      "endTime": 133.72
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — pisteuo: eu creio, confio",
+      "startTime": 135.22,
+      "endTime": 138.08
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Pisteuo e o verbo \"crer\" ou \"confiar\" — 241 ocorrencias no Novo Testamento, das quais 98 estao no Evangelho de Joao, mais do que em qualquer outro livro. O verbo e inseparavel do substantivo pistis (f",
+      "startTime": 139.08,
+      "endTime": 176.45
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Pisteuo eis significa \"crer EM\" — confianca pessoal direcionada a alguem. Nao e apenas concordar com um fato; e confiar em uma pessoa.",
+      "startTime": 176.95,
+      "endTime": 184.51
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "nai, kyrie, ego pepisteuka — Joao, capitulo 11, versiculo 27.",
+      "startTime": 186.01,
+      "endTime": 190.93
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo 7 concluido! Tres novos verbos: lego (dizer, 2.354 vezes), echo (ter, 708 vezes) e pisteuo (crer, 241 vezes). Agora seu vocabulario verbal quadruplicou. No proximo modulo — o ultimo do Ciclo 2 ",
+      "startTime": 192.43,
+      "endTime": 210.84
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C2-M07-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C2-M07-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C2-M07-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C2-M07-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C2-M07-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

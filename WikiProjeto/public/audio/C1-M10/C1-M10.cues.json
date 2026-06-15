@@ -1,0 +1,161 @@
+{
+  "version": "1.0",
+  "moduleId": "C1-M10",
+  "moduleTitle": "Grande Revisão — João 1:1 Completo",
+  "audioFile": "/audio/C1-M10/C1-M10.mp3",
+  "duration": 294.94,
+  "generatedAt": "2026-06-14T22:31:08.759445Z",
+  "narrationFile": "C1-M10.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Grande Revisão — João 1:1 Completo",
+      "startTime": 0.0,
+      "endTime": 2.09
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Módulo 10 do Koiné App — Grande Revisão.\n\nEste é o módulo mais importante do Ciclo I. Não há conteúdo novo — é inteiramente de consolidação, revisão e celebração. Você aprendeu todas as v",
+      "startTime": 4.09,
+      "endTime": 43.06
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — \"No princípio era o Logos\"",
+      "startTime": 44.06,
+      "endTime": 46.21
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A primeira afirmação de João é: \"En arjê ên ho logos\" — \"No princípio era o Logos.\"\n\n\"En\" é a preposição \"em\" ou \"no\" — a preposição mais frequente do Novo Testamento. \"Arjê\" significa \"princípio\" ou ",
+      "startTime": 47.21,
+      "endTime": 92.82
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "\"En arjê ên ho logos\" — \"No princípio era o Logos.\" São cinco palavras que mudam tudo. O Logos não começou a existir — ele já existia no princípio. O verbo \"ên\" (era) no imperfeito indica existência c",
+      "startTime": 93.32,
+      "endTime": 104.54
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "A primeira afirmação de João 1:1: \"En arjê ên ho logos\" — \"No princípio era o Logos.\" Encontrada em João, capítulo 1, versículo 1, primeira parte.",
+      "startTime": 106.04,
+      "endTime": 114.01
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Você leu a primeira afirmação de João 1:1. Agora vamos para as duas afirmações finais — a distinção do Logos de Deus, e a afirmação de que o Logos é Deus em natureza.",
+      "startTime": 115.51,
+      "endTime": 125.26
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — \"Junto de Deus\" e \"Deus era o Logos\"",
+      "startTime": 126.76,
+      "endTime": 129.8
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "As duas afirmações finais de João completam o versículo mais importante do Novo Testamento.\n\nSegunda afirmação: \"Kai ho logos ên pros ton theon\" — \"e o Logos era junto de Deus.\" \"Kai\" é a conjunção \"e",
+      "startTime": 130.8,
+      "endTime": 204.27
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "As três afirmações de João 1:1: primeira, o Logos existia antes de tudo. Segunda, o Logos era distinto de Deus — junto de. Terceira, o Logos era Deus em natureza. A gramática grega preserva esta disti",
+      "startTime": 204.77,
+      "endTime": 218.04
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "João, capítulo 1, versículo 1 completo: \"En arjê ên ho logos, kai ho logos ên pros ton theon, kai theos ên ho logos.\" — \"No princípio era o Logos, e o Logos era junto de Deus, e Deus era o Logos.\"",
+      "startTime": 219.54,
+      "endTime": 230.63
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Parabéns! Você leu João 1:1 completo em grego. Este é o momento mais importante da sua jornada no Koiné App. Agora vamos fazer o Quiz de Unidade — vinte questões sobre todo o Ciclo I.",
+      "startTime": 232.13,
+      "endTime": 242.02
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar o Módulo 10 — Grande Revisão, e por completar o Ciclo I do Koiné App.\n\nVocê começou no Módulo 1, aprendendo três vogais: alfa, épsilon, iota. Agora, dez módulos depois, você pod",
+      "startTime": 243.52,
+      "endTime": 293.94
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C1-M10-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C1-M10-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C1-M10-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C1-M10-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

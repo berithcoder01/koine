@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C5-M04",
+  "moduleTitle": "do Ciclo 5: Aula do Versiculo — Mateus 5:14",
+  "audioFile": "/audio/C5-M04/C5-M04.mp3",
+  "duration": 207.94,
+  "generatedAt": "2026-06-14T22:10:27.213180Z",
+  "narrationFile": "C5-M04.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 4 do Ciclo 5: Aula do Versiculo — Mateus 5:14",
+      "startTime": 0.0,
+      "endTime": 4.37
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Este modulo e especial. Vamos analisar versiculo por versiculo Mateus 5 versiculo 14, o versiculo trofeu do Ciclo 5. Cada palavra sera examinada em detalhe. Voce vai aplicar tudo que aprendeu sobre ad",
+      "startTime": 6.37,
+      "endTime": 22.31
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Analise de Mateus 5:14",
+      "startTime": 23.31,
+      "endTime": 26.07
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Mateus 5 versiculo 14: \"humeis este to phos tou kosmou\" — Vos sois a luz do mundo. Cada palavra merece analise cuidadosa. Humeis e pronome pessoal segunda pessoa do plural nominativo — esta enfatico. ",
+      "startTime": 27.07,
+      "endTime": 60.22
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Compare com Primeira Joao 1 versiculo 5: \"ho theos phos estin\" — sem artigo em phos, indicando natureza. Aqui em Mateus 5:14, to phos COM artigo significa identidade especifica: \"A luz.\"",
+      "startTime": 60.72,
+      "endTime": 72.34
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "humeis este to phos tou kosmou — Mateus, capitulo 5, versiculo 14.",
+      "startTime": 73.84,
+      "endTime": 78.4
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora vamos conectar Mateus 5:14 com outras passagens sobre a luz no Novo Testamento.",
+      "startTime": 79.9,
+      "endTime": 84.88
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Conexoes com outras passagens",
+      "startTime": 86.38,
+      "endTime": 89.12
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Joao 8 versiculo 12 usa a MESMA construcao de Mateus 5:14: \"ego eimi to phos tou kosmou\" — Eu sou a luz do mundo. Jesus e A LUZ do mundo; os discipulos sao A LUZ do mundo. Nao e coincidencia: os disci",
+      "startTime": 90.12,
+      "endTime": 119.06
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Sempre que ver \"to phos tou kosmou\", lembre: esta frase conecta Jesus e os discipulos na mesma missao de iluminacao.",
+      "startTime": 119.56,
+      "endTime": 126.01
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "ego eimi to phos tou kosmou — Joao, capitulo 8, versiculo 12.",
+      "startTime": 127.51,
+      "endTime": 131.71
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora vamos refletir sobre a escolha teologica do verbo eimi em vez de echo ou didomi.",
+      "startTime": 133.21,
+      "endTime": 137.84
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Aplicacao teologica",
+      "startTime": 139.34,
+      "endTime": 141.62
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Por que Jesus diz \"vos SOIS a luz\" em vez de \"vos DAIS luz\" ou \"vos TENDES luz\"? A escolha do verbo eimi em vez de echo ou didomi e carregada de teologia. Se Jesus dissesse \"vos tendes luz\" com echo, ",
+      "startTime": 142.62,
+      "endTime": 175.44
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Pergunte-se sempre: por que este verbo e nao outro? Eimi igual identidade. Echo igual posse. Poieo igual acao. A escolha revela a teologia.",
+      "startTime": 175.94,
+      "endTime": 184.14
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "en auto zone en, kai he zone en to phos ton anthropon — Joao, capitulo 1, versiculo 4.",
+      "startTime": 185.64,
+      "endTime": 191.22
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens por completar o Modulo 4! Voce analisou Mateus 5 versiculo 14 em profundidade e conectou com Joao 8:12 e Primeira Joao 1:5. No proximo modulo, voce vai aprender os pronomes demonstrativos — h",
+      "startTime": 192.72,
+      "endTime": 206.94
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C5-M04-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C5-M04-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C5-M04-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C5-M04-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C5-M04-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

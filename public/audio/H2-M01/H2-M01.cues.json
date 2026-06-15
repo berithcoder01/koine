@@ -1,0 +1,193 @@
+{
+  "version": "1.0",
+  "moduleId": "H2-M01",
+  "moduleTitle": "Modulo H2-M01: Jerusalem — Topografia, Bairros e Vida Cotidiana",
+  "audioFile": "/audio/H2-M01/H2-M01.mp3",
+  "duration": 239.03,
+  "generatedAt": "2026-06-12T15:44:26.361113Z",
+  "narrationFile": "H2-M01.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo H2-M01: Jerusalem — Topografia, Bairros e Vida Cotidiana",
+      "startTime": 0.0,
+      "endTime": 4.69
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Voce ja leu os Evangelhos. Mas ja imaginou como era a cidade onde tudo aconteceu? Jerusalem no seculo I nao era apenas um cenario — era uma cidade de dois morros, vales profundos, e uma populacao que ",
+      "startTime": 6.69,
+      "endTime": 23.58
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — A topografia de Jerusalem",
+      "startTime": 24.58,
+      "endTime": 27.03
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Jerusalem no seculo primeiro ficava sobre dois morros separados pelo Vale do Tiropeon. O monte a nordeste, o Monte Moria, era onde ficava o Templo, expandido por Herodes em uma plataforma artificial d",
+      "startTime": 28.03,
+      "endTime": 70.73
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Quando Jesus chora sobre Jerusalem em Lucas capitulo 19 versiculo 41, ele esta descendo o Monte das Oliveiras. Arqueologos sabem exatamente de onde ele olhou.",
+      "startTime": 71.23,
+      "endTime": 80.35
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "Lucas, capitulo 19, versiculos 41 a 44. \"Quando se aproximou e avistou a cidade, chorou por ela.\"",
+      "startTime": 81.85,
+      "endTime": 88.84
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora, vamos andar pelos bairros — onde cada classe social morava e como era a vida cotidiana.",
+      "startTime": 90.34,
+      "endTime": 95.9
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Bairros e vida cotidiana",
+      "startTime": 97.4,
+      "endTime": 99.82
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A Cidade Alta, no sudoeste, era habitada pela aristocracia sacerdotal e pela classe comerciante rica — la ficavam o palacio de Herodes Antipas, a casa de Caifas, e mansoes com piscinas e afrescos. A C",
+      "startTime": 100.82,
+      "endTime": 135.79
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "O jardim do Getsemani ficava a uma caminhada curta do Cenaculo. Judas sabia onde encontrar Jesus porque eles iam la toda noite.",
+      "startTime": 136.29,
+      "endTime": 142.83
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "Joao, capitulo 18, versiculos 1 a 3. \"Saiu Jesus com seus discipulos para alem do ribeiro Cedron, onde havia um jardim.\"",
+      "startTime": 144.33,
+      "endTime": 151.6
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "A terceira unidade: as portas da cidade e os acessos ao Templo — por onde Jesus entrou.",
+      "startTime": 153.1,
+      "endTime": 157.9
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — As portas e os acessos ao Templo",
+      "startTime": 159.4,
+      "endTime": 162.31
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A plataforma do Templo tinha varias entradas. O Portao Dourado ficava na muralha leste, voltado para o Monte das Oliveiras — a rota natural de quem vinha de Betania, o caminho de Jesus. O Portao de Hu",
+      "startTime": 163.31,
+      "endTime": 204.6
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "Marcos, capitulo 11, versiculos 1 a 11. \"E, aproximando-se de Jerusalem, ao entrarem em Betfage e Betania, junto ao Monte das Oliveiras...\"",
+      "startTime": 205.1,
+      "endTime": 213.7
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo H2-M01 concluido. Agora voce conhece a topografia de Jerusalem: o Monte das Oliveiras a leste, o Vale do Cedron entre o monte e a cidade, o Templo no Monte Moria, a Cidade Alta a sudoeste. Voce",
+      "startTime": 215.2,
+      "endTime": 238.03
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "H2-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "H2-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "H2-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "H2-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_versiculo"
+      ],
+      "unitId": "H2-M01-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

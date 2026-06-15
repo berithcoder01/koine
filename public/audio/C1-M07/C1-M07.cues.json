@@ -1,0 +1,241 @@
+{
+  "version": "1.0",
+  "moduleId": "C1-M07",
+  "moduleTitle": "Aspiradas — Fi, Qui, Teta",
+  "audioFile": "/audio/C1-M07/C1-M07.mp3",
+  "duration": 575.78,
+  "generatedAt": "2026-06-04T04:38:05.445728Z",
+  "narrationFile": "C1-M07.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Aspiradas — Fi, Qui, Teta",
+      "startTime": 0.0,
+      "endTime": 2.08
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Módulo 7 do Koiné App — Aspiradas.\n\nHoje você vai conhecer três consoantes aspiradas — os sons mais distantes do português em todo o alfabeto grego. Fi é o mais fácil — soa como o F do po",
+      "startTime": 4.08,
+      "endTime": 71.37
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Fi",
+      "startTime": 72.37,
+      "endTime": 73.44
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Fi é a vigésima primeira letra do alfabeto grego, e a primeira das aspiradas deste módulo. Fi maiúsculo tem forma de um círculo atravessado por uma haste vertical — como o símbolo de \"proibido\" em pla",
+      "startTime": 74.44,
+      "endTime": 148.9
+    },
+    {
+      "id": "u1_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre \"phôs\" — o acento circunflexo no ômega — se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifique apenas a letra fi dentro da palavra. O som não",
+      "startTime": 149.4,
+      "endTime": 162.06
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Fi maiúsculo parece um círculo atravessado por uma haste — como o símbolo de \"proibido\". Fi minúsculo é um pequeno círculo com haste descendente. O som é simples: \"f\" como em \"fé\".",
+      "startTime": 163.06,
+      "endTime": 172.76
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora desta unidade é \"phôs\" (com acento circunflexo no ômega), que significa \"luz\" em grego, encontrada em João, capítulo 1, versículo 9. A frase completa, da qual esta é a palavra central",
+      "startTime": 174.26,
+      "endTime": 188.93
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Você acabou de aprender fi, a aspirada mais fácil. Agora vamos para a segunda aspirada, e a mais difícil: qui, um k com sopro de ar, inexistente em português padrão.",
+      "startTime": 190.43,
+      "endTime": 200.49
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Qui",
+      "startTime": 201.99,
+      "endTime": 203.19
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Qui é a vigésima segunda letra do alfabeto grego, e a segunda das aspiradas deste módulo. Qui maiúsculo tem forma de X — duas hastes diagonais que se cruzam no centro, formando um X. Atenção: a forma ",
+      "startTime": 204.19,
+      "endTime": 284.0
+    },
+    {
+      "id": "u2_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre \"charis\" — o acento agudo no segundo \"i\" — se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifique apenas a letra qui dentro da palavra. O som ",
+      "startTime": 284.5,
+      "endTime": 297.05
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Qui maiúsculo é igual ao X do português. Qui minúsculo é um X estilizado com curvas. O som é o \"Bach\" em alemão — um k com sopro. Pratique: diga \"k\" com a mão na garganta, e sinta o sopro sair.",
+      "startTime": 298.05,
+      "endTime": 309.36
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora desta unidade é \"charitos\" (genitivo de charis, com acento agudo no segundo \"i\"), que significa \"graça\" em grego, encontrada em João, capítulo 1, versículo 14. A frase completa, da qu",
+      "startTime": 310.86,
+      "endTime": 328.46
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Muito bem! Você aprendeu qui, a aspirada mais difícil. Lembre-se: é o \"Bach\" alemão, um k com sopro. Agora a terceira e última aspirada deste módulo: teta, a letra que forma \"theos\" — Deus.",
+      "startTime": 329.96,
+      "endTime": 340.87
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Teta",
+      "startTime": 342.37,
+      "endTime": 343.68
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Teta é a oitava letra do alfabeto grego, e a terceira das aspiradas deste módulo. Teta maiúsculo tem forma de O com uma linha horizontal no meio — como um olho, ou como o símbolo de \"theta\" usado em m",
+      "startTime": 344.68,
+      "endTime": 436.34
+    },
+    {
+      "id": "u3_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre \"theos\" — o acento agudo no segundo \"e\" — se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifique apenas a letra teta dentro da palavra. O som ",
+      "startTime": 436.84,
+      "endTime": 449.32
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Teta maiúsculo é um O com uma linha horizontal no meio — como um olho. O \"olho de Deus\" que tudo vê. Teta minúsculo tem a mesma forma, só menor. O som é o \"th\" de \"theology\" — língua entre os dentes, ",
+      "startTime": 450.32,
+      "endTime": 460.96
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora desta unidade é \"theos\" (com acento agudo no segundo \"e\"), que significa \"Deus\" em grego, encontrada em João, capítulo 1, versículo 1c. A frase completa, da qual esta é a palavra cent",
+      "startTime": 462.46,
+      "endTime": 477.17
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Parabéns! Você concluiu as três unidades deste módulo e agora conhece três letras aspiradas: fi, qui e teta. Você também pode ler \"theos\" — Deus — a palavra mais importante de toda a teologia cristã. ",
+      "startTime": 478.67,
+      "endTime": 506.96
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar o Módulo 7 — Aspiradas.\n\nAgora você conhece três letras aspiradas: fi, qui e teta. Você também sabe que fi é o mais fácil, qui é o mais difícil, e teta é intermediário. Mais imp",
+      "startTime": 508.46,
+      "endTime": 574.78
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_nota_diacriticos",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C1-M07-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C1-M07-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_nota_diacriticos",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C1-M07-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C1-M07-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_nota_diacriticos",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C1-M07-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C1-M07-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

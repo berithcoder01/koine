@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Koine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Apostila L02 — Vogais Longas e o Upsilon</h1>
+<p><strong>ID:</strong> apostila-L02
+<strong>Título:</strong> Lição 2 — Vogais Longas e o Upsilon
+<strong>Descrição:</strong> Omicron, Upsilon, Omega
+<strong>Página:</strong> 3
+<strong>Tempo estimado:</strong> 10 min
+<strong>XP:</strong> 30</p>
+<hr>
+<h2>🎯 Objetivo da Lição</h2>
+<p>Completar o aprendizado das vogais gregas com <strong>Omicron (ο)</strong>, <strong>Upsilon (υ)</strong> e <strong>Omega (ω)</strong>, entendendo os pares longo/breve e suas pronúncias. </p>
+<blockquote>
+<p>📄 <strong>Abra sua apostila na Página 3</strong></p>
+</blockquote>
+<hr>
+<h2>🔤 Referência Rápida: Vogais Gregas</h2>
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Nome</th>
+<th>Maiúscula</th>
+<th>Minúscula</th>
+<th>Som</th>
+<th>Exemplo PT</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>α</td>
+<td>alpha</td>
+<td>Α</td>
+<td>α</td>
+<td>a breve</td>
+<td>pai</td>
+</tr>
+<tr>
+<td>ε</td>
+<td>epsilon</td>
+<td>Ε</td>
+<td>ε</td>
+<td>e breve</td>
+<td>pé</td>
+</tr>
+<tr>
+<td>η</td>
+<td>eta</td>
+<td>Η</td>
+<td>η</td>
+<td>ê longo</td>
+<td>mês</td>
+</tr>
+<tr>
+<td>ι</td>
+<td>iota</td>
+<td>Ι</td>
+<td>ι</td>
+<td>i</td>
+<td>fio</td>
+</tr>
+<tr>
+<td>ο</td>
+<td>omicron</td>
+<td>Ο</td>
+<td>ο</td>
+<td>o breve</td>
+<td>sol</td>
+</tr>
+<tr>
+<td>υ</td>
+<td>upsilon</td>
+<td>Υ</td>
+<td>υ</td>
+<td>u/ü</td>
+<td>tu (ou alemão &quot;ü&quot;)</td>
+</tr>
+<tr>
+<td>ω</td>
+<td>omega</td>
+<td>Ω</td>
+<td>ω</td>
+<td>ô longo</td>
+<td>avô</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🎯 Step 1: intro</h2>
+<p><strong>Tipo:</strong> Abertura
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Hoje completaremos as vogais gregas começando com ο micr(on) — o &#39;o&#39; pequeno. Você aprenderá também o υ (upsilon), que pode soar como &#39;u&#39; ou &#39;ü&#39;, e finalmente o ω (omega) — o &#39;o&#39; grande. Estas letras são essenciais para pronunciar corretamente as palavras do Novo Testamento. Abra sua apostila na página 3 e acompanhe comigo.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Abra sua apostila na Página 3&quot;</code></p>
+<hr>
+<h2>🅾️ Step 2: Word Intro — Omicron (Ο ο)</h2>
+<p><strong>Grego:</strong> Ο ο
+<strong>Transliteração:</strong> omicron
+<strong>Pronúncia:</strong> o breve (como em &quot;sol&quot;)
+<strong>Significado:</strong> Letra Omicron</p>
+<p><strong>Detalhes Pedagógicos:</strong></p>
+<ul>
+<li>Etiologia: 📜 ο + μικρόν significa &quot;o pequeno&quot;, para distinguir do ômega (o grande)</li>
+</ul>
+<p><strong>Contexto Bíblico:</strong></p>
+<blockquote>
+<p>📖 <strong>João 3:16</strong>
+&quot;...o mundo (κόσμον)&quot; — ο aparece como terminação de substantivos masculinos no acusativo</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 3: Alphabet Trace — Omicron (ο)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> ο
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do omicron minúsculo:</p>
+<ol>
+<li>Um único círculo fechado, traçado no sentido horário.</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 4: Write Practice — Omicron (ο × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ο
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 1 da apostila — Omicron minúsculo (ο)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o omicron minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva ο 8 vezes nesta linha:</p>
+<pre><code>[Linha 1: ο ο ο ο ο ο ο ο ]
+</code></pre>
+<hr>
+<h2>🆄 Step 5: Word Intro — Upsilon (Υ υ)</h2>
+<p><strong>Grego:</strong> Υ υ
+<strong>Transliteração:</strong> upsilon
+<strong>Pronúncia:</strong> u ou ü (como em &quot;tu&quot; ou o alemão &quot;ü&quot;)
+<strong>Significado:</strong> Letra Upsilon</p>
+<p><strong>Detalhes Pedagógicos:</strong></p>
+<ul>
+<li>Etiologia: 📜 ύ + ψιλόν, &quot;u simples&quot;; absorvido no latim como Y (chamado &quot;i grego&quot;)</li>
+</ul>
+<p><strong>Contexto Bíblico:</strong></p>
+<blockquote>
+<p>📖 <strong>João 1:4</strong>
+&quot;...a vida (ζωή)&quot; — o υ aparece em combinações como αυ e ευ formando ditongos</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 6: Alphabet Trace — Upsilon (υ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> υ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do upsilon minúsculo:</p>
+<ol>
+<li>Haste vertical de cima para baixo.</li>
+<li>Bifurcação no topo, formando um &quot;V&quot; invertido.</li>
+</ol>
+<hr>
+<h2>✍️ Step 7: Write Practice — Upsilon (υ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> υ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 2 da apostila — Upsilon minúsculo (υ)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o upsilon minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva υ 8 vezes nesta linha:</p>
+<pre><code>[Linha 2: υ υ υ υ υ υ υ υ ]
+</code></pre>
+<hr>
+<h2>Ω Step 8: Word Intro — Omega (Ω ω)</h2>
+<p><strong>Grego:</strong> Ω ω
+<strong>Transliteração:</strong> omega
+<strong>Pronúncia:</strong> ô longo (como em &quot;avô&quot;)
+<strong>Significado:</strong> Letra Omega</p>
+<p><strong>Detalhes Pedagógicos:</strong></p>
+<ul>
+<li>Etiologia: 📜 ω + μέγα significa &quot;o grande&quot;, contraparte longa do omicron</li>
+</ul>
+<p><strong>Contexto Bíblico:</strong></p>
+<blockquote>
+<p>📖 <strong>Apocalipse 22:13</strong>
+&quot;Eu sou o Alfa e o Ômega (Ω), o primeiro e o último&quot; — última letra do alfabeto</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 9: Alphabet Trace — Omega (ω)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> ω
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do omega minúsculo:</p>
+<ol>
+<li>Primeiro arco à esquerda, de cima para baixo.</li>
+<li>Segundo arco à direita, unindo-se ao primeiro na base.</li>
+</ol>
+<hr>
+<h2>✍️ Step 10: Write Practice — Omega (ω × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ω
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 3 da apostila — Omega minúsculo (ω)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o omega minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva ω 8 vezes nesta linha:</p>
+<pre><code>[Linha 3: ω ω ω ω ω ω ω ω ]
+</code></pre>
+<hr>
+<h2>🧠 Step 11: Pause</h2>
+<p><strong>Tipo:</strong> Revisão Guiada
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Muito bem! Agora você conhece todas as sete vogais gregas. Compare as letras que escreveu com o modelo na apostila, especialmente os pares ο/ω (breve vs longo) e o υ (som único).&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<pre><code>Compare sua escrita com o modelo na apostila.
+Quando estiver pronto, continue.
+</code></pre>
+<hr>
+<h2>📓 Step 12: Ditado — Omicron</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: omicron.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;omicron&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> ο / Ο</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ο ο aqui:</p>
+<pre><code>[Resposta: ο ]
+</code></pre>
+<hr>
+<h2>📓 Step 13: Ditado — Upsilon</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: upsilon.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;upsilon&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> υ / Υ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Υ υ aqui:</p>
+<pre><code>[Resposta: υ ]
+</code></pre>
+<hr>
+<h2>📓 Step 14: Ditado — Omega</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: omega.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;omega&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> ω / Ω</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ω ω aqui:</p>
+<pre><code>[Resposta: ω ]
+</code></pre>
+<hr>
+<h2>🎉 Fim da Lição L02</h2>
+<p>Parabéns! Você concluiu <strong>Lição 2 — Vogais Longas e o Upsilon</strong>. Agora você conhece todas as vogais gregas do Novo Testamento.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi ο (omicron)</li>
+<li><input disabled="" type="checkbox"> Aprendi υ (upsilon)</li>
+<li><input disabled="" type="checkbox"> Aprendi ω (omega)</li>
+</ul>
+<p>📖 <strong>Próxima lição:</strong> L03 — Consoantes Labiais (β, π, φ)</p>
+
+</body>
+</html>

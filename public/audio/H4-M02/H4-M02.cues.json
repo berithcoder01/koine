@@ -1,0 +1,153 @@
+{
+  "version": "1.0",
+  "moduleId": "H4-M02",
+  "moduleTitle": "Modulo H4-M02: Canone, Manuscritos e Traducao — O Texto que Voce Le",
+  "audioFile": "/audio/H4-M02/H4-M02.mp3",
+  "duration": 129.27,
+  "generatedAt": "2026-06-12T16:21:18.172786Z",
+  "narrationFile": "H4-M02.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo H4-M02: Canone, Manuscritos e Traducao — O Texto que Voce Le",
+      "startTime": 0.0,
+      "endTime": 5.19
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Como os 27 livros do Novo Testamento foram reconhecidos como autoritativos? Onde estao os manuscritos mais antigos? E como a Biblia chegou ao portugues? Este modulo responde a essas perguntas.",
+      "startTime": 7.19,
+      "endTime": 18.06
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Como o canone do Novo Testamento foi formado",
+      "startTime": 19.06,
+      "endTime": 22.26
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O canone do Novo Testamento nao foi decidido por um concilio unico. Foi um processo gradual. O Canone de Muratori, de 180 d.C., ja inclui os quatro Evangelhos, Atos, 13 cartas de Paulo, Primeira Joao ",
+      "startTime": 23.26,
+      "endTime": 52.82
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora, os manuscritos que sobreviveram.",
+      "startTime": 53.32,
+      "endTime": 55.53
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Os grandes manuscritos: Sinaiticus e Vaticanus",
+      "startTime": 57.03,
+      "endTime": 61.11
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O Codex Sinaiticus, de 330 a 360 d.C., foi descoberto no Mosteiro de Santa Catarina no Sinai por Constantin Tischendorf em 1844. Contem o Novo Testamento completo. O Codex Vaticanus, de 325 a 350 d.C.",
+      "startTime": 62.11,
+      "endTime": 85.7
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "E como esses textos foram traduzidos ao longo dos seculos?",
+      "startTime": 86.2,
+      "endTime": 89.23
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Da Septuaginta a Lutero: 1.500 anos de traducao",
+      "startTime": 90.73,
+      "endTime": 94.97
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Jeronimo traduziu a Biblia para o latim em 405 d.C. — a Vulgata, que dominou o Ocidente por mil anos. Erasmo publicou o primeiro Novo Testamento grego impresso em 1516. Lutero o usou para traduzir par",
+      "startTime": 95.97,
+      "endTime": 119.05
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo H4-M02 concluido. No proximo e ultimo modulo da trilha de historia, a Septuaginta — o Antigo Testamento que Paulo conhecia.",
+      "startTime": 119.55,
+      "endTime": 128.27
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao"
+      ],
+      "unitId": "H4-M02-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "H4-M02-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao"
+      ],
+      "unitId": "H4-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "H4-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao"
+      ],
+      "unitId": "H4-M02-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

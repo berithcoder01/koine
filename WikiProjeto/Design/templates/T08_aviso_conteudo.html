@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!--
+  TEMPLATE T08 — AVISO / CONTEÚDO (Cards Empilhados)
+  Formato: SQ 1080×1080
+  Estrutura: 4 cards verdes empilhados com rotação e opacidade decrescente
+  Card frontal: 100% opacidade | Card 2: 70% | Card 3: 55% | Card 4: 40%
+
+  SLOTS:
+    {{CATEGORY}}       -> ex: "Aviso" | "Conteúdo" | "Novidade"
+    {{TITLE}}          -> ex: "Novo módulo disponível"
+    {{BODY}}           -> ex: "O módulo de verbos irregulares..."
+    {{CTA}}            -> ex: "Acesse agora no Koiné App"
+    {{DATE}}           -> ex: "Junho 2026"  (opcional)
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --koine-primary:       #26422A;
+    --koine-accent:        #EA662C;
+    --koine-parchment:     #F5EFE0;
+    --koine-charcoal-soft: #42302D;
+    --koine-white:         #FFFFFF;
+    --font-greek: 'Gentium Plus', serif;
+    --font-serif: 'Libre Baskerville', serif;
+    --font-sans:  'Inter', sans-serif;
+    --radius-card: 40px;
+    --card-w: 680px;
+    --card-h: 680px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px; height: 1080px;
+    overflow: hidden;
+    background: var(--koine-parchment);
+    position: relative;
+    font-family: var(--font-sans);
+  }
+
+  /* ── Fundo sutil ── */
+  .bg-stain {
+    position: absolute; inset: 0; z-index: 0;
+    background:
+      radial-gradient(ellipse at 15% 15%, rgba(234,102,44,0.05) 0%, transparent 45%),
+      radial-gradient(ellipse at 85% 85%, rgba(38,66,42,0.06) 0%, transparent 45%);
+    pointer-events: none;
+  }
+
+  /* ── Stack de cards — centro absoluto ── */
+  .card-stack {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--card-w);
+    height: var(--card-h);
+    z-index: 1;
+  }
+
+  /* Card base */
+  .card {
+    position: absolute;
+    inset: 0;
+    background: var(--koine-primary);
+    border-radius: var(--radius-card);
+    transform-origin: center center;
+  }
+
+  /* Cards de trás: rotação + opacidade decrescente */
+  .card-4 { transform: rotate(-12deg); opacity: 0.40; }
+  .card-3 { transform: rotate(-7deg);  opacity: 0.55; }
+  .card-2 { transform: rotate(-3deg);  opacity: 0.70; }
+  /* Card frontal: sem rotação, opacidade total */
+  .card-1 {
+    transform: rotate(0deg);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 56px 60px;
+  }
+
+  /* ── Conteúdo do card frontal ── */
+
+  /* Topo do card */
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .category-pill {
+    font-size: 13px; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--koine-primary);
+    background: var(--koine-accent);
+    padding: 10px 22px;
+    border-radius: 100px;
+  }
+  .card-date {
+    font-size: 13px; font-weight: 500;
+    color: var(--koine-white); opacity: 0.35;
+    letter-spacing: 0.08em;
+    padding-top: 4px;
+  }
+
+  /* Meio do card */
+  .card-middle {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 0;
+  }
+  .card-title {
+    font-family: var(--font-serif);
+    font-size: 52px; font-weight: 700;
+    color: var(--koine-white);
+    line-height: 1.20;
+    margin-bottom: 24px;
+  }
+  .card-body {
+    font-size: 22px; line-height: 1.70;
+    color: var(--koine-white); opacity: 0.72;
+  }
+
+  /* Rodapé do card */
+  .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .card-cta {
+    font-size: 15px; font-weight: 700;
+    color: var(--koine-accent);
+    letter-spacing: 0.06em;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .card-cta::after {
+    content: '→';
+    font-size: 18px;
+  }
+  .card-brand {
+    font-family: var(--font-greek);
+    font-size: 22px; font-weight: 700;
+    color: var(--koine-white); opacity: 0.25;
+    letter-spacing: 0.10em;
+  }
+
+  /* ── Elementos externos ao card ── */
+
+  /* Label categoria no topo (fora do card) */
+  .outer-top {
+    position: absolute;
+    top: 56px; left: 88px; right: 88px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .outer-label {
+    font-size: 13px; font-weight: 700;
+    letter-spacing: 0.20em; text-transform: uppercase;
+    color: var(--koine-primary); opacity: 0.40;
+  }
+  .outer-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--koine-accent); opacity: 0.50;
+  }
+
+  /* Rodapé externo */
+  .outer-bottom {
+    position: absolute;
+    bottom: 56px; left: 88px; right: 88px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .outer-tagline {
+    font-size: 13px; font-weight: 500;
+    color: var(--koine-charcoal-soft); opacity: 0.30;
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .outer-brand {
+    font-family: var(--font-greek);
+    font-size: 26px; font-weight: 700;
+    color: var(--koine-primary); opacity: 0.28;
+    letter-spacing: 0.10em;
+  }
+</style>
+</head>
+<body>
+  <div class="bg-stain"></div>
+
+  <!-- Labels externos (fora dos cards) -->
+  <div class="outer-top">
+    <span class="outer-label">Koiné App</span>
+    <span class="outer-dot"></span>
+  </div>
+
+  <!-- Stack de 4 cards -->
+  <div class="card-stack">
+    <div class="card card-4"></div>
+    <div class="card card-3"></div>
+    <div class="card card-2"></div>
+
+    <!-- Card frontal com conteúdo -->
+    <div class="card card-1">
+      <div class="card-top">
+        <span class="category-pill">{{CATEGORY}}</span>
+        <span class="card-date">{{DATE}}</span>
+      </div>
+
+      <div class="card-middle">
+        <div class="card-title">{{TITLE}}</div>
+        <div class="card-body">{{BODY}}</div>
+      </div>
+
+      <div class="card-bottom">
+        <span class="card-cta">{{CTA}}</span>
+        <span class="card-brand">Κοινή</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé externo -->
+  <div class="outer-bottom">
+    <span class="outer-tagline">Grego do Novo Testamento</span>
+    <span class="outer-brand">Κοινή</span>
+  </div>
+</body>
+</html>

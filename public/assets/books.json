@@ -1,0 +1,218 @@
+[
+  {
+    "abbr": "MT",
+    "name": "Mateus",
+    "order": 1,
+    "totalChapters": 28,
+    "totalVerses": 1068,
+    "sblgntFileCode": "61-Mt"
+  },
+  {
+    "abbr": "MK",
+    "name": "Marcos",
+    "order": 2,
+    "totalChapters": 16,
+    "totalVerses": 673,
+    "sblgntFileCode": "62-Mk"
+  },
+  {
+    "abbr": "LK",
+    "name": "Lucas",
+    "order": 3,
+    "totalChapters": 24,
+    "totalVerses": 1149,
+    "sblgntFileCode": "63-Lk"
+  },
+  {
+    "abbr": "JN",
+    "name": "João",
+    "order": 4,
+    "totalChapters": 21,
+    "totalVerses": 866,
+    "sblgntFileCode": "64-Jn"
+  },
+  {
+    "abbr": "AC",
+    "name": "Atos",
+    "order": 5,
+    "totalChapters": 28,
+    "totalVerses": 1002,
+    "sblgntFileCode": "65-Ac"
+  },
+  {
+    "abbr": "RO",
+    "name": "Romanos",
+    "order": 6,
+    "totalChapters": 16,
+    "totalVerses": 430,
+    "sblgntFileCode": "66-Ro"
+  },
+  {
+    "abbr": "1CO",
+    "name": "1 Coríntios",
+    "order": 7,
+    "totalChapters": 16,
+    "totalVerses": 437,
+    "sblgntFileCode": "67-1Co"
+  },
+  {
+    "abbr": "2CO",
+    "name": "2 Coríntios",
+    "order": 8,
+    "totalChapters": 13,
+    "totalVerses": 256,
+    "sblgntFileCode": "68-2Co"
+  },
+  {
+    "abbr": "GA",
+    "name": "Gálatas",
+    "order": 9,
+    "totalChapters": 6,
+    "totalVerses": 149,
+    "sblgntFileCode": "69-Ga"
+  },
+  {
+    "abbr": "EP",
+    "name": "Efésios",
+    "order": 10,
+    "totalChapters": 6,
+    "totalVerses": 155,
+    "sblgntFileCode": "70-Eph"
+  },
+  {
+    "abbr": "PH",
+    "name": "Filipenses",
+    "order": 11,
+    "totalChapters": 4,
+    "totalVerses": 104,
+    "sblgntFileCode": "71-Php"
+  },
+  {
+    "abbr": "CO",
+    "name": "Colossenses",
+    "order": 12,
+    "totalChapters": 4,
+    "totalVerses": 95,
+    "sblgntFileCode": "72-Col"
+  },
+  {
+    "abbr": "1TH",
+    "name": "1 Tessalonicenses",
+    "order": 13,
+    "totalChapters": 5,
+    "totalVerses": 89,
+    "sblgntFileCode": "73-1Th"
+  },
+  {
+    "abbr": "2TH",
+    "name": "2 Tessalonicenses",
+    "order": 14,
+    "totalChapters": 3,
+    "totalVerses": 47,
+    "sblgntFileCode": "74-2Th"
+  },
+  {
+    "abbr": "1TI",
+    "name": "1 Timóteo",
+    "order": 15,
+    "totalChapters": 6,
+    "totalVerses": 113,
+    "sblgntFileCode": "75-1Ti"
+  },
+  {
+    "abbr": "2TI",
+    "name": "2 Timóteo",
+    "order": 16,
+    "totalChapters": 4,
+    "totalVerses": 83,
+    "sblgntFileCode": "76-2Ti"
+  },
+  {
+    "abbr": "TI",
+    "name": "Tito",
+    "order": 17,
+    "totalChapters": 3,
+    "totalVerses": 46,
+    "sblgntFileCode": "77-Tit"
+  },
+  {
+    "abbr": "PHM",
+    "name": "Filemom",
+    "order": 18,
+    "totalChapters": 1,
+    "totalVerses": 25,
+    "sblgntFileCode": "78-Phm"
+  },
+  {
+    "abbr": "HE",
+    "name": "Hebreus",
+    "order": 19,
+    "totalChapters": 13,
+    "totalVerses": 303,
+    "sblgntFileCode": "79-Heb"
+  },
+  {
+    "abbr": "JA",
+    "name": "Tiago",
+    "order": 20,
+    "totalChapters": 5,
+    "totalVerses": 108,
+    "sblgntFileCode": "80-Jas"
+  },
+  {
+    "abbr": "1PE",
+    "name": "1 Pedro",
+    "order": 21,
+    "totalChapters": 5,
+    "totalVerses": 105,
+    "sblgntFileCode": "81-1Pe"
+  },
+  {
+    "abbr": "2PE",
+    "name": "2 Pedro",
+    "order": 22,
+    "totalChapters": 3,
+    "totalVerses": 61,
+    "sblgntFileCode": "82-2Pe"
+  },
+  {
+    "abbr": "1JN",
+    "name": "1 João",
+    "order": 23,
+    "totalChapters": 5,
+    "totalVerses": 105,
+    "sblgntFileCode": "83-1Jn"
+  },
+  {
+    "abbr": "2JN",
+    "name": "2 João",
+    "order": 24,
+    "totalChapters": 1,
+    "totalVerses": 13,
+    "sblgntFileCode": "84-2Jn"
+  },
+  {
+    "abbr": "3JN",
+    "name": "3 João",
+    "order": 25,
+    "totalChapters": 1,
+    "totalVerses": 15,
+    "sblgntFileCode": "85-3Jn"
+  },
+  {
+    "abbr": "JUDE",
+    "name": "Judas",
+    "order": 26,
+    "totalChapters": 1,
+    "totalVerses": 25,
+    "sblgntFileCode": "86-Jud"
+  },
+  {
+    "abbr": "RE",
+    "name": "Apocalipse",
+    "order": 27,
+    "totalChapters": 22,
+    "totalVerses": 405,
+    "sblgntFileCode": "87-Re"
+  }
+]

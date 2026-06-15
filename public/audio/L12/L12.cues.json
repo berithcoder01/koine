@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "moduleId": "L12",
+  "moduleTitle": "Lição 12 — Conhecer e Ver",
+  "audioFile": "/audio/L12/L12.mp3",
+  "duration": 98.89,
+  "generatedAt": "2026-06-15T17:59:14.977493Z",
+  "narrationFile": "L12.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 12 — Conhecer e Ver",
+      "startTime": 0.0,
+      "endTime": 1.7
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Lição 12 — Conhecer e ver. Hoje você vai aprender palavras sobre conhecimento e luz: ginósko, oída, sofía, alétheia e fós. Elas nos ensinam como conhecemos a Deus. Abra sua apostila na página 25.",
+      "startTime": 3.7,
+      "endTime": 16.27
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "γινώσκω, conhecer por experiência. Em João 10:14, Jesus declara: 'Eu conheço (γινώσκω) as minhas ovelhas, e elas me conhecem.'",
+      "startTime": 17.27,
+      "endTime": 23.42
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva γινώσκω cinco vezes na linha 1. Pronuncie: gi-NÔS-ko.",
+      "startTime": 23.92,
+      "endTime": 28.33
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "οἶδα, saber por percepção. Em João 3:2, Nicodemos diz: 'Sabemos (οἴδαμεν) que és Mestre vindo de Deus.'",
+      "startTime": 28.83,
+      "endTime": 34.31
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva οἶδα cinco vezes na linha 2. Pronuncie: Ôi-da.",
+      "startTime": 34.81,
+      "endTime": 38.25
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "σοφία, sabedoria. Em 1 Coríntios 1:24, Paulo declara: 'Cristo, poder de Deus e sabedoria (σοφία) de Deus.'",
+      "startTime": 38.75,
+      "endTime": 45.02
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva σοφία cinco vezes na linha 3. Pronuncie: so-FÍ-a.",
+      "startTime": 45.52,
+      "endTime": 49.03
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "ἀλήθεια, verdade. Em João 8:32: 'E conhecereis a verdade (ἀλήθεια), e a verdade vos libertará.'",
+      "startTime": 49.53,
+      "endTime": 54.58
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ἀλήθεια cinco vezes na linha 4. Pronuncie: a-LÊ-tei-a.",
+      "startTime": 55.08,
+      "endTime": 59.67
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "φῶς, luz. Em João 1:5: 'A luz (φῶς) resplandece nas trevas, e as trevas não a compreenderam.'",
+      "startTime": 60.17,
+      "endTime": 65.05
+    },
+    {
+      "id": "exposicao_10",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva φῶς cinco vezes na linha 5. Pronuncie: FÔS.",
+      "startTime": 65.55,
+      "endTime": 68.99
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Conhecimento, sabedoria, verdade e luz — palavras que descrevem Jesus. Releia o que escreveu.",
+      "startTime": 69.49,
+      "endTime": 74.91
+    },
+    {
+      "id": "exposicao_11",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'conhecer'.",
+      "startTime": 76.91,
+      "endTime": 79.57
+    },
+    {
+      "id": "exposicao_12",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'saber'.",
+      "startTime": 80.07,
+      "endTime": 82.6
+    },
+    {
+      "id": "exposicao_13",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'sabedoria'.",
+      "startTime": 83.1,
+      "endTime": 85.78
+    },
+    {
+      "id": "exposicao_14",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'verdade'.",
+      "startTime": 86.28,
+      "endTime": 88.86
+    },
+    {
+      "id": "exposicao_15",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'luz'.",
+      "startTime": 89.36,
+      "endTime": 91.92
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 12 — Conhecer e Ver! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 92.42,
+      "endTime": 97.89
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "exposicao_10",
+        "pausa",
+        "exposicao_11",
+        "exposicao_12",
+        "exposicao_13",
+        "exposicao_14",
+        "exposicao_15"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

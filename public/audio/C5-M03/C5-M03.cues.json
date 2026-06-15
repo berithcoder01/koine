@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C5-M03",
+  "moduleTitle": "do Ciclo 5: Adjetivo Atributivo vs. Predicativo",
+  "audioFile": "/audio/C5-M03/C5-M03.mp3",
+  "duration": 183.79,
+  "generatedAt": "2026-06-14T22:09:07.434971Z",
+  "narrationFile": "C5-M03.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 3 do Ciclo 5: Adjetivo Atributivo vs. Predicativo",
+      "startTime": 0.0,
+      "endTime": 4.41
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Este modulo ensina a diferenca mais importante sobre adjetivos em grego: como saber se o adjetivo faz parte do sujeito ou se descreve o sujeito. Tudo depende da presenca ou ausencia do artigo. A regra",
+      "startTime": 6.41,
+      "endTime": 23.58
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Construcao atributiva",
+      "startTime": 24.58,
+      "endTime": 26.81
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A regra de ouro dos adjetivos gregos: se o adjetivo TEM artigo proprio, ele e ATRIBUTIVO — faz parte do sujeito. Se NAO tem artigo, e PREDICATIVO — descreve o sujeito. A construcao atributiva mais com",
+      "startTime": 27.81,
+      "endTime": 57.34
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "O artigo repetido e seu guia. Artigo antes do adjetivo igual a atributivo. Sem artigo igual a predicativo. Simples assim.",
+      "startTime": 57.84,
+      "endTime": 65.22
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "ego eimi ho poimen ho kalos — Joao, capitulo 10, versiculo 14.",
+      "startTime": 66.72,
+      "endTime": 71.07
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora vamos estudar a construcao predicativa em detalhe.",
+      "startTime": 72.57,
+      "endTime": 75.69
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Construcao predicativa",
+      "startTime": 77.19,
+      "endTime": 79.58
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Quando o adjetivo NAO tem artigo, ele e PREDICATIVO. \"Ho poimen kalos\" significa \"o pastor e bom\" — a copula \"e\" esta implicita. Compare: \"ho poimen ho kalos\" — atributivo, \"o Bom Pastor\" como titulo.",
+      "startTime": 80.58,
+      "endTime": 107.25
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Pense assim: artigo no adjetivo igual a identidade. Sem artigo igual a qualidade. \"O Bom Pastor\" — quem Ele E — versus \"o pastor e bom\" — como Ele E.",
+      "startTime": 107.75,
+      "endTime": 116.42
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "ego eimi ho poimen ho kalos — Joao, capitulo 10, versiculo 14.",
+      "startTime": 117.92,
+      "endTime": 122.33
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Vamos praticar com pares minimos para fixar a diferenca.",
+      "startTime": 123.83,
+      "endTime": 126.74
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Pares minimos",
+      "startTime": 128.24,
+      "endTime": 130.03
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Pares minimos sao essenciais para fixar a diferenca entre atributivo e predicativo. Em grego, a MESMA sequencia de palavras pode ter dois significados. Exemplos: \"ho logos alethenos\" — a palavra e ver",
+      "startTime": 131.03,
+      "endTime": 152.95
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Quando voce vir Artigo mais Substantivo mais Adjetivo sem artigo no adjetivo, leia como \"o tal substantivo e tal adjetivo\".",
+      "startTime": 153.45,
+      "endTime": 160.67
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "ho logos alethenos — Joao, capitulo 17, versiculo 17.",
+      "startTime": 162.17,
+      "endTime": 166.41
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens! Voce aprendeu a regra de ouro dos adjetivos gregos: artigo igual atributivo, sem artigo igual predicativo. No proximo modulo, vamos aplicar tudo numa aula especial sobre Mateus 5 versiculo 1",
+      "startTime": 167.91,
+      "endTime": 182.79
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C5-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C5-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C5-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C5-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C5-M03-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

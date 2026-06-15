@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "moduleId": "L13",
+  "moduleTitle": "Lição 13 — Salvação e Julgamento",
+  "audioFile": "/audio/L13/L13.mp3",
+  "duration": 103.74,
+  "generatedAt": "2026-06-15T18:01:12.125352Z",
+  "narrationFile": "L13.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 13 — Salvação e Julgamento",
+      "startTime": 0.0,
+      "endTime": 2.23
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Lição 13 — Salvação e julgamento. Palavras pesadas que definem o evangelho: soteria, nómos, dikaiosýne, krísis e thánatos. Abra sua apostila na página 27.",
+      "startTime": 4.23,
+      "endTime": 14.39
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "σωτηρία, salvação. Em Romanos 1:16, Paulo declara: 'O evangelho é o poder de Deus para salvação (σωτηρίαν) de todo aquele que crê.'",
+      "startTime": 15.39,
+      "endTime": 22.12
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva σωτηρία cinco vezes na linha 1. Pronuncie: so-te-RÍ-a.",
+      "startTime": 22.62,
+      "endTime": 26.57
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "νόμος, lei. Em Romanos 3:31, Paulo pergunta: 'Anulamos a lei (νόμον) pela fé? De modo nenhum! Antes a confirmamos.'",
+      "startTime": 27.07,
+      "endTime": 33.62
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva νόμος cinco vezes na linha 2. Pronuncie: NÓ-mos.",
+      "startTime": 34.12,
+      "endTime": 37.83
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "δικαιοσύνη, justiça. Em Romanos 3:22: 'A justiça (δικαιοσύνη) de Deus pela fé em Jesus Cristo para todos os que creem.'",
+      "startTime": 38.33,
+      "endTime": 44.4
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva δικαιοσύνη cinco vezes na linha 3. Pronuncie: di-kai-o-SÍ-ne.",
+      "startTime": 44.9,
+      "endTime": 49.26
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "κρίσις, julgamento. Em João 3:19: 'Esta é a condenação (κρίσις): a luz veio ao mundo, mas os homens amaram mais as trevas.'",
+      "startTime": 49.76,
+      "endTime": 56.61
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva κρίσις cinco vezes na linha 4. Pronuncie: KRÍ-sis.",
+      "startTime": 57.11,
+      "endTime": 60.73
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "θάνατος, morte. Em Romanos 6:23: 'O salário do pecado é a morte (θάνατος), mas o dom gratuito de Deus é a vida eterna.'",
+      "startTime": 61.23,
+      "endTime": 67.52
+    },
+    {
+      "id": "exposicao_10",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva θάνατος cinco vezes na linha 5. Pronuncie: TÂ-na-tos.",
+      "startTime": 68.02,
+      "endTime": 72.61
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Salvação, lei, justiça, julgamento e morte — o vocabulário da cruz. Releia estas palavras.",
+      "startTime": 73.11,
+      "endTime": 79.15
+    },
+    {
+      "id": "exposicao_11",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'salvação'.",
+      "startTime": 81.15,
+      "endTime": 83.99
+    },
+    {
+      "id": "exposicao_12",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'lei'.",
+      "startTime": 84.49,
+      "endTime": 86.8
+    },
+    {
+      "id": "exposicao_13",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'justiça'.",
+      "startTime": 87.3,
+      "endTime": 90.03
+    },
+    {
+      "id": "exposicao_14",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'julgamento'.",
+      "startTime": 90.53,
+      "endTime": 93.12
+    },
+    {
+      "id": "exposicao_15",
+      "marker": "EXPOSICAO",
+      "text": "Ditado: escreva a palavra grega para 'morte'.",
+      "startTime": 93.62,
+      "endTime": 96.14
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 13 — Salvação e Julgamento! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 96.64,
+      "endTime": 102.74
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "exposicao_10",
+        "pausa",
+        "exposicao_11",
+        "exposicao_12",
+        "exposicao_13",
+        "exposicao_14",
+        "exposicao_15"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

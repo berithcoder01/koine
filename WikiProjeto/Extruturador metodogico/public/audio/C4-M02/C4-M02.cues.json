@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C4-M02",
+  "moduleTitle": "do Ciclo 4: Verbos de Movimento 1 — erkhomai",
+  "audioFile": "/audio/C4-M02/C4-M02.mp3",
+  "duration": 260.7,
+  "generatedAt": "2026-06-12T17:51:47.409780Z",
+  "narrationFile": "C4-M02.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 2 do Ciclo 4: Verbos de Movimento 1 — erkhomai",
+      "startTime": 0.0,
+      "endTime": 3.69
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Modulo 2 do Ciclo 4. No modulo anterior, voce aprendeu as terminacoes do presente ativo com o paradigma luo e os verbos lego, echo e pisteuo. Agora voce vai aprender uma categoria complet",
+      "startTime": 5.69,
+      "endTime": 33.32
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Verbos depoentes: conceito",
+      "startTime": 34.32,
+      "endTime": 36.95
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Ate agora, todos os verbos que voce aprendeu eram verbos ativos: eles tem terminacoes ativas e significado ativo. Mas existe uma segunda categoria de verbos chamados depoentes — do latim \"deponens\", q",
+      "startTime": 37.95,
+      "endTime": 93.62
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Pense em \"depoente\" como \"verbo que depoe a forma ativa\" — ele veste a roupa da voz media ou passiva, mas age como ativo. Erkhomai e o mais frequente deles no Novo Testamento.",
+      "startTime": 94.12,
+      "endTime": 103.79
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "erkhomai — palavra-ancora do modulo.",
+      "startTime": 105.29,
+      "endTime": 107.24
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora que voce entende o conceito de verbo depoente, vamos aprender a conjugacao completa do mais importante deles: erkhomai.",
+      "startTime": 108.74,
+      "endTime": 115.52
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — A conjugacao de erkhomai",
+      "startTime": 117.02,
+      "endTime": 119.4
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Erkhomai e o verbo de movimento mais frequente do Novo Testamento — mais de 600 ocorrencias. Ele significa \"vir\", \"ir\" ou \"chegar\". Como verbo depoente, usa as terminacoes medio-passivas. A conjugacao",
+      "startTime": 120.4,
+      "endTime": 156.91
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "A segunda pessoa do singular erkhei e uma forma contraida: o radical erch mais a terminacao esai contrai para erkhei — eta com iota subscrito. O som e \"erkhei\", lido como uma silaba so.",
+      "startTime": 157.41,
+      "endTime": 167.95
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "erkhomai — palavra-ancora do modulo.",
+      "startTime": 169.45,
+      "endTime": 171.44
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Agora vamos aprender o segundo verbo depoente de movimento: poreuomai.",
+      "startTime": 172.94,
+      "endTime": 177.44
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — A conjugacao de poreuomai",
+      "startTime": 178.94,
+      "endTime": 181.34
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Poreuomai e o segundo verbo depoente de movimento mais frequente do Novo Testamento. Assim como erkhomai, ele tem forma medio-passiva e sentido ativo. Seu significado e \"ir\", \"caminhar\", \"viajar\" ou \"",
+      "startTime": 182.34,
+      "endTime": 220.47
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Poreuomai gerou o portugues \"porvir\", \"percurso\" e \"portal\". Indiretamente, tambem esta relacionado a \"porto\" — lugar para onde se vai.",
+      "startTime": 220.97,
+      "endTime": 228.06
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "poreuomai — palavra-ancora da unidade.",
+      "startTime": 229.56,
+      "endTime": 231.55
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens por completar o Modulo 2 do Ciclo 4! Voce aprendeu o conceito de verbo depoente — forma medio-passiva, sentido ativo — e a conjugacao completa de erkhomai e poreuomai, os dois verbos de movim",
+      "startTime": 233.05,
+      "endTime": 259.7
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C4-M02-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C4-M02-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C4-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C4-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C4-M02-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

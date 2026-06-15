@@ -1,0 +1,112 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    ".agent/rules/GEMINI.md",
+    ".agent/ARCHITECTURE.md"
+  ],
+  "skills": {
+    "paths": [
+      ".agent/skills",
+      "WikiProjeto/Design/.agent/skills",
+      "WikiProjeto/Design/.agent/.shared"
+    ]
+  },
+  "mcp": {
+    "context7": {
+      "type": "local",
+      "command": ["npx", "-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"],
+      "enabled": true
+    },
+    "shadcn": {
+      "type": "local",
+      "command": ["npx", "shadcn@latest", "mcp"],
+      "enabled": true
+    }
+  },
+  "agent": {
+    "orchestrator": {
+      "description": "Multi-agent coordination and task orchestration. Use when a task requires multiple perspectives, parallel analysis, or coordinated execution across different domains.",
+      "mode": "primary"
+    },
+    "project-planner": {
+      "description": "Smart project planning agent. Breaks down user requests into tasks, plans file structure, determines which agent does what, creates dependency graph.",
+      "mode": "subagent"
+    },
+    "frontend-specialist": {
+      "description": "Senior Frontend Architect who builds maintainable React/Next.js systems with performance-first mindset. UI components, styling, state management, responsive design.",
+      "mode": "subagent"
+    },
+    "backend-specialist": {
+      "description": "Expert backend architect for Node.js, Python, and modern serverless/edge systems. API development, server-side logic, database integration, security.",
+      "mode": "subagent"
+    },
+    "database-architect": {
+      "description": "Expert database architect for schema design, query optimization, migrations, and modern serverless databases.",
+      "mode": "subagent"
+    },
+    "mobile-developer": {
+      "description": "Expert in React Native and Flutter mobile development. Cross-platform mobile apps, native features, mobile-specific patterns.",
+      "mode": "subagent"
+    },
+    "game-developer": {
+      "description": "Game development across all platforms (PC, Web, Mobile, VR/AR). Unity, Godot, Unreal, Phaser, Three.js, game mechanics, multiplayer.",
+      "mode": "subagent"
+    },
+    "devops-engineer": {
+      "description": "Expert in deployment, server management, CI/CD, and production operations. HIGH RISK operations.",
+      "mode": "subagent"
+    },
+    "security-auditor": {
+      "description": "Elite cybersecurity expert. OWASP 2025, supply chain security, zero trust architecture.",
+      "mode": "subagent"
+    },
+    "penetration-tester": {
+      "description": "Expert in offensive security, penetration testing, red team operations, and vulnerability exploitation.",
+      "mode": "subagent"
+    },
+    "test-engineer": {
+      "description": "Expert in testing, TDD, and test automation. Writing tests, improving coverage, debugging test failures.",
+      "mode": "subagent"
+    },
+    "debugger": {
+      "description": "Expert in systematic debugging, root cause analysis, and crash investigation.",
+      "mode": "subagent"
+    },
+    "performance-optimizer": {
+      "description": "Expert in performance optimization, profiling, Core Web Vitals, and bundle optimization.",
+      "mode": "subagent"
+    },
+    "seo-specialist": {
+      "description": "SEO and GEO (Generative Engine Optimization) expert. SEO audits, Core Web Vitals, E-E-A-T, AI search visibility.",
+      "mode": "subagent"
+    },
+    "documentation-writer": {
+      "description": "Expert in technical documentation. Use ONLY when user explicitly requests documentation.",
+      "mode": "subagent"
+    },
+    "product-manager": {
+      "description": "Expert in product requirements, user stories, and acceptance criteria.",
+      "mode": "subagent"
+    },
+    "product-owner": {
+      "description": "Strategic facilitator bridging business needs and technical execution. Requirements, roadmap, backlog, MVP.",
+      "mode": "subagent"
+    },
+    "qa-automation-engineer": {
+      "description": "Specialist in test automation infrastructure and E2E testing. Playwright, Cypress, CI pipelines.",
+      "mode": "subagent"
+    },
+    "code-archaeologist": {
+      "description": "Expert in legacy code, refactoring, and understanding undocumented systems.",
+      "mode": "subagent"
+    },
+    "devops-engineer": {
+      "description": "Expert in deployment, server management, CI/CD, and production operations. Build and deploy the Koine Android APK.",
+      "mode": "subagent"
+    },
+    "explorer-agent": {
+      "description": "Advanced codebase discovery, deep architectural analysis, and proactive research agent.",
+      "mode": "subagent"
+    }
+  }
+}

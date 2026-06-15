@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Koine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Apostila L08 — Nomes Divinos (θεός, κύριος, Χριστός, υἱός, πνεῦμα)</h1>
+<p><strong>ID:</strong> apostila-L08
+<strong>Título:</strong> Lição 8 — Nomes Divinos
+<strong>Descrição:</strong> θεός, κύριος, Χριστός, υἱός, πνεῦμα
+<strong>Página:</strong> 17
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 40</p>
+<hr>
+<h2>Step 1: intro</h2>
+<p><strong>Tipo:</strong> Introdução da lição
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Lição 8 — Nomes divinos. Hoje você vai aprender os nomes mais sagrados do Novo Testamento: Theós, Kýrios, Christós, Hiós e Pneuma. Estas palavras aparecem em cada página do NT. Abra sua apostila na página 17.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;Abra sua apostila na Página 17&quot;
+</code></pre>
+<hr>
+<h2>Step 2: word_intro — θεός</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;θεός (theós) — Deus. No princípio era o Verbo, e o Verbo estava com Deus. Raiz indo-europeia *dhes-, sagrado.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;θεός — Deus&quot;
+</code></pre>
+<p><strong>Grego:</strong> θεός
+<strong>Transliteração:</strong> theós
+<strong>Pronúncia:</strong> te-ÓS
+<strong>Significado:</strong> Deus
+<strong>Etiologia:</strong> Raiz indo-europeia *dhes-, sagrado; base da teologia (θεο+λόγος)
+<strong>Contexto Bíblico:</strong> João 1:1 — &quot;No princípio era o Verbo, e o Verbo estava com Deus (θεόν)&quot;</p>
+<hr>
+<h2>Step 3: write_practice — θεός</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> θεός × 5
+<strong>Instrução:</strong> &quot;Linha 1 da apostila — θεός&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva θεός cinco vezes na linha 1 da sua apostila. Pronuncie em voz alta: te-ÓS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 4: word_intro — κύριος</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;κύριος (kýrios) — Senhor / Mestre. E toda língua confesse que Jesus Cristo é Senhor. De κῦρος, autoridade.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;κύριος — Senhor&quot;
+</code></pre>
+<p><strong>Grego:</strong> κύριος
+<strong>Transliteração:</strong> kýrios
+<strong>Pronúncia:</strong> KÍ-ri-os
+<strong>Significado:</strong> Senhor / Mestre
+<strong>Etiologia:</strong> De κῦρος, autoridade; a Septuaginta usa κύριος para traduzir יהוה (YHWH)
+<strong>Contexto Bíblico:</strong> Filipenses 2:11 — &quot;E toda língua confesse que Jesus Cristo é Senhor (Κύριος)&quot;</p>
+<hr>
+<h2>Step 5: write_practice — κύριος</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> κύριος × 5
+<strong>Instrução:</strong> &quot;Linha 2 da apostila — κύριος&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva κύριος cinco vezes na linha 2. Pronuncie: KÍ-ri-os.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 6: word_intro — Χριστός</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Χριστός (Christós) — Cristo / Ungido. Tu és o Cristo, o Filho do Deus vivo. Tradução do hebraico Messias.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;Χριστός — Cristo&quot;
+</code></pre>
+<p><strong>Grego:</strong> Χριστός
+<strong>Transliteração:</strong> Christós
+<strong>Pronúncia:</strong> cris-TÓS
+<strong>Significado:</strong> Cristo / Ungido
+<strong>Etiologia:</strong> Tradução do hebraico מָשִׁיחַ (Messias), ungido com óleo para função sagrada
+<strong>Contexto Bíblico:</strong> Mateus 16:16 — &quot;Tu és o Cristo (Χριστός), o Filho do Deus vivo&quot;</p>
+<hr>
+<h2>Step 7: write_practice — Χριστός</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> Χριστός × 5
+<strong>Instrução:</strong> &quot;Linha 3 da apostila — Χριστός&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva Χριστός cinco vezes na linha 3. Pronuncie: cris-TÓS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 8: word_intro — υἱός</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;υἱός (huiós) — Filho. Este é o meu Filho amado, em quem me comprazo. Denota herdeiro legal.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;υἱός — Filho&quot;
+</code></pre>
+<p><strong>Grego:</strong> υἱός
+<strong>Transliteração:</strong> huiós
+<strong>Pronúncia:</strong> ui-ÓS
+<strong>Significado:</strong> Filho
+<strong>Etiologia:</strong> Denota não apenas filho biológico mas herdeiro legal e representante do pai
+<strong>Contexto Bíblico:</strong> Mateus 3:17 — &quot;Este é o meu Filho (υἱός) amado, em quem me comprazo&quot;</p>
+<hr>
+<h2>Step 9: write_practice — υἱός</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> υἱός × 5
+<strong>Instrução:</strong> &quot;Linha 4 da apostila — υἱός&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva υἱός cinco vezes na linha 4. Pronuncie: ui-ÓS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 10: word_intro — πνεῦμα</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;πνεῦμα (pneûma) — Espírito / vento / sopro. O vento sopra onde quer. De πνέω, soprar.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;πνεῦμα — Espírito&quot;
+</code></pre>
+<p><strong>Grego:</strong> πνεῦμα
+<strong>Transliteração:</strong> pneûma
+<strong>Pronúncia:</strong> PNÊU-ma
+<strong>Significado:</strong> Espírito / Vento / Sopro
+<strong>Etiologia:</strong> De πνέω, soprar; mesmo campo semântico do hebraico רוּחַ (ruach)
+<strong>Contexto Bíblico:</strong> João 3:8 — &quot;O vento (πνεῦμα) sopra onde quer... assim é todo aquele que é nascido do Espírito&quot;</p>
+<hr>
+<h2>Step 11: write_practice — πνεῦμα</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> πνεῦμα × 5
+<strong>Instrução:</strong> &quot;Linha 5 da apostila — πνεῦμα&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva πνεῦμα cinco vezes na linha 5. Pronuncie: PNÊU-ma.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 12: pause</h2>
+<p><strong>Tipo:</strong> Pausa para reflexão
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Excelente! Você escreveu os cinco nomes divinos. Cada um destes nomes carrega séculos de revelação. Releia-os na sua apostila e reflita.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>Releia os cinco nomes na sua apostila.
+Quando estiver pronto, continue.
+</code></pre>
+<hr>
+<h2>Step 13: dictation — θεός</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;Deus&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;Deus&quot;
+<strong>Resposta Esperada:</strong> θεός</p>
+<hr>
+<h2>Step 14: dictation — κύριος</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;Senhor&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;Senhor&quot;
+<strong>Resposta Esperada:</strong> κύριος</p>
+<hr>
+<h2>Step 15: dictation — Χριστός</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;Cristo&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;Cristo&quot;
+<strong>Resposta Esperada:</strong> Χριστός</p>
+<hr>
+<h2>Step 16: dictation — υἱός</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;filho&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;filho&quot;
+<strong>Resposta Esperada:</strong> υἱός</p>
+<hr>
+<h2>Step 17: dictation — πνεῦμα</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;espírito&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;espírito&quot;
+<strong>Resposta Esperada:</strong> πνεῦμα</p>
+<hr>
+<h2>Fim da Lição L08</h2>
+<p>Parabéns! Você concluiu <strong>Lição 8 — Nomes Divinos (θεός, κύριος, Χριστός, υἱός, πνεῦμα)</strong>.</p>
+<p><strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> θεός (Deus)</li>
+<li><input disabled="" type="checkbox"> κύριος (Senhor)</li>
+<li><input disabled="" type="checkbox"> Χριστός (Cristo)</li>
+<li><input disabled="" type="checkbox"> υἱός (Filho)</li>
+<li><input disabled="" type="checkbox"> πνεῦμα (Espírito)</li>
+</ul>
+
+</body>
+</html>

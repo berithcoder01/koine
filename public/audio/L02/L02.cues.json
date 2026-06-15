@@ -1,0 +1,153 @@
+{
+  "version": "1.0",
+  "moduleId": "L02",
+  "moduleTitle": "Lição 2 — Vogais Longas e o Upsilon",
+  "audioFile": "/audio/L02/L02.mp3",
+  "duration": 115.11,
+  "generatedAt": "2026-06-15T17:39:39.894225Z",
+  "narrationFile": "L02.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 2 — Vogais Longas e o Upsilon",
+      "startTime": 0.0,
+      "endTime": 2.4
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Hoje completaremos as vogais gregas começando com ο micr(on) — o 'o' pequeno. Você aprenderá também o υ (upsilon), que pode soar como 'u' ou 'ü', e finalmente o ω (omega) — o 'o' grande. Estas letras ",
+      "startTime": 4.4,
+      "endTime": 22.62
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Conheça a letra omicron (Ο ο). Sua pronúncia é o breve (como em \"sol\"). Significa Letra Omicron. 📜 ο + μικρόν significa \"o pequeno\", para distinguir do ômega (o grande)",
+      "startTime": 23.62,
+      "endTime": 32.61
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra ο. Acompanhe a animação na tela.",
+      "startTime": 33.11,
+      "endTime": 37.24
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o omicron minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 37.74,
+      "endTime": 43.69
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "Conheça a letra upsilon (Υ υ). Sua pronúncia é u ou ü (como em \"tu\" ou o alemão \"ü\"). Significa Letra Upsilon. 📜 ύ + ψιλόν, \"u simples\"; absorvido no latim como Y (chamado \"i grego\")",
+      "startTime": 44.19,
+      "endTime": 54.43
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra υ. Acompanhe a animação na tela.",
+      "startTime": 54.93,
+      "endTime": 59.18
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o upsilon minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 59.68,
+      "endTime": 65.86
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "Conheça a letra omega (Ω ω). Sua pronúncia é ô longo (como em \"avô\"). Significa Letra Omega. 📜 ω + μέγα significa \"o grande\", contraparte longa do omicron",
+      "startTime": 66.36,
+      "endTime": 75.76
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra ω. Acompanhe a animação na tela.",
+      "startTime": 76.26,
+      "endTime": 80.29
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o omega minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 80.79,
+      "endTime": 86.95
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Muito bem! Agora você conhece todas as sete vogais gregas. Compare as letras que escreveu com o modelo na apostila, especialmente os pares ο/ω (breve vs longo) e o υ (som único).",
+      "startTime": 87.45,
+      "endTime": 98.16
+    },
+    {
+      "id": "ditado",
+      "marker": "DITADO",
+      "text": "Escreva no papel: omicron.",
+      "startTime": 100.16,
+      "endTime": 101.83
+    },
+    {
+      "id": "ditado_2",
+      "marker": "DITADO",
+      "text": "Escreva no papel: upsilon.",
+      "startTime": 102.83,
+      "endTime": 104.46
+    },
+    {
+      "id": "ditado_3",
+      "marker": "DITADO",
+      "text": "Escreva no papel: omega.",
+      "startTime": 105.46,
+      "endTime": 107.14
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 2 — Vogais Longas e o Upsilon! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 108.14,
+      "endTime": 114.11
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "pausa",
+        "ditado",
+        "ditado_2",
+        "ditado_3"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

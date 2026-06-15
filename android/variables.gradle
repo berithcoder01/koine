@@ -13,4 +13,5 @@ ext {
     androidxJunitVersion = '1.1.5'
     androidxEspressoCoreVersion = '3.5.1'
     cordovaAndroidVersion = '10.1.1'
+    server_client_id = "594880756211-ub3itmptppqg55u2l4r531q25flkfeg3.apps.googleusercontent.com"
 }

@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "moduleId": "H3-M01",
+  "moduleTitle": "Modulo H3-M01: Paulo — De Tarso a Roma, Vida, Viagens e Contexto das Cartas",
+  "audioFile": "/audio/H3-M01/H3-M01.mp3",
+  "duration": 180.11,
+  "generatedAt": "2026-06-12T16:14:40.707043Z",
+  "narrationFile": "H3-M01.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo H3-M01: Paulo — De Tarso a Roma, Vida, Viagens e Contexto das Cartas",
+      "startTime": 0.0,
+      "endTime": 5.93
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Quem era Paulo antes de ser Paulo? Um fariseu zelote que perseguia cristaos com conviccao. Depois de encontrar Cristo na estrada de Damasco, tornou-se o maior missionario da historia. Neste modulo, vo",
+      "startTime": 7.93,
+      "endTime": 20.88
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Quem era Paulo antes de Damasco",
+      "startTime": 21.88,
+      "endTime": 24.52
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Paulo nasceu em Tarso, na atual Turquia, cidade universitaria de cultura greco-romana. Era cidadao romano de nascenca e judeu da diaspora de familia farisaica. Foi enviado a Jerusalem para estudar com",
+      "startTime": 25.52,
+      "endTime": 59.07
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "Filipenses, capitulo 3, versiculos 4 a 11. \"Mas o que para mim era lucro, isso considerei perda por causa de Cristo.\"",
+      "startTime": 59.57,
+      "endTime": 66.53
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Depois da conversao, Paulo viajou por todo o Mediterraneo plantando igrejas.",
+      "startTime": 68.03,
+      "endTime": 72.17
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — As tres viagens missionarias",
+      "startTime": 73.67,
+      "endTime": 76.53
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A primeira viagem, de 46 a 48 d.C., foi de Antioquia a Chipre e Asia Menor, fundando as primeiras igrejas gentias. A segunda viagem, de 49 a 52 d.C., cruzou para a Macedonia — Filipos, Tessalonica, Be",
+      "startTime": 77.53,
+      "endTime": 115.49
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "Atos, capitulo 16, versiculo 9. \"Passa a Macedonia e ajuda-nos.\"",
+      "startTime": 115.99,
+      "endTime": 120.42
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "E as cartas? Elas nasceram de situacoes concretas em igrejas reais.",
+      "startTime": 121.92,
+      "endTime": 125.9
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — As cartas: quando, de onde, para quem",
+      "startTime": 127.4,
+      "endTime": 130.8
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Paulo escreveu 13 cartas. Elas nao sao tratados teologicos abstratos — sao respostas a situacoes de igrejas reais. Primeira Tessalonicenses, de 50 d.C., consola uma comunidade que sofreu mortes. Galat",
+      "startTime": 131.8,
+      "endTime": 162.28
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "Primeira Corintios, capitulo 1, versiculo 2. \"A igreja de Deus que esta em Corinto.\"",
+      "startTime": 162.78,
+      "endTime": 167.68
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo H3-M01 concluido. Agora voce conhece o homem Paulo — de Tarso a Roma, de perseguidor a apostolo. No proximo modulo, Joao e a comunidade do amor em Efeso.",
+      "startTime": 169.18,
+      "endTime": 179.11
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_versiculo"
+      ],
+      "unitId": "H3-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "H3-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_versiculo"
+      ],
+      "unitId": "H3-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "H3-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_versiculo"
+      ],
+      "unitId": "H3-M01-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

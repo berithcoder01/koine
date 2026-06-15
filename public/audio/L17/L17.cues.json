@@ -1,0 +1,121 @@
+{
+  "version": "1.0",
+  "moduleId": "L17",
+  "moduleTitle": "Lição 17 — No Princípio Era o Verbo",
+  "audioFile": "/audio/L17/L17.mp3",
+  "duration": 105.43,
+  "generatedAt": "2026-06-15T18:09:15.561767Z",
+  "narrationFile": "L17.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 17 — No Princípio Era o Verbo",
+      "startTime": 0.0,
+      "endTime": 2.33
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Esta é a frase mais poderosa do Novo Testamento. João 1:1. Vinte séculos atrás, um pescador da Galileia escreveu estas seis palavras em grego e mudou a teologia para sempre. Hoje você vai aprender a l",
+      "startTime": 4.33,
+      "endTime": 19.44
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "ἐν é uma preposição que significa 'em' ou 'dentro de'. É uma das palavras mais comuns do grego, aparecendo milhares de vezes no NT. Pronuncia-se: en.",
+      "startTime": 20.44,
+      "endTime": 28.36
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "ἀρχῇ significa princípio, origem. Em grego clássico, ἀρχή também significa 'governo' ou 'autoridade'. A raiz aparece em palavras como 'arcaico' e 'arcanjo'. Pronuncia-se: ar-CHÊ.",
+      "startTime": 28.86,
+      "endTime": 39.18
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "ἦν é o imperfeito do verbo ser. Em grego, o imperfeito descreve uma ação que estava em andamento no passado, sem começo nem fim. João não escreveu 'o Verbo foi criado', mas 'o Verbo ERA'. Pronuncia-se",
+      "startTime": 39.68,
+      "endTime": 51.12
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "ὁ é o artigo definido masculino singular. Indica que λόγος é específico e singular — não 'uma' palavra, mas 'A' Palavra. Pronuncia-se: hô.",
+      "startTime": 51.62,
+      "endTime": 59.81
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "λόγος — a palavra mais teológica do grego. Significa palavra, mas também razão e discurso. João estava dizendo que Jesus é a própria razão de existir do universo. Pronuncia-se: LÓ-gos.",
+      "startTime": 60.31,
+      "endTime": 71.05
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Agora leia a frase completa no topo da página 36: ἐν ἀρχῇ ἦν ὁ λόγος. Você acabou de aprender cada palavra. Agora junte-as: 'No princípio era o Verbo'.",
+      "startTime": 71.55,
+      "endTime": 80.58
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora copie a frase completa três vezes no espaço da apostila. Escreva devagar, prestando atenção em cada letra.",
+      "startTime": 82.58,
+      "endTime": 88.98
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "Ouça a frase completa: en archē ēn ho logos. Agora repita em voz alta comigo. Leia duas vezes.",
+      "startTime": 89.48,
+      "endTime": 95.19
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Escreva em grego: 'No princípio era o Verbo'.",
+      "startTime": 95.69,
+      "endTime": 97.97
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 17 — No Princípio Era o Verbo! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 98.47,
+      "endTime": 104.43
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "pausa",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

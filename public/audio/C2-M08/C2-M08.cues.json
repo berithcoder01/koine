@@ -1,0 +1,185 @@
+{
+  "version": "1.0",
+  "moduleId": "C2-M08",
+  "moduleTitle": "do Ciclo 2: Grande Revisao — Leitura de Primeira Joao 4:8",
+  "audioFile": "/audio/C2-M08/C2-M08.mp3",
+  "duration": 224.47,
+  "generatedAt": "2026-06-12T12:06:50.837905Z",
+  "narrationFile": "C2-M08.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 8 do Ciclo 2: Grande Revisao — Leitura de Primeira Joao 4:8",
+      "startTime": 0.0,
+      "endTime": 4.63
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Este e o modulo de coroacao do Ciclo 2. Voce vai revisar tudo que aprendeu — de eimi a pisteuo — e ler o versiculo-trofeu do ciclo com compreensao gramatical completa: \"ho theos agape estin\". Parabens",
+      "startTime": 6.63,
+      "endTime": 19.14
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — O contexto: Primeira Joao 4:7",
+      "startTime": 20.14,
+      "endTime": 23.41
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Primeira Joao capitulo 4 versiculo 7 abre o contexto do versiculo-trofeu: \"Agapetoi, agapomen allelous, hoti he agape ek tou theou estin\" — \"Amados, amemos uns aos outros, porque o amor e de Deus\". Vo",
+      "startTime": 24.41,
+      "endTime": 56.52
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Agapetoi e a forma vocativa — chamamento — de agapetos (amado). E como Joao se dirige aos leitores: \"amados\".",
+      "startTime": 57.02,
+      "endTime": 63.32
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "Agapetoi, agapomen allelous, hoti he agape ek tou theou estin — Primeira Joao, capitulo 4, versiculo 7.",
+      "startTime": 64.82,
+      "endTime": 71.55
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora o versiculo 8 — o verso que sintetiza todo o Ciclo 2.",
+      "startTime": 73.05,
+      "endTime": 76.93
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — O versiculo-trofeu: Primeira Joao 4:8",
+      "startTime": 78.43,
+      "endTime": 81.93
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Primeira Joao capitulo 4 versiculo 8 completa o contraste com o versiculo anterior. O versiculo-trofeu esta no fim: \"ho theos agape estin\". Analise gramaticalmente cada elemento. Ho: artigo masculino ",
+      "startTime": 82.93,
+      "endTime": 128.02
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "O versiculo-trofeu esta no fim do versiculo. Leia da esquerda para a direita: ho theos agape estin — quatro palavras que teologos estudaram por seculos.",
+      "startTime": 128.52,
+      "endTime": 136.99
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "ho me agapon ouk egno ton theon, hoti ho theos agape estin — Primeira Joao, capitulo 4, versiculo 8.",
+      "startTime": 138.49,
+      "endTime": 144.68
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora, uma ultima reflexao sobre o que voce conquistou neste ciclo.",
+      "startTime": 146.18,
+      "endTime": 149.94
+    },
+    {
+      "id": "u2_exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Voce comecou este ciclo lendo as letras uma por uma. Agora le uma declaracao teologica completa em grego: \"ho theos agape estin\". Quatro palavras que teologos estudaram por seculos. Voce agora as le n",
+      "startTime": 151.44,
+      "endTime": 179.08
+    },
+    {
+      "id": "u2_versiculo_2",
+      "marker": "VERSICULO",
+      "text": "ho theos agape estin — Primeira Joao, capitulo 4, versiculo 8.",
+      "startTime": 179.58,
+      "endTime": 183.73
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens! Voce completou o Ciclo 2 — o ciclo do verbo ser, dos pronomes, do artigo, dos substantivos e dos primeiros verbos do grego koine. Sua conquista: \"Teologo do Koine\" — Primeira Joao capitulo 4",
+      "startTime": 185.23,
+      "endTime": 223.47
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C2-M08-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C2-M08-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C2-M08-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C2-M08-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_exposicao_2",
+        "u2_versiculo_2"
+      ],
+      "unitId": "C2-M08-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "moduleId": "C3-M05",
+  "moduleTitle": "Substantivos Primeira Declinacao Feminina",
+  "audioFile": "/audio/C3-M05/C3-M05.mp3",
+  "duration": 405.02,
+  "generatedAt": "2026-06-12T18:07:58.718190Z",
+  "narrationFile": "C3-M05.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Substantivos Primeira Declinacao Feminina",
+      "startTime": 0.0,
+      "endTime": 2.32
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Modulo 5 do Koiné App — Substantivos Primeira Declinacao Feminina.\n\nHoje voce vai aprender o paradigma da primeira declinacao feminina: substantivos terminados em \"eta\" e \"alfa\", e o arti",
+      "startTime": 4.32,
+      "endTime": 36.12
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Primeira Declinacao Feminina -eta: zoe",
+      "startTime": 37.12,
+      "endTime": 40.24
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A primeira declinacao feminina em grego agrupa substantivos femininos terminados em \"eta\" ou \"alfa\" no nominativo singular. O paradigma \"eta\" segue o modelo de \"zoe\" — \"vida\". As quatro formas casuais",
+      "startTime": 41.24,
+      "endTime": 97.79
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "O iota subscrito no dativo singular e a marca da primeira declinacao. Sem ele, a palavra seria nominativo. O acento circunflexo no genitivo e no dativo e caracteristico do paradigma — memorize as quat",
+      "startTime": 98.29,
+      "endTime": 111.28
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-ancora desta unidade e \"zoe\", que significa \"vida\" em grego, encontrada em Joao, capitulo 14, versiculo 6. O versiculo completo diz: \"Ego eimi he hodos kai he aletheia kai he zoe\" — \"Eu sou ",
+      "startTime": 112.78,
+      "endTime": 126.26
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Voce aprendeu o paradigma basico da primeira declinacao com \"zoe\". Agora vamos a segunda unidade: a primeira declinacao com \"alfa\", que se divide em alfa puro e alfa impuro.",
+      "startTime": 127.76,
+      "endTime": 137.8
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Primeira Declinacao Feminina -alfa: basileia",
+      "startTime": 139.3,
+      "endTime": 142.7
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A primeira declinacao tambem inclui substantivos femininos terminados em \"alfa\" no nominativo. Estes se dividem em dois grupos.\n\nAlfa puro: quando o \"alfa\" e precedido de vogal. Exemplo: \"basileia\" — ",
+      "startTime": 143.7,
+      "endTime": 211.18
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Para saber se o alfa e puro ou impuro, olhe a letra imediatamente ANTES do \"alfa\" no nominativo. Vogal — iota, epsilon, etc. — igual a puro, genitivo em \"as\". Consoante igual a impuro, genitivo em \"es",
+      "startTime": 211.68,
+      "endTime": 228.35
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "O versiculo de referencia desta unidade e: \"Zeteite de proton ten basileian tou theou\" — \"Buscai primeiro o reino de Deus\" — Mateus, capitulo 6, versiculo 33.",
+      "startTime": 229.85,
+      "endTime": 239.86
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Muito bem! Agora voce sabe a diferenca entre alfa puro e impuro. Na terceira unidade, vamos juntar o artigo feminino com o substantivo em todos os quatro casos.",
+      "startTime": 241.36,
+      "endTime": 250.76
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Artigo Feminino mais Primeira Declinacao",
+      "startTime": 252.26,
+      "endTime": 255.49
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O artigo feminino acompanha a primeira declinacao em todos os quatro casos.\n\nNominativo: \"he zoe\" — a vida, como sujeito.\nAcusativo: \"ten zoen\" — a vida, como objeto direto.\nGenitivo: \"tes zoes\" — da ",
+      "startTime": 256.49,
+      "endTime": 313.33
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Memorize o artigo junto com o substantivo: \"he zoe\" no nominativo, \"ten zoen\" no acusativo, \"tes zoes\" no genitivo, \"te zoe\" no dativo. O artigo revela o caso imediatamente. E o padrao ritmico — \"he\" ",
+      "startTime": 313.83,
+      "endTime": 327.66
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "O versiculo-ancora do modulo e: \"Ego eimi he hodos kai he aletheia kai he zoe\" — Joao, capitulo 14, versiculo 6.",
+      "startTime": 329.16,
+      "endTime": 336.22
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Parabens! Voce concluiu as tres unidades deste modulo e agora conhece o paradigma da primeira declinacao feminina, a distincao entre alfa puro e impuro, e o artigo feminino nos quatro casos.",
+      "startTime": 337.72,
+      "endTime": 349.35
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens por completar o Modulo 5 — Substantivos Primeira Declinacao Feminina.\n\nAgora voce conhece o paradigma fundamental da primeira declinacao: nominativo em \"eta\" ou \"alfa\", acusativo em \"een\" ou ",
+      "startTime": 350.85,
+      "endTime": 404.02
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C3-M05-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C3-M05-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C3-M05-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C3-M05-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C3-M05-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C3-M05-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "moduleId": "L08",
+  "moduleTitle": "Lição 8 — Nomes Divinos",
+  "audioFile": "/audio/L08/L08.mp3",
+  "duration": 98.57,
+  "generatedAt": "2026-06-15T17:51:38.499062Z",
+  "narrationFile": "L08.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 8 — Nomes Divinos",
+      "startTime": 0.0,
+      "endTime": 1.66
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Lição 8 — Nomes divinos. Hoje você vai aprender os nomes mais sagrados do Novo Testamento: Theós, Kýrios, Christós, Hiós e Pneuma. Estas palavras aparecem em cada página do NT. Abra sua apostila na pá",
+      "startTime": 3.66,
+      "endTime": 16.48
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "θεός (theós) — Deus. No princípio era o Verbo, e o Verbo estava com Deus. Raiz indo-europeia *dhes-, sagrado.",
+      "startTime": 17.48,
+      "endTime": 23.63
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva θεός cinco vezes na linha 1 da sua apostila. Pronuncie em voz alta: te-ÓS.",
+      "startTime": 24.13,
+      "endTime": 29.26
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "κύριος (kýrios) — Senhor / Mestre. E toda língua confesse que Jesus Cristo é Senhor. De κῦρος, autoridade.",
+      "startTime": 29.76,
+      "endTime": 35.17
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva κύριος cinco vezes na linha 2. Pronuncie: KÍ-ri-os.",
+      "startTime": 35.67,
+      "endTime": 39.64
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "Χριστός (Christós) — Cristo / Ungido. Tu és o Cristo, o Filho do Deus vivo. Tradução do hebraico Messias.",
+      "startTime": 40.14,
+      "endTime": 45.47
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva Χριστός cinco vezes na linha 3. Pronuncie: cris-TÓS.",
+      "startTime": 45.97,
+      "endTime": 50.08
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "υἱός (huiós) — Filho. Este é o meu Filho amado, em quem me comprazo. Denota herdeiro legal.",
+      "startTime": 50.58,
+      "endTime": 55.56
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva υἱός cinco vezes na linha 4. Pronuncie: ui-ÓS.",
+      "startTime": 56.06,
+      "endTime": 59.98
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "πνεῦμα (pneûma) — Espírito / vento / sopro. O vento sopra onde quer. De πνέω, soprar.",
+      "startTime": 60.48,
+      "endTime": 64.35
+    },
+    {
+      "id": "exposicao_10",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva πνεῦμα cinco vezes na linha 5. Pronuncie: PNÊU-ma.",
+      "startTime": 64.85,
+      "endTime": 68.29
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Excelente! Você escreveu os cinco nomes divinos. Cada um destes nomes carrega séculos de revelação. Releia-os na sua apostila e reflita.",
+      "startTime": 68.79,
+      "endTime": 76.72
+    },
+    {
+      "id": "exposicao_11",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'Deus'.",
+      "startTime": 78.72,
+      "endTime": 80.96
+    },
+    {
+      "id": "exposicao_12",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'Senhor'.",
+      "startTime": 81.46,
+      "endTime": 83.53
+    },
+    {
+      "id": "exposicao_13",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'Cristo'.",
+      "startTime": 84.03,
+      "endTime": 86.22
+    },
+    {
+      "id": "exposicao_14",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'filho'.",
+      "startTime": 86.72,
+      "endTime": 88.82
+    },
+    {
+      "id": "exposicao_15",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'espírito'.",
+      "startTime": 89.32,
+      "endTime": 91.69
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 8 — Nomes Divinos! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 92.19,
+      "endTime": 97.57
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "exposicao_10",
+        "pausa",
+        "exposicao_11",
+        "exposicao_12",
+        "exposicao_13",
+        "exposicao_14",
+        "exposicao_15"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

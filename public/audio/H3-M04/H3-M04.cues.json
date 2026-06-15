@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "moduleId": "H3-M04",
+  "moduleTitle": "Modulo H3-M04: Marcos, Mateus e o Problema Sinotico",
+  "audioFile": "/audio/H3-M04/H3-M04.mp3",
+  "duration": 184.6,
+  "generatedAt": "2026-06-12T16:16:35.329027Z",
+  "narrationFile": "H3-M04.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo H3-M04: Marcos, Mateus e o Problema Sinotico",
+      "startTime": 0.0,
+      "endTime": 4.25
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Por que tres Evangelhos sao tao parecidos e ao mesmo tempo diferentes? Mateus, Marcos e Lucas compartilham tanto material que devem estar conectados de alguma forma. Este e o problema sinotico. Neste ",
+      "startTime": 6.25,
+      "endTime": 20.76
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Marcos: o mais antigo, o mais urgente",
+      "startTime": 21.76,
+      "endTime": 25.2
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Marcos e provavelmente o mais antigo dos Evangelhos, escrito por volta de 65 a 70 d.C. E a principal fonte de Mateus e Lucas. E o mais curto e o mais urgente: usa a palavra \"imediatamente\" 41 vezes. A",
+      "startTime": 26.2,
+      "endTime": 55.36
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "Marcos, capitulo 1, versiculo 1. \"Principio do evangelho de Jesus Cristo, Filho de Deus.\"",
+      "startTime": 55.86,
+      "endTime": 60.91
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Mateus vem depois, usando Marcos como fonte, mas com uma abordagem completamente diferente.",
+      "startTime": 62.41,
+      "endTime": 67.39
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Mateus: o Evangelho da Igreja",
+      "startTime": 68.89,
+      "endTime": 71.92
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Mateus, escrito entre 80 e 90 d.C., usa cerca de 90 por cento de Marcos, mas o reorganiza em cinco grandes discursos, possivelmente ecoando os cinco livros de Moises: o Sermao do Monte, a Instrucao Mi",
+      "startTime": 72.92,
+      "endTime": 100.93
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "Mateus, capitulo 5, versiculo 17. \"Nao penseis que vim revogar a Lei ou os Profetas; nao vim revogar, mas cumprir.\"",
+      "startTime": 101.43,
+      "endTime": 108.99
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora, como explicar as semelhancas e diferencas entre eles?",
+      "startTime": 110.49,
+      "endTime": 113.84
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — O problema sinotico e a Hipótese das Duas Fontes",
+      "startTime": 115.34,
+      "endTime": 119.47
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "\"Sinotico\" vem do grego synopsis, \"visao de conjunto.\" A pergunta e: se Mateus e Lucas usaram Marcos, como explicar o material que Mateus e Lucas compartilham mas que Marcos nao tem? A solucao mais ac",
+      "startTime": 120.47,
+      "endTime": 155.92
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "Marcos, capitulo 4, versiculos 35 a 41. \"Mestre, nao te importa que perecamos?\"",
+      "startTime": 156.42,
+      "endTime": 162.1
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo H3-M04 concluido — e com ele, o Bloco H3 inteiro. Agora voce conhece os escritores do Novo Testamento: Paulo, Joao, Lucas e os Evangelistas. No Bloco H4, voce vai descobrir como esses textos ch",
+      "startTime": 163.6,
+      "endTime": 183.6
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_versiculo"
+      ],
+      "unitId": "H3-M04-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "H3-M04-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_versiculo"
+      ],
+      "unitId": "H3-M04-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "H3-M04-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_versiculo"
+      ],
+      "unitId": "H3-M04-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

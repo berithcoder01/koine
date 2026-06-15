@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Koine</title>
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Apostila L16 — Verbos do NT (εἰμί, ἔρχομαι, ἀκούω, βλέπω, πιστεύω)</h1>
+<p><strong>ID:</strong> apostila-L16
+<strong>Título:</strong> Lição 16 — Verbos do NT
+<strong>Descrição:</strong> εἰμί, ἔρχομαι, ἀκούω, βλέπω, πιστεύω
+<strong>Página:</strong> 33
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 50</p>
+<hr>
+<h2>🏁 Step 1: intro</h2>
+<p><strong>Tipo:</strong> Abertura
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Lição 16 — Verbos fundamentais do Novo Testamento. Hoje você vai aprender os verbos mais importantes: eimí, érchomai, akoúo, blépo e pisteúo. Abra sua apostila na página 33.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Abra sua apostila na Página 33&quot;</code></p>
+<hr>
+<h2>⚡ Step 2: word_intro — εἰμί</h2>
+<p><strong>Tipo:</strong> Introdução de Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;εἰμί é o verbo ser, existir. É o verbo mais irregular do grego. Ἐγώ εἰμι (Ego eimi — Eu sou) é o título divino em João. Em João 8:58, Jesus declara: &#39;Antes que Abraão existisse, EU SOU&#39;. Pronuncia-se ei-MÍ.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> εἰμί
+<strong>Transliteração:</strong> eimí
+<strong>Pronúncia:</strong> ei-MÍ
+<strong>Significado:</strong> ser / existir
+<strong>Etiologia:</strong> Verbo &quot;ser&quot; mais irregular do grego; &quot;ἘΓΩ ΕΙΜΙ&quot; (Ego eimi, Eu sou) é o título divino de João
+<strong>Contexto Bíblico:</strong> João 8:58
+<strong>Contexto Bíblico Texto:</strong> &quot;Em verdade, em verdade vos digo: antes que Abraão existisse, EU SOU (ἐγώ εἰμι)&quot;</p>
+<hr>
+<h2>✍️ Step 3: write_practice — εἰμί × 5</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> εἰμί
+<strong>Repetições:</strong> 5
+<strong>Instrução:</strong>
+<code>&quot;Linha 1 da apostila — εἰμί&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva εἰμί cinco vezes na linha 1. Pronuncie: ei-MÍ.&quot;</p>
+</blockquote>
+<hr>
+<h2>🚶 Step 4: word_intro — ἔρχομαι</h2>
+<p><strong>Tipo:</strong> Introdução de Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ἔρχομαι significa vir, chegar, ir. É o verbo de movimento mais frequente do NT. No Apocalipse: &#39;Vem, Senhor Jesus&#39; (ἔρχου Κύριε Ἰησοῦ). Em João 1:9, a verdadeira luz estava vindo ao mundo. Pronuncia-se ÉR-cho-mai.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> ἔρχομαι
+<strong>Transliteração:</strong> érchomai
+<strong>Pronúncia:</strong> ÉR-cho-mai
+<strong>Significado:</strong> vir / chegar / ir
+<strong>Etiologia:</strong> Verbo de movimento mais frequente; no Apocalipse: &quot;Vem, Senhor Jesus&quot; (ἔρχου Κύριε Ἰησοῦ)
+<strong>Contexto Bíblico:</strong> João 1:9
+<strong>Contexto Bíblico Texto:</strong> &quot;A verdadeira luz... estava vindo (ἐρχόμενον) ao mundo&quot;</p>
+<hr>
+<h2>✍️ Step 5: write_practice — ἔρχομαι × 5</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ἔρχομαι
+<strong>Repetições:</strong> 5
+<strong>Instrução:</strong>
+<code>&quot;Linha 2 da apostila — ἔρχομαι&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva ἔρχομαι cinco vezes na linha 2. Pronuncie: ÉR-cho-mai.&quot;</p>
+</blockquote>
+<hr>
+<h2>👂 Step 6: word_intro — ἀκούω</h2>
+<p><strong>Tipo:</strong> Introdução de Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ἀκούω significa ouvir, escutar com atenção. Deu origem a &#39;acústica&#39;. Não é ouvir passivo — implica entender e responder. Em João 10:27, Jesus diz: &#39;As minhas ovelhas ouvem a minha voz&#39;. Pronuncia-se a-KÚ-o.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> ἀκούω
+<strong>Transliteração:</strong> akoúō
+<strong>Pronúncia:</strong> a-KÚ-o
+<strong>Significado:</strong> ouvir / escutar com atenção
+<strong>Etiologia:</strong> Deu origem a &quot;acústica&quot;; não é ouvir passivo — implica entender e responder
+<strong>Contexto Bíblico:</strong> João 10:27
+<strong>Contexto Bíblico Texto:</strong> &quot;As minhas ovelhas ouvem (ἀκούουσιν) a minha voz&quot;</p>
+<hr>
+<h2>✍️ Step 7: write_practice — ἀκούω × 5</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ἀκούω
+<strong>Repetições:</strong> 5
+<strong>Instrução:</strong>
+<code>&quot;Linha 3 da apostila — ἀκούω&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva ἀκούω cinco vezes na linha 3. Pronuncie: a-KÚ-o.&quot;</p>
+</blockquote>
+<hr>
+<h2>👁️ Step 8: word_intro — βλέπω</h2>
+<p><strong>Tipo:</strong> Introdução de Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;βλέπω significa ver, perceber, enxergar. É distinto de ὁράω, que é ver com mais ênfase. Em João 9:25, o cego curado diz: &#39;Uma coisa sei: eu era cego e agora vejo&#39;. Pronuncia-se BLÉP-o.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> βλέπω
+<strong>Transliteração:</strong> blépō
+<strong>Pronúncia:</strong> BLÉP-o
+<strong>Significado:</strong> ver / perceber / enxergar
+<strong>Etiologia:</strong> Distinto de ὁράω (ver com mais ênfase); em João 9:25, o cego curado: &quot;Eu era cego e agora vejo&quot;
+<strong>Contexto Bíblico:</strong> João 9:25
+<strong>Contexto Bíblico Texto:</strong> &quot;Uma coisa sei: eu era cego e agora vejo (βλέπω)&quot;</p>
+<hr>
+<h2>✍️ Step 9: write_practice — βλέπω × 5</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> βλέπω
+<strong>Repetições:</strong> 5
+<strong>Instrução:</strong>
+<code>&quot;Linha 4 da apostila — βλέπω&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva βλέπω cinco vezes na linha 4. Pronuncie: BLÉP-o.&quot;</p>
+</blockquote>
+<hr>
+<h2>🙏 Step 10: word_intro — πιστεύω</h2>
+<p><strong>Tipo:</strong> Introdução de Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;πιστεύω significa crer, confiar, comprometer-se. É o verbo de πίστις (fé). Em João, πιστεύω sempre pede comprometimento, não apenas assentimento. João 3:16: &#39;Para que todo aquele que nele crê não pereça&#39;. Pronuncia-se pis-TEÚ-o.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> πιστεύω
+<strong>Transliteração:</strong> pisteúō
+<strong>Pronúncia:</strong> pis-TEÚ-o
+<strong>Significado:</strong> crer / confiar / comprometer-se
+<strong>Etiologia:</strong> O verbo de πίστις (fé); note: em João, πιστεύω sempre pede comprometimento, não apenas assentimento
+<strong>Contexto Bíblico:</strong> João 3:16
+<strong>Contexto Bíblico Texto:</strong> &quot;Para que todo aquele que nele crê (πιστεύων) não pereça&quot;</p>
+<hr>
+<h2>✍️ Step 11: write_practice — πιστεύω × 5</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> πιστεύω
+<strong>Repetições:</strong> 5
+<strong>Instrução:</strong>
+<code>&quot;Linha 5 da apostila — πιστεύω&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva πιστεύω cinco vezes na linha 5. Pronuncie: pis-TEÚ-o.&quot;</p>
+</blockquote>
+<hr>
+<h2>🧠 Step 12: pause</h2>
+<p><strong>Tipo:</strong> Revisão Guiada
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Ser, vir, ouvir, ver e crer — verbos que descrevem o discipulado. Releia estas palavras.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<pre><code>Ser, vir, ouvir, ver e crer — verbos que descrevem o discipulado.
+Quando estiver pronto, continue.
+</code></pre>
+<hr>
+<h2>📓 Step 13: dictation — εἰμί</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: ser.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;ser&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> εἰμί</p>
+<hr>
+<h2>📓 Step 14: dictation — ἔρχομαι</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: vir.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;vir&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> ἔρχομαι</p>
+<hr>
+<h2>📓 Step 15: dictation — ἀκούω</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: ouvir.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;ouvir&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> ἀκούω</p>
+<hr>
+<h2>📓 Step 16: dictation — βλέπω</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: ver.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;ver&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> βλέπω</p>
+<hr>
+<h2>📓 Step 17: dictation — πιστεύω</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: crer.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;crer&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> πιστεύω</p>
+<hr>
+<h2>🎉 Fim da Lição L16</h2>
+<p>Parabéns! Você concluiu <strong>Lição 16 — Verbos do NT</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi εἰμί (ser)</li>
+<li><input disabled="" type="checkbox"> Aprendi ἔρχομαι (vir)</li>
+<li><input disabled="" type="checkbox"> Aprendi ἀκούω (ouvir)</li>
+<li><input disabled="" type="checkbox"> Aprendi βλέπω (ver)</li>
+<li><input disabled="" type="checkbox"> Aprendi πιστεύω (crer)</li>
+</ul>
+
+</body>
+</html>

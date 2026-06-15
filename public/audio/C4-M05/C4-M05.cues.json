@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C4-M05",
+  "moduleTitle": "do Ciclo 4: Imperativo Presente",
+  "audioFile": "/audio/C4-M05/C4-M05.mp3",
+  "duration": 350.07,
+  "generatedAt": "2026-06-12T17:55:55.163306Z",
+  "narrationFile": "C4-M05.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 5 do Ciclo 4: Imperativo Presente",
+      "startTime": 0.0,
+      "endTime": 3.04
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Modulo 5 do Ciclo 4. Nos modulos anteriores, voce aprendeu o presente do indicativo ativo com o paradigma luo, os verbos depoentes como erkhomai, e o presente medio-passivo. Agora voce va",
+      "startTime": 5.04,
+      "endTime": 39.34
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — O imperativo presente ativo",
+      "startTime": 40.34,
+      "endTime": 42.89
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O modo imperativo expressa ordem direta, isto e, um comando ou proibicao. Diferentemente do portugues, que tem imperativo para a segunda pessoa do singular e plural, o grego tem uma forma especifica p",
+      "startTime": 43.89,
+      "endTime": 109.01
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Compare lueis, indicativo \"tu soltas\", com lue, imperativo \"solta tu!\". A unica diferenca e o \"s\" final. A segunda plural e igual para ambos: luete significa \"vos soltais\" ou \"soltai vos!\" dependendo ",
+      "startTime": 109.51,
+      "endTime": 122.04
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "lue — palavra-ancora da unidade, verbo modelo para o imperativo ativo.",
+      "startTime": 123.54,
+      "endTime": 127.45
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora que voce aprendeu a regra geral do imperativo ativo, vamos aplica-la aos verbos que voce ja conhece: lego, echo e pisteuo.",
+      "startTime": 128.95,
+      "endTime": 136.07
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Imperativo de verbos conhecidos",
+      "startTime": 137.57,
+      "endTime": 140.56
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Os verbos que voce ja conhece — lego, echo, pisteuo — seguem exatamente a mesma regra do imperativo presente ativo. Aplicando a regra: lego radical leg mais \"e\" forma lege — \"fala tu!\", e leg mais \"et",
+      "startTime": 141.56,
+      "endTime": 209.63
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "No versiculo Joao 14 versiculo 1, o primeiro pisteuete e provavelmente imperativo, formando um par com o imperativo anterior tarassestho — \"nao se turbe\". O contexto de consolo e exortacao reforca a l",
+      "startTime": 210.13,
+      "endTime": 222.27
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "Me tarassestho umon he kardia; pisteuete eis ton theon kai eis eme pisteuete — Joao, capitulo 14, versiculo 1.",
+      "startTime": 223.77,
+      "endTime": 230.41
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Agora vamos aprender o imperativo dos verbos depoentes, que tem terminacoes diferentes.",
+      "startTime": 231.91,
+      "endTime": 237.33
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Imperativo de verbos depoentes",
+      "startTime": 238.83,
+      "endTime": 241.65
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Os verbos depoentes — como erkhomai e poreuomai — tambem tem imperativo presente, mas com terminacoes diferentes porque eles usam a forma medio-passiva. Lembre-se: verbos depoentes tem forma medio-pas",
+      "startTime": 242.65,
+      "endTime": 295.99
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Compare as terminacoes do imperativo segunda singular: ativo \"e\" — lue, lege, pisteue — versus depoente \"ou\" — erkhou, poreyou. O depoente tem \"ou\" onde o ativo tem \"e\".",
+      "startTime": 296.49,
+      "endTime": 305.59
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "erkhou kai ide — Joao, capitulo 1, versiculo 46. Filipe diz a Natanael: \"Vem e ve\".",
+      "startTime": 307.09,
+      "endTime": 313.0
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens por completar o Modulo 5 do Ciclo 4! Voce aprendeu o modo imperativo no presente ativo e depoente. Agora voce sabe que a segunda singular do imperativo ativo termina em \"e\", a segunda plural ",
+      "startTime": 314.5,
+      "endTime": 349.07
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C4-M05-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C4-M05-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C4-M05-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C4-M05-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C4-M05-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

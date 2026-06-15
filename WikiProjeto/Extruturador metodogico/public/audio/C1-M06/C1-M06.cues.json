@@ -1,0 +1,281 @@
+{
+  "version": "1.0",
+  "moduleId": "C1-M06",
+  "moduleTitle": "Oclusivas Sonoras — Beta, Delta, Gama",
+  "audioFile": "/audio/C1-M06/C1-M06.mp3",
+  "duration": 834.34,
+  "generatedAt": "2026-06-04T04:29:02.614424Z",
+  "narrationFile": "C1-M06.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Oclusivas Sonoras — Beta, Delta, Gama",
+      "startTime": 0.0,
+      "endTime": 2.69
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Módulo 6 do Koiné App — Oclusivas Sonoras.\n\nHoje você vai conhecer três consoantes que formam, com as três oclusivas surdas que você já aprendeu, um dos sistemas mais elegantes do grego: ",
+      "startTime": 4.69,
+      "endTime": 78.87
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Beta",
+      "startTime": 79.87,
+      "endTime": 81.14
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Beta é a segunda letra do alfabeto grego, e a primeira das oclusivas sonoras deste módulo. Beta maiúsculo tem forma idêntica ao B do português — uma haste vertical à esquerda com duas curvas, uma em c",
+      "startTime": 82.14,
+      "endTime": 161.22
+    },
+    {
+      "id": "u1_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre \"biblion\" — o acento agudo no segundo \"i\" — se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifique apenas a letra beta dentro da palavra. O so",
+      "startTime": 161.72,
+      "endTime": 174.42
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Beta maiúsculo é IDÊNTICO ao B do português. Beta minúsculo é uma haste vertical com dois semicírculos, um acima e um abaixo — como uma casa com dois andares. Para distinguir surdo de sonoro: mão na g",
+      "startTime": 175.42,
+      "endTime": 190.05
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora desta unidade é \"biblio\" (com acento agudo no segundo \"i\"), que significa \"livro\" em grego, encontrada em João, capítulo 20, versículo 30. A frase completa, da qual esta é a palavra c",
+      "startTime": 191.55,
+      "endTime": 205.87
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Você acabou de aprender beta, o par sonoro de pi. A diferença crucial é a vibração: pi não vibra, beta vibra. Agora vamos para a segunda oclusiva sonora: delta, o par sonoro de tau.",
+      "startTime": 207.37,
+      "endTime": 218.72
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Delta",
+      "startTime": 220.22,
+      "endTime": 221.66
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Delta é a quarta letra do alfabeto grego, e a segunda das oclusivas sonoras deste módulo. Delta maiúsculo tem forma de triângulo — três hastes que se encontram em três pontos formando um triângulo com",
+      "startTime": 222.66,
+      "endTime": 305.97
+    },
+    {
+      "id": "u2_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre \"doxa\" — o acento circunflexo no ômicron — se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifique apenas a letra delta dentro da palavra. O so",
+      "startTime": 306.47,
+      "endTime": 319.41
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Delta maiúsculo é um triângulo com a base para baixo — como o símbolo matemático delta, ou como a foz do rio Nilo. Delta minúsculo parece um \"d\" girado, com pequeno arco no topo e haste ascendente. Pa",
+      "startTime": 320.41,
+      "endTime": 337.07
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora desta unidade é \"doxa\" (com acento circunflexo no ômicron), que significa \"glória\" em grego, encontrada em João, capítulo 1, versículo 14. A frase completa, da qual esta é a palavra c",
+      "startTime": 338.57,
+      "endTime": 354.0
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Muito bem! Você aprendeu delta, o par sonoro de tau. Agora a terceira e última oclusiva sonora deste módulo: gama, o par sonoro de capa. E com gama, você terá aprendido a letra que forma a palavra mai",
+      "startTime": 355.5,
+      "endTime": 372.96
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Gama",
+      "startTime": 374.46,
+      "endTime": 375.89
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Gama é a terceira letra do alfabeto grego, e a terceira das oclusivas sonoras deste módulo. Gama maiúsculo tem forma de \"L\" invertido — uma haste vertical à esquerda com uma haste horizontal saindo do",
+      "startTime": 376.89,
+      "endTime": 473.27
+    },
+    {
+      "id": "u3_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre \"ginomai\" e \"ge\" — os acentos agudos e circunflexos — se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifique apenas a letra gama dentro da pal",
+      "startTime": 473.77,
+      "endTime": 487.64
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Gama maiúsculo é um \"L\" invertido — uma haste vertical à esquerda com uma haste horizontal saindo do topo para a direita. Gama minúsculo é uma curva fechada com uma haste descendente longa — como uma ",
+      "startTime": 488.64,
+      "endTime": 509.81
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora desta unidade é \"egeneto\" (aoristo de gínomai), que significa \"se fez\" em grego, encontrada em João, capítulo 1, versículo 14. A frase completa, da qual esta é a palavra central, é: \"",
+      "startTime": 511.31,
+      "endTime": 531.35
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Parabéns! Você concluiu as três unidades deste módulo e agora conhece três oclusivas sonoras: beta, delta e gama. Você também domina o sistema de pares surdo-sonoro: B-P, D-T, G-K. Este é um dos conce",
+      "startTime": 532.85,
+      "endTime": 565.75
+    },
+    {
+      "id": "u3_exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Chegou o momento mais esperado do Bloco B: a Aula do Versículo. Você vai ler \"kai ho logos sarx egeneto\" — \"E o Verbo se fez carne\" — palavra por palavra, letra por letra, e descobrir por que esta fra",
+      "startTime": 567.25,
+      "endTime": 677.76
+    },
+    {
+      "id": "u3_nota_diacriticos_2",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre \"kai\", \"ho\", \"logos\", \"sarx\" e \"egeneto\" — os acentos agudos e circunflexos — se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifique apenas as",
+      "startTime": 678.26,
+      "endTime": 693.7
+    },
+    {
+      "id": "u3_dica_2",
+      "marker": "DICA",
+      "text": "Para lembrar a ordem do versículo: K-H-L-S-E (kai, ho, logos, sarx, egeneto). Ou pense na estrutura: CONJUNÇÃO + SUJEITO + PREDICADO. \"Kai\" é a conjunção. \"Ho logos\" é o sujeito. \"Sarx egeneto\" é o pr",
+      "startTime": 694.7,
+      "endTime": 711.93
+    },
+    {
+      "id": "u3_versiculo_2",
+      "marker": "VERSICULO",
+      "text": "O versículo da Aula do Versículo do Bloco B é \"kai ho logos sarx egeneto\", \"E o Verbo se fez carne\", encontrada em João, capítulo 1, versículo 14a. Esta é a frase central do prólogo de João, e o coraç",
+      "startTime": 713.43,
+      "endTime": 728.1
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar o Módulo 6 — Oclusivas Sonoras. E parabéns por ter chegado à Aula do Versículo do Bloco B.\n\nAgora você conhece três oclusivas sonoras: beta, delta e gama. Mais importante, você ",
+      "startTime": 729.6,
+      "endTime": 833.34
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_nota_diacriticos",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C1-M06-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C1-M06-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_nota_diacriticos",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C1-M06-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C1-M06-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_nota_diacriticos",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C1-M06-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C1-M06-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_exposicao_2",
+        "u3_nota_diacriticos_2",
+        "u3_dica_2",
+        "u3_versiculo_2"
+      ],
+      "unitId": "C1-M06-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

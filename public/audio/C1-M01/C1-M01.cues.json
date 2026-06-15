@@ -1,0 +1,233 @@
+{
+  "version": "1.0",
+  "moduleId": "C1-M01",
+  "moduleTitle": "Vogais Base — Alfa, Épsilon, Iota",
+  "audioFile": "/audio/C1-M01/C1-M01.mp3",
+  "duration": 304.97,
+  "generatedAt": "2026-06-04T03:33:54.356952Z",
+  "narrationFile": "C1-M01.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Vogais Base — Alfa, Épsilon, Iota",
+      "startTime": 0.0,
+      "endTime": 2.54
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Módulo 1 do Koiné App — Vogais Base.\n\nHoje você vai conhecer as três primeiras vogais do alfabeto grego: alfa, épsilon e iota. São letras que você talvez já use no português sem perceber,",
+      "startTime": 4.54,
+      "endTime": 34.1
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Alfa",
+      "startTime": 35.1,
+      "endTime": 36.39
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Alfa é a primeira letra do alfabeto grego, e não é por acaso que João a usa para descrever Cristo: \"Eu sou o Alfa e o Ômega\" — Apocalipse, capítulo 1, versículo 8. Do princípio ao fim. A letra que abr",
+      "startTime": 37.39,
+      "endTime": 74.43
+    },
+    {
+      "id": "u1_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre a palavra-âncora agape — a asinha sobre o alfa inicial, o acento sobre o alfa do meio — se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifique",
+      "startTime": 74.93,
+      "endTime": 88.16
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Alfa maiúsculo é igual ao A do português — porque descendem do mesmo ancestral. O som também: \"a\" puro, como em \"pai\", \"mãe\", \"alfa\".",
+      "startTime": 89.16,
+      "endTime": 96.73
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora do módulo é agape, encontrada em Primeira João, capítulo 4, versículo 8.",
+      "startTime": 98.23,
+      "endTime": 103.55
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Você acabou de aprender a primeira letra. Agora vamos para a segunda: Épsilon.",
+      "startTime": 105.05,
+      "endTime": 110.03
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Épsilon",
+      "startTime": 111.53,
+      "endTime": 113.03
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Épsilon é a quinta letra do alfabeto grego. A maiúscula é praticamente idêntica ao E do português — fácil de reconhecer. Já a minúscula é diferente: uma curva aberta para a direita, sem a haste vertic",
+      "startTime": 114.03,
+      "endTime": 164.81
+    },
+    {
+      "id": "u2_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "As marquinhas sobre a palavra egô — a asinha e o acento — se chamam diacríticos. Ignore-as por enquanto, você as estuda no Módulo 9.",
+      "startTime": 165.31,
+      "endTime": 172.95
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Duas formas, uma ideia: Épsilon maiúsculo é igual ao E do português. Fácil. O épsilon minúsculo é a curva — pense numa lua crescente virada para a esquerda, com um traço no meio. Esse é o épsilon que ",
+      "startTime": 173.95,
+      "endTime": 187.08
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra do versículo é egô, encontrada em João, capítulo 6, versículo 35.",
+      "startTime": 188.58,
+      "endTime": 193.54
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Muito bem! Agora a terceira e última vogal deste módulo: Iota.",
+      "startTime": 195.04,
+      "endTime": 198.87
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Iota",
+      "startTime": 200.37,
+      "endTime": 201.92
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Iota é a nona letra do alfabeto grego, e a mais fina de todas — uma simples linha reta. Nasceu do yod semítico, gerou o I latino, e chegou ao I que você usa em português.\n\nMas aqui está o detalhe que ",
+      "startTime": 202.92,
+      "endTime": 260.73
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Iota é a letra mais simples do alfabeto grego — uma única linha reta. Pense nela como a vírgula reta do grego: fina, vertical, sem curva. Como o som \"i\" que ela representa.",
+      "startTime": 261.23,
+      "endTime": 270.95
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra do versículo é \"Iesous eipen\", que significa \"Jesus disse\", encontrada em João, capítulo 11, versículo 25.",
+      "startTime": 272.45,
+      "endTime": 279.33
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Você concluiu as três unidades. Agora vamos aplicar o que aprendeu, com a palavra-âncora do módulo.",
+      "startTime": 280.83,
+      "endTime": 286.24
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns! Você completou o Módulo 1 — Vogais Base. Agora você conhece as três primeiras vogais do grego: Alfa, Épsilon e Iota. No próximo módulo, vamos conhecer as outras três vogais — Ômicron, Ípsilo",
+      "startTime": 287.74,
+      "endTime": 303.97
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_nota_diacriticos",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C1-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C1-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_nota_diacriticos",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C1-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C1-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C1-M01-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C1-M01-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

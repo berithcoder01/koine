@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C4-M03",
+  "moduleTitle": "do Ciclo 4: Verbos de Movimento 2 — Compostos",
+  "audioFile": "/audio/C4-M03/C4-M03.mp3",
+  "duration": 277.97,
+  "generatedAt": "2026-06-12T17:53:03.214696Z",
+  "narrationFile": "C4-M03.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 3 do Ciclo 4: Verbos de Movimento 2 — Compostos",
+      "startTime": 0.0,
+      "endTime": 4.08
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Modulo 3 do Ciclo 4. Nos modulos anteriores, voce aprendeu os verbos depoentes erkhomai e poreuomai. Agora voce vai dar um passo alem: aprender como as preposicoes gregas se transformam e",
+      "startTime": 6.08,
+      "endTime": 30.69
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Prefixos preposicionais",
+      "startTime": 31.69,
+      "endTime": 33.99
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Uma caracteristica poderosa do grego e a formacao de verbos compostos: uma preposicao e adicionada ao inicio de um verbo base para modificar ou especificar seu sentido. As preposicoes \"ana\" para cima,",
+      "startTime": 34.99,
+      "endTime": 76.07
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Pense nos prefixos gregos como equivalentes aos prefixos do portugues. Assim como \"sub\" mais \"ir\" forma \"subir\" e \"des\" mais \"cer\" forma \"descer\", o grego faz a mesma coisa com suas preposicoes. \"Ana\"",
+      "startTime": 76.57,
+      "endTime": 91.27
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "anabaino — palavra-ancora do modulo.",
+      "startTime": 92.77,
+      "endTime": 94.74
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora que voce entende o conceito de prefixos preposicionais, vamos aprender a conjugacao completa de anabaino e katabaino.",
+      "startTime": 96.24,
+      "endTime": 103.04
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — As conjugacoes de anabaino e katabaino",
+      "startTime": 104.54,
+      "endTime": 107.7
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Anabaino e katabaino sao verbos de movimento compostos com baino como base. Ambos sao verbos omega regulares e seguem exatamente as terminacoes do presente ativo que voce aprendeu no Modulo 1. A conju",
+      "startTime": 108.7,
+      "endTime": 149.42
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "No Novo Testamento, anabaino e frequentemente usado para \"subir a Jerusalem\" — que ficava numa colina — e katabaino para \"descer\" de la. Jesus \"sobe\" a Jerusalem nos Evangelhos, e o Espirito Santo \"de",
+      "startTime": 149.92,
+      "endTime": 161.42
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "anabaino — palavra-ancora do modulo.",
+      "startTime": 162.92,
+      "endTime": 164.93
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Agora vamos aprender os verbos depoentes compostos formados a partir de erkhomai.",
+      "startTime": 166.43,
+      "endTime": 171.58
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Ekserkhomai, eiserkhomai e proserkhomai",
+      "startTime": 173.08,
+      "endTime": 176.53
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Os verbos ekserkhomai, eiserkhomai e proserkhomai sao compostos formados a partir do verbo depoente erkhomai com prefixos preposicionais. Assim como erkhomai, eles sao verbos depoentes — forma medio-p",
+      "startTime": 177.53,
+      "endTime": 227.41
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Ekserkhomai gerou o portugues \"exodo\" — saida. Eiserkhomai esta relacionado a \"exito\" no sentido original de \"resultado de entrada\". Proserkhomai se conecta a \"pros\" como em \"prospero\" — que segue em ",
+      "startTime": 227.91,
+      "endTime": 238.66
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "ekserkhomai — palavra-ancora da unidade.",
+      "startTime": 240.16,
+      "endTime": 242.3
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens por completar o Modulo 3 do Ciclo 4! Voce aprendeu como as preposicoes gregas se transformam em prefixos para formar verbos compostos. Agora voce conhece anabaino e katabaino — formados de ba",
+      "startTime": 243.8,
+      "endTime": 276.97
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C4-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C4-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C4-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C4-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C4-M03-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

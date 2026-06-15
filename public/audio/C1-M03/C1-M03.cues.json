@@ -1,0 +1,241 @@
+{
+  "version": "1.0",
+  "moduleId": "C1-M03",
+  "moduleTitle": "Consoantes Familiares — Eta, Nu, Tau",
+  "audioFile": "/audio/C1-M03/C1-M03.mp3",
+  "duration": 483.85,
+  "generatedAt": "2026-06-04T03:48:01.400807Z",
+  "narrationFile": "C1-M03.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Consoantes Familiares — Eta, Nu, Tau",
+      "startTime": 0.0,
+      "endTime": 2.67
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Módulo 3 do Koiné App — Consoantes Familiares.\n\nHoje você vai conhecer as três primeiras consoantes do alfabeto grego: eta, nu e tau. Eta é a mais traiçoeira — tem a forma do H, mas o som",
+      "startTime": 4.67,
+      "endTime": 56.68
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Eta",
+      "startTime": 57.68,
+      "endTime": 58.89
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Eta é a sétima letra do alfabeto grego, e talvez a mais traiçoeira para falantes de português. Eta maiúsculo tem aparência idêntica ao H do português — duas hastes verticais com uma barra horizontal l",
+      "startTime": 59.89,
+      "endTime": 143.82
+    },
+    {
+      "id": "u1_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre a palavra \"en\" — o acento circunflexo — e sobre outras palavras gregas como \"logos\", \"theos\" e \"agape\" se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por ago",
+      "startTime": 144.32,
+      "endTime": 163.45
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Eta maiúsculo parece um H sem sopro. Imagine o H do português que perdeu a respiração e ficou só com a vogal: é isso que você ouve. A letra eta tem a forma do H, mas o som do \"ê\" sustentado.",
+      "startTime": 164.45,
+      "endTime": 176.34
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora do módulo é \"en\" (com acento circunflexo), que significa \"era\" em grego, encontrada em João, capítulo 1, versículo 1. A frase completa, da qual esta é a palavra central, é: \"En arje e",
+      "startTime": 177.84,
+      "endTime": 191.08
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Você acabou de aprender a letra mais traiçoeira do módulo: eta, que parece H mas soa como \"e\" longo. Agora vamos para a segunda consoante, que é muito mais fácil: nu.",
+      "startTime": 192.58,
+      "endTime": 202.49
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Nu",
+      "startTime": 203.99,
+      "endTime": 205.22
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Nu é a décima terceira letra do alfabeto grego, e provavelmente a mais fácil para falantes de português — porque tem o som e quase a forma do nosso N.\n\nNu maiúsculo é praticamente idêntico ao N do por",
+      "startTime": 206.22,
+      "endTime": 264.54
+    },
+    {
+      "id": "u2_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre a palavra \"nomos\" — o acento agudo no primeiro nu e o acento circunflexo no \"o\" do meio — se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifiq",
+      "startTime": 265.04,
+      "endTime": 280.35
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Nu maiúsculo é igual ao N. Nu minúsculo é uma ponte de duas pernas: a perna esquerda desce reta, a perna direita sobe diagonal. Pense num \"n\" que perdeu a curva e virou ponte.",
+      "startTime": 281.35,
+      "endTime": 291.62
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra do versículo é \"ho nomos dia Môuseôs edothê\", que significa \"a lei foi dada por meio de Moisés\", encontrada em João, capítulo 1, versículo 17.",
+      "startTime": 293.12,
+      "endTime": 301.79
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Muito bem! Você aprendeu nu, que tem o som e quase a forma do N do português. Agora a terceira e última consoante deste módulo: tau, igualmente fácil.",
+      "startTime": 303.29,
+      "endTime": 311.76
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Tau",
+      "startTime": 313.26,
+      "endTime": 314.58
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Tau é a décima nona letra do alfabeto grego, e — assim como nu — extremamente fácil para falantes de português.\n\nTau maiúsculo é idêntico ao T do português: uma haste vertical com uma barra horizontal",
+      "startTime": 315.58,
+      "endTime": 373.96
+    },
+    {
+      "id": "u3_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "Os pequenos sinais sobre a palavra \"tekna\" — o acento agudo no primeiro tau e o acento circunflexo no \"e\" do meio — se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por agora, identifi",
+      "startTime": 374.46,
+      "endTime": 387.77
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Tau maiúsculo é igual ao T. Tau minúsculo tem a haste reta com uma curva à direita — pense num \"t\" cujo traço horizontal virou um pequeno gancho curvo.",
+      "startTime": 388.77,
+      "endTime": 396.99
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra do versículo é \"tekna theou genesthai\", que significa \"tornar-se filhos de Deus\", encontrada em João, capítulo 1, versículo 12.",
+      "startTime": 398.49,
+      "endTime": 406.0
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Você concluiu as três unidades. Agora chegou o momento mais esperado do módulo: a primeira Aula do Versículo do Ciclo I. Você vai ler a abertura do Evangelho de João — \"En arje en ho logos\" — palavra ",
+      "startTime": 407.5,
+      "endTime": 423.82
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns! Você completou o Módulo 3 — Consoantes Familiares. Agora você conhece três consoantes do grego: eta, nu e tau. Você também dominou o par de confusão mais importante do Ciclo I: a diferença e",
+      "startTime": 425.32,
+      "endTime": 482.85
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_nota_diacriticos",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C1-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C1-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_nota_diacriticos",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C1-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C1-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_nota_diacriticos",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C1-M03-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C1-M03-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "version": "1.0",
+  "moduleId": "L20",
+  "moduleTitle": "Lição 20 — Tudo Posso Naquele",
+  "audioFile": "/audio/L20/L20.mp3",
+  "duration": 102.97,
+  "generatedAt": "2026-06-15T18:14:26.247153Z",
+  "narrationFile": "L20.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 20 — Tudo Posso Naquele",
+      "startTime": 0.0,
+      "endTime": 1.93
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Filipenses 4:13 — o verso da fortaleza em Cristo. Paulo escreve da prisão, não de um palácio. É na fraqueza que ele descobre: πάντα ἰσχύω ἐν τῷ ἐνδυναμοῦντί με. Abra sua apostila na página 42.",
+      "startTime": 3.93,
+      "endTime": 14.49
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "πάντα significa 'todas as coisas' ou 'tudo'. É o plural neutro de πᾶς (todo, cada). Paulo começa com esta palavra para afirmar que não há exceção. Pronuncia-se: PÁN-ta.",
+      "startTime": 15.49,
+      "endTime": 23.81
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "ἰσχύω significa 'eu tenho força', 'sou forte'. Não é uma força qualquer — é a fortaleza interior que vem de Deus. A raiz ἰσχύς significa poder, força. Pronuncia-se: is-KHÚ-o.",
+      "startTime": 24.31,
+      "endTime": 33.24
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "ἐν — preposição 'em', 'por meio de'. Indica instrumento ou agente. Paulo diz que a força não vem dele mesmo, mas por meio de Cristo. Pronuncia-se: en.",
+      "startTime": 33.74,
+      "endTime": 41.6
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "τῷ é o artigo definido neutro/dativo singular — 'ao' / 'no'. Acompanha ἐνδυναμοῦντι no caso dativo. Pronuncia-se: tô.",
+      "startTime": 42.1,
+      "endTime": 47.67
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "ἐνδυναμοῦντί é um particípio presente que significa 'que me fortalece' ou 'que dá força'. A palavra tem a mesma raiz de δύναμις (poder, milagre). É Cristo quem ativamente fortalece. Pronuncia-se: en-d",
+      "startTime": 48.17,
+      "endTime": 58.94
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "με significa 'mim', 'me'. É o pronome pessoal acusativo. Paulo personaliza: não é uma força para todos em geral, mas 'Cristo que me fortalece a MIM'. Pronuncia-se: me.",
+      "startTime": 59.44,
+      "endTime": 68.79
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Paulo escreveu esta frase acorrentado a um soldado romano. Leia-a devagar na apostila: panta ischyō en tō endynamounti me. Cada palavra é uma declaração de fé.",
+      "startTime": 69.29,
+      "endTime": 77.98
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "Agora copie a frase completa três vezes no espaço da apostila. Cada letra é uma afirmação de fé.",
+      "startTime": 79.98,
+      "endTime": 85.58
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Ouça a frase: panta ischyō en tō endynamounti me. Agora repita em voz alta comigo. Leia duas vezes com convicção.",
+      "startTime": 86.08,
+      "endTime": 92.46
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "Escreva em grego: 'Tudo posso naquele que me fortalece'.",
+      "startTime": 92.96,
+      "endTime": 95.87
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 20 — Tudo Posso Naquele! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 96.37,
+      "endTime": 101.97
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "pausa",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

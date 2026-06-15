@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "moduleId": "L09",
+  "moduleTitle": "Lição 9 — O Ser Humano",
+  "audioFile": "/audio/L09/L09.mp3",
+  "duration": 99.1,
+  "generatedAt": "2026-06-15T17:53:35.992051Z",
+  "narrationFile": "L09.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 9 — O Ser Humano",
+      "startTime": 0.0,
+      "endTime": 1.58
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Lição 9 — O ser humano. Hoje vamos aprender palavras que descrevem o ser humano diante de Deus: ánthropos, kardía, psyqué, sárx e hamartía. Abra sua apostila na página 19.",
+      "startTime": 3.58,
+      "endTime": 14.46
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "ἄνθρωπος (ánthrōpos) — ser humano / homem. E a vida era a luz dos homens. Possível origem em ἀνήρ + ὤψ.",
+      "startTime": 15.46,
+      "endTime": 19.95
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ἄνθρωπος cinco vezes na linha 1. Pronuncie: ÂN-trô-pos.",
+      "startTime": 20.45,
+      "endTime": 24.89
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "καρδία (kardía) — coração / sede da vontade. Bem-aventurados os limpos de coração. No pensamento bíblico, o coração é o centro das decisões.",
+      "startTime": 25.39,
+      "endTime": 32.84
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva καρδία cinco vezes na linha 2. Pronuncie: kar-DÍ-a.",
+      "startTime": 33.34,
+      "endTime": 37.31
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "ψυχή (psychḗ) — alma / ser interior / vida. Pois que aproveitará ao homem ganhar o mundo e perder a sua alma?",
+      "startTime": 37.81,
+      "endTime": 44.57
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ψυχή cinco vezes na linha 3. Pronuncie: psi-KÊ.",
+      "startTime": 45.07,
+      "endTime": 48.62
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "σάρξ (sárx) — carne / natureza humana. E o Verbo se fez carne e habitou entre nós. Paulo usa para a natureza humana sem Deus.",
+      "startTime": 49.12,
+      "endTime": 55.93
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva σάρξ cinco vezes na linha 4. Pronuncie: SÁRKS.",
+      "startTime": 56.43,
+      "endTime": 60.01
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "ἁμαρτία (hamartía) — pecado / desvio do alvo. Porque todos pecaram e destituídos estão da glória de Deus.",
+      "startTime": 60.51,
+      "endTime": 65.82
+    },
+    {
+      "id": "exposicao_10",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ἁμαρτία cinco vezes na linha 5. Pronuncie: a-mar-TÍ-a.",
+      "startTime": 66.32,
+      "endTime": 70.41
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Você escreveu palavras que definem a condição humana. Reflita: todas estas palavras apontam para a necessidade de Deus.",
+      "startTime": 70.91,
+      "endTime": 77.35
+    },
+    {
+      "id": "exposicao_11",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'ser humano'.",
+      "startTime": 79.35,
+      "endTime": 81.66
+    },
+    {
+      "id": "exposicao_12",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'coração'.",
+      "startTime": 82.16,
+      "endTime": 84.5
+    },
+    {
+      "id": "exposicao_13",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'alma'.",
+      "startTime": 85.0,
+      "endTime": 87.07
+    },
+    {
+      "id": "exposicao_14",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'carne'.",
+      "startTime": 87.57,
+      "endTime": 89.57
+    },
+    {
+      "id": "exposicao_15",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'pecado'.",
+      "startTime": 90.07,
+      "endTime": 92.26
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 9 — O Ser Humano! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 92.76,
+      "endTime": 98.1
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "exposicao_10",
+        "pausa",
+        "exposicao_11",
+        "exposicao_12",
+        "exposicao_13",
+        "exposicao_14",
+        "exposicao_15"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

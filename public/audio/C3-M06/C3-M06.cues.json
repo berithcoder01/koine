@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "moduleId": "C3-M06",
+  "moduleTitle": "Declinacao Completa — primeira e segunda Declinacoes mais Neutros",
+  "audioFile": "/audio/C3-M06/C3-M06.mp3",
+  "duration": 431.29,
+  "generatedAt": "2026-06-12T17:44:44.106387Z",
+  "narrationFile": "C3-M06.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Declinacao Completa — primeira e segunda Declinacoes mais Neutros",
+      "startTime": 0.0,
+      "endTime": 3.54
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Modulo 6 do Koiné App — Declinacao Completa.\n\nEste modulo e o ponto de chegada do estudo das declinacoes no Ciclo 3. Aqui voce vai juntar tudo que aprendeu: a segunda declinacao com seus ",
+      "startTime": 5.54,
+      "endTime": 36.04
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Neutros da Segunda Declinacao: teknon",
+      "startTime": 37.04,
+      "endTime": 40.2
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Os neutros da segunda declinacao seguem um padrao proprio, com duas regras de ouro. Primeira regra: no neutro, nominativo e acusativo sao SEMPRE iguais — em ambos os numeros. Segunda regra: o plural n",
+      "startTime": 41.2,
+      "endTime": 98.05
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Neutro quer dizer nominativo igual a acusativo. Sempre. Singular \"teknon\" e nominativo e acusativo. Plural \"tekna\" e nominativo e acusativo. Se voce vir um substantivo terminado em \"on\", e muito prova",
+      "startTime": 98.55,
+      "endTime": 113.29
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "O versiculo-ancora do modulo e: \"Edoken autois exousian tekna theou genesthai\" — Joao, capitulo 1, versiculo 12.",
+      "startTime": 114.79,
+      "endTime": 121.64
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Voce aprendeu as regras dos neutros. Agora vamos ver a tabela completa da segunda declinacao, com \"logos\" e \"teknon\" lado a lado.",
+      "startTime": 123.14,
+      "endTime": 130.74
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Paradigma Completo da Segunda Declinacao: logos e teknon",
+      "startTime": 132.24,
+      "endTime": 136.57
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A segunda declinacao abrange substantivos masculinos e neutros, ambos com tema em \"omicron\". Eis a tabela completa.\n\n\"Logos\", masculino, singular: nominativo \"logos\", acusativo \"logon\", genitivo \"logo",
+      "startTime": 137.57,
+      "endTime": 216.89
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Compare \"logos\" e \"teknon\" lado a lado. Onde \"logos\" tem \"os\" no nominativo e \"on\" no acusativo, \"teknon\" tem \"on\" para ambos. Onde \"logos\" tem \"oi\" no nominativo plural e \"ous\" no acusativo plural, \"",
+      "startTime": 217.39,
+      "endTime": 235.27
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "O versiculo de referencia desta unidade e \"En arche en ho logos\" — \"No principio era o Verbo\" — Joao, capitulo 1, versiculo 1.",
+      "startTime": 236.77,
+      "endTime": 243.92
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Muito bem! Agora voce tem a segunda declinacao completa na cabeca. Falta a primeira declinacao feminina completa — que e o tema da terceira e ultima unidade.",
+      "startTime": 245.42,
+      "endTime": 254.22
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Paradigma Completo da Primeira Declinacao Feminina: zoe",
+      "startTime": 255.72,
+      "endTime": 259.81
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Completando o quadro das declinacoes, eis o paradigma completo da primeira declinacao feminina, modelo \"eta\" com \"zoe\", singular e plural.\n\nSingular: nominativo \"zoe\", acusativo \"zoen\", genitivo \"zoes",
+      "startTime": 260.81,
+      "endTime": 332.07
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "O genitivo plural da primeira declinacao e SEMPRE circunflexo: \"zoon\". E uma contracao historica. No plural, a vogal tematica muda de \"eta\" para \"alfa\": \"zoe\" no singular vira \"zoai\" no plural. Memori",
+      "startTime": 332.57,
+      "endTime": 345.52
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "O versiculo de referencia desta unidade e \"zoe\" — \"vida\" — a mesma palavra do modulo anterior, encontrada em Joao, capitulo 14, versiculo 6.",
+      "startTime": 347.02,
+      "endTime": 356.04
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Parabens! Voce concluiu as tres unidades deste modulo e agora tem o quadro completo das duas primeiras declinacoes do grego.",
+      "startTime": 357.54,
+      "endTime": 364.64
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens por completar o Modulo 6 — Declinacao Completa: primeira e segunda Declinacoes mais Neutros.\n\nEste modulo encerra o estudo das declinacoes no Ciclo 3. Agora voce tem na cabeca as tabelas comp",
+      "startTime": 366.14,
+      "endTime": 430.29
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C3-M06-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C3-M06-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C3-M06-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C3-M06-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C3-M06-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C3-M06-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "version": "1.0",
+  "moduleId": "L18",
+  "moduleTitle": "Lição 18 — Deus é Amor",
+  "audioFile": "/audio/L18/L18.mp3",
+  "duration": 66.44,
+  "generatedAt": "2026-06-15T18:10:42.916469Z",
+  "narrationFile": "L18.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 18 — Deus é Amor",
+      "startTime": 0.0,
+      "endTime": 1.76
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "João escreve três palavras: hó theós agápē estín — Deus é amor. Em apenas três palavras, o apóstolo define a essência do Criador. Abra sua apostila na página 38.",
+      "startTime": 3.76,
+      "endTime": 13.32
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "ὁ é o artigo — 'o'. Com θεός, indica que é o Deus específico de Israel, não um deus qualquer. Pronuncia-se: hô.",
+      "startTime": 14.32,
+      "endTime": 20.88
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "θεός significa Deus. Você já aprendeu esta palavra na Lição 8. Pronuncia-se: te-ÓS.",
+      "startTime": 21.38,
+      "endTime": 26.77
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "ἀγάπη — amor incondicional. Você já aprendeu na Lição 7. Note que não tem artigo — João diz que a natureza de Deus é amor. Pronuncia-se: a-GÁ-pe.",
+      "startTime": 27.27,
+      "endTime": 35.87
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "ἐστίν — 'é' — terceira pessoa do singular do presente de εἰμί. Pronuncia-se: es-TÍN.",
+      "startTime": 36.37,
+      "endTime": 40.33
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Leia a frase na apostila e reflita: João não diz que Deus tem amor — diz que Deus é amor.",
+      "startTime": 40.83,
+      "endTime": 45.8
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "Agora copie a frase completa três vezes no espaço da apostila.",
+      "startTime": 47.8,
+      "endTime": 51.42
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Ouça a frase: ho theos agapē estin. Agora repita em voz alta comigo. Leia duas vezes.",
+      "startTime": 51.92,
+      "endTime": 57.14
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "Escreva em grego: 'Deus é amor'.",
+      "startTime": 57.64,
+      "endTime": 59.54
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 18 — Deus é Amor! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 60.04,
+      "endTime": 65.44
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "pausa",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C5-M01",
+  "moduleTitle": "do Ciclo 5: Adjetivos da 2ª Declinacao — agathos",
+  "audioFile": "/audio/C5-M01/C5-M01.mp3",
+  "duration": 211.31,
+  "generatedAt": "2026-06-14T22:07:24.117018Z",
+  "narrationFile": "C5-M01.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 1 do Ciclo 5: Adjetivos da 2ª Declinacao — agathos",
+      "startTime": 0.0,
+      "endTime": 4.27
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Ciclo 5 do Koine App. Este ciclo e dedicado aos adjetivos e pronomes gregos. No modulo anterior, voce aprendeu os tempos verbais do presente ativo. Agora vai aprender a descrever pessoas ",
+      "startTime": 6.27,
+      "endTime": 30.18
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — O paradigma de agathos",
+      "startTime": 31.18,
+      "endTime": 33.46
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Adjetivos da segunda e primeira declinacao tem tres terminacoes — uma para cada genero. O modelo e agathos, que significa \"bom\". O masculino termina em \"os\", o feminino em \"e\" com eta, e o neutro em \"",
+      "startTime": 34.46,
+      "endTime": 72.94
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Adjetivo em grego sempre concorda com o substantivo. Nunca pense \"masculino vai com 'os'\". Pergunte: qual o genero do substantivo?",
+      "startTime": 73.44,
+      "endTime": 80.43
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "ego eimi ho poimen ho kalos — Joao, capitulo 10, versiculo 11.",
+      "startTime": 81.93,
+      "endTime": 85.96
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora que voce conhece o paradigma de agathos, vamos aplica-lo a frases completas com substantivos do Novo Testamento.",
+      "startTime": 87.46,
+      "endTime": 94.01
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Adjetivos com substantivos",
+      "startTime": 95.51,
+      "endTime": 98.27
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Em grego, o adjetivo pode vir antes ou depois do substantivo. Exemplos praticos: agathos anthropos — um homem bom. Kalos poimen — bom pastor, da passagem de Joao 10 versiculo 11. Agathe hodos — um bom",
+      "startTime": 99.27,
+      "endTime": 122.07
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "A frase \"ego eimi ho poimen ho kalos\" tem artigo duas vezes — uma no substantivo, outra no adjetivo. Isso e construcao atributiva classica.",
+      "startTime": 122.57,
+      "endTime": 131.39
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "ego eimi ho poimen ho kalos — Joao, capitulo 10, versiculo 11.",
+      "startTime": 132.89,
+      "endTime": 136.96
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Agora vamos ver como os adjetivos funcionam como predicativos — descrevendo o sujeito da frase.",
+      "startTime": 138.46,
+      "endTime": 144.59
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Adjetivo predicativo",
+      "startTime": 146.09,
+      "endTime": 148.55
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Quando o adjetivo aparece sem artigo e com o verbo eimi, ele e predicativo — descreve o sujeito, nao o identifica. A frase \"ho theos agathos estin\" significa \"Deus e bom\" — Deus e caracterizado pela b",
+      "startTime": 149.55,
+      "endTime": 178.59
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Sem o verbo eimi, o grego ainda pode expressar \"e\" implicitamente. \"Ho theos agathos\" pode significar \"Deus e bom\" — o verbo esta subentendido.",
+      "startTime": 179.09,
+      "endTime": 186.81
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "pistos ho theos — Primeira Corintios, capitulo 1, versiculo 9.",
+      "startTime": 188.31,
+      "endTime": 192.35
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens por completar o Modulo 1 do Ciclo 5! Voce aprendeu o paradigma de agathos, a concordancia de adjetivos com substantivos, e a diferenca entre uso atributivo e predicativo. No proximo modulo, v",
+      "startTime": 193.85,
+      "endTime": 210.31
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C5-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C5-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C5-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C5-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C5-M01-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

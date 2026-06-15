@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Koine</title>
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Apostila L09 — O Ser Humano (ἄνθρωπος, καρδία, ψυχή, σάρξ, ἁμαρτία)</h1>
+<p><strong>ID:</strong> apostila-L09
+<strong>Título:</strong> Lição 9 — O Ser Humano
+<strong>Descrição:</strong> ἄνθρωπος, καρδία, ψυχή, σάρξ, ἁμαρτία
+<strong>Página:</strong> 19
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 40</p>
+<hr>
+<h2>Step 1: intro</h2>
+<p><strong>Tipo:</strong> Introdução da lição
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Lição 9 — O ser humano. Hoje vamos aprender palavras que descrevem o ser humano diante de Deus: ánthropos, kardía, psyqué, sárx e hamartía. Abra sua apostila na página 19.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;Abra sua apostila na Página 19&quot;
+</code></pre>
+<hr>
+<h2>Step 2: word_intro — ἄνθρωπος</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ἄνθρωπος (ánthrōpos) — ser humano / homem. E a vida era a luz dos homens. Possível origem em ἀνήρ + ὤψ.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;ἄνθρωπος — Ser Humano&quot;
+</code></pre>
+<p><strong>Grego:</strong> ἄνθρωπος
+<strong>Transliteração:</strong> ánthrōpos
+<strong>Pronúncia:</strong> ÂN-trô-pos
+<strong>Significado:</strong> Ser Humano / Homem
+<strong>Etiologia:</strong> Possível origem em ἀνήρ (homem) + ὤψ (rosto); o ser que olha para cima
+<strong>Contexto Bíblico:</strong> João 1:4 — &quot;E a vida era a luz dos homens (ἀνθρώπων)&quot;</p>
+<hr>
+<h2>Step 3: write_practice — ἄνθρωπος</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> ἄνθρωπος × 5
+<strong>Instrução:</strong> &quot;Linha 1 da apostila — ἄνθρωπος&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva ἄνθρωπος cinco vezes na linha 1. Pronuncie: ÂN-trô-pos.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 4: word_intro — καρδία</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;καρδία (kardía) — coração / sede da vontade. Bem-aventurados os limpos de coração. No pensamento bíblico, o coração é o centro das decisões.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;καρδία — Coração&quot;
+</code></pre>
+<p><strong>Grego:</strong> καρδία
+<strong>Transliteração:</strong> kardía
+<strong>Pronúncia:</strong> kar-DÍ-a
+<strong>Significado:</strong> Coração / Sede da Vontade
+<strong>Etiologia:</strong> No pensamento hebraico-grego, o coração é o centro das decisões, não das emoções apenas
+<strong>Contexto Bíblico:</strong> Mateus 5:8 — &quot;Bem-aventurados os limpos de coração (καρδίᾳ)&quot;</p>
+<hr>
+<h2>Step 5: write_practice — καρδία</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> καρδία × 5
+<strong>Instrução:</strong> &quot;Linha 2 da apostila — καρδία&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva καρδία cinco vezes na linha 2. Pronuncie: kar-DÍ-a.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 6: word_intro — ψυχή</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ψυχή (psychḗ) — alma / ser interior / vida. Pois que aproveitará ao homem ganhar o mundo e perder a sua alma?&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;ψυχή — Alma&quot;
+</code></pre>
+<p><strong>Grego:</strong> ψυχή
+<strong>Transliteração:</strong> psychḗ
+<strong>Pronúncia:</strong> psi-KÊ
+<strong>Significado:</strong> Alma / Ser Interior / Vida
+<strong>Etiologia:</strong> Deu origem a &quot;psicologia&quot; e &quot;psiquiatria&quot;; distinto de πνεῦμα (espírito) e σῶμα (corpo)
+<strong>Contexto Bíblico:</strong> Mateus 16:26 — &quot;Pois que aproveitará ao homem ganhar o mundo inteiro e perder a sua alma (ψυχήν)?&quot;</p>
+<hr>
+<h2>Step 7: write_practice — ψυχή</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> ψυχή × 5
+<strong>Instrução:</strong> &quot;Linha 3 da apostila — ψυχή&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva ψυχή cinco vezes na linha 3. Pronuncie: psi-KÊ.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 8: word_intro — σάρξ</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;σάρξ (sárx) — carne / natureza humana. E o Verbo se fez carne e habitou entre nós. Paulo usa para a natureza humana sem Deus.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;σάρξ — Carne&quot;
+</code></pre>
+<p><strong>Grego:</strong> σάρξ
+<strong>Transliteração:</strong> sárx
+<strong>Pronúncia:</strong> SÁRKS
+<strong>Significado:</strong> Carne / Natureza Humana
+<strong>Etiologia:</strong> Frequentemente usado por Paulo para indicar a natureza humana sem Deus, não apenas o corpo físico
+<strong>Contexto Bíblico:</strong> João 1:14 — &quot;E o Verbo se fez carne (σάρξ) e habitou entre nós&quot;</p>
+<hr>
+<h2>Step 9: write_practice — σάρξ</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> σάρξ × 5
+<strong>Instrução:</strong> &quot;Linha 4 da apostila — σάρξ&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva σάρξ cinco vezes na linha 4. Pronuncie: SÁRKS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 10: word_intro — ἁμαρτία</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ἁμαρτία (hamartía) — pecado / desvio do alvo. Porque todos pecaram e destituídos estão da glória de Deus.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;ἁμαρτία — Pecado&quot;
+</code></pre>
+<p><strong>Grego:</strong> ἁμαρτία
+<strong>Transliteração:</strong> hamartía
+<strong>Pronúncia:</strong> a-mar-TÍ-a
+<strong>Significado:</strong> Pecado / Desvio do Alvo
+<strong>Etiologia:</strong> Do verbo ἁμαρτάνω, errar o alvo; imagine uma flecha que não acerta o centro
+<strong>Contexto Bíblico:</strong> Romanos 3:23 — &quot;Porque todos pecaram (ἥμαρτον) e destituídos estão da glória de Deus&quot;</p>
+<hr>
+<h2>Step 11: write_practice — ἁμαρτία</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> ἁμαρτία × 5
+<strong>Instrução:</strong> &quot;Linha 5 da apostila — ἁμαρτία&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva ἁμαρτία cinco vezes na linha 5. Pronuncie: a-mar-TÍ-a.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 12: pause</h2>
+<p><strong>Tipo:</strong> Pausa para reflexão
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Você escreveu palavras que definem a condição humana. Reflita: todas estas palavras apontam para a necessidade de Deus.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>Releia as cinco palavras na sua apostila.
+Quando estiver pronto, continue.
+</code></pre>
+<hr>
+<h2>Step 13: dictation — ἄνθρωπος</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;ser humano&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;ser humano&quot;
+<strong>Resposta Esperada:</strong> ἄνθρωπος</p>
+<hr>
+<h2>Step 14: dictation — καρδία</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;coração&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;coração&quot;
+<strong>Resposta Esperada:</strong> καρδία</p>
+<hr>
+<h2>Step 15: dictation — ψυχή</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;alma&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;alma&quot;
+<strong>Resposta Esperada:</strong> ψυχή</p>
+<hr>
+<h2>Step 16: dictation — σάρξ</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;carne&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;carne&quot;
+<strong>Resposta Esperada:</strong> σάρξ</p>
+<hr>
+<h2>Step 17: dictation — ἁμαρτία</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;pecado&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;pecado&quot;
+<strong>Resposta Esperada:</strong> ἁμαρτία</p>
+<hr>
+<h2>Fim da Lição L09</h2>
+<p>Parabéns! Você concluiu <strong>Lição 9 — O Ser Humano (ἄνθρωπος, καρδία, ψυχή, σάρξ, ἁμαρτία)</strong>.</p>
+<p><strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> ἄνθρωπος (ser humano)</li>
+<li><input disabled="" type="checkbox"> καρδία (coração)</li>
+<li><input disabled="" type="checkbox"> ψυχή (alma)</li>
+<li><input disabled="" type="checkbox"> σάρξ (carne)</li>
+<li><input disabled="" type="checkbox"> ἁμαρτία (pecado)</li>
+</ul>
+
+</body>
+</html>

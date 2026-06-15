@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Koine</title>
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Apostila L19 — Eu Sou o Caminho (João 14:6)</h1>
+<p><strong>ID:</strong> apostila-L19
+<strong>Título:</strong> Lição 19 — Eu Sou o Caminho
+<strong>Descrição:</strong> João 14:6 — ἐγώ εἰμι ἡ ὁδὸς καὶ ἡ ἀλήθεια καὶ ἡ ζωή
+<strong>Página:</strong> 40
+<strong>Tempo estimado:</strong> 18 min
+<strong>XP:</strong> 60</p>
+<hr>
+<h2>🏁 Step 1: intro</h2>
+<p><strong>Tipo:</strong> Abertura
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;João 14:6 — uma das sete declarações &#39;Eu Sou&#39; de Jesus. Esta frase contém três predicados que definem Jesus. Abra sua apostila na página 40.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Abra sua apostila na Página 40&quot;</code></p>
+<hr>
+<h2>🔤 Step 2: word_intro — ἐγώ</h2>
+<p><strong>Tipo:</strong> Introdução de Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ἐγώ — &#39;eu&#39;. Em grego o pronome geralmente está oculto no verbo. Quando está explícito, como aqui, é enfático. Pronuncia-se: e-GÔ.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> ἐγώ
+<strong>Transliteração:</strong> egō
+<strong>Pronúncia:</strong> e-GÔ
+<strong>Significado:</strong> eu (enfático)</p>
+<hr>
+<h2>🔤 Step 3: word_intro — εἰμι</h2>
+<p><strong>Tipo:</strong> Introdução de Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;εἰμι — &#39;sou&#39;. Primeira pessoa de εἰμί. Ἐγώ εἰμι são exatamente as palavras de Êxodo 3:14 na Septuaginta — o título divino. Pronuncia-se: ei-MÍ.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> εἰμι
+<strong>Transliteração:</strong> eimi
+<strong>Pronúncia:</strong> ei-MÍ
+<strong>Significado:</strong> sou (1ª singular de εἰμί)</p>
+<hr>
+<h2>🔤 Step 4: word_intro — (ἡ) ὁδός</h2>
+<p><strong>Tipo:</strong> Introdução de Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ἡ ὁδός — &#39;o caminho&#39;. Substantivo feminino; não apenas um caminho físico, mas o modo de vida. O artigo ἡ é o artigo feminino. Pronuncia-se: ho-DÓS.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> ὁδός
+<strong>Transliteração:</strong> hodos
+<strong>Pronúncia:</strong> ho-DÓS
+<strong>Significado:</strong> caminho</p>
+<hr>
+<h2>🔤 Step 5: word_intro — καί</h2>
+<p><strong>Tipo:</strong> Introdução de Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;καί — &#39;e&#39;. A conjunção mais comum do NT, com cerca de 9.000 ocorrências. Pronuncia-se: cá-i.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> καί
+<strong>Transliteração:</strong> kai
+<strong>Pronúncia:</strong> cá-i
+<strong>Significado:</strong> e</p>
+<hr>
+<h2>🔤 Step 6: word_intro — (ἡ) ἀλήθεια</h2>
+<p><strong>Tipo:</strong> Introdução de Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ἡ ἀλήθεια — &#39;a verdade&#39;. Você já aprendeu esta palavra na Lição 12. Pronuncia-se: a-LÊ-tei-a.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> ἀλήθεια
+<strong>Transliteração:</strong> alētheia
+<strong>Pronúncia:</strong> a-LÊ-tei-a
+<strong>Significado:</strong> verdade</p>
+<hr>
+<h2>🔤 Step 7: word_intro — (ἡ) ζωή</h2>
+<p><strong>Tipo:</strong> Introdução de Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ἡ ζωή — &#39;a vida&#39;. Você já aprendeu na Lição 7. Vida em plenitude. Pronuncia-se: zo-Ê.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> ζωή
+<strong>Transliteração:</strong> zōē
+<strong>Pronúncia:</strong> zo-Ê
+<strong>Significado:</strong> vida</p>
+<hr>
+<h2>🧠 Step 8: pause</h2>
+<p><strong>Tipo:</strong> Revisão Guiada
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Esta frase tem 10 palavras. Leia-a devagar na apostila: egō eimi hē hodos kai hē alētheia kai hē zōē.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<pre><code>Leia a frase na página 40.
+ἐγώ εἰμι ἡ ὁδὸς καὶ ἡ ἀλήθεια καὶ ἡ ζωή
+</code></pre>
+<hr>
+<h2>✍️ Step 9: write_practice — Frase completa × 3</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ἐγώ εἰμι ἡ ὁδὸς καὶ ἡ ἀλήθεια καὶ ἡ ζωή
+<strong>Repetições:</strong> 3
+<strong>Instrução:</strong>
+<code>&quot;Espaço de cópia da apostila — frase completa&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora copie a frase completa três vezes. É a frase mais longa — vá com calma.&quot;</p>
+</blockquote>
+<hr>
+<h2>🎧 Step 10: read_aloud</h2>
+<p><strong>Tipo:</strong> Leitura em Voz Alta
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Ouça: egō eimi hē hodos kai hē alētheia kai hē zōē. Repita em voz alta duas vezes.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> ἐγώ εἰμι ἡ ὁδὸς καὶ ἡ ἀλήθεια καὶ ἡ ζωή
+<strong>Transliteração:</strong> egō eimi hē hodos kai hē alētheia kai hē zōē
+<strong>Tradução:</strong> Eu sou o caminho, a verdade e a vida</p>
+<hr>
+<h2>📓 Step 11: dictation</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva em grego: &#39;Eu sou o caminho, a verdade e a vida&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;Eu sou o caminho, a verdade e a vida&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> ἐγώ εἰμι ἡ ὁδὸς καὶ ἡ ἀλήθεια καὶ ἡ ζωή</p>
+<hr>
+<h2>🎉 Fim da Lição L19</h2>
+<p>Parabéns! Você concluiu <strong>Lição 19 — Eu Sou o Caminho</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi ἐγώ (eu)</li>
+<li><input disabled="" type="checkbox"> Aprendi εἰμι (sou)</li>
+<li><input disabled="" type="checkbox"> Aprendi ὁδός (caminho)</li>
+<li><input disabled="" type="checkbox"> Aprendi καί (e)</li>
+<li><input disabled="" type="checkbox"> Aprendi ἀλήθεια (verdade)</li>
+<li><input disabled="" type="checkbox"> Aprendi ζωή (vida)</li>
+<li><input disabled="" type="checkbox"> Aprendi a frase: ἐγώ εἰμι ἡ ὁδὸς καὶ ἡ ἀλήθεια καὶ ἡ ζωή</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "moduleId": "L11",
+  "moduleTitle": "Lição 11 — Tempo e Reino",
+  "audioFile": "/audio/L11/L11.mp3",
+  "duration": 99.44,
+  "generatedAt": "2026-06-15T17:57:20.520805Z",
+  "narrationFile": "L11.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 11 — Tempo e Reino",
+      "startTime": 0.0,
+      "endTime": 1.73
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Lição 11 — Tempo e Reino. Hoje vamos aprender cinco palavras que estruturam o tempo e o propósito de Deus: basileía, aión, heméra, nýx e hóra. Abra sua apostila na página 23.",
+      "startTime": 3.73,
+      "endTime": 14.74
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "βασιλεία (basileía) — reino / reinado / soberania. Venha o teu reino, seja feita a tua vontade. De βασιλεύς (rei).",
+      "startTime": 15.74,
+      "endTime": 20.64
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva βασιλεία cinco vezes na linha 1. Pronuncie: ba-si-LEI-a.",
+      "startTime": 21.14,
+      "endTime": 24.98
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "αἰών (aiṓn) — era / eternidade / século. Acima de todo principado, não só neste século mas também no vindouro. Deu origem a 'eon'.",
+      "startTime": 25.48,
+      "endTime": 33.55
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva αἰών cinco vezes na linha 2. Pronuncie: a-IÔN.",
+      "startTime": 34.05,
+      "endTime": 37.67
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "ἡμέρα (hēméra) — dia. Não são doze as horas do dia? A Septuaginta usa para o 'Dia do Senhor'.",
+      "startTime": 38.17,
+      "endTime": 42.94
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ἡμέρα cinco vezes na linha 3. Pronuncie: e-MÉ-ra.",
+      "startTime": 43.44,
+      "endTime": 47.24
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "νύξ (nýx) — noite. Este veio ter com Jesus de noite — Nicodemos, símbolo de busca na escuridão. Deu origem a 'noturno'.",
+      "startTime": 47.74,
+      "endTime": 54.04
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva νύξ cinco vezes na linha 4. Pronuncie: NÍKS.",
+      "startTime": 54.54,
+      "endTime": 57.97
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "ὥρα (hṓra) — hora / momento oportuno. Ainda não é chegada a minha hora. João 2:4 usa no sentido de momento certo.",
+      "startTime": 58.47,
+      "endTime": 65.86
+    },
+    {
+      "id": "exposicao_10",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ὥρα cinco vezes na linha 5. Pronuncie: Ô-ra.",
+      "startTime": 66.36,
+      "endTime": 70.64
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Você aprendeu palavras que falam do tempo e da eternidade. Reflita: o tempo foi criado por Deus para revelar o seu Reino.",
+      "startTime": 71.14,
+      "endTime": 77.58
+    },
+    {
+      "id": "exposicao_11",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'reino'.",
+      "startTime": 79.58,
+      "endTime": 81.6
+    },
+    {
+      "id": "exposicao_12",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'era/eternidade'.",
+      "startTime": 82.1,
+      "endTime": 84.73
+    },
+    {
+      "id": "exposicao_13",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'dia'.",
+      "startTime": 85.23,
+      "endTime": 87.31
+    },
+    {
+      "id": "exposicao_14",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'noite'.",
+      "startTime": 87.81,
+      "endTime": 89.94
+    },
+    {
+      "id": "exposicao_15",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'hora'.",
+      "startTime": 90.44,
+      "endTime": 92.47
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 11 — Tempo e Reino! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 92.97,
+      "endTime": 98.44
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "exposicao_10",
+        "pausa",
+        "exposicao_11",
+        "exposicao_12",
+        "exposicao_13",
+        "exposicao_14",
+        "exposicao_15"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

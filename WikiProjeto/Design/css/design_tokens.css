@@ -1,0 +1,70 @@
+/* ============================================================
+   KOINÉ DESIGN TOKENS v4 — Redesenhado
+   Inspiração: mobile, editorial, data visualization
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&subset=greek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* ── Cores Base ── */
+  --koine-primary:       #26422A;
+  --koine-accent:        #EA662C;
+  --koine-accent-dark:   #C9521E;
+  --koine-parchment:     #F5EFE0;
+  --koine-cream:         #FAF7F0;
+  --koine-charcoal:      #1A1A1A;
+  --koine-charcoal-soft: #42302D;
+  --koine-white:         #FFFFFF;
+
+  /* ── Fundos ── */
+  --koine-dark-bg:       #1C1917;
+  --koine-dark-card:     #292524;
+  --koine-dark-surface:  #44403C;
+
+  /* ── Primária (verde) ── */
+  --koine-primary-05:    rgba(38, 66, 42, 0.05);
+  --koine-primary-08:    rgba(38, 66, 42, 0.08);
+  --koine-primary-10:    rgba(38, 66, 42, 0.10);
+  --koine-primary-15:    rgba(38, 66, 42, 0.15);
+  --koine-primary-20:    rgba(38, 66, 42, 0.20);
+  --koine-primary-60:    rgba(38, 66, 42, 0.60);
+
+  /* ── Accent (laranja) ── */
+  --koine-accent-08:     rgba(234, 102, 44, 0.08);
+  --koine-accent-10:     rgba(234, 102, 44, 0.10);
+  --koine-accent-15:     rgba(234, 102, 44, 0.15);
+  --koine-accent-18:     rgba(234, 102, 44, 0.18);
+  --koine-accent-25:     rgba(234, 102, 44, 0.25);
+  --koine-accent-35:     rgba(234, 102, 44, 0.35);
+  --koine-accent-50:     rgba(234, 102, 44, 0.50);
+
+  /* ── Charcoal ── */
+  --koine-charcoal-30:   rgba(26, 26, 26, 0.30);
+  --koine-charcoal-50:   rgba(66, 48, 45, 0.50);
+  --koine-charcoal-70:   rgba(66, 48, 45, 0.70);
+
+  /* ── White ── */
+  --koine-white-40:      rgba(255, 255, 255, 0.40);
+  --koine-white-60:      rgba(255, 255, 255, 0.60);
+  --koine-white-80:      rgba(255, 255, 255, 0.80);
+  --koine-white-90:      rgba(255, 255, 255, 0.90);
+
+  /* ── Raio (Zero Cantos Retos) ── */
+  --radius-pill:          100px;
+  --radius-sm:            8px;
+  --radius-card:          16px;
+  --radius-card-lg:       24px;
+  --radius-frame:         20px;
+  --radius-frame-inner:   14px;
+
+  /* ── Tipografia ── */
+  --font-greek: 'Gentium Plus', serif;
+  --font-serif: 'Libre Baskerville', serif;
+  --font-sans:  'Inter', sans-serif;
+
+  /* ── Sombras ── */
+  --shadow-card:    0 2px 8px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-elevated: 0 8px 24px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
+  --shadow-dark:    0 4px 16px rgba(0,0,0,0.3);
+}

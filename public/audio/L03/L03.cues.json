@@ -1,0 +1,153 @@
+{
+  "version": "1.0",
+  "moduleId": "L03",
+  "moduleTitle": "Lição 3 — Consoantes com os Lábios",
+  "audioFile": "/audio/L03/L03.mp3",
+  "duration": 91.77,
+  "generatedAt": "2026-06-15T18:26:41.940526Z",
+  "narrationFile": "L03.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 3 — Consoantes com os Lábios",
+      "startTime": 0.0,
+      "endTime": 2.21
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Hoje começamos as consoantes gregas. Os sons β, π e φ são produzidos com os lábios — como em português. Abra sua apostila na página 5 e acompanhe comigo.",
+      "startTime": 4.21,
+      "endTime": 13.76
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A primeira letra é o beta. Maiúsculo: Β. Minúsculo: β. O som é 'b', como em 'bola'.",
+      "startTime": 14.76,
+      "endTime": 20.44
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra β. Acompanhe a animação na tela.",
+      "startTime": 20.94,
+      "endTime": 25.09
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o beta minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 25.59,
+      "endTime": 31.45
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "A segunda letra é o pi. Maiúsculo: Π. Minúsculo: π. O som é 'p', como em 'pão'.",
+      "startTime": 31.95,
+      "endTime": 37.31
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra π. Acompanhe a animação na tela.",
+      "startTime": 37.81,
+      "endTime": 41.79
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o pi minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 42.29,
+      "endTime": 48.22
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "A terceira letra é o fi. Maiúsculo: Φ. Minúsculo: φ. O som é 'f', como em 'fé'.",
+      "startTime": 48.72,
+      "endTime": 54.43
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Observe a ordem dos traços da letra φ. Acompanhe a animação na tela.",
+      "startTime": 54.93,
+      "endTime": 58.91
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva o fi minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.",
+      "startTime": 59.41,
+      "endTime": 65.26
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Muito bem! Você acabou de aprender as três consoantes labiais: beta, pi e fi. Antes de continuar, olhe para o que escreveu e compare com o modelo na apostila.",
+      "startTime": 65.76,
+      "endTime": 74.86
+    },
+    {
+      "id": "ditado",
+      "marker": "DITADO",
+      "text": "Escreva no papel: beta.",
+      "startTime": 76.86,
+      "endTime": 78.58
+    },
+    {
+      "id": "ditado_2",
+      "marker": "DITADO",
+      "text": "Escreva no papel: pi.",
+      "startTime": 79.58,
+      "endTime": 81.18
+    },
+    {
+      "id": "ditado_3",
+      "marker": "DITADO",
+      "text": "Escreva no papel: fi.",
+      "startTime": 82.18,
+      "endTime": 83.73
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 3 — Consoantes com os Lábios! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 84.73,
+      "endTime": 90.77
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "pausa",
+        "ditado",
+        "ditado_2",
+        "ditado_3"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

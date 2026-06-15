@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Koine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Apostila L06 — Nasais, Sigma e Letras Duplas (μ, ν, σ/ς, ζ, ξ, ψ)</h1>
+<p><strong>ID:</strong> apostila-L06
+<strong>Título:</strong> Lição 6 — Nasais, Sigma e Letras Duplas
+<strong>Descrição:</strong> Mu, Nu, Sigma, Zeta, Xi, Psi
+<strong>Página:</strong> 12
+<strong>Tempo estimado:</strong> 14 min
+<strong>XP:</strong> 35</p>
+<hr>
+<h2>🎯 Objetivo da Lição</h2>
+<p>Completar o alfabeto grego aprendendo as <strong>nasais (μ, ν)</strong>, o <strong>sigma (σ/ς)</strong> com sua forma final, e as <strong>letras duplas ζ (z=ds), ξ (x=ks), ψ (ps)</strong>.</p>
+<blockquote>
+<p>📄 <strong>Abra sua apostila na Página 12</strong></p>
+</blockquote>
+<hr>
+<h2>🔤 Referência Rápida: Nasais, Sigma e Letras Duplas</h2>
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Nome</th>
+<th>Maiúscula</th>
+<th>Minúscula</th>
+<th>Som</th>
+<th>Exemplo PT / EN</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>μ</td>
+<td>mu</td>
+<td>Μ</td>
+<td>μ</td>
+<td>m (como em &#39;mar&#39;)</td>
+<td>mar</td>
+</tr>
+<tr>
+<td>ν</td>
+<td>nu</td>
+<td>Ν</td>
+<td>ν</td>
+<td>n (como em &#39;nós&#39;)</td>
+<td>nós</td>
+</tr>
+<tr>
+<td>σ/ς</td>
+<td>sigma</td>
+<td>Σ</td>
+<td>σ / ς</td>
+<td>s (como em &#39;sol&#39;)</td>
+<td>sol</td>
+</tr>
+<tr>
+<td>ζ</td>
+<td>zeta</td>
+<td>Ζ</td>
+<td>ζ</td>
+<td>z (como em &#39;zebra&#39;)</td>
+<td>zebra</td>
+</tr>
+<tr>
+<td>ξ</td>
+<td>xi</td>
+<td>Ξ</td>
+<td>ξ</td>
+<td>ks (como em &#39;táxi&#39;)</td>
+<td>táxi</td>
+</tr>
+<tr>
+<td>ψ</td>
+<td>psi</td>
+<td>Ψ</td>
+<td>ψ</td>
+<td>ps (como em &#39;psicologia&#39;)</td>
+<td>psicologia</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🏁 Step 1: intro</h2>
+<p><strong>Tipo:</strong> Abertura
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Esta é a última lição do alfabeto. Hoje você vai completar as 24 letras com as nasais mu e nu, o sigma (com sua forma final), e as letras duplas zeta, xi e psi. Abra sua apostila na página 12.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Abra sua apostila na Página 12&quot;</code></p>
+<hr>
+<h2>Μ Step 2: word_intro — Mu (Μ μ)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A primeira letra é o mu. Maiúsculo: Μ. Minúsculo: μ. O som é &#39;m&#39;, como em &#39;mar&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Mu (Μ μ) — a primeira consoante nasal&quot;</code></p>
+<p><strong>Grego:</strong> Μ μ
+<strong>Transliteração:</strong> mu
+<strong>Pronúncia:</strong> m (como em &#39;mar&#39;)
+<strong>Significado:</strong> Letra Mu
+<strong>Etiologia:</strong> Do Mem hebraico (מ); corresponde ao &#39;M&#39; latino
+<strong>Contexto Bíblico:</strong> Romanos 8:1 — &quot;Portanto, nenhuma condenação (κατάκριμα)&quot; — μ inicia μέγας (grande) e μαθητής (discípulo)</p>
+<hr>
+<h2>🖋️ Step 3: alphabet_trace — Mu (μ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> μ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do mu minúsculo:</p>
+<ol>
+<li>Primeira haste vertical à esquerda</li>
+<li>Arco da esquerda para o centro na base</li>
+<li>Segundo arco do centro para a direita na base (formando um &#39;u&#39; alongado)</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 4: write_practice — Mu (μ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> μ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 1 da apostila — Mu minúsculo (μ)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o mu minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva μ 8 vezes nesta linha:</p>
+<pre><code>[Linha 1: μ μ μ μ μ μ μ μ ]
+</code></pre>
+<hr>
+<h2>Ν Step 5: word_intro — Nu (Ν ν)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A segunda letra é o nu. Maiúsculo: Ν. Minúsculo: ν. O som é &#39;n&#39;, como em &#39;nós&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Nu (Ν ν) — a segunda consoante nasal&quot;</code></p>
+<p><strong>Grego:</strong> Ν ν
+<strong>Transliteração:</strong> nu
+<strong>Pronúncia:</strong> n (como em &#39;nós&#39;)
+<strong>Significado:</strong> Letra Nu
+<strong>Etiologia:</strong> Do Nun hebraico (נ); corresponde ao &#39;N&#39; latino
+<strong>Contexto Bíblico:</strong> João 3:16 — &quot;Para que todo aquele (πᾶς)&quot; — ν inicia νόμος (lei) e νύξ (noite)</p>
+<hr>
+<h2>🖋️ Step 6: alphabet_trace — Nu (ν)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> ν
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do nu minúsculo:</p>
+<ol>
+<li>Haste diagonal da esquerda para baixo e para a direita</li>
+<li>Haste vertical curta na extremidade direita, descendo para baixo (forma de &#39;v&#39; com haste à direita)</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 7: write_practice — Nu (ν × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ν
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 2 da apostila — Nu minúsculo (ν)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o nu minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva ν 8 vezes nesta linha:</p>
+<pre><code>[Linha 2: ν ν ν ν ν ν ν ν ]
+</code></pre>
+<hr>
+<h2>Σ Step 8: word_intro — Sigma (Σ σ/ς)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A terceira letra é o sigma. Maiúsculo: Σ. Minúsculo: σ. O sigma tem duas formas: σ (sigma normal) quando aparece no início ou meio da palavra, e ς (sigma final) quando aparece no final. Veja a diferença: σωτηρία (salvação) — o sigma inicial é σ. Χριστός (Cristo) — o sigma final é ς. O som é &#39;s&#39;, como em &#39;sol&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Sigma (Σ σ/ς) — a letra mais frequente do grego&quot;</code></p>
+<p><strong>Grego:</strong> Σ σ/ς
+<strong>Transliteração:</strong> sigma
+<strong>Pronúncia:</strong> s (como em &#39;sol&#39;) — forma final ς
+<strong>Significado:</strong> Letra Sigma
+<strong>Etiologia:</strong> Do Shin hebraico (ש); a letra mais frequente do grego — como o &#39;s&#39; em português
+<strong>Contexto Bíblico:</strong> João 3:16 — &quot;...o mundo (κόσμον)&quot; — σ/ς é a letra mais frequente em terminações gregas</p>
+<hr>
+<h2>🖋️ Step 9: alphabet_trace — Sigma (σ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> σ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do sigma minúsculo σ:</p>
+<ol>
+<li>Semicírculo aberto à direita</li>
+<li>Pequeno traço horizontal no topo</li>
+<li>Pequeno traço horizontal na base
+O sigma final ς é uma variação com um gancho descendo abaixo da linha.</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 10: write_practice — Sigma (σ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> σ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 3 da apostila — Sigma minúsculo (σ) — lembre-se da forma final ς&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o sigma minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva σ 8 vezes nesta linha:</p>
+<pre><code>[Linha 3: σ σ σ σ σ σ σ σ ]
+</code></pre>
+<hr>
+<h2>Ζ Step 11: word_intro — Zeta (Ζ ζ)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A quarta letra é o zeta. Maiúsculo: Ζ. Minúsculo: ζ. O som é &#39;z&#39;, como em &#39;zebra&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Zeta (Ζ ζ) — a primeira letra dupla&quot;</code></p>
+<p><strong>Grego:</strong> Ζ ζ
+<strong>Transliteração:</strong> zeta
+<strong>Pronúncia:</strong> z (como em &#39;zebra&#39;)
+<strong>Significado:</strong> Letra Zeta
+<strong>Etiologia:</strong> Do Zayin hebraico (ז); originalmente &#39;dz&#39; no grego clássico, simplificado para &#39;z&#39;
+<strong>Contexto Bíblico:</strong> Mateus 5:18 — &quot;Nem um iota ou um til (κεραία)&quot; — ζ aparece em ζωή (vida) e ζητέω (buscar)</p>
+<hr>
+<h2>🖋️ Step 12: alphabet_trace — Zeta (ζ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> ζ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do zeta minúsculo:</p>
+<ol>
+<li>Barra superior horizontal</li>
+<li>Diagonal da direita para baixo e para a esquerda</li>
+<li>Barra inferior horizontal</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 13: write_practice — Zeta (ζ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ζ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 4 da apostila — Zeta minúsculo (ζ)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o zeta minúsculo oito vezes na linha 4 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva ζ 8 vezes nesta linha:</p>
+<pre><code>[Linha 4: ζ ζ ζ ζ ζ ζ ζ ζ ]
+</code></pre>
+<hr>
+<h2>Ξ Step 14: word_intro — Xi (Ξ ξ)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A quinta letra é o xi. Maiúsculo: Ξ. Minúsculo: ξ. O som é &#39;ks&#39;, como em &#39;táxi&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Xi (Ξ ξ) — som duplo de κ + ς&quot;</code></p>
+<p><strong>Grego:</strong> Ξ ξ
+<strong>Transliteração:</strong> xi
+<strong>Pronúncia:</strong> ks (como em &#39;táxi&#39;)
+<strong>Significado:</strong> Letra Xi
+<strong>Etiologia:</strong> Do Samekh hebraico (ס); som duplo de κ + ς (k + s)
+<strong>Contexto Bíblico:</strong> João 1:14 — &quot;...cheio de graça (χάριτος)&quot; — ξ aparece em ξένος (estrangeiro)</p>
+<hr>
+<h2>🖋️ Step 15: alphabet_trace — Xi (ξ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> ξ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do xi minúsculo:</p>
+<ol>
+<li>Traço horizontal superior</li>
+<li>Traço horizontal médio</li>
+<li>Traço horizontal inferior</li>
+<li>Traço vertical curvo conectando as três linhas à direita</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 16: write_practice — Xi (ξ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ξ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 5 da apostila — Xi minúsculo (ξ)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o xi minúsculo oito vezes na linha 5 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva ξ 8 vezes nesta linha:</p>
+<pre><code>[Linha 5: ξ ξ ξ ξ ξ ξ ξ ξ ]
+</code></pre>
+<hr>
+<h2>Ψ Step 17: word_intro — Psi (Ψ ψ)</h2>
+<p><strong>Tipo:</strong> Introdução de Letra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;A sexta letra é o psi. Maiúsculo: Ψ. Minúsculo: ψ. O som é &#39;ps&#39;, como em &#39;psicologia&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Psi (Ψ ψ) — a última letra do alfabeto grego&quot;</code></p>
+<p><strong>Grego:</strong> Ψ ψ
+<strong>Transliteração:</strong> psi
+<strong>Pronúncia:</strong> ps (como em &#39;psicologia&#39;)
+<strong>Significado:</strong> Letra Psi
+<strong>Etiologia:</strong> Som duplo de π + ς (p + s); deu origem ao símbolo da psicologia (Ψ)
+<strong>Contexto Bíblico:</strong> Filipenses 4:7 — &quot;...guardará os vossos corações (καρδίας)&quot; — ψ aparece em ψυχή (alma/vida)</p>
+<hr>
+<h2>🖋️ Step 18: alphabet_trace — Psi (ψ)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> ψ
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do psi minúsculo:</p>
+<ol>
+<li>Haste vertical central de cima para baixo</li>
+<li>Ramo curvo saindo do topo da haste para a esquerda</li>
+<li>Ramo curvo saindo do topo da haste para a direita (formando um tridente)</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 19: write_practice — Psi (ψ × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ψ
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 6 da apostila — Psi minúsculo (ψ)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o psi minúsculo oito vezes na linha 6 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva ψ 8 vezes nesta linha:</p>
+<pre><code>[Linha 6: ψ ψ ψ ψ ψ ψ ψ ψ ]
+</code></pre>
+<hr>
+<h2>🧠 Step 20: pause</h2>
+<p><strong>Tipo:</strong> Revisão Guiada
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Parabéns! Você acaba de aprender todas as 24 letras do alfabeto grego. O mesmo alfabeto que os discípulos de Jesus usavam. O mesmo alfabeto do apóstolo Paulo. Agora você pode começar a ler as primeiras palavras do Novo Testamento. Antes de continuar, olhe para tudo que escreveu nas seis linhas da apostila — é o alfabeto completo, na sua própria letra.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<pre><code>Compare sua escrita com o modelo na apostila.
+Quando estiver pronto, continue.
+</code></pre>
+<hr>
+<h2>📓 Step 21: dictation — Mu</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: mu.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;mu&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Μ μ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Μ μ aqui:</p>
+<pre><code>[Resposta: μ ]
+</code></pre>
+<hr>
+<h2>📓 Step 22: dictation — Nu</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: nu.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;nu&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Ν ν</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ν ν aqui:</p>
+<pre><code>[Resposta: ν ]
+</code></pre>
+<hr>
+<h2>📓 Step 23: dictation — Sigma</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: sigma.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;sigma&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Σ σ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Σ σ aqui:</p>
+<pre><code>[Resposta: σ ]
+</code></pre>
+<hr>
+<h2>📓 Step 24: dictation — Zeta</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: zeta.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;zeta&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Ζ ζ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ζ ζ aqui:</p>
+<pre><code>[Resposta: ζ ]
+</code></pre>
+<hr>
+<h2>📓 Step 25: dictation — Xi</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: xi.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;xi&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Ξ ξ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ξ ξ aqui:</p>
+<pre><code>[Resposta: ξ ]
+</code></pre>
+<hr>
+<h2>📓 Step 26: dictation — Psi</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: psi.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;psi&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> Ψ ψ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ψ ψ aqui:</p>
+<pre><code>[Resposta: ψ ]
+</code></pre>
+<hr>
+<h2>🎉 Fim da Lição L06</h2>
+<p>Parabéns! Você concluiu <strong>Lição 6 — Nasais, Sigma e Letras Duplas (μ, ν, σ/ς, ζ, ξ, ψ)</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi μ (mu)</li>
+<li><input disabled="" type="checkbox"> Aprendi ν (nu)</li>
+<li><input disabled="" type="checkbox"> Aprendi σ/ς (sigma)</li>
+<li><input disabled="" type="checkbox"> Aprendi ζ (zeta)</li>
+<li><input disabled="" type="checkbox"> Aprendi ξ (xi)</li>
+<li><input disabled="" type="checkbox"> Aprendi ψ (psi)</li>
+</ul>
+<p>📖 <strong>Agora você conhece todas as 24 letras do alfabeto grego!</strong> 🎓
+Continue para L07 — Palavras de Fé e Graça (ἀγάπη, πίστις, χάρις, εἰρήνη, ζωή)</p>
+
+</body>
+</html>

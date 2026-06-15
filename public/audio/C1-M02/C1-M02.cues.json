@@ -1,0 +1,241 @@
+{
+  "version": "1.0",
+  "moduleId": "C1-M02",
+  "moduleTitle": "Vogais Abertas e Fechadas — Ômicron, Ípsilon, Ômega",
+  "audioFile": "/audio/C1-M02/C1-M02.mp3",
+  "duration": 430.19,
+  "generatedAt": "2026-06-04T03:20:09.750831Z",
+  "narrationFile": "C1-M02.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Vogais Abertas e Fechadas — Ômicron, Ípsilon, Ômega",
+      "startTime": 0.0,
+      "endTime": 3.44
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Módulo 2 do Koiné App — Vogais Abertas e Fechadas.\n\nHoje você vai conhecer as três vogais que faltam no alfabeto grego: ômicron, ípsilon e ômega. Com elas, você completa o sistema de seis",
+      "startTime": 5.44,
+      "endTime": 37.69
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Ômicron",
+      "startTime": 38.69,
+      "endTime": 40.14
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Ômicron é a décima quinta letra do alfabeto grego, e seu nome já entrega a função: \"o pequeno\", do grego mikron, que é a mesma raiz de \"microscópio\". Foi criada justamente para se distinguir do ômega,",
+      "startTime": 41.14,
+      "endTime": 118.1
+    },
+    {
+      "id": "u1_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "As marquinhas sobre a palavra-âncora logos, como o acento agudo no primeiro ômicron, e sobre \"ho theos\", como o espírito no artigo, se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Por",
+      "startTime": 118.6,
+      "endTime": 132.08
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Ômicron é um círculo fechado — e o som \"o\" breve também é \"fechado\" em relação ao som longo do ômega. A mesma forma fechada, som mais curto.",
+      "startTime": 133.08,
+      "endTime": 140.9
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra do versículo é \"ho theos\", encontrada em João, capítulo 1, versículo 1.",
+      "startTime": 142.4,
+      "endTime": 146.85
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Muito bem! Agora vamos para a segunda letra, que tem o som mais estranho para um falante de português: Ípsilon.",
+      "startTime": 148.35,
+      "endTime": 154.12
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Ípsilon",
+      "startTime": 155.62,
+      "endTime": 157.06
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Ípsilon é a vigésima letra do alfabeto grego, e a mais estranha para um falante de português — porque seu som não tem equivalente exato na nossa língua. No grego clássico, ípsilon tinha um som que fic",
+      "startTime": 158.06,
+      "endTime": 229.05
+    },
+    {
+      "id": "u2_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "As marquinhas sobre \"ton huion ton monogenê\" — as acentuações e o espírito no ípsilon — se chamam diacríticos. Ignore-as por enquanto, você as estuda no Módulo 9.",
+      "startTime": 229.55,
+      "endTime": 238.75
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Ípsilon maiúsculo é igual ao Y do português. Ípsilon minúsculo é uma curva com haste — pense num \"u\" cortado verticalmente. No koiné, o som é o mesmo do \"i\".",
+      "startTime": 239.75,
+      "endTime": 248.41
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra do versículo é \"ton huion ton monogenê\", encontrada em João, capítulo 3, versículo 16.",
+      "startTime": 249.91,
+      "endTime": 255.71
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Agora a última vogal do alfabeto grego — e a peça que faltava para o par de confusão do Ciclo I: Ômega.",
+      "startTime": 257.21,
+      "endTime": 263.67
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Ômega",
+      "startTime": 265.17,
+      "endTime": 266.67
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Ômega é a última letra do alfabeto grego — a vigésima quarta — e também a \"última\" no sentido simbólico que o Apocalipse lhe deu. Seu nome significa \"o grande\", do grego mega, que é a mesma raiz de \"m",
+      "startTime": 267.67,
+      "endTime": 358.54
+    },
+    {
+      "id": "u3_nota_diacriticos",
+      "marker": "NOTA_DIACRITICOS",
+      "text": "As marquinhas sobre a palavra-âncora logos (acento agudo no primeiro ômicron) e sobre o versículo de Apocalipse 1:8 (vários acentos) se chamam diacríticos. Você aprende tudo sobre eles no Módulo 9. Po",
+      "startTime": 359.04,
+      "endTime": 371.99
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Ômega parece uma ferradura de cavalo aberta — grande, ampla, como o som \"o\" longo. A mesma forma de ômicron, mas o som é sustentado por mais tempo.",
+      "startTime": 372.99,
+      "endTime": 380.7
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra do versículo é \"Egô eime to Alfa kai to Ômega\", que significa \"Eu sou o Alfa e o Ômega\", encontrada em Apocalipse, capítulo 1, versículo 8.",
+      "startTime": 382.2,
+      "endTime": 390.63
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Você concluiu as três unidades. Agora vamos aplicar o que aprendeu, com a palavra-âncora do módulo.",
+      "startTime": 392.13,
+      "endTime": 397.34
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns! Você completou o Módulo 2 — Vogais Abertas e Fechadas. Agora você conhece as seis vogais do grego: Alfa, Épsilon, Iota, Ômicron, Ípsilon, Ômega. Você também dominou o par de confusão mais im",
+      "startTime": 398.84,
+      "endTime": 429.19
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_nota_diacriticos",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C1-M02-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C1-M02-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_nota_diacriticos",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C1-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C1-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_nota_diacriticos",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C1-M02-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C1-M02-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

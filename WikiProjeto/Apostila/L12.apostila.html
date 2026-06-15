@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Koine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Apostila L12 — Conhecer e Ver</h1>
+<p><strong>ID:</strong> apostila-L12
+<strong>Título:</strong> Lição 12 — Conhecer e Ver
+<strong>Descrição:</strong> γινώσκω, οἶδα, σοφία, ἀλήθεια, φῶς
+<strong>Página:</strong> 25
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 45</p>
+<hr>
+<h2>Step 01: intro</h2>
+<p><strong>Tipo:</strong> Introdução
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Lição 12 — Conhecer e ver. Hoje você vai aprender palavras sobre conhecimento e luz: ginósko, oída, sofía, alétheia e fós. Elas nos ensinam como conhecemos a Deus. Abra sua apostila na página 25.&quot;
+<strong>Exibição:</strong> Abra sua apostila na Página 25</p>
+</blockquote>
+<hr>
+<h2>Step 02: word_intro</h2>
+<p><strong>Tipo:</strong> Introdução à Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;γινώσκω, conhecer por experiência. Em João 10:14, Jesus declara: &#39;Eu conheço (γινώσκω) as minhas ovelhas, e elas me conhecem.&#39;&quot;
+<strong>Grego:</strong> γινώσκω
+<strong>Transliteração:</strong> ginṓskō
+<strong>Pronúncia:</strong> gi-NÔS-ko
+<strong>Significado:</strong> conhecer por experiência
+<strong>Etiologia:</strong> Conhecimento adquirido por experiência pessoal; em João 10:14 é o conhecimento mútuo do pastor e ovelhas
+<strong>Contexto Bíblico:</strong> João 10:14 — &quot;Eu conheço (γινώσκω) as minhas ovelhas, e elas me conhecem&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 03: write_practice</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> γινώσκω × 5
+<strong>Instrução:</strong> &quot;Linha 1 da apostila — γινώσκω&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva γινώσκω cinco vezes na linha 1. Pronuncie: gi-NÔS-ko.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 04: word_intro</h2>
+<p><strong>Tipo:</strong> Introdução à Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;οἶδα, saber por percepção. Em João 3:2, Nicodemos diz: &#39;Sabemos (οἴδαμεν) que és Mestre vindo de Deus.&#39;&quot;
+<strong>Grego:</strong> οἶδα
+<strong>Transliteração:</strong> oîda
+<strong>Pronúncia:</strong> Ôi-da
+<strong>Significado:</strong> saber por percepção / revelação
+<strong>Etiologia:</strong> Perfeito com sentido presente; literalmente &quot;tenho visto e portanto sei&quot;
+<strong>Contexto Bíblico:</strong> João 3:2 — &quot;Rabbi, sabemos (οἴδαμεν) que és Mestre vindo de Deus&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 05: write_practice</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> οἶδα × 5
+<strong>Instrução:</strong> &quot;Linha 2 da apostila — οἶδα&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva οἶδα cinco vezes na linha 2. Pronuncie: Ôi-da.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 06: word_intro</h2>
+<p><strong>Tipo:</strong> Introdução à Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;σοφία, sabedoria. Em 1 Coríntios 1:24, Paulo declara: &#39;Cristo, poder de Deus e sabedoria (σοφία) de Deus.&#39;&quot;
+<strong>Grego:</strong> σοφία
+<strong>Transliteração:</strong> sophía
+<strong>Pronúncia:</strong> so-FÍ-a
+<strong>Significado:</strong> sabedoria
+<strong>Etiologia:</strong> Distinção do NT: a sabedoria de Deus vs a sabedoria do mundo (1 Cor 1:18-25)
+<strong>Contexto Bíblico:</strong> 1 Coríntios 1:24 — &quot;Cristo, poder de Deus e sabedoria (σοφία) de Deus&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 07: write_practice</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> σοφία × 5
+<strong>Instrução:</strong> &quot;Linha 3 da apostila — σοφία&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva σοφία cinco vezes na linha 3. Pronuncie: so-FÍ-a.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 08: word_intro</h2>
+<p><strong>Tipo:</strong> Introdução à Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ἀλήθεια, verdade. Em João 8:32: &#39;E conhecereis a verdade (ἀλήθεια), e a verdade vos libertará.&#39;&quot;
+<strong>Grego:</strong> ἀλήθεια
+<strong>Transliteração:</strong> alḗtheia
+<strong>Pronúncia:</strong> a-LÊ-tei-a
+<strong>Significado:</strong> verdade
+<strong>Etiologia:</strong> α (negação) + λήθη (esquecimento, ocultamento); o que não está oculto, a realidade revelada
+<strong>Contexto Bíblico:</strong> João 8:32 — &quot;E conhecereis a verdade (ἀλήθεια), e a verdade vos libertará&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 09: write_practice</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ἀλήθεια × 5
+<strong>Instrução:</strong> &quot;Linha 4 da apostila — ἀλήθεια&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva ἀλήθεια cinco vezes na linha 4. Pronuncie: a-LÊ-tei-a.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 10: word_intro</h2>
+<p><strong>Tipo:</strong> Introdução à Palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;φῶς, luz. Em João 1:5: &#39;A luz (φῶς) resplandece nas trevas, e as trevas não a compreenderam.&#39;&quot;
+<strong>Grego:</strong> φῶς
+<strong>Transliteração:</strong> phōs
+<strong>Pronúncia:</strong> FÔS
+<strong>Significado:</strong> luz
+<strong>Etiologia:</strong> Em João 1:5, φῶς é usado para o próprio Cristo; raiz de &quot;fotossíntese&quot; e &quot;fotografia&quot;
+<strong>Contexto Bíblico:</strong> João 1:5 — &quot;A luz (φῶς) resplandece nas trevas, e as trevas não a compreenderam&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 11: write_practice</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> φῶς × 5
+<strong>Instrução:</strong> &quot;Linha 5 da apostila — φῶς&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva φῶς cinco vezes na linha 5. Pronuncie: FÔS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 12: pause</h2>
+<p><strong>Tipo:</strong> Pausa para Revisão
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Conhecimento, sabedoria, verdade e luz — palavras que descrevem Jesus. Releia o que escreveu.&quot;
+<strong>Exibição:</strong>
+Releia as cinco palavras na sua apostila.
+Quando estiver pronto, continue.</p>
+</blockquote>
+<hr>
+<h2>Step 13: dictation</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;conhecer&#39;.&quot;
+<strong>Exibição:</strong> &quot;conhecer&quot;
+<strong>Resposta Esperada:</strong> γινώσκω</p>
+</blockquote>
+<hr>
+<h2>Step 14: dictation</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;saber&#39;.&quot;
+<strong>Exibição:</strong> &quot;saber&quot;
+<strong>Resposta Esperada:</strong> οἶδα</p>
+</blockquote>
+<hr>
+<h2>Step 15: dictation</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;sabedoria&#39;.&quot;
+<strong>Exibição:</strong> &quot;sabedoria&quot;
+<strong>Resposta Esperada:</strong> σοφία</p>
+</blockquote>
+<hr>
+<h2>Step 16: dictation</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;verdade&#39;.&quot;
+<strong>Exibição:</strong> &quot;verdade&quot;
+<strong>Resposta Esperada:</strong> ἀλήθεια</p>
+</blockquote>
+<hr>
+<h2>Step 17: dictation</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;luz&#39;.&quot;
+<strong>Exibição:</strong> &quot;luz&quot;
+<strong>Resposta Esperada:</strong> φῶς</p>
+</blockquote>
+
+</body>
+</html>

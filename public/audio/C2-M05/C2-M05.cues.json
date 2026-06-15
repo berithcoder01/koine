@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C2-M05",
+  "moduleTitle": "do Ciclo 2: Substantivos da Segunda Declinacao",
+  "audioFile": "/audio/C2-M05/C2-M05.mp3",
+  "duration": 219.76,
+  "generatedAt": "2026-06-12T12:05:03.717795Z",
+  "narrationFile": "C2-M05.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 5 do Ciclo 2: Substantivos da Segunda Declinacao",
+      "startTime": 0.0,
+      "endTime": 3.89
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Voce ja conhece varias palavras gregas que terminam em \"os\": logos, theos, kosmos. Mas sabia que todas elas seguem o mesmo padrao? Neste modulo, voce aprende a segunda declinacao — o grupo mais comum ",
+      "startTime": 5.89,
+      "endTime": 19.5
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — A terminacao \"os\": marca da segunda declinacao",
+      "startTime": 20.5,
+      "endTime": 23.98
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Todos os substantivos abaixo terminam em \"os\" — esta e a marca da segunda declinacao masculina no nominativo singular, o padrao mais comum de substantivos no Novo Testamento grego. Sao eles: logos (pa",
+      "startTime": 24.98,
+      "endTime": 68.89
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "\"Os\" e o som de \"os\" no final — como em \"logos\", \"pathos\", \"ethos\" — palavras que o portugues tomou emprestadas do grego exatamente com esta terminacao.",
+      "startTime": 69.39,
+      "endTime": 77.34
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "houtos gar egapesen ho theos ton kosmon — Joao, capitulo 3, versiculo 16.",
+      "startTime": 78.84,
+      "endTime": 83.95
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "O primeiro substantivo novo que voce aprende neste modulo: huios, que significa \"filho\".",
+      "startTime": 85.45,
+      "endTime": 90.41
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — huios: o Filho",
+      "startTime": 91.91,
+      "endTime": 93.96
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Huios (filho) e um dos substantivos mais importantes da teologia do Novo Testamento. Aparece em Joao capitulo 3 versiculo 16: \"ton huion ton monogene edoken\" — \"deu o seu Filho unigenito\". Observe que",
+      "startTime": 94.96,
+      "endTime": 129.14
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Pense em huios como \"h-u-i-o-s\" — cinco letras, duas vogais. O u inicial tem som de \"u\" como em \"uva\".",
+      "startTime": 129.64,
+      "endTime": 135.35
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "ton huion ton monogene edoken — Joao, capitulo 3, versiculo 16.",
+      "startTime": 136.85,
+      "endTime": 141.23
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "O segundo substantivo novo: anthropos, que significa \"homem\" ou \"ser humano\" e aparece 550 vezes no Novo Testamento.",
+      "startTime": 142.73,
+      "endTime": 150.08
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — anthropos: o ser humano",
+      "startTime": 151.58,
+      "endTime": 154.03
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Anthropos (homem, ser humano) e o substantivo grego mais abrangente para a humanidade. Jesus se autodenomina \"ho huios tou anthropou\" — \"o Filho do Homem\" — mais de 80 vezes nos Evangelhos. Em Joao ca",
+      "startTime": 155.03,
+      "endTime": 183.02
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Anthropos e longo, mas segue a mesma regra: termina em \"os\". Divida: \"an-thro-pos\" — tres silabas, acento na primeira.",
+      "startTime": 183.52,
+      "endTime": 190.22
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "to phos ton anthropon — Joao, capitulo 1, versiculo 4.",
+      "startTime": 191.72,
+      "endTime": 195.17
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo 5 concluido! Agora voce reconhece o padrao \"os\" — a marca dos substantivos da segunda declinacao, o grupo mais comum do Novo Testamento. Cinco palavras-chave: logos, theos, kosmos, huios, anthr",
+      "startTime": 196.67,
+      "endTime": 218.76
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C2-M05-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C2-M05-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C2-M05-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C2-M05-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C2-M05-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

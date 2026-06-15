@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "moduleId": "C3-M08",
+  "moduleTitle": "do Ciclo 3: Grande Revisao — Joao 14:6",
+  "audioFile": "/audio/C3-M08/C3-M08.mp3",
+  "duration": 297.32,
+  "generatedAt": "2026-06-12T17:48:56.296346Z",
+  "narrationFile": "C3-M08.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 8 do Ciclo 3: Grande Revisao — Joao 14:6",
+      "startTime": 0.0,
+      "endTime": 3.85
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao oitavo e ultimo modulo do Ciclo 3. Este e o modulo da grande revisao. Voce vai revisar tudo que aprendeu no ciclo: os quatro casos, as duas declinacoes, o artigo definido e as preposicoes",
+      "startTime": 5.85,
+      "endTime": 32.14
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Revisao SRS: Artigos, declinacoes e preposicoes",
+      "startTime": 33.14,
+      "endTime": 37.75
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Esta unidade revisa todo o sistema nominal do Ciclo 3. O artigo definido tem tres generos, quatro casos e dois numeros. Paradigma completo: masculino singular ho, tou, to, ton; plural hoi, ton, tois, ",
+      "startTime": 38.75,
+      "endTime": 88.59
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "O genitivo plural ton e igual para todos os generos — um ponto fixo na declinacao que nunca muda. Memorize-o como ancora.",
+      "startTime": 89.09,
+      "endTime": 95.81
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "ego eimi he hodos kai he aletheia kai he zoe — Joao, capitulo 14, versiculo 6.",
+      "startTime": 97.31,
+      "endTime": 102.44
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora que revisamos os paradigmas, vamos aplicar tudo a analise do versiculo-trofeu do ciclo.",
+      "startTime": 103.94,
+      "endTime": 109.11
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Aula do Versiculo Trofeu: Joao 14:6",
+      "startTime": 110.61,
+      "endTime": 114.45
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O versiculo-trofeu do Ciclo 3 e Joao capitulo 14 versiculo 6. Em grego: legei auto Iesous, ego eimi he hodos kai he aletheia kai he zoe. Analise palavra por palavra: legei e a terceira pessoa do singu",
+      "startTime": 115.45,
+      "endTime": 171.91
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Joao 14:6 e o setimo e ultimo ego eimi de Jesus em Joao com predicativo. Cada um revela um aspecto da identidade de Cristo: pao, luz, porta, pastor, ressurreicao, caminho, videira.",
+      "startTime": 172.41,
+      "endTime": 183.77
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "legei auto Iesous, ego eimi he hodos kai he aletheia kai he zoe — Joao, capitulo 14, versiculo 6.",
+      "startTime": 185.27,
+      "endTime": 191.72
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora que voce analisou o versiculo-trofeu, vamos testar seus conhecimentos com um quiz completo de 20 questoes.",
+      "startTime": 193.22,
+      "endTime": 199.46
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Quiz de revisao do Ciclo 3",
+      "startTime": 200.96,
+      "endTime": 203.69
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Este quiz de 20 questoes revisa todo o Ciclo 3. Os topicos sao: declinacao completa do artigo definido, terminacoes nominais da primeira e segunda declinacao, preposicoes com casos, vocabulario do cic",
+      "startTime": 204.69,
+      "endTime": 239.99
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Revise os paradigmas antes de comecar. Se errar, o SRS vai trazer a questao de volta. O objetivo nao e acertar tudo de primeira, mas fixar o conteudo a longo prazo.",
+      "startTime": 240.49,
+      "endTime": 250.01
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "ego eimi he hodos kai he aletheia kai he zoe — Joao, capitulo 14, versiculo 6.",
+      "startTime": 251.51,
+      "endTime": 256.71
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Parabens por completar o Ciclo 3! Voce agora domina os quatro casos, o artigo definido, as duas declinacoes e as preposicoes principais. O Ciclo 4 vai expandir seu conhecimento para novos paradigmas e",
+      "startTime": 258.21,
+      "endTime": 271.06
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Ciclo 3 concluido! Voce completou a grande revisao e conquistou o titulo \"Declinador de Casos\". Agora voce reconhece os quatro casos do grego koine, declina artigos e substantivos da primeira e segund",
+      "startTime": 272.56,
+      "endTime": 296.32
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C3-M08-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C3-M08-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C3-M08-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C3-M08-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C3-M08-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C3-M08-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

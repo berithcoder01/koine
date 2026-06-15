@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C2-M03",
+  "moduleTitle": "do Ciclo 2: Pronomes Pessoais Sujeito",
+  "audioFile": "/audio/C2-M03/C2-M03.mp3",
+  "duration": 192.48,
+  "generatedAt": "2026-06-12T12:03:08.785671Z",
+  "narrationFile": "C2-M03.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 3 do Ciclo 2: Pronomes Pessoais Sujeito",
+      "startTime": 0.0,
+      "endTime": 3.17
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "No modulo anterior, voce aprendeu que eimi carrega a pessoa no verbo. Mas e quando o grego quer enfase? E quando quer dizer \"EU\" com destaque? Vamos aprender os pronomes pessoais — e a regra de ouro: ",
+      "startTime": 5.17,
+      "endTime": 17.51
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Pronomes do singular: ego, sy, autos",
+      "startTime": 18.51,
+      "endTime": 21.89
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Os pronomes pessoais do singular em grego sao: ego (eu), sy (tu), autos/authe/auto (ele/ela/isso). Todos tem acento na ultima silaba. Ego e o pronome que abre os sete grandes \"Eu sou\" de Joao. Sy e o ",
+      "startTime": 22.89,
+      "endTime": 52.3
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Ego e cognato do ingles \"ego\" — a mesma raiz de \"eu\". Sy lembra \"tu\" — som e funcao identicos.",
+      "startTime": 52.8,
+      "endTime": 58.28
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "ego eimi ho poimen ho kalos — Joao, capitulo 10, versiculo 11.",
+      "startTime": 59.78,
+      "endTime": 63.75
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora os pronomes do plural. A diferenca entre \"nos\" e \"vos\" em grego e de apenas uma letra.",
+      "startTime": 65.25,
+      "endTime": 69.96
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Pronomes do plural: hemeis, hymeis, autoi",
+      "startTime": 71.46,
+      "endTime": 75.05
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Os pronomes plurais seguem o mesmo padrao dos singulares: hemeis (nos), hymeis (vos, voces), autoi/autai/auta (eles/elas/coisas). Observe a diferenca de apenas uma letra entre hemeis (primeira plural,",
+      "startTime": 76.05,
+      "endTime": 105.77
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "A diferenca entre hemeis (nos) e hymeis (vos) e o som da primeira letra: \"e-meis\" vs \"u-meis\". Treine o ouvido para distinguir o eta do ipsilon.",
+      "startTime": 106.27,
+      "endTime": 113.12
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "hymeis este to phos tou kosmou — Mateus, capitulo 5, versiculo 14.",
+      "startTime": 114.62,
+      "endTime": 119.25
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora a regra de ouro que rege todos os pronomes gregos.",
+      "startTime": 120.75,
+      "endTime": 123.67
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Pronome como enfase: quando ele aparece, e porque o autor quer destaque",
+      "startTime": 125.17,
+      "endTime": 129.89
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Esta e a regra de ouro dos pronomes gregos: o pronome sujeito nunca e obrigatorio. O verbo ja carrega a pessoa embutida na terminacao. Quando o pronome aparece, e porque o autor quer enfase. Ego nao e",
+      "startTime": 130.89,
+      "endTime": 161.84
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Regra pratica: se voce ve um pronome sujeito em grego, pergunte \"por que ele esta aqui?\" A resposta quase sempre e: enfase, contraste, ou eco teologico.",
+      "startTime": 162.34,
+      "endTime": 170.9
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "ego eimi ho poimen ho kalos — Joao, capitulo 10, versiculo 11.",
+      "startTime": 172.4,
+      "endTime": 176.48
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo 3 concluido! Agora voce conhece os pronomes pessoais do grego e sabe que, quando aparecem, e sinal de alerta: o autor quer que voce preste atencao. No proximo modulo, voce aprende o artigo defi",
+      "startTime": 177.98,
+      "endTime": 191.48
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C2-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C2-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C2-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C2-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C2-M03-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

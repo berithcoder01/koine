@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C3-M03",
+  "moduleTitle": "do Ciclo 3: Dativo — Objeto Indireto e Instrumento",
+  "audioFile": "/audio/C3-M03/C3-M03.mp3",
+  "duration": 238.55,
+  "generatedAt": "2026-06-12T18:05:02.256834Z",
+  "narrationFile": "C3-M03.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 3 do Ciclo 3: Dativo — Objeto Indireto e Instrumento",
+      "startTime": 0.0,
+      "endTime": 4.06
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Modulo 3 do Ciclo 3. Neste modulo, voce aprende um novo caso: o dativo. Diferente dos casos que voce ja conhece — nominativo para o sujeito, acusativo para o objeto direto, genitivo para ",
+      "startTime": 6.06,
+      "endTime": 35.92
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — As funcoes do dativo",
+      "startTime": 36.92,
+      "endTime": 39.06
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O caso dativo grego fundiu tres casos indo-europeus: dativo, instrumental e locativo. Suas principais funcoes sao tres: objeto indireto — indica a pessoa a quem algo e dado ou dito, como em \"dou a Deu",
+      "startTime": 40.06,
+      "endTime": 71.84
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "O iota subscrito e sua pista visual para o dativo. As tres funcoes do dativo formam o acronimo DIL: para quem — Dativo, com que — Instrumental, onde — Locativo.",
+      "startTime": 72.34,
+      "endTime": 82.26
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "pisteuomen to theo — Primeira Pedro, capitulo 1, versiculo 21.",
+      "startTime": 83.76,
+      "endTime": 87.71
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora que voce conhece as funcoes, vamos ver o artigo no dativo com exemplos nos tres generos.",
+      "startTime": 89.21,
+      "endTime": 94.66
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — O artigo no dativo",
+      "startTime": 96.16,
+      "endTime": 98.43
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O artigo definido no dativo singular tem tres formas: \"to\" para masculino e neutro, \"te\" para feminino. A tabela completa: nominativo masculino \"ho\" vai para dativo \"to\", nominativo feminino \"he\" vai ",
+      "startTime": 99.43,
+      "endTime": 125.37
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "\"To\" e uma so forma para masculino e neutro — memorize isso para nao confundir. \"Te\" e exclusivamente feminino. A triade \"to theo, te zoe, to logo\" cobre os tres generos no dativo.",
+      "startTime": 125.87,
+      "endTime": 135.95
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "to theo — Romanos, capitulo 6, versiculo 10.",
+      "startTime": 137.45,
+      "endTime": 140.67
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Agora vamos a parte pratica: verbos que exigem o dativo.",
+      "startTime": 142.17,
+      "endTime": 146.24
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Verbos com dativo: pisteuo e lego",
+      "startTime": 147.74,
+      "endTime": 150.89
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Alguns verbos gregos exigem o dativo como complemento, nao o acusativo. Os mais importantes sao dois: \"pisteuo\" mais dativo significa \"crer em\" no sentido de confiar. Nao se diz \"pisteuo ton theon\" — ",
+      "startTime": 151.89,
+      "endTime": 184.88
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Verbos de comunicacao como \"lego\" e \"laleo\" e verbos de fe e confianca como \"pisteuo\" e \"elpizo\" frequentemente pedem dativo. Pense: \"confiar EM alguem\" e um \"em\" instrumental — por isso o dativo, nao",
+      "startTime": 185.38,
+      "endTime": 197.27
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "legei auto Iesous ego eimi he anastasis kai he zoe — Joao, capitulo 11, versiculo 25.",
+      "startTime": 198.77,
+      "endTime": 204.58
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens por completar o Modulo 3 do Ciclo 3! Voce aprendeu o caso dativo e suas tres funcoes: objeto indireto, instrumental e locativo. Agora voce reconhece o iota subscrito como marca do dativo, sab",
+      "startTime": 206.08,
+      "endTime": 237.55
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C3-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C3-M03-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C3-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C3-M03-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C3-M03-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C4-M01",
+  "moduleTitle": "do Ciclo 4: Presente Ativo — O Paradigma luo",
+  "audioFile": "/audio/C4-M01/C4-M01.mp3",
+  "duration": 248.39,
+  "generatedAt": "2026-06-12T17:50:35.453200Z",
+  "narrationFile": "C4-M01.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 1 do Ciclo 4: Presente Ativo — O Paradigma luo",
+      "startTime": 0.0,
+      "endTime": 3.61
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Ciclo 4 do Koiné App. Este ciclo é dedicado aos verbos gregos. No módulo anterior, você aprendeu os primeiros verbos do Novo Testamento: lego, echo e pisteuo. Agora você vai aprender o si",
+      "startTime": 5.61,
+      "endTime": 32.69
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — As terminações do presente ativo",
+      "startTime": 33.69,
+      "endTime": 36.44
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "As terminações pessoais do presente ativo são as mais importantes do grego. Elas se aplicam a centenas de verbos. A primeira pessoa do singular termina em \"o\". A segunda em \"eis\". A terceira em \"ei\". ",
+      "startTime": 37.44,
+      "endTime": 67.29
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Memorize as terminações como uma sequência rítmica: o, eis, ei, omen, ete, ousi. A terceira pessoa plural é a única que tem mais de duas sílabas na terminação.",
+      "startTime": 67.79,
+      "endTime": 77.38
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "legei auto Iesous — Joao, capitulo 11, versiculo 25. Note que legei contem a terminacao \"ei\" da terceira pessoa do singular.",
+      "startTime": 78.88,
+      "endTime": 86.57
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora que voce conhece as terminacoes, vamos aplica-las ao verbo modelo luo.",
+      "startTime": 88.07,
+      "endTime": 92.29
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — O paradigma luo",
+      "startTime": 93.79,
+      "endTime": 95.73
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Luo e o verbo modelo usado em todas as gramaticas de grego para ensinar a conjugacao regular. Ele nao aparece no Novo Testamento como verbo principal, mas serve como padrao. Qualquer verbo regular ter",
+      "startTime": 96.73,
+      "endTime": 134.83
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Luo gerou o portugues \"analise\", \"catalise\" e \"eletrolise\". Toda palavra terminada em \"lise\" vem de luo.",
+      "startTime": 135.33,
+      "endTime": 140.6
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "luo — palavra-ancora do modulo.",
+      "startTime": 142.1,
+      "endTime": 143.77
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Agora que voce domina o paradigma luo, vamos aplica-lo a tres verbos reais do Novo Testamento: lego, echo e pisteuo.",
+      "startTime": 145.27,
+      "endTime": 152.59
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Verbos reais do Novo Testamento",
+      "startTime": 154.09,
+      "endTime": 156.97
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Lego, echo e pisteuo sao verbos regulares no presente do indicativo ativo. Eles seguem exatamente as mesmas terminacoes de luo. A unica diferenca e o radical. Vamos a conjugacao completa de cada um. P",
+      "startTime": 157.97,
+      "endTime": 206.73
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "A forma leguei e a mais comum em narrativas dos Evangelhos — significa \"ele diz\" ou \"disse\" no presente historico.",
+      "startTime": 207.23,
+      "endTime": 213.08
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "ho pisteuon eis ton huion echei zoen aionion — Joao, capitulo 3, versiculo 36.",
+      "startTime": 214.58,
+      "endTime": 220.16
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens por completar o Modulo 1 do Ciclo 4! Voce aprendeu as seis terminacoes do presente ativo e aplicou ao verbo modelo luo e a tres verbos reais do Novo Testamento: lego, echo e pisteuo. Agora vo",
+      "startTime": 221.66,
+      "endTime": 247.39
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C4-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C4-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C4-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C4-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C4-M01-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

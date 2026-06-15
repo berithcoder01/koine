@@ -11,7 +11,7 @@ const config: CapacitorConfig = {
   plugins: {
     SplashScreen: {
       launchShowDuration: 1500,
-      backgroundColor: '#18181B',
+      backgroundColor: '#FAF9F6',
       androidSplashResourceName: 'splash',
       showSpinner: false,
     },
@@ -21,6 +21,14 @@ const config: CapacitorConfig = {
     FirebaseAuthentication: {
       skipNativeAuth: false,
       providers: ['google.com'],
+    },
+    CapacitorSQLite: {
+      androidIsEncryption: true,
+    },
+    StatusBar: {
+      style: 'DARK',
+      backgroundColor: '#00000000',
+      overlaysWebView: true,
     },
   },
 };

@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C4-M06",
+  "moduleTitle": "do Ciclo 4: Verbos Contractos",
+  "audioFile": "/audio/C4-M06/C4-M06.mp3",
+  "duration": 359.91,
+  "generatedAt": "2026-06-12T17:57:31.765005Z",
+  "narrationFile": "C4-M06.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 6 do Ciclo 4: Verbos Contractos",
+      "startTime": 0.0,
+      "endTime": 3.04
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Modulo 6 do Ciclo 4. Nos ultimos modulos, voce aprendeu os verbos regulares no presente ativo com o paradigma luo, os verbos depoentes como erkhomai, e o imperativo presente. Agora voce v",
+      "startTime": 5.04,
+      "endTime": 46.35
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Contracao dos verbos em \"eo\"",
+      "startTime": 47.35,
+      "endTime": 49.81
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Alguns verbos gregos tem o radical terminado em vogal — sao os verbos contractos. A vogal final do radical contrai com a vogal inicial da terminacao, formando uma nova vogal ou ditongo. O verbo poieo,",
+      "startTime": 50.81,
+      "endTime": 111.42
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Memorize o padrao: \"e\" encontra \"e\" e formam \"ei\"; \"e\" encontra \"o\" e formam \"ou\"; \"e\" encontra \"omega\" e formam \"omega\". A contracao sempre preserva o timbre da segunda vogal.",
+      "startTime": 111.92,
+      "endTime": 120.74
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "poio — palavra-ancora da unidade, primeira pessoa do singular contraida de poieo.",
+      "startTime": 122.24,
+      "endTime": 126.53
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora que voce conhece as regras de contracao para verbos em \"eo\", vamos aplica-las a dois verbos muito frequentes no Novo Testamento: poieo e laleo.",
+      "startTime": 128.03,
+      "endTime": 136.25
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Conjugacao completa de poieo e laleo",
+      "startTime": 137.75,
+      "endTime": 140.77
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Dois verbos muito frequentes seguem o padrao de contracao \"eo\": poieo, que significa \"fazer\", e laleo, que significa \"falar\". Eles seguem exatamente as mesmas regras de contracao. Vamos a conjugacao c",
+      "startTime": 141.77,
+      "endTime": 206.74
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "O verbo laleo e cognato do portugues \"aleluia\", do hebraico \"halelu-Yah\", que significa \"louvai a Yah\". Mas em grego, laleo significa simplesmente \"falar\" ou \"dizer\".",
+      "startTime": 207.24,
+      "endTime": 216.34
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "poieite — segunda pessoa do plural de poieo.",
+      "startTime": 217.84,
+      "endTime": 220.06
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Agora que voce domina os verbos em \"eo\", vamos aprender os outros dois grupos de verbos contractos: os verbos em \"ao\" e em \"oo\".",
+      "startTime": 221.56,
+      "endTime": 229.53
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Verbos em \"ao\" e \"oo\"",
+      "startTime": 231.03,
+      "endTime": 233.14
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Alem dos verbos em \"eo\", existem verbos contractos em \"ao\" e em \"oo\". Eles seguem regras de contracao diferentes. Primeiro, os verbos em \"ao\". O modelo e agapao, que significa \"amar\". As regras de con",
+      "startTime": 234.14,
+      "endTime": 306.64
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Compare as tres classes de contracao: verbos em \"eo\" produzem \"ei\" e \"ou\"; verbos em \"ao\" produzem \"omega\", \"alfa\" longo e \"ai\" com iota subscrito; verbos em \"oo\" produzem \"oi\" e \"ou\". A segunda singu",
+      "startTime": 307.14,
+      "endTime": 323.85
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "agapais — segunda pessoa do singular de agapao, forma contraida com iota subscrito.",
+      "startTime": 325.35,
+      "endTime": 330.03
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabens por completar o Modulo 6 do Ciclo 4! Voce aprendeu os tres tipos de verbos contractos do grego: os verbos em \"eo\" como poieo e laleo, os verbos em \"ao\" como agapao, e os verbos em \"oo\" como p",
+      "startTime": 331.53,
+      "endTime": 358.91
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C4-M06-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C4-M06-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C4-M06-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C4-M06-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C4-M06-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "version": "1.0",
+  "moduleId": "C2-M02",
+  "moduleTitle": "do Ciclo 2: eimi Plural — Nos somos, Vos sois, Eles sao",
+  "audioFile": "/audio/C2-M02/C2-M02.mp3",
+  "duration": 232.86,
+  "generatedAt": "2026-06-12T12:01:11.390450Z",
+  "narrationFile": "C2-M02.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 2 do Ciclo 2: eimi Plural — Nos somos, Vos sois, Eles sao",
+      "startTime": 0.0,
+      "endTime": 4.2
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "No modulo anterior voce aprendeu o singular de eimi. Agora vamos completar o verbo com as formas do plural. Ao final, voce vai conjugar eimi completo e ler o versiculo-trofeu do Bloco A: \"ego eimi he ",
+      "startTime": 6.2,
+      "endTime": 17.79
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — eimi: conjugacao plural",
+      "startTime": 18.79,
+      "endTime": 21.31
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Vamos completar o paradigma de eimi com as formas do plural. Primeira plural: esmen (nos somos). Segunda plural: este (vos sois, voces sao). Terceira plural: eisin (eles/elas sao). Juntas, as seis for",
+      "startTime": 22.31,
+      "endTime": 55.72
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "O plural de eimi e regular: esmen (nos), este (vos), eisin (eles). Memorize como trio.",
+      "startTime": 56.22,
+      "endTime": 61.12
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "hymeis este to phos tou kosmou — Mateus, capitulo 5, versiculo 14.",
+      "startTime": 62.62,
+      "endTime": 67.18
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Duas das frases mais conhecidas de Jesus usam \"este\". Vamos ve-las.",
+      "startTime": 68.68,
+      "endTime": 72.46
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — este em Mateus 5: o sal e a luz",
+      "startTime": 73.96,
+      "endTime": 77.44
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Duas das frases mais conhecidas de Jesus no Sermao do Monte usam este, a segunda pessoa do plural de eimi. A primeira: \"hymeis este to halas tes ges\" — \"voces sao o sal da terra\", de Mateus capitulo 5",
+      "startTime": 78.44,
+      "endTime": 112.69
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "As duas frases andam juntas: sal da terra e luz do mundo. Se voce lembrar de \"este\" como o som de \"este\" em portugues, a frase se fixa.",
+      "startTime": 113.19,
+      "endTime": 120.33
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "hymeis este to halas tes ges — Mateus, capitulo 5, versiculo 13.",
+      "startTime": 121.83,
+      "endTime": 126.09
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "A terceira pessoa do plural — eisin — aparece em um argumento teologico denso de Paulo.",
+      "startTime": 127.59,
+      "endTime": 132.28
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — eisin em Romanos 9:6",
+      "startTime": 133.78,
+      "endTime": 136.5
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "A terceira pessoa do plural eisin (eles/elas sao) aparece em um dos argumentos teologicos mais densos de Paulo. Em Romanos capitulo 9 versiculo 6, ele escreve: \"ou pantes hoi ex Israel, houtoi eisin I",
+      "startTime": 137.5,
+      "endTime": 167.5
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Eisin se parece com estin, mas com \"sin\" no lugar de \"tin\" — o plural adiciona um \"s\" antes da terminacao.",
+      "startTime": 168.0,
+      "endTime": 173.9
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "ou pantes hoi ex Israel, houtoi eisin Israel — Romanos, capitulo 9, versiculo 6.",
+      "startTime": 175.4,
+      "endTime": 180.62
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora, a Aula do Versiculo do Bloco A. O versiculo que sintetiza os dois primeiros modulos.",
+      "startTime": 182.12,
+      "endTime": 187.58
+    },
+    {
+      "id": "u3_versiculo_2",
+      "marker": "VERSICULO",
+      "text": "ego eimi he anastasis kai he zoe — Joao, capitulo 11, versiculo 25. \"Eu sou a ressurreicao e a vida.\" ego: eu. eimi: sou. he anastasis: a ressurreicao. kai: e. he zoe: a vida.",
+      "startTime": 189.08,
+      "endTime": 200.56
+    },
+    {
+      "id": "u3_exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Este e um dos sete \"Eu sou\" de Joao. Jesus esta diante do tumulo de Lazaro. Marta acabou de dizer que seu irmao ressuscitara \"no ultimo dia\". Jesus corrige: nao e um evento futuro — Eu SOU a ressurrei",
+      "startTime": 202.06,
+      "endTime": 218.43
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo 2 concluido! Agora voce sabe a conjugacao completa de eimi — do singular ao plural. E leu o versiculo-trofeu do Bloco A. No proximo modulo, voce aprende os pronomes pessoais: como dizer \"eu\", \"",
+      "startTime": 218.93,
+      "endTime": 231.86
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C2-M02-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C2-M02-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C2-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C2-M02-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C2-M02-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C2-M02-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_versiculo_2",
+        "u3_exposicao_2"
+      ],
+      "unitId": "C2-M02-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Koine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Apostila L01 — As Primeiras Vogais (α, ε, η, ι)</h1>
+<p><strong>ID:</strong> apostila-L01
+<strong>Título:</strong> Lição 1 — As Primeiras Vogais
+<strong>Descrição:</strong> Alpha, Epsilon, Eta, Iota
+<strong>Página:</strong> 1
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 30</p>
+<hr>
+<h2>🎯 Objetivo da Lição</h2>
+<p>Aprender as quatro primeiras vogais do alfabeto grego do Novo Testamento: <strong>Alpha (α)</strong>, <strong>Epsilon (ε)</strong>, <strong>Eta (η)</strong> e <strong>Iota (ι)</strong> — base das primeiras palavras do NT.</p>
+<blockquote>
+<p>📄 <strong>Abra sua apostila na Página 1</strong></p>
+</blockquote>
+<hr>
+<h2>🏁 Step 1: Intro</h2>
+<p><strong>Tipo:</strong> Abertura
+<strong>Narração (PT):</strong></p>
+<blockquote>
+<p>&quot;Bem-vindo à Lição 1. Hoje você vai conhecer as primeiras quatro vogais do alfabeto grego: alfa, épsilon, éta e iôta. Essas letras são a base de centenas de palavras do Novo Testamento. Abra sua apostila na página 1 e acompanhe comigo.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong>
+<code>&quot;Abra sua apostila na Página 1&quot;</code></p>
+<hr>
+<h2>🅰️ Step 2: Word Intro — Alpha (Α α)</h2>
+<p><strong>Grego:</strong> Α α
+<strong>Transliteração:</strong> alfa
+<strong>Pronúncia:</strong> a (como em &quot;pai&quot;)
+<strong>Significado:</strong> Letra Alfa</p>
+<p><strong>Detalhes Pedagógicos:</strong></p>
+<ul>
+<li>Etiologia: 📜 Originou o &quot;A&quot; latino e o Alef hebraico; primeira letra de todos os alfabetos semíticos</li>
+</ul>
+<p><strong>Contexto Bíblico:</strong></p>
+<blockquote>
+<p>📖 <strong>Apocalipse 1:8</strong>
+&quot;Eu sou o Alfa e o Ômega&quot; — Deus usa esta letra para declarar sua eternidade</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 3: Alphabet Trace — Alpha (α)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> α
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do alfa minúsculo:</p>
+<ol>
+<li>Traço diagonal da esquerda para baixo</li>
+<li>Traço diagonal da direita para baixo</li>
+<li>Traço horizontal no meio</li>
+</ol>
+<blockquote>
+<p>⚠️ Acompanhe a animação de traçado na tela.</p>
+</blockquote>
+<hr>
+<h2>✍️ Step 4: Write Practice — Alpha (α × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> α
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 1 da apostila — Alfa minúsculo (α)&quot;</code></p>
+<p><strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva o alfa minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>📝 <strong>Tarefa:</strong> Escreva α 8 vezes nesta linha:</p>
+<pre><code>[Linha 1: α α α α α α α α ]
+</code></pre>
+<hr>
+<h2>🅴 Step 5: Word Intro — Épsilon (Ε ε)</h2>
+<p><strong>Grego:</strong> Ε ε
+<strong>Transliteração:</strong> épsilon
+<strong>Pronúncia:</strong> e breve (como em &quot;pé&quot;)
+<strong>Significado:</strong> Letra Épsilon</p>
+<p><strong>Detalhes Pedagógicos:</strong></p>
+<ul>
+<li>Etiologia: 📜 ε + ψιλόν significa &quot;e simples&quot;, para distinguir do ditongo αι</li>
+</ul>
+<p><strong>Contexto Bíblico:</strong></p>
+<blockquote>
+<p>📖 <strong>João 1:1</strong>
+&quot;No princípio era (ἦν) o Verbo&quot; — ε aparece na terminação do imperfeito</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 6: Alphabet Trace — Épsilon (ε)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> ε
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do épsilon minúsculo:</p>
+<ol>
+<li>Traço vertical à esquerda de cima para baixo</li>
+<li>Traço horizontal do meio</li>
+<li>Arco curvo à direita</li>
+</ol>
+<hr>
+<h2>✍️ Step 7: Write Practice — Épsilon (ε × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ε
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 2 da apostila — Épsilon minúsculo (ε)&quot;</code></p>
+<p>📝 <strong>Tarefa:</strong> Escreva ε 8 vezes nesta linha:</p>
+<pre><code>[Linha 2: ε ε ε ε ε ε ε ε ]
+</code></pre>
+<hr>
+<h2>🅷 Step 8: Word Intro — Éta (Η η)</h2>
+<p><strong>Grego:</strong> Η η
+<strong>Transliteração:</strong> éta
+<strong>Pronúncia:</strong> ê longo (como em &quot;mês&quot;)
+<strong>Significado:</strong> Letra Éta</p>
+<p><strong>Detalhes Pedagógicos:</strong></p>
+<ul>
+<li>Etiologia: 📜 Derivado do Chet hebraico (ח); representa o &quot;e&quot; longo do grego clássico</li>
+</ul>
+<p><strong>Contexto Bíblico:</strong></p>
+<blockquote>
+<p>📖 <strong>Hebreus 11:1</strong>
+&quot;A fé (πίστις) é...&quot; — o η aparece em muitas terminações de substantivos femininos</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 9: Alphabet Trace — Éta (η)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> η
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do éta minúsculo:</p>
+<ol>
+<li>Primeira haste vertical da esquerda para baixo</li>
+<li>Segunda haste vertical</li>
+<li>Traço horizontal conectando as duas hastes na altura do meio</li>
+</ol>
+<hr>
+<h2>✍️ Step 10: Write Practice — Éta (η × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> η
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 3 da apostila — Éta minúsculo (η)&quot;</code></p>
+<p>📝 <strong>Tarefa:</strong> Escreva η 8 vezes nesta linha:</p>
+<pre><code>[Linha 3: η η η η η η η η ]
+</code></pre>
+<hr>
+<h2>🅸 Step 11: Word Intro — Iota (Ι ι)</h2>
+<p><strong>Grego:</strong> Ι ι
+<strong>Transliteração:</strong> iôta
+<strong>Pronúncia:</strong> i (como em &quot;fio&quot;)
+<strong>Significado:</strong> Letra Iota</p>
+<p><strong>Detalhes Pedagógicos:</strong></p>
+<ul>
+<li>Etiologia: 📜 Origem no Yod hebraico (י); a menor letra do alfabeto, mencionada por Jesus em Mateus 5:18</li>
+</ul>
+<p><strong>Contexto Bíblico:</strong></p>
+<blockquote>
+<p>📖 <strong>Mateus 5:18</strong>
+&quot;Nem um iota (ἰῶτα) passará da lei&quot; — Jesus usa esta própria letra como exemplo</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 12: Alphabet Trace — Iota (ι)</h2>
+<p><strong>Tipo:</strong> Demonstração de Traço
+<strong>Grego:</strong> ι
+<strong>Instrução de Traçado:</strong>
+Observe a ordem dos traços do iota minúsculo:</p>
+<ul>
+<li>Um único traço curvo de cima para baixo, levemente inclinado, com uma serifa no topo</li>
+</ul>
+<hr>
+<h2>✍️ Step 13: Write Practice — Iota (ι × 8)</h2>
+<p><strong>Tipo:</strong> Prática de Escrita
+<strong>Grego:</strong> ι
+<strong>Repetições:</strong> 8
+<strong>Instrução:</strong>
+<code>&quot;Linha 4 da apostila — Iota minúsculo (ι)&quot;</code></p>
+<p>📝 <strong>Tarefa:</strong> Escreva ι 8 vezes nesta linha:</p>
+<pre><code>[Linha 4: ι ι ι ι ι ι ι ι ]
+</code></pre>
+<hr>
+<h2>🧠 Step 14: Pause</h2>
+<p><strong>Tipo:</strong> Revisão Guiada
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Muito bem! Você acabou de aprender as quatro primeiras vogais gregas. Antes de continuar, olhe para o que escreveu e compare com o modelo na apostila. Cada letra deve ter a mesma forma que o modelo.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<pre><code>Compare sua escrita com o modelo na apostila.
+Quando estiver pronto, continue.
+</code></pre>
+<hr>
+<h2>✍️ Step 15: Ditado — Alfa</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: alfa.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;alfa&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> α / Α</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Α α aqui:</p>
+<pre><code>[Resposta: α ]
+</code></pre>
+<hr>
+<h2>✍️ Step 16: Ditado — Épsilon</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: épsilon.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;épsilon&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> ε / Ε</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ε ε aqui:</p>
+<pre><code>[Resposta: ε ]
+</code></pre>
+<hr>
+<h2>✍️ Step 17: Ditado — Éta</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: éta.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;éta&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> η / Η</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Η η aqui:</p>
+<pre><code>[Resposta: η ]
+</code></pre>
+<hr>
+<h2>✍️ Step 18: Ditado — Iota</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva no papel: iota.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+<code>&quot;iôta&quot;</code></p>
+<p><strong>Resposta Esperada:</strong> ι / Ι</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ι ι aqui:</p>
+<pre><code>[Resposta: ι ]
+</code></pre>
+<hr>
+<h2>🎉 Fim da Lição L01</h2>
+<p>Parabéns! Você concluiu <strong>Lição 1 — As Primeiras Vogais</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi α (alfa)</li>
+<li><input disabled="" type="checkbox"> Aprendi ε (épsilon)</li>
+<li><input disabled="" type="checkbox"> Aprendi η (éta)</li>
+<li><input disabled="" type="checkbox"> Aprendi ι (iota)</li>
+</ul>
+<p>📖 <strong>Próxima lição:</strong> L02 — As Vogais Longas e o Upsilon (ο, υ, ω)</p>
+
+</body>
+</html>

@@ -8,11 +8,21 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "download-nt": "tsx src/scripts/downloadNT.ts"
+    "download-nt": "tsx src/scripts/downloadNT.ts",
+    "download-blivre": "tsx src/scripts/downloadBLivre.ts",
+    "build-books": "tsx src/scripts/buildBooks.ts",
+    "build-glossary": "tsx src/scripts/buildGlossary.ts",
+    "build-interlinear": "tsx src/scripts/buildInterlinear.ts",
+    "build-nt-pt": "npm run download-blivre && npm run build-books",
+    "parse-apostila": "tsx src/tools/apostilaRunner.ts",
+    "parse-apostila:all": "tsx src/tools/apostilaRunner.ts --all",
+    "validate-apostila": "tsx src/tools/apostilaRunner.ts --validate",
+    "validate-apostila:all": "tsx src/tools/apostilaRunner.ts --validate --all"
   },
   "dependencies": {
     "@capacitor-community/native-audio": "^6.0.0",
     "@capacitor-community/sqlite": "^6.0.2",
+    "@capacitor-community/text-to-speech": "^5.1.0",
     "@capacitor-firebase/authentication": "^6.3.1",
     "@capacitor-firebase/firestore": "^6.3.1",
     "@capacitor-firebase/messaging": "^6.3.1",
@@ -24,8 +34,6 @@
     "@capacitor/keyboard": "^6.0.4",
     "@capacitor/status-bar": "^6.0.3",
     "@heroui/react": "^2.8.10",
-    "@ionic/react": "^7.8.6",
-    "@ionic/react-router": "^7.8.6",
     "@revenuecat/purchases-capacitor": "^13.0.0",
     "clsx": "^2.1.0",
     "date-fns": "^3.3.0",
@@ -33,9 +41,12 @@
     "framer-motion": "^12.40.0",
     "immer": "^10.0.0",
     "ionicons": "^7.4.0",
+    "lucide-react": "^1.17.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-medium-image-zoom": "^5.4.7",
     "react-router-dom": "^6.30.3",
+    "sharp": "^0.34.5",
     "zustand": "^4.5.1"
   },
   "devDependencies": {
@@ -49,9 +60,12 @@
     "eslint": "^8.56.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "marked": "^18.0.5",
     "postcss": "^8.4.35",
     "prettier": "^3.2.5",
+    "puppeteer-core": "^25.1.0",
     "tailwindcss": "^4.0.0",
+    "tsx": "^4.22.4",
     "typescript": "^5.2.2",
     "vite": "^5.1.0"
   }

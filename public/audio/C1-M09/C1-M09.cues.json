@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "moduleId": "C1-M09",
+  "moduleTitle": "Diacríticos, Acentos e Vogais Longas/Curtas",
+  "audioFile": "/audio/C1-M09/C1-M09.mp3",
+  "duration": 455.46,
+  "generatedAt": "2026-06-04T14:29:42.390554Z",
+  "narrationFile": "C1-M09.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Diacríticos, Acentos e Vogais Longas/Curtas",
+      "startTime": 0.0,
+      "endTime": 3.07
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao Módulo 9 do Koiné App — Diacríticos.\n\nVocê agora conhece todas as vinte e quatro letras do alfabeto grego. O próximo passo é refinamento: aprender os sinais que modificam as letras já con",
+      "startTime": 5.07,
+      "endTime": 48.82
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — Espíritos (Suave e Áspero)",
+      "startTime": 49.82,
+      "endTime": 52.46
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O primeiro tipo de diacrítico são os espíritos. Eles aparecem apenas no início de palavras que começam com vogal.\n\nO espírito suave é um apóstrofo inclinado para a esquerda. Ele indica que a vogal ini",
+      "startTime": 53.46,
+      "endTime": 107.38
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "O espírito suave é como um apóstrofo que aponta para a esquerda — significa que a vogal sai limpa, sem sopro. O espírito áspero aponta para a direita — é como se tivesse um \"h\" escondido antes da voga",
+      "startTime": 107.88,
+      "endTime": 118.77
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora desta unidade é \"agape\" (amor), que aparece em Primeira João, capítulo 4, versículo 8: \"Ho theos agapê estin\" — \"Deus é amor.\" Note que \"ho\" tem espírito áspero (som de \"h\"), enquanto",
+      "startTime": 120.27,
+      "endTime": 133.07
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Excelente! Você aprendeu a distinguir espírito suave e áspero. Agora vamos para o segundo tipo de diacrítico: os acentos, que indicam qual sílaba da palavra é pronunciada com mais ênfase.",
+      "startTime": 134.57,
+      "endTime": 145.15
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — Acentos (Agudo, Grave e Circunflexo)",
+      "startTime": 146.65,
+      "endTime": 150.17
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O segundo tipo de diacrítico são os acentos. Os gregos usavam três sinais de entonação: o acento agudo, o acento grave e o acento circunflexo. Esses acentos indicam qual sílaba da palavra é pronunciad",
+      "startTime": 151.17,
+      "endTime": 225.72
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Acento agudo é um traço para a direita — sílaba mais forte. Acento grave é um traço para a esquerda — aparece antes de outra palavra. Acento circunflexo é um \"chapéu\" sobre vogal longa — som mais prol",
+      "startTime": 226.22,
+      "endTime": 237.46
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora deste módulo é \"eirênê\" (paz), encontrada em Efésios, capítulo 2, versículo 14: \"Autos gar estin hê eirênê hêmôn\" — \"Pois ele é a nossa paz.\" Note que \"eirênê\" tem acento agudo no eta",
+      "startTime": 238.96,
+      "endTime": 251.5
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Muito bem! Você aprendeu os três acentos: agudo, grave e circunflexo. Agora o terceiro e último grupo de diacríticos: os ditongos e o iota subscrito.",
+      "startTime": 253.0,
+      "endTime": 262.43
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — Ditongos e Iota Subscrito",
+      "startTime": 263.93,
+      "endTime": 266.79
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O terceiro grupo de diacríticos envolve combinações de vogais. Ditongos são duas vogais pronunciadas juntas em uma única sílaba.\n\nNo grego koiné, os cinco ditongos mais comuns são: a-i (como em \"país\"",
+      "startTime": 267.79,
+      "endTime": 346.15
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Ditongos são duas vogais juntas em uma sílaba: a-i, e-i, o-i, a-u, e-u. Iota subscrito é um ι pequeno debaixo de alfa, eta ou ômega — é silencioso, mas indica informação gramatical.",
+      "startTime": 346.65,
+      "endTime": 358.77
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "A palavra-âncora deste módulo é \"eirênê\" (paz), encontrada em João, capítulo 20, versículo 19: \"Eirênê hymin\" — \"Paz a vocês.\" Esta é a saudação do Cristo ressurreito aos seus discípulos. Uma das fras",
+      "startTime": 360.27,
+      "endTime": 373.53
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Parabéns! Você completou as três unidades do Módulo 9. Agora vamos usar tudo o que aprendemos na Aula do Versículo do Bloco C: \"A luz brilha nas trevas\" — João, capítulo 1, versículo 5.",
+      "startTime": 375.03,
+      "endTime": 386.14
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar o Módulo 9 — Diacríticos.\n\nVocê agora pode reconhecer e compreender os principais diacríticos do grego koiné: espíritos suave e áspero (que indicam respiração), acentos agudo, g",
+      "startTime": 387.64,
+      "endTime": 454.46
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C1-M09-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C1-M09-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C1-M09-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C1-M09-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C1-M09-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C1-M09-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

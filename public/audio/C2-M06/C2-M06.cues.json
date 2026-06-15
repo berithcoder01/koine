@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "moduleId": "C2-M06",
+  "moduleTitle": "do Ciclo 2: Predicado Nominal — Sujeito mais eimi mais Predicativo",
+  "audioFile": "/audio/C2-M06/C2-M06.mp3",
+  "duration": 227.31,
+  "generatedAt": "2026-06-12T12:05:06.354865Z",
+  "narrationFile": "C2-M06.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 6 do Ciclo 2: Predicado Nominal — Sujeito mais eimi mais Predicativo",
+      "startTime": 0.0,
+      "endTime": 4.84
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Este modulo e o coracao teologico de todo o Ciclo 2. Voce vai aprender a estrutura que define Deus no Novo Testamento: a frase \"ho theos agape estin\" — \"Deus e amor\". E mais: vai entender por que o ar",
+      "startTime": 6.84,
+      "endTime": 19.39
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — A estrutura do predicado nominal",
+      "startTime": 20.39,
+      "endTime": 23.27
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "O predicado nominal e a estrutura mais importante do verbo eimi: Sujeito mais Predicativo mais estin. O predicativo e o que se diz do sujeito — pode ser um substantivo, adjetivo ou frase. Exemplo: \"ho",
+      "startTime": 24.27,
+      "endTime": 67.73
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "O predicativo sem artigo indica natureza, nao identidade. Agape sem \"he\" significa \"amor como natureza\", nao \"o Amor como titulo\".",
+      "startTime": 68.23,
+      "endTime": 75.41
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "theos phos estin — Primeira Joao, capitulo 1, versiculo 5.",
+      "startTime": 76.91,
+      "endTime": 80.56
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Vamos ver a estrutura em acao com \"theos phos estin\" — \"Deus e luz\".",
+      "startTime": 82.06,
+      "endTime": 85.69
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — theos phos estin: Deus e luz",
+      "startTime": 87.19,
+      "endTime": 89.97
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Em Primeira Joao capitulo 1 versiculo 5, o apostolo escreve: \"theos phos estin\" — \"Deus e luz\". Note que theos aqui esta SEM artigo — diferente de \"ho theos agape estin\" no capitulo 4. Por que? Porque",
+      "startTime": 90.97,
+      "endTime": 122.12
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "\"Theos phos estin\" tem tres palavras, uma afirmacao teologica completa. Compare com \"ho theos agape estin\": o mesmo padrao, mas com artigo no sujeito.",
+      "startTime": 122.62,
+      "endTime": 131.05
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "theos phos estin — Primeira Joao, capitulo 1, versiculo 5.",
+      "startTime": 132.55,
+      "endTime": 136.19
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora, o versiculo que sintetiza todo o Ciclo 2 — e uma das frases mais profundas de toda a Biblia.",
+      "startTime": 137.69,
+      "endTime": 143.32
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — ho theos agape estin: Deus e amor",
+      "startTime": 144.82,
+      "endTime": 147.91
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "\"Ho theos agape estin\" — o versiculo-trofeu de todo o Ciclo 2, e a declaracao mais densa da teologia joanina. Analise gramaticalmente: ho (artigo masculino nominativo singular), theos (substantivo mas",
+      "startTime": 148.91,
+      "endTime": 191.68
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Decore a frase em grego. Ela tem o mesmo padrao de \"theos phos estin\", mas com artigo em \"theos\". A diferenca de uma palavra — \"ho\" — muda de \"Deus por natureza e luz\" para \"o Deus conhecido e amor\".",
+      "startTime": 192.18,
+      "endTime": 202.78
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "ho theos agape estin — Primeira Joao, capitulo 4, versiculo 8.",
+      "startTime": 204.28,
+      "endTime": 208.42
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo 6 concluido! Este e o modulo central do Ciclo 2. Agora voce nao apenas le \"ho theos agape estin\" — voce entende por que cada palavra esta ali, o que cada uma significa, e por que a frase nao po",
+      "startTime": 209.92,
+      "endTime": 226.31
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C2-M06-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C2-M06-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C2-M06-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C2-M06-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C2-M06-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

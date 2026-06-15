@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Koine</title>
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Apostila L11 — Tempo e Reino (βασιλεία, αἰών, ἡμέρα, νύξ, ὥρα)</h1>
+<p><strong>ID:</strong> apostila-L11
+<strong>Título:</strong> Lição 11 — Tempo e Reino
+<strong>Descrição:</strong> βασιλεία, αἰών, ἡμέρα, νύξ, ὥρα
+<strong>Página:</strong> 23
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 45</p>
+<hr>
+<h2>Step 1: intro</h2>
+<p><strong>Tipo:</strong> Introdução da lição
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Lição 11 — Tempo e Reino. Hoje vamos aprender cinco palavras que estruturam o tempo e o propósito de Deus: basileía, aión, heméra, nýx e hóra. Abra sua apostila na página 23.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;Abra sua apostila na Página 23&quot;
+</code></pre>
+<hr>
+<h2>Step 2: word_intro — βασιλεία</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;βασιλεία (basileía) — reino / reinado / soberania. Venha o teu reino, seja feita a tua vontade. De βασιλεύς (rei).&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;βασιλεία — Reino&quot;
+</code></pre>
+<p><strong>Grego:</strong> βασιλεία
+<strong>Transliteração:</strong> basileía
+<strong>Pronúncia:</strong> ba-si-LEI-a
+<strong>Significado:</strong> Reino / Reinado / Soberania
+<strong>Etiologia:</strong> De βασιλεύς (rei); implica tanto o ato de reinar quanto o território reinado
+<strong>Contexto Bíblico:</strong> Mateus 6:10 — &quot;Venha o teu reino (βασιλεία), seja feita a tua vontade&quot;</p>
+<hr>
+<h2>Step 3: write_practice — βασιλεία</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> βασιλεία × 5
+<strong>Instrução:</strong> &quot;Linha 1 da apostila — βασιλεία&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva βασιλεία cinco vezes na linha 1. Pronuncie: ba-si-LEI-a.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 4: word_intro — αἰών</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;αἰών (aiṓn) — era / eternidade / século. Acima de todo principado, não só neste século mas também no vindouro. Deu origem a &#39;eon&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;αἰών — Era / Eternidade&quot;
+</code></pre>
+<p><strong>Grego:</strong> αἰών
+<strong>Transliteração:</strong> aiṓn
+<strong>Pronúncia:</strong> a-IÔN
+<strong>Significado:</strong> Era / Eternidade / Século
+<strong>Etiologia:</strong> Deu origem a &quot;eon&quot;; no NT pode significar &quot;esta era&quot; vs &quot;a era vindoura&quot;
+<strong>Contexto Bíblico:</strong> Efésios 1:21 — &quot;...acima de todo principado... não só neste século (αἰῶνι) mas também no vindouro&quot;</p>
+<hr>
+<h2>Step 5: write_practice — αἰών</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> αἰών × 5
+<strong>Instrução:</strong> &quot;Linha 2 da apostila — αἰών&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva αἰών cinco vezes na linha 2. Pronuncie: a-IÔN.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 6: word_intro — ἡμέρα</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ἡμέρα (hēméra) — dia. Não são doze as horas do dia? A Septuaginta usa para o &#39;Dia do Senhor&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;ἡμέρα — Dia&quot;
+</code></pre>
+<p><strong>Grego:</strong> ἡμέρα
+<strong>Transliteração:</strong> hēméra
+<strong>Pronúncia:</strong> e-MÉ-ra
+<strong>Significado:</strong> Dia
+<strong>Etiologia:</strong> Raiz indo-europeia de calor/dia; a Septuaginta usa para o &quot;Dia do Senhor&quot; (יוֹם יְהוָה)
+<strong>Contexto Bíblico:</strong> João 11:9 — &quot;Não são doze as horas do dia (ἡμέρας)?&quot;</p>
+<hr>
+<h2>Step 7: write_practice — ἡμέρα</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> ἡμέρα × 5
+<strong>Instrução:</strong> &quot;Linha 3 da apostila — ἡμέρα&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva ἡμέρα cinco vezes na linha 3. Pronuncie: e-MÉ-ra.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 8: word_intro — νύξ</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;νύξ (nýx) — noite. Este veio ter com Jesus de noite — Nicodemos, símbolo de busca na escuridão. Deu origem a &#39;noturno&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;νύξ — Noite&quot;
+</code></pre>
+<p><strong>Grego:</strong> νύξ
+<strong>Transliteração:</strong> nýx
+<strong>Pronúncia:</strong> NÍKS
+<strong>Significado:</strong> Noite
+<strong>Etiologia:</strong> Deu origem a &quot;noturno&quot;; em João 3:2, Nicodemos vem à noite — simbolismo intencional
+<strong>Contexto Bíblico:</strong> João 3:2 — &quot;Este veio ter com Jesus de noite (νυκτός)&quot;</p>
+<hr>
+<h2>Step 9: write_practice — νύξ</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> νύξ × 5
+<strong>Instrução:</strong> &quot;Linha 4 da apostila — νύξ&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva νύξ cinco vezes na linha 4. Pronuncie: NÍKS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 10: word_intro — ὥρα</h2>
+<p><strong>Tipo:</strong> Apresentação da palavra
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;ὥρα (hṓra) — hora / momento oportuno. Ainda não é chegada a minha hora. João 2:4 usa no sentido de momento certo.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>&quot;ὥρα — Hora&quot;
+</code></pre>
+<p><strong>Grego:</strong> ὥρα
+<strong>Transliteração:</strong> hṓra
+<strong>Pronúncia:</strong> Ô-ra
+<strong>Significado:</strong> Hora / Momento Oportuno
+<strong>Etiologia:</strong> Não apenas marcação de tempo, mas &quot;o momento certo&quot;; João 2:4 usa este sentido
+<strong>Contexto Bíblico:</strong> João 2:4 — &quot;Ainda não é chegada a minha hora (ὥρα)&quot;</p>
+<hr>
+<h2>Step 11: write_practice — ὥρα</h2>
+<p><strong>Tipo:</strong> Prática de escrita
+<strong>Grego:</strong> ὥρα × 5
+<strong>Instrução:</strong> &quot;Linha 5 da apostila — ὥρα&quot;
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Agora escreva ὥρα cinco vezes na linha 5. Pronuncie: Ô-ra.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 12: pause</h2>
+<p><strong>Tipo:</strong> Pausa para reflexão
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Você aprendeu palavras que falam do tempo e da eternidade. Reflita: o tempo foi criado por Deus para revelar o seu Reino.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong></p>
+<pre><code>Releia as cinco palavras na sua apostila.
+Quando estiver pronto, continue.
+</code></pre>
+<hr>
+<h2>Step 13: dictation — βασιλεία</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;reino&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;reino&quot;
+<strong>Resposta Esperada:</strong> βασιλεία</p>
+<hr>
+<h2>Step 14: dictation — αἰών</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;era/eternidade&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;era/eternidade&quot;
+<strong>Resposta Esperada:</strong> αἰών</p>
+<hr>
+<h2>Step 15: dictation — ἡμέρα</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;dia&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;dia&quot;
+<strong>Resposta Esperada:</strong> ἡμέρα</p>
+<hr>
+<h2>Step 16: dictation — νύξ</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;noite&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;noite&quot;
+<strong>Resposta Esperada:</strong> νύξ</p>
+<hr>
+<h2>Step 17: dictation — ὥρα</h2>
+<p><strong>Tipo:</strong> Ditado
+<strong>Narração:</strong></p>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;hora&#39;.&quot;</p>
+</blockquote>
+<p><strong>Exibição:</strong> &quot;hora&quot;
+<strong>Resposta Esperada:</strong> ὥρα</p>
+<hr>
+<h2>Fim da Lição L11</h2>
+<p>Parabéns! Você concluiu <strong>Lição 11 — Tempo e Reino (βασιλεία, αἰών, ἡμέρα, νύξ, ὥρα)</strong>.</p>
+<p><strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> βασιλεία (reino)</li>
+<li><input disabled="" type="checkbox"> αἰών (era/eternidade)</li>
+<li><input disabled="" type="checkbox"> ἡμέρα (dia)</li>
+<li><input disabled="" type="checkbox"> νύξ (noite)</li>
+<li><input disabled="" type="checkbox"> ὥρα (hora)</li>
+</ul>
+
+</body>
+</html>

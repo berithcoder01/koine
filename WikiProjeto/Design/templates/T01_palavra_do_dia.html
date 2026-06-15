@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!--
+  TEMPLATE T01 — PALAVRA DO DIA (v7 — Escala Corrigida)
+  SLOTS: {{GREEK_WORD}} {{GREEK_BG_CHAR}} {{TRANSLIT}} {{TRANSLATION}}
+         {{FREQ_NUMBER}} {{HOOK}} {{VERSE_GREEK}} {{VERSE_REF}}
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --koine-primary:       #26422A;
+    --koine-accent:        #EA662C;
+    --koine-parchment:     #F5EFE0;
+    --koine-charcoal:      #1A1A1A;
+    --koine-charcoal-soft: #42302D;
+    --koine-white:         #FFFFFF;
+    --font-greek: 'Gentium Plus', serif;
+    --font-serif: 'Libre Baskerville', serif;
+    --font-sans:  'Inter', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px; height: 1080px;
+    overflow: hidden;
+    background: var(--koine-parchment);
+    position: relative;
+    font-family: var(--font-sans);
+  }
+
+  .bg-stain {
+    position: absolute; inset: 0; z-index: 0;
+    background:
+      radial-gradient(ellipse at 85% 8%, rgba(234,102,44,0.07) 0%, transparent 42%),
+      radial-gradient(ellipse at 5% 95%, rgba(38,66,42,0.05) 0%, transparent 40%);
+    pointer-events: none;
+  }
+  .bg-letter {
+    position: absolute; right: -30px; top: 60px;
+    font-family: var(--font-greek);
+    font-size: 580px; line-height: 1;
+    color: var(--koine-primary); opacity: 0.04;
+    pointer-events: none; z-index: 0; user-select: none;
+  }
+
+  /*
+    GRID 4 ZONAS:
+      A — topo labels:      88px
+      B — hero palavra:     380px
+      C — hook:             220px
+      D — verso + rodapé:   resto (~392px)
+  */
+  .layout {
+    position: relative; z-index: 1;
+    width: 1080px; height: 1080px;
+    display: grid;
+    grid-template-rows: 88px 380px 220px 1fr;
+    padding: 0 88px;
+  }
+
+  /* ── ZONA A ── */
+  .zone-a {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    border-bottom: 1.5px solid rgba(38,66,42,0.10);
+    padding-top: 48px;
+  }
+  /* "Palavra do Dia" — tamanho real legível */
+  .cat-label {
+    font-size: 18px; font-weight: 700;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--koine-primary);
+    opacity: 0.55;
+  }
+  /* "aparece 72× no NT" — mesmo tamanho que cat-label, levemente maior */
+  .freq-label {
+    font-size: 18px; font-weight: 600;
+    color: var(--koine-charcoal-soft);
+    opacity: 0.50;
+    letter-spacing: 0.04em;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .freq-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--koine-accent); opacity: 0.80; flex-shrink: 0;
+  }
+
+  /* ── ZONA B — Hero ── */
+  .zone-b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 28px 0 20px;
+  }
+  /* Linha principal: palavra + meta lado a lado */
+  .hero-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+  }
+  /* Palavra grega: grande mas proporcional */
+  .greek-word {
+    font-family: var(--font-greek);
+    font-size: 168px; line-height: 0.88;
+    color: var(--koine-primary);
+    letter-spacing: -0.02em;
+    flex-shrink: 0;
+  }
+  /* Coluna meta: translit + divider + tradução */
+  .hero-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-bottom: 14px;
+  }
+  .translit {
+    font-size: 22px; font-weight: 400;
+    color: var(--koine-charcoal); opacity: 0.38;
+    letter-spacing: 0.10em;
+  }
+  .divider {
+    width: 48px; height: 3px;
+    background: var(--koine-accent);
+    border-radius: 100px;
+  }
+  /* "BOM" — mesmo peso visual que "Palavra do Dia", ~20% maior */
+  .translation {
+    font-size: 38px; font-weight: 800;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--koine-accent);
+    line-height: 1;
+  }
+
+  /* ── ZONA C — Hook ── */
+  .zone-c {
+    display: flex;
+    align-items: center;
+    border-top: 1.5px solid rgba(38,66,42,0.08);
+    border-bottom: 1.5px solid rgba(38,66,42,0.08);
+  }
+  .hook-inner {
+    display: flex; gap: 24px; width: 100%; align-items: stretch;
+  }
+  .hook-bar {
+    width: 4px; flex-shrink: 0;
+    background: var(--koine-accent);
+    border-radius: 100px; align-self: stretch;
+  }
+  /* Hook: legível no celular */
+  .hook-text {
+    font-family: var(--font-serif);
+    font-size: 30px; line-height: 1.60;
+    color: var(--koine-charcoal-soft);
+    font-style: italic;
+  }
+
+  /* ── ZONA D — Verso + Rodapé ── */
+  .zone-d {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 28px;
+    padding-bottom: 56px;
+  }
+  .verse-block {
+    background: rgba(38,66,42,0.055);
+    border-radius: 16px;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* Label "Versículo" — visível */
+  .verse-label {
+    font-size: 13px; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--koine-accent); opacity: 0.80;
+  }
+  /* Texto grego do versículo — legível no celular */
+  .verse-greek {
+    font-family: var(--font-greek);
+    font-size: 28px; line-height: 1.55;
+    color: var(--koine-primary);
+  }
+  /* Referência — legível, não microscópica */
+  .verse-ref {
+    font-size: 16px; font-weight: 600;
+    color: var(--koine-charcoal-soft);
+    opacity: 0.45; letter-spacing: 0.06em;
+  }
+
+  /* Rodapé */
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-tag {
+    font-size: 14px; font-weight: 500;
+    color: var(--koine-charcoal-soft); opacity: 0.28;
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .brand {
+    font-family: var(--font-greek);
+    font-size: 38px; font-weight: 700;
+    color: var(--koine-accent); opacity: 0.85;
+    letter-spacing: 0.10em;
+  }
+</style>
+</head>
+<body>
+  <div class="bg-stain"></div>
+  <div class="bg-letter">{{GREEK_BG_CHAR}}</div>
+
+  <div class="layout">
+
+    <div class="zone-a">
+      <span class="cat-label">Palavra do Dia</span>
+      <div class="freq-label">
+        <span class="freq-dot"></span>
+        aparece {{FREQ_NUMBER}}× no NT
+      </div>
+    </div>
+
+    <div class="zone-b">
+      <div class="hero-row">
+        <div class="greek-word">{{GREEK_WORD}}</div>
+        <div class="hero-meta">
+          <div class="translit">{{TRANSLIT}}</div>
+          <div class="divider"></div>
+          <div class="translation">{{TRANSLATION}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="zone-c">
+      <div class="hook-inner">
+        <div class="hook-bar"></div>
+        <div class="hook-text">{{HOOK}}</div>
+      </div>
+    </div>
+
+    <div class="zone-d">
+      <div class="verse-block">
+        <div class="verse-label">Versículo</div>
+        <div class="verse-greek">{{VERSE_GREEK}}</div>
+        <div class="verse-ref">{{VERSE_REF}}</div>
+      </div>
+      <div class="footer-row">
+        <span class="footer-tag">Grego do Novo Testamento</span>
+        <span class="brand">Κοινή</span>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

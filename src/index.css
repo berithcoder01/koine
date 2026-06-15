@@ -21,11 +21,14 @@
 @theme {
   --color-primary: #18181B;
   --color-primary-light: #27272A;
-  --color-secondary: #C9973A;
-  --color-secondary-light: #E5B96B;
-  --color-success: #2D7A4F;
-  --color-error: #C0392B;
-  --color-warning: #E67E22;
+  --color-secondary: #F9B95C;
+  --color-secondary-light: #FBD49A;
+  --color-success: #96C7B3;
+  --color-success-text: #2D6A4F;
+  --color-error: #D7897F;
+  --color-error-text: #B05C52;
+  --color-warning: #F9B95C;
+  --color-lagune: #6398A9;
   --color-background: #FAF9F6;
   --color-surface: #FFFFFF;
   --color-surface-alt: #F4F4F5;
@@ -77,8 +80,14 @@
 [data-theme="dark"] {
   --color-primary: #FAFAFA;
   --color-primary-light: #E4E4E7;
-  --color-secondary: #E5B96B;
-  --color-secondary-light: #C9973A;
+  --color-secondary: #F9B95C;
+  --color-secondary-light: #FBD49A;
+  --color-success: #96C7B3;
+  --color-success-text: #96C7B3;
+  --color-error: #D7897F;
+  --color-error-text: #D7897F;
+  --color-warning: #F9B95C;
+  --color-lagune: #6398A9;
   --color-background: #09090B;
   --color-surface: #18181B;
   --color-surface-alt: #27272A;
@@ -112,14 +121,14 @@
 /* ─── IONIC OVERRIDES ────────────────────────────────────── */
 :root {
   --ion-color-primary: #18181B;
-  --ion-color-secondary: #C9973A;
+  --ion-color-secondary: #F9B95C;
   --ion-background-color: #FAFAFA;
   --ion-font-family: 'Inter', sans-serif;
 }
 
 [data-theme="dark"] {
   --ion-color-primary: #FAFAFA;
-  --ion-color-secondary: #E5B96B;
+  --ion-color-secondary: #F9B95C;
   --ion-background-color: #09090B;
 }
 
@@ -147,11 +156,27 @@
   100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
 }
 
+@keyframes pulse-slow {
+  0%, 100% { border-color: rgba(168, 85, 247, 0.3); }
+  50% { border-color: rgba(168, 85, 247, 0.7); }
+}
+
 .animate-fadeIn { animation: fadeIn 300ms ease; }
 .animate-shake { animation: shake 400ms ease; }
 .animate-pulse-gold { animation: pulse-gold 1.5s infinite; }
+.animate-pulse-slow { animation: pulse-slow 2s ease-in-out infinite; }
 
 /* ─── GLOBALS ────────────────────────────────────────────── */
+html, body, #root {
+  background: #09090B;
+  min-height: 100%;
+}
+
+body {
+  /* Sob Android com status bar overlay, evita flash branco durante a inicialização */
+  overscroll-behavior-y: none;
+}
+
 * {
   -webkit-tap-highlight-color: transparent;
   user-select: none;

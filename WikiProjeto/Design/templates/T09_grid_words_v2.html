@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!--
+  TEMPLATE T09 — GRID 2 COLUNAS v2 (Cards Contorno)
+  Formato: SQ 1080×1080
+
+  CORREÇÕES v2:
+    - Card esquerdo: SEM fundo, apenas border/contorno
+    - 3 word cards direita: SEM fundo, apenas border/contorno
+    - Card fantasma atrás do esquerdo: contorno deslocado + rotação leve
+    - Conteúdo flutua direto no fundo parchment
+    - Elementos de texto com cores sólidas legíveis sem fundo de card
+
+  SLOTS:
+    {{HEADLINE_1}} {{HEADLINE_2}} {{BODY}} {{CTA}}
+    {{WORD_1_GREEK}} {{WORD_1_TRANSLIT}} {{WORD_1_MEANING}}
+    {{WORD_2_GREEK}} {{WORD_2_TRANSLIT}} {{WORD_2_MEANING}}
+    {{WORD_3_GREEK}} {{WORD_3_TRANSLIT}} {{WORD_3_MEANING}}
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --koine-primary:       #26422A;
+    --koine-accent:        #EA662C;
+    --koine-parchment:     #F0EBD8;
+    --koine-charcoal:      #1A1A1A;
+    --koine-charcoal-soft: #42302D;
+    --koine-white:         #FFFFFF;
+    --font-greek: 'Gentium Plus', serif;
+    --font-serif: 'Libre Baskerville', serif;
+    --font-sans:  'Inter', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px; height: 1080px;
+    overflow: hidden;
+    background: var(--koine-parchment);
+    position: relative;
+    font-family: var(--font-sans);
+  }
+
+  /* ── Canvas ── */
+  .canvas {
+    position: relative; z-index: 1;
+    width: 1080px; height: 1080px;
+    display: grid;
+    grid-template-rows: 1fr 80px;
+    padding: 72px 72px 0;
+  }
+
+  /* ── Grid central ── */
+  .grid-main {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 28px;
+    align-items: stretch;
+  }
+
+  /* ════════════════════════════
+     COLUNA ESQUERDA
+     Card FANTASMA atrás + Card CONTORNO na frente
+     ════════════════════════════ */
+  .left-wrap {
+    position: relative;
+  }
+
+  /* Card fantasma: deslocado, rotação leve, apenas stroke */
+  .left-ghost {
+    position: absolute;
+    inset: 0;
+    border: 2px solid rgba(38,66,42,0.18);
+    border-radius: 32px;
+    transform: rotate(2deg) translate(10px, -8px);
+    pointer-events: none;
+  }
+
+  /* Card principal: apenas stroke, sem fundo */
+  .left-card {
+    position: relative;
+    width: 100%; height: 100%;
+    border: 2px solid rgba(38,66,42,0.30);
+    border-radius: 32px;
+    padding: 64px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+  }
+
+  /* Seta decorativa canto sup direito */
+  .deco-arrow {
+    position: absolute;
+    top: 44px; right: 48px;
+    font-size: 36px;
+    color: var(--koine-accent);
+    line-height: 1;
+    font-family: var(--font-sans);
+    font-weight: 300;
+  }
+
+  .headline-light {
+    font-family: var(--font-serif);
+    font-size: 72px; font-weight: 400;
+    color: var(--koine-charcoal-soft);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+  }
+  .headline-bold {
+    font-family: var(--font-serif);
+    font-size: 72px; font-weight: 700;
+    color: var(--koine-accent);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+  }
+  .left-body {
+    font-size: 22px; line-height: 1.70;
+    color: var(--koine-charcoal-soft);
+    opacity: 0.75;
+    margin-top: 28px;
+  }
+  .left-body strong {
+    color: var(--koine-charcoal);
+    opacity: 1; font-weight: 700;
+  }
+
+  /* Botão CTA */
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--koine-accent);
+    color: var(--koine-white);
+    font-size: 20px; font-weight: 700;
+    padding: 20px 36px;
+    border-radius: 100px;
+    width: fit-content;
+    letter-spacing: 0.02em;
+  }
+  .cta-circle {
+    width: 36px; height: 36px;
+    background: rgba(255,255,255,0.20);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+
+  /* ════════════════════════════
+     COLUNA DIREITA — 3 Word Cards
+     Apenas contorno, sem fundo
+     ════════════════════════════ */
+  .right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .word-card {
+    flex: 1;
+    border: 2px solid rgba(38,66,42,0.28);
+    border-radius: 24px;
+    padding: 28px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Letra fantasma dentro do word card */
+  .word-bg-letter {
+    position: absolute;
+    right: -8px; bottom: -20px;
+    font-family: var(--font-greek);
+    font-size: 110px; line-height: 1;
+    color: var(--koine-primary);
+    opacity: 0.07;
+    user-select: none; pointer-events: none;
+  }
+
+  .word-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .word-index {
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--koine-charcoal-soft); opacity: 0.35;
+  }
+  .word-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--koine-accent); opacity: 0.55;
+    flex-shrink: 0;
+  }
+
+  .word-greek {
+    font-family: var(--font-greek);
+    font-size: 54px; line-height: 1.0;
+    color: var(--koine-primary);
+    letter-spacing: -0.01em;
+    margin: 6px 0 4px;
+  }
+
+  .word-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .word-meta {
+    display: flex; flex-direction: column; gap: 3px;
+  }
+  .word-translit {
+    font-size: 13px; font-weight: 500;
+    color: var(--koine-charcoal-soft); opacity: 0.40;
+    letter-spacing: 0.08em;
+  }
+  .word-meaning {
+    font-size: 17px; font-weight: 700;
+    color: var(--koine-accent);
+    letter-spacing: 0.01em;
+  }
+  .word-arrow {
+    font-size: 20px;
+    color: var(--koine-primary); opacity: 0.18;
+  }
+
+  /* ════════════════════════════
+     RODAPÉ
+     ════════════════════════════ */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 48px;
+  }
+  .footer-brand {
+    font-family: var(--font-greek);
+    font-size: 26px; font-weight: 700;
+    color: var(--koine-primary); opacity: 0.30;
+    letter-spacing: 0.10em;
+  }
+  .footer-social {
+    font-size: 13px; font-weight: 600;
+    color: var(--koine-charcoal-soft); opacity: 0.38;
+    letter-spacing: 0.06em;
+  }
+  .footer-tagline {
+    font-size: 12px; font-weight: 500;
+    color: var(--koine-charcoal-soft); opacity: 0.28;
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+  <div class="canvas">
+
+    <div class="grid-main">
+
+      <!-- Coluna esquerda -->
+      <div class="left-wrap">
+        <!-- Card fantasma atrás -->
+        <div class="left-ghost"></div>
+
+        <!-- Card principal: só contorno -->
+        <div class="left-card">
+          <span class="deco-arrow">↙</span>
+
+          <div>
+            <div class="headline-light">{{HEADLINE_1}}</div>
+            <div class="headline-bold">{{HEADLINE_2}}</div>
+            <div class="left-body">{{BODY}}</div>
+          </div>
+
+          <div class="cta-btn">
+            {{CTA}}
+            <div class="cta-circle">→</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna direita: 3 word cards contorno -->
+      <div class="right-col">
+
+        <div class="word-card">
+          <div class="word-bg-letter">{{WORD_1_GREEK}}</div>
+          <div class="word-top">
+            <span class="word-index">01</span>
+            <span class="word-dot"></span>
+          </div>
+          <div class="word-greek">{{WORD_1_GREEK}}</div>
+          <div class="word-bottom">
+            <div class="word-meta">
+              <span class="word-translit">{{WORD_1_TRANSLIT}}</span>
+              <span class="word-meaning">{{WORD_1_MEANING}}</span>
+            </div>
+            <span class="word-arrow">→</span>
+          </div>
+        </div>
+
+        <div class="word-card">
+          <div class="word-bg-letter">{{WORD_2_GREEK}}</div>
+          <div class="word-top">
+            <span class="word-index">02</span>
+            <span class="word-dot"></span>
+          </div>
+          <div class="word-greek">{{WORD_2_GREEK}}</div>
+          <div class="word-bottom">
+            <div class="word-meta">
+              <span class="word-translit">{{WORD_2_TRANSLIT}}</span>
+              <span class="word-meaning">{{WORD_2_MEANING}}</span>
+            </div>
+            <span class="word-arrow">→</span>
+          </div>
+        </div>
+
+        <div class="word-card">
+          <div class="word-bg-letter">{{WORD_3_GREEK}}</div>
+          <div class="word-top">
+            <span class="word-index">03</span>
+            <span class="word-dot"></span>
+          </div>
+          <div class="word-greek">{{WORD_3_GREEK}}</div>
+          <div class="word-bottom">
+            <div class="word-meta">
+              <span class="word-translit">{{WORD_3_TRANSLIT}}</span>
+              <span class="word-meaning">{{WORD_3_MEANING}}</span>
+            </div>
+            <span class="word-arrow">→</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+      <span class="footer-brand">Κοινή</span>
+      <span class="footer-social">@koineapp</span>
+      <span class="footer-tagline">Grego do Novo Testamento</span>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+{
+  "version": "1.0",
+  "moduleId": "C1-M00",
+  "moduleTitle": "Bem-vindos ao Grego Bíblico. Do zero à primeira frase em grego do Novo Testamento",
+  "audioFile": "/audio/C1-M00/C1-M00.mp3",
+  "duration": 242.95,
+  "generatedAt": "2026-06-06T15:51:14.098085Z",
+  "narrationFile": "C1-M00.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Bem-vindos ao Grego Bíblico. Do zero à primeira frase em grego do Novo Testamento.",
+      "startTime": 0.0,
+      "endTime": 3.99
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Você está prestes a aprender algo que vai mudar como você lê a Bíblia. Não estou exagerando. Em 10 módulos, você vai do zero absoluto até a leitura de um dos versículos mais famosos da história cristã",
+      "startTime": 5.99,
+      "endTime": 23.3
+    },
+    {
+      "id": "transicao",
+      "marker": "TRANSICAO",
+      "text": "O que você vai aprender.",
+      "startTime": 24.3,
+      "endTime": 25.69
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Neste ciclo, você vai conhecer as 24 letras do alfabeto grego koiné — a língua em que o Novo Testamento foi escrito. São 6 vogais e 18 consoantes, apresentadas duas a três por módulo, para que você nu",
+      "startTime": 27.19,
+      "endTime": 55.96
+    },
+    {
+      "id": "transicao_2",
+      "marker": "TRANSICAO",
+      "text": "Agora, um pouco de história.",
+      "startTime": 56.46,
+      "endTime": 58.14
+    },
+    {
+      "id": "transicao_3",
+      "marker": "TRANSICAO",
+      "text": "Contexto histórico.",
+      "startTime": 59.64,
+      "endTime": 60.72
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "O grego koiné — que significa \"comum\" ou \"vulgar\" — era a língua do Mediterrâneo no primeiro século. Não era o grego elegante de Platão ou Homero. Era o grego das ruas, dos mercados, das cartas pessoa",
+      "startTime": 62.22,
+      "endTime": 86.5
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "Quando os autores do Novo Testamento sentaram para escrever, eles escolheram o koiné. Não o grego dos filósofos, mas o grego do povo. Paulo escreveu suas cartas em koiné. João escreveu seu Evangelho e",
+      "startTime": 87.0,
+      "endTime": 107.59
+    },
+    {
+      "id": "transicao_4",
+      "marker": "TRANSICAO",
+      "text": "E por que isso importa para você?",
+      "startTime": 108.09,
+      "endTime": 109.73
+    },
+    {
+      "id": "transicao_5",
+      "marker": "TRANSICAO",
+      "text": "Por que aprender grego.",
+      "startTime": 111.23,
+      "endTime": 112.4
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "Toda tradução é uma interpretação. Quando você lê \"Deus é amor\" em português, está lendo uma tradução da palavra grega agápe. Mas agápe não é qualquer tipo de amor. Não é eros, amor romântico, nem fil",
+      "startTime": 113.9,
+      "endTime": 136.66
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "Outro exemplo: quando Jesus diz \"Eu sou a vida\", em João, capítulo 11, versículo 25, a palavra grega é zoe — vida divina, eterna, a vida como Deus a vive. Não é bios, vida biografia. São duas palavras",
+      "startTime": 137.16,
+      "endTime": 157.76
+    },
+    {
+      "id": "transicao_6",
+      "marker": "TRANSICAO",
+      "text": "Então, como funciona este ciclo?",
+      "startTime": 158.26,
+      "endTime": 160.24
+    },
+    {
+      "id": "transicao_7",
+      "marker": "TRANSICAO",
+      "text": "O que esperar deste ciclo.",
+      "startTime": 161.74,
+      "endTime": 163.21
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "O Ciclo I é dividido em quatro blocos, cada um com um versículo-chave. Bloco A, módulos 1 a 3: as Vogais. Você conhece alfa, épsilon, iota, ômicron, ípsilon e ômega, e as primeiras consoantes. O versí",
+      "startTime": 164.71,
+      "endTime": 209.91
+    },
+    {
+      "id": "transicao_8",
+      "marker": "TRANSICAO",
+      "text": "E agora, o versículo que vai guiar todo o seu aprendizado.",
+      "startTime": 210.41,
+      "endTime": 213.61
+    },
+    {
+      "id": "versiculo",
+      "marker": "VERSICULO",
+      "text": "En arche en ho logos. João, capítulo 1, versículo 1. No princípio era o Verbo.",
+      "startTime": 215.11,
+      "endTime": 219.76
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Este versículo tem apenas 5 palavras gregas, mas contém uma das declarações teológicas mais densas da história do cristianismo. O Verbo, logos, já existia antes de tudo — era Deus, e estava junto de D",
+      "startTime": 221.26,
+      "endTime": 241.95
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_trans_app",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao"
+      ]
+    },
+    {
+      "id": "phase_unit_02",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "exposicao"
+      ]
+    },
+    {
+      "id": "phase_trans_app",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao_2"
+      ]
+    },
+    {
+      "id": "phase_trans_app",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao_3"
+      ]
+    },
+    {
+      "id": "phase_unit_05",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "exposicao_2",
+        "exposicao_3"
+      ]
+    },
+    {
+      "id": "phase_trans_app",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao_4"
+      ]
+    },
+    {
+      "id": "phase_trans_app",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao_5"
+      ]
+    },
+    {
+      "id": "phase_unit_08",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "exposicao_4",
+        "exposicao_5"
+      ]
+    },
+    {
+      "id": "phase_trans_app",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao_6"
+      ]
+    },
+    {
+      "id": "phase_trans_app",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao_7"
+      ]
+    },
+    {
+      "id": "phase_unit_11",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "exposicao_6"
+      ]
+    },
+    {
+      "id": "phase_trans_app",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "transicao_8"
+      ]
+    },
+    {
+      "id": "phase_unit_13",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "versiculo"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

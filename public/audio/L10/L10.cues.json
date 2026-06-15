@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "moduleId": "L10",
+  "moduleTitle": "Lição 10 — Palavra e Ação",
+  "audioFile": "/audio/L10/L10.mp3",
+  "duration": 100.97,
+  "generatedAt": "2026-06-15T17:55:31.555979Z",
+  "narrationFile": "L10.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Lição 10 — Palavra e Ação",
+      "startTime": 0.0,
+      "endTime": 1.87
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Lição 10 — Palavra e ação. Hoje você vai aprender verbos e substantivos fundamentais: lógos, rhema, grápho, légo e poiéo. Palavras que nos ensinam como Deus se comunica e age. Abra sua apostila na pág",
+      "startTime": 3.87,
+      "endTime": 17.05
+    },
+    {
+      "id": "exposicao",
+      "marker": "EXPOSICAO",
+      "text": "λόγος (lógos) — palavra / razão / discurso. No princípio era o Verbo, e o Verbo estava com Deus. A razão que ordena o cosmos.",
+      "startTime": 18.05,
+      "endTime": 24.94
+    },
+    {
+      "id": "exposicao_2",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva λόγος cinco vezes na linha 1. Pronuncie: LÓ-gos.",
+      "startTime": 25.44,
+      "endTime": 29.13
+    },
+    {
+      "id": "exposicao_3",
+      "marker": "EXPOSICAO",
+      "text": "ῥῆμα (rhēma) — palavra falada / declaração. A fé vem pelo ouvir, e o ouvir pela palavra de Deus. É a palavra como evento sonoro.",
+      "startTime": 29.63,
+      "endTime": 36.55
+    },
+    {
+      "id": "exposicao_4",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ῥῆμα cinco vezes na linha 2. Pronuncie: RÊ-ma.",
+      "startTime": 37.05,
+      "endTime": 40.71
+    },
+    {
+      "id": "exposicao_5",
+      "marker": "EXPOSICAO",
+      "text": "γράφω (gráphō) — escrever. Jesus fez muitos outros sinais... que não estão escritos neste livro. Deu origem a 'grafia', 'gráfico'.",
+      "startTime": 41.21,
+      "endTime": 47.5
+    },
+    {
+      "id": "exposicao_6",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva γράφω cinco vezes na linha 3. Pronuncie: GRÁ-fo.",
+      "startTime": 48.0,
+      "endTime": 51.65
+    },
+    {
+      "id": "exposicao_7",
+      "marker": "EXPOSICAO",
+      "text": "λέγω (légō) — dizer / falar. Eis o Cordeiro de Deus, que tira o pecado do mundo — disse João. Um dos verbos mais frequentes do NT.",
+      "startTime": 52.15,
+      "endTime": 58.96
+    },
+    {
+      "id": "exposicao_8",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva λέγω cinco vezes na linha 4. Pronuncie: LÉ-go.",
+      "startTime": 59.46,
+      "endTime": 62.92
+    },
+    {
+      "id": "exposicao_9",
+      "marker": "EXPOSICAO",
+      "text": "ποιέω (poiéō) — fazer / criar / agir. Jesus fez este primeiro sinal em Caná. Deu origem a 'poema' (ποίημα): obra-prima.",
+      "startTime": 63.42,
+      "endTime": 68.71
+    },
+    {
+      "id": "exposicao_10",
+      "marker": "EXPOSICAO",
+      "text": "Agora escreva ποιέω cinco vezes na linha 5. Pronuncie: poi-É-o.",
+      "startTime": 69.21,
+      "endTime": 72.72
+    },
+    {
+      "id": "pausa",
+      "marker": "PAUSA",
+      "text": "Excelente! Você aprendeu palavras que descrevem como Deus se revela: pela Palavra e pela ação.",
+      "startTime": 73.22,
+      "endTime": 78.67
+    },
+    {
+      "id": "exposicao_11",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'palavra'.",
+      "startTime": 80.67,
+      "endTime": 82.84
+    },
+    {
+      "id": "exposicao_12",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'palavra falada'.",
+      "startTime": 83.34,
+      "endTime": 85.86
+    },
+    {
+      "id": "exposicao_13",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'escrever'.",
+      "startTime": 86.36,
+      "endTime": 88.67
+    },
+    {
+      "id": "exposicao_14",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'dizer'.",
+      "startTime": 89.17,
+      "endTime": 91.28
+    },
+    {
+      "id": "exposicao_15",
+      "marker": "EXPOSICAO",
+      "text": "Escreva a palavra grega para: 'fazer'.",
+      "startTime": 91.78,
+      "endTime": 93.87
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Parabéns por completar Lição 10 — Palavra e Ação! Você concluiu esta lição da apostila Koiné.",
+      "startTime": 94.37,
+      "endTime": 99.97
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_unit_00",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao",
+        "exposicao",
+        "exposicao_2",
+        "exposicao_3",
+        "exposicao_4",
+        "exposicao_5",
+        "exposicao_6",
+        "exposicao_7",
+        "exposicao_8",
+        "exposicao_9",
+        "exposicao_10",
+        "pausa",
+        "exposicao_11",
+        "exposicao_12",
+        "exposicao_13",
+        "exposicao_14",
+        "exposicao_15"
+      ]
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}

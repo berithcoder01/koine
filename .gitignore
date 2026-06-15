@@ -21,10 +21,11 @@ android/captures/
 *.keystore
 
 # Projeto
-.agent/
 inspirações/
 Tarefaz/
-WikiProjeto/
+
+# Temporário
+temp/
 
 # Sistema
 .DS_Store

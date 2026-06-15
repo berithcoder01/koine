@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "moduleId": "C2-M01",
+  "moduleTitle": "do Ciclo 2: eimi Singular — Eu sou, Tu es, Ele e",
+  "audioFile": "/audio/C2-M01/C2-M01.mp3",
+  "duration": 259.13,
+  "generatedAt": "2026-06-12T12:00:03.094708Z",
+  "narrationFile": "C2-M01.narracao.md",
+  "cues": [
+    {
+      "id": "titulo",
+      "marker": "TITULO",
+      "text": "Modulo 1 do Ciclo 2: eimi Singular — Eu sou, Tu es, Ele e",
+      "startTime": 0.0,
+      "endTime": 3.99
+    },
+    {
+      "id": "introducao",
+      "marker": "INTRODUCAO",
+      "text": "Bem-vindo ao primeiro modulo do Ciclo 2. Ate agora voce aprendeu as letras do alfabeto grego. Agora vai aprender palavras de verdade — comecando pelo verbo mais importante de todo o Novo Testamento. A",
+      "startTime": 5.99,
+      "endTime": 25.3
+    },
+    {
+      "id": "u1_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 1 — eimi: conjugacao singular",
+      "startTime": 26.3,
+      "endTime": 28.96
+    },
+    {
+      "id": "u1_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "eimi e o verbo \"ser\" em grego koine. E de longe o verbo mais frequente do Novo Testamento — aparece mais de 2.400 vezes em todas as suas formas. Assim como o verbo \"ser\" do portugues e irregular (sou,",
+      "startTime": 29.96,
+      "endTime": 71.12
+    },
+    {
+      "id": "u1_dica",
+      "marker": "DICA",
+      "text": "Pense em eimi como o primo grego do verbo \"ser\" em portugues — ambos irregulares, ambos essenciais. A forma eimi tem um ditongo ei e termina em i longa.",
+      "startTime": 71.62,
+      "endTime": 79.7
+    },
+    {
+      "id": "u1_versiculo",
+      "marker": "VERSICULO",
+      "text": "ego eimi he anastasis kai he zoe — Joao, capitulo 11, versiculo 25.",
+      "startTime": 81.2,
+      "endTime": 85.9
+    },
+    {
+      "id": "u1_transicao",
+      "marker": "TRANSICAO",
+      "text": "Agora que voce conhece as tres formas do singular, vamos ver a mais importante delas com o pronome.",
+      "startTime": 87.4,
+      "endTime": 92.72
+    },
+    {
+      "id": "u2_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 2 — ego eimi: eu sou com enfase",
+      "startTime": 94.22,
+      "endTime": 96.83
+    },
+    {
+      "id": "u2_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Em grego koine, o pronome sujeito geralmente esta embutido na forma verbal. Quando voce ve eimi sozinho, ja significa \"eu sou\". Entao por que Joao escreve ego eimi (pronome mais verbo)? Porque o prono",
+      "startTime": 97.83,
+      "endTime": 149.52
+    },
+    {
+      "id": "u2_dica",
+      "marker": "DICA",
+      "text": "Quando vir ego antes de eimi, o autor quer que voce preste atencao redobrada. Joao usa esta construcao para ecoar o nome divino do Exodo.",
+      "startTime": 150.02,
+      "endTime": 157.28
+    },
+    {
+      "id": "u2_versiculo",
+      "marker": "VERSICULO",
+      "text": "ego eimi he anastasis — Joao, capitulo 11, versiculo 25.",
+      "startTime": 158.78,
+      "endTime": 163.0
+    },
+    {
+      "id": "u2_transicao",
+      "marker": "TRANSICAO",
+      "text": "A terceira forma do singular — estin — e a mais comum de todas. Vamos ve-la em acao.",
+      "startTime": 164.5,
+      "endTime": 169.27
+    },
+    {
+      "id": "u3_unidade",
+      "marker": "UNIDADE",
+      "text": "Unidade 3 — estin: ele/ela e (uso predicativo)",
+      "startTime": 170.77,
+      "endTime": 174.21
+    },
+    {
+      "id": "u3_exposicao",
+      "marker": "EXPOSICAO",
+      "text": "Estin e a terceira pessoa do singular do verbo eimi — \"ele/ela e\". E a forma mais frequente de eimi no Novo Testamento, aparecendo centenas de vezes. A estrutura tipica em grego para oracoes com estin",
+      "startTime": 175.21,
+      "endTime": 213.52
+    },
+    {
+      "id": "u3_dica",
+      "marker": "DICA",
+      "text": "Estin termina com n — um \"n\" final que o grego adiciona quando a palavra seguinte comeca com vogal. Chamado de \"nu movel\". Voce ve este n em estin na maioria das ocorrencias do Novo Testamento.",
+      "startTime": 214.02,
+      "endTime": 224.33
+    },
+    {
+      "id": "u3_versiculo",
+      "marker": "VERSICULO",
+      "text": "ho theos agape estin — Primeira Joao, capitulo 4, versiculo 8.",
+      "startTime": 225.83,
+      "endTime": 230.0
+    },
+    {
+      "id": "u3_transicao",
+      "marker": "TRANSICAO",
+      "text": "Estas tres formas — eimi, ei e estin — sao a base de tudo que voce vai aprender no Ciclo 2. No proximo modulo, voce completa o paradigma com as formas do plural.",
+      "startTime": 231.5,
+      "endTime": 241.03
+    },
+    {
+      "id": "finalizacao",
+      "marker": "FINALIZACAO",
+      "text": "Modulo 1 concluido! Voce aprendeu o verbo mais importante do grego koine. Agora sabe dizer \"eu sou\", \"tu es\" e \"ele/ela e\". E mais: ja consegue ler \"ho theos agape estin\" — a declaracao mais profunda ",
+      "startTime": 242.53,
+      "endTime": 258.13
+    }
+  ],
+  "groups": [
+    {
+      "id": "phase_intro",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "titulo",
+        "introducao"
+      ]
+    },
+    {
+      "id": "phase_exp_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_unidade",
+        "u1_exposicao",
+        "u1_dica",
+        "u1_versiculo"
+      ],
+      "unitId": "C2-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u1",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u1_transicao"
+      ],
+      "unitId": "C2-M01-U01",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_unidade",
+        "u2_exposicao",
+        "u2_dica",
+        "u2_versiculo"
+      ],
+      "unitId": "C2-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u2",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u2_transicao"
+      ],
+      "unitId": "C2-M01-U02",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_exp_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_unidade",
+        "u3_exposicao",
+        "u3_dica",
+        "u3_versiculo"
+      ],
+      "unitId": "C2-M01-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_trans_u3",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "u3_transicao"
+      ],
+      "unitId": "C2-M01-U03",
+      "unitType": "letter"
+    },
+    {
+      "id": "phase_final",
+      "lessonPhase": "exposure",
+      "cueIds": [
+        "finalizacao"
+      ]
+    }
+  ]
+}
