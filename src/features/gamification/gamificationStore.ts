@@ -4,6 +4,7 @@ import { immer } from 'zustand/middleware/immer';
 import { isYesterday } from 'date-fns';
 import { XP_VALUES } from '@/core/constants/config';
 import { TrophyTier } from '@/core/constants/trophies';
+import { useStudyGoalStore } from '@/features/settings/studyGoalStore';
 
 type LeagueLevel = 'bronze' | 'prata' | 'ouro' | 'diamante';
 
@@ -29,6 +30,9 @@ export interface GamificationState {
   streakDays: number;
   streakRecord: number;
   lastStudyDate: string | null;
+  dailyGoalMet: boolean;
+  dailyGoalStreak: number;
+  completedMinutes: number;
   leagueLevel: LeagueLevel;
   achievements: Achievement[];
   unlockedVerses: string[];
@@ -46,6 +50,9 @@ export interface GamificationState {
     streakDays?: number;
     streakRecord?: number;
     lastStudyDate?: string | null;
+    dailyGoalMet?: boolean;
+    dailyGoalStreak?: number;
+    completedMinutes?: number;
     totalXP?: number;
     weeklyXP?: number;
     leagueLevel?: LeagueLevel;
@@ -72,6 +79,9 @@ const saveState = (state: GamificationState) => {
       streakDays: state.streakDays,
       streakRecord: state.streakRecord,
       lastStudyDate: state.lastStudyDate,
+      dailyGoalMet: state.dailyGoalMet,
+      dailyGoalStreak: state.dailyGoalStreak,
+      completedMinutes: state.completedMinutes,
       leagueLevel: state.leagueLevel,
       achievements: state.achievements,
       unlockedVerses: state.unlockedVerses,
@@ -89,6 +99,9 @@ export const useGamificationStore = create<GamificationState>()(
     streakDays: saved.streakDays ?? 0,
     streakRecord: saved.streakRecord ?? 0,
     lastStudyDate: saved.lastStudyDate ?? null,
+    dailyGoalMet: saved.dailyGoalMet ?? false,
+    dailyGoalStreak: saved.dailyGoalStreak ?? 0,
+    completedMinutes: saved.completedMinutes ?? 0,
     leagueLevel: saved.leagueLevel ?? 'bronze',
     achievements: saved.achievements ?? [],
     unlockedVerses: saved.unlockedVerses ?? [],
@@ -162,12 +175,13 @@ export const useGamificationStore = create<GamificationState>()(
     recordStudyActivity: () =>
       set((state) => {
         const today = new Date().toISOString().split('T')[0];
+        const isNewDay = state.lastStudyDate !== today;
+        const prevLastStudyDate = state.lastStudyDate;
+
+        // Streak logic (only on new day)
         if (!state.lastStudyDate) {
           state.streakDays = 1;
-        } else if (state.lastStudyDate === today) {
-          // Já registrou hoje — não fazer nada
-          return;
-        } else {
+        } else if (isNewDay) {
           const last = new Date(state.lastStudyDate);
           if (isYesterday(last)) {
             state.streakDays += 1;
@@ -175,10 +189,32 @@ export const useGamificationStore = create<GamificationState>()(
             state.streakDays = 1;
           }
         }
-        state.lastStudyDate = today;
+
+        if (isNewDay) {
+          state.lastStudyDate = today;
+          state.dailyGoalMet = false;
+          state.completedMinutes = 0;
+          // Reset daily goal streak if user missed a day
+          if (prevLastStudyDate && !isYesterday(new Date(prevLastStudyDate))) {
+            state.dailyGoalStreak = 0;
+          }
+        }
+
         if (state.streakDays > state.streakRecord) {
           state.streakRecord = state.streakDays;
         }
+
+        // Add estimated minutes and check daily goal
+        state.completedMinutes += 5;
+        const goalState = useStudyGoalStore.getState();
+        if (!state.dailyGoalMet && state.completedMinutes >= goalState.dailyTarget) {
+          state.dailyGoalMet = true;
+          state.dailyGoalStreak += 1;
+          const goalBonus = 5 + Math.min(state.streakDays * 2, 20);
+          state.totalXP += goalBonus;
+          state.weeklyXP += goalBonus;
+        }
+
         saveState(state);
       }),
 
@@ -197,8 +233,17 @@ export const useGamificationStore = create<GamificationState>()(
             state.lastStudyDate = data.lastStudyDate;
           }
         }
-        if (data.totalXP != null && data.totalXP > state.totalXP) {
-          state.totalXP = data.totalXP;
+        if (data.dailyGoalMet != null) {
+          state.dailyGoalMet = data.dailyGoalMet;
+        }
+        if (data.dailyGoalStreak != null && data.dailyGoalStreak > state.dailyGoalStreak) {
+          state.dailyGoalStreak = data.dailyGoalStreak;
+        }
+        if (data.completedMinutes != null && data.completedMinutes > state.completedMinutes) {
+          state.completedMinutes = data.completedMinutes;
+        }
+        if (data.totalXP != null) {
+          state.totalXP = Math.max(data.totalXP, state.totalXP);
         }
         if (data.weeklyXP != null && data.weeklyXP > state.weeklyXP) {
           state.weeklyXP = data.weeklyXP;

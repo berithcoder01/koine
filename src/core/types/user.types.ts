@@ -16,6 +16,8 @@ export interface UserProgress {
   streakDays: number;
   streakRecord: number;
   lastStudyDate: string | null;
+  dailyGoalMet?: boolean;
+  dailyGoalStreak?: number;
   totalXP: number;
   weeklyXP: number;
   streakFreezes: number;

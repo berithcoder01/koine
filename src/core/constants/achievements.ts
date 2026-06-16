@@ -179,7 +179,41 @@ export const ACHIEVEMENTS: Achievement[] = [
     condition: (p) => (p.srsCardCount ?? 0) >= 50,
   },
 
+  // ── META DIÁRIA ──
+  {
+    id: 'metaboss',
+    icon: '🎮',
+    title: 'Metáboss',
+    description: 'Cumpriu a meta diária por 3 dias seguidos',
+    xpReward: 15,
+    condition: (p) => (p.dailyGoalStreak ?? 0) >= 3,
+  },
+  {
+    id: 'fera_da_consistencia',
+    icon: '🦁',
+    title: 'Fera da Consistência',
+    description: 'Cumpriu a meta diária por 7 dias distintos',
+    xpReward: 30,
+    condition: (p) => (p.dailyGoalStreak ?? 0) >= 7,
+  },
+
   // ── STREAKS ──
+  {
+    id: 'trilha_em_chamas',
+    icon: '🔥',
+    title: 'Trilha em Chamas',
+    description: '3 dias consecutivos de estudo',
+    xpReward: 10,
+    condition: (p) => p.streakDays >= 3,
+  },
+  {
+    id: 'essa_trilha_e_minha',
+    icon: '🛤️',
+    title: 'Essa Trilha é Minha',
+    description: '7 dias consecutivos de estudo',
+    xpReward: 25,
+    condition: (p) => p.streakDays >= 7,
+  },
   {
     id: 'chama_viva',
     icon: '🔥',

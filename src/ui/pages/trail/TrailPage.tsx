@@ -125,7 +125,7 @@ const getUnitCardTheme = (index: number) => {
 export const TrailPage: React.FC = () => {
   const { completedLessons } = useProgressStore();
   const { user, avatarId } = useAuthStore();
-  const { streakDays } = useGamificationStore();
+  const { streakDays, streakRecord } = useGamificationStore();
   const navigation = useAppNavigation();
   const wod = useWordOfTheDay();
   const [modules, setModules] = useState<Module[]>([]);
@@ -280,7 +280,7 @@ export const TrailPage: React.FC = () => {
               </h1>
             </div>
           </div>
-          <StreakBadge streak={streakDays} />
+          <StreakBadge streak={streakDays} record={streakRecord} />
         </div>
       </div>
 

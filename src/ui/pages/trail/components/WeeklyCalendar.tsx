@@ -1,42 +1,59 @@
-// src/pages/trail/components/WeeklyCalendar.tsx
 import React, { useMemo } from 'react';
 import { useProgressStore } from '@/features/progress/progressStore';
-import { format, startOfWeek, addDays, isSameDay } from 'date-fns';
+import { useGamificationStore } from '@/features/gamification/gamificationStore';
+import { format, startOfWeek, addDays, isSameDay, subDays, parseISO, isAfter } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import { clsx } from 'clsx';
 import { motion } from 'framer-motion';
 
+function getStreakDateRange(streakDays: number, lastStudyDate: string | null): { start: Date; end: Date } | null {
+  if (!lastStudyDate || streakDays <= 0) return null;
+  const end = parseISO(lastStudyDate);
+  const start = subDays(end, streakDays - 1);
+  return { start, end };
+}
+
+function isInStreakRange(date: Date, range: { start: Date; end: Date } | null): boolean {
+  if (!range) return false;
+  return isAfter(date, subDays(range.start, 1)) && !isAfter(date, range.end);
+}
+
 export const WeeklyCalendar: React.FC = () => {
   const { completedLessons } = useProgressStore();
+  const streakDays = useGamificationStore(s => s.streakDays);
+  const lastStudyDate = useGamificationStore(s => s.lastStudyDate);
+
+  const streakRange = useMemo(() => getStreakDateRange(streakDays, lastStudyDate), [streakDays, lastStudyDate]);
 
   const daysOfWeek = useMemo(() => {
     const today = new Date();
     const sunday = startOfWeek(today, { weekStartsOn: 0 });
-    
+
     return Array.from({ length: 7 }).map((_, i) => {
       const date = addDays(sunday, i);
       const dateStr = format(date, 'yyyy-MM-dd');
-      
-      const isCompleted = Object.values(completedLessons).some((lesson) => {
+
+      const hasActivity = Object.values(completedLessons).some((lesson) => {
         if (!lesson.completedAt) return false;
         return lesson.completedAt.startsWith(dateStr);
       });
 
       const isToday = isSameDay(date, today);
+      const onStreak = isInStreakRange(date, streakRange) && hasActivity;
 
       return {
         date,
         dayName: format(date, 'EEE', { locale: ptBR }).replace('.', '').substring(0, 3),
         dayNumber: format(date, 'd'),
-        isCompleted,
+        hasActivity,
+        onStreak,
         isToday,
       };
     });
-  }, [completedLessons]);
+  }, [completedLessons, streakRange]);
 
   return (
     <div className="w-full bg-surface/50 dark:bg-surface-alt/25 border border-border/20 dark:border-border/10 rounded-3xl p-3.5 shadow-sm transition-all duration-200">
-      {/* Título do Calendário */}
       <div className="flex items-center justify-between mb-2.5 px-0.5">
         <div className="flex items-center gap-1.5">
           <span className="text-sm">🔥</span>
@@ -44,6 +61,11 @@ export const WeeklyCalendar: React.FC = () => {
             Calendário de Perseverança
           </p>
         </div>
+        {streakDays > 0 && (
+          <span className="text-[10px] font-black text-secondary dark:text-secondary-light">
+            {streakDays} 🔥
+          </span>
+        )}
       </div>
       <div className="grid grid-cols-7 gap-1 justify-items-center w-full">
         {daysOfWeek.map((day, index) => (
@@ -54,6 +76,11 @@ export const WeeklyCalendar: React.FC = () => {
             transition={{ duration: 0.3, delay: index * 0.04, ease: 'easeOut' }}
             className="w-full flex flex-col items-center"
           >
+            {/* Fire emoji for streak days */}
+            {day.onStreak && (
+              <span className="text-xs mb-0.5 select-none">🔥</span>
+            )}
+
             <motion.div
               whileTap={{ scale: 0.94 }}
               className={clsx(
@@ -63,9 +90,9 @@ export const WeeklyCalendar: React.FC = () => {
                   : 'bg-transparent text-text-secondary border-border/50 dark:border-border/10'
               )}
             >
-              {/* Top dot indicating completion */}
+              {/* Top dot indicating activity */}
               <div className="h-1 flex items-center justify-center select-none">
-                {day.isCompleted ? (
+                {day.hasActivity ? (
                   <span className={clsx(
                     'w-1.5 h-1.5 rounded-full',
                     day.isToday ? 'bg-white dark:bg-[#09090B]' : 'bg-success'
@@ -75,7 +102,6 @@ export const WeeklyCalendar: React.FC = () => {
                 )}
               </div>
 
-              {/* Day abbreviation (e.g. Wed) */}
               <span className={clsx(
                 'text-[8px] font-extrabold uppercase tracking-wide select-none',
                 day.isToday ? 'text-white/60 dark:text-black/60' : 'text-text-secondary'
@@ -83,7 +109,6 @@ export const WeeklyCalendar: React.FC = () => {
                 {day.dayName}
               </span>
 
-              {/* Day number (e.g. 14) */}
               <span className={clsx(
                 'text-[11px] font-black tracking-tight select-none',
                 day.isToday ? 'text-white dark:text-[#09090B]' : 'text-text-primary'

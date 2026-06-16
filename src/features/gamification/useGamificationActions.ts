@@ -37,6 +37,8 @@ export const useGamificationActions = () => {
     const progressObj = {
       totalXP: gs.totalXP + xpBonus,
       streakDays: gs.streakDays,
+      dailyGoalMet: gs.dailyGoalMet,
+      dailyGoalStreak: gs.dailyGoalStreak,
       completedLessons: Object.keys(ps.completedLessons),
       completedUnits: ps.completedUnits,
       completedHistoryUnits: ps.completedHistoryUnits,
