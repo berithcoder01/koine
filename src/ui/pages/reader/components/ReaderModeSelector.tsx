@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { clsx } from 'clsx';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export type ReaderMode = 'assisted' | 'challenge' | 'immersion' | 'interlinear';
+export type ReaderMode = 'assisted' | 'challenge' | 'immersion' | 'interlinear' | 'transliteration';
 
 interface ModeConfig {
   label: string;
@@ -35,6 +35,12 @@ const MODE_CONFIG: Record<ReaderMode, ModeConfig> = {
     shortLabel: 'Linear',
     icon: '🔤',
     description: 'Grego na linha, gloss PT logo abaixo',
+  },
+  transliteration: {
+    label: 'Transliteração',
+    shortLabel: 'Translit',
+    icon: '🗣️',
+    description: 'Grego + transliteração romanizada + tradução',
   },
 };
 

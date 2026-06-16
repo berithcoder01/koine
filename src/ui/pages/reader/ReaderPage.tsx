@@ -274,9 +274,10 @@ export const ReaderPage: React.FC = () => {
 
   // ─── Derivados ─────────────────────────────────────────────────
 
-  const showGloss = readerMode === 'assisted' || readerMode === 'interlinear';
+  const showGloss = readerMode === 'assisted' || readerMode === 'interlinear' || readerMode === 'transliteration';
   const showLemma = readerMode === 'interlinear';
   const showParsing = readerMode === 'interlinear';
+  const showTranslit = readerMode === 'transliteration';
 
   // Calcula destino da navegação para mostrar nos botões
   const prevBook = getAdjacentBook(currentRef.book, -1);
@@ -439,13 +440,14 @@ export const ReaderPage: React.FC = () => {
                     showGloss={showGloss}
                     showLemma={showLemma}
                     showParsing={showParsing}
+                    showTranslit={showTranslit}
                     alignedWords={alignedWords}
                     highlighted={highlightedVerse === v.verse}
                     filterStrong={filterStrong}
                     onVersePress={handleVersePress}
                     onFilterByStrong={handleFilterByStrong}
                   />
-                  {v.fluentPT && readerMode !== 'immersion' && readerMode !== 'interlinear' && (
+                  {v.fluentPT && readerMode !== 'immersion' && readerMode !== 'interlinear' && readerMode !== 'transliteration' && (
                     <VerseTranslationCard
                       book={currentRef.book}
                       chapter={currentRef.chapter}

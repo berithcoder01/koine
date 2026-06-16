@@ -9,6 +9,7 @@ export interface InterlinearTokenData {
   parsing: string;
   glossPT?: string;
   glossSource?: string;
+  translitPT?: string;
 }
 
 interface Props {
@@ -17,6 +18,7 @@ interface Props {
   showGloss: boolean;
   showLemma?: boolean;
   showParsing?: boolean;
+  showTranslit?: boolean;
   alignedWord?: string;
   onPress?: () => void;
 }
@@ -27,6 +29,7 @@ export const InterlinearToken: React.FC<Props> = ({
   showGloss,
   showLemma = false,
   showParsing = false,
+  showTranslit = false,
   alignedWord,
   onPress,
 }) => {
@@ -52,6 +55,12 @@ export const InterlinearToken: React.FC<Props> = ({
       >
         {token.token}
       </span>
+
+      {showTranslit && token.translitPT && (
+        <span className="text-[10px] mt-0.5 text-center leading-tight text-secondary/70 italic font-medium">
+          {token.translitPT}
+        </span>
+      )}
 
       {showGloss && displayWord && (
         <span

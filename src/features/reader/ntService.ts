@@ -39,6 +39,7 @@ interface NTInterlinearRow {
 interface InterlinearToken extends NtToken {
   glossPT?: string;
   glossSource?: string;
+  translitPT?: string;
 }
 
 interface BookMeta {
@@ -62,6 +63,27 @@ let interlinearByRef: Map<string, NTInterlinearRow[]> | null = null;
 let interlinearByChapter: Map<string, NTInterlinearRow[]> | null = null;
 let greekByChapter: Map<string, NtToken[]> | null = null;
 let cachedBooks: BookMeta[] | null = null;
+let translitByStrongsId: Map<string, string> | null = null;
+
+interface StrongEntry {
+  id: string;
+  translit: string;
+}
+
+async function loadStrongTranslit(): Promise<void> {
+  if (translitByStrongsId) return;
+  try {
+    const res = await fetch('/assets/strong.json');
+    const entries: StrongEntry[] = await res.json();
+    translitByStrongsId = new Map();
+    for (const e of entries) {
+      if (e.id && e.translit) translitByStrongsId.set(e.id, e.translit);
+    }
+  } catch (e) {
+    console.warn('[ntService] strong.json indisponível:', e);
+    translitByStrongsId = new Map();
+  }
+}
 
 async function loadNT(): Promise<void> {
   if (cachedTokens) return;
@@ -182,6 +204,8 @@ export const ntService = {
   // ─── TOKENS INTERLINEARES (GREGO + GLOSS PT) ───────────────────
 
   async getInterlinearTokens(book: string, chapter: number, verse: number): Promise<InterlinearToken[]> {
+    await loadStrongTranslit();
+
     const fromDB = await dbQueries.getInterlinearVerse(book, chapter, verse);
     if (fromDB.length > 0) {
       return fromDB.map((row: any) => ({
@@ -197,6 +221,7 @@ export const ntService = {
         parsing: row.parsing ?? '',
         glossPT: row.gloss_pt ?? '',
         glossSource: row.gloss_source ?? 'manual',
+        translitPT: row.strongs_id ? translitByStrongsId?.get(row.strongs_id) : undefined,
       }));
     }
 
@@ -204,7 +229,6 @@ export const ntService = {
     await loadNT();
     const interlinearRows = interlinearByRef?.get(`${book}-${chapter}-${verse}`) ?? [];
     if (interlinearRows.length === 0) {
-      // Sem interlinear: retorna tokens gregos sem gloss
       return this.getVerse(book, chapter, verse);
     }
     const glossMap = new Map<number, NTInterlinearRow>();
@@ -217,6 +241,7 @@ export const ntService = {
         ...t,
         glossPT: gloss?.glossPT,
         glossSource: gloss?.glossSource,
+        translitPT: t.strongs_id ? translitByStrongsId?.get(t.strongs_id) : undefined,
       };
     });
   },
@@ -303,10 +328,12 @@ export const ntService = {
 
     // 2) Fallback para JSON estático (web/dev, ou SQLite vazio)
     if (greekTokens.length === 0 && interRows.length === 0 && ptVerses.length === 0) {
-      await Promise.all([loadNT(), loadInterlinear(), loadPT()]);
+      await Promise.all([loadNT(), loadInterlinear(), loadPT(), loadStrongTranslit()]);
       interRows = interlinearByChapter?.get(chKey) ?? [];
       greekTokens = greekByChapter?.get(chKey) ?? [];
       ptVerses = ptByChapter?.get(chKey) ?? [];
+    } else {
+      await loadStrongTranslit();
     }
 
     // 3) Determina lista de versículos
@@ -341,7 +368,6 @@ export const ntService = {
 
       let tokens: InterlinearToken[];
       if (glosses && glosses.size > 0) {
-        // Combina grego + gloss
         tokens = greek
           .map((t) => {
             const gloss = glosses.get(t.position);
@@ -349,11 +375,11 @@ export const ntService = {
               ...t,
               glossPT: gloss?.glossPT,
               glossSource: gloss?.glossSource,
+              translitPT: t.strongs_id ? translitByStrongsId?.get(t.strongs_id) : undefined,
             };
           })
           .sort((a, b) => a.position - b.position);
         if (tokens.length === 0) {
-          // Só interlinear, sem grego — usa glosses como tokens
           tokens = Array.from(glosses.values())
             .sort((a, b) => a.position - b.position)
             .map((r) => ({
@@ -369,13 +395,18 @@ export const ntService = {
               parsing: r.parsing ?? '',
               glossPT: r.glossPT,
               glossSource: r.glossSource,
+              translitPT: r.strongsId ? translitByStrongsId?.get(r.strongsId) : undefined,
             }));
         }
       } else {
-        // Só grego, sem gloss
         tokens = greek
           .sort((a, b) => a.position - b.position)
-          .map((t) => ({ ...t, glossPT: undefined, glossSource: undefined }));
+          .map((t) => ({
+            ...t,
+            glossPT: undefined,
+            glossSource: undefined,
+            translitPT: t.strongs_id ? translitByStrongsId?.get(t.strongs_id) : undefined,
+          }));
       }
 
       return {

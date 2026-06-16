@@ -11,6 +11,7 @@ interface Props {
   showGloss: boolean;
   showLemma?: boolean;
   showParsing?: boolean;
+  showTranslit?: boolean;
   fluentPT?: string | null;
   alignedWords?: string[];
   highlighted?: boolean;
@@ -30,6 +31,7 @@ export const InterlinearVerse: React.FC<Props> = ({
   showGloss,
   showLemma = false,
   showParsing = false,
+  showTranslit = false,
   fluentPT,
   alignedWords,
   highlighted = false,
@@ -101,6 +103,7 @@ export const InterlinearVerse: React.FC<Props> = ({
                 showGloss={showGloss}
                 showLemma={showLemma}
                 showParsing={showParsing}
+                showTranslit={showTranslit}
                 alignedWord={alignedWords?.[token.position - 1]}
                 onPress={() => handleTokenPress(token)}
               />
