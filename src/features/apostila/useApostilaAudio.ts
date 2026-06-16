@@ -15,30 +15,56 @@ interface AudioManifest {
   lessons: Record<string, LessonAudio>;
 }
 
+const SHORT_ID_RE = /-(L\d+)$/;
+
 export function useApostilaAudio(lessonId: string) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [, setIsLoaded] = useState(false);
   const [manifest, setManifest] = useState<AudioManifest | null>(null);
 
+  // Extract L01 from apostila-L01
+  const manifestKey = (lessonId && SHORT_ID_RE.test(lessonId))
+    ? lessonId.match(SHORT_ID_RE)![1]
+    : lessonId;
+  console.log('[useApostilaAudio] lessonId=', lessonId, 'manifestKey=', manifestKey);
+
   useEffect(() => {
-    fetch('/audio/manifest.json')
-      .then(res => res.json())
+    console.log('[useApostilaAudio] Fetching manifest...');
+    fetch('/audio/manifest.json', { redirect: 'follow' })
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status} - ${res.statusText}`);
+        return res.json();
+      })
       .then((data: AudioManifest) => {
+        console.log('[useApostilaAudio] Manifest loaded:', Object.keys(data.lessons));
         setManifest(data);
         setIsLoaded(true);
       })
-      .catch(() => {
+      .catch(err => {
+        console.error('[useApostilaAudio] Failed to load manifest:', err);
         setIsLoaded(true);
       });
   }, []);
 
   const playStep = useCallback((stepNumber: number) => {
-    if (!manifest) return;
-    const lesson = manifest.lessons[lessonId];
-    if (!lesson) return;
+    console.log('[useApostilaAudio] playStep called stepNumber=', stepNumber, 'manifestKey=', manifestKey);
+    if (!manifest) {
+      console.warn('[useApostilaAudio] manifest not loaded');
+      return;
+    }
+    const lesson = manifest.lessons[manifestKey];
+    if (!lesson) {
+      console.warn('[useApostilaAudio] lesson not found in manifest, keys=', Object.keys(manifest.lessons), 'requestedKey=', manifestKey);
+      return;
+    }
+    console.log('[useApostilaAudio] lesson found:', lesson.file, 'duration=', lesson.duration);
     const step = lesson.steps[String(stepNumber)];
-    if (!step) return;
+    if (!step) {
+      console.warn('[useApostilaAudio] step not found, steps=', Object.keys(lesson.steps));
+      return;
+    }
+    console.log('[useApostilaAudio] step found: start=', step.start, 'end=', step.end);
 
     try {
       if (audioRef.current) {
@@ -46,7 +72,7 @@ export function useApostilaAudio(lessonId: string) {
         audioRef.current = null;
       }
 
-      const audio = new Audio(lesson.file);
+      const audio = new Audio('/' + lesson.file);
       audio.preload = 'auto';
       audio.currentTime = step.start;
       audio.onended = () => setIsPlaying(false);
@@ -56,14 +82,21 @@ export function useApostilaAudio(lessonId: string) {
           setIsPlaying(false);
         }
       };
-      audio.onerror = () => setIsPlaying(false);
-      audio.play();
+      audio.onerror = (e) => {
+        console.error('[useApostilaAudio] audio.onerror:', e);
+        setIsPlaying(false);
+      };
+      audio.play().catch(e => {
+        console.error('[useApostilaAudio] play() failed:', e);
+        setIsPlaying(false);
+      });
       audioRef.current = audio;
       setIsPlaying(true);
-    } catch {
+    } catch (e) {
+      console.error('[useApostilaAudio] playStep catch:', e);
       setIsPlaying(false);
     }
-  }, [lessonId, manifest]);
+  }, [manifestKey, manifest]);
 
   const stop = useCallback(() => {
     if (audioRef.current) {
@@ -82,5 +115,5 @@ export function useApostilaAudio(lessonId: string) {
     };
   }, []);
 
-  return { playStep, stop, isPlaying, isAudioAvailable: !!manifest?.lessons[lessonId] };
+  return { playStep, stop, isPlaying, isAudioAvailable: !!manifest?.lessons[manifestKey] };
 }

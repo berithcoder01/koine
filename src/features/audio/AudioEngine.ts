@@ -14,6 +14,7 @@ export class AudioEngine {
   private currentGroupIndex: number = -1;
   private rafId: number | null = null;
   private _enabled: boolean = true;
+  private _volume: number = 1;
 
   static getInstance(): AudioEngine {
     if (!AudioEngine.instance) {
@@ -38,6 +39,17 @@ export class AudioEngine {
   setEnabled(val: boolean) {
     this._enabled = val;
     if (!val) this.stop();
+  }
+
+  setVolume(val: number) {
+    this._volume = Math.max(0, Math.min(1, val));
+    if (this.audio) {
+      this.audio.volume = this._volume;
+    }
+  }
+
+  get volume(): number {
+    return this._volume;
   }
 
   setCallbacks(cbs: Partial<AudioEngineCallbacks>) {

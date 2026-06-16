@@ -6,13 +6,16 @@ import { CYCLES } from '@/content/curriculum/cycles';
 import { MODULES } from '@/content/curriculum/modules';
 import { dbQueries } from '@/features/database/queries';
 import { calculateTrophyTier } from '@/core/constants/trophies';
+import { useSoundVolume } from '../settings/useSoundVolume';
 
 export const useGamificationActions = () => {
-  const {
-    addXP, recordStudyActivity,
+  const { 
+    addXP, recordStudyActivity, 
     unlockAchievement, unlockVerse, setTrophyTier,
     lastStudyDate, streakDays,
   } = useGamificationStore();
+
+  const { playEffect } = useSoundVolume();
 
   const checkAchievements = useCallback(async (xpBonus: number = 0) => {
     const ps = useProgressStore.getState();
@@ -78,12 +81,14 @@ export const useGamificationActions = () => {
   const onApostilaComplete = useCallback(async (_lessonId: string, xpReward: number) => {
     addXP(xpReward);
     recordStudyActivity();
+    playEffect('success');
     await checkAchievements(xpReward);
   }, [addXP, recordStudyActivity, checkAchievements]);
 
   const onLessonComplete = useCallback(async (_lessonId: string, _score: number, xpEarned: number) => {
     addXP(xpEarned);
     recordStudyActivity();
+    playEffect('success');
     await checkAchievements(xpEarned);
   }, [
     addXP, recordStudyActivity, lastStudyDate, streakDays, checkAchievements,

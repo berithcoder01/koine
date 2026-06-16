@@ -70,7 +70,7 @@ export const RegisterPage: React.FC = () => {
             transition={{ delay: 0.1, duration: 0.5 }}
             className="inline-block"
           >
-            <span className="greek-text text-text-primary text-5xl font-bold tracking-wide select-none filter drop-shadow-sm">
+            <span className="logo-text text-text-primary text-5xl tracking-wide select-none filter drop-shadow-sm">
               Κοινή
             </span>
           </motion.div>

@@ -13,6 +13,7 @@ import { ExposureCard } from './components/ExposureCard';
 import { LessonSummary } from './components/LessonSummary';
 import { useProgressSync } from '@/features/progress/useProgressSync';
 import { useGamificationActions } from '@/features/gamification/useGamificationActions';
+import { useSoundVolume } from '@/features/settings/useSoundVolume';
 import { FlashcardExercise } from '@/ui/exercises/FlashcardExercise';
 import { MultipleChoiceExercise } from '@/ui/exercises/MultipleChoiceExercise';
 import { FillBlankExercise } from '@/ui/exercises/FillBlankExercise';
@@ -22,11 +23,61 @@ import { TPRExercise } from '@/ui/exercises/TPRExercise';
 import { CanvasExercise } from '@/ui/exercises/CanvasExercise';
 import { TypingExercise } from '@/ui/exercises/TypingExercise';
 import type { PhaseExercise } from '@/core/types/lesson.types';
+import { useSettingsStore } from '@/features/settings/settingsStore';
+import { BottomSheet } from '@/ui/components/BottomSheet';
+import { Button } from '@/ui/components/Button';
+
+const ONE_DAY = 24 * 60 * 60 * 1000;
+
+/** Timestamp quando o usuário optou por silenciar por 1 dia */
+function isMuteExpired(muteTimestamp: number | null): boolean {
+  if (muteTimestamp === null) return true;
+  return Date.now() - muteTimestamp > ONE_DAY;
+}
 
 export const LessonPage: React.FC = () => {
   const { lessonId } = useParams<{ lessonId: string }>();
   const navigation = useAppNavigation();
   const { markLessonComplete } = useProgressStore();
+  const { audioEnabled } = useSettingsStore();
+  const { playEffect } = useSoundVolume();
+
+  // State para o mute confirmado
+  const [showMuteConfirm, setShowMuteConfirm] = useState(false);
+  const [muteTimestamp, setMuteTimestamp] = useState<number | null>(() => {
+    const stored = localStorage.getItem('muteTimestamp');
+    return stored ? Number(stored) : null;
+  });
+
+  // Show mute confirmation quando audio está desativado e não está silenciado temporariamente
+  useEffect(() => {
+    if (!lessonId || audioEnabled) return;
+
+    const expired = isMuteExpired(muteTimestamp);
+    if (expired && lessonId) {
+      setShowMuteConfirm(true);
+    }
+  }, [lessonId, audioEnabled, muteTimestamp]);
+  
+  /** Handle mute confirmation options */
+  const handleMuteOption = (option: 'listen' | 'mute-today' | 'mute') => {
+    switch (option) {
+      case 'listen':
+        // Temporariamente ativa o áudio (não persiste)
+        useSettingsStore.setState({ audioEnabled: true });
+        break;
+      case 'mute-today':
+        // Silencia por 1 dia
+        localStorage.setItem('muteTimestamp', Date.now().toString());
+        setMuteTimestamp(Date.now());
+        break;
+      case 'mute':
+        // Não faz nada (mantém silenciado)
+        break;
+    }
+    setShowMuteConfirm(false);
+  };
+
   const engine = useLessonEngine(lessonId ?? '');
   const { syncUnitProgress, syncToFirestore } = useProgressSync();
   const { onLessonComplete } = useGamificationActions();
@@ -126,58 +177,48 @@ export const LessonPage: React.FC = () => {
     }
   }, [engine.session?.currentPhase]);
 
-  if (engine.isLoading) return <LoadingScreen message="Preparando lição..." />;
+  /* ----- Determine content for each render state ----- */
+  let content: React.ReactNode;
 
-  if (!engine.session) return (
-    <SafeArea>
-      <EmptyState
-        icon="⚠️"
-        title="Não foi possível carregar"
-        description="O banco de dados ainda está sendo preparado. Tente novamente."
-        actionLabel="Tentar Novamente"
-        onAction={() => engine.initSession()}
-      />
-    </SafeArea>
-  );
-
-  const handleAnswer = (isCorrect: boolean, explanation?: string, correctAnswer?: string) => {
-    const xpEarned = isCorrect ? 2 : 0;
-    engine.recordAnswer(isCorrect, xpEarned);
-    setFeedbackData({ isCorrect, explanation, correctAnswer, xpEarned });
-    setShowFeedback(true);
-  };
-
-  const handleContinue = () => {
-    setShowFeedback(false);
-    engine.advanceAfterExercise();
-  };
-
-  // Phase 1 — Exposure
-  if (engine.isCurrentPhaseExposure()) {
-    const unit = engine.getCurrentUnit();
-    if (!unit) return <LoadingScreen message="Carregando conteúdo..." />;
-    const { current, total } = engine.unitProgress();
-    return (
-      <ExposureCard
-        unit={unit}
-        onContinue={() => {
-          audio.stop();
-          engine.advanceExposure();
-        }}
-        unitNumber={current}
-        totalUnits={total}
-        isAudioPlaying={audio.state === 'playing'}
-      />
+  if (engine.isLoading) {
+    content = <LoadingScreen message="Preparando lição..." />;
+  } else if (!engine.session) {
+    content = (
+      <SafeArea>
+        <EmptyState
+          icon="⚠️"
+          title="Não foi possível carregar"
+          description="O banco de dados ainda está sendo preparado. Tente novamente."
+          actionLabel="Tentar Novamente"
+          onAction={() => engine.initSession()}
+        />
+      </SafeArea>
     );
-  }
-
-  // Phase 6 — Complete
-  if (engine.isSessionComplete()) {
+  } else if (engine.isCurrentPhaseExposure()) {
+    const unit = engine.getCurrentUnit();
+    if (!unit) {
+      content = <LoadingScreen message="Carregando conteúdo..." />;
+    } else {
+      const { current, total } = engine.unitProgress();
+      content = (
+        <ExposureCard
+          unit={unit}
+          onContinue={() => {
+            audio.stop();
+            engine.advanceExposure();
+          }}
+          unitNumber={current}
+          totalUnits={total}
+          isAudioPlaying={audio.state === 'playing'}
+        />
+      );
+    }
+  } else if (engine.isSessionComplete()) {
     const { score, level, totalXP } = engine.calculateMastery();
     const results = engine.session?.results ?? [];
     const evaluated = results.filter(r => r.phase >= 2);
     const correct = evaluated.filter(r => r.isCorrect).length;
-    return (
+    content = (
       <LessonSummary
         score={score}
         masteryLevel={level}
@@ -187,44 +228,83 @@ export const LessonPage: React.FC = () => {
         onContinue={navigation.goToTrail}
       />
     );
+  } else {
+    // Phases 2-5 — Exercises
+      const handleAnswer = (isCorrect: boolean, explanation?: string, correctAnswer?: string) => {
+        playEffect('click');
+        const xpEarned = isCorrect ? 2 : 0;
+      engine.recordAnswer(isCorrect, xpEarned);
+      setFeedbackData({ isCorrect, explanation, correctAnswer, xpEarned });
+      setShowFeedback(true);
+    };
+
+      const handleContinue = () => {
+        playEffect('click');
+        setShowFeedback(false);
+      engine.advanceAfterExercise();
+    };
+
+    const currentExercise = engine.getCurrentExercise();
+    const exercises = engine.getCurrentPhaseExercises();
+    const phase = engine.session?.currentPhase ?? 2;
+
+    if (!currentExercise || exercises.length === 0) {
+      content = <LoadingScreen message="Carregando..." />;
+    } else {
+      const phaseNames: Record<number, string> = {
+        2: 'Reconhecimento', 3: 'Associação', 4: 'Recordação', 5: 'Aplicação',
+      };
+      const { completed, total: exerciseTotal } = totalExercisesInLesson();
+      const progress = exerciseTotal > 0 ? (completed / exerciseTotal) * 100 : 0;
+      content = (
+        <ExerciseShell
+          instruction={`${phaseNames[phase] ?? ''} — Unidade ${engine.session.currentUnitIndex + 1}/${engine.session.units.length}`}
+          progress={progress}
+          stepLabel={`${completed + 1}/${exerciseTotal}`}
+          onExit={navigation.goBack}
+          footer={<div />}
+        >
+          {renderPhaseExercise(currentExercise, handleAnswer, engine.getCurrentUnit()?.greekForm)}
+
+          {showFeedback && feedbackData && (
+            <ExerciseFeedback
+              isCorrect={feedbackData.isCorrect}
+              explanation={feedbackData.explanation}
+              correctAnswer={feedbackData.correctAnswer}
+              xpEarned={feedbackData.xpEarned}
+              onContinue={handleContinue}
+            />
+          )}
+        </ExerciseShell>
+      );
+    }
   }
-
-  // Phases 2-5 — Exercises
-  const currentExercise = engine.getCurrentExercise();
-  const exercises = engine.getCurrentPhaseExercises();
-  const phase = engine.session?.currentPhase ?? 2;
-
-  if (!currentExercise || exercises.length === 0) {
-    return <LoadingScreen message="Carregando..." />;
-  }
-
-  const phaseNames: Record<number, string> = {
-    2: 'Reconhecimento', 3: 'Associação', 4: 'Recordação', 5: 'Aplicação',
-  };
-
-  const { completed, total: exerciseTotal } = totalExercisesInLesson();
-  const progress = exerciseTotal > 0 ? (completed / exerciseTotal) * 100 : 0;
 
   return (
-    <ExerciseShell
-      instruction={`${phaseNames[phase] ?? ''} — Unidade ${engine.session.currentUnitIndex + 1}/${engine.session.units.length}`}
-      progress={progress}
-      stepLabel={`${completed + 1}/${exerciseTotal}`}
-      onExit={navigation.goBack}
-      footer={<div />}
-    >
-      {renderPhaseExercise(currentExercise, handleAnswer, engine.getCurrentUnit()?.greekForm)}
+    <>
+      {content}
 
-      {showFeedback && feedbackData && (
-        <ExerciseFeedback
-          isCorrect={feedbackData.isCorrect}
-          explanation={feedbackData.explanation}
-          correctAnswer={feedbackData.correctAnswer}
-          xpEarned={feedbackData.xpEarned}
-          onContinue={handleContinue}
-        />
-      )}
-    </ExerciseShell>
+      <BottomSheet
+        isOpen={showMuteConfirm}
+        onClose={() => setShowMuteConfirm(false)}
+        title="Áudio desativado"
+      >
+        <div className="px-4 py-2 space-y-3">
+          <p className="text-gray-400 text-sm">
+            O som está desativado nas configurações. Deseja ouvir a narração desta lição?
+          </p>
+          <Button onClick={() => handleMuteOption('listen')} variant="primary" fullWidth>
+            Ouvir agora
+          </Button>
+          <Button onClick={() => handleMuteOption('mute-today')} variant="secondary" fullWidth>
+            Desativar por 1 dia
+          </Button>
+          <Button onClick={() => handleMuteOption('mute')} variant="secondary" fullWidth>
+            Manter silenciado
+          </Button>
+        </div>
+      </BottomSheet>
+    </>
   );
 };
 

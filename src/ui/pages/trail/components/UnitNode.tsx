@@ -1,6 +1,6 @@
 // src/pages/trail/components/UnitNode.tsx
 import React from 'react';
-import { Haptics, ImpactStyle } from '@capacitor/haptics';
+import { useHaptics } from '@/features/settings/useHaptics';
 import { clsx } from 'clsx';
 
 type NodeStatus = 'locked' | 'available' | 'in_progress' | 'complete';
@@ -54,13 +54,14 @@ const getPastelTheme = (order: number) => {
 
 export const UnitNode: React.FC<UnitNodeProps> = ({ module, status, onPress }) => {
   const theme = getPastelTheme(module.module_order);
+  const { light, medium } = useHaptics();
 
   const handlePress = async () => {
     if (status === 'locked') {
-      try { await Haptics.impact({ style: ImpactStyle.Light }); } catch {}
+      light();
       return;
     }
-    try { await Haptics.impact({ style: ImpactStyle.Medium }); } catch {}
+    medium();
     onPress();
   };
 

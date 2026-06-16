@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { SafeArea } from '@/ui/layouts/SafeArea';
@@ -8,24 +8,31 @@ import { Play, Pause, Volume2, Check, Sparkles } from 'lucide-react';
 import { useApostilaSession } from '@/features/apostila/useApostilaSession';
 import { WriteCounter } from '@/ui/components/WriteCounter';
 import { ProgressBar } from '@/ui/components/ProgressBar';
+import { GreekLetterAnimator } from '@/ui/components/GreekLetterAnimator';
 import { APOSTILA_LESSONS } from '@/content/apostila/lessons';
+import { useSoundVolume } from '@/features/settings/useSoundVolume';
 
 export const ApostilaSessionPage: React.FC = () => {
   const { lessonId } = useParams<{ lessonId: string }>();
   const navigate = useNavigate();
   const session = useApostilaSession(lessonId ?? '');
+  const { playEffect } = useSoundVolume();
 
-  if (!lessonId || !session) {
-    navigate('/apostila');
-    return null;
-  }
+  useEffect(() => {
+    if (!lessonId || !session) {
+      navigate('/apostila', { replace: true });
+    }
+  }, [lessonId, session, navigate]);
 
-  const { state, incrementWriteCount, revealDictation, advanceStep, playCurrentAudio } = session;
-  const { lesson, currentStep, progressPercent, writeCount, isDictationRevealed, isCompleted, isAudioPlaying } = state;
+  if (!lessonId || !session) return null;
+
+  const { state, revealDictation, advanceStep, playCurrentAudio } = session;
+  const { lesson, currentStep, progressPercent, isDictationRevealed, isCompleted, isAudioPlaying } = state;
 
   const isDictationWaiting = currentStep.type === 'dictation' && !isDictationRevealed;
 
   const handleActionPress = () => {
+    playEffect('click');
     switch (currentStep.type) {
       case 'intro':
       case 'pause':
@@ -37,11 +44,7 @@ export const ApostilaSessionPage: React.FC = () => {
         advanceStep();
         break;
       case 'write_practice':
-        if (writeCount < (currentStep.writeRepetitions ?? 8)) {
-          incrementWriteCount();
-        } else {
-          advanceStep();
-        }
+        advanceStep();
         break;
       case 'dictation':
         if (!isDictationRevealed) {
@@ -62,7 +65,7 @@ export const ApostilaSessionPage: React.FC = () => {
       case 'alphabet_trace':
         return 'Vou praticar agora';
       case 'write_practice':
-        return writeCount < (currentStep.writeRepetitions ?? 8) ? '✓ Escrevi uma vez' : 'Continuar ▶';
+        return 'Continuar ▶';
       case 'dictation':
         return isDictationRevealed ? 'Continuar ▶' : 'Revelar resposta';
       case 'read_aloud':
@@ -158,9 +161,10 @@ export const ApostilaSessionPage: React.FC = () => {
             </p>
 
             {currentStep.showStrokeOrder && (
-              <div className="w-48 h-48 rounded-2xl bg-zinc-100 dark:bg-zinc-800/50 border border-border/20 flex items-center justify-center">
-                <span className="text-text-secondary dark:text-zinc-400 text-xs">Animação de traços aqui</span>
-              </div>
+              <GreekLetterAnimator
+                letter={currentStep.greekForm?.split(' ')[1] || currentStep.greekForm || 'α'}
+                autoPlay={true}
+              />
             )}
           </motion.div>
         );
@@ -186,10 +190,11 @@ export const ApostilaSessionPage: React.FC = () => {
             </div>
 
             <WriteCounter
-              total={currentStep.writeRepetitions ?? 8}
-              current={writeCount}
-              onIncrement={incrementWriteCount}
-              isComplete={writeCount >= (currentStep.writeRepetitions ?? 8)}
+              onIncrement={() => {
+                playEffect('click');
+                advanceStep();
+              }}
+              isComplete={false}
             />
           </motion.div>
         );
@@ -261,9 +266,6 @@ export const ApostilaSessionPage: React.FC = () => {
   };
 
   const handleClose = () => {
-    if (!isCompleted) {
-      window.speechSynthesis.cancel();
-    }
     navigate('/apostila');
   };
 

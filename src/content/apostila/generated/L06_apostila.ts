@@ -1,9 +1,9 @@
-﻿/**
- * L06 â€” Nasais, Sigma e Letras Duplas (Î¼, Î½, Ïƒ/Ï‚, Î¶, Î¾, Ïˆ)
+/**
+ * L06 — Nasais, Sigma e Letras Duplas (μ, ν, σ/ς, ζ, ξ, ψ)
  *
  * ID:               apostila-L06
- * TÃTULO:           LiÃ§Ã£o 6 â€” Nasais, Sigma e Letras Duplas
- * DESCRIÃ‡ÃƒO:        Mu, Nu, Sigma, Zeta, Xi, Psi
+ * TÍTULO:           Lição 6 — Nasais, Sigma e Letras Duplas
+ * DESCRIÇÃO:        Mu, Nu, Sigma, Zeta, Xi, Psi
  * PDF_PAGE:         12
  * XP:               35
  * TEMPO:            14 min
@@ -12,12 +12,12 @@
  * Total de Steps: 26
  */
 
-import type { ApostilaLesson } from '../../features/apostila/apostilaTypes';
+import type { ApostilaLesson } from '../../../features/apostila/apostilaTypes';
 
 export const APOSTILA_L06: ApostilaLesson = {
   id: 'apostila-L06',
   lessonNumber: 6,
-  title: 'LiÃ§Ã£o 6 â€” Nasais, Sigma e Letras Duplas',
+  title: 'Lição 6 — Nasais, Sigma e Letras Duplas',
   description: 'Mu, Nu, Sigma, Zeta, Xi, Psi',
   apostilaPdfPage: 12,
   xpReward: 35,
@@ -25,352 +25,352 @@ export const APOSTILA_L06: ApostilaLesson = {
   requiresPrevious: true,
 
   steps: [
-    // â”€â”€â”€ S01 â€” INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S01 — INTRO ───────────────────────────────────────────────
     {
       id: 'apostila-L06-S01',
       type: 'intro',
       narration:
-        'Esta Ã© a Ãºltima liÃ§Ã£o do alfabeto. Hoje vocÃª vai completar as 24 letras com as nasais mu e nu, o sigma (com sua forma final), e as letras duplas zeta, xi e psi. Abra sua apostila na pÃ¡gina 12.',
-      displayText: 'Abra sua apostila na PÃ¡gina 12',
+        'Esta é a última lição do alfabeto. Hoje você vai completar as 24 letras com as nasais mu e nu, o sigma (com sua forma final), e as letras duplas zeta, xi e psi. Abra sua apostila na página 12.',
+      displayText: 'Abra sua apostila na Página 12',
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S02 â€” WORD_INTRO: MU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S02 — WORD_INTRO: MU ───────────────────────────────────────
     {
       id: 'apostila-L06-S02',
       type: 'word_intro',
       narration:
-        'A primeira letra Ã© o mu. MaiÃºsculo: Îœ. MinÃºsculo: Î¼. O som Ã© "m", como em "mar".',
-      greekForm: 'Îœ Î¼',
+        'A primeira letra é o mu. Maiúsculo: Μ. Minúsculo: μ. O som é "m", como em "mar".',
+      greekForm: 'Μ μ',
       transliteration: 'mu',
       pronunciation: 'm (como em \'mar\')',
       translation: 'Letra Mu',
       etymology:
-        'Do Mem hebraico (×ž); corresponde ao \'M\' latino',
+        'Do Mem hebraico (מ); corresponde ao \'M\' latino',
       contextVerse: 'Romanos 8:1',
       contextVerseText:
-        '"Portanto, nenhuma condenaÃ§Ã£o (ÎºÎ±Ï„Î¬ÎºÏÎ¹Î¼Î±)" â€” Î¼ inicia Î¼Î­Î³Î±Ï‚ (grande) e Î¼Î±Î¸Î·Ï„Î®Ï‚ (discÃ­pulo)',
+        '"Portanto, nenhuma condenação (κατάκριμα)" — μ inicia μέγας (grande) e μαθητής (discípulo)',
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S03 â€” ALPHABET_TRACE: MU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S03 — ALPHABET_TRACE: MU ───────────────────────────────────
     {
       id: 'apostila-L06-S03',
       type: 'alphabet_trace',
       narration:
-        'Observe a ordem dos traÃ§os do mu minÃºsculo. Duas hastes verticais conectadas por dois arcos na base â€” o primeiro da esquerda para o centro, o segundo do centro para a direita, como um "u" alongado.',
-      greekForm: 'Î¼',
+        'Observe a ordem dos traços do mu minúsculo. Duas hastes verticais conectadas por dois arcos na base — o primeiro da esquerda para o centro, o segundo do centro para a direita, como um "u" alongado.',
+      greekForm: 'μ',
       showStrokeOrder: true,
       showPaperBadge: false,
     },
 
-    // â”€â”€â”€ S04 â€” WRITE_PRACTICE: MU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S04 — WRITE_PRACTICE: MU ───────────────────────────────────
     {
       id: 'apostila-L06-S04',
       type: 'write_practice',
       narration:
-        'Agora escreva o mu minÃºsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.',
-      greekForm: 'Î¼',
+        'Agora escreva o mu minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.',
+      greekForm: 'μ',
       transliteration: 'mu',
       writeRepetitions: 8,
-      writeInstruction: 'Linha 1 da apostila â€” Mu minÃºsculo (Î¼)',
+      writeInstruction: 'Linha 1 da apostila — Mu minúsculo (μ)',
       showPaperBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S05 â€” WORD_INTRO: NU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S05 — WORD_INTRO: NU ───────────────────────────────────────
     {
       id: 'apostila-L06-S05',
       type: 'word_intro',
       narration:
-        'A segunda letra Ã© o nu. MaiÃºsculo: Î. MinÃºsculo: Î½. O som Ã© "n", como em "nÃ³s".',
-      greekForm: 'Î Î½',
+        'A segunda letra é o nu. Maiúsculo: Ν. Minúsculo: ν. O som é "n", como em "nós".',
+      greekForm: 'Ν ν',
       transliteration: 'nu',
-      pronunciation: 'n (como em \'nÃ³s\')',
+      pronunciation: 'n (como em \'nós\')',
       translation: 'Letra Nu',
       etymology:
-        'Do Nun hebraico (× ); corresponde ao \'N\' latino',
-      contextVerse: 'JoÃ£o 3:16',
+        'Do Nun hebraico (נ); corresponde ao \'N\' latino',
+      contextVerse: 'João 3:16',
       contextVerseText:
-        '"Para que todo aquele (Ï€á¾¶Ï‚)" â€” Î½ inicia Î½ÏŒÎ¼Î¿Ï‚ (lei) e Î½ÏÎ¾ (noite)',
+        '"Para que todo aquele (πᾶς)" — ν inicia νόμος (lei) e νύξ (noite)',
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S06 â€” ALPHABET_TRACE: NU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S06 — ALPHABET_TRACE: NU ───────────────────────────────────
     {
       id: 'apostila-L06-S06',
       type: 'alphabet_trace',
       narration:
-        'Observe a ordem dos traÃ§os do nu minÃºsculo. Haste diagonal da esquerda para baixo e para a direita, depois uma haste vertical curta na extremidade direita, descendo para baixo. Forma de "v" com haste Ã  direita.',
-      greekForm: 'Î½',
+        'Observe a ordem dos traços do nu minúsculo. Haste diagonal da esquerda para baixo e para a direita, depois uma haste vertical curta na extremidade direita, descendo para baixo. Forma de "v" com haste à direita.',
+      greekForm: 'ν',
       showStrokeOrder: true,
       showPaperBadge: false,
     },
 
-    // â”€â”€â”€ S07 â€” WRITE_PRACTICE: NU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S07 — WRITE_PRACTICE: NU ───────────────────────────────────
     {
       id: 'apostila-L06-S07',
       type: 'write_practice',
       narration:
-        'Agora escreva o nu minÃºsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.',
-      greekForm: 'Î½',
+        'Agora escreva o nu minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.',
+      greekForm: 'ν',
       transliteration: 'nu',
       writeRepetitions: 8,
-      writeInstruction: 'Linha 2 da apostila â€” Nu minÃºsculo (Î½)',
+      writeInstruction: 'Linha 2 da apostila — Nu minúsculo (ν)',
       showPaperBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S08 â€” WORD_INTRO: SIGMA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S08 — WORD_INTRO: SIGMA ────────────────────────────────────
     {
       id: 'apostila-L06-S08',
       type: 'word_intro',
       narration:
-        'A terceira letra Ã© o sigma. MaiÃºsculo: Î£. MinÃºsculo: Ïƒ. O sigma tem duas formas: Ïƒ (sigma normal) quando aparece no inÃ­cio ou meio da palavra, e Ï‚ (sigma final) quando aparece no final. Veja a diferenÃ§a: ÏƒÏ‰Ï„Î·ÏÎ¯Î± (salvaÃ§Ã£o) â€” o sigma inicial Ã© Ïƒ. Î§ÏÎ¹ÏƒÏ„ÏŒÏ‚ (Cristo) â€” o sigma final Ã© Ï‚. O som Ã© "s", como em "sol".',
-      greekForm: 'Î£ Ïƒ/Ï‚',
+        'A terceira letra é o sigma. Maiúsculo: Σ. Minúsculo: σ. O sigma tem duas formas: σ (sigma normal) quando aparece no início ou meio da palavra, e ς (sigma final) quando aparece no final. Veja a diferença: σωτηρία (salvação) — o sigma inicial é σ. Χριστός (Cristo) — o sigma final é ς. O som é "s", como em "sol".',
+      greekForm: 'Σ σ/ς',
       transliteration: 'sigma',
-      pronunciation: 's (como em \'sol\') â€” forma final Ï‚',
+      pronunciation: 's (como em \'sol\') — forma final ς',
       translation: 'Letra Sigma',
       etymology:
-        'Do Shin hebraico (×©); a letra mais frequente do grego â€” como o \'s\' em portuguÃªs',
-      contextVerse: 'JoÃ£o 3:16',
+        'Do Shin hebraico (ש); a letra mais frequente do grego — como o \'s\' em português',
+      contextVerse: 'João 3:16',
       contextVerseText:
-        '"...o mundo (ÎºÏŒÏƒÎ¼Î¿Î½)" â€” Ïƒ/Ï‚ Ã© a letra mais frequente em terminaÃ§Ãµes gregas',
+        '"...o mundo (κόσμον)" — σ/ς é a letra mais frequente em terminações gregas',
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S09 â€” ALPHABET_TRACE: SIGMA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S09 — ALPHABET_TRACE: SIGMA ────────────────────────────────
     {
       id: 'apostila-L06-S09',
       type: 'alphabet_trace',
       narration:
-        'Observe a ordem dos traÃ§os do sigma minÃºsculo Ïƒ. Um semicÃ­rculo aberto Ã  direita, com um pequeno traÃ§o horizontal no topo e outro na base. O sigma final Ï‚ Ã© uma variaÃ§Ã£o com um gancho descendo abaixo da linha.',
-      greekForm: 'Ïƒ',
+        'Observe a ordem dos traços do sigma minúsculo σ. Um semicírculo aberto à direita, com um pequeno traço horizontal no topo e outro na base. O sigma final ς é uma variação com um gancho descendo abaixo da linha.',
+      greekForm: 'σ',
       showStrokeOrder: true,
       showPaperBadge: false,
     },
 
-    // â”€â”€â”€ S10 â€” WRITE_PRACTICE: SIGMA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S10 — WRITE_PRACTICE: SIGMA ────────────────────────────────
     {
       id: 'apostila-L06-S10',
       type: 'write_practice',
       narration:
-        'Agora escreva o sigma minÃºsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.',
-      greekForm: 'Ïƒ',
+        'Agora escreva o sigma minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.',
+      greekForm: 'σ',
       transliteration: 'sigma',
       writeRepetitions: 8,
-      writeInstruction: 'Linha 3 da apostila â€” Sigma minÃºsculo (Ïƒ) â€” lembre-se da forma final Ï‚',
+      writeInstruction: 'Linha 3 da apostila — Sigma minúsculo (σ) — lembre-se da forma final ς',
       showPaperBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S11 â€” WORD_INTRO: ZETA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S11 — WORD_INTRO: ZETA ─────────────────────────────────────
     {
       id: 'apostila-L06-S11',
       type: 'word_intro',
       narration:
-        'A quarta letra Ã© o zeta. MaiÃºsculo: Î–. MinÃºsculo: Î¶. O som Ã© "z", como em "zebra".',
-      greekForm: 'Î– Î¶',
+        'A quarta letra é o zeta. Maiúsculo: Ζ. Minúsculo: ζ. O som é "z", como em "zebra".',
+      greekForm: 'Ζ ζ',
       transliteration: 'zeta',
       pronunciation: 'z (como em \'zebra\')',
       translation: 'Letra Zeta',
       etymology:
-        'Do Zayin hebraico (×–); originalmente \'dz\' no grego clÃ¡ssico, simplificado para \'z\'',
+        'Do Zayin hebraico (ז); originalmente \'dz\' no grego clássico, simplificado para \'z\'',
       contextVerse: 'Mateus 5:18',
       contextVerseText:
-        '"Nem um iota ou um til (ÎºÎµÏÎ±Î¯Î±)" â€” Î¶ aparece em Î¶Ï‰Î® (vida) e Î¶Î·Ï„Î­Ï‰ (buscar)',
+        '"Nem um iota ou um til (κεραία)" — ζ aparece em ζωή (vida) e ζητέω (buscar)',
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S12 â€” ALPHABET_TRACE: ZETA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S12 — ALPHABET_TRACE: ZETA ─────────────────────────────────
     {
       id: 'apostila-L06-S12',
       type: 'alphabet_trace',
       narration:
-        'Observe a ordem dos traÃ§os do zeta minÃºsculo. A barra superior horizontal, depois uma diagonal da direita para baixo e para a esquerda, depois a barra inferior horizontal.',
-      greekForm: 'Î¶',
+        'Observe a ordem dos traços do zeta minúsculo. A barra superior horizontal, depois uma diagonal da direita para baixo e para a esquerda, depois a barra inferior horizontal.',
+      greekForm: 'ζ',
       showStrokeOrder: true,
       showPaperBadge: false,
     },
 
-    // â”€â”€â”€ S13 â€” WRITE_PRACTICE: ZETA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S13 — WRITE_PRACTICE: ZETA ─────────────────────────────────
     {
       id: 'apostila-L06-S13',
       type: 'write_practice',
       narration:
-        'Agora escreva o zeta minÃºsculo oito vezes na linha 4 da sua apostila. Mantenha o ritmo: uma letra por clique.',
-      greekForm: 'Î¶',
+        'Agora escreva o zeta minúsculo oito vezes na linha 4 da sua apostila. Mantenha o ritmo: uma letra por clique.',
+      greekForm: 'ζ',
       transliteration: 'zeta',
       writeRepetitions: 8,
-      writeInstruction: 'Linha 4 da apostila â€” Zeta minÃºsculo (Î¶)',
+      writeInstruction: 'Linha 4 da apostila — Zeta minúsculo (ζ)',
       showPaperBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S14 â€” WORD_INTRO: XI â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S14 — WORD_INTRO: XI ───────────────────────────────────────
     {
       id: 'apostila-L06-S14',
       type: 'word_intro',
       narration:
-        'A quinta letra Ã© o xi. MaiÃºsculo: Îž. MinÃºsculo: Î¾. O som Ã© "ks", como em "tÃ¡xi".',
-      greekForm: 'Îž Î¾',
+        'A quinta letra é o xi. Maiúsculo: Ξ. Minúsculo: ξ. O som é "ks", como em "táxi".',
+      greekForm: 'Ξ ξ',
       transliteration: 'xi',
-      pronunciation: 'ks (como em \'tÃ¡xi\')',
+      pronunciation: 'ks (como em \'táxi\')',
       translation: 'Letra Xi',
       etymology:
-        'Do Samekh hebraico (×¡); som duplo de Îº + Ï‚ (k + s)',
-      contextVerse: 'JoÃ£o 1:14',
+        'Do Samekh hebraico (ס); som duplo de κ + ς (k + s)',
+      contextVerse: 'João 1:14',
       contextVerseText:
-        '"...cheio de graÃ§a (Ï‡Î¬ÏÎ¹Ï„Î¿Ï‚)" â€” Î¾ aparece em Î¾Î­Î½Î¿Ï‚ (estrangeiro)',
+        '"...cheio de graça (χάριτος)" — ξ aparece em ξένος (estrangeiro)',
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S15 â€” ALPHABET_TRACE: XI â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S15 — ALPHABET_TRACE: XI ───────────────────────────────────
     {
       id: 'apostila-L06-S15',
       type: 'alphabet_trace',
       narration:
-        'Observe a ordem dos traÃ§os do xi minÃºsculo. TrÃªs traÃ§os horizontais paralelos: o superior, o mÃ©dio e o inferior, com um traÃ§o vertical curvo conectando-os Ã  direita.',
-      greekForm: 'Î¾',
+        'Observe a ordem dos traços do xi minúsculo. Três traços horizontais paralelos: o superior, o médio e o inferior, com um traço vertical curvo conectando-os à direita.',
+      greekForm: 'ξ',
       showStrokeOrder: true,
       showPaperBadge: false,
     },
 
-    // â”€â”€â”€ S16 â€” WRITE_PRACTICE: XI â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S16 — WRITE_PRACTICE: XI ───────────────────────────────────
     {
       id: 'apostila-L06-S16',
       type: 'write_practice',
       narration:
-        'Agora escreva o xi minÃºsculo oito vezes na linha 5 da sua apostila. Mantenha o ritmo: uma letra por clique.',
-      greekForm: 'Î¾',
+        'Agora escreva o xi minúsculo oito vezes na linha 5 da sua apostila. Mantenha o ritmo: uma letra por clique.',
+      greekForm: 'ξ',
       transliteration: 'xi',
       writeRepetitions: 8,
-      writeInstruction: 'Linha 5 da apostila â€” Xi minÃºsculo (Î¾)',
+      writeInstruction: 'Linha 5 da apostila — Xi minúsculo (ξ)',
       showPaperBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S17 â€” WORD_INTRO: PSI â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S17 — WORD_INTRO: PSI ──────────────────────────────────────
     {
       id: 'apostila-L06-S17',
       type: 'word_intro',
       narration:
-        'A sexta letra Ã© o psi. MaiÃºsculo: Î¨. MinÃºsculo: Ïˆ. O som Ã© "ps", como em "psicologia".',
-      greekForm: 'Î¨ Ïˆ',
+        'A sexta letra é o psi. Maiúsculo: Ψ. Minúsculo: ψ. O som é "ps", como em "psicologia".',
+      greekForm: 'Ψ ψ',
       transliteration: 'psi',
       pronunciation: 'ps (como em \'psicologia\')',
       translation: 'Letra Psi',
       etymology:
-        'Som duplo de Ï€ + Ï‚ (p + s); deu origem ao sÃ­mbolo da psicologia (Î¨)',
+        'Som duplo de π + ς (p + s); deu origem ao símbolo da psicologia (Ψ)',
       contextVerse: 'Filipenses 4:7',
       contextVerseText:
-        '"...guardarÃ¡ os vossos coraÃ§Ãµes (ÎºÎ±ÏÎ´Î¯Î±Ï‚)" â€” Ïˆ aparece em ÏˆÏ…Ï‡Î® (alma/vida)',
+        '"...guardará os vossos corações (καρδίας)" — ψ aparece em ψυχή (alma/vida)',
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S18 â€” ALPHABET_TRACE: PSI â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S18 — ALPHABET_TRACE: PSI ──────────────────────────────────
     {
       id: 'apostila-L06-S18',
       type: 'alphabet_trace',
       narration:
-        'Observe a ordem dos traÃ§os do psi minÃºsculo. Haste vertical central de cima para baixo, depois dois ramos curvos saindo do topo da haste, um Ã  esquerda e outro Ã  direita, formando um tridente.',
-      greekForm: 'Ïˆ',
+        'Observe a ordem dos traços do psi minúsculo. Haste vertical central de cima para baixo, depois dois ramos curvos saindo do topo da haste, um à esquerda e outro à direita, formando um tridente.',
+      greekForm: 'ψ',
       showStrokeOrder: true,
       showPaperBadge: false,
     },
 
-    // â”€â”€â”€ S19 â€” WRITE_PRACTICE: PSI â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S19 — WRITE_PRACTICE: PSI ──────────────────────────────────
     {
       id: 'apostila-L06-S19',
       type: 'write_practice',
       narration:
-        'Agora escreva o psi minÃºsculo oito vezes na linha 6 da sua apostila. Mantenha o ritmo: uma letra por clique.',
-      greekForm: 'Ïˆ',
+        'Agora escreva o psi minúsculo oito vezes na linha 6 da sua apostila. Mantenha o ritmo: uma letra por clique.',
+      greekForm: 'ψ',
       transliteration: 'psi',
       writeRepetitions: 8,
-      writeInstruction: 'Linha 6 da apostila â€” Psi minÃºsculo (Ïˆ)',
+      writeInstruction: 'Linha 6 da apostila — Psi minúsculo (ψ)',
       showPaperBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S20 â€” PAUSE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S20 — PAUSE ────────────────────────────────────────────────
     {
       id: 'apostila-L06-S20',
       type: 'pause',
       narration:
-        'ParabÃ©ns! VocÃª acaba de aprender todas as 24 letras do alfabeto grego. O mesmo alfabeto que os discÃ­pulos de Jesus usavam. O mesmo alfabeto do apÃ³stolo Paulo. Agora vocÃª pode comeÃ§ar a ler as primeiras palavras do Novo Testamento. Antes de continuar, olhe para tudo que escreveu nas seis linhas da apostila â€” Ã© o alfabeto completo, na sua prÃ³pria letra.',
+        'Parabéns! Você acaba de aprender todas as 24 letras do alfabeto grego. O mesmo alfabeto que os discípulos de Jesus usavam. O mesmo alfabeto do apóstolo Paulo. Agora você pode começar a ler as primeiras palavras do Novo Testamento. Antes de continuar, olhe para tudo que escreveu nas seis linhas da apostila — é o alfabeto completo, na sua própria letra.',
       displayText:
         'Compare sua escrita com o modelo na apostila.\nQuando estiver pronto, continue.',
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S21 â€” DICTATION: MU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S21 — DICTATION: MU ────────────────────────────────────────
     {
       id: 'apostila-L06-S21',
       type: 'dictation',
       narration: 'Escreva no papel: mu.',
       displayText: '"mu"',
-      greekForm: 'Îœ Î¼',
+      greekForm: 'Μ μ',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S22 â€” DICTATION: NU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S22 — DICTATION: NU ────────────────────────────────────────
     {
       id: 'apostila-L06-S22',
       type: 'dictation',
       narration: 'Escreva no papel: nu.',
       displayText: '"nu"',
-      greekForm: 'Î Î½',
+      greekForm: 'Ν ν',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S23 â€” DICTATION: SIGMA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S23 — DICTATION: SIGMA ─────────────────────────────────────
     {
       id: 'apostila-L06-S23',
       type: 'dictation',
       narration: 'Escreva no papel: sigma.',
       displayText: '"sigma"',
-      greekForm: 'Î£ Ïƒ',
+      greekForm: 'Σ σ',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S24 â€” DICTATION: ZETA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S24 — DICTATION: ZETA ──────────────────────────────────────
     {
       id: 'apostila-L06-S24',
       type: 'dictation',
       narration: 'Escreva no papel: zeta.',
       displayText: '"zeta"',
-      greekForm: 'Î– Î¶',
+      greekForm: 'Ζ ζ',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S25 â€” DICTATION: XI â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S25 — DICTATION: XI ────────────────────────────────────────
     {
       id: 'apostila-L06-S25',
       type: 'dictation',
       narration: 'Escreva no papel: xi.',
       displayText: '"xi"',
-      greekForm: 'Îž Î¾',
+      greekForm: 'Ξ ξ',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S26 â€” DICTATION: PSI â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S26 — DICTATION: PSI ───────────────────────────────────────
     {
       id: 'apostila-L06-S26',
       type: 'dictation',
       narration: 'Escreva no papel: psi.',
       displayText: '"psi"',
-      greekForm: 'Î¨ Ïˆ',
+      greekForm: 'Ψ ψ',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,

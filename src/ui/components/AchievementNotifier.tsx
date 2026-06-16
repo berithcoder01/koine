@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useGamificationStore, AchievementNotification } from '@/features/gamification/gamificationStore';
+import { useSoundVolume } from '@/features/settings/useSoundVolume';
 
 export const AchievementNotifier: React.FC = () => {
   const pendingAchievement = useGamificationStore((s) => s.pendingAchievement);
   const clearPending = useGamificationStore((s) => s.clearPendingAchievement);
+  const { playEffect } = useSoundVolume();
   const [visible, setVisible] = useState(false);
   const [current, setCurrent] = useState<AchievementNotification | null>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -13,6 +15,7 @@ export const AchievementNotifier: React.FC = () => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
       setCurrent(pendingAchievement);
       setVisible(true);
+      playEffect('levelUp'); // Efeito sonoro quando destrava conquista
 
       timeoutRef.current = setTimeout(() => {
         setVisible(false);

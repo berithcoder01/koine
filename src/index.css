@@ -1,4 +1,5 @@
 /* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;700&subset=greek&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
@@ -10,12 +11,6 @@
   src: url('/assets/fonts/SBLGreek.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
-
-/* Gentium Plus — fallback */
-@font-face {
-  font-family: 'Gentium Plus';
-  src: url('/assets/fonts/GentiumPlus-Regular.ttf') format('truetype');
 }
 
 @theme {
@@ -184,6 +179,11 @@ body {
 
 .greek-text {
   font-family: 'SBL Greek', 'Gentium Plus', serif;
+}
+
+.logo-text {
+  font-family: 'Gentium Plus', 'SBL Greek', serif;
+  font-weight: 700;
 }
 
 input, textarea, select {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Haptics, ImpactStyle } from '@capacitor/haptics';
+import { useHaptics } from '@/features/settings/useHaptics';
 import { motion } from 'framer-motion';
 import { clsx } from 'clsx';
 import { dbQueries } from '@/features/database/queries';
@@ -27,6 +27,7 @@ export const ExerciseFeedback: React.FC<ExerciseFeedbackProps> = ({
 }) => {
   const [strong, setStrong] = useState<StrongEntry | null>(null);
   const [showStrong, setShowStrong] = useState(false);
+  const { light, medium } = useHaptics();
 
   useEffect(() => {
     if (strongGreekWord && !isCorrect) {
@@ -46,18 +47,11 @@ export const ExerciseFeedback: React.FC<ExerciseFeedbackProps> = ({
   }, [strongGreekWord, isCorrect]);
 
   useEffect(() => {
-    const triggerHaptic = async () => {
-      try {
-        if (isCorrect) {
-          await Haptics.impact({ style: ImpactStyle.Light });
-        } else {
-          await Haptics.impact({ style: ImpactStyle.Medium });
-        }
-      } catch {
-        // Haptics not available (e.g. web browser)
-      }
-    };
-    triggerHaptic();
+    if (isCorrect) {
+      light();
+    } else {
+      medium();
+    }
   }, [isCorrect]);
 
   if (showStrong && strong) {

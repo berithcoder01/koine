@@ -1,9 +1,9 @@
-﻿/**
- * L13 â€” SalvaÃ§Ã£o e Julgamento (ÏƒÏ‰Ï„Î·ÏÎ¯Î±, Î½ÏŒÎ¼Î¿Ï‚, Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î·, ÎºÏÎ¯ÏƒÎ¹Ï‚, Î¸Î¬Î½Î±Ï„Î¿Ï‚)
+/**
+ * L13 — Salvação e Julgamento (σωτηρία, νόμος, δικαιοσύνη, κρίσις, θάνατος)
  *
  * ID:               apostila-L13
- * TÃTULO:           LiÃ§Ã£o 13 â€” SalvaÃ§Ã£o e Julgamento
- * DESCRIÃ‡ÃƒO:        ÏƒÏ‰Ï„Î·ÏÎ¯Î±, Î½ÏŒÎ¼Î¿Ï‚, Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î·, ÎºÏÎ¯ÏƒÎ¹Ï‚, Î¸Î¬Î½Î±Ï„Î¿Ï‚
+ * TÍTULO:           Lição 13 — Salvação e Julgamento
+ * DESCRIÇÃO:        σωτηρία, νόμος, δικαιοσύνη, κρίσις, θάνατος
  * PDF_PAGE:         27
  * XP:               45
  * TEMPO:            12 min
@@ -12,269 +12,269 @@
  * Total de Steps: 17
  */
 
-import type { ApostilaLesson } from '../../features/apostila/apostilaTypes';
+import type { ApostilaLesson } from '../../../features/apostila/apostilaTypes';
 
 export const APOSTILA_L13: ApostilaLesson = {
   id: 'apostila-L13',
   lessonNumber: 13,
-  title: 'LiÃ§Ã£o 13 â€” SalvaÃ§Ã£o e Julgamento',
-  description: 'ÏƒÏ‰Ï„Î·ÏÎ¯Î±, Î½ÏŒÎ¼Î¿Ï‚, Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î·, ÎºÏÎ¯ÏƒÎ¹Ï‚, Î¸Î¬Î½Î±Ï„Î¿Ï‚',
+  title: 'Lição 13 — Salvação e Julgamento',
+  description: 'σωτηρία, νόμος, δικαιοσύνη, κρίσις, θάνατος',
   apostilaPdfPage: 27,
   xpReward: 45,
   estimatedMinutes: 12,
   requiresPrevious: true,
 
   steps: [
-    // â”€â”€â”€ S01 â€” INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S01 — INTRO ───────────────────────────────────────────────
     {
       id: 'apostila-L13-S01',
       type: 'intro',
       narration:
-        'LiÃ§Ã£o 13 â€” SalvaÃ§Ã£o e julgamento. Palavras pesadas que definem o evangelho: soteria, nÃ³mos, dikaiosÃ½ne, krÃ­sis e thÃ¡natos. Abra sua apostila na pÃ¡gina 27.',
-      displayText: 'Abra sua apostila na PÃ¡gina 27',
+        'Lição 13 — Salvação e julgamento. Palavras pesadas que definem o evangelho: soteria, nómos, dikaiosýne, krísis e thánatos. Abra sua apostila na página 27.',
+      displayText: 'Abra sua apostila na Página 27',
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S02 â€” WORD_INTRO: ÏƒÏ‰Ï„Î·ÏÎ¯Î± â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S02 — WORD_INTRO: σωτηρία ──────────────────────────────────
     {
       id: 'apostila-L13-S02',
       type: 'word_intro',
       narration:
-        'ÏƒÏ‰Ï„Î·ÏÎ¯Î±, salvaÃ§Ã£o. Em Romanos 1:16, Paulo declara: "O evangelho Ã© o poder de Deus para salvaÃ§Ã£o (ÏƒÏ‰Ï„Î·ÏÎ¯Î±Î½) de todo aquele que crÃª."',
-      greekForm: 'ÏƒÏ‰Ï„Î·ÏÎ¯Î±',
-      transliteration: 'sÅtÄ“rÃ­a',
-      pronunciation: 'so-te-RÃ-a',
-      translation: 'salvaÃ§Ã£o / libertaÃ§Ã£o',
+        'σωτηρία, salvação. Em Romanos 1:16, Paulo declara: "O evangelho é o poder de Deus para salvação (σωτηρίαν) de todo aquele que crê."',
+      greekForm: 'σωτηρία',
+      transliteration: 'sōtēría',
+      pronunciation: 'so-te-RÍ-a',
+      translation: 'salvação / libertação',
       etymology:
-        'De Ïƒá¿´Î¶Ï‰ (salvar); ÏƒÏ‰Ï„Î®Ï (Salvador) Ã© tÃ­tulo de imperadores romanos â€” Paulo o reivindica para Cristo',
+        'De σῴζω (salvar); σωτήρ (Salvador) é título de imperadores romanos — Paulo o reivindica para Cristo',
       contextVerse: 'Romanos 1:16',
       contextVerseText:
-        '"O evangelho... Ã© o poder de Deus para salvaÃ§Ã£o (ÏƒÏ‰Ï„Î·ÏÎ¯Î±Î½) de todo aquele que crÃª"',
+        '"O evangelho... é o poder de Deus para salvação (σωτηρίαν) de todo aquele que crê"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S03 â€” WRITE_PRACTICE: ÏƒÏ‰Ï„Î·ÏÎ¯Î± â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S03 — WRITE_PRACTICE: σωτηρία ──────────────────────────────
     {
       id: 'apostila-L13-S03',
       type: 'write_practice',
       narration:
-        'Agora escreva ÏƒÏ‰Ï„Î·ÏÎ¯Î± cinco vezes na linha 1. Pronuncie: so-te-RÃ-a.',
-      greekForm: 'ÏƒÏ‰Ï„Î·ÏÎ¯Î±',
-      transliteration: 'sÅtÄ“rÃ­a',
+        'Agora escreva σωτηρία cinco vezes na linha 1. Pronuncie: so-te-RÍ-a.',
+      greekForm: 'σωτηρία',
+      transliteration: 'sōtēría',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 1 da apostila â€” ÏƒÏ‰Ï„Î·ÏÎ¯Î±',
+      writeInstruction: 'Linha 1 da apostila — σωτηρία',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S04 â€” WORD_INTRO: Î½ÏŒÎ¼Î¿Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S04 — WORD_INTRO: νόμος ────────────────────────────────────
     {
       id: 'apostila-L13-S04',
       type: 'word_intro',
       narration:
-        'Î½ÏŒÎ¼Î¿Ï‚, lei. Em Romanos 3:31, Paulo pergunta: "Anulamos a lei (Î½ÏŒÎ¼Î¿Î½) pela fÃ©? De modo nenhum! Antes a confirmamos."',
-      greekForm: 'Î½ÏŒÎ¼Î¿Ï‚',
-      transliteration: 'nÃ³mos',
-      pronunciation: 'NÃ“-mos',
-      translation: 'lei / TorÃ¡ / princÃ­pio',
+        'νόμος, lei. Em Romanos 3:31, Paulo pergunta: "Anulamos a lei (νόμον) pela fé? De modo nenhum! Antes a confirmamos."',
+      greekForm: 'νόμος',
+      transliteration: 'nómos',
+      pronunciation: 'NÓ-mos',
+      translation: 'lei / Torá / princípio',
       etymology:
-        'De Î½Î­Î¼Ï‰, distribuir; a lei como ordem distribuÃ­da e atribuÃ­da',
+        'De νέμω, distribuir; a lei como ordem distribuída e atribuída',
       contextVerse: 'Romanos 3:31',
       contextVerseText:
-        '"De modo que anulamos a lei (Î½ÏŒÎ¼Î¿Î½) pela fÃ©? De modo nenhum! Antes a confirmamos"',
+        '"De modo que anulamos a lei (νόμον) pela fé? De modo nenhum! Antes a confirmamos"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S05 â€” WRITE_PRACTICE: Î½ÏŒÎ¼Î¿Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S05 — WRITE_PRACTICE: νόμος ────────────────────────────────
     {
       id: 'apostila-L13-S05',
       type: 'write_practice',
       narration:
-        'Agora escreva Î½ÏŒÎ¼Î¿Ï‚ cinco vezes na linha 2. Pronuncie: NÃ“-mos.',
-      greekForm: 'Î½ÏŒÎ¼Î¿Ï‚',
-      transliteration: 'nÃ³mos',
+        'Agora escreva νόμος cinco vezes na linha 2. Pronuncie: NÓ-mos.',
+      greekForm: 'νόμος',
+      transliteration: 'nómos',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 2 da apostila â€” Î½ÏŒÎ¼Î¿Ï‚',
+      writeInstruction: 'Linha 2 da apostila — νόμος',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S06 â€” WORD_INTRO: Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î· â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S06 — WORD_INTRO: δικαιοσύνη ───────────────────────────────
     {
       id: 'apostila-L13-S06',
       type: 'word_intro',
       narration:
-        'Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î·, justiÃ§a. Em Romanos 3:22: "A justiÃ§a (Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î·) de Deus pela fÃ© em Jesus Cristo para todos os que creem."',
-      greekForm: 'Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î·',
-      transliteration: 'dikaiosÃ½nÄ“',
-      pronunciation: 'di-kai-o-SÃ-ne',
-      translation: 'justiÃ§a / retidÃ£o',
+        'δικαιοσύνη, justiça. Em Romanos 3:22: "A justiça (δικαιοσύνη) de Deus pela fé em Jesus Cristo para todos os que creem."',
+      greekForm: 'δικαιοσύνη',
+      transliteration: 'dikaiosýnē',
+      pronunciation: 'di-kai-o-SÍ-ne',
+      translation: 'justiça / retidão',
       etymology:
-        'De Î´Î¯ÎºÎ±Î¹Î¿Ï‚ (justo); conceito central em Paulo: ser declarado justo por Deus',
+        'De δίκαιος (justo); conceito central em Paulo: ser declarado justo por Deus',
       contextVerse: 'Romanos 3:22',
       contextVerseText:
-        '"A justiÃ§a (Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î·) de Deus pela fÃ© em Jesus Cristo para todos os que creem"',
+        '"A justiça (δικαιοσύνη) de Deus pela fé em Jesus Cristo para todos os que creem"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S07 â€” WRITE_PRACTICE: Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î· â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S07 — WRITE_PRACTICE: δικαιοσύνη ───────────────────────────
     {
       id: 'apostila-L13-S07',
       type: 'write_practice',
       narration:
-        'Agora escreva Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î· cinco vezes na linha 3. Pronuncie: di-kai-o-SÃ-ne.',
-      greekForm: 'Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î·',
-      transliteration: 'dikaiosÃ½nÄ“',
+        'Agora escreva δικαιοσύνη cinco vezes na linha 3. Pronuncie: di-kai-o-SÍ-ne.',
+      greekForm: 'δικαιοσύνη',
+      transliteration: 'dikaiosýnē',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 3 da apostila â€” Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î·',
+      writeInstruction: 'Linha 3 da apostila — δικαιοσύνη',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S08 â€” WORD_INTRO: ÎºÏÎ¯ÏƒÎ¹Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S08 — WORD_INTRO: κρίσις ───────────────────────────────────
     {
       id: 'apostila-L13-S08',
       type: 'word_intro',
       narration:
-        'ÎºÏÎ¯ÏƒÎ¹Ï‚, julgamento. Em JoÃ£o 3:19: "Esta Ã© a condenaÃ§Ã£o (ÎºÏÎ¯ÏƒÎ¹Ï‚): a luz veio ao mundo, mas os homens amaram mais as trevas."',
-      greekForm: 'ÎºÏÎ¯ÏƒÎ¹Ï‚',
-      transliteration: 'krÃ­sis',
-      pronunciation: 'KRÃ-sis',
-      translation: 'julgamento / decisÃ£o',
+        'κρίσις, julgamento. Em João 3:19: "Esta é a condenação (κρίσις): a luz veio ao mundo, mas os homens amaram mais as trevas."',
+      greekForm: 'κρίσις',
+      transliteration: 'krísis',
+      pronunciation: 'KRÍ-sis',
+      translation: 'julgamento / decisão',
       etymology:
-        'Deu origem a "crise" e "crÃ­tica"; o ponto de decisÃ£o onde o destino Ã© determinado',
-      contextVerse: 'JoÃ£o 3:19',
+        'Deu origem a "crise" e "crítica"; o ponto de decisão onde o destino é determinado',
+      contextVerse: 'João 3:19',
       contextVerseText:
-        '"Esta Ã© a condenaÃ§Ã£o (ÎºÏÎ¯ÏƒÎ¹Ï‚): a luz veio ao mundo, mas os homens amaram mais as trevas"',
+        '"Esta é a condenação (κρίσις): a luz veio ao mundo, mas os homens amaram mais as trevas"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S09 â€” WRITE_PRACTICE: ÎºÏÎ¯ÏƒÎ¹Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S09 — WRITE_PRACTICE: κρίσις ───────────────────────────────
     {
       id: 'apostila-L13-S09',
       type: 'write_practice',
       narration:
-        'Agora escreva ÎºÏÎ¯ÏƒÎ¹Ï‚ cinco vezes na linha 4. Pronuncie: KRÃ-sis.',
-      greekForm: 'ÎºÏÎ¯ÏƒÎ¹Ï‚',
-      transliteration: 'krÃ­sis',
+        'Agora escreva κρίσις cinco vezes na linha 4. Pronuncie: KRÍ-sis.',
+      greekForm: 'κρίσις',
+      transliteration: 'krísis',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 4 da apostila â€” ÎºÏÎ¯ÏƒÎ¹Ï‚',
+      writeInstruction: 'Linha 4 da apostila — κρίσις',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S10 â€” WORD_INTRO: Î¸Î¬Î½Î±Ï„Î¿Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S10 — WORD_INTRO: θάνατος ──────────────────────────────────
     {
       id: 'apostila-L13-S10',
       type: 'word_intro',
       narration:
-        'Î¸Î¬Î½Î±Ï„Î¿Ï‚, morte. Em Romanos 6:23: "O salÃ¡rio do pecado Ã© a morte (Î¸Î¬Î½Î±Ï„Î¿Ï‚), mas o dom gratuito de Deus Ã© a vida eterna."',
-      greekForm: 'Î¸Î¬Î½Î±Ï„Î¿Ï‚',
-      transliteration: 'thÃ¡natos',
-      pronunciation: 'TÃ‚-na-tos',
+        'θάνατος, morte. Em Romanos 6:23: "O salário do pecado é a morte (θάνατος), mas o dom gratuito de Deus é a vida eterna."',
+      greekForm: 'θάνατος',
+      transliteration: 'thánatos',
+      pronunciation: 'TÂ-na-tos',
       translation: 'morte',
       etymology:
-        'Deu origem a "eutanÃ¡sia" (boa morte); Paulo o personifica como inimigo em 1 Cor 15',
+        'Deu origem a "eutanásia" (boa morte); Paulo o personifica como inimigo em 1 Cor 15',
       contextVerse: 'Romanos 6:23',
       contextVerseText:
-        '"Porque o salÃ¡rio do pecado Ã© a morte (Î¸Î¬Î½Î±Ï„Î¿Ï‚), mas o dom gratuito de Deus Ã© a vida eterna"',
+        '"Porque o salário do pecado é a morte (θάνατος), mas o dom gratuito de Deus é a vida eterna"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S11 â€” WRITE_PRACTICE: Î¸Î¬Î½Î±Ï„Î¿Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S11 — WRITE_PRACTICE: θάνατος ──────────────────────────────
     {
       id: 'apostila-L13-S11',
       type: 'write_practice',
       narration:
-        'Agora escreva Î¸Î¬Î½Î±Ï„Î¿Ï‚ cinco vezes na linha 5. Pronuncie: TÃ‚-na-tos.',
-      greekForm: 'Î¸Î¬Î½Î±Ï„Î¿Ï‚',
-      transliteration: 'thÃ¡natos',
+        'Agora escreva θάνατος cinco vezes na linha 5. Pronuncie: TÂ-na-tos.',
+      greekForm: 'θάνατος',
+      transliteration: 'thánatos',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 5 da apostila â€” Î¸Î¬Î½Î±Ï„Î¿Ï‚',
+      writeInstruction: 'Linha 5 da apostila — θάνατος',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S12 â€” PAUSE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S12 — PAUSE ────────────────────────────────────────────────
     {
       id: 'apostila-L13-S12',
       type: 'pause',
       narration:
-        'SalvaÃ§Ã£o, lei, justiÃ§a, julgamento e morte â€” o vocabulÃ¡rio da cruz. Releia estas palavras.',
+        'Salvação, lei, justiça, julgamento e morte — o vocabulário da cruz. Releia estas palavras.',
       displayText:
         'Releia as cinco palavras na sua apostila.\nQuando estiver pronto, continue.',
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S13 â€” DICTATION: ÏƒÏ‰Ï„Î·ÏÎ¯Î± â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S13 — DICTATION: σωτηρία ───────────────────────────────────
     {
       id: 'apostila-L13-S13',
       type: 'dictation',
-      narration: 'Ditado: escreva a palavra grega para "salvaÃ§Ã£o".',
-      displayText: '"salvaÃ§Ã£o"',
-      greekForm: 'ÏƒÏ‰Ï„Î·ÏÎ¯Î±',
-      translation: 'salvaÃ§Ã£o',
+      narration: 'Ditado: escreva a palavra grega para "salvação".',
+      displayText: '"salvação"',
+      greekForm: 'σωτηρία',
+      translation: 'salvação',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S14 â€” DICTATION: Î½ÏŒÎ¼Î¿Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S14 — DICTATION: νόμος ─────────────────────────────────────
     {
       id: 'apostila-L13-S14',
       type: 'dictation',
       narration: 'Ditado: escreva a palavra grega para "lei".',
       displayText: '"lei"',
-      greekForm: 'Î½ÏŒÎ¼Î¿Ï‚',
+      greekForm: 'νόμος',
       translation: 'lei',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S15 â€” DICTATION: Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î· â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S15 — DICTATION: δικαιοσύνη ────────────────────────────────
     {
       id: 'apostila-L13-S15',
       type: 'dictation',
-      narration: 'Ditado: escreva a palavra grega para "justiÃ§a".',
-      displayText: '"justiÃ§a"',
-      greekForm: 'Î´Î¹ÎºÎ±Î¹Î¿ÏƒÏÎ½Î·',
-      translation: 'justiÃ§a',
+      narration: 'Ditado: escreva a palavra grega para "justiça".',
+      displayText: '"justiça"',
+      greekForm: 'δικαιοσύνη',
+      translation: 'justiça',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S16 â€” DICTATION: ÎºÏÎ¯ÏƒÎ¹Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S16 — DICTATION: κρίσις ────────────────────────────────────
     {
       id: 'apostila-L13-S16',
       type: 'dictation',
       narration: 'Ditado: escreva a palavra grega para "julgamento".',
       displayText: '"julgamento"',
-      greekForm: 'ÎºÏÎ¯ÏƒÎ¹Ï‚',
+      greekForm: 'κρίσις',
       translation: 'julgamento',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S17 â€” DICTATION: Î¸Î¬Î½Î±Ï„Î¿Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S17 — DICTATION: θάνατος ───────────────────────────────────
     {
       id: 'apostila-L13-S17',
       type: 'dictation',
       narration: 'Ditado: escreva a palavra grega para "morte".',
       displayText: '"morte"',
-      greekForm: 'Î¸Î¬Î½Î±Ï„Î¿Ï‚',
+      greekForm: 'θάνατος',
       translation: 'morte',
       revealAfterConfirm: true,
       showPaperBadge: true,

@@ -1,9 +1,9 @@
-﻿/**
- * L15 â€” O Mundo Criado (ÎºÏŒÏƒÎ¼Î¿Ï‚, Î¿á½ÏÎ±Î½ÏŒÏ‚, Î³á¿†, á½•Î´Ï‰Ï, á¼„ÏÏ„Î¿Ï‚)
+/**
+ * L15 — O Mundo Criado (κόσμος, οὐρανός, γῆ, ὕδωρ, ἄρτος)
  *
  * ID:               apostila-L15
- * TÃTULO:           LiÃ§Ã£o 15 â€” O Mundo Criado
- * DESCRIÃ‡ÃƒO:        ÎºÏŒÏƒÎ¼Î¿Ï‚, Î¿á½ÏÎ±Î½ÏŒÏ‚, Î³á¿†, á½•Î´Ï‰Ï, á¼„ÏÏ„Î¿Ï‚
+ * TÍTULO:           Lição 15 — O Mundo Criado
+ * DESCRIÇÃO:        κόσμος, οὐρανός, γῆ, ὕδωρ, ἄρτος
  * PDF_PAGE:         31
  * XP:               45
  * TEMPO:            12 min
@@ -12,12 +12,12 @@
  * Total de Steps: 17
  */
 
-import type { ApostilaLesson } from '../../features/apostila/apostilaTypes';
+import type { ApostilaLesson } from '../../../features/apostila/apostilaTypes';
 
 export const APOSTILA_L15: ApostilaLesson = {
   id: 'apostila-L15',
-  title: 'LiÃ§Ã£o 15 â€” O Mundo Criado',
-  description: 'ÎºÏŒÏƒÎ¼Î¿Ï‚, Î¿á½ÏÎ±Î½ÏŒÏ‚, Î³á¿†, á½•Î´Ï‰Ï, á¼„ÏÏ„Î¿Ï‚',
+  title: 'Lição 15 — O Mundo Criado',
+  description: 'κόσμος, οὐρανός, γῆ, ὕδωρ, ἄρτος',
   apostilaPdfPage: 31,
   lessonNumber: 15,
   xpReward: 45,
@@ -29,8 +29,8 @@ export const APOSTILA_L15: ApostilaLesson = {
       id: 'apostila-L15-S01',
       type: 'intro',
       narration:
-        'LiÃ§Ã£o 15 â€” O mundo criado. Hoje vamos aprender palavras que descrevem a criaÃ§Ã£o de Deus: kosmos, ouranÃ³s, gÃª, hydor e artos. Abra sua apostila na pÃ¡gina 31.',
-      displayText: 'Abra sua apostila na PÃ¡gina 31',
+        'Lição 15 — O mundo criado. Hoje vamos aprender palavras que descrevem a criação de Deus: kosmos, ouranós, gê, hydor e artos. Abra sua apostila na página 31.',
+      displayText: 'Abra sua apostila na Página 31',
       showGreekLarge: false,
     },
 
@@ -38,16 +38,16 @@ export const APOSTILA_L15: ApostilaLesson = {
       id: 'apostila-L15-S02',
       type: 'word_intro',
       narration:
-        'ÎºÏŒÏƒÎ¼Î¿Ï‚ significa mundo, ordem, universo. Originalmente significava "ordem" ou "adorno" â€” deu origem a "cosmÃ©tico" e "cosmos". Em JoÃ£o 3:16, lemos: "Porque Deus amou o mundo de tal maneira". Pronuncia-se KÃ“S-mos.',
-      greekForm: 'ÎºÏŒÏƒÎ¼Î¿Ï‚',
-      transliteration: 'kÃ³smos',
-      pronunciation: 'KÃ“S-mos',
+        'κόσμος significa mundo, ordem, universo. Originalmente significava "ordem" ou "adorno" — deu origem a "cosmético" e "cosmos". Em João 3:16, lemos: "Porque Deus amou o mundo de tal maneira". Pronuncia-se KÓS-mos.',
+      greekForm: 'κόσμος',
+      transliteration: 'kósmos',
+      pronunciation: 'KÓS-mos',
       translation: 'mundo / ordem / universo',
       etymology:
-        'Originalmente "ordem" ou "adorno"; deu origem a "cosmÃ©tico" e "cosmos"',
-      contextVerse: 'JoÃ£o 3:16',
+        'Originalmente "ordem" ou "adorno"; deu origem a "cosmético" e "cosmos"',
+      contextVerse: 'João 3:16',
       contextVerseText:
-        '"Porque Deus amou o mundo (ÎºÏŒÏƒÎ¼Î¿Î½) de tal maneira"',
+        '"Porque Deus amou o mundo (κόσμον) de tal maneira"',
       showGreekLarge: true,
     },
 
@@ -55,11 +55,11 @@ export const APOSTILA_L15: ApostilaLesson = {
       id: 'apostila-L15-S03',
       type: 'write_practice',
       narration:
-        'Agora escreva ÎºÏŒÏƒÎ¼Î¿Ï‚ cinco vezes na linha 1. Pronuncie: KÃ“S-mos.',
-      greekForm: 'ÎºÏŒÏƒÎ¼Î¿Ï‚',
-      transliteration: 'kÃ³smos',
+        'Agora escreva κόσμος cinco vezes na linha 1. Pronuncie: KÓS-mos.',
+      greekForm: 'κόσμος',
+      transliteration: 'kósmos',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 1 da apostila â€” ÎºÏŒÏƒÎ¼Î¿Ï‚',
+      writeInstruction: 'Linha 1 da apostila — κόσμος',
       showPaperBadge: true,
       showGreekLarge: true,
     },
@@ -68,16 +68,16 @@ export const APOSTILA_L15: ApostilaLesson = {
       id: 'apostila-L15-S04',
       type: 'word_intro',
       narration:
-        'Î¿á½ÏÎ±Î½ÏŒÏ‚ significa cÃ©u, morada divina. Deu nome ao planeta Urano. Em Mateus 6:9, oramos: "Pai nosso que estÃ¡s nos cÃ©us". Pronuncia-se ou-ra-NÃ“S.',
-      greekForm: 'Î¿á½ÏÎ±Î½ÏŒÏ‚',
-      transliteration: 'ouranÃ³s',
-      pronunciation: 'ou-ra-NÃ“S',
-      translation: 'cÃ©u / morada divina',
+        'οὐρανός significa céu, morada divina. Deu nome ao planeta Urano. Em Mateus 6:9, oramos: "Pai nosso que estás nos céus". Pronuncia-se ou-ra-NÓS.',
+      greekForm: 'οὐρανός',
+      transliteration: 'ouranós',
+      pronunciation: 'ou-ra-NÓS',
+      translation: 'céu / morada divina',
       etymology:
-        'Deu nome ao planeta Urano; em hebraico ×©Ö¸××žÖ·×™Ö´× (shamayim) tem raiz de "lÃ¡ em cima"',
+        'Deu nome ao planeta Urano; em hebraico שָׁמַיִם (shamayim) tem raiz de "lá em cima"',
       contextVerse: 'Mateus 6:9',
       contextVerseText:
-        '"Pai nosso que estÃ¡s nos cÃ©us (Î¿á½ÏÎ±Î½Î¿á¿–Ï‚)"',
+        '"Pai nosso que estás nos céus (οὐρανοῖς)"',
       showGreekLarge: true,
     },
 
@@ -85,11 +85,11 @@ export const APOSTILA_L15: ApostilaLesson = {
       id: 'apostila-L15-S05',
       type: 'write_practice',
       narration:
-        'Agora escreva Î¿á½ÏÎ±Î½ÏŒÏ‚ cinco vezes na linha 2. Pronuncie: ou-ra-NÃ“S.',
-      greekForm: 'Î¿á½ÏÎ±Î½ÏŒÏ‚',
-      transliteration: 'ouranÃ³s',
+        'Agora escreva οὐρανός cinco vezes na linha 2. Pronuncie: ou-ra-NÓS.',
+      greekForm: 'οὐρανός',
+      transliteration: 'ouranós',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 2 da apostila â€” Î¿á½ÏÎ±Î½ÏŒÏ‚',
+      writeInstruction: 'Linha 2 da apostila — οὐρανός',
       showPaperBadge: true,
       showGreekLarge: true,
     },
@@ -98,16 +98,16 @@ export const APOSTILA_L15: ApostilaLesson = {
       id: 'apostila-L15-S06',
       type: 'word_intro',
       narration:
-        'Î³á¿† significa terra, solo, paÃ­s. Deu origem a "geografia" e "geologia". Em Mateus 5:5, Jesus diz: "Bem-aventurados os mansos, porque eles herdarÃ£o a terra". Pronuncia-se GÃŠ.',
-      greekForm: 'Î³á¿†',
-      transliteration: 'gÄ“',
-      pronunciation: 'GÃŠ',
-      translation: 'terra / solo / paÃ­s',
+        'γῆ significa terra, solo, país. Deu origem a "geografia" e "geologia". Em Mateus 5:5, Jesus diz: "Bem-aventurados os mansos, porque eles herdarão a terra". Pronuncia-se GÊ.',
+      greekForm: 'γῆ',
+      transliteration: 'gē',
+      pronunciation: 'GÊ',
+      translation: 'terra / solo / país',
       etymology:
         'Deu origem a "geografia" e "geologia"; a Gaia da mitologia grega',
       contextVerse: 'Mateus 5:5',
       contextVerseText:
-        '"Bem-aventurados os mansos, porque eles herdarÃ£o a terra (Î³á¿†Î½)"',
+        '"Bem-aventurados os mansos, porque eles herdarão a terra (γῆν)"',
       showGreekLarge: true,
     },
 
@@ -115,11 +115,11 @@ export const APOSTILA_L15: ApostilaLesson = {
       id: 'apostila-L15-S07',
       type: 'write_practice',
       narration:
-        'Agora escreva Î³á¿† cinco vezes na linha 3. Pronuncie: GÃŠ.',
-      greekForm: 'Î³á¿†',
-      transliteration: 'gÄ“',
+        'Agora escreva γῆ cinco vezes na linha 3. Pronuncie: GÊ.',
+      greekForm: 'γῆ',
+      transliteration: 'gē',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 3 da apostila â€” Î³á¿†',
+      writeInstruction: 'Linha 3 da apostila — γῆ',
       showPaperBadge: true,
       showGreekLarge: true,
     },
@@ -128,16 +128,16 @@ export const APOSTILA_L15: ApostilaLesson = {
       id: 'apostila-L15-S08',
       type: 'word_intro',
       narration:
-        'á½•Î´Ï‰Ï significa Ã¡gua. Deu origem a "hidrÃ¡ulica" e "hidrogÃªnio". Em JoÃ£o 4:14, Jesus promete Ã¡gua viva. Pronuncia-se HÃ-dor.',
-      greekForm: 'á½•Î´Ï‰Ï',
-      transliteration: 'hÃ½dÅr',
-      pronunciation: 'HÃ-dor',
-      translation: 'Ã¡gua',
+        'ὕδωρ significa água. Deu origem a "hidráulica" e "hidrogênio". Em João 4:14, Jesus promete água viva. Pronuncia-se HÍ-dor.',
+      greekForm: 'ὕδωρ',
+      transliteration: 'hýdōr',
+      pronunciation: 'HÍ-dor',
+      translation: 'água',
       etymology:
-        'Deu origem a "hidrÃ¡ulica" e "hidrogÃªnio"; em JoÃ£o 4:14, Jesus promete Ã¡gua viva (Î¶á¿¶Î½)',
-      contextVerse: 'JoÃ£o 4:14',
+        'Deu origem a "hidráulica" e "hidrogênio"; em João 4:14, Jesus promete água viva (ζῶν)',
+      contextVerse: 'João 4:14',
       contextVerseText:
-        '"Aquele que beber da Ã¡gua (á½•Î´Ï‰Ï) que eu lhe der nunca mais terÃ¡ sede"',
+        '"Aquele que beber da água (ὕδωρ) que eu lhe der nunca mais terá sede"',
       showGreekLarge: true,
     },
 
@@ -145,11 +145,11 @@ export const APOSTILA_L15: ApostilaLesson = {
       id: 'apostila-L15-S09',
       type: 'write_practice',
       narration:
-        'Agora escreva á½•Î´Ï‰Ï cinco vezes na linha 4. Pronuncie: HÃ-dor.',
-      greekForm: 'á½•Î´Ï‰Ï',
-      transliteration: 'hÃ½dÅr',
+        'Agora escreva ὕδωρ cinco vezes na linha 4. Pronuncie: HÍ-dor.',
+      greekForm: 'ὕδωρ',
+      transliteration: 'hýdōr',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 4 da apostila â€” á½•Î´Ï‰Ï',
+      writeInstruction: 'Linha 4 da apostila — ὕδωρ',
       showPaperBadge: true,
       showGreekLarge: true,
     },
@@ -158,16 +158,16 @@ export const APOSTILA_L15: ApostilaLesson = {
       id: 'apostila-L15-S10',
       type: 'word_intro',
       narration:
-        'á¼„ÏÏ„Î¿Ï‚ significa pÃ£o, alimento. Em JoÃ£o 6:35, Jesus se declara á½ á¼„ÏÏ„Î¿Ï‚ Ï„á¿†Ï‚ Î¶Ï‰á¿†Ï‚ â€” o pÃ£o da vida. Pronuncia-se ÃR-tos.',
-      greekForm: 'á¼„ÏÏ„Î¿Ï‚',
-      transliteration: 'Ã¡rtos',
-      pronunciation: 'ÃR-tos',
-      translation: 'pÃ£o / alimento',
+        'ἄρτος significa pão, alimento. Em João 6:35, Jesus se declara ὁ ἄρτος τῆς ζωῆς — o pão da vida. Pronuncia-se ÁR-tos.',
+      greekForm: 'ἄρτος',
+      transliteration: 'ártos',
+      pronunciation: 'ÁR-tos',
+      translation: 'pão / alimento',
       etymology:
-        'Em JoÃ£o 6:35, Jesus se declara á½ á¼„ÏÏ„Î¿Ï‚ Ï„á¿†Ï‚ Î¶Ï‰á¿†Ï‚ â€” o pÃ£o da vida; referÃªncia ao manÃ¡',
-      contextVerse: 'JoÃ£o 6:35',
+        'Em João 6:35, Jesus se declara ὁ ἄρτος τῆς ζωῆς — o pão da vida; referência ao maná',
+      contextVerse: 'João 6:35',
       contextVerseText:
-        '"Eu sou o pÃ£o (á¼„ÏÏ„Î¿Ï‚) da vida"',
+        '"Eu sou o pão (ἄρτος) da vida"',
       showGreekLarge: true,
     },
 
@@ -175,11 +175,11 @@ export const APOSTILA_L15: ApostilaLesson = {
       id: 'apostila-L15-S11',
       type: 'write_practice',
       narration:
-        'Agora escreva á¼„ÏÏ„Î¿Ï‚ cinco vezes na linha 5. Pronuncie: ÃR-tos.',
-      greekForm: 'á¼„ÏÏ„Î¿Ï‚',
-      transliteration: 'Ã¡rtos',
+        'Agora escreva ἄρτος cinco vezes na linha 5. Pronuncie: ÁR-tos.',
+      greekForm: 'ἄρτος',
+      transliteration: 'ártos',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 5 da apostila â€” á¼„ÏÏ„Î¿Ï‚',
+      writeInstruction: 'Linha 5 da apostila — ἄρτος',
       showPaperBadge: true,
       showGreekLarge: true,
     },
@@ -188,9 +188,9 @@ export const APOSTILA_L15: ApostilaLesson = {
       id: 'apostila-L15-S12',
       type: 'pause',
       narration:
-        'CÃ©us, terra, Ã¡gua, pÃ£o â€” o mundo criado aponta para o Criador. Releia estas palavras.',
+        'Céus, terra, água, pão — o mundo criado aponta para o Criador. Releia estas palavras.',
       displayText:
-        'CÃ©us, terra, Ã¡gua, pÃ£o â€” o mundo criado aponta para o Criador.\nQuando estiver pronto, continue.',
+        'Céus, terra, água, pão — o mundo criado aponta para o Criador.\nQuando estiver pronto, continue.',
       showGreekLarge: false,
     },
 
@@ -199,7 +199,7 @@ export const APOSTILA_L15: ApostilaLesson = {
       type: 'dictation',
       narration: 'Escreva no papel: mundo.',
       displayText: '"mundo"',
-      greekForm: 'ÎºÏŒÏƒÎ¼Î¿Ï‚',
+      greekForm: 'κόσμος',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
@@ -208,9 +208,9 @@ export const APOSTILA_L15: ApostilaLesson = {
     {
       id: 'apostila-L15-S14',
       type: 'dictation',
-      narration: 'Escreva no papel: cÃ©u.',
-      displayText: '"cÃ©u"',
-      greekForm: 'Î¿á½ÏÎ±Î½ÏŒÏ‚',
+      narration: 'Escreva no papel: céu.',
+      displayText: '"céu"',
+      greekForm: 'οὐρανός',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
@@ -221,7 +221,7 @@ export const APOSTILA_L15: ApostilaLesson = {
       type: 'dictation',
       narration: 'Escreva no papel: terra.',
       displayText: '"terra"',
-      greekForm: 'Î³á¿†',
+      greekForm: 'γῆ',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
@@ -230,9 +230,9 @@ export const APOSTILA_L15: ApostilaLesson = {
     {
       id: 'apostila-L15-S16',
       type: 'dictation',
-      narration: 'Escreva no papel: Ã¡gua.',
-      displayText: '"Ã¡gua"',
-      greekForm: 'á½•Î´Ï‰Ï',
+      narration: 'Escreva no papel: água.',
+      displayText: '"água"',
+      greekForm: 'ὕδωρ',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
@@ -241,9 +241,9 @@ export const APOSTILA_L15: ApostilaLesson = {
     {
       id: 'apostila-L15-S17',
       type: 'dictation',
-      narration: 'Escreva no papel: pÃ£o.',
-      displayText: '"pÃ£o"',
-      greekForm: 'á¼„ÏÏ„Î¿Ï‚',
+      narration: 'Escreva no papel: pão.',
+      displayText: '"pão"',
+      greekForm: 'ἄρτος',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,

@@ -7,6 +7,9 @@ const engine = AudioEngine.getInstance();
 
 export function useGuidedAudio(moduleId?: string) {
   const audioEnabled = useSettingsStore(s => s.audioEnabled);
+  const narrationVolume = useSettingsStore(s => s.narrationVolume);
+  const masterVolume = useSettingsStore(s => s.masterVolume);
+
   const [state, setState] = useState<AudioEngineState>(engine.state);
   const [currentCue, setCurrentCue] = useState<Cue | null>(null);
   const [currentGroup, setCurrentGroup] = useState<CueGroup | null>(null);
@@ -16,6 +19,12 @@ export function useGuidedAudio(moduleId?: string) {
   useEffect(() => {
     engine.setEnabled(audioEnabled);
   }, [audioEnabled]);
+
+  // Atualiza volume quando muda
+  useEffect(() => {
+    const volume = (masterVolume / 100) * (narrationVolume / 100);
+    engine.setVolume(volume);
+  }, [masterVolume, narrationVolume]);
 
   // Carrega módulo
   useEffect(() => {

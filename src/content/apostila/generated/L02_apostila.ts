@@ -1,9 +1,9 @@
-﻿/**
- * L02 â€” Vogais Longas e o Upsilon (Î¿, Ï…, Ï‰)
+/**
+ * L02 — Vogais Longas e o Upsilon (ο, υ, ω)
  *
  * ID:               apostila-L02
- * TÃTULO:           LiÃ§Ã£o 2 â€” Vogais Longas e o Upsilon
- * DESCRIÃ‡ÃƒO:        Omicron, Upsilon, Omega
+ * TÍTULO:           Lição 2 — Vogais Longas e o Upsilon
+ * DESCRIÇÃO:        Omicron, Upsilon, Omega
  * PDF_PAGE:         3
  * XP:               30
  * TEMPO:            10 min
@@ -12,11 +12,11 @@
  * Total de Steps: 14
  */
 
-import type { ApostilaLesson } from '../../features/apostila/apostilaTypes';
+import type { ApostilaLesson } from '../../../features/apostila/apostilaTypes';
 
 export const APOSTILA_L02: ApostilaLesson = {
   id: 'apostila-L02',
-  title: 'LiÃ§Ã£o 2 â€” Vogais Longas e o Upsilon',
+  title: 'Lição 2 — Vogais Longas e o Upsilon',
   description: 'Omicron, Upsilon, Omega',
   apostilaPdfPage: 3,
   lessonNumber: 2,
@@ -25,169 +25,169 @@ export const APOSTILA_L02: ApostilaLesson = {
   requiresPrevious: true,
 
   steps: [
-    // â”€â”€â”€ S01 â€” INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S01 — INTRO ───────────────────────────────────────────────
     {
       id: 'apostila-L02-S01',
       type: 'intro',
-      narration: 'Hoje completaremos as vogais gregas. VocÃª aprenderÃ¡ o omicron, o upsilon e finalmente o omega â€” o "o grande". Estas letras sÃ£o essenciais para pronunciar corretamente as palavras do Novo Testamento. Abra sua apostila na pÃ¡gina 3 e acompanhe comigo.',
-      displayText: 'Abra sua apostila na PÃ¡gina 3',
+      narration: 'Hoje completaremos as vogais gregas. Você aprenderá o omicron, o upsilon e finalmente o omega — o "o grande". Estas letras são essenciais para pronunciar corretamente as palavras do Novo Testamento. Abra sua apostila na página 3 e acompanhe comigo.',
+      displayText: 'Abra sua apostila na Página 3',
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S02 â€” WORD_INTRO: OMICRON â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S02 — WORD_INTRO: OMICRON ─────────────────────────────────
     {
       id: 'apostila-L02-S02',
       type: 'word_intro',
-      narration: 'A primeira letra Ã© o omicron. MaiÃºsculo: ÎŸ. MinÃºsculo: Î¿. O som Ã© "o" breve, como em "sol". O nome significa "o pequeno", para distinguir do Ã´mega (o grande).',
-      greekForm: 'ÎŸ Î¿',
+      narration: 'A primeira letra é o omicron. Maiúsculo: Ο. Minúsculo: ο. O som é "o" breve, como em "sol". O nome significa "o pequeno", para distinguir do ômega (o grande).',
+      greekForm: 'Ο ο',
       transliteration: 'omicron',
       pronunciation: 'o breve (como em "sol")',
       translation: 'Letra Omicron',
-      etymology: 'Î¿ + Î¼Î¹ÎºÏÏŒÎ½ significa "o pequeno", para distinguir do Ã´mega (o grande)',
-      contextVerse: 'JoÃ£o 3:16',
-      contextVerseText: '"...o mundo (ÎºÏŒÏƒÎ¼Î¿Î½)" â€” Î¿ aparece como terminaÃ§Ã£o de substantivos masculinos no acusativo',
+      etymology: 'ο + μικρόν significa "o pequeno", para distinguir do ômega (o grande)',
+      contextVerse: 'João 3:16',
+      contextVerseText: '"...o mundo (κόσμον)" — ο aparece como terminação de substantivos masculinos no acusativo',
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S03 â€” ALPHABET_TRACE: OMICRON â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S03 — ALPHABET_TRACE: OMICRON ──────────────────────────────
     {
       id: 'apostila-L02-S03',
       type: 'alphabet_trace',
-      narration: 'Observe a ordem dos traÃ§os do omicron minÃºsculo. Um Ãºnico cÃ­rculo fechado, traÃ§ado no sentido anti-horÃ¡rio.',
-      greekForm: 'Î¿',
+      narration: 'Observe a ordem dos traços do omicron minúsculo. Um único círculo fechado, traçado no sentido anti-horário.',
+      greekForm: 'ο',
       showStrokeOrder: true,
       showPaperBadge: false,
     },
 
-    // â”€â”€â”€ S04 â€” WRITE_PRACTICE: OMICRON â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S04 — WRITE_PRACTICE: OMICRON ──────────────────────────────
     {
       id: 'apostila-L02-S04',
       type: 'write_practice',
-      narration: 'Agora escreva o omicron minÃºsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.',
-      greekForm: 'Î¿',
+      narration: 'Agora escreva o omicron minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.',
+      greekForm: 'ο',
       transliteration: 'omicron',
       writeRepetitions: 8,
-      writeInstruction: 'Linha 1 da apostila â€” Omicron minÃºsculo (Î¿)',
+      writeInstruction: 'Linha 1 da apostila — Omicron minúsculo (ο)',
       showPaperBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S05 â€” WORD_INTRO: UPSILON â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S05 — WORD_INTRO: UPSILON ──────────────────────────────────
     {
       id: 'apostila-L02-S05',
       type: 'word_intro',
-      narration: 'A segunda letra Ã© o upsilon. MaiÃºsculo: Î¥. MinÃºsculo: Ï…. O som Ã© "u" ou "Ã¼", como em "tu" ou o alemÃ£o "Ã¼". Absorvido no latim como Y, chamado "i grego".',
-      greekForm: 'Î¥ Ï…',
+      narration: 'A segunda letra é o upsilon. Maiúsculo: Υ. Minúsculo: υ. O som é "u" ou "ü", como em "tu" ou o alemão "ü". Absorvido no latim como Y, chamado "i grego".',
+      greekForm: 'Υ υ',
       transliteration: 'upsilon',
-      pronunciation: 'u ou Ã¼ (como em "tu")',
+      pronunciation: 'u ou ü (como em "tu")',
       translation: 'Letra Upsilon',
-      etymology: 'Ï + ÏˆÎ¹Î»ÏŒÎ½, "u simples"; absorvido no latim como Y (chamado "i grego")',
-      contextVerse: 'JoÃ£o 1:4',
-      contextVerseText: '"...a vida (Î¶Ï‰Î®)" â€” o Ï… aparece em combinaÃ§Ãµes como Î±Ï… e ÎµÏ… formando ditongos',
+      etymology: 'ύ + ψιλόν, "u simples"; absorvido no latim como Y (chamado "i grego")',
+      contextVerse: 'João 1:4',
+      contextVerseText: '"...a vida (ζωή)" — o υ aparece em combinações como αυ e ευ formando ditongos',
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S06 â€” ALPHABET_TRACE: UPSILON â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S06 — ALPHABET_TRACE: UPSILON ──────────────────────────────
     {
       id: 'apostila-L02-S06',
       type: 'alphabet_trace',
-      narration: 'Observe a ordem dos traÃ§os do upsilon minÃºsculo. Primeiro a haste vertical de cima para baixo, depois a bifurcaÃ§Ã£o no topo, formando um "V" invertido.',
-      greekForm: 'Ï…',
+      narration: 'Observe a ordem dos traços do upsilon minúsculo. Primeiro a haste vertical de cima para baixo, depois a bifurcação no topo, formando um "V" invertido.',
+      greekForm: 'υ',
       showStrokeOrder: true,
       showPaperBadge: false,
     },
 
-    // â”€â”€â”€ S07 â€” WRITE_PRACTICE: UPSILON â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S07 — WRITE_PRACTICE: UPSILON ──────────────────────────────
     {
       id: 'apostila-L02-S07',
       type: 'write_practice',
-      narration: 'Agora escreva o upsilon minÃºsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.',
-      greekForm: 'Ï…',
+      narration: 'Agora escreva o upsilon minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.',
+      greekForm: 'υ',
       transliteration: 'upsilon',
       writeRepetitions: 8,
-      writeInstruction: 'Linha 2 da apostila â€” Upsilon minÃºsculo (Ï…)',
+      writeInstruction: 'Linha 2 da apostila — Upsilon minúsculo (υ)',
       showPaperBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S08 â€” WORD_INTRO: OMEGA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S08 — WORD_INTRO: OMEGA ────────────────────────────────────
     {
       id: 'apostila-L02-S08',
       type: 'word_intro',
-      narration: 'A terceira letra Ã© o Ã´mega. MaiÃºsculo: Î©. MinÃºsculo: Ï‰. O som Ã© "Ã´" longo, como em "avÃ´". Ã‰ a Ãºltima letra do alfabeto grego. No Apocalipse, Deus declara: "Eu sou o Alfa e o Ã”mega".',
-      greekForm: 'Î© Ï‰',
+      narration: 'A terceira letra é o ômega. Maiúsculo: Ω. Minúsculo: ω. O som é "ô" longo, como em "avô". É a última letra do alfabeto grego. No Apocalipse, Deus declara: "Eu sou o Alfa e o Ômega".',
+      greekForm: 'Ω ω',
       transliteration: 'omega',
-      pronunciation: 'Ã´ longo (como em "avÃ´")',
-      translation: 'Letra Ã”mega',
-      etymology: 'Ï‰ + Î¼Î­Î³Î± significa "o grande", contraparte longa do omicron',
+      pronunciation: 'ô longo (como em "avô")',
+      translation: 'Letra Ômega',
+      etymology: 'ω + μέγα significa "o grande", contraparte longa do omicron',
       contextVerse: 'Apocalipse 22:13',
-      contextVerseText: '"Eu sou o Alfa e o Ã”mega (Î©), o primeiro e o Ãºltimo" â€” Ãºltima letra do alfabeto',
+      contextVerseText: '"Eu sou o Alfa e o Ômega (Ω), o primeiro e o último" — última letra do alfabeto',
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S09 â€” ALPHABET_TRACE: OMEGA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S09 — ALPHABET_TRACE: OMEGA ────────────────────────────────
     {
       id: 'apostila-L02-S09',
       type: 'alphabet_trace',
-      narration: 'Observe a ordem dos traÃ§os do omega minÃºsculo. Primeiro arco Ã  esquerda, de cima para baixo. Segundo arco Ã  direita, unindo-se ao primeiro na base.',
-      greekForm: 'Ï‰',
+      narration: 'Observe a ordem dos traços do omega minúsculo. Primeiro arco à esquerda, de cima para baixo. Segundo arco à direita, unindo-se ao primeiro na base.',
+      greekForm: 'ω',
       showStrokeOrder: true,
       showPaperBadge: false,
     },
 
-    // â”€â”€â”€ S10 â€” WRITE_PRACTICE: OMEGA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S10 — WRITE_PRACTICE: OMEGA ────────────────────────────────
     {
       id: 'apostila-L02-S10',
       type: 'write_practice',
-      narration: 'Agora escreva o omega minÃºsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.',
-      greekForm: 'Ï‰',
+      narration: 'Agora escreva o omega minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.',
+      greekForm: 'ω',
       transliteration: 'omega',
       writeRepetitions: 8,
-      writeInstruction: 'Linha 3 da apostila â€” Omega minÃºsculo (Ï‰)',
+      writeInstruction: 'Linha 3 da apostila — Omega minúsculo (ω)',
       showPaperBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S11 â€” PAUSE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S11 — PAUSE ────────────────────────────────────────────────
     {
       id: 'apostila-L02-S11',
       type: 'pause',
-      narration: 'Muito bem! Agora vocÃª conhece todas as sete vogais gregas. Compare as letras que escreveu com o modelo na apostila, especialmente os pares Î¿/Ï‰ (breve vs longo) e o Ï… (som Ãºnico).',
+      narration: 'Muito bem! Agora você conhece todas as sete vogais gregas. Compare as letras que escreveu com o modelo na apostila, especialmente os pares ο/ω (breve vs longo) e o υ (som único).',
       displayText: 'Compare sua escrita com o modelo na apostila.\nQuando estiver pronto, continue.',
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S12 â€” DICTATION: OMICRON â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S12 — DICTATION: OMICRON ───────────────────────────────────
     {
       id: 'apostila-L02-S12',
       type: 'dictation',
       narration: 'Escreva no papel: omicron.',
       displayText: '"omicron"',
-      greekForm: 'ÎŸ Î¿',
+      greekForm: 'Ο ο',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S13 â€” DICTATION: UPSILON â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S13 — DICTATION: UPSILON ───────────────────────────────────
     {
       id: 'apostila-L02-S13',
       type: 'dictation',
       narration: 'Escreva no papel: upsilon.',
       displayText: '"upsilon"',
-      greekForm: 'Î¥ Ï…',
+      greekForm: 'Υ υ',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S14 â€” DICTATION: OMEGA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S14 — DICTATION: OMEGA ─────────────────────────────────────
     {
       id: 'apostila-L02-S14',
       type: 'dictation',
       narration: 'Escreva no papel: omega.',
       displayText: '"omega"',
-      greekForm: 'Î© Ï‰',
+      greekForm: 'Ω ω',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,

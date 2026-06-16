@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Haptics, ImpactStyle } from '@capacitor/haptics';
+import { useHaptics } from '@/features/settings/useHaptics';
 import { useAppNavigation } from '@/features/navigation/useNavigation';
 import { dbQueries } from '@/features/database/queries';
 import { Button } from '@/ui/components/Button';
@@ -40,6 +40,7 @@ export const CanvasPage: React.FC = () => {
   const navigation = useAppNavigation();
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const addXP = useGamificationStore(s => s.addXP);
+  const { light, medium } = useHaptics();
   const markUnitComplete = useProgressStore(s => s.markUnitComplete);
   const markCanvasLetterComplete = useProgressStore(s => s.markCanvasLetterComplete);
   const { syncToFirestore } = useProgressSync();
@@ -216,7 +217,7 @@ export const CanvasPage: React.FC = () => {
     setFeedback(passed ? 'pass' : 'fail');
 
     if (passed) {
-      Haptics.impact({ style: ImpactStyle.Light }).catch(() => {});
+      light();
       if (!xpAwardedRef.current && letter && !completedLetters.has(letter.id)) {
         xpAwardedRef.current = true;
         const xpAmount = attempts === 0
@@ -242,7 +243,7 @@ export const CanvasPage: React.FC = () => {
         syncToFirestore();
       }
     } else {
-      Haptics.impact({ style: ImpactStyle.Medium }).catch(() => {});
+      medium();
       setAttempts(prev => prev + 1);
     }
   };

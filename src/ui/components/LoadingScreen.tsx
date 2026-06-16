@@ -36,7 +36,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({
 
   return (
     <div className="fixed inset-0 flex flex-col items-center justify-center z-50 animate-fadeIn" style={{ backgroundColor: '#EA662C' }}>
-      <span className="greek-text text-white text-5xl font-bold tracking-wide select-none mb-8">
+      <span className="logo-text text-white text-5xl tracking-wide select-none mb-8">
         Κοινή
       </span>
 

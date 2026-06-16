@@ -5,22 +5,17 @@ import { useSettingsStore } from '@/features/settings/settingsStore';
 import { useAuthStore } from '@/features/auth/authStore';
 import { useGamificationStore } from '@/features/gamification/gamificationStore';
 import { signOut } from '@/features/auth/auth';
+import { DailyGoalSetting } from '@/ui/settings/DailyGoalSetting';
+import { useNotifications } from '@/features/settings/useNotifications';
 import { useNavigate } from 'react-router-dom';
 import { ROUTES } from '@/core/constants/routes';
 import { SafeArea } from '@/ui/layouts/SafeArea';
 import { BottomNav } from '@/ui/layouts/BottomNav';
 import { AvatarDisplay } from '@/ui/components/AvatarDisplay';
 import { BottomSheet } from '@/ui/components/BottomSheet';
-import { ChevronLeft } from 'lucide-react';
+import { ChevronLeft, ChevronDown, ChevronUp } from 'lucide-react';
 import { clsx } from 'clsx';
-
-type GoalOption = { type: 'casual' | 'regular' | 'intensive'; label: string; minutes: number; emoji: string };
-
-const GOAL_OPTIONS: GoalOption[] = [
-  { type: 'casual',    label: 'Casual',    minutes: 5,  emoji: '🌱' },
-  { type: 'regular',   label: 'Regular',   minutes: 10, emoji: '⚡' },
-  { type: 'intensive', label: 'Intensivo', minutes: 15, emoji: '🔥' },
-];
+import type { HapticIntensity } from '@/features/settings/settingsStore';
 
 interface ToggleRowProps {
   icon: string;
@@ -28,9 +23,12 @@ interface ToggleRowProps {
   description?: string;
   value: boolean;
   onChange: (val: boolean) => void;
+  expandable?: boolean;
+  expanded?: boolean;
+  onToggleExpand?: () => void;
 }
 
-const ToggleRow: React.FC<ToggleRowProps> = ({ icon, label, description, value, onChange }) => (
+const ToggleRow: React.FC<ToggleRowProps> = ({ icon, label, description, value, onChange, expandable, expanded, onToggleExpand }) => (
   <div className="flex items-center justify-between py-4 px-1">
     <div className="flex items-center gap-3">
       <span className="text-2xl w-8 text-center shrink-0">{icon}</span>
@@ -41,23 +39,30 @@ const ToggleRow: React.FC<ToggleRowProps> = ({ icon, label, description, value, 
         )}
       </div>
     </div>
-    <button
-      role="switch"
-      aria-checked={value}
-      onClick={() => onChange(!value)}
-      style={{ borderRadius: '9999px' }}
-      className={clsx(
-        'relative w-14 h-8 !rounded-full transition-colors duration-300 shrink-0',
-        value ? 'bg-secondary' : 'bg-border dark:bg-zinc-600'
+    <div className="flex items-center gap-2">
+      {expandable && onToggleExpand && (
+        <button onClick={onToggleExpand} className="p-1">
+          {expanded ? <ChevronUp size={16} className="text-text-secondary" /> : <ChevronDown size={16} className="text-text-secondary" />}
+        </button>
       )}
-    >
-      <div
+      <button
+        role="switch"
+        aria-checked={value}
+        onClick={() => onChange(!value)}
+        style={{ borderRadius: '9999px' }}
         className={clsx(
-          'absolute top-1 w-6 h-6 bg-white rounded-full shadow-md transition-all duration-200',
-          value ? 'left-[calc(100%-1.75rem)]' : 'left-1'
+          'relative w-14 h-8 !rounded-full transition-colors duration-300 shrink-0',
+          value ? 'bg-secondary' : 'bg-border dark:bg-zinc-600'
         )}
-      />
-    </button>
+      >
+        <div
+          className={clsx(
+            'absolute top-1 w-6 h-6 bg-white rounded-full shadow-md transition-all duration-200',
+            value ? 'left-[calc(100%-1.75rem)]' : 'left-1'
+          )}
+        />
+      </button>
+    </div>
   </div>
 );
 
@@ -116,6 +121,12 @@ const Section: React.FC<SectionProps> = ({ title, children, index = 0 }) => (
   </div>
 );
 
+const HAPTIC_OPTIONS: { value: HapticIntensity; label: string }[] = [
+  { value: 'light', label: 'Leve' },
+  { value: 'medium', label: 'Médio' },
+  { value: 'heavy', label: 'Forte' },
+];
+
 export const SettingsPage: React.FC = () => {
   const navigation = useAppNavigation();
   const navigate = useNavigate();
@@ -124,21 +135,36 @@ export const SettingsPage: React.FC = () => {
   const { streakDays, totalXP } = useGamificationStore();
   const {
     audioEnabled,
+    masterVolume,
+    narrationVolume,
+    effectsVolume,
     hapticEnabled,
+    hapticIntensity,
     notificationsEnabled,
-    dailyGoalType,
+    notificationTime,
     setAudioEnabled,
+    setMasterVolume,
+    setNarrationVolume,
+    setEffectsVolume,
     setHapticEnabled,
-    setNotificationsEnabled,
-    setDailyGoal,
+    setHapticIntensity,
   } = useSettingsStore();
 
+  const notif = useNotifications();
   const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
   const [activeSheet, setActiveSheet] = useState<'privacy' | 'terms' | null>(null);
+
+  const [expandedNotifications, setExpandedNotifications] = useState(false);
+  const [expandedSounds, setExpandedSounds] = useState(false);
+  const [expandedHaptics, setExpandedHaptics] = useState(false);
 
   const handleLogout = async () => {
     await signOut();
     navigate(ROUTES.AUTH_LOGIN);
+  };
+
+  const handleNotificationToggle = async (_val: boolean) => {
+    await notif.toggle();
   };
 
   return (
@@ -158,7 +184,7 @@ export const SettingsPage: React.FC = () => {
           </h1>
         </div>
 
-        {/* Profile Card - Layout aprimorado para evitar truncamento */}
+        {/* Profile Card */}
         <div
           onClick={navigation.goToProfile}
           style={{ borderRadius: '24px' }}
@@ -203,59 +229,108 @@ export const SettingsPage: React.FC = () => {
         </Section>
 
         <Section title="Meta Diária de Estudo" index={1}>
-          <div className="py-4">
-            <p className="text-text-secondary dark:text-zinc-400 text-xs mb-3">
-              Quanto tempo você quer estudar por dia?
-            </p>
-            <div className="flex gap-3">
-              {GOAL_OPTIONS.map((opt) => (
-                <div
-                  key={opt.type}
-                  role="button"
-                  tabIndex={0}
-                  onClick={() => setDailyGoal(opt.type)}
-                  style={{ borderRadius: '24px' }}
-                  className={clsx(
-                    'flex-1 flex flex-col items-center py-4 rounded-3xl border-2 transition-all duration-200 cursor-pointer focus-visible:outline-none select-none',
-                    dailyGoalType === opt.type
-                      ? 'bg-secondary/15 border-secondary text-secondary shadow-sm'
-                      : 'bg-surface-alt dark:bg-surface/30 border-border/30 dark:border-border/10 text-text-secondary dark:text-zinc-400'
-                  )}
-                >
-                  <span className="text-2xl mb-1">{opt.emoji}</span>
-                  <span className="text-xs font-bold">{opt.label}</span>
-                  <span className="text-[10px] opacity-70">{opt.minutes} min</span>
-                </div>
-              ))}
-            </div>
-          </div>
+          <DailyGoalSetting />
         </Section>
 
-        <Section title="Notificações e Sons" index={2}>
+        <Section title="Notificações" index={2}>
           <ToggleRow
             icon="🔔"
-            label="Notificações"
-            description="Lembretes diários de estudo"
+            label="Lembretes Diários"
+            description="Receba um lembrete para estudar"
             value={notificationsEnabled}
-            onChange={setNotificationsEnabled}
+            onChange={handleNotificationToggle}
+            expandable
+            expanded={expandedNotifications}
+            onToggleExpand={() => setExpandedNotifications(!expandedNotifications)}
           />
+          {expandedNotifications && notificationsEnabled && (
+            <div className="pb-4 px-1 space-y-3">
+              <div>
+                <p className="text-xs font-semibold text-text-secondary dark:text-zinc-400 mb-2">Horário do lembrete</p>
+                <input
+                  type="time"
+                  value={notificationTime}
+                  onChange={(e) => notif.changeTime(e.target.value)}
+                  className="w-full bg-surface-alt dark:bg-zinc-800 border border-border/30 dark:border-border/10 rounded-2xl px-4 py-3 text-text-primary dark:text-white text-sm font-semibold focus:outline-none focus:border-secondary"
+                />
+              </div>
+              <div className="bg-secondary/5 border border-secondary/15 rounded-2xl p-3">
+                <p className="text-[10px] font-bold text-secondary uppercase tracking-wider mb-1">Preview</p>
+                <p className="text-xs text-text-secondary dark:text-zinc-400">
+                  Todo dia às <span className="font-bold text-text-primary dark:text-white">{notificationTime}</span> você receberá um lembrete para estudar grego.
+                </p>
+              </div>
+            </div>
+          )}
+        </Section>
+
+        <Section title="Sons" index={3}>
           <ToggleRow
             icon="🎵"
             label="Sons"
-            description="Efeitos sonoros nas lições"
+            description="Efeitos sonoros e narração"
             value={audioEnabled}
             onChange={setAudioEnabled}
+            expandable
+            expanded={expandedSounds}
+            onToggleExpand={() => setExpandedSounds(!expandedSounds)}
           />
-          <ToggleRow
-            icon="📳"
-            label="Vibração"
-            description="Feedback háptico ao interagir"
-            value={hapticEnabled}
-            onChange={setHapticEnabled}
-          />
+          {expandedSounds && audioEnabled && (
+            <div className="pb-4 px-1 space-y-4">
+              <SliderRow
+                label="Volume Geral"
+                value={masterVolume}
+                onChange={setMasterVolume}
+              />
+              <SliderRow
+                label="Narração"
+                value={narrationVolume}
+                onChange={setNarrationVolume}
+              />
+              <SliderRow
+                label="Efeitos Sonoros"
+                value={effectsVolume}
+                onChange={setEffectsVolume}
+              />
+            </div>
+          )}
         </Section>
 
-        <Section title="Conta" index={3}>
+        <Section title="Vibração" index={4}>
+          <ToggleRow
+            icon="📳"
+            label="Feedback Háptico"
+            description="Vibração ao interagir com o app"
+            value={hapticEnabled}
+            onChange={setHapticEnabled}
+            expandable
+            expanded={expandedHaptics}
+            onToggleExpand={() => setExpandedHaptics(!expandedHaptics)}
+          />
+          {expandedHaptics && hapticEnabled && (
+            <div className="pb-4 px-1">
+              <p className="text-xs font-semibold text-text-secondary dark:text-zinc-400 mb-2">Intensidade</p>
+              <div className="flex gap-2">
+                {HAPTIC_OPTIONS.map((opt) => (
+                  <button
+                    key={opt.value}
+                    onClick={() => setHapticIntensity(opt.value)}
+                    className={clsx(
+                      'flex-1 py-2.5 rounded-full border-2 text-xs font-bold transition-all duration-200',
+                      hapticIntensity === opt.value
+                        ? 'bg-secondary/15 border-secondary text-secondary'
+                        : 'bg-surface-alt dark:bg-zinc-800 border-border/30 dark:border-border/10 text-text-secondary dark:text-zinc-400'
+                    )}
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </Section>
+
+        <Section title="Conta" index={5}>
           <NavRow
             icon="✨"
             label="Koine Premium"
@@ -271,7 +346,7 @@ export const SettingsPage: React.FC = () => {
           />
         </Section>
 
-        <Section title="Sobre o Aplicativo" index={4}>
+        <Section title="Sobre o Aplicativo" index={6}>
           <NavRow
             icon="📖"
             label="Política de Privacidade"
@@ -363,9 +438,7 @@ export const SettingsPage: React.FC = () => {
 
           <div>
             <h4 className="font-bold text-text-primary dark:text-white text-base mb-1">2. Como Usamos Seus Dados</h4>
-            <p>
-              Seus dados são usados exclusivamente para:
-            </p>
+            <p>Seus dados são usados exclusivamente para:</p>
             <ul className="list-disc pl-5 mt-1.5 space-y-1">
               <li>Sincronizar seu progresso de estudo entre diferentes dispositivos.</li>
               <li>Fornecer recursos personalizados de aprendizado e gamificação (conquistas, troféus e revisões).</li>
@@ -428,9 +501,7 @@ export const SettingsPage: React.FC = () => {
 
           <div>
             <h4 className="font-bold text-text-primary dark:text-white text-base mb-1">3. Assinatura Premium</h4>
-            <p>
-              O Koine oferece um modelo gratuito com compras dentro do aplicativo (Premium):
-            </p>
+            <p>O Koine oferece um modelo gratuito com compras dentro do aplicativo (Premium):</p>
             <ul className="list-disc pl-5 mt-1.5 space-y-1">
               <li>O plano gratuito oferece acesso limitado a lições básicas (Ciclos I e II).</li>
               <li>O plano Premium desbloqueia acesso ilimitado aos Ciclos III–VIII, versículos do Novo Testamento e recursos adicionais de estudo.</li>
@@ -469,3 +540,40 @@ export const SettingsPage: React.FC = () => {
     </SafeArea>
   );
 };
+
+// ── Slider Row (inline) ──
+interface SliderRowProps {
+  label: string;
+  value: number;
+  onChange: (val: number) => void;
+  min?: number;
+  max?: number;
+}
+
+const SliderRow: React.FC<SliderRowProps> = ({ label, value, onChange, min = 0, max = 100 }) => (
+  <div>
+    <div className="flex items-center justify-between mb-1.5">
+      <span className="text-xs font-semibold text-text-secondary dark:text-zinc-400">{label}</span>
+      <span className="text-xs font-bold text-text-primary dark:text-white">{value}%</span>
+    </div>
+    <div className="relative w-full h-6 flex items-center">
+      <div className="absolute w-full h-1.5 bg-border/20 dark:bg-border/10 rounded-full" />
+      <div
+        className="absolute h-1.5 bg-secondary rounded-full"
+        style={{ width: `${((value - min) / (max - min)) * 100}%` }}
+      />
+      <input
+        type="range"
+        min={min}
+        max={max}
+        value={value}
+        onChange={(e) => onChange(Number(e.target.value))}
+        className="absolute w-full h-6 opacity-0 cursor-pointer z-10"
+      />
+      <div
+        className="absolute w-5 h-5 bg-white border-2 border-secondary rounded-full shadow-md pointer-events-none"
+        style={{ left: `calc(${((value - min) / (max - min)) * 100}% - 10px)` }}
+      />
+    </div>
+  </div>
+);

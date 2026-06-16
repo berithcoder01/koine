@@ -1,9 +1,9 @@
-﻿/**
- * L09 â€” O Ser Humano (á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚, ÎºÎ±ÏÎ´Î¯Î±, ÏˆÏ…Ï‡Î®, ÏƒÎ¬ÏÎ¾, á¼Î¼Î±ÏÏ„Î¯Î±)
+/**
+ * L09 — O Ser Humano (ἄνθρωπος, καρδία, ψυχή, σάρξ, ἁμαρτία)
  *
  * ID:               apostila-L09
- * TÃTULO:           LiÃ§Ã£o 9 â€” O Ser Humano
- * DESCRIÃ‡ÃƒO:        á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚, ÎºÎ±ÏÎ´Î¯Î±, ÏˆÏ…Ï‡Î®, ÏƒÎ¬ÏÎ¾, á¼Î¼Î±ÏÏ„Î¯Î±
+ * TÍTULO:           Lição 9 — O Ser Humano
+ * DESCRIÇÃO:        ἄνθρωπος, καρδία, ψυχή, σάρξ, ἁμαρτία
  * PDF_PAGE:         19
  * XP:               40
  * TEMPO:            12 min
@@ -12,268 +12,268 @@
  * Total de Steps: 17
  */
 
-import type { ApostilaLesson } from '../../features/apostila/apostilaTypes';
+import type { ApostilaLesson } from '../../../features/apostila/apostilaTypes';
 
 export const APOSTILA_L09: ApostilaLesson = {
   id: 'apostila-L09',
   lessonNumber: 9,
-  title: 'LiÃ§Ã£o 9 â€” O Ser Humano',
-  description: 'á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚, ÎºÎ±ÏÎ´Î¯Î±, ÏˆÏ…Ï‡Î®, ÏƒÎ¬ÏÎ¾, á¼Î¼Î±ÏÏ„Î¯Î±',
+  title: 'Lição 9 — O Ser Humano',
+  description: 'ἄνθρωπος, καρδία, ψυχή, σάρξ, ἁμαρτία',
   apostilaPdfPage: 19,
   xpReward: 40,
   estimatedMinutes: 12,
   requiresPrevious: true,
 
   steps: [
-    // â”€â”€â”€ S01 â€” INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S01 — INTRO ───────────────────────────────────────────────
     {
       id: 'apostila-L09-S01',
       type: 'intro',
       narration:
-        'LiÃ§Ã£o 9 â€” O ser humano. Hoje vamos aprender palavras que descrevem o ser humano diante de Deus: Ã¡nthropos, kardÃ­a, psyquÃ©, sÃ¡rx e hamartÃ­a. Abra sua apostila na pÃ¡gina 19.',
-      displayText: 'Abra sua apostila na PÃ¡gina 19',
+        'Lição 9 — O ser humano. Hoje vamos aprender palavras que descrevem o ser humano diante de Deus: ánthropos, kardía, psyqué, sárx e hamartía. Abra sua apostila na página 19.',
+      displayText: 'Abra sua apostila na Página 19',
     },
 
-    // â”€â”€â”€ S02 â€” WORD_INTRO: á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S02 — WORD_INTRO: ἄνθρωπος ────────────────────────────────
     {
       id: 'apostila-L09-S02',
       type: 'word_intro',
       narration:
-        'á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚ (Ã¡nthrÅpos) â€” ser humano / homem. E a vida era a luz dos homens. PossÃ­vel origem em á¼€Î½Î®Ï + á½¤Ïˆ.',
-      displayText: 'á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚ â€” Ser Humano',
-      greekForm: 'á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚',
-      transliteration: 'Ã¡nthrÅpos',
-      pronunciation: 'Ã‚N-trÃ´-pos',
+        'ἄνθρωπος (ánthrōpos) — ser humano / homem. E a vida era a luz dos homens. Possível origem em ἀνήρ + ὤψ.',
+      displayText: 'ἄνθρωπος — Ser Humano',
+      greekForm: 'ἄνθρωπος',
+      transliteration: 'ánthrōpos',
+      pronunciation: 'ÂN-trô-pos',
       translation: 'Ser Humano / Homem',
       etymology:
-        'PossÃ­vel origem em á¼€Î½Î®Ï (homem) + á½¤Ïˆ (rosto); o ser que olha para cima',
-      contextVerse: 'JoÃ£o 1:4',
+        'Possível origem em ἀνήρ (homem) + ὤψ (rosto); o ser que olha para cima',
+      contextVerse: 'João 1:4',
       contextVerseText:
-        '"E a vida era a luz dos homens (á¼€Î½Î¸ÏÏŽÏ€Ï‰Î½)"',
+        '"E a vida era a luz dos homens (ἀνθρώπων)"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S03 â€” WRITE_PRACTICE: á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S03 — WRITE_PRACTICE: ἄνθρωπος ────────────────────────────
     {
       id: 'apostila-L09-S03',
       type: 'write_practice',
       narration:
-        'Agora escreva á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚ cinco vezes na linha 1. Pronuncie: Ã‚N-trÃ´-pos.',
-      displayText: 'á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚ Ã— 5',
-      greekForm: 'á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚',
+        'Agora escreva ἄνθρωπος cinco vezes na linha 1. Pronuncie: ÂN-trô-pos.',
+      displayText: 'ἄνθρωπος × 5',
+      greekForm: 'ἄνθρωπος',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 1 da apostila â€” á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚',
+      writeInstruction: 'Linha 1 da apostila — ἄνθρωπος',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S04 â€” WORD_INTRO: ÎºÎ±ÏÎ´Î¯Î± â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S04 — WORD_INTRO: καρδία ──────────────────────────────────
     {
       id: 'apostila-L09-S04',
       type: 'word_intro',
       narration:
-        'ÎºÎ±ÏÎ´Î¯Î± (kardÃ­a) â€” coraÃ§Ã£o / sede da vontade. Bem-aventurados os limpos de coraÃ§Ã£o. No pensamento bÃ­blico, o coraÃ§Ã£o Ã© o centro das decisÃµes.',
-      displayText: 'ÎºÎ±ÏÎ´Î¯Î± â€” CoraÃ§Ã£o',
-      greekForm: 'ÎºÎ±ÏÎ´Î¯Î±',
-      transliteration: 'kardÃ­a',
-      pronunciation: 'kar-DÃ-a',
-      translation: 'CoraÃ§Ã£o / Sede da Vontade',
+        'καρδία (kardía) — coração / sede da vontade. Bem-aventurados os limpos de coração. No pensamento bíblico, o coração é o centro das decisões.',
+      displayText: 'καρδία — Coração',
+      greekForm: 'καρδία',
+      transliteration: 'kardía',
+      pronunciation: 'kar-DÍ-a',
+      translation: 'Coração / Sede da Vontade',
       etymology:
-        'No pensamento hebraico-grego, o coraÃ§Ã£o Ã© o centro das decisÃµes, nÃ£o das emoÃ§Ãµes apenas',
+        'No pensamento hebraico-grego, o coração é o centro das decisões, não das emoções apenas',
       contextVerse: 'Mateus 5:8',
       contextVerseText:
-        '"Bem-aventurados os limpos de coraÃ§Ã£o (ÎºÎ±ÏÎ´Î¯á¾³)"',
+        '"Bem-aventurados os limpos de coração (καρδίᾳ)"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S05 â€” WRITE_PRACTICE: ÎºÎ±ÏÎ´Î¯Î± â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S05 — WRITE_PRACTICE: καρδία ──────────────────────────────
     {
       id: 'apostila-L09-S05',
       type: 'write_practice',
       narration:
-        'Agora escreva ÎºÎ±ÏÎ´Î¯Î± cinco vezes na linha 2. Pronuncie: kar-DÃ-a.',
-      displayText: 'ÎºÎ±ÏÎ´Î¯Î± Ã— 5',
-      greekForm: 'ÎºÎ±ÏÎ´Î¯Î±',
+        'Agora escreva καρδία cinco vezes na linha 2. Pronuncie: kar-DÍ-a.',
+      displayText: 'καρδία × 5',
+      greekForm: 'καρδία',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 2 da apostila â€” ÎºÎ±ÏÎ´Î¯Î±',
+      writeInstruction: 'Linha 2 da apostila — καρδία',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S06 â€” WORD_INTRO: ÏˆÏ…Ï‡Î® â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S06 — WORD_INTRO: ψυχή ────────────────────────────────────
     {
       id: 'apostila-L09-S06',
       type: 'word_intro',
       narration:
-        'ÏˆÏ…Ï‡Î® (psychá¸—) â€” alma / ser interior / vida. Pois que aproveitarÃ¡ ao homem ganhar o mundo e perder a sua alma?',
-      displayText: 'ÏˆÏ…Ï‡Î® â€” Alma',
-      greekForm: 'ÏˆÏ…Ï‡Î®',
-      transliteration: 'psychá¸—',
-      pronunciation: 'psi-KÃŠ',
+        'ψυχή (psychḗ) — alma / ser interior / vida. Pois que aproveitará ao homem ganhar o mundo e perder a sua alma?',
+      displayText: 'ψυχή — Alma',
+      greekForm: 'ψυχή',
+      transliteration: 'psychḗ',
+      pronunciation: 'psi-KÊ',
       translation: 'Alma / Ser Interior / Vida',
       etymology:
-        'Deu origem a "psicologia" e "psiquiatria"; distinto de Ï€Î½Îµá¿¦Î¼Î± (espÃ­rito) e Ïƒá¿¶Î¼Î± (corpo)',
+        'Deu origem a "psicologia" e "psiquiatria"; distinto de πνεῦμα (espírito) e σῶμα (corpo)',
       contextVerse: 'Mateus 16:26',
       contextVerseText:
-        '"Pois que aproveitarÃ¡ ao homem ganhar o mundo inteiro e perder a sua alma (ÏˆÏ…Ï‡Î®Î½)?"',
+        '"Pois que aproveitará ao homem ganhar o mundo inteiro e perder a sua alma (ψυχήν)?"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S07 â€” WRITE_PRACTICE: ÏˆÏ…Ï‡Î® â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S07 — WRITE_PRACTICE: ψυχή ─────────────────────────────────
     {
       id: 'apostila-L09-S07',
       type: 'write_practice',
       narration:
-        'Agora escreva ÏˆÏ…Ï‡Î® cinco vezes na linha 3. Pronuncie: psi-KÃŠ.',
-      displayText: 'ÏˆÏ…Ï‡Î® Ã— 5',
-      greekForm: 'ÏˆÏ…Ï‡Î®',
+        'Agora escreva ψυχή cinco vezes na linha 3. Pronuncie: psi-KÊ.',
+      displayText: 'ψυχή × 5',
+      greekForm: 'ψυχή',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 3 da apostila â€” ÏˆÏ…Ï‡Î®',
+      writeInstruction: 'Linha 3 da apostila — ψυχή',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S08 â€” WORD_INTRO: ÏƒÎ¬ÏÎ¾ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S08 — WORD_INTRO: σάρξ ────────────────────────────────────
     {
       id: 'apostila-L09-S08',
       type: 'word_intro',
       narration:
-        'ÏƒÎ¬ÏÎ¾ (sÃ¡rx) â€” carne / natureza humana. E o Verbo se fez carne e habitou entre nÃ³s. Paulo usa para a natureza humana sem Deus.',
-      displayText: 'ÏƒÎ¬ÏÎ¾ â€” Carne',
-      greekForm: 'ÏƒÎ¬ÏÎ¾',
-      transliteration: 'sÃ¡rx',
-      pronunciation: 'SÃRKS',
+        'σάρξ (sárx) — carne / natureza humana. E o Verbo se fez carne e habitou entre nós. Paulo usa para a natureza humana sem Deus.',
+      displayText: 'σάρξ — Carne',
+      greekForm: 'σάρξ',
+      transliteration: 'sárx',
+      pronunciation: 'SÁRKS',
       translation: 'Carne / Natureza Humana',
       etymology:
-        'Frequentemente usado por Paulo para indicar a natureza humana sem Deus, nÃ£o apenas o corpo fÃ­sico',
-      contextVerse: 'JoÃ£o 1:14',
+        'Frequentemente usado por Paulo para indicar a natureza humana sem Deus, não apenas o corpo físico',
+      contextVerse: 'João 1:14',
       contextVerseText:
-        '"E o Verbo se fez carne (ÏƒÎ¬ÏÎ¾) e habitou entre nÃ³s"',
+        '"E o Verbo se fez carne (σάρξ) e habitou entre nós"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S09 â€” WRITE_PRACTICE: ÏƒÎ¬ÏÎ¾ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S09 — WRITE_PRACTICE: σάρξ ─────────────────────────────────
     {
       id: 'apostila-L09-S09',
       type: 'write_practice',
       narration:
-        'Agora escreva ÏƒÎ¬ÏÎ¾ cinco vezes na linha 4. Pronuncie: SÃRKS.',
-      displayText: 'ÏƒÎ¬ÏÎ¾ Ã— 5',
-      greekForm: 'ÏƒÎ¬ÏÎ¾',
+        'Agora escreva σάρξ cinco vezes na linha 4. Pronuncie: SÁRKS.',
+      displayText: 'σάρξ × 5',
+      greekForm: 'σάρξ',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 4 da apostila â€” ÏƒÎ¬ÏÎ¾',
+      writeInstruction: 'Linha 4 da apostila — σάρξ',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S10 â€” WORD_INTRO: á¼Î¼Î±ÏÏ„Î¯Î± â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S10 — WORD_INTRO: ἁμαρτία ────────────────────────────────
     {
       id: 'apostila-L09-S10',
       type: 'word_intro',
       narration:
-        'á¼Î¼Î±ÏÏ„Î¯Î± (hamartÃ­a) â€” pecado / desvio do alvo. Porque todos pecaram e destituÃ­dos estÃ£o da glÃ³ria de Deus.',
-      displayText: 'á¼Î¼Î±ÏÏ„Î¯Î± â€” Pecado',
-      greekForm: 'á¼Î¼Î±ÏÏ„Î¯Î±',
-      transliteration: 'hamartÃ­a',
-      pronunciation: 'a-mar-TÃ-a',
+        'ἁμαρτία (hamartía) — pecado / desvio do alvo. Porque todos pecaram e destituídos estão da glória de Deus.',
+      displayText: 'ἁμαρτία — Pecado',
+      greekForm: 'ἁμαρτία',
+      transliteration: 'hamartía',
+      pronunciation: 'a-mar-TÍ-a',
       translation: 'Pecado / Desvio do Alvo',
       etymology:
-        'Do verbo á¼Î¼Î±ÏÏ„Î¬Î½Ï‰, errar o alvo; imagine uma flecha que nÃ£o acerta o centro',
+        'Do verbo ἁμαρτάνω, errar o alvo; imagine uma flecha que não acerta o centro',
       contextVerse: 'Romanos 3:23',
       contextVerseText:
-        '"Porque todos pecaram (á¼¥Î¼Î±ÏÏ„Î¿Î½) e destituÃ­dos estÃ£o da glÃ³ria de Deus"',
+        '"Porque todos pecaram (ἥμαρτον) e destituídos estão da glória de Deus"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S11 â€” WRITE_PRACTICE: á¼Î¼Î±ÏÏ„Î¯Î± â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S11 — WRITE_PRACTICE: ἁμαρτία ────────────────────────────
     {
       id: 'apostila-L09-S11',
       type: 'write_practice',
       narration:
-        'Agora escreva á¼Î¼Î±ÏÏ„Î¯Î± cinco vezes na linha 5. Pronuncie: a-mar-TÃ-a.',
-      displayText: 'á¼Î¼Î±ÏÏ„Î¯Î± Ã— 5',
-      greekForm: 'á¼Î¼Î±ÏÏ„Î¯Î±',
+        'Agora escreva ἁμαρτία cinco vezes na linha 5. Pronuncie: a-mar-TÍ-a.',
+      displayText: 'ἁμαρτία × 5',
+      greekForm: 'ἁμαρτία',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 5 da apostila â€” á¼Î¼Î±ÏÏ„Î¯Î±',
+      writeInstruction: 'Linha 5 da apostila — ἁμαρτία',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S12 â€” PAUSE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S12 — PAUSE ────────────────────────────────────────────────
     {
       id: 'apostila-L09-S12',
       type: 'pause',
       narration:
-        'VocÃª escreveu palavras que definem a condiÃ§Ã£o humana. Reflita: todas estas palavras apontam para a necessidade de Deus.',
+        'Você escreveu palavras que definem a condição humana. Reflita: todas estas palavras apontam para a necessidade de Deus.',
       displayText:
         'Releia as cinco palavras na sua apostila.\nQuando estiver pronto, continue.',
     },
 
-    // â”€â”€â”€ S13 â€” DICTATION: á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S13 — DICTATION: ἄνθρωπος ─────────────────────────────────
     {
       id: 'apostila-L09-S13',
       type: 'dictation',
       narration: "Escreva a palavra grega para: 'ser humano'.",
       displayText: 'ser humano',
-      greekForm: 'á¼„Î½Î¸ÏÏ‰Ï€Î¿Ï‚',
+      greekForm: 'ἄνθρωπος',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S14 â€” DICTATION: ÎºÎ±ÏÎ´Î¯Î± â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S14 — DICTATION: καρδία ──────────────────────────────────
     {
       id: 'apostila-L09-S14',
       type: 'dictation',
-      narration: "Escreva a palavra grega para: 'coraÃ§Ã£o'.",
-      displayText: 'coraÃ§Ã£o',
-      greekForm: 'ÎºÎ±ÏÎ´Î¯Î±',
+      narration: "Escreva a palavra grega para: 'coração'.",
+      displayText: 'coração',
+      greekForm: 'καρδία',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S15 â€” DICTATION: ÏˆÏ…Ï‡Î® â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S15 — DICTATION: ψυχή ────────────────────────────────────
     {
       id: 'apostila-L09-S15',
       type: 'dictation',
       narration: "Escreva a palavra grega para: 'alma'.",
       displayText: 'alma',
-      greekForm: 'ÏˆÏ…Ï‡Î®',
+      greekForm: 'ψυχή',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S16 â€” DICTATION: ÏƒÎ¬ÏÎ¾ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S16 — DICTATION: σάρξ ────────────────────────────────────
     {
       id: 'apostila-L09-S16',
       type: 'dictation',
       narration: "Escreva a palavra grega para: 'carne'.",
       displayText: 'carne',
-      greekForm: 'ÏƒÎ¬ÏÎ¾',
+      greekForm: 'σάρξ',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S17 â€” DICTATION: á¼Î¼Î±ÏÏ„Î¯Î± â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S17 — DICTATION: ἁμαρτία ─────────────────────────────────
     {
       id: 'apostila-L09-S17',
       type: 'dictation',
       narration: "Escreva a palavra grega para: 'pecado'.",
       displayText: 'pecado',
-      greekForm: 'á¼Î¼Î±ÏÏ„Î¯Î±',
+      greekForm: 'ἁμαρτία',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,

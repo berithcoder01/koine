@@ -1,9 +1,9 @@
-﻿/**
- * L16 â€” Verbos do NT (Îµá¼°Î¼Î¯, á¼”ÏÏ‡Î¿Î¼Î±Î¹, á¼€ÎºÎ¿ÏÏ‰, Î²Î»Î­Ï€Ï‰, Ï€Î¹ÏƒÏ„ÎµÏÏ‰)
+/**
+ * L16 — Verbos do NT (εἰμί, ἔρχομαι, ἀκούω, βλέπω, πιστεύω)
  *
  * ID:               apostila-L16
- * TÃTULO:           LiÃ§Ã£o 16 â€” Verbos do NT
- * DESCRIÃ‡ÃƒO:        Îµá¼°Î¼Î¯, á¼”ÏÏ‡Î¿Î¼Î±Î¹, á¼€ÎºÎ¿ÏÏ‰, Î²Î»Î­Ï€Ï‰, Ï€Î¹ÏƒÏ„ÎµÏÏ‰
+ * TÍTULO:           Lição 16 — Verbos do NT
+ * DESCRIÇÃO:        εἰμί, ἔρχομαι, ἀκούω, βλέπω, πιστεύω
  * PDF_PAGE:         33
  * XP:               50
  * TEMPO:            12 min
@@ -12,12 +12,12 @@
  * Total de Steps: 17
  */
 
-import type { ApostilaLesson } from '../../features/apostila/apostilaTypes';
+import type { ApostilaLesson } from '../../../features/apostila/apostilaTypes';
 
 export const APOSTILA_L16: ApostilaLesson = {
   id: 'apostila-L16',
-  title: 'LiÃ§Ã£o 16 â€” Verbos do NT',
-  description: 'Îµá¼°Î¼Î¯, á¼”ÏÏ‡Î¿Î¼Î±Î¹, á¼€ÎºÎ¿ÏÏ‰, Î²Î»Î­Ï€Ï‰, Ï€Î¹ÏƒÏ„ÎµÏÏ‰',
+  title: 'Lição 16 — Verbos do NT',
+  description: 'εἰμί, ἔρχομαι, ἀκούω, βλέπω, πιστεύω',
   apostilaPdfPage: 33,
   lessonNumber: 16,
   xpReward: 50,
@@ -29,8 +29,8 @@ export const APOSTILA_L16: ApostilaLesson = {
       id: 'apostila-L16-S01',
       type: 'intro',
       narration:
-        'LiÃ§Ã£o 16 â€” Verbos fundamentais do Novo Testamento. Hoje vocÃª vai aprender os verbos mais importantes: eimÃ­, Ã©rchomai, akoÃºo, blÃ©po e pisteÃºo. Abra sua apostila na pÃ¡gina 33.',
-      displayText: 'Abra sua apostila na PÃ¡gina 33',
+        'Lição 16 — Verbos fundamentais do Novo Testamento. Hoje você vai aprender os verbos mais importantes: eimí, érchomai, akoúo, blépo e pisteúo. Abra sua apostila na página 33.',
+      displayText: 'Abra sua apostila na Página 33',
       showGreekLarge: false,
     },
 
@@ -38,16 +38,16 @@ export const APOSTILA_L16: ApostilaLesson = {
       id: 'apostila-L16-S02',
       type: 'word_intro',
       narration:
-        'Îµá¼°Î¼Î¯ Ã© o verbo ser, existir. Ã‰ o verbo mais irregular do grego. á¼˜Î³ÏŽ Îµá¼°Î¼Î¹ (Ego eimi â€” Eu sou) Ã© o tÃ­tulo divino em JoÃ£o. Em JoÃ£o 8:58, Jesus declara: "Antes que AbraÃ£o existisse, EU SOU". Pronuncia-se ei-MÃ.',
-      greekForm: 'Îµá¼°Î¼Î¯',
-      transliteration: 'eimÃ­',
-      pronunciation: 'ei-MÃ',
+        'εἰμί é o verbo ser, existir. É o verbo mais irregular do grego. Ἐγώ εἰμι (Ego eimi — Eu sou) é o título divino em João. Em João 8:58, Jesus declara: "Antes que Abraão existisse, EU SOU". Pronuncia-se ei-MÍ.',
+      greekForm: 'εἰμί',
+      transliteration: 'eimí',
+      pronunciation: 'ei-MÍ',
       translation: 'ser / existir',
       etymology:
-        'Verbo "ser" mais irregular do grego; "á¼˜Î“Î© Î•Î™ÎœÎ™" (Ego eimi, Eu sou) Ã© o tÃ­tulo divino de JoÃ£o',
-      contextVerse: 'JoÃ£o 8:58',
+        'Verbo "ser" mais irregular do grego; "ἘΓΩ ΕΙΜΙ" (Ego eimi, Eu sou) é o título divino de João',
+      contextVerse: 'João 8:58',
       contextVerseText:
-        '"Em verdade, em verdade vos digo: antes que AbraÃ£o existisse, EU SOU (á¼Î³ÏŽ Îµá¼°Î¼Î¹)"',
+        '"Em verdade, em verdade vos digo: antes que Abraão existisse, EU SOU (ἐγώ εἰμι)"',
       showGreekLarge: true,
     },
 
@@ -55,11 +55,11 @@ export const APOSTILA_L16: ApostilaLesson = {
       id: 'apostila-L16-S03',
       type: 'write_practice',
       narration:
-        'Agora escreva Îµá¼°Î¼Î¯ cinco vezes na linha 1. Pronuncie: ei-MÃ.',
-      greekForm: 'Îµá¼°Î¼Î¯',
-      transliteration: 'eimÃ­',
+        'Agora escreva εἰμί cinco vezes na linha 1. Pronuncie: ei-MÍ.',
+      greekForm: 'εἰμί',
+      transliteration: 'eimí',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 1 da apostila â€” Îµá¼°Î¼Î¯',
+      writeInstruction: 'Linha 1 da apostila — εἰμί',
       showPaperBadge: true,
       showGreekLarge: true,
     },
@@ -68,16 +68,16 @@ export const APOSTILA_L16: ApostilaLesson = {
       id: 'apostila-L16-S04',
       type: 'word_intro',
       narration:
-        'á¼”ÏÏ‡Î¿Î¼Î±Î¹ significa vir, chegar, ir. Ã‰ o verbo de movimento mais frequente do NT. No Apocalipse: "Vem, Senhor Jesus" (á¼”ÏÏ‡Î¿Ï… ÎšÏÏÎ¹Îµ á¼¸Î·ÏƒÎ¿á¿¦). Em JoÃ£o 1:9, a verdadeira luz estava vindo ao mundo. Pronuncia-se Ã‰R-cho-mai.',
-      greekForm: 'á¼”ÏÏ‡Î¿Î¼Î±Î¹',
-      transliteration: 'Ã©rchomai',
-      pronunciation: 'Ã‰R-cho-mai',
+        'ἔρχομαι significa vir, chegar, ir. É o verbo de movimento mais frequente do NT. No Apocalipse: "Vem, Senhor Jesus" (ἔρχου Κύριε Ἰησοῦ). Em João 1:9, a verdadeira luz estava vindo ao mundo. Pronuncia-se ÉR-cho-mai.',
+      greekForm: 'ἔρχομαι',
+      transliteration: 'érchomai',
+      pronunciation: 'ÉR-cho-mai',
       translation: 'vir / chegar / ir',
       etymology:
-        'Verbo de movimento mais frequente; no Apocalipse: "Vem, Senhor Jesus" (á¼”ÏÏ‡Î¿Ï… ÎšÏÏÎ¹Îµ á¼¸Î·ÏƒÎ¿á¿¦)',
-      contextVerse: 'JoÃ£o 1:9',
+        'Verbo de movimento mais frequente; no Apocalipse: "Vem, Senhor Jesus" (ἔρχου Κύριε Ἰησοῦ)',
+      contextVerse: 'João 1:9',
       contextVerseText:
-        '"A verdadeira luz... estava vindo (á¼ÏÏ‡ÏŒÎ¼ÎµÎ½Î¿Î½) ao mundo"',
+        '"A verdadeira luz... estava vindo (ἐρχόμενον) ao mundo"',
       showGreekLarge: true,
     },
 
@@ -85,11 +85,11 @@ export const APOSTILA_L16: ApostilaLesson = {
       id: 'apostila-L16-S05',
       type: 'write_practice',
       narration:
-        'Agora escreva á¼”ÏÏ‡Î¿Î¼Î±Î¹ cinco vezes na linha 2. Pronuncie: Ã‰R-cho-mai.',
-      greekForm: 'á¼”ÏÏ‡Î¿Î¼Î±Î¹',
-      transliteration: 'Ã©rchomai',
+        'Agora escreva ἔρχομαι cinco vezes na linha 2. Pronuncie: ÉR-cho-mai.',
+      greekForm: 'ἔρχομαι',
+      transliteration: 'érchomai',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 2 da apostila â€” á¼”ÏÏ‡Î¿Î¼Î±Î¹',
+      writeInstruction: 'Linha 2 da apostila — ἔρχομαι',
       showPaperBadge: true,
       showGreekLarge: true,
     },
@@ -98,16 +98,16 @@ export const APOSTILA_L16: ApostilaLesson = {
       id: 'apostila-L16-S06',
       type: 'word_intro',
       narration:
-        'á¼€ÎºÎ¿ÏÏ‰ significa ouvir, escutar com atenÃ§Ã£o. Deu origem a "acÃºstica". NÃ£o Ã© ouvir passivo â€” implica entender e responder. Em JoÃ£o 10:27, Jesus diz: "As minhas ovelhas ouvem a minha voz". Pronuncia-se a-KÃš-o.',
-      greekForm: 'á¼€ÎºÎ¿ÏÏ‰',
-      transliteration: 'akoÃºÅ',
-      pronunciation: 'a-KÃš-o',
-      translation: 'ouvir / escutar com atenÃ§Ã£o',
+        'ἀκούω significa ouvir, escutar com atenção. Deu origem a "acústica". Não é ouvir passivo — implica entender e responder. Em João 10:27, Jesus diz: "As minhas ovelhas ouvem a minha voz". Pronuncia-se a-KÚ-o.',
+      greekForm: 'ἀκούω',
+      transliteration: 'akoúō',
+      pronunciation: 'a-KÚ-o',
+      translation: 'ouvir / escutar com atenção',
       etymology:
-        'Deu origem a "acÃºstica"; nÃ£o Ã© ouvir passivo â€” implica entender e responder',
-      contextVerse: 'JoÃ£o 10:27',
+        'Deu origem a "acústica"; não é ouvir passivo — implica entender e responder',
+      contextVerse: 'João 10:27',
       contextVerseText:
-        '"As minhas ovelhas ouvem (á¼€ÎºÎ¿ÏÎ¿Ï…ÏƒÎ¹Î½) a minha voz"',
+        '"As minhas ovelhas ouvem (ἀκούουσιν) a minha voz"',
       showGreekLarge: true,
     },
 
@@ -115,11 +115,11 @@ export const APOSTILA_L16: ApostilaLesson = {
       id: 'apostila-L16-S07',
       type: 'write_practice',
       narration:
-        'Agora escreva á¼€ÎºÎ¿ÏÏ‰ cinco vezes na linha 3. Pronuncie: a-KÃš-o.',
-      greekForm: 'á¼€ÎºÎ¿ÏÏ‰',
-      transliteration: 'akoÃºÅ',
+        'Agora escreva ἀκούω cinco vezes na linha 3. Pronuncie: a-KÚ-o.',
+      greekForm: 'ἀκούω',
+      transliteration: 'akoúō',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 3 da apostila â€” á¼€ÎºÎ¿ÏÏ‰',
+      writeInstruction: 'Linha 3 da apostila — ἀκούω',
       showPaperBadge: true,
       showGreekLarge: true,
     },
@@ -128,16 +128,16 @@ export const APOSTILA_L16: ApostilaLesson = {
       id: 'apostila-L16-S08',
       type: 'word_intro',
       narration:
-        'Î²Î»Î­Ï€Ï‰ significa ver, perceber, enxergar. Ã‰ distinto de á½ÏÎ¬Ï‰, que Ã© ver com mais Ãªnfase. Em JoÃ£o 9:25, o cego curado diz: "Uma coisa sei: eu era cego e agora vejo". Pronuncia-se BLÃ‰P-o.',
-      greekForm: 'Î²Î»Î­Ï€Ï‰',
-      transliteration: 'blÃ©pÅ',
-      pronunciation: 'BLÃ‰P-o',
+        'βλέπω significa ver, perceber, enxergar. É distinto de ὁράω, que é ver com mais ênfase. Em João 9:25, o cego curado diz: "Uma coisa sei: eu era cego e agora vejo". Pronuncia-se BLÉP-o.',
+      greekForm: 'βλέπω',
+      transliteration: 'blépō',
+      pronunciation: 'BLÉP-o',
       translation: 'ver / perceber / enxergar',
       etymology:
-        'Distinto de á½ÏÎ¬Ï‰ (ver com mais Ãªnfase); em JoÃ£o 9:25: "Eu era cego e agora vejo"',
-      contextVerse: 'JoÃ£o 9:25',
+        'Distinto de ὁράω (ver com mais ênfase); em João 9:25: "Eu era cego e agora vejo"',
+      contextVerse: 'João 9:25',
       contextVerseText:
-        '"Uma coisa sei: eu era cego e agora vejo (Î²Î»Î­Ï€Ï‰)"',
+        '"Uma coisa sei: eu era cego e agora vejo (βλέπω)"',
       showGreekLarge: true,
     },
 
@@ -145,11 +145,11 @@ export const APOSTILA_L16: ApostilaLesson = {
       id: 'apostila-L16-S09',
       type: 'write_practice',
       narration:
-        'Agora escreva Î²Î»Î­Ï€Ï‰ cinco vezes na linha 4. Pronuncie: BLÃ‰P-o.',
-      greekForm: 'Î²Î»Î­Ï€Ï‰',
-      transliteration: 'blÃ©pÅ',
+        'Agora escreva βλέπω cinco vezes na linha 4. Pronuncie: BLÉP-o.',
+      greekForm: 'βλέπω',
+      transliteration: 'blépō',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 4 da apostila â€” Î²Î»Î­Ï€Ï‰',
+      writeInstruction: 'Linha 4 da apostila — βλέπω',
       showPaperBadge: true,
       showGreekLarge: true,
     },
@@ -158,16 +158,16 @@ export const APOSTILA_L16: ApostilaLesson = {
       id: 'apostila-L16-S10',
       type: 'word_intro',
       narration:
-        'Ï€Î¹ÏƒÏ„ÎµÏÏ‰ significa crer, confiar, comprometer-se. Ã‰ o verbo de Ï€Î¯ÏƒÏ„Î¹Ï‚ (fÃ©). Em JoÃ£o, Ï€Î¹ÏƒÏ„ÎµÏÏ‰ sempre pede comprometimento, nÃ£o apenas assentimento. JoÃ£o 3:16: "Para que todo aquele que nele crÃª nÃ£o pereÃ§a". Pronuncia-se pis-TEÃš-o.',
-      greekForm: 'Ï€Î¹ÏƒÏ„ÎµÏÏ‰',
-      transliteration: 'pisteÃºÅ',
-      pronunciation: 'pis-TEÃš-o',
+        'πιστεύω significa crer, confiar, comprometer-se. É o verbo de πίστις (fé). Em João, πιστεύω sempre pede comprometimento, não apenas assentimento. João 3:16: "Para que todo aquele que nele crê não pereça". Pronuncia-se pis-TEÚ-o.',
+      greekForm: 'πιστεύω',
+      transliteration: 'pisteúō',
+      pronunciation: 'pis-TEÚ-o',
       translation: 'crer / confiar / comprometer-se',
       etymology:
-        'O verbo de Ï€Î¯ÏƒÏ„Î¹Ï‚ (fÃ©); note: em JoÃ£o, Ï€Î¹ÏƒÏ„ÎµÏÏ‰ sempre pede comprometimento, nÃ£o apenas assentimento',
-      contextVerse: 'JoÃ£o 3:16',
+        'O verbo de πίστις (fé); note: em João, πιστεύω sempre pede comprometimento, não apenas assentimento',
+      contextVerse: 'João 3:16',
       contextVerseText:
-        '"Para que todo aquele que nele crÃª (Ï€Î¹ÏƒÏ„ÎµÏÏ‰Î½) nÃ£o pereÃ§a"',
+        '"Para que todo aquele que nele crê (πιστεύων) não pereça"',
       showGreekLarge: true,
     },
 
@@ -175,11 +175,11 @@ export const APOSTILA_L16: ApostilaLesson = {
       id: 'apostila-L16-S11',
       type: 'write_practice',
       narration:
-        'Agora escreva Ï€Î¹ÏƒÏ„ÎµÏÏ‰ cinco vezes na linha 5. Pronuncie: pis-TEÃš-o.',
-      greekForm: 'Ï€Î¹ÏƒÏ„ÎµÏÏ‰',
-      transliteration: 'pisteÃºÅ',
+        'Agora escreva πιστεύω cinco vezes na linha 5. Pronuncie: pis-TEÚ-o.',
+      greekForm: 'πιστεύω',
+      transliteration: 'pisteúō',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 5 da apostila â€” Ï€Î¹ÏƒÏ„ÎµÏÏ‰',
+      writeInstruction: 'Linha 5 da apostila — πιστεύω',
       showPaperBadge: true,
       showGreekLarge: true,
     },
@@ -188,9 +188,9 @@ export const APOSTILA_L16: ApostilaLesson = {
       id: 'apostila-L16-S12',
       type: 'pause',
       narration:
-        'Ser, vir, ouvir, ver e crer â€” verbos que descrevem o discipulado. Releia estas palavras.',
+        'Ser, vir, ouvir, ver e crer — verbos que descrevem o discipulado. Releia estas palavras.',
       displayText:
-        'Ser, vir, ouvir, ver e crer â€” verbos que descrevem o discipulado.\nQuando estiver pronto, continue.',
+        'Ser, vir, ouvir, ver e crer — verbos que descrevem o discipulado.\nQuando estiver pronto, continue.',
       showGreekLarge: false,
     },
 
@@ -199,7 +199,7 @@ export const APOSTILA_L16: ApostilaLesson = {
       type: 'dictation',
       narration: 'Escreva no papel: ser.',
       displayText: '"ser"',
-      greekForm: 'Îµá¼°Î¼Î¯',
+      greekForm: 'εἰμί',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
@@ -210,7 +210,7 @@ export const APOSTILA_L16: ApostilaLesson = {
       type: 'dictation',
       narration: 'Escreva no papel: vir.',
       displayText: '"vir"',
-      greekForm: 'á¼”ÏÏ‡Î¿Î¼Î±Î¹',
+      greekForm: 'ἔρχομαι',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
@@ -221,7 +221,7 @@ export const APOSTILA_L16: ApostilaLesson = {
       type: 'dictation',
       narration: 'Escreva no papel: ouvir.',
       displayText: '"ouvir"',
-      greekForm: 'á¼€ÎºÎ¿ÏÏ‰',
+      greekForm: 'ἀκούω',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
@@ -232,7 +232,7 @@ export const APOSTILA_L16: ApostilaLesson = {
       type: 'dictation',
       narration: 'Escreva no papel: ver.',
       displayText: '"ver"',
-      greekForm: 'Î²Î»Î­Ï€Ï‰',
+      greekForm: 'βλέπω',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
@@ -243,7 +243,7 @@ export const APOSTILA_L16: ApostilaLesson = {
       type: 'dictation',
       narration: 'Escreva no papel: crer.',
       displayText: '"crer"',
-      greekForm: 'Ï€Î¹ÏƒÏ„ÎµÏÏ‰',
+      greekForm: 'πιστεύω',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,

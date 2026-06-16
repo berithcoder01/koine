@@ -1,9 +1,9 @@
-﻿/**
- * L04 â€” Consoantes Dentais (Î´, Ï„, Î¸)
+/**
+ * L04 — Consoantes Dentais (δ, τ, θ)
  *
  * ID:               apostila-L04
- * TÃTULO:           LiÃ§Ã£o 4 â€” Consoantes com a LÃ­ngua
- * DESCRIÃ‡ÃƒO:        Delta, Tau, Teta
+ * TÍTULO:           Lição 4 — Consoantes com a Língua
+ * DESCRIÇÃO:        Delta, Tau, Teta
  * PDF_PAGE:         7
  * XP:               35
  * TEMPO:            10 min
@@ -12,11 +12,11 @@
  * Total de Steps: 14
  */
 
-import type { ApostilaLesson } from '../../features/apostila/apostilaTypes';
+import type { ApostilaLesson } from '../../../features/apostila/apostilaTypes';
 
 export const APOSTILA_L04: ApostilaLesson = {
   id: 'apostila-L04',
-  title: 'LiÃ§Ã£o 4 â€” Consoantes com a LÃ­ngua',
+  title: 'Lição 4 — Consoantes com a Língua',
   description: 'Delta, Tau, Teta',
   apostilaPdfPage: 7,
   lessonNumber: 4,
@@ -25,187 +25,187 @@ export const APOSTILA_L04: ApostilaLesson = {
   requiresPrevious: true,
 
   steps: [
-    // â”€â”€â”€ S01 â€” INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S01 — INTRO ───────────────────────────────────────────────
     {
       id: 'apostila-L04-S01',
       type: 'intro',
       narration:
-        'Hoje vamos estudar as consoantes dentais. Esses sons sÃ£o produzidos com a lÃ­ngua nos dentes: delta, tau e teta. Abra sua apostila na pÃ¡gina 7.',
-      displayText: 'Abra sua apostila na PÃ¡gina 7',
+        'Hoje vamos estudar as consoantes dentais. Esses sons são produzidos com a língua nos dentes: delta, tau e teta. Abra sua apostila na página 7.',
+      displayText: 'Abra sua apostila na Página 7',
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S02 â€” WORD_INTRO: DELTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S02 — WORD_INTRO: DELTA ────────────────────────────────────
     {
       id: 'apostila-L04-S02',
       type: 'word_intro',
       narration:
-        'A primeira letra Ã© o delta. MaiÃºsculo: Î”. MinÃºsculo: Î´. O som Ã© "d", como em "dado".',
-      greekForm: 'Î” Î´',
+        'A primeira letra é o delta. Maiúsculo: Δ. Minúsculo: δ. O som é "d", como em "dado".',
+      greekForm: 'Δ δ',
       transliteration: 'delta',
       pronunciation: 'd (como em \'dado\')',
       translation: 'Letra Delta',
       etymology:
-        'Do Dalet hebraico (×“); forma triangular foi usada para representar o rio Nilo â€” daÃ­ "delta"',
-      contextVerse: 'JoÃ£o 1:14',
+        'Do Dalet hebraico (ד); forma triangular foi usada para representar o rio Nilo — daí "delta"',
+      contextVerse: 'João 1:14',
       contextVerseText:
-        '"O Verbo se fez carne (ÏƒÎ¬ÏÎ¾)" â€” Î´ aparece em Î´ÏŒÎ¾Î± (glÃ³ria) e Î´ÏÎ½Î±Î¼Î¹Ï‚ (poder)',
+        '"O Verbo se fez carne (σάρξ)" — δ aparece em δόξα (glória) e δύναμις (poder)',
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S03 â€” ALPHABET_TRACE: DELTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S03 — ALPHABET_TRACE: DELTA ────────────────────────────────
     {
       id: 'apostila-L04-S03',
       type: 'alphabet_trace',
       narration:
-        'Observe a ordem dos traÃ§os do delta minÃºsculo: Primeiro o arco curvo da esquerda para baixo formando um semicÃ­rculo aberto, depois a haste vertical Ã  direita, levemente inclinada.',
-      greekForm: 'Î´',
+        'Observe a ordem dos traços do delta minúsculo: Primeiro o arco curvo da esquerda para baixo formando um semicírculo aberto, depois a haste vertical à direita, levemente inclinada.',
+      greekForm: 'δ',
       showStrokeOrder: true,
       showPaperBadge: false,
     },
 
-    // â”€â”€â”€ S04 â€” WRITE_PRACTICE: DELTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S04 — WRITE_PRACTICE: DELTA ────────────────────────────────
     {
       id: 'apostila-L04-S04',
       type: 'write_practice',
       narration:
-        'Agora escreva o delta minÃºsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.',
-      greekForm: 'Î´',
+        'Agora escreva o delta minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.',
+      greekForm: 'δ',
       transliteration: 'delta',
       writeRepetitions: 8,
-      writeInstruction: 'Linha 1 da apostila â€” Delta minÃºsculo (Î´)',
+      writeInstruction: 'Linha 1 da apostila — Delta minúsculo (δ)',
       showPaperBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S05 â€” WORD_INTRO: TAU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S05 — WORD_INTRO: TAU ──────────────────────────────────────
     {
       id: 'apostila-L04-S05',
       type: 'word_intro',
       narration:
-        'A segunda letra Ã© o tau. MaiÃºsculo: Î¤. MinÃºsculo: Ï„. O som Ã© "t", como em "tudo".',
-      greekForm: 'Î¤ Ï„',
+        'A segunda letra é o tau. Maiúsculo: Τ. Minúsculo: τ. O som é "t", como em "tudo".',
+      greekForm: 'Τ τ',
       transliteration: 'tau',
       pronunciation: 't (como em \'tudo\')',
       translation: 'Letra Tau',
       etymology:
-        'Do Taw hebraico (×ª); forma em cruz (+) foi associada pelos primeiros cristÃ£os Ã  cruz de Cristo',
+        'Do Taw hebraico (ת); forma em cruz (+) foi associada pelos primeiros cristãos à cruz de Cristo',
       contextVerse: 'Ezequiel 9:4 (citado em Apocalipse)',
       contextVerseText:
-        '"...marca o Ï„ (tau) na testa" â€” sinal de proteÃ§Ã£o na tradiÃ§Ã£o judaica',
+        '"...marca o τ (tau) na testa" — sinal de proteção na tradição judaica',
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S06 â€” ALPHABET_TRACE: TAU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S06 — ALPHABET_TRACE: TAU ──────────────────────────────────
     {
       id: 'apostila-L04-S06',
       type: 'alphabet_trace',
       narration:
-        'Observe a ordem dos traÃ§os do tau minÃºsculo: Primeiro a barra horizontal de cima para baixo, depois a haste vertical curta no centro, abaixo da barra.',
-      greekForm: 'Ï„',
+        'Observe a ordem dos traços do tau minúsculo: Primeiro a barra horizontal de cima para baixo, depois a haste vertical curta no centro, abaixo da barra.',
+      greekForm: 'τ',
       showStrokeOrder: true,
       showPaperBadge: false,
     },
 
-    // â”€â”€â”€ S07 â€” WRITE_PRACTICE: TAU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S07 — WRITE_PRACTICE: TAU ──────────────────────────────────
     {
       id: 'apostila-L04-S07',
       type: 'write_practice',
       narration:
-        'Agora escreva o tau minÃºsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.',
-      greekForm: 'Ï„',
+        'Agora escreva o tau minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.',
+      greekForm: 'τ',
       transliteration: 'tau',
       writeRepetitions: 8,
-      writeInstruction: 'Linha 2 da apostila â€” Tau minÃºsculo (Ï„)',
+      writeInstruction: 'Linha 2 da apostila — Tau minúsculo (τ)',
       showPaperBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S08 â€” WORD_INTRO: TETA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S08 — WORD_INTRO: TETA ─────────────────────────────────────
     {
       id: 'apostila-L04-S08',
       type: 'word_intro',
       narration:
-        'A terceira letra Ã© o teta. MaiÃºsculo: Î˜. MinÃºsculo: Î¸. O som Ã© "th" aspirado, como em "think" do inglÃªs.',
-      greekForm: 'Î˜ Î¸',
+        'A terceira letra é o teta. Maiúsculo: Θ. Minúsculo: θ. O som é "th" aspirado, como em "think" do inglês.',
+      greekForm: 'Θ θ',
       transliteration: 'teta',
-      pronunciation: 'th aspirado (como \'think\' em inglÃªs)',
+      pronunciation: 'th aspirado (como \'think\' em inglês)',
       translation: 'Letra Teta',
       etymology:
-        'Aspirada dental; nÃ£o tem equivalente em portuguÃªs â€” soa como "th" do inglÃªs "think"',
-      contextVerse: 'JoÃ£o 1:1',
+        'Aspirada dental; não tem equivalente em português — soa como "th" do inglês "think"',
+      contextVerse: 'João 1:1',
       contextVerseText:
-        '"...e Deus (Î¸ÎµÏŒÏ‚) era o Verbo" â€” Î¸ inicia Î¸ÎµÏŒÏ‚, Î¸Î­Î»Ï‰, Î¸Î¬Î½Î±Ï„Î¿Ï‚ (morte)',
+        '"...e Deus (θεός) era o Verbo" — θ inicia θεός, θέλω, θάνατος (morte)',
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S09 â€” ALPHABET_TRACE: TETA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S09 — ALPHABET_TRACE: TETA ─────────────────────────────────
     {
       id: 'apostila-L04-S09',
       type: 'alphabet_trace',
       narration:
-        'Observe a ordem dos traÃ§os do teta minÃºsculo: Primeiro um cÃ­rculo fechado completo, depois o traÃ§o horizontal no centro do cÃ­rculo.',
-      greekForm: 'Î¸',
+        'Observe a ordem dos traços do teta minúsculo: Primeiro um círculo fechado completo, depois o traço horizontal no centro do círculo.',
+      greekForm: 'θ',
       showStrokeOrder: true,
       showPaperBadge: false,
     },
 
-    // â”€â”€â”€ S10 â€” WRITE_PRACTICE: TETA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S10 — WRITE_PRACTICE: TETA ─────────────────────────────────
     {
       id: 'apostila-L04-S10',
       type: 'write_practice',
       narration:
-        'Agora escreva o teta minÃºsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.',
-      greekForm: 'Î¸',
+        'Agora escreva o teta minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.',
+      greekForm: 'θ',
       transliteration: 'teta',
       writeRepetitions: 8,
-      writeInstruction: 'Linha 3 da apostila â€” Teta minÃºsculo (Î¸)',
+      writeInstruction: 'Linha 3 da apostila — Teta minúsculo (θ)',
       showPaperBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S11 â€” PAUSE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S11 — PAUSE ────────────────────────────────────────────────
     {
       id: 'apostila-L04-S11',
       type: 'pause',
       narration:
-        'Excelente! VocÃª aprendeu as trÃªs consoantes dentais: delta, tau e teta. Antes de continuar, olhe para o que escreveu e compare com o modelo.',
+        'Excelente! Você aprendeu as três consoantes dentais: delta, tau e teta. Antes de continuar, olhe para o que escreveu e compare com o modelo.',
       displayText:
         'Compare sua escrita com o modelo na apostila.\nQuando estiver pronto, continue.',
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S12 â€” DICTATION: DELTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S12 — DICTATION: DELTA ─────────────────────────────────────
     {
       id: 'apostila-L04-S12',
       type: 'dictation',
       narration: 'Escreva no papel: delta.',
       displayText: '"delta"',
-      greekForm: 'Î” Î´',
+      greekForm: 'Δ δ',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S13 â€” DICTATION: TAU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S13 — DICTATION: TAU ───────────────────────────────────────
     {
       id: 'apostila-L04-S13',
       type: 'dictation',
       narration: 'Escreva no papel: tau.',
       displayText: '"tau"',
-      greekForm: 'Î¤ Ï„',
+      greekForm: 'Τ τ',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S14 â€” DICTATION: TETA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S14 — DICTATION: TETA ──────────────────────────────────────
     {
       id: 'apostila-L04-S14',
       type: 'dictation',
       narration: 'Escreva no papel: teta.',
       displayText: '"teta"',
-      greekForm: 'Î˜ Î¸',
+      greekForm: 'Θ θ',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,

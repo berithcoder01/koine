@@ -1,6 +1,6 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { APOSTILA_LESSONS } from '../../content/apostila/lessons';
-import { ApostilaSessionState, ApostilaStep } from './apostilaTypes';
+import { ApostilaSessionState } from './apostilaTypes';
 import { useProgressStore } from '../progress/progressStore';
 import { useGamificationActions } from '../gamification/useGamificationActions';
 import { useApostilaAudio } from './useApostilaAudio';
@@ -11,7 +11,6 @@ export function useApostilaSession(lessonId: string) {
   const { onApostilaComplete } = useGamificationActions();
   const { playStep, stop: stopAudio, isPlaying: isAudioPlayingAudio } = useApostilaAudio(lessonId);
 
-  const ttsRef = useRef<SpeechSynthesisUtterance | null>(null);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [writeCount, setWriteCount] = useState(0);
   const [isDictationRevealed, setIsDictationRevealed] = useState(false);
@@ -24,9 +23,8 @@ export function useApostilaSession(lessonId: string) {
   const totalSteps = lesson.steps.length;
   const progressPercent = Math.round(((currentStepIndex + 1) / totalSteps) * 100);
 
-  const playNarration = useCallback((step: ApostilaStep) => {
+  const playNarration = useCallback(() => {
     stopAudio();
-    window.speechSynthesis?.cancel();
 
     const stepNumber = currentStepIndex + 1;
     playStep(stepNumber);
@@ -37,7 +35,11 @@ export function useApostilaSession(lessonId: string) {
     stopAudio();
     setWriteCount(0);
     setIsDictationRevealed(false);
-  }, [currentStepIndex]);
+    
+    // Auto-play audio on step change
+    const timer = setTimeout(() => playNarration(), 100);
+    return () => clearTimeout(timer);
+  }, [currentStepIndex, playNarration]);
 
   useEffect(() => {
     if (!isAudioPlayingAudio) {
@@ -77,8 +79,8 @@ export function useApostilaSession(lessonId: string) {
   }, [lesson, markApostilaLessonComplete, onApostilaComplete, stopAudio]);
 
   const playCurrentAudio = useCallback(() => {
-    playNarration(currentStep);
-  }, [currentStep, playNarration]);
+    playNarration();
+  }, [playNarration]);
 
   const state: ApostilaSessionState = {
     lesson,

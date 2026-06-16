@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react';
-import { Haptics, ImpactStyle } from '@capacitor/haptics';
+import { useHaptics } from '@/features/settings/useHaptics';
 import { APP_CONFIG } from '@/core/constants/config';
 import { Button } from '@/ui/components/Button';
 import { gridValidate } from '@/core/utils/gridValidator';
@@ -23,6 +23,7 @@ async function calculateScore(strokes: Point[][], canvasSize: number, letterChar
 
 export const CanvasExercise: React.FC<CanvasExerciseProps> = ({ exercise, onAnswer }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const { light, medium } = useHaptics();
   const isDrawingRef = useRef(false);
   const currentStrokeRef = useRef<Point[]>([]);
   const [allStrokes, setAllStrokes] = useState<Point[][]>([]);
@@ -156,9 +157,9 @@ export const CanvasExercise: React.FC<CanvasExerciseProps> = ({ exercise, onAnsw
     setFeedback(passed ? 'pass' : 'fail');
 
     if (passed) {
-      Haptics.impact({ style: ImpactStyle.Light }).catch(() => {});
+      light();
     } else {
-      Haptics.impact({ style: ImpactStyle.Medium }).catch(() => {});
+      medium();
       setAttempts(prev => prev + 1);
     }
   };

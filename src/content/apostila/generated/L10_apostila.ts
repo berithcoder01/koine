@@ -1,9 +1,9 @@
-﻿/**
- * L10 â€” Palavra e AÃ§Ã£o (Î»ÏŒÎ³Î¿Ï‚, á¿¥á¿†Î¼Î±, Î³ÏÎ¬Ï†Ï‰, Î»Î­Î³Ï‰, Ï€Î¿Î¹Î­Ï‰)
+/**
+ * L10 — Palavra e Ação (λόγος, ῥῆμα, γράφω, λέγω, ποιέω)
  *
  * ID:               apostila-L10
- * TÃTULO:           LiÃ§Ã£o 10 â€” Palavra e AÃ§Ã£o
- * DESCRIÃ‡ÃƒO:        Î»ÏŒÎ³Î¿Ï‚, á¿¥á¿†Î¼Î±, Î³ÏÎ¬Ï†Ï‰, Î»Î­Î³Ï‰, Ï€Î¿Î¹Î­Ï‰
+ * TÍTULO:           Lição 10 — Palavra e Ação
+ * DESCRIÇÃO:        λόγος, ῥῆμα, γράφω, λέγω, ποιέω
  * PDF_PAGE:         21
  * XP:               40
  * TEMPO:            12 min
@@ -12,268 +12,268 @@
  * Total de Steps: 17
  */
 
-import type { ApostilaLesson } from '../../features/apostila/apostilaTypes';
+import type { ApostilaLesson } from '../../../features/apostila/apostilaTypes';
 
 export const APOSTILA_L10: ApostilaLesson = {
   id: 'apostila-L10',
   lessonNumber: 10,
-  title: 'LiÃ§Ã£o 10 â€” Palavra e AÃ§Ã£o',
-  description: 'Î»ÏŒÎ³Î¿Ï‚, á¿¥á¿†Î¼Î±, Î³ÏÎ¬Ï†Ï‰, Î»Î­Î³Ï‰, Ï€Î¿Î¹Î­Ï‰',
+  title: 'Lição 10 — Palavra e Ação',
+  description: 'λόγος, ῥῆμα, γράφω, λέγω, ποιέω',
   apostilaPdfPage: 21,
   xpReward: 40,
   estimatedMinutes: 12,
   requiresPrevious: true,
 
   steps: [
-    // â”€â”€â”€ S01 â€” INTRO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S01 — INTRO ───────────────────────────────────────────────
     {
       id: 'apostila-L10-S01',
       type: 'intro',
       narration:
-        'LiÃ§Ã£o 10 â€” Palavra e aÃ§Ã£o. Hoje vocÃª vai aprender verbos e substantivos fundamentais: lÃ³gos, rhema, grÃ¡pho, lÃ©go e poiÃ©o. Palavras que nos ensinam como Deus se comunica e age. Abra sua apostila na pÃ¡gina 21.',
-      displayText: 'Abra sua apostila na PÃ¡gina 21',
+        'Lição 10 — Palavra e ação. Hoje você vai aprender verbos e substantivos fundamentais: lógos, rhema, grápho, légo e poiéo. Palavras que nos ensinam como Deus se comunica e age. Abra sua apostila na página 21.',
+      displayText: 'Abra sua apostila na Página 21',
     },
 
-    // â”€â”€â”€ S02 â€” WORD_INTRO: Î»ÏŒÎ³Î¿Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S02 — WORD_INTRO: λόγος ───────────────────────────────────
     {
       id: 'apostila-L10-S02',
       type: 'word_intro',
       narration:
-        'Î»ÏŒÎ³Î¿Ï‚ (lÃ³gos) â€” palavra / razÃ£o / discurso. No princÃ­pio era o Verbo, e o Verbo estava com Deus. A razÃ£o que ordena o cosmos.',
-      displayText: 'Î»ÏŒÎ³Î¿Ï‚ â€” Palavra',
-      greekForm: 'Î»ÏŒÎ³Î¿Ï‚',
-      transliteration: 'lÃ³gos',
-      pronunciation: 'LÃ“-gos',
-      translation: 'Palavra / RazÃ£o / Discurso',
+        'λόγος (lógos) — palavra / razão / discurso. No princípio era o Verbo, e o Verbo estava com Deus. A razão que ordena o cosmos.',
+      displayText: 'λόγος — Palavra',
+      greekForm: 'λόγος',
+      transliteration: 'lógos',
+      pronunciation: 'LÓ-gos',
+      translation: 'Palavra / Razão / Discurso',
       etymology:
-        'Raiz *leg-, colher/ordenar; na filosofia grega, a razÃ£o que ordena o cosmos',
-      contextVerse: 'JoÃ£o 1:1',
+        'Raiz *leg-, colher/ordenar; na filosofia grega, a razão que ordena o cosmos',
+      contextVerse: 'João 1:1',
       contextVerseText:
-        '"No princÃ­pio era o Verbo (Î›ÏŒÎ³Î¿Ï‚), e o Verbo estava com Deus"',
+        '"No princípio era o Verbo (Λόγος), e o Verbo estava com Deus"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S03 â€” WRITE_PRACTICE: Î»ÏŒÎ³Î¿Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S03 — WRITE_PRACTICE: λόγος ───────────────────────────────
     {
       id: 'apostila-L10-S03',
       type: 'write_practice',
       narration:
-        'Agora escreva Î»ÏŒÎ³Î¿Ï‚ cinco vezes na linha 1. Pronuncie: LÃ“-gos.',
-      displayText: 'Î»ÏŒÎ³Î¿Ï‚ Ã— 5',
-      greekForm: 'Î»ÏŒÎ³Î¿Ï‚',
+        'Agora escreva λόγος cinco vezes na linha 1. Pronuncie: LÓ-gos.',
+      displayText: 'λόγος × 5',
+      greekForm: 'λόγος',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 1 da apostila â€” Î»ÏŒÎ³Î¿Ï‚',
+      writeInstruction: 'Linha 1 da apostila — λόγος',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S04 â€” WORD_INTRO: á¿¥á¿†Î¼Î± â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S04 — WORD_INTRO: ῥῆμα ────────────────────────────────────
     {
       id: 'apostila-L10-S04',
       type: 'word_intro',
       narration:
-        'á¿¥á¿†Î¼Î± (rhÄ“ma) â€” palavra falada / declaraÃ§Ã£o. A fÃ© vem pelo ouvir, e o ouvir pela palavra de Deus. Ã‰ a palavra como evento sonoro.',
-      displayText: 'á¿¥á¿†Î¼Î± â€” Palavra Falada',
-      greekForm: 'á¿¥á¿†Î¼Î±',
-      transliteration: 'rhÄ“ma',
-      pronunciation: 'RÃŠ-ma',
-      translation: 'Palavra Falada / DeclaraÃ§Ã£o',
+        'ῥῆμα (rhēma) — palavra falada / declaração. A fé vem pelo ouvir, e o ouvir pela palavra de Deus. É a palavra como evento sonoro.',
+      displayText: 'ῥῆμα — Palavra Falada',
+      greekForm: 'ῥῆμα',
+      transliteration: 'rhēma',
+      pronunciation: 'RÊ-ma',
+      translation: 'Palavra Falada / Declaração',
       etymology:
-        'De á¿¥Î­Ï‰, fluir; Ã© a palavra como evento sonoro, o que foi dito em um momento especÃ­fico',
+        'De ῥέω, fluir; é a palavra como evento sonoro, o que foi dito em um momento específico',
       contextVerse: 'Romanos 10:17',
       contextVerseText:
-        '"A fÃ© vem pelo ouvir, e o ouvir pela palavra (á¿¥Î®Î¼Î±Ï„Î¿Ï‚) de Deus"',
+        '"A fé vem pelo ouvir, e o ouvir pela palavra (ῥήματος) de Deus"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S05 â€” WRITE_PRACTICE: á¿¥á¿†Î¼Î± â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S05 — WRITE_PRACTICE: ῥῆμα ────────────────────────────────
     {
       id: 'apostila-L10-S05',
       type: 'write_practice',
       narration:
-        'Agora escreva á¿¥á¿†Î¼Î± cinco vezes na linha 2. Pronuncie: RÃŠ-ma.',
-      displayText: 'á¿¥á¿†Î¼Î± Ã— 5',
-      greekForm: 'á¿¥á¿†Î¼Î±',
+        'Agora escreva ῥῆμα cinco vezes na linha 2. Pronuncie: RÊ-ma.',
+      displayText: 'ῥῆμα × 5',
+      greekForm: 'ῥῆμα',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 2 da apostila â€” á¿¥á¿†Î¼Î±',
+      writeInstruction: 'Linha 2 da apostila — ῥῆμα',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S06 â€” WORD_INTRO: Î³ÏÎ¬Ï†Ï‰ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S06 — WORD_INTRO: γράφω ──────────────────────────────────
     {
       id: 'apostila-L10-S06',
       type: 'word_intro',
       narration:
-        'Î³ÏÎ¬Ï†Ï‰ (grÃ¡phÅ) â€” escrever. Jesus fez muitos outros sinais... que nÃ£o estÃ£o escritos neste livro. Deu origem a "grafia", "grÃ¡fico".',
-      displayText: 'Î³ÏÎ¬Ï†Ï‰ â€” Escrever',
-      greekForm: 'Î³ÏÎ¬Ï†Ï‰',
-      transliteration: 'grÃ¡phÅ',
-      pronunciation: 'GRÃ-fo',
+        'γράφω (gráphō) — escrever. Jesus fez muitos outros sinais... que não estão escritos neste livro. Deu origem a "grafia", "gráfico".',
+      displayText: 'γράφω — Escrever',
+      greekForm: 'γράφω',
+      transliteration: 'gráphō',
+      pronunciation: 'GRÁ-fo',
       translation: 'Escrever',
       etymology:
-        'Deu origem a "grafia", "grÃ¡fico", "gravura"; inicialmente significava riscar, desenhar',
-      contextVerse: 'JoÃ£o 20:30',
+        'Deu origem a "grafia", "gráfico", "gravura"; inicialmente significava riscar, desenhar',
+      contextVerse: 'João 20:30',
       contextVerseText:
-        '"Jesus fez muitos outros sinais... que nÃ£o estÃ£o escritos (Î³ÎµÎ³ÏÎ±Î¼Î¼Î­Î½Î±) neste livro"',
+        '"Jesus fez muitos outros sinais... que não estão escritos (γεγραμμένα) neste livro"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S07 â€” WRITE_PRACTICE: Î³ÏÎ¬Ï†Ï‰ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S07 — WRITE_PRACTICE: γράφω ───────────────────────────────
     {
       id: 'apostila-L10-S07',
       type: 'write_practice',
       narration:
-        'Agora escreva Î³ÏÎ¬Ï†Ï‰ cinco vezes na linha 3. Pronuncie: GRÃ-fo.',
-      displayText: 'Î³ÏÎ¬Ï†Ï‰ Ã— 5',
-      greekForm: 'Î³ÏÎ¬Ï†Ï‰',
+        'Agora escreva γράφω cinco vezes na linha 3. Pronuncie: GRÁ-fo.',
+      displayText: 'γράφω × 5',
+      greekForm: 'γράφω',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 3 da apostila â€” Î³ÏÎ¬Ï†Ï‰',
+      writeInstruction: 'Linha 3 da apostila — γράφω',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S08 â€” WORD_INTRO: Î»Î­Î³Ï‰ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S08 — WORD_INTRO: λέγω ────────────────────────────────────
     {
       id: 'apostila-L10-S08',
       type: 'word_intro',
       narration:
-        'Î»Î­Î³Ï‰ (lÃ©gÅ) â€” dizer / falar. Eis o Cordeiro de Deus, que tira o pecado do mundo â€” disse JoÃ£o. Um dos verbos mais frequentes do NT.',
-      displayText: 'Î»Î­Î³Ï‰ â€” Dizer',
-      greekForm: 'Î»Î­Î³Ï‰',
-      transliteration: 'lÃ©gÅ',
-      pronunciation: 'LÃ‰-go',
+        'λέγω (légō) — dizer / falar. Eis o Cordeiro de Deus, que tira o pecado do mundo — disse João. Um dos verbos mais frequentes do NT.',
+      displayText: 'λέγω — Dizer',
+      greekForm: 'λέγω',
+      transliteration: 'légō',
+      pronunciation: 'LÉ-go',
       translation: 'Dizer / Falar',
       etymology:
-        'Um dos verbos mais frequentes do NT (~2.350 ocorrÃªncias); base de Î»ÏŒÎ³Î¿Ï‚',
-      contextVerse: 'JoÃ£o 1:29',
+        'Um dos verbos mais frequentes do NT (~2.350 ocorrências); base de λόγος',
+      contextVerse: 'João 1:29',
       contextVerseText:
-        '"Eis o Cordeiro de Deus, que tira o pecado do mundo" â€” disse (Î»Î­Î³ÎµÎ¹) JoÃ£o',
+        '"Eis o Cordeiro de Deus, que tira o pecado do mundo" — disse (λέγει) João',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S09 â€” WRITE_PRACTICE: Î»Î­Î³Ï‰ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S09 — WRITE_PRACTICE: λέγω ────────────────────────────────
     {
       id: 'apostila-L10-S09',
       type: 'write_practice',
       narration:
-        'Agora escreva Î»Î­Î³Ï‰ cinco vezes na linha 4. Pronuncie: LÃ‰-go.',
-      displayText: 'Î»Î­Î³Ï‰ Ã— 5',
-      greekForm: 'Î»Î­Î³Ï‰',
+        'Agora escreva λέγω cinco vezes na linha 4. Pronuncie: LÉ-go.',
+      displayText: 'λέγω × 5',
+      greekForm: 'λέγω',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 4 da apostila â€” Î»Î­Î³Ï‰',
+      writeInstruction: 'Linha 4 da apostila — λέγω',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S10 â€” WORD_INTRO: Ï€Î¿Î¹Î­Ï‰ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S10 — WORD_INTRO: ποιέω ──────────────────────────────────
     {
       id: 'apostila-L10-S10',
       type: 'word_intro',
       narration:
-        'Ï€Î¿Î¹Î­Ï‰ (poiÃ©Å) â€” fazer / criar / agir. Jesus fez este primeiro sinal em CanÃ¡. Deu origem a "poema" (Ï€Î¿Î¯Î·Î¼Î±): obra-prima.',
-      displayText: 'Ï€Î¿Î¹Î­Ï‰ â€” Fazer',
-      greekForm: 'Ï€Î¿Î¹Î­Ï‰',
-      transliteration: 'poiÃ©Å',
-      pronunciation: 'poi-Ã‰-o',
+        'ποιέω (poiéō) — fazer / criar / agir. Jesus fez este primeiro sinal em Caná. Deu origem a "poema" (ποίημα): obra-prima.',
+      displayText: 'ποιέω — Fazer',
+      greekForm: 'ποιέω',
+      transliteration: 'poiéō',
+      pronunciation: 'poi-É-o',
       translation: 'Fazer / Criar / Agir',
       etymology:
-        'Deu origem ao inglÃªs "poem" (Ï€Î¿Î¯Î·Î¼Î±); o que Ã© criado/feito. EfÃ©sios 2:10: Ï€Î¿Î¯Î·Î¼Î± (obra-prima)',
-      contextVerse: 'JoÃ£o 2:11',
+        'Deu origem ao inglês "poem" (ποίημα); o que é criado/feito. Efésios 2:10: ποίημα (obra-prima)',
+      contextVerse: 'João 2:11',
       contextVerseText:
-        '"Jesus fez (á¼Ï€Î¿Î¯Î·ÏƒÎµÎ½) este primeiro sinal em CanÃ¡"',
+        '"Jesus fez (ἐποίησεν) este primeiro sinal em Caná"',
       showGreekLarge: true,
       showVoiceBadge: true,
     },
 
-    // â”€â”€â”€ S11 â€” WRITE_PRACTICE: Ï€Î¿Î¹Î­Ï‰ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S11 — WRITE_PRACTICE: ποιέω ──────────────────────────────
     {
       id: 'apostila-L10-S11',
       type: 'write_practice',
       narration:
-        'Agora escreva Ï€Î¿Î¹Î­Ï‰ cinco vezes na linha 5. Pronuncie: poi-Ã‰-o.',
-      displayText: 'Ï€Î¿Î¹Î­Ï‰ Ã— 5',
-      greekForm: 'Ï€Î¿Î¹Î­Ï‰',
+        'Agora escreva ποιέω cinco vezes na linha 5. Pronuncie: poi-É-o.',
+      displayText: 'ποιέω × 5',
+      greekForm: 'ποιέω',
       writeRepetitions: 5,
-      writeInstruction: 'Linha 5 da apostila â€” Ï€Î¿Î¹Î­Ï‰',
+      writeInstruction: 'Linha 5 da apostila — ποιέω',
       showPaperBadge: true,
       showVoiceBadge: true,
       showGreekLarge: true,
     },
 
-    // â”€â”€â”€ S12 â€” PAUSE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S12 — PAUSE ────────────────────────────────────────────────
     {
       id: 'apostila-L10-S12',
       type: 'pause',
       narration:
-        'Excelente! VocÃª aprendeu palavras que descrevem como Deus se revela: pela Palavra e pela aÃ§Ã£o.',
+        'Excelente! Você aprendeu palavras que descrevem como Deus se revela: pela Palavra e pela ação.',
       displayText:
         'Releia as cinco palavras na sua apostila.\nQuando estiver pronto, continue.',
     },
 
-    // â”€â”€â”€ S13 â€” DICTATION: Î»ÏŒÎ³Î¿Ï‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S13 — DICTATION: λόγος ────────────────────────────────────
     {
       id: 'apostila-L10-S13',
       type: 'dictation',
       narration: "Escreva a palavra grega para: 'palavra'.",
       displayText: 'palavra',
-      greekForm: 'Î»ÏŒÎ³Î¿Ï‚',
+      greekForm: 'λόγος',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S14 â€” DICTATION: á¿¥á¿†Î¼Î± â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S14 — DICTATION: ῥῆμα ─────────────────────────────────────
     {
       id: 'apostila-L10-S14',
       type: 'dictation',
       narration: "Escreva a palavra grega para: 'palavra falada'.",
       displayText: 'palavra falada',
-      greekForm: 'á¿¥á¿†Î¼Î±',
+      greekForm: 'ῥῆμα',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S15 â€” DICTATION: Î³ÏÎ¬Ï†Ï‰ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S15 — DICTATION: γράφω ────────────────────────────────────
     {
       id: 'apostila-L10-S15',
       type: 'dictation',
       narration: "Escreva a palavra grega para: 'escrever'.",
       displayText: 'escrever',
-      greekForm: 'Î³ÏÎ¬Ï†Ï‰',
+      greekForm: 'γράφω',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S16 â€” DICTATION: Î»Î­Î³Ï‰ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S16 — DICTATION: λέγω ─────────────────────────────────────
     {
       id: 'apostila-L10-S16',
       type: 'dictation',
       narration: "Escreva a palavra grega para: 'dizer'.",
       displayText: 'dizer',
-      greekForm: 'Î»Î­Î³Ï‰',
+      greekForm: 'λέγω',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
     },
 
-    // â”€â”€â”€ S17 â€” DICTATION: Ï€Î¿Î¹Î­Ï‰ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // ─── S17 — DICTATION: ποιέω ────────────────────────────────────
     {
       id: 'apostila-L10-S17',
       type: 'dictation',
       narration: "Escreva a palavra grega para: 'fazer'.",
       displayText: 'fazer',
-      greekForm: 'Ï€Î¿Î¹Î­Ï‰',
+      greekForm: 'ποιέω',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,

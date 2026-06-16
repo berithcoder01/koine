@@ -7,6 +7,10 @@ import { useProgressStore } from '@/features/progress/progressStore';
 import { APOSTILA_LESSONS } from '@/content/apostila/lessons';
 import { clsx } from 'clsx';
 import { Capacitor } from '@capacitor/core';
+import { Filesystem, Directory } from '@capacitor/filesystem';
+import { Toast } from '@capacitor/toast';
+import { IonIcon } from '@/ui/components/IonIcon';
+import { arrowBack } from 'ionicons/icons';
 
 interface LessonGroup {
   id: string;
@@ -46,13 +50,42 @@ function getLessonStatus(lesson: typeof APOSTILA_LESSONS[0], completed: string[]
   return 'available';
 }
 
-function handleDownloadApostila() {
-  const url = '/assets/apostila-koineapp.pdf';
-  if (Capacitor.isNativePlatform()) {
-    // Browser.open is not available without @capacitor/browser
-    window.open(url, '_blank');
-  } else {
-    window.open(url, '_blank');
+async function handleDownloadBloco(blocoId: number) {
+  const filename = `bloco-${blocoId}.apostila.pdf`;
+  const url = new URL('/assets/' + filename, window.location.origin).href;
+  await Toast.show({ text: 'Baixando bloco ' + blocoId + '...', duration: 'short' });
+  
+  try {
+    if (Capacitor.isNativePlatform()) {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      const blob = await response.blob();
+      
+      const base64 = await new Promise<string>((resolve) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result as string);
+        reader.readAsDataURL(blob);
+      });
+      const data = base64.split(',')[1];
+      
+      await Filesystem.writeFile({
+        path: 'Download/' + filename,
+        data,
+        directory: Directory.ExternalStorage,
+      });
+      
+      await Toast.show({ text: '✓ PDF salvo em Download/', duration: 'long' });
+    } else {
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    }
+  } catch (error) {
+    console.error('[PDF Download]', error);
+    await Toast.show({ text: 'Erro: ' + (error as Error).message, duration: 'long' });
   }
 }
 
@@ -64,8 +97,14 @@ export const ApostilaPage: React.FC = () => {
     <SafeArea scrollable withBottomNav className="flex flex-col">
       {/* ── HEADER ── */}
       <div className="flex-shrink-0 px-4 pt-6 pb-5 transition-colors duration-200">
-        <div className="flex items-center justify-between mb-4">
-          <div>
+        <div className="flex items-center gap-3 mb-4">
+          <button
+            onClick={() => navigate(-1)}
+            className="w-10 h-10 rounded-full bg-surface dark:bg-surface-alt border border-border/40 dark:border-border/15 flex items-center justify-center shadow-sm active:scale-95 transition-all"
+          >
+            <IonIcon icon={arrowBack} className="text-text-primary dark:text-white text-xl" />
+          </button>
+          <div className="flex-1">
             <p className="text-text-secondary dark:text-zinc-400 text-xs font-semibold">Extra</p>
             <h1 className="text-text-primary dark:text-white font-extrabold text-2xl tracking-tight mt-0.5">
               Estudo com Apostila
@@ -92,18 +131,23 @@ export const ApostilaPage: React.FC = () => {
               </p>
             </div>
           </div>
-          <button
-            onClick={handleDownloadApostila}
-            className={clsx(
-              'w-full flex items-center justify-center gap-2 px-4 py-3 rounded-full border-2 font-bold text-sm transition-all duration-200 active:scale-[0.98]',
-              'bg-secondary border-secondary text-white hover:bg-secondary/90 active:scale-[0.98]'
-            )}
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-            </svg>
-            Baixar Apostila PDF
-          </button>
+          <div className="flex gap-2 mt-3">
+            {[1, 2, 3].map(id => (
+              <button
+                key={id}
+                onClick={() => handleDownloadBloco(id)}
+                className={clsx(
+                  'flex-1 flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-full border-2 font-bold text-xs transition-all duration-200 active:scale-[0.98]',
+                  'bg-secondary border-secondary text-white hover:bg-secondary/90'
+                )}
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                </svg>
+                Bloco {id}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 

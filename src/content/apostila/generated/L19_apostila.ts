@@ -1,9 +1,9 @@
-﻿/**
- * L19 â€” Eu Sou o Caminho (JoÃ£o 14:6)
+/**
+ * L19 — Eu Sou o Caminho (João 14:6)
  *
  * ID:               apostila-L19
- * TÃTULO:           LiÃ§Ã£o 19 â€” Eu Sou o Caminho
- * DESCRIÃ‡ÃƒO:        JoÃ£o 14:6 â€” á¼Î³ÏŽ Îµá¼°Î¼Î¹ á¼¡ á½Î´á½¸Ï‚ ÎºÎ±á½¶ á¼¡ á¼€Î»Î®Î¸ÎµÎ¹Î± ÎºÎ±á½¶ á¼¡ Î¶Ï‰Î®
+ * TÍTULO:           Lição 19 — Eu Sou o Caminho
+ * DESCRIÇÃO:        João 14:6 — ἐγώ εἰμι ἡ ὁδὸς καὶ ἡ ἀλήθεια καὶ ἡ ζωή
  * PDF_PAGE:         40
  * XP:               60
  * TEMPO:            18 min
@@ -12,12 +12,12 @@
  * Total de Steps: 11
  */
 
-import type { ApostilaLesson } from '../../features/apostila/apostilaTypes';
+import type { ApostilaLesson } from '../../../features/apostila/apostilaTypes';
 
 export const APOSTILA_L19: ApostilaLesson = {
   id: 'apostila-L19',
-  title: 'LiÃ§Ã£o 19 â€” Eu Sou o Caminho',
-  description: 'JoÃ£o 14:6 â€” á¼Î³ÏŽ Îµá¼°Î¼Î¹ á¼¡ á½Î´á½¸Ï‚ ÎºÎ±á½¶ á¼¡ á¼€Î»Î®Î¸ÎµÎ¹Î± ÎºÎ±á½¶ á¼¡ Î¶Ï‰Î®',
+  title: 'Lição 19 — Eu Sou o Caminho',
+  description: 'João 14:6 — ἐγώ εἰμι ἡ ὁδὸς καὶ ἡ ἀλήθεια καὶ ἡ ζωή',
   apostilaPdfPage: 40,
   lessonNumber: 19,
   xpReward: 60,
@@ -29,8 +29,8 @@ export const APOSTILA_L19: ApostilaLesson = {
       id: 'apostila-L19-S01',
       type: 'intro',
       narration:
-        'JoÃ£o 14:6 â€” uma das sete declaraÃ§Ãµes "Eu Sou" de Jesus. Esta frase contÃ©m trÃªs predicados que definem Jesus. Abra sua apostila na pÃ¡gina 40.',
-      displayText: 'Abra sua apostila na PÃ¡gina 40',
+        'João 14:6 — uma das sete declarações "Eu Sou" de Jesus. Esta frase contém três predicados que definem Jesus. Abra sua apostila na página 40.',
+      displayText: 'Abra sua apostila na Página 40',
       showGreekLarge: false,
     },
 
@@ -38,11 +38,11 @@ export const APOSTILA_L19: ApostilaLesson = {
       id: 'apostila-L19-S02',
       type: 'word_intro',
       narration:
-        'á¼Î³ÏŽ â€” "eu". Em grego o pronome geralmente estÃ¡ oculto no verbo. Quando estÃ¡ explÃ­cito, como aqui, Ã© enfÃ¡tico.',
-      greekForm: 'á¼Î³ÏŽ',
-      transliteration: 'egÅ',
-      pronunciation: 'e-GÃ”',
-      translation: 'eu (enfÃ¡tico)',
+        'ἐγώ — "eu". Em grego o pronome geralmente está oculto no verbo. Quando está explícito, como aqui, é enfático.',
+      greekForm: 'ἐγώ',
+      transliteration: 'egō',
+      pronunciation: 'e-GÔ',
+      translation: 'eu (enfático)',
       showGreekLarge: true,
     },
 
@@ -50,11 +50,11 @@ export const APOSTILA_L19: ApostilaLesson = {
       id: 'apostila-L19-S03',
       type: 'word_intro',
       narration:
-        'Îµá¼°Î¼Î¹ â€” "sou". Primeira pessoa de Îµá¼°Î¼Î¯. á¼˜Î³ÏŽ Îµá¼°Î¼Î¹ sÃ£o exatamente as palavras de ÃŠxodo 3:14 na Septuaginta â€” o tÃ­tulo divino.',
-      greekForm: 'Îµá¼°Î¼Î¹',
+        'εἰμι — "sou". Primeira pessoa de εἰμί. Ἐγώ εἰμι são exatamente as palavras de Êxodo 3:14 na Septuaginta — o título divino.',
+      greekForm: 'εἰμι',
       transliteration: 'eimi',
-      pronunciation: 'ei-MÃ',
-      translation: 'sou (1Âª singular de Îµá¼°Î¼Î¯)',
+      pronunciation: 'ei-MÍ',
+      translation: 'sou (1ª singular de εἰμί)',
       showGreekLarge: true,
     },
 
@@ -62,10 +62,10 @@ export const APOSTILA_L19: ApostilaLesson = {
       id: 'apostila-L19-S04',
       type: 'word_intro',
       narration:
-        'á¼¡ á½Î´ÏŒÏ‚ â€” "o caminho". Substantivo feminino; nÃ£o apenas um caminho fÃ­sico, mas o modo de vida. O artigo á¼¡ Ã© o artigo feminino.',
-      greekForm: 'á½Î´ÏŒÏ‚',
+        'ἡ ὁδός — "o caminho". Substantivo feminino; não apenas um caminho físico, mas o modo de vida. O artigo ἡ é o artigo feminino.',
+      greekForm: 'ὁδός',
       transliteration: 'hodos',
-      pronunciation: 'ho-DÃ“S',
+      pronunciation: 'ho-DÓS',
       translation: 'caminho',
       showGreekLarge: true,
     },
@@ -74,10 +74,10 @@ export const APOSTILA_L19: ApostilaLesson = {
       id: 'apostila-L19-S05',
       type: 'word_intro',
       narration:
-        'ÎºÎ±Î¯ â€” "e". A conjunÃ§Ã£o mais comum do NT, com cerca de 9.000 ocorrÃªncias.',
-      greekForm: 'ÎºÎ±Î¯',
+        'καί — "e". A conjunção mais comum do NT, com cerca de 9.000 ocorrências.',
+      greekForm: 'καί',
       transliteration: 'kai',
-      pronunciation: 'cÃ¡-i',
+      pronunciation: 'cá-i',
       translation: 'e',
       showGreekLarge: true,
     },
@@ -86,10 +86,10 @@ export const APOSTILA_L19: ApostilaLesson = {
       id: 'apostila-L19-S06',
       type: 'word_intro',
       narration:
-        'á¼¡ á¼€Î»Î®Î¸ÎµÎ¹Î± â€” "a verdade". VocÃª jÃ¡ aprendeu esta palavra na LiÃ§Ã£o 12.',
-      greekForm: 'á¼€Î»Î®Î¸ÎµÎ¹Î±',
-      transliteration: 'alÄ“theia',
-      pronunciation: 'a-LÃŠ-tei-a',
+        'ἡ ἀλήθεια — "a verdade". Você já aprendeu esta palavra na Lição 12.',
+      greekForm: 'ἀλήθεια',
+      transliteration: 'alētheia',
+      pronunciation: 'a-LÊ-tei-a',
       translation: 'verdade',
       showGreekLarge: true,
     },
@@ -98,10 +98,10 @@ export const APOSTILA_L19: ApostilaLesson = {
       id: 'apostila-L19-S07',
       type: 'word_intro',
       narration:
-        'á¼¡ Î¶Ï‰Î® â€” "a vida". VocÃª jÃ¡ aprendeu na LiÃ§Ã£o 7. Vida em plenitude.',
-      greekForm: 'Î¶Ï‰Î®',
-      transliteration: 'zÅÄ“',
-      pronunciation: 'zo-ÃŠ',
+        'ἡ ζωή — "a vida". Você já aprendeu na Lição 7. Vida em plenitude.',
+      greekForm: 'ζωή',
+      transliteration: 'zōē',
+      pronunciation: 'zo-Ê',
       translation: 'vida',
       showGreekLarge: true,
     },
@@ -110,9 +110,9 @@ export const APOSTILA_L19: ApostilaLesson = {
       id: 'apostila-L19-S08',
       type: 'pause',
       narration:
-        'Esta frase tem 10 palavras. Leia-a devagar na apostila: egÅ eimi hÄ“ hodos kai hÄ“ alÄ“theia kai hÄ“ zÅÄ“.',
+        'Esta frase tem 10 palavras. Leia-a devagar na apostila: egō eimi hē hodos kai hē alētheia kai hē zōē.',
       displayText:
-        'Leia a frase na pÃ¡gina 40.\ná¼Î³ÏŽ Îµá¼°Î¼Î¹ á¼¡ á½Î´á½¸Ï‚ ÎºÎ±á½¶ á¼¡ á¼€Î»Î®Î¸ÎµÎ¹Î± ÎºÎ±á½¶ á¼¡ Î¶Ï‰Î®',
+        'Leia a frase na página 40.\nἐγώ εἰμι ἡ ὁδὸς καὶ ἡ ἀλήθεια καὶ ἡ ζωή',
       showGreekLarge: false,
     },
 
@@ -120,10 +120,10 @@ export const APOSTILA_L19: ApostilaLesson = {
       id: 'apostila-L19-S09',
       type: 'write_practice',
       narration:
-        'Agora copie a frase completa trÃªs vezes. Ã‰ a frase mais longa â€” vÃ¡ com calma.',
-      greekForm: 'á¼Î³ÏŽ Îµá¼°Î¼Î¹ á¼¡ á½Î´á½¸Ï‚ ÎºÎ±á½¶ á¼¡ á¼€Î»Î®Î¸ÎµÎ¹Î± ÎºÎ±á½¶ á¼¡ Î¶Ï‰Î®',
+        'Agora copie a frase completa três vezes. É a frase mais longa — vá com calma.',
+      greekForm: 'ἐγώ εἰμι ἡ ὁδὸς καὶ ἡ ἀλήθεια καὶ ἡ ζωή',
       writeRepetitions: 3,
-      writeInstruction: 'EspaÃ§o de cÃ³pia da apostila â€” frase completa',
+      writeInstruction: 'Espaço de cópia da apostila — frase completa',
       showPaperBadge: true,
       showGreekLarge: false,
     },
@@ -132,9 +132,9 @@ export const APOSTILA_L19: ApostilaLesson = {
       id: 'apostila-L19-S10',
       type: 'read_aloud',
       narration:
-        'OuÃ§a: egÅ eimi hÄ“ hodos kai hÄ“ alÄ“theia kai hÄ“ zÅÄ“. Repita em voz alta duas vezes.',
-      greekForm: 'á¼Î³ÏŽ Îµá¼°Î¼Î¹ á¼¡ á½Î´á½¸Ï‚ ÎºÎ±á½¶ á¼¡ á¼€Î»Î®Î¸ÎµÎ¹Î± ÎºÎ±á½¶ á¼¡ Î¶Ï‰Î®',
-      transliteration: 'egÅ eimi hÄ“ hodos kai hÄ“ alÄ“theia kai hÄ“ zÅÄ“',
+        'Ouça: egō eimi hē hodos kai hē alētheia kai hē zōē. Repita em voz alta duas vezes.',
+      greekForm: 'ἐγώ εἰμι ἡ ὁδὸς καὶ ἡ ἀλήθεια καὶ ἡ ζωή',
+      transliteration: 'egō eimi hē hodos kai hē alētheia kai hē zōē',
       translation: 'Eu sou o caminho, a verdade e a vida',
       showVoiceBadge: true,
       showGreekLarge: true,
@@ -146,7 +146,7 @@ export const APOSTILA_L19: ApostilaLesson = {
       narration:
         'Escreva em grego: "Eu sou o caminho, a verdade e a vida".',
       displayText: '"Eu sou o caminho, a verdade e a vida"',
-      greekForm: 'á¼Î³ÏŽ Îµá¼°Î¼Î¹ á¼¡ á½Î´á½¸Ï‚ ÎºÎ±á½¶ á¼¡ á¼€Î»Î®Î¸ÎµÎ¹Î± ÎºÎ±á½¶ á¼¡ Î¶Ï‰Î®',
+      greekForm: 'ἐγώ εἰμι ἡ ὁδὸς καὶ ἡ ἀλήθεια καὶ ἡ ζωή',
       revealAfterConfirm: true,
       showPaperBadge: true,
       showGreekLarge: false,
