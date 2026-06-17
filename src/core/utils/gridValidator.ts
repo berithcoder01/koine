@@ -39,7 +39,7 @@ function getTemplate(letter: string, canvasSize: number): { x: number; y: number
   ctx.fillStyle = '#ffffff';
   ctx.fillRect(0, 0, canvasSize, canvasSize);
   ctx.fillStyle = '#000000';
-  ctx.font = `bold ${canvasSize * 0.75}px SBL Greek, Gentium Plus, serif`;
+  ctx.font = `bold ${canvasSize * 0.75}px Gentium Plus, SBL Greek, serif`;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   ctx.fillText(letter, canvasSize / 2, canvasSize / 2);

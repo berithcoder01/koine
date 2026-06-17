@@ -29,7 +29,7 @@ export function generateLetterTemplate(
 
   // Desenha o glyph em preto
   ctx.fillStyle = '#000000';
-  ctx.font = `bold ${size * 0.65}px SBL Greek, Gentium Plus, serif`;
+  ctx.font = `bold ${size * 0.65}px Gentium Plus, SBL Greek, serif`;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   ctx.fillText(letter, size / 2, size / 2);

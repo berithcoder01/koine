@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloco 2 — Vocabulário Essencial</title>
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="cover-page">
+  <h1>Koine — Apostila</h1>
+  <div class="subtitle">Bloco 2 — Vocabulário Essencial</div>
+  <p style="font-size:14pt;color:#444;margin-bottom:2em;">As 50 palavras mais frequentes do Novo Testamento</p>
+  <div class="date">Lições L07–L16</div>
+  <div style="margin-top:3em;font-size:11pt;color:#666;">
+    <p>10 lições · Estudo guiado por voz</p>
+    <p>Para uso com o aplicativo Koine</p>
+  </div>
+</div>
+<h1>Apostila L07 — Palavras de Fé e Graça (ἀγάπη, πίστις, χάρις, εἰρήνη, ζωή)</h1>
+<p><strong>ID:</strong> apostila-L07
+<strong>Título:</strong> Lição 7 — Palavras de Fé e Graça
+<strong>Descrição:</strong> ἀγάπη, πίστις, χάρις, εἰρήνη, ζωή
+<strong>Página:</strong> 15
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 40</p>
+<hr>
+<h2>🎯 Objetivo da Lição</h2>
+<p>Aprender cinco palavras fundamentais do Novo Testamento grego: <strong>ἀγάπη (amor incondicional)</strong>, <strong>πίστις (fé)</strong>, <strong>χάρις (graça)</strong>, <strong>εἰρήνη (paz)</strong> e <strong>ζωή (vida eterna)</strong>.</p>
+<blockquote>
+<p>📄 <strong>Abra sua apostila na Página 15</strong></p>
+</blockquote>
+<hr>
+<h2>🏁 Step 1: intro</h2>
+<blockquote>
+<p>&quot;Lição 7 — Palavras de fé e graça. Hoje você vai aprender cinco das palavras mais importantes do Novo Testamento: ágape, pístis, cháris, eirene e zoe. Estas palavras aparecem centenas de vezes nas cartas de Paulo. Abra sua apostila na página 15.&quot;</p>
+</blockquote>
+<hr>
+<h2>❤️ Step 2: word_intro — ἀγάπη (agápē)</h2>
+<blockquote>
+<p>&quot;A primeira palavra é ἀγάπη — agápē. Pronuncie: a-GÁ-pe. Significa amor incondicional — não qualquer amor, mas o amor que escolhe o bem do outro independentemente de sentimentos.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> ἀγάπη
+<strong>Transliteração:</strong> agápē
+<strong>Pronúncia:</strong> a-GÁ-pe
+<strong>Significado:</strong> amor incondicional
+<strong>Etiologia:</strong> Do verbo ἀγαπάω, amar com escolha deliberada; distinto de ἔρως (desejo) e φιλία (amizade)</p>
+<hr>
+<h2>✍️ Step 3: write_practice — ἀγάπη × 5</h2>
+<p><strong>Grego:</strong> ἀγάπη</p>
+<blockquote>
+<p>&quot;Agora escreva ἀγάπη cinco vezes na linha 1 da sua apostila. Pronuncie em voz alta cada vez que escrever: a-GÁ-pe.&quot;</p>
+</blockquote>
+<p>[Linha 1: ἀγάπη ἀγάπη ἀγάπη ἀγάπη ἀγάπη ]</p>
+<hr>
+<h2>🔥 Step 4: word_intro — πίστις (pístis)</h2>
+<blockquote>
+<p>&quot;A segunda palavra é πίστις — pístis. Pronuncie: PÍS-tis. Significa fé, confiança ativa — não é apenas acreditar que algo é verdade, mas confiar ativamente.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> πίστις
+<strong>Transliteração:</strong> pístis
+<strong>Pronúncia:</strong> PÍS-tis
+<strong>Significado:</strong> fé / confiança
+<strong>Etiologia:</strong> De πείθω, persuadir; implica confiança ativa, não mera crença intelectual</p>
+<hr>
+<h2>✍️ Step 5: write_practice — πίστις × 5</h2>
+<p><strong>Grego:</strong> πίστις</p>
+<blockquote>
+<p>&quot;Agora escreva πίστις cinco vezes na linha 2 da sua apostila. Pronuncie: PÍS-tis.&quot;</p>
+</blockquote>
+<p>[Linha 2: πίστις πίστις πίστις πίστις πίστις ]</p>
+<hr>
+<h2>🌟 Step 6: word_intro — χάρις (cháris)</h2>
+<blockquote>
+<p>&quot;A terceira palavra é χάρις — cháris. Pronuncie: CÁ-ris. Significa graça, favor imerecido — a base da teologia paulina da salvação.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> χάρις
+<strong>Transliteração:</strong> cháris
+<strong>Pronúncia:</strong> CÁ-ris
+<strong>Significado:</strong> graça / favor imerecido
+<strong>Etiologia:</strong> Relacionado a χαρά (alegria) e χαίρω (regozijar); favor dado gratuitamente</p>
+<hr>
+<h2>✍️ Step 7: write_practice — χάρις × 5</h2>
+<p><strong>Grego:</strong> χάρις</p>
+<blockquote>
+<p>&quot;Agora escreva χάρις cinco vezes na linha 3 da sua apostila. Pronuncie: CÁ-ris.&quot;</p>
+</blockquote>
+<p>[Linha 3: χάρις χάρις χάρις χάρις χάρις ]</p>
+<hr>
+<h2>🕊️ Step 8: word_intro — εἰρήνη (eirḗnē)</h2>
+<blockquote>
+<p>&quot;A quarta palavra é εἰρήνη — eirḗnē. Pronuncie: ei-RÊ-ne. Significa paz — não apenas ausência de conflito, mas completude total, inteireza, como o hebraico shalom.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> εἰρήνη
+<strong>Transliteração:</strong> eirḗnē
+<strong>Pronúncia:</strong> ei-RÊ-ne
+<strong>Significado:</strong> paz / inteireza
+<strong>Etiologia:</strong> Equivalente ao hebraico שָׁלוֹם (shalom): não ausência de conflito, mas completude total</p>
+<hr>
+<h2>✍️ Step 9: write_practice — εἰρήνη × 5</h2>
+<p><strong>Grego:</strong> εἰρήνη</p>
+<blockquote>
+<p>&quot;Agora escreva εἰρήνη cinco vezes na linha 4 da sua apostila. Pronuncie: ei-RÊ-ne.&quot;</p>
+</blockquote>
+<p>[Linha 4: εἰρήνη εἰρήνη εἰρήνη εἰρήνη εἰρήνη ]</p>
+<hr>
+<h2>💫 Step 10: word_intro — ζωή (zōḗ)</h2>
+<blockquote>
+<p>&quot;A quinta palavra é ζωή — zōḗ. Pronuncie: zo-Ê. Significa vida — não a vida biológica (bíos), mas a vida em sua plenitude qualitativa, a vida eterna e abundante.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> ζωή
+<strong>Transliteração:</strong> zōḗ
+<strong>Pronúncia:</strong> zo-Ê
+<strong>Significado:</strong> vida eterna e abundante
+<strong>Etiologia:</strong> Distinto de βίος (vida biológica); ζωή é vida em sua plenitude qualitativa</p>
+<hr>
+<h2>✍️ Step 11: write_practice — ζωή × 5</h2>
+<p><strong>Grego:</strong> ζωή</p>
+<blockquote>
+<p>&quot;Agora escreva ζωή cinco vezes na linha 5 da sua apostila. Pronuncie: zo-Ê.&quot;</p>
+</blockquote>
+<p>[Linha 5: ζωή ζωή ζωή ζωή ζωή ]</p>
+<hr>
+<h2>🧠 Step 12: pause</h2>
+<blockquote>
+<p>&quot;Excelente! Você escreveu as cinco palavras fundamentais. Antes de continuar, releia o que escreveu na apostila. Cada palavra carrega séculos de teologia.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+Releia as cinco palavras na sua apostila.
+Quando estiver pronto, continue.</p>
+<hr>
+<h2>📓 Step 13: dictation — ἀγάπη</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: amor incondicional.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> ἀγάπη</p>
+<p>📓 <strong>Tarefa:</strong> Escreva ἀγάπη aqui:
+[Resposta: ἀγάπη ]</p>
+<hr>
+<h2>📓 Step 14: dictation — πίστις</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: fé.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> πίστις</p>
+<p>📓 <strong>Tarefa:</strong> Escreva πίστις aqui:
+[Resposta: πίστις ]</p>
+<hr>
+<h2>📓 Step 15: dictation — χάρις</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: graça.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> χάρις</p>
+<p>📓 <strong>Tarefa:</strong> Escreva χάρις aqui:
+[Resposta: χάρις ]</p>
+<hr>
+<h2>📓 Step 16: dictation — εἰρήνη</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: paz.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> εἰρήνη</p>
+<p>📓 <strong>Tarefa:</strong> Escreva εἰρήνη aqui:
+[Resposta: εἰρήνη ]</p>
+<hr>
+<h2>📓 Step 17: dictation — ζωή</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: vida eterna.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> ζωή</p>
+<p>📓 <strong>Tarefa:</strong> Escreva ζωή aqui:
+[Resposta: ζωή ]</p>
+<hr>
+<h2>🎉 Fim da Lição L07</h2>
+<p>Parabéns! Você concluiu <strong>Lição 7 — Palavras de Fé e Graça (ἀγάπη, πίστις, χάρις, εἰρήνη, ζωή)</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi ἀγάπη (amor incondicional)</li>
+<li><input disabled="" type="checkbox"> Aprendi πίστις (fé / confiança)</li>
+<li><input disabled="" type="checkbox"> Aprendi χάρις (graça / favor imerecido)</li>
+<li><input disabled="" type="checkbox"> Aprendi εἰρήνη (paz / inteireza)</li>
+<li><input disabled="" type="checkbox"> Aprendi ζωή (vida eterna e abundante)</li>
+</ul>
+<p>📖 <strong>Próxima lição:</strong> L08 — ...</p>
+<p>\newpage</p>
+<h1>Apostila L08 — Nomes Divinos (θεός, κύριος, Χριστός, υἱός, πνεῦμα)</h1>
+<p><strong>ID:</strong> apostila-L08
+<strong>Título:</strong> Lição 8 — Nomes Divinos
+<strong>Descrição:</strong> θεός, κύριος, Χριστός, υἱός, πνεῦμα
+<strong>Página:</strong> 17
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 40</p>
+<hr>
+<h2>Step 1: intro</h2>
+<blockquote>
+<p>&quot;Lição 8 — Nomes divinos. Hoje você vai aprender os nomes mais sagrados do Novo Testamento: Theós, Kýrios, Christós, Hiós e Pneuma. Estas palavras aparecem em cada página do NT. Abra sua apostila na página 17.&quot;</p>
+</blockquote>
+<p>&quot;Abra sua apostila na Página 17&quot;</p>
+<hr>
+<h2>Step 2: word_intro — θεός</h2>
+<blockquote>
+<p>&quot;θεός (theós) — Deus. No princípio era o Verbo, e o Verbo estava com Deus. Raiz indo-europeia *dhes-, sagrado.&quot;</p>
+</blockquote>
+<p>&quot;θεός — Deus&quot;</p>
+<p><strong>Grego:</strong> θεός
+<strong>Transliteração:</strong> theós
+<strong>Pronúncia:</strong> te-ÓS
+<strong>Significado:</strong> Deus
+<strong>Etiologia:</strong> Raiz indo-europeia *dhes-, sagrado; base da teologia (θεο+λόγος)</p>
+<hr>
+<h2>Step 3: write_practice — θεός</h2>
+<p><strong>Grego:</strong> θεός × 5</p>
+<blockquote>
+<p>&quot;Agora escreva θεός cinco vezes na linha 1 da sua apostila. Pronuncie em voz alta: te-ÓS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 4: word_intro — κύριος</h2>
+<blockquote>
+<p>&quot;κύριος (kýrios) — Senhor / Mestre. E toda língua confesse que Jesus Cristo é Senhor. De κῦρος, autoridade.&quot;</p>
+</blockquote>
+<p>&quot;κύριος — Senhor&quot;</p>
+<p><strong>Grego:</strong> κύριος
+<strong>Transliteração:</strong> kýrios
+<strong>Pronúncia:</strong> KÍ-ri-os
+<strong>Significado:</strong> Senhor / Mestre
+<strong>Etiologia:</strong> De κῦρος, autoridade; a Septuaginta usa κύριος para traduzir יהוה (YHWH)</p>
+<hr>
+<h2>Step 5: write_practice — κύριος</h2>
+<p><strong>Grego:</strong> κύριος × 5</p>
+<blockquote>
+<p>&quot;Agora escreva κύριος cinco vezes na linha 2. Pronuncie: KÍ-ri-os.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 6: word_intro — Χριστός</h2>
+<blockquote>
+<p>&quot;Χριστός (Christós) — Cristo / Ungido. Tu és o Cristo, o Filho do Deus vivo. Tradução do hebraico Messias.&quot;</p>
+</blockquote>
+<p>&quot;Χριστός — Cristo&quot;</p>
+<p><strong>Grego:</strong> Χριστός
+<strong>Transliteração:</strong> Christós
+<strong>Pronúncia:</strong> cris-TÓS
+<strong>Significado:</strong> Cristo / Ungido
+<strong>Etiologia:</strong> Tradução do hebraico מָשִׁיחַ (Messias), ungido com óleo para função sagrada</p>
+<hr>
+<h2>Step 7: write_practice — Χριστός</h2>
+<p><strong>Grego:</strong> Χριστός × 5</p>
+<blockquote>
+<p>&quot;Agora escreva Χριστός cinco vezes na linha 3. Pronuncie: cris-TÓS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 8: word_intro — υἱός</h2>
+<blockquote>
+<p>&quot;υἱός (huiós) — Filho. Este é o meu Filho amado, em quem me comprazo. Denota herdeiro legal.&quot;</p>
+</blockquote>
+<p>&quot;υἱός — Filho&quot;</p>
+<p><strong>Grego:</strong> υἱός
+<strong>Transliteração:</strong> huiós
+<strong>Pronúncia:</strong> ui-ÓS
+<strong>Significado:</strong> Filho
+<strong>Etiologia:</strong> Denota não apenas filho biológico mas herdeiro legal e representante do pai</p>
+<hr>
+<h2>Step 9: write_practice — υἱός</h2>
+<p><strong>Grego:</strong> υἱός × 5</p>
+<blockquote>
+<p>&quot;Agora escreva υἱός cinco vezes na linha 4. Pronuncie: ui-ÓS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 10: word_intro — πνεῦμα</h2>
+<blockquote>
+<p>&quot;πνεῦμα (pneûma) — Espírito / vento / sopro. O vento sopra onde quer. De πνέω, soprar.&quot;</p>
+</blockquote>
+<p>&quot;πνεῦμα — Espírito&quot;</p>
+<p><strong>Grego:</strong> πνεῦμα
+<strong>Transliteração:</strong> pneûma
+<strong>Pronúncia:</strong> PNÊU-ma
+<strong>Significado:</strong> Espírito / Vento / Sopro
+<strong>Etiologia:</strong> De πνέω, soprar; mesmo campo semântico do hebraico רוּחַ (ruach)</p>
+<hr>
+<h2>Step 11: write_practice — πνεῦμα</h2>
+<p><strong>Grego:</strong> πνεῦμα × 5</p>
+<blockquote>
+<p>&quot;Agora escreva πνεῦμα cinco vezes na linha 5. Pronuncie: PNÊU-ma.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 12: pause</h2>
+<blockquote>
+<p>&quot;Excelente! Você escreveu os cinco nomes divinos. Cada um destes nomes carrega séculos de revelação. Releia-os na sua apostila e reflita.&quot;</p>
+</blockquote>
+<p>Releia os cinco nomes na sua apostila.
+Quando estiver pronto, continue.</p>
+<hr>
+<h2>Step 13: dictation — θεός</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;Deus&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> θεός</p>
+<hr>
+<h2>Step 14: dictation — κύριος</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;Senhor&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> κύριος</p>
+<hr>
+<h2>Step 15: dictation — Χριστός</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;Cristo&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> Χριστός</p>
+<hr>
+<h2>Step 16: dictation — υἱός</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;filho&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> υἱός</p>
+<hr>
+<h2>Step 17: dictation — πνεῦμα</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;espírito&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> πνεῦμα</p>
+<hr>
+<h2>Fim da Lição L08</h2>
+<p>Parabéns! Você concluiu <strong>Lição 8 — Nomes Divinos (θεός, κύριος, Χριστός, υἱός, πνεῦμα)</strong>.</p>
+<p><strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> θεός (Deus)</li>
+<li><input disabled="" type="checkbox"> κύριος (Senhor)</li>
+<li><input disabled="" type="checkbox"> Χριστός (Cristo)</li>
+<li><input disabled="" type="checkbox"> υἱός (Filho)</li>
+<li><input disabled="" type="checkbox"> πνεῦμα (Espírito)</li>
+</ul>
+<p>\newpage</p>
+<h1>Apostila L09 — O Ser Humano (ἄνθρωπος, καρδία, ψυχή, σάρξ, ἁμαρτία)</h1>
+<p><strong>ID:</strong> apostila-L09
+<strong>Título:</strong> Lição 9 — O Ser Humano
+<strong>Descrição:</strong> ἄνθρωπος, καρδία, ψυχή, σάρξ, ἁμαρτία
+<strong>Página:</strong> 19
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 40</p>
+<hr>
+<h2>Step 1: intro</h2>
+<blockquote>
+<p>&quot;Lição 9 — O ser humano. Hoje vamos aprender palavras que descrevem o ser humano diante de Deus: ánthropos, kardía, psyqué, sárx e hamartía. Abra sua apostila na página 19.&quot;</p>
+</blockquote>
+<p>&quot;Abra sua apostila na Página 19&quot;</p>
+<hr>
+<h2>Step 2: word_intro — ἄνθρωπος</h2>
+<blockquote>
+<p>&quot;ἄνθρωπος (ánthrōpos) — ser humano / homem. E a vida era a luz dos homens. Possível origem em ἀνήρ + ὤψ.&quot;</p>
+</blockquote>
+<p>&quot;ἄνθρωπος — Ser Humano&quot;</p>
+<p><strong>Grego:</strong> ἄνθρωπος
+<strong>Transliteração:</strong> ánthrōpos
+<strong>Pronúncia:</strong> ÂN-trô-pos
+<strong>Significado:</strong> Ser Humano / Homem
+<strong>Etiologia:</strong> Possível origem em ἀνήρ (homem) + ὤψ (rosto); o ser que olha para cima</p>
+<hr>
+<h2>Step 3: write_practice — ἄνθρωπος</h2>
+<p><strong>Grego:</strong> ἄνθρωπος × 5</p>
+<blockquote>
+<p>&quot;Agora escreva ἄνθρωπος cinco vezes na linha 1. Pronuncie: ÂN-trô-pos.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 4: word_intro — καρδία</h2>
+<blockquote>
+<p>&quot;καρδία (kardía) — coração / sede da vontade. Bem-aventurados os limpos de coração. No pensamento bíblico, o coração é o centro das decisões.&quot;</p>
+</blockquote>
+<p>&quot;καρδία — Coração&quot;</p>
+<p><strong>Grego:</strong> καρδία
+<strong>Transliteração:</strong> kardía
+<strong>Pronúncia:</strong> kar-DÍ-a
+<strong>Significado:</strong> Coração / Sede da Vontade
+<strong>Etiologia:</strong> No pensamento hebraico-grego, o coração é o centro das decisões, não das emoções apenas</p>
+<hr>
+<h2>Step 5: write_practice — καρδία</h2>
+<p><strong>Grego:</strong> καρδία × 5</p>
+<blockquote>
+<p>&quot;Agora escreva καρδία cinco vezes na linha 2. Pronuncie: kar-DÍ-a.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 6: word_intro — ψυχή</h2>
+<blockquote>
+<p>&quot;ψυχή (psychḗ) — alma / ser interior / vida. Pois que aproveitará ao homem ganhar o mundo e perder a sua alma?&quot;</p>
+</blockquote>
+<p>&quot;ψυχή — Alma&quot;</p>
+<p><strong>Grego:</strong> ψυχή
+<strong>Transliteração:</strong> psychḗ
+<strong>Pronúncia:</strong> psi-KÊ
+<strong>Significado:</strong> Alma / Ser Interior / Vida
+<strong>Etiologia:</strong> Deu origem a &quot;psicologia&quot; e &quot;psiquiatria&quot;; distinto de πνεῦμα (espírito) e σῶμα (corpo)</p>
+<hr>
+<h2>Step 7: write_practice — ψυχή</h2>
+<p><strong>Grego:</strong> ψυχή × 5</p>
+<blockquote>
+<p>&quot;Agora escreva ψυχή cinco vezes na linha 3. Pronuncie: psi-KÊ.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 8: word_intro — σάρξ</h2>
+<blockquote>
+<p>&quot;σάρξ (sárx) — carne / natureza humana. E o Verbo se fez carne e habitou entre nós. Paulo usa para a natureza humana sem Deus.&quot;</p>
+</blockquote>
+<p>&quot;σάρξ — Carne&quot;</p>
+<p><strong>Grego:</strong> σάρξ
+<strong>Transliteração:</strong> sárx
+<strong>Pronúncia:</strong> SÁRKS
+<strong>Significado:</strong> Carne / Natureza Humana
+<strong>Etiologia:</strong> Frequentemente usado por Paulo para indicar a natureza humana sem Deus, não apenas o corpo físico</p>
+<hr>
+<h2>Step 9: write_practice — σάρξ</h2>
+<p><strong>Grego:</strong> σάρξ × 5</p>
+<blockquote>
+<p>&quot;Agora escreva σάρξ cinco vezes na linha 4. Pronuncie: SÁRKS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 10: word_intro — ἁμαρτία</h2>
+<blockquote>
+<p>&quot;ἁμαρτία (hamartía) — pecado / desvio do alvo. Porque todos pecaram e destituídos estão da glória de Deus.&quot;</p>
+</blockquote>
+<p>&quot;ἁμαρτία — Pecado&quot;</p>
+<p><strong>Grego:</strong> ἁμαρτία
+<strong>Transliteração:</strong> hamartía
+<strong>Pronúncia:</strong> a-mar-TÍ-a
+<strong>Significado:</strong> Pecado / Desvio do Alvo
+<strong>Etiologia:</strong> Do verbo ἁμαρτάνω, errar o alvo; imagine uma flecha que não acerta o centro</p>
+<hr>
+<h2>Step 11: write_practice — ἁμαρτία</h2>
+<p><strong>Grego:</strong> ἁμαρτία × 5</p>
+<blockquote>
+<p>&quot;Agora escreva ἁμαρτία cinco vezes na linha 5. Pronuncie: a-mar-TÍ-a.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 12: pause</h2>
+<blockquote>
+<p>&quot;Você escreveu palavras que definem a condição humana. Reflita: todas estas palavras apontam para a necessidade de Deus.&quot;</p>
+</blockquote>
+<p>Releia as cinco palavras na sua apostila.
+Quando estiver pronto, continue.</p>
+<hr>
+<h2>Step 13: dictation — ἄνθρωπος</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;ser humano&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> ἄνθρωπος</p>
+<hr>
+<h2>Step 14: dictation — καρδία</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;coração&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> καρδία</p>
+<hr>
+<h2>Step 15: dictation — ψυχή</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;alma&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> ψυχή</p>
+<hr>
+<h2>Step 16: dictation — σάρξ</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;carne&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> σάρξ</p>
+<hr>
+<h2>Step 17: dictation — ἁμαρτία</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;pecado&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> ἁμαρτία</p>
+<hr>
+<h2>Fim da Lição L09</h2>
+<p>Parabéns! Você concluiu <strong>Lição 9 — O Ser Humano (ἄνθρωπος, καρδία, ψυχή, σάρξ, ἁμαρτία)</strong>.</p>
+<p><strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> ἄνθρωπος (ser humano)</li>
+<li><input disabled="" type="checkbox"> καρδία (coração)</li>
+<li><input disabled="" type="checkbox"> ψυχή (alma)</li>
+<li><input disabled="" type="checkbox"> σάρξ (carne)</li>
+<li><input disabled="" type="checkbox"> ἁμαρτία (pecado)</li>
+</ul>
+<p>\newpage</p>
+<h1>Apostila L10 — Palavra e Ação (λόγος, ῥῆμα, γράφω, λέγω, ποιέω)</h1>
+<p><strong>ID:</strong> apostila-L10
+<strong>Título:</strong> Lição 10 — Palavra e Ação
+<strong>Descrição:</strong> λόγος, ῥῆμα, γράφω, λέγω, ποιέω
+<strong>Página:</strong> 21
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 40</p>
+<hr>
+<h2>Step 1: intro</h2>
+<blockquote>
+<p>&quot;Lição 10 — Palavra e ação. Hoje você vai aprender verbos e substantivos fundamentais: lógos, rhema, grápho, légo e poiéo. Palavras que nos ensinam como Deus se comunica e age. Abra sua apostila na página 21.&quot;</p>
+</blockquote>
+<p>&quot;Abra sua apostila na Página 21&quot;</p>
+<hr>
+<h2>Step 2: word_intro — λόγος</h2>
+<blockquote>
+<p>&quot;λόγος (lógos) — palavra / razão / discurso. No princípio era o Verbo, e o Verbo estava com Deus. A razão que ordena o cosmos.&quot;</p>
+</blockquote>
+<p>&quot;λόγος — Palavra&quot;</p>
+<p><strong>Grego:</strong> λόγος
+<strong>Transliteração:</strong> lógos
+<strong>Pronúncia:</strong> LÓ-gos
+<strong>Significado:</strong> Palavra / Razão / Discurso
+<strong>Etiologia:</strong> Raiz *leg-, colher/ordenar; na filosofia grega, a razão que ordena o cosmos</p>
+<hr>
+<h2>Step 3: write_practice — λόγος</h2>
+<p><strong>Grego:</strong> λόγος × 5</p>
+<blockquote>
+<p>&quot;Agora escreva λόγος cinco vezes na linha 1. Pronuncie: LÓ-gos.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 4: word_intro — ῥῆμα</h2>
+<blockquote>
+<p>&quot;ῥῆμα (rhēma) — palavra falada / declaração. A fé vem pelo ouvir, e o ouvir pela palavra de Deus. É a palavra como evento sonoro.&quot;</p>
+</blockquote>
+<p>&quot;ῥῆμα — Palavra Falada&quot;</p>
+<p><strong>Grego:</strong> ῥῆμα
+<strong>Transliteração:</strong> rhēma
+<strong>Pronúncia:</strong> RÊ-ma
+<strong>Significado:</strong> Palavra Falada / Declaração
+<strong>Etiologia:</strong> De ῥέω, fluir; é a palavra como evento sonoro, o que foi dito em um momento específico</p>
+<hr>
+<h2>Step 5: write_practice — ῥῆμα</h2>
+<p><strong>Grego:</strong> ῥῆμα × 5</p>
+<blockquote>
+<p>&quot;Agora escreva ῥῆμα cinco vezes na linha 2. Pronuncie: RÊ-ma.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 6: word_intro — γράφω</h2>
+<blockquote>
+<p>&quot;γράφω (gráphō) — escrever. Jesus fez muitos outros sinais... que não estão escritos neste livro. Deu origem a &#39;grafia&#39;, &#39;gráfico&#39;.&quot;</p>
+</blockquote>
+<p>&quot;γράφω — Escrever&quot;</p>
+<p><strong>Grego:</strong> γράφω
+<strong>Transliteração:</strong> gráphō
+<strong>Pronúncia:</strong> GRÁ-fo
+<strong>Significado:</strong> Escrever
+<strong>Etiologia:</strong> Deu origem a &quot;grafia&quot;, &quot;gráfico&quot;, &quot;gravura&quot;; inicialmente significava riscar, desenhar</p>
+<hr>
+<h2>Step 7: write_practice — γράφω</h2>
+<p><strong>Grego:</strong> γράφω × 5</p>
+<blockquote>
+<p>&quot;Agora escreva γράφω cinco vezes na linha 3. Pronuncie: GRÁ-fo.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 8: word_intro — λέγω</h2>
+<blockquote>
+<p>&quot;λέγω (légō) — dizer / falar. Eis o Cordeiro de Deus, que tira o pecado do mundo — disse João. Um dos verbos mais frequentes do NT.&quot;</p>
+</blockquote>
+<p>&quot;λέγω — Dizer&quot;</p>
+<p><strong>Grego:</strong> λέγω
+<strong>Transliteração:</strong> légō
+<strong>Pronúncia:</strong> LÉ-go
+<strong>Significado:</strong> Dizer / Falar
+<strong>Etiologia:</strong> Um dos verbos mais frequentes do NT (~2.350 ocorrências); base de λόγος</p>
+<hr>
+<h2>Step 9: write_practice — λέγω</h2>
+<p><strong>Grego:</strong> λέγω × 5</p>
+<blockquote>
+<p>&quot;Agora escreva λέγω cinco vezes na linha 4. Pronuncie: LÉ-go.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 10: word_intro — ποιέω</h2>
+<blockquote>
+<p>&quot;ποιέω (poiéō) — fazer / criar / agir. Jesus fez este primeiro sinal em Caná. Deu origem a &#39;poema&#39; (ποίημα): obra-prima.&quot;</p>
+</blockquote>
+<p>&quot;ποιέω — Fazer&quot;</p>
+<p><strong>Grego:</strong> ποιέω
+<strong>Transliteração:</strong> poiéō
+<strong>Pronúncia:</strong> poi-É-o
+<strong>Significado:</strong> Fazer / Criar / Agir
+<strong>Etiologia:</strong> Deu origem ao inglês &quot;poem&quot; (ποίημα); o que é criado/feito. Efésios 2:10: ποίημα (obra-prima)</p>
+<hr>
+<h2>Step 11: write_practice — ποιέω</h2>
+<p><strong>Grego:</strong> ποιέω × 5</p>
+<blockquote>
+<p>&quot;Agora escreva ποιέω cinco vezes na linha 5. Pronuncie: poi-É-o.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 12: pause</h2>
+<blockquote>
+<p>&quot;Excelente! Você aprendeu palavras que descrevem como Deus se revela: pela Palavra e pela ação.&quot;</p>
+</blockquote>
+<p>Releia as cinco palavras na sua apostila.
+Quando estiver pronto, continue.</p>
+<hr>
+<h2>Step 13: dictation — λόγος</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;palavra&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> λόγος</p>
+<hr>
+<h2>Step 14: dictation — ῥῆμα</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;palavra falada&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> ῥῆμα</p>
+<hr>
+<h2>Step 15: dictation — γράφω</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;escrever&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> γράφω</p>
+<hr>
+<h2>Step 16: dictation — λέγω</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;dizer&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> λέγω</p>
+<hr>
+<h2>Step 17: dictation — ποιέω</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;fazer&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> ποιέω</p>
+<hr>
+<h2>Fim da Lição L10</h2>
+<p>Parabéns! Você concluiu <strong>Lição 10 — Palavra e Ação (λόγος, ῥῆμα, γράφω, λέγω, ποιέω)</strong>.</p>
+<p><strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> λόγος (palavra)</li>
+<li><input disabled="" type="checkbox"> ῥῆμα (palavra falada)</li>
+<li><input disabled="" type="checkbox"> γράφω (escrever)</li>
+<li><input disabled="" type="checkbox"> λέγω (dizer)</li>
+<li><input disabled="" type="checkbox"> ποιέω (fazer)</li>
+</ul>
+<p>\newpage</p>
+<h1>Apostila L11 — Tempo e Reino (βασιλεία, αἰών, ἡμέρα, νύξ, ὥρα)</h1>
+<p><strong>ID:</strong> apostila-L11
+<strong>Título:</strong> Lição 11 — Tempo e Reino
+<strong>Descrição:</strong> βασιλεία, αἰών, ἡμέρα, νύξ, ὥρα
+<strong>Página:</strong> 23
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 45</p>
+<hr>
+<h2>Step 1: intro</h2>
+<blockquote>
+<p>&quot;Lição 11 — Tempo e Reino. Hoje vamos aprender cinco palavras que estruturam o tempo e o propósito de Deus: basileía, aión, heméra, nýx e hóra. Abra sua apostila na página 23.&quot;</p>
+</blockquote>
+<p>&quot;Abra sua apostila na Página 23&quot;</p>
+<hr>
+<h2>Step 2: word_intro — βασιλεία</h2>
+<blockquote>
+<p>&quot;βασιλεία (basileía) — reino / reinado / soberania. Venha o teu reino, seja feita a tua vontade. De βασιλεύς (rei).&quot;</p>
+</blockquote>
+<p>&quot;βασιλεία — Reino&quot;</p>
+<p><strong>Grego:</strong> βασιλεία
+<strong>Transliteração:</strong> basileía
+<strong>Pronúncia:</strong> ba-si-LEI-a
+<strong>Significado:</strong> Reino / Reinado / Soberania
+<strong>Etiologia:</strong> De βασιλεύς (rei); implica tanto o ato de reinar quanto o território reinado</p>
+<hr>
+<h2>Step 3: write_practice — βασιλεία</h2>
+<p><strong>Grego:</strong> βασιλεία × 5</p>
+<blockquote>
+<p>&quot;Agora escreva βασιλεία cinco vezes na linha 1. Pronuncie: ba-si-LEI-a.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 4: word_intro — αἰών</h2>
+<blockquote>
+<p>&quot;αἰών (aiṓn) — era / eternidade / século. Acima de todo principado, não só neste século mas também no vindouro. Deu origem a &#39;eon&#39;.&quot;</p>
+</blockquote>
+<p>&quot;αἰών — Era / Eternidade&quot;</p>
+<p><strong>Grego:</strong> αἰών
+<strong>Transliteração:</strong> aiṓn
+<strong>Pronúncia:</strong> a-IÔN
+<strong>Significado:</strong> Era / Eternidade / Século
+<strong>Etiologia:</strong> Deu origem a &quot;eon&quot;; no NT pode significar &quot;esta era&quot; vs &quot;a era vindoura&quot;</p>
+<hr>
+<h2>Step 5: write_practice — αἰών</h2>
+<p><strong>Grego:</strong> αἰών × 5</p>
+<blockquote>
+<p>&quot;Agora escreva αἰών cinco vezes na linha 2. Pronuncie: a-IÔN.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 6: word_intro — ἡμέρα</h2>
+<blockquote>
+<p>&quot;ἡμέρα (hēméra) — dia. Não são doze as horas do dia? A Septuaginta usa para o &#39;Dia do Senhor&#39;.&quot;</p>
+</blockquote>
+<p>&quot;ἡμέρα — Dia&quot;</p>
+<p><strong>Grego:</strong> ἡμέρα
+<strong>Transliteração:</strong> hēméra
+<strong>Pronúncia:</strong> e-MÉ-ra
+<strong>Significado:</strong> Dia
+<strong>Etiologia:</strong> Raiz indo-europeia de calor/dia; a Septuaginta usa para o &quot;Dia do Senhor&quot; (יוֹם יְהוָה)</p>
+<hr>
+<h2>Step 7: write_practice — ἡμέρα</h2>
+<p><strong>Grego:</strong> ἡμέρα × 5</p>
+<blockquote>
+<p>&quot;Agora escreva ἡμέρα cinco vezes na linha 3. Pronuncie: e-MÉ-ra.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 8: word_intro — νύξ</h2>
+<blockquote>
+<p>&quot;νύξ (nýx) — noite. Este veio ter com Jesus de noite — Nicodemos, símbolo de busca na escuridão. Deu origem a &#39;noturno&#39;.&quot;</p>
+</blockquote>
+<p>&quot;νύξ — Noite&quot;</p>
+<p><strong>Grego:</strong> νύξ
+<strong>Transliteração:</strong> nýx
+<strong>Pronúncia:</strong> NÍKS
+<strong>Significado:</strong> Noite
+<strong>Etiologia:</strong> Deu origem a &quot;noturno&quot;; em João 3:2, Nicodemos vem à noite — simbolismo intencional</p>
+<hr>
+<h2>Step 9: write_practice — νύξ</h2>
+<p><strong>Grego:</strong> νύξ × 5</p>
+<blockquote>
+<p>&quot;Agora escreva νύξ cinco vezes na linha 4. Pronuncie: NÍKS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 10: word_intro — ὥρα</h2>
+<blockquote>
+<p>&quot;ὥρα (hṓra) — hora / momento oportuno. Ainda não é chegada a minha hora. João 2:4 usa no sentido de momento certo.&quot;</p>
+</blockquote>
+<p>&quot;ὥρα — Hora&quot;</p>
+<p><strong>Grego:</strong> ὥρα
+<strong>Transliteração:</strong> hṓra
+<strong>Pronúncia:</strong> Ô-ra
+<strong>Significado:</strong> Hora / Momento Oportuno
+<strong>Etiologia:</strong> Não apenas marcação de tempo, mas &quot;o momento certo&quot;; João 2:4 usa este sentido</p>
+<hr>
+<h2>Step 11: write_practice — ὥρα</h2>
+<p><strong>Grego:</strong> ὥρα × 5</p>
+<blockquote>
+<p>&quot;Agora escreva ὥρα cinco vezes na linha 5. Pronuncie: Ô-ra.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 12: pause</h2>
+<blockquote>
+<p>&quot;Você aprendeu palavras que falam do tempo e da eternidade. Reflita: o tempo foi criado por Deus para revelar o seu Reino.&quot;</p>
+</blockquote>
+<p>Releia as cinco palavras na sua apostila.
+Quando estiver pronto, continue.</p>
+<hr>
+<h2>Step 13: dictation — βασιλεία</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;reino&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> βασιλεία</p>
+<hr>
+<h2>Step 14: dictation — αἰών</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;era/eternidade&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> αἰών</p>
+<hr>
+<h2>Step 15: dictation — ἡμέρα</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;dia&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> ἡμέρα</p>
+<hr>
+<h2>Step 16: dictation — νύξ</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;noite&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> νύξ</p>
+<hr>
+<h2>Step 17: dictation — ὥρα</h2>
+<blockquote>
+<p>&quot;Escreva a palavra grega para: &#39;hora&#39;.&quot;</p>
+</blockquote>
+<p><strong>Resposta Esperada:</strong> ὥρα</p>
+<hr>
+<h2>Fim da Lição L11</h2>
+<p>Parabéns! Você concluiu <strong>Lição 11 — Tempo e Reino (βασιλεία, αἰών, ἡμέρα, νύξ, ὥρα)</strong>.</p>
+<p><strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> βασιλεία (reino)</li>
+<li><input disabled="" type="checkbox"> αἰών (era/eternidade)</li>
+<li><input disabled="" type="checkbox"> ἡμέρα (dia)</li>
+<li><input disabled="" type="checkbox"> νύξ (noite)</li>
+<li><input disabled="" type="checkbox"> ὥρα (hora)</li>
+</ul>
+<p>\newpage</p>
+<h1>Apostila L12 — Conhecer e Ver</h1>
+<p><strong>ID:</strong> apostila-L12
+<strong>Título:</strong> Lição 12 — Conhecer e Ver
+<strong>Descrição:</strong> γινώσκω, οἶδα, σοφία, ἀλήθεια, φῶς
+<strong>Página:</strong> 25
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 45</p>
+<hr>
+<h2>Step 01: intro</h2>
+<blockquote>
+<p>&quot;Lição 12 — Conhecer e ver. Hoje você vai aprender palavras sobre conhecimento e luz: ginósko, oída, sofía, alétheia e fós. Elas nos ensinam como conhecemos a Deus. Abra sua apostila na página 25.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 02: word_intro</h2>
+<blockquote>
+<p>&quot;γινώσκω, conhecer por experiência. Em João 10:14, Jesus declara: &#39;Eu conheço (γινώσκω) as minhas ovelhas, e elas me conhecem.&#39;&quot;
+<strong>Grego:</strong> γινώσκω
+<strong>Transliteração:</strong> ginṓskō
+<strong>Pronúncia:</strong> gi-NÔS-ko
+<strong>Significado:</strong> conhecer por experiência
+<strong>Etiologia:</strong> Conhecimento adquirido por experiência pessoal; em João 10:14 é o conhecimento mútuo do pastor e ovelhas</p>
+</blockquote>
+<hr>
+<h2>Step 03: write_practice</h2>
+<p><strong>Grego:</strong> γινώσκω × 5</p>
+<blockquote>
+<p>&quot;Agora escreva γινώσκω cinco vezes na linha 1. Pronuncie: gi-NÔS-ko.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 04: word_intro</h2>
+<blockquote>
+<p>&quot;οἶδα, saber por percepção. Em João 3:2, Nicodemos diz: &#39;Sabemos (οἴδαμεν) que és Mestre vindo de Deus.&#39;&quot;
+<strong>Grego:</strong> οἶδα
+<strong>Transliteração:</strong> oîda
+<strong>Pronúncia:</strong> Ôi-da
+<strong>Significado:</strong> saber por percepção / revelação
+<strong>Etiologia:</strong> Perfeito com sentido presente; literalmente &quot;tenho visto e portanto sei&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 05: write_practice</h2>
+<p><strong>Grego:</strong> οἶδα × 5</p>
+<blockquote>
+<p>&quot;Agora escreva οἶδα cinco vezes na linha 2. Pronuncie: Ôi-da.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 06: word_intro</h2>
+<blockquote>
+<p>&quot;σοφία, sabedoria. Em 1 Coríntios 1:24, Paulo declara: &#39;Cristo, poder de Deus e sabedoria (σοφία) de Deus.&#39;&quot;
+<strong>Grego:</strong> σοφία
+<strong>Transliteração:</strong> sophía
+<strong>Pronúncia:</strong> so-FÍ-a
+<strong>Significado:</strong> sabedoria
+<strong>Etiologia:</strong> Distinção do NT: a sabedoria de Deus vs a sabedoria do mundo (1 Cor 1:18-25)</p>
+</blockquote>
+<hr>
+<h2>Step 07: write_practice</h2>
+<p><strong>Grego:</strong> σοφία × 5</p>
+<blockquote>
+<p>&quot;Agora escreva σοφία cinco vezes na linha 3. Pronuncie: so-FÍ-a.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 08: word_intro</h2>
+<blockquote>
+<p>&quot;ἀλήθεια, verdade. Em João 8:32: &#39;E conhecereis a verdade (ἀλήθεια), e a verdade vos libertará.&#39;&quot;
+<strong>Grego:</strong> ἀλήθεια
+<strong>Transliteração:</strong> alḗtheia
+<strong>Pronúncia:</strong> a-LÊ-tei-a
+<strong>Significado:</strong> verdade
+<strong>Etiologia:</strong> α (negação) + λήθη (esquecimento, ocultamento); o que não está oculto, a realidade revelada</p>
+</blockquote>
+<hr>
+<h2>Step 09: write_practice</h2>
+<p><strong>Grego:</strong> ἀλήθεια × 5</p>
+<blockquote>
+<p>&quot;Agora escreva ἀλήθεια cinco vezes na linha 4. Pronuncie: a-LÊ-tei-a.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 10: word_intro</h2>
+<blockquote>
+<p>&quot;φῶς, luz. Em João 1:5: &#39;A luz (φῶς) resplandece nas trevas, e as trevas não a compreenderam.&#39;&quot;
+<strong>Grego:</strong> φῶς
+<strong>Transliteração:</strong> phōs
+<strong>Pronúncia:</strong> FÔS
+<strong>Significado:</strong> luz
+<strong>Etiologia:</strong> Em João 1:5, φῶς é usado para o próprio Cristo; raiz de &quot;fotossíntese&quot; e &quot;fotografia&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 11: write_practice</h2>
+<p><strong>Grego:</strong> φῶς × 5</p>
+<blockquote>
+<p>&quot;Agora escreva φῶς cinco vezes na linha 5. Pronuncie: FÔS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 12: pause</h2>
+<blockquote>
+<p>&quot;Conhecimento, sabedoria, verdade e luz — palavras que descrevem Jesus. Releia o que escreveu.&quot;
+Releia as cinco palavras na sua apostila.
+Quando estiver pronto, continue.</p>
+</blockquote>
+<hr>
+<h2>Step 13: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;conhecer&#39;.&quot;
+<strong>Resposta Esperada:</strong> γινώσκω</p>
+</blockquote>
+<hr>
+<h2>Step 14: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;saber&#39;.&quot;
+<strong>Resposta Esperada:</strong> οἶδα</p>
+</blockquote>
+<hr>
+<h2>Step 15: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;sabedoria&#39;.&quot;
+<strong>Resposta Esperada:</strong> σοφία</p>
+</blockquote>
+<hr>
+<h2>Step 16: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;verdade&#39;.&quot;
+<strong>Resposta Esperada:</strong> ἀλήθεια</p>
+</blockquote>
+<hr>
+<h2>Step 17: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;luz&#39;.&quot;
+<strong>Resposta Esperada:</strong> φῶς</p>
+</blockquote>
+<p>\newpage</p>
+<h1>Apostila L13 — Salvação e Julgamento</h1>
+<p><strong>ID:</strong> apostila-L13
+<strong>Título:</strong> Lição 13 — Salvação e Julgamento
+<strong>Descrição:</strong> σωτηρία, νόμος, δικαιοσύνη, κρίσις, θάνατος
+<strong>Página:</strong> 27
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 45</p>
+<hr>
+<h2>Step 01: intro</h2>
+<blockquote>
+<p>&quot;Lição 13 — Salvação e julgamento. Palavras pesadas que definem o evangelho: soteria, nómos, dikaiosýne, krísis e thánatos. Abra sua apostila na página 27.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 02: word_intro</h2>
+<blockquote>
+<p>&quot;σωτηρία, salvação. Em Romanos 1:16, Paulo declara: &#39;O evangelho é o poder de Deus para salvação (σωτηρίαν) de todo aquele que crê.&#39;&quot;
+<strong>Grego:</strong> σωτηρία
+<strong>Transliteração:</strong> sōtēría
+<strong>Pronúncia:</strong> so-te-RÍ-a
+<strong>Significado:</strong> salvação / libertação
+<strong>Etiologia:</strong> De σῴζω (salvar); σωτήρ (Salvador) é título de imperadores romanos — Paulo o reivindica para Cristo</p>
+</blockquote>
+<hr>
+<h2>Step 03: write_practice</h2>
+<p><strong>Grego:</strong> σωτηρία × 5</p>
+<blockquote>
+<p>&quot;Agora escreva σωτηρία cinco vezes na linha 1. Pronuncie: so-te-RÍ-a.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 04: word_intro</h2>
+<blockquote>
+<p>&quot;νόμος, lei. Em Romanos 3:31, Paulo pergunta: &#39;Anulamos a lei (νόμον) pela fé? De modo nenhum! Antes a confirmamos.&#39;&quot;
+<strong>Grego:</strong> νόμος
+<strong>Transliteração:</strong> nómos
+<strong>Pronúncia:</strong> NÓ-mos
+<strong>Significado:</strong> lei / Torá / princípio
+<strong>Etiologia:</strong> De νέμω, distribuir; a lei como ordem distribuída e atribuída</p>
+</blockquote>
+<hr>
+<h2>Step 05: write_practice</h2>
+<p><strong>Grego:</strong> νόμος × 5</p>
+<blockquote>
+<p>&quot;Agora escreva νόμος cinco vezes na linha 2. Pronuncie: NÓ-mos.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 06: word_intro</h2>
+<blockquote>
+<p>&quot;δικαιοσύνη, justiça. Em Romanos 3:22: &#39;A justiça (δικαιοσύνη) de Deus pela fé em Jesus Cristo para todos os que creem.&#39;&quot;
+<strong>Grego:</strong> δικαιοσύνη
+<strong>Transliteração:</strong> dikaiosýnē
+<strong>Pronúncia:</strong> di-kai-o-SÍ-ne
+<strong>Significado:</strong> justiça / retidão
+<strong>Etiologia:</strong> De δίκαιος (justo); conceito central em Paulo: ser declarado justo por Deus</p>
+</blockquote>
+<hr>
+<h2>Step 07: write_practice</h2>
+<p><strong>Grego:</strong> δικαιοσύνη × 5</p>
+<blockquote>
+<p>&quot;Agora escreva δικαιοσύνη cinco vezes na linha 3. Pronuncie: di-kai-o-SÍ-ne.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 08: word_intro</h2>
+<blockquote>
+<p>&quot;κρίσις, julgamento. Em João 3:19: &#39;Esta é a condenação (κρίσις): a luz veio ao mundo, mas os homens amaram mais as trevas.&#39;&quot;
+<strong>Grego:</strong> κρίσις
+<strong>Transliteração:</strong> krísis
+<strong>Pronúncia:</strong> KRÍ-sis
+<strong>Significado:</strong> julgamento / decisão
+<strong>Etiologia:</strong> Deu origem a &quot;crise&quot; e &quot;crítica&quot;; o ponto de decisão onde o destino é determinado</p>
+</blockquote>
+<hr>
+<h2>Step 09: write_practice</h2>
+<p><strong>Grego:</strong> κρίσις × 5</p>
+<blockquote>
+<p>&quot;Agora escreva κρίσις cinco vezes na linha 4. Pronuncie: KRÍ-sis.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 10: word_intro</h2>
+<blockquote>
+<p>&quot;θάνατος, morte. Em Romanos 6:23: &#39;O salário do pecado é a morte (θάνατος), mas o dom gratuito de Deus é a vida eterna.&#39;&quot;
+<strong>Grego:</strong> θάνατος
+<strong>Transliteração:</strong> thánatos
+<strong>Pronúncia:</strong> TÂ-na-tos
+<strong>Significado:</strong> morte
+<strong>Etiologia:</strong> Deu origem a &quot;eutanásia&quot; (boa morte); Paulo o personifica como inimigo em 1 Cor 15</p>
+</blockquote>
+<hr>
+<h2>Step 11: write_practice</h2>
+<p><strong>Grego:</strong> θάνατος × 5</p>
+<blockquote>
+<p>&quot;Agora escreva θάνατος cinco vezes na linha 5. Pronuncie: TÂ-na-tos.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 12: pause</h2>
+<blockquote>
+<p>&quot;Salvação, lei, justiça, julgamento e morte — o vocabulário da cruz. Releia estas palavras.&quot;
+Releia as cinco palavras na sua apostila.
+Quando estiver pronto, continue.</p>
+</blockquote>
+<hr>
+<h2>Step 13: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;salvação&#39;.&quot;
+<strong>Resposta Esperada:</strong> σωτηρία</p>
+</blockquote>
+<hr>
+<h2>Step 14: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;lei&#39;.&quot;
+<strong>Resposta Esperada:</strong> νόμος</p>
+</blockquote>
+<hr>
+<h2>Step 15: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;justiça&#39;.&quot;
+<strong>Resposta Esperada:</strong> δικαιοσύνη</p>
+</blockquote>
+<hr>
+<h2>Step 16: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;julgamento&#39;.&quot;
+<strong>Resposta Esperada:</strong> κρίσις</p>
+</blockquote>
+<hr>
+<h2>Step 17: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;morte&#39;.&quot;
+<strong>Resposta Esperada:</strong> θάνατος</p>
+</blockquote>
+<p>\newpage</p>
+<h1>Apostila L14 — Comunidade e Ministério</h1>
+<p><strong>ID:</strong> apostila-L14
+<strong>Título:</strong> Lição 14 — Comunidade e Ministério
+<strong>Descrição:</strong> ἐκκλησία, ἀδελφός, ἀπόστολος, προφήτης, δοῦλος
+<strong>Página:</strong> 29
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 45</p>
+<hr>
+<h2>Step 01: intro</h2>
+<blockquote>
+<p>&quot;Lição 14 — Comunidade e ministério. Palavras que descrevem o povo de Deus: ekklesía, adelphós, apóstolos, profétes e dûlos. Abra sua apostila na página 29.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 02: word_intro</h2>
+<blockquote>
+<p>&quot;ἐκκλησία, igreja. Em Mateus 16:18, Jesus promete: &#39;Sobre esta pedra edificarei a minha igreja (ἐκκλησίαν).&#39;&quot;
+<strong>Grego:</strong> ἐκκλησία
+<strong>Transliteração:</strong> ekklēsía
+<strong>Pronúncia:</strong> e-kle-SÍ-a
+<strong>Significado:</strong> igreja / assembleia convocada
+<strong>Etiologia:</strong> ἐκ (de fora) + καλέω (chamar); assembleia dos cidadãos convocados da cidade para deliberar</p>
+</blockquote>
+<hr>
+<h2>Step 03: write_practice</h2>
+<p><strong>Grego:</strong> ἐκκλησία × 5</p>
+<blockquote>
+<p>&quot;Agora escreva ἐκκλησία cinco vezes na linha 1. Pronuncie: e-kle-SÍ-a.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 04: word_intro</h2>
+<blockquote>
+<p>&quot;ἀδελφός, irmão. Em Romanos 8:29: &#39;Para que ele seja o primogênito entre muitos irmãos (ἀδελφοῖς).&#39;&quot;
+<strong>Grego:</strong> ἀδελφός
+<strong>Transliteração:</strong> adelphós
+<strong>Pronúncia:</strong> a-del-FÓS
+<strong>Significado:</strong> irmão / membro da família de fé
+<strong>Etiologia:</strong> ἀ (mesmo) + δελφύς (útero); literalmente &quot;do mesmo útero&quot;; Paulo expande para irmãos em Cristo</p>
+</blockquote>
+<hr>
+<h2>Step 05: write_practice</h2>
+<p><strong>Grego:</strong> ἀδελφός × 5</p>
+<blockquote>
+<p>&quot;Agora escreva ἀδελφός cinco vezes na linha 2. Pronuncie: a-del-FÓS.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 06: word_intro</h2>
+<blockquote>
+<p>&quot;ἀπόστολος, apóstolo. Em Efésios 2:20: &#39;Edificados sobre o fundamento dos apóstolos (ἀποστόλων) e profetas.&#39;&quot;
+<strong>Grego:</strong> ἀπόστολος
+<strong>Transliteração:</strong> apóstolos
+<strong>Pronúncia:</strong> a-PÓS-to-los
+<strong>Significado:</strong> apóstolo / enviado
+<strong>Etiologia:</strong> De ἀποστέλλω, enviar com autoridade e representando quem envia</p>
+</blockquote>
+<hr>
+<h2>Step 07: write_practice</h2>
+<p><strong>Grego:</strong> ἀπόστολος × 5</p>
+<blockquote>
+<p>&quot;Agora escreva ἀπόστολος cinco vezes na linha 3. Pronuncie: a-PÓS-to-los.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 08: word_intro</h2>
+<blockquote>
+<p>&quot;προφήτης, profeta. Em Atos 2:17: &#39;Os vossos filhos e as vossas filhas profetizarão (προφητεύσουσιν).&#39;&quot;
+<strong>Grego:</strong> προφήτης
+<strong>Transliteração:</strong> prophḗtēs
+<strong>Pronúncia:</strong> pro-FÊ-tes
+<strong>Significado:</strong> profeta / porta-voz
+<strong>Etiologia:</strong> πρό (antes/em favor de) + φημί (falar); não apenas prevê o futuro, mas fala em nome de Deus</p>
+</blockquote>
+<hr>
+<h2>Step 09: write_practice</h2>
+<p><strong>Grego:</strong> προφήτης × 5</p>
+<blockquote>
+<p>&quot;Agora escreva προφήτης cinco vezes na linha 4. Pronuncie: pro-FÊ-tes.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 10: word_intro</h2>
+<blockquote>
+<p>&quot;δοῦλος, servo. Em Romanos 1:1, Paulo se identifica: &#39;Paulo, servo (δοῦλος) de Jesus Cristo, chamado para ser apóstolo.&#39;&quot;
+<strong>Grego:</strong> δοῦλος
+<strong>Transliteração:</strong> doûlos
+<strong>Pronúncia:</strong> DÛ-los
+<strong>Significado:</strong> servo / escravo
+<strong>Etiologia:</strong> Paulo se identifica como δοῦλος em Rm 1:1 — paradoxo: o maior título vem da maior humildade</p>
+</blockquote>
+<hr>
+<h2>Step 11: write_practice</h2>
+<p><strong>Grego:</strong> δοῦλος × 5</p>
+<blockquote>
+<p>&quot;Agora escreva δοῦλος cinco vezes na linha 5. Pronuncie: DÛ-los.&quot;</p>
+</blockquote>
+<hr>
+<h2>Step 12: pause</h2>
+<blockquote>
+<p>&quot;Igreja, irmãos, apóstolos, profetas, servos — esta é a comunidade de Deus. Releia estas palavras.&quot;
+Releia as cinco palavras na sua apostila.
+Quando estiver pronto, continue.</p>
+</blockquote>
+<hr>
+<h2>Step 13: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;igreja&#39;.&quot;
+<strong>Resposta Esperada:</strong> ἐκκλησία</p>
+</blockquote>
+<hr>
+<h2>Step 14: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;irmão&#39;.&quot;
+<strong>Resposta Esperada:</strong> ἀδελφός</p>
+</blockquote>
+<hr>
+<h2>Step 15: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;apóstolo&#39;.&quot;
+<strong>Resposta Esperada:</strong> ἀπόστολος</p>
+</blockquote>
+<hr>
+<h2>Step 16: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;profeta&#39;.&quot;
+<strong>Resposta Esperada:</strong> προφήτης</p>
+</blockquote>
+<hr>
+<h2>Step 17: dictation</h2>
+<blockquote>
+<p>&quot;Ditado: escreva a palavra grega para &#39;servo&#39;.&quot;
+<strong>Resposta Esperada:</strong> δοῦλος</p>
+</blockquote>
+<p>\newpage</p>
+<h1>Apostila L15 — O Mundo Criado (κόσμος, οὐρανός, γῆ, ὕδωρ, ἄρτος)</h1>
+<p><strong>ID:</strong> apostila-L15
+<strong>Título:</strong> Lição 15 — O Mundo Criado
+<strong>Descrição:</strong> κόσμος, οὐρανός, γῆ, ὕδωρ, ἄρτος
+<strong>Página:</strong> 31
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 45</p>
+<hr>
+<h2>🏁 Step 1: intro</h2>
+<blockquote>
+<p>&quot;Lição 15 — O mundo criado. Hoje vamos aprender palavras que descrevem a criação de Deus: kosmos, ouranós, gê, hydor e artos. Abra sua apostila na página 31.&quot;</p>
+</blockquote>
+<hr>
+<h2>🌍 Step 2: word_intro — κόσμος</h2>
+<blockquote>
+<p>&quot;κόσμος significa mundo, ordem, universo. Originalmente significava &#39;ordem&#39; ou &#39;adorno&#39; — deu origem a &#39;cosmético&#39; e &#39;cosmos&#39;. Em João 3:16, lemos: &#39;Porque Deus amou o mundo de tal maneira&#39;. A palavra é kósmos, pronunciada KÓS-mos.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> κόσμος
+<strong>Transliteração:</strong> kósmos
+<strong>Pronúncia:</strong> KÓS-mos
+<strong>Significado:</strong> mundo / ordem / universo
+<strong>Etiologia:</strong> Originalmente &quot;ordem&quot; ou &quot;adorno&quot;; deu origem a &quot;cosmético&quot; e &quot;cosmos&quot;
+<strong>Contexto Bíblico Texto:</strong> &quot;Porque Deus amou o mundo (κόσμον) de tal maneira&quot;</p>
+<hr>
+<h2>✍️ Step 3: write_practice — κόσμος × 5</h2>
+<p><strong>Grego:</strong> κόσμος</p>
+<blockquote>
+<p>&quot;Agora escreva κόσμος cinco vezes na linha 1. Pronuncie: KÓS-mos.&quot;</p>
+</blockquote>
+<hr>
+<h2>☀️ Step 4: word_intro — οὐρανός</h2>
+<blockquote>
+<p>&quot;οὐρανός significa céu, morada divina. Deu nome ao planeta Urano. Em hebraico שָׁמַיִם (shamayim) tem raiz de &#39;lá em cima&#39;. Em Mateus 6:9, oramos: &#39;Pai nosso que estás nos céus&#39;. Pronuncia-se ou-ra-NÓS.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> οὐρανός
+<strong>Transliteração:</strong> ouranós
+<strong>Pronúncia:</strong> ou-ra-NÓS
+<strong>Significado:</strong> céu / morada divina
+<strong>Etiologia:</strong> Deu nome ao planeta Urano; em hebraico שָׁמַיִם (shamayim) tem raiz de &quot;lá em cima&quot;
+<strong>Contexto Bíblico Texto:</strong> &quot;Pai nosso que estás nos céus (οὐρανοῖς)&quot;</p>
+<hr>
+<h2>✍️ Step 5: write_practice — οὐρανός × 5</h2>
+<p><strong>Grego:</strong> οὐρανός</p>
+<blockquote>
+<p>&quot;Agora escreva οὐρανός cinco vezes na linha 2. Pronuncie: ou-ra-NÓS.&quot;</p>
+</blockquote>
+<hr>
+<h2>🌎 Step 6: word_intro — γῆ</h2>
+<blockquote>
+<p>&quot;γῆ significa terra, solo, país. Deu origem a &#39;geografia&#39; e &#39;geologia&#39;. A deusa Gaia da mitologia grega tem este nome. Em Mateus 5:5, Jesus diz: &#39;Bem-aventurados os mansos, porque eles herdarão a terra&#39;. Pronuncia-se GÊ.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> γῆ
+<strong>Transliteração:</strong> gē
+<strong>Pronúncia:</strong> GÊ
+<strong>Significado:</strong> terra / solo / país
+<strong>Etiologia:</strong> Deu origem a &quot;geografia&quot; e &quot;geologia&quot;; a Gaia da mitologia grega
+<strong>Contexto Bíblico Texto:</strong> &quot;Bem-aventurados os mansos, porque eles herdarão a terra (γῆν)&quot;</p>
+<hr>
+<h2>✍️ Step 7: write_practice — γῆ × 5</h2>
+<p><strong>Grego:</strong> γῆ</p>
+<blockquote>
+<p>&quot;Agora escreva γῆ cinco vezes na linha 3. Pronuncie: GÊ.&quot;</p>
+</blockquote>
+<hr>
+<h2>💧 Step 8: word_intro — ὕδωρ</h2>
+<blockquote>
+<p>&quot;ὕδωρ significa água. Deu origem a &#39;hidráulica&#39; e &#39;hidrogênio&#39;. Em João 4:14, Jesus promete água viva. Pronuncia-se HÍ-dor.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> ὕδωρ
+<strong>Transliteração:</strong> hýdōr
+<strong>Pronúncia:</strong> HÍ-dor
+<strong>Significado:</strong> água
+<strong>Etiologia:</strong> Deu origem a &quot;hidráulica&quot; e &quot;hidrogênio&quot;; em João 4:14, Jesus promete água viva (ζῶν)
+<strong>Contexto Bíblico Texto:</strong> &quot;Aquele que beber da água (ὕδωρ) que eu lhe der nunca mais terá sede&quot;</p>
+<hr>
+<h2>✍️ Step 9: write_practice — ὕδωρ × 5</h2>
+<p><strong>Grego:</strong> ὕδωρ</p>
+<blockquote>
+<p>&quot;Agora escreva ὕδωρ cinco vezes na linha 4. Pronuncie: HÍ-dor.&quot;</p>
+</blockquote>
+<hr>
+<h2>🍞 Step 10: word_intro — ἄρτος</h2>
+<blockquote>
+<p>&quot;ἄρτος significa pão, alimento. Em João 6:35, Jesus se declara ὁ ἄρτος τῆς ζωῆς — o pão da vida. Uma referência direta ao maná do deserto. Pronuncia-se ÁR-tos.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> ἄρτος
+<strong>Transliteração:</strong> ártos
+<strong>Pronúncia:</strong> ÁR-tos
+<strong>Significado:</strong> pão / alimento
+<strong>Etiologia:</strong> Em João 6:35, Jesus se declara ὁ ἄρτος τῆς ζωῆς — o pão da vida; referência ao maná
+<strong>Contexto Bíblico Texto:</strong> &quot;Eu sou o pão (ἄρτος) da vida&quot;</p>
+<hr>
+<h2>✍️ Step 11: write_practice — ἄρτος × 5</h2>
+<p><strong>Grego:</strong> ἄρτος</p>
+<blockquote>
+<p>&quot;Agora escreva ἄρτος cinco vezes na linha 5. Pronuncie: ÁR-tos.&quot;</p>
+</blockquote>
+<hr>
+<h2>🧠 Step 12: pause</h2>
+<blockquote>
+<p>&quot;Céus, terra, água, pão — o mundo criado aponta para o Criador. Releia estas palavras.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+Céus, terra, água, pão — o mundo criado aponta para o Criador.
+Quando estiver pronto, continue.</p>
+<hr>
+<h2>📓 Step 13: dictation — κόσμος</h2>
+<blockquote>
+<p>&quot;Escreva no papel: mundo.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> κόσμος</p>
+<hr>
+<h2>📓 Step 14: dictation — οὐρανός</h2>
+<blockquote>
+<p>&quot;Escreva no papel: céu.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> οὐρανός</p>
+<hr>
+<h2>📓 Step 15: dictation — γῆ</h2>
+<blockquote>
+<p>&quot;Escreva no papel: terra.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> γῆ</p>
+<hr>
+<h2>📓 Step 16: dictation — ὕδωρ</h2>
+<blockquote>
+<p>&quot;Escreva no papel: água.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> ὕδωρ</p>
+<hr>
+<h2>📓 Step 17: dictation — ἄρτος</h2>
+<blockquote>
+<p>&quot;Escreva no papel: pão.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> ἄρτος</p>
+<hr>
+<h2>🎉 Fim da Lição L15</h2>
+<p>Parabéns! Você concluiu <strong>Lição 15 — O Mundo Criado</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi κόσμος (mundo)</li>
+<li><input disabled="" type="checkbox"> Aprendi οὐρανός (céu)</li>
+<li><input disabled="" type="checkbox"> Aprendi γῆ (terra)</li>
+<li><input disabled="" type="checkbox"> Aprendi ὕδωρ (água)</li>
+<li><input disabled="" type="checkbox"> Aprendi ἄρτος (pão)</li>
+</ul>
+<p>\newpage</p>
+<h1>Apostila L16 — Verbos do NT (εἰμί, ἔρχομαι, ἀκούω, βλέπω, πιστεύω)</h1>
+<p><strong>ID:</strong> apostila-L16
+<strong>Título:</strong> Lição 16 — Verbos do NT
+<strong>Descrição:</strong> εἰμί, ἔρχομαι, ἀκούω, βλέπω, πιστεύω
+<strong>Página:</strong> 33
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 50</p>
+<hr>
+<h2>🏁 Step 1: intro</h2>
+<blockquote>
+<p>&quot;Lição 16 — Verbos fundamentais do Novo Testamento. Hoje você vai aprender os verbos mais importantes: eimí, érchomai, akoúo, blépo e pisteúo. Abra sua apostila na página 33.&quot;</p>
+</blockquote>
+<hr>
+<h2>⚡ Step 2: word_intro — εἰμί</h2>
+<blockquote>
+<p>&quot;εἰμί é o verbo ser, existir. É o verbo mais irregular do grego. Ἐγώ εἰμι (Ego eimi — Eu sou) é o título divino em João. Em João 8:58, Jesus declara: &#39;Antes que Abraão existisse, EU SOU&#39;. Pronuncia-se ei-MÍ.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> εἰμί
+<strong>Transliteração:</strong> eimí
+<strong>Pronúncia:</strong> ei-MÍ
+<strong>Significado:</strong> ser / existir
+<strong>Etiologia:</strong> Verbo &quot;ser&quot; mais irregular do grego; &quot;ἘΓΩ ΕΙΜΙ&quot; (Ego eimi, Eu sou) é o título divino de João
+<strong>Contexto Bíblico Texto:</strong> &quot;Em verdade, em verdade vos digo: antes que Abraão existisse, EU SOU (ἐγώ εἰμι)&quot;</p>
+<hr>
+<h2>✍️ Step 3: write_practice — εἰμί × 5</h2>
+<p><strong>Grego:</strong> εἰμί</p>
+<blockquote>
+<p>&quot;Agora escreva εἰμί cinco vezes na linha 1. Pronuncie: ei-MÍ.&quot;</p>
+</blockquote>
+<hr>
+<h2>🚶 Step 4: word_intro — ἔρχομαι</h2>
+<blockquote>
+<p>&quot;ἔρχομαι significa vir, chegar, ir. É o verbo de movimento mais frequente do NT. No Apocalipse: &#39;Vem, Senhor Jesus&#39; (ἔρχου Κύριε Ἰησοῦ). Em João 1:9, a verdadeira luz estava vindo ao mundo. Pronuncia-se ÉR-cho-mai.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> ἔρχομαι
+<strong>Transliteração:</strong> érchomai
+<strong>Pronúncia:</strong> ÉR-cho-mai
+<strong>Significado:</strong> vir / chegar / ir
+<strong>Etiologia:</strong> Verbo de movimento mais frequente; no Apocalipse: &quot;Vem, Senhor Jesus&quot; (ἔρχου Κύριε Ἰησοῦ)
+<strong>Contexto Bíblico Texto:</strong> &quot;A verdadeira luz... estava vindo (ἐρχόμενον) ao mundo&quot;</p>
+<hr>
+<h2>✍️ Step 5: write_practice — ἔρχομαι × 5</h2>
+<p><strong>Grego:</strong> ἔρχομαι</p>
+<blockquote>
+<p>&quot;Agora escreva ἔρχομαι cinco vezes na linha 2. Pronuncie: ÉR-cho-mai.&quot;</p>
+</blockquote>
+<hr>
+<h2>👂 Step 6: word_intro — ἀκούω</h2>
+<blockquote>
+<p>&quot;ἀκούω significa ouvir, escutar com atenção. Deu origem a &#39;acústica&#39;. Não é ouvir passivo — implica entender e responder. Em João 10:27, Jesus diz: &#39;As minhas ovelhas ouvem a minha voz&#39;. Pronuncia-se a-KÚ-o.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> ἀκούω
+<strong>Transliteração:</strong> akoúō
+<strong>Pronúncia:</strong> a-KÚ-o
+<strong>Significado:</strong> ouvir / escutar com atenção
+<strong>Etiologia:</strong> Deu origem a &quot;acústica&quot;; não é ouvir passivo — implica entender e responder
+<strong>Contexto Bíblico Texto:</strong> &quot;As minhas ovelhas ouvem (ἀκούουσιν) a minha voz&quot;</p>
+<hr>
+<h2>✍️ Step 7: write_practice — ἀκούω × 5</h2>
+<p><strong>Grego:</strong> ἀκούω</p>
+<blockquote>
+<p>&quot;Agora escreva ἀκούω cinco vezes na linha 3. Pronuncie: a-KÚ-o.&quot;</p>
+</blockquote>
+<hr>
+<h2>👁️ Step 8: word_intro — βλέπω</h2>
+<blockquote>
+<p>&quot;βλέπω significa ver, perceber, enxergar. É distinto de ὁράω, que é ver com mais ênfase. Em João 9:25, o cego curado diz: &#39;Uma coisa sei: eu era cego e agora vejo&#39;. Pronuncia-se BLÉP-o.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> βλέπω
+<strong>Transliteração:</strong> blépō
+<strong>Pronúncia:</strong> BLÉP-o
+<strong>Significado:</strong> ver / perceber / enxergar
+<strong>Etiologia:</strong> Distinto de ὁράω (ver com mais ênfase); em João 9:25, o cego curado: &quot;Eu era cego e agora vejo&quot;
+<strong>Contexto Bíblico Texto:</strong> &quot;Uma coisa sei: eu era cego e agora vejo (βλέπω)&quot;</p>
+<hr>
+<h2>✍️ Step 9: write_practice — βλέπω × 5</h2>
+<p><strong>Grego:</strong> βλέπω</p>
+<blockquote>
+<p>&quot;Agora escreva βλέπω cinco vezes na linha 4. Pronuncie: BLÉP-o.&quot;</p>
+</blockquote>
+<hr>
+<h2>🙏 Step 10: word_intro — πιστεύω</h2>
+<blockquote>
+<p>&quot;πιστεύω significa crer, confiar, comprometer-se. É o verbo de πίστις (fé). Em João, πιστεύω sempre pede comprometimento, não apenas assentimento. João 3:16: &#39;Para que todo aquele que nele crê não pereça&#39;. Pronuncia-se pis-TEÚ-o.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> πιστεύω
+<strong>Transliteração:</strong> pisteúō
+<strong>Pronúncia:</strong> pis-TEÚ-o
+<strong>Significado:</strong> crer / confiar / comprometer-se
+<strong>Etiologia:</strong> O verbo de πίστις (fé); note: em João, πιστεύω sempre pede comprometimento, não apenas assentimento
+<strong>Contexto Bíblico Texto:</strong> &quot;Para que todo aquele que nele crê (πιστεύων) não pereça&quot;</p>
+<hr>
+<h2>✍️ Step 11: write_practice — πιστεύω × 5</h2>
+<p><strong>Grego:</strong> πιστεύω</p>
+<blockquote>
+<p>&quot;Agora escreva πιστεύω cinco vezes na linha 5. Pronuncie: pis-TEÚ-o.&quot;</p>
+</blockquote>
+<hr>
+<h2>🧠 Step 12: pause</h2>
+<blockquote>
+<p>&quot;Ser, vir, ouvir, ver e crer — verbos que descrevem o discipulado. Releia estas palavras.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+Ser, vir, ouvir, ver e crer — verbos que descrevem o discipulado.
+Quando estiver pronto, continue.</p>
+<hr>
+<h2>📓 Step 13: dictation — εἰμί</h2>
+<blockquote>
+<p>&quot;Escreva no papel: ser.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> εἰμί</p>
+<hr>
+<h2>📓 Step 14: dictation — ἔρχομαι</h2>
+<blockquote>
+<p>&quot;Escreva no papel: vir.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> ἔρχομαι</p>
+<hr>
+<h2>📓 Step 15: dictation — ἀκούω</h2>
+<blockquote>
+<p>&quot;Escreva no papel: ouvir.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> ἀκούω</p>
+<hr>
+<h2>📓 Step 16: dictation — βλέπω</h2>
+<blockquote>
+<p>&quot;Escreva no papel: ver.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> βλέπω</p>
+<hr>
+<h2>📓 Step 17: dictation — πιστεύω</h2>
+<blockquote>
+<p>&quot;Escreva no papel: crer.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> πιστεύω</p>
+<hr>
+<h2>🎉 Fim da Lição L16</h2>
+<p>Parabéns! Você concluiu <strong>Lição 16 — Verbos do NT</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi εἰμί (ser)</li>
+<li><input disabled="" type="checkbox"> Aprendi ἔρχομαι (vir)</li>
+<li><input disabled="" type="checkbox"> Aprendi ἀκούω (ouvir)</li>
+<li><input disabled="" type="checkbox"> Aprendi βλέπω (ver)</li>
+<li><input disabled="" type="checkbox"> Aprendi πιστεύω (crer)</li>
+</ul>
+<p>\newpage</p>
+
+</body>
+</html>

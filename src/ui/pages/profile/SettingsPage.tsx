@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAppNavigation } from '@/features/navigation/useNavigation';
-import { useTheme } from '@/features/theme/ThemeContext';
+import { useTheme, type FontSize } from '@/features/theme/ThemeContext';
 import { useSettingsStore } from '@/features/settings/settingsStore';
 import { useAuthStore } from '@/features/auth/authStore';
 import { useGamificationStore } from '@/features/gamification/gamificationStore';
@@ -130,7 +130,7 @@ const HAPTIC_OPTIONS: { value: HapticIntensity; label: string }[] = [
 export const SettingsPage: React.FC = () => {
   const navigation = useAppNavigation();
   const navigate = useNavigate();
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme, fontSize, setFontSize } = useTheme();
   const { user, avatarId } = useAuthStore();
   const { streakDays, totalXP } = useGamificationStore();
   const {
@@ -226,6 +226,37 @@ export const SettingsPage: React.FC = () => {
             value={theme === 'dark'}
             onChange={toggleTheme}
           />
+          {/* Seletor de tamanho de fonte */}
+          <div className="flex items-center justify-between py-4 px-1">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl w-8 text-center shrink-0">🔤</span>
+              <div>
+                <p className="text-text-primary dark:text-white text-base font-semibold">Tamanho do Texto</p>
+                <p className="text-text-secondary dark:text-zinc-400 text-xs">Leitor e análise morfológica</p>
+              </div>
+            </div>
+            <div className="flex gap-1.5 shrink-0">
+              {(['small', 'medium', 'large'] as FontSize[]).map((size) => (
+                <button
+                  key={size}
+                  id={`font-size-setting-${size}`}
+                  onClick={() => setFontSize(size)}
+                  style={{ borderRadius: '9999px' }}
+                  className={clsx(
+                    'flex items-center justify-center !rounded-full border-2 font-bold transition-all duration-200',
+                    size === 'small'  && 'w-9 h-9 text-[11px]',
+                    size === 'medium' && 'w-10 h-10 text-[14px]',
+                    size === 'large'  && 'w-11 h-11 text-[18px]',
+                    fontSize === size
+                      ? 'bg-secondary/15 border-secondary text-secondary'
+                      : 'bg-surface-alt dark:bg-zinc-800 border-border/30 dark:border-border/10 text-text-secondary dark:text-zinc-400',
+                  )}
+                >
+                  A
+                </button>
+              ))}
+            </div>
+          </div>
         </Section>
 
         <Section title="Meta Diária de Estudo" index={1}>

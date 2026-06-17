@@ -20,10 +20,7 @@ export const seedDatabase = async () => {
       await db.run('DELETE FROM cycles');
       await db.run('DELETE FROM letters');
       await db.run('DELETE FROM vocabulary');
-      await db.run('DELETE FROM nt_text');
-      await db.run('DELETE FROM nt_pt');
-      await db.run('DELETE FROM nt_interlinear');
-      await db.run('DELETE FROM strong');
+      // nt_text, nt_pt, nt_interlinear, strong = agora em koine_core.db (NÃO deletar)
       await db.run("DELETE FROM user_settings WHERE key IN ('learning_units_version', 'nt_abbr_version', 'nt_abbr_version_pt')");
     }
   } catch (err) {

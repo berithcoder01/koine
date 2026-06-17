@@ -59,7 +59,7 @@
   --radius-card-lg: 24px;
   --radius-card-xl: 32px;
 
-  --font-greek: 'SBL Greek', 'Gentium Plus', serif;
+  --font-greek: 'Gentium Plus', 'SBL Greek', serif;
 
   --animate-shake: shake 400ms ease;
   --animate-pulse-gold: pulse-gold 1.5s infinite;
@@ -178,7 +178,7 @@ body {
 }
 
 .greek-text {
-  font-family: 'SBL Greek', 'Gentium Plus', serif;
+  font-family: 'Gentium Plus', 'SBL Greek', serif;
 }
 
 .logo-text {
@@ -186,6 +186,31 @@ body {
   font-weight: 700;
 }
 
+
 input, textarea, select {
   font-size: 16px;
 }
+
+/* ─── ACESSIBILIDADE — ESCALA DE FONTE ───────────────────────── */
+:root {
+  --koine-font-scale: 1;
+}
+
+/* Classes de texto semântico que respeitam o nível de acessibilidade.
+   Use estas classes em conteúdo de leitura/análise, não em UI estrutural. */
+.koine-text-greek {
+  font-size: calc(1.25rem * var(--koine-font-scale));
+}
+.koine-text-verse {
+  font-size: calc(0.9rem * var(--koine-font-scale));
+}
+.koine-text-body {
+  font-size: calc(0.875rem * var(--koine-font-scale));
+}
+.koine-text-gloss {
+  font-size: calc(0.625rem * var(--koine-font-scale));
+}
+.koine-text-label {
+  font-size: calc(0.75rem * var(--koine-font-scale));
+}
+

@@ -84,7 +84,12 @@ export const InterlinearVerse: React.FC<Props> = ({
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-1 items-start">
+      <div className={clsx(
+        "flex flex-wrap items-start",
+        showGloss || showTranslit || showLemma || showParsing
+          ? "gap-1"
+          : "gap-x-0.5 gap-y-1"
+      )}>
         {tokens.map((token) => {
           const isMatch = hasFilter && token.strongs_id === filterStrong;
           const isDimmed = hasFilter && !isMatch;
@@ -113,7 +118,7 @@ export const InterlinearVerse: React.FC<Props> = ({
       </div>
 
       {fluentPT && !alignedWords && (
-        <p className="text-text-primary dark:text-zinc-200 text-sm leading-relaxed font-medium border-t border-border/20 dark:border-border/10 pt-3 mt-3">
+        <p className="text-text-secondary dark:text-zinc-300 koine-text-verse leading-relaxed font-medium italic border-t border-border/20 dark:border-border/10 pt-3 mt-3">
           {fluentPT}
         </p>
       )}

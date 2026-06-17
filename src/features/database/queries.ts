@@ -5,11 +5,16 @@ import type { GreekLetter, SRSCard, StrongEntry } from '@/core/types/greek.types
 import type { TypingHistoryRow } from '@/features/typing/typingTypes';
 import type { LearningUnit } from '@/core/types/lesson.types';
 
+function _db(core?: boolean) {
+  return core ? databaseService.getCoreDB() : databaseService.getDB();
+}
+
 export const dbQueries = {
   // ─── LETRAS ─────────────────────────────────────────────────
 
   getAllLetters: async (): Promise<GreekLetter[]> => {
-    const db = databaseService.getDB();
+    await databaseService.waitForReady();
+    const db = _db();
     const result = await db.query('SELECT * FROM letters ORDER BY letter_order');
     return (result.values ?? []).map((row: any) => ({
       id: row.id,
@@ -25,7 +30,8 @@ export const dbQueries = {
   },
 
   getLettersByModule: async (moduleId: string): Promise<GreekLetter[]> => {
-    const db = databaseService.getDB();
+    await databaseService.waitForReady();
+    const db = _db();
     const parts = moduleId.split('-');
     const cycle = parseInt(parts[0].replace('C', ''));
     const module = parseInt(parts[1].replace('M', ''));
@@ -62,6 +68,7 @@ export const dbQueries = {
   },
 
   searchVocabulary: async (query: string) => {
+    await databaseService.waitForReady();
     const db = databaseService.getDB();
     const result = await db.query(
       'SELECT * FROM vocabulary WHERE token LIKE ? OR lemma LIKE ? OR gloss_pt LIKE ? LIMIT 50',
@@ -73,7 +80,8 @@ export const dbQueries = {
   // ─── TEXTO DO NT ─────────────────────────────────────────────
 
   getVerse: async (book: string, chapter: number, verse: number) => {
-    const db = databaseService.getDB();
+    await databaseService.waitForReady();
+    const db = _db(true);
     const result = await db.query(
       'SELECT * FROM nt_text WHERE book_abbr = ? AND chapter = ? AND verse = ? ORDER BY position',
       [book, chapter, verse],
@@ -82,7 +90,8 @@ export const dbQueries = {
   },
 
   getChapter: async (book: string, chapter: number) => {
-    const db = databaseService.getDB();
+    await databaseService.waitForReady();
+    const db = _db(true);
     const result = await db.query(
       'SELECT DISTINCT verse FROM nt_text WHERE book_abbr = ? AND chapter = ? ORDER BY verse',
       [book, chapter],
@@ -91,7 +100,8 @@ export const dbQueries = {
   },
 
   getChapterTokens: async (book: string, chapter: number) => {
-    const db = databaseService.getDB();
+    await databaseService.waitForReady();
+    const db = _db(true);
     const result = await db.query(
       'SELECT * FROM nt_text WHERE book_abbr = ? AND chapter = ? ORDER BY verse, position',
       [book, chapter],
@@ -100,7 +110,8 @@ export const dbQueries = {
   },
 
   getInterlinearChapter: async (book: string, chapter: number) => {
-    const db = databaseService.getDB();
+    await databaseService.waitForReady();
+    const db = _db(true);
     const result = await db.query(
       'SELECT * FROM nt_interlinear WHERE book_abbr = ? AND chapter = ? ORDER BY verse, position',
       [book, chapter],
@@ -111,7 +122,8 @@ export const dbQueries = {
   // ─── TRADUÇÃO PT (BLivre) ──────────────────────────────────────
 
   getPTVerse: async (book: string, chapter: number, verse: number) => {
-    const db = databaseService.getDB();
+    await databaseService.waitForReady();
+    const db = _db(true);
     const result = await db.query(
       'SELECT * FROM nt_pt WHERE book_abbr = ? AND chapter = ? AND verse = ?',
       [book, chapter, verse],
@@ -120,7 +132,8 @@ export const dbQueries = {
   },
 
   getPTChapter: async (book: string, chapter: number) => {
-    const db = databaseService.getDB();
+    await databaseService.waitForReady();
+    const db = _db(true);
     const result = await db.query(
       'SELECT * FROM nt_pt WHERE book_abbr = ? AND chapter = ? ORDER BY verse',
       [book, chapter],
@@ -131,7 +144,8 @@ export const dbQueries = {
   // ─── INTERLINEAR (TOKEN + GLOSS PT) ────────────────────────────
 
   getInterlinearVerse: async (book: string, chapter: number, verse: number) => {
-    const db = databaseService.getDB();
+    await databaseService.waitForReady();
+    const db = _db(true);
     const result = await db.query(
       `SELECT * FROM nt_interlinear
        WHERE book_abbr = ? AND chapter = ? AND verse = ?
@@ -144,7 +158,8 @@ export const dbQueries = {
   // ─── METADADOS DOS LIVROS ──────────────────────────────────────
 
   getAllBooksOrdered: async (): Promise<Array<{ book_abbr: string; first_chapter: number }>> => {
-    const db = databaseService.getDB();
+    await databaseService.waitForReady();
+    const db = _db(true);
     const result = await db.query(
       `SELECT book_abbr, MIN(chapter) as first_chapter
        FROM nt_text
@@ -157,18 +172,21 @@ export const dbQueries = {
   // ─── EXERCÍCIOS ────────────────────────────────────────────────
 
   getModuleById: async (moduleId: string) => {
+    await databaseService.waitForReady();
     const db = databaseService.getDB();
     const result = await db.query('SELECT * FROM modules WHERE id = ?', [moduleId]);
     return result.values?.[0] ?? null;
   },
 
   getAllCycles: async () => {
+    await databaseService.waitForReady();
     const db = databaseService.getDB();
     const result = await db.query('SELECT * FROM cycles ORDER BY id');
     return result.values ?? [];
   },
 
   getModulesByCycle: async (cycleId: number) => {
+    await databaseService.waitForReady();
     const db = databaseService.getDB();
     const result = await db.query(
       'SELECT * FROM modules WHERE cycle_id = ? ORDER BY module_order',
@@ -180,7 +198,8 @@ export const dbQueries = {
   // ─── STRONG ──────────────────────────────────────────────────
 
   getStrongById: async (id: string): Promise<StrongEntry | null> => {
-    const db = databaseService.getDB();
+    await databaseService.waitForReady();
+    const db = _db(true);
     const result = await db.query('SELECT * FROM strong WHERE id = ?', [id]);
     const row = result.values?.[0];
     return row ? mapStrongRow(row) : null;
@@ -188,7 +207,7 @@ export const dbQueries = {
 
   searchStrong: async (query: string): Promise<StrongEntry[]> => {
     await databaseService.waitForReady();
-    const db = databaseService.getDB();
+    const db = _db(true);
     const q = query;
     const result = await db.query(
       `SELECT * FROM strong
@@ -201,7 +220,7 @@ export const dbQueries = {
 
   searchStrongByPortuguese: async (query: string): Promise<StrongEntry[]> => {
     await databaseService.waitForReady();
-    const db = databaseService.getDB();
+    const db = _db(true);
     const likeQuery = `%${query}%`;
     const result = await db.query(
       `SELECT * FROM strong
@@ -215,6 +234,7 @@ export const dbQueries = {
   // ─── SRS ─────────────────────────────────────────────────────
 
   getPendingSRSCards: async (): Promise<SRSCard[]> => {
+    await databaseService.waitForReady();
     const db = databaseService.getDB();
     const today = format(new Date(), 'yyyy-MM-dd');
     const result = await db.query(
@@ -234,6 +254,7 @@ export const dbQueries = {
   },
 
   upsertSRSCard: async (card: SRSCard) => {
+    await databaseService.waitForReady();
     const db = databaseService.getDB();
     await db.run(
       `INSERT OR REPLACE INTO srs_cards
@@ -254,6 +275,7 @@ export const dbQueries = {
   },
 
   getSRSCardCount: async (): Promise<number> => {
+    await databaseService.waitForReady();
     const db = databaseService.getDB();
     const today = format(new Date(), 'yyyy-MM-dd');
     const result = await db.query(
@@ -264,6 +286,7 @@ export const dbQueries = {
   },
 
   getTotalSRSCardCount: async (): Promise<number> => {
+    await databaseService.waitForReady();
     const db = databaseService.getDB();
     const result = await db.query('SELECT COUNT(*) as count FROM srs_cards');
     return result.values?.[0]?.count ?? 0;
@@ -272,6 +295,7 @@ export const dbQueries = {
   // ─── CONFIGURAÇÕES ───────────────────────────────────────────
 
   getSetting: async (key: string): Promise<string | null> => {
+    await databaseService.waitForReady();
     const db = databaseService.getDB();
     const result = await db.query(
       'SELECT value FROM user_settings WHERE key = ?',
@@ -281,6 +305,7 @@ export const dbQueries = {
   },
 
   setSetting: async (key: string, value: string) => {
+    await databaseService.waitForReady();
     const db = databaseService.getDB();
     await db.run(
       'INSERT OR REPLACE INTO user_settings (key, value) VALUES (?, ?)',

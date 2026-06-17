@@ -23,7 +23,7 @@ const config: CapacitorConfig = {
       providers: ['google.com'],
     },
     CapacitorSQLite: {
-      androidIsEncryption: true,
+      androidIsEncryption: false,
     },
     StatusBar: {
       style: 'DARK',

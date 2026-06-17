@@ -10,7 +10,7 @@ import { useGamificationStore } from '@/features/gamification/gamificationStore'
 import { dbQueries } from '@/features/database/queries';
 import { UnitNode } from './components/UnitNode';
 import { UnitDetailSheet } from './components/UnitDetailSheet';
-import { WeeklyCalendar } from './components/WeeklyCalendar';
+
 import { PalavraDoDiaCard } from './components/PalavraDoDia';
 import { PalavraDoDiaSheet } from './components/PalavraDoDiaSheet';
 import { useAppNavigation } from '@/features/navigation/useNavigation';
@@ -125,7 +125,7 @@ const getUnitCardTheme = (index: number) => {
 export const TrailPage: React.FC = () => {
   const { completedLessons } = useProgressStore();
   const { user, avatarId } = useAuthStore();
-  const { streakDays, streakRecord } = useGamificationStore();
+  const { streakDays } = useGamificationStore();
   const navigation = useAppNavigation();
   const wod = useWordOfTheDay();
   const [modules, setModules] = useState<Module[]>([]);
@@ -280,7 +280,7 @@ export const TrailPage: React.FC = () => {
               </h1>
             </div>
           </div>
-          <StreakBadge streak={streakDays} record={streakRecord} />
+          <StreakBadge streak={streakDays} />
         </div>
       </div>
 
@@ -325,8 +325,7 @@ export const TrailPage: React.FC = () => {
           />
         )}
 
-        {/* Calendário Semanal de Ofensiva */}
-        <WeeklyCalendar />
+
 
         {/* Progresso Geral (Card Fluido) */}
         <div className="bg-surface/50 dark:bg-surface-alt/25 border border-border/20 dark:border-border/10 rounded-3xl p-4 shadow-sm transition-all duration-200 shrink-0">

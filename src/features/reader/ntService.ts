@@ -1,4 +1,5 @@
 import { dbQueries } from '@/features/database/queries';
+import { databaseService } from '@/features/database/sqlite';
 
 interface NtToken {
   id: string;
@@ -23,19 +24,6 @@ interface NTPtVerse {
   version: string;
 }
 
-interface NTInterlinearRow {
-  bookAbbr: string;
-  ch: number;
-  v: number;
-  position: number;
-  tokenGreek: string;
-  lemma: string | null;
-  strongsId: string | null;
-  parsing: string | null;
-  glossPT: string;
-  glossSource: string;
-}
-
 interface InterlinearToken extends NtToken {
   glossPT?: string;
   glossSource?: string;
@@ -53,138 +41,76 @@ export interface ChapterVerse {
   fluentPT: NTPtVerse | null;
 }
 
-let cachedTokens: NtToken[] | null = null;
-let cacheByRef: Map<string, NtToken[]> | null = null;
-let cachedPT: NTPtVerse[] | null = null;
-let ptByRef: Map<string, NTPtVerse> | null = null;
-let ptByChapter: Map<string, NTPtVerse[]> | null = null;
-let cachedInterlinear: NTInterlinearRow[] | null = null;
-let interlinearByRef: Map<string, NTInterlinearRow[]> | null = null;
-let interlinearByChapter: Map<string, NTInterlinearRow[]> | null = null;
-let greekByChapter: Map<string, NtToken[]> | null = null;
-let cachedBooks: BookMeta[] | null = null;
-let translitByStrongsId: Map<string, string> | null = null;
+let strongById: Map<string, string> | null = null;
+let glossaryByLemma: Map<string, string> | null = null;
 
-interface StrongEntry {
-  id: string;
-  translit: string;
-}
+async function ensureDataLoaded(): Promise<void> {
+  if (strongById && glossaryByLemma) return;
 
-async function loadStrongTranslit(): Promise<void> {
-  if (translitByStrongsId) return;
   try {
-    const res = await fetch('/assets/strong.json');
-    const entries: StrongEntry[] = await res.json();
-    translitByStrongsId = new Map();
-    for (const e of entries) {
-      if (e.id && e.translit) translitByStrongsId.set(e.id, e.translit);
-    }
-  } catch (e) {
-    console.warn('[ntService] strong.json indisponível:', e);
-    translitByStrongsId = new Map();
+    await databaseService.waitForReady();
+  } catch {
+    console.warn('[ntService] databaseService.waitForReady failed, using fallback maps');
+    return;
   }
-}
 
-async function loadNT(): Promise<void> {
-  if (cachedTokens) return;
-  const res = await fetch('/assets/nt_text.json');
-  const tokens: NtToken[] = await res.json();
-  cachedTokens = tokens;
-  const refMap = new Map<string, NtToken[]>();
-  greekByChapter = new Map<string, NtToken[]>();
-  for (const t of tokens) {
-    const refKey = `${t.book_abbr}-${t.chapter}-${t.verse}`;
-    if (!refMap.has(refKey)) refMap.set(refKey, []);
-    refMap.get(refKey)!.push(t);
-    const chKey = `${t.book_abbr}-${t.chapter}`;
-    if (!greekByChapter.has(chKey)) greekByChapter.set(chKey, []);
-    greekByChapter.get(chKey)!.push(t);
-  }
-  cacheByRef = refMap;
-}
-
-async function loadPT(): Promise<void> {
-  if (cachedPT) return;
   try {
-    const res = await fetch('/assets/nt_pt.json');
-    cachedPT = await res.json();
-    ptByRef = new Map<string, NTPtVerse>();
-    ptByChapter = new Map<string, NTPtVerse[]>();
-    for (const v of cachedPT!) {
-      ptByRef.set(`${v.bookAbbr}-${v.ch}-${v.v}`, v);
-      const chKey = `${v.bookAbbr}-${v.ch}`;
-      if (!ptByChapter.has(chKey)) ptByChapter.set(chKey, []);
-      ptByChapter.get(chKey)!.push(v);
+    const coreDb = databaseService.getCoreDB();
+    const strongResult = await coreDb.query("SELECT id, translit FROM strong WHERE translit IS NOT NULL AND translit != ''");
+    strongById = new Map();
+    for (const row of strongResult.values ?? []) {
+      if (row.id && row.translit) strongById.set(row.id, row.translit);
     }
+
+    const glossResult = await coreDb.query(
+      `SELECT DISTINCT lemma, gloss_pt FROM nt_interlinear
+       WHERE gloss_pt IS NOT NULL AND gloss_pt != '' AND lemma IS NOT NULL AND lemma != ''
+       AND gloss_source = 'manual'`
+    );
+    glossaryByLemma = new Map();
+    for (const row of glossResult.values ?? []) {
+      if (row.lemma && row.gloss_pt) glossaryByLemma.set(row.lemma, row.gloss_pt);
+    }
+
+    console.log('[ntService] Fallback maps loaded:', {
+      strong: strongById.size,
+      glossary: glossaryByLemma.size,
+    });
   } catch (e) {
-    console.warn('[ntService] nt_pt.json indisponível:', e);
-    cachedPT = [];
-    ptByRef = new Map();
-    ptByChapter = new Map();
+    console.warn('[ntService] Failed to load fallback maps from coreDb:', e);
+    strongById = strongById ?? new Map();
+    glossaryByLemma = glossaryByLemma ?? new Map();
   }
 }
 
-async function loadInterlinear(): Promise<void> {
-  if (cachedInterlinear !== null) return;
-  try {
-    const res = await fetch('/assets/nt_interlinear.json');
-    const data: NTInterlinearRow[] = await res.json();
-    cachedInterlinear = data;
-    interlinearByRef = new Map<string, NTInterlinearRow[]>();
-    interlinearByChapter = new Map<string, NTInterlinearRow[]>();
-    for (const row of data) {
-      const refKey = `${row.bookAbbr}-${row.ch}-${row.v}`;
-      if (!interlinearByRef.has(refKey)) interlinearByRef.set(refKey, []);
-      interlinearByRef.get(refKey)!.push(row);
-      const chKey = `${row.bookAbbr}-${row.ch}`;
-      if (!interlinearByChapter.has(chKey)) interlinearByChapter.set(chKey, []);
-      interlinearByChapter.get(chKey)!.push(row);
-    }
-  } catch (e) {
-    console.warn('[ntService] nt_interlinear.json indisponível:', e);
-    cachedInterlinear = [];
-    interlinearByRef = new Map();
-    interlinearByChapter = new Map();
-  }
+function getGlossaryGloss(lemma: string): string | undefined {
+  return glossaryByLemma?.get(lemma);
 }
 
 export const ntService = {
   async getVerse(book: string, chapter: number, verse: number) {
+    await databaseService.waitForReady();
     const fromDB = await dbQueries.getVerse(book, chapter, verse);
     if (fromDB.length > 0) return fromDB;
-
-    await loadNT();
-    const refKey = `${book}-${chapter}-${verse}`;
-    return cacheByRef?.get(refKey) ?? [];
+    return [];
   },
 
   async getChapter(book: string, chapter: number) {
-    await loadNT();
-    if (!cachedTokens) return [];
+    await databaseService.waitForReady();
+    const tokens = await dbQueries.getChapterTokens(book, chapter);
     const verses = new Set<number>();
-    for (const t of cachedTokens) {
-      if (t.book_abbr === book && t.chapter === chapter) {
-        verses.add(t.verse);
-      }
-    }
+    for (const t of tokens) verses.add(t.verse);
     return Array.from(verses).sort((a, b) => a - b);
   },
 
   async getPassage(book: string, chapter: number, startVerse: number, endVerse: number) {
-    await loadNT();
-    if (!cachedTokens) return [];
-    const results: NtToken[] = [];
-    for (const t of cachedTokens) {
-      if (t.book_abbr === book && t.chapter === chapter && t.verse >= startVerse && t.verse <= endVerse) {
-        results.push(t);
-      }
-    }
-    return results;
+    await databaseService.waitForReady();
+    const tokens = await dbQueries.getChapterTokens(book, chapter);
+    return tokens.filter(t => t.verse >= startVerse && t.verse <= endVerse);
   },
 
-  // ─── TRADUÇÃO FLUENTE PT (BLivre) ─────────────────────────────
-
   async getVerseFluentPT(book: string, chapter: number, verse: number): Promise<NTPtVerse | null> {
+    await databaseService.waitForReady();
     const fromDB = await dbQueries.getPTVerse(book, chapter, verse);
     if (fromDB) {
       return {
@@ -197,65 +123,40 @@ export const ntService = {
         version: fromDB.version ?? '2018-02',
       };
     }
-    await loadPT();
-    return ptByRef?.get(`${book}-${chapter}-${verse}`) ?? null;
+    return null;
   },
 
-  // ─── TOKENS INTERLINEARES (GREGO + GLOSS PT) ───────────────────
-
   async getInterlinearTokens(book: string, chapter: number, verse: number): Promise<InterlinearToken[]> {
-    await loadStrongTranslit();
+    await databaseService.waitForReady();
 
     const fromDB = await dbQueries.getInterlinearVerse(book, chapter, verse);
     if (fromDB.length > 0) {
-      return fromDB.map((row: any) => ({
-        id: `interlinear-${row.book_abbr}-${row.chapter}-${row.verse}-${row.position}`,
-        book_abbr: row.book_abbr,
-        book_name: row.book_abbr,
-        chapter: row.chapter,
-        verse: row.verse,
-        position: row.position,
-        token: row.token_greek,
-        lemma: row.lemma ?? '',
-        strongs_id: row.strongs_id ?? null,
-        parsing: row.parsing ?? '',
-        glossPT: row.gloss_pt ?? '',
-        glossSource: row.gloss_source ?? 'manual',
-        translitPT: row.strongs_id ? translitByStrongsId?.get(row.strongs_id) : undefined,
-      }));
+      return fromDB.map((row: any) => {
+        const lemma = row.lemma ?? '';
+        const gloss = row.gloss_pt || getGlossaryGloss(lemma);
+        return {
+          id: `interlinear-${row.book_abbr}-${row.chapter}-${row.verse}-${row.position}`,
+          book_abbr: row.book_abbr,
+          book_name: row.book_abbr,
+          chapter: row.chapter,
+          verse: row.verse,
+          position: row.position,
+          token: row.token_greek,
+          lemma,
+          strongs_id: row.strongs_id ?? null,
+          parsing: row.parsing ?? '',
+          glossPT: gloss || undefined,
+          glossSource: gloss ? (row.gloss_pt ? (row.gloss_source ?? 'manual') : 'glossary') : undefined,
+          translitPT: row.strongs_id ? strongById?.get(row.strongs_id) : undefined,
+        };
+      });
     }
 
-    await loadInterlinear();
-    await loadNT();
-    const interlinearRows = interlinearByRef?.get(`${book}-${chapter}-${verse}`) ?? [];
-    if (interlinearRows.length === 0) {
-      return this.getVerse(book, chapter, verse);
-    }
-    const glossMap = new Map<number, NTInterlinearRow>();
-    for (const r of interlinearRows) glossMap.set(r.position, r);
-
-    const greekTokens = await this.getVerse(book, chapter, verse);
-    return greekTokens.map((t) => {
-      const gloss = glossMap.get(t.position);
-      return {
-        ...t,
-        glossPT: gloss?.glossPT,
-        glossSource: gloss?.glossSource,
-        translitPT: t.strongs_id ? translitByStrongsId?.get(t.strongs_id) : undefined,
-      };
-    });
+    return this.getVerse(book, chapter, verse);
   },
 
-  // ─── VERSÍCULO COMPLETO (GREGO + INTERLINEAR + PT) ────────────
-
-  async getVerseWithPT(
-    book: string,
-    chapter: number,
-    verse: number,
-  ): Promise<{
-    tokens: InterlinearToken[];
-    fluentPT: NTPtVerse | null;
-  }> {
+  async getVerseWithPT(book: string, chapter: number, verse: number) {
+    await databaseService.waitForReady();
     const [tokens, fluentPT] = await Promise.all([
       this.getInterlinearTokens(book, chapter, verse),
       this.getVerseFluentPT(book, chapter, verse),
@@ -263,105 +164,42 @@ export const ntService = {
     return { tokens, fluentPT };
   },
 
-  // ─── CAPÍTULO COMPLETO (LISTA DE VERSÍCULOS INTERLINEARES) ─────
+  async getChapterWithPT(book: string, chapter: number): Promise<ChapterVerse[]> {
+    await databaseService.waitForReady();
+    await ensureDataLoaded(); // loads strongById + glossaryByLemma Maps from coreDb
 
-  async getChapterWithPT(
-    book: string,
-    chapter: number,
-  ): Promise<ChapterVerse[]> {
-    const chKey = `${book}-${chapter}`;
+    const [interRows, greekTokens, ptVerses] = await Promise.all([
+      dbQueries.getInterlinearChapter(book, chapter),
+      dbQueries.getChapterTokens(book, chapter),
+      dbQueries.getPTChapter(book, chapter),
+    ]);
 
-    // 1) Tenta SQLite primeiro (rápido e funciona offline no Android)
-    let interRows: NTInterlinearRow[] = [];
-    let greekTokens: NtToken[] = [];
-    let ptVerses: NTPtVerse[] = [];
-
-    try {
-      const [dbInter, dbGreek, dbPt] = await Promise.all([
-        dbQueries.getInterlinearChapter(book, chapter).catch(() => []),
-        dbQueries.getChapterTokens(book, chapter).catch(() => []),
-        dbQueries.getPTChapter(book, chapter).catch(() => []),
-      ]);
-      if (dbGreek.length > 0) {
-        greekTokens = dbGreek.map((row: any) => ({
-          id: row.id,
-          book_abbr: row.book_abbr,
-          book_name: row.book_name,
-          chapter: row.chapter,
-          verse: row.verse,
-          position: row.position,
-          token: row.token,
-          lemma: row.lemma,
-          strongs_id: row.strongs_id ?? null,
-          parsing: row.parsing ?? '',
-          gloss_pt: row.gloss_pt ?? '',
-        }));
-      }
-      if (dbInter.length > 0) {
-        interRows = dbInter.map((row: any) => ({
-          bookAbbr: row.book_abbr,
-          ch: row.chapter,
-          v: row.verse,
-          position: row.position,
-          tokenGreek: row.token_greek,
-          lemma: row.lemma,
-          strongsId: row.strongs_id,
-          parsing: row.parsing,
-          glossPT: row.gloss_pt,
-          glossSource: row.gloss_source,
-        }));
-      }
-      if (dbPt.length > 0) {
-        ptVerses = dbPt.map((row: any) => ({
-          bookAbbr: row.book_abbr,
-          bookName: row.book_abbr,
-          ch: row.chapter,
-          v: row.verse,
-          text: row.text,
-          source: row.source ?? 'blivre',
-          version: row.version ?? '2018-02',
-        }));
-      }
-    } catch (e) {
-      console.warn('[ntService] SQLite chapter lookup falhou, usando JSON:', e);
-    }
-
-    // 2) Fallback para JSON estático (web/dev, ou SQLite vazio)
-    if (greekTokens.length === 0 && interRows.length === 0 && ptVerses.length === 0) {
-      await Promise.all([loadNT(), loadInterlinear(), loadPT(), loadStrongTranslit()]);
-      interRows = interlinearByChapter?.get(chKey) ?? [];
-      greekTokens = greekByChapter?.get(chKey) ?? [];
-      ptVerses = ptByChapter?.get(chKey) ?? [];
-    } else {
-      await loadStrongTranslit();
-    }
-
-    // 3) Determina lista de versículos
     const verseSet = new Set<number>();
-    for (const r of interRows) verseSet.add(r.v);
+    for (const r of interRows) verseSet.add(r.verse);
     for (const t of greekTokens) verseSet.add(t.verse);
-    for (const p of ptVerses) verseSet.add(p.v);
+    for (const p of ptVerses) verseSet.add(p.verse);
     const verses = Array.from(verseSet).sort((a, b) => a - b);
 
-    if (verses.length === 0) return [];
-
-    // 2) Agrupa por versículo
-    const glossByVerse = new Map<number, Map<number, NTInterlinearRow>>();
-    for (const r of interRows) {
-      if (!glossByVerse.has(r.v)) glossByVerse.set(r.v, new Map());
-      glossByVerse.get(r.v)!.set(r.position, r);
+    if (verses.length === 0) {
+      console.warn('[ntService] getChapterWithPT: nenhum versículo para', book, chapter);
+      return [];
     }
 
-    const greekByVerse = new Map<number, NtToken[]>();
+    const glossByVerse = new Map<number, Map<number, any>>();
+    for (const r of interRows) {
+      if (!glossByVerse.has(r.verse)) glossByVerse.set(r.verse, new Map());
+      glossByVerse.get(r.verse)!.set(r.position, r);
+    }
+
+    const greekByVerse = new Map<number, any[]>();
     for (const t of greekTokens) {
       if (!greekByVerse.has(t.verse)) greekByVerse.set(t.verse, []);
       greekByVerse.get(t.verse)!.push(t);
     }
 
-    const ptByVerse = new Map<number, NTPtVerse>();
-    for (const p of ptVerses) ptByVerse.set(p.v, p);
+    const ptByVerse = new Map<number, any>();
+    for (const p of ptVerses) ptByVerse.set(p.verse, p);
 
-    // 3) Monta resultado
     return verses.map((verse) => {
       const glosses = glossByVerse.get(verse);
       const greek = greekByVerse.get(verse) ?? [];
@@ -371,74 +209,83 @@ export const ntService = {
         tokens = greek
           .map((t) => {
             const gloss = glosses.get(t.position);
+            const glossPT = gloss?.gloss_pt || getGlossaryGloss(t.lemma);
             return {
               ...t,
-              glossPT: gloss?.glossPT,
-              glossSource: gloss?.glossSource,
-              translitPT: t.strongs_id ? translitByStrongsId?.get(t.strongs_id) : undefined,
+              glossPT: glossPT || undefined,
+              glossSource: glossPT ? (gloss?.gloss_pt ? (gloss.gloss_source ?? 'manual') : 'glossary') : undefined,
+              translitPT: t.strongs_id ? strongById?.get(t.strongs_id) : undefined,
             };
           })
           .sort((a, b) => a.position - b.position);
+
         if (tokens.length === 0) {
           tokens = Array.from(glosses.values())
             .sort((a, b) => a.position - b.position)
-            .map((r) => ({
-              id: `i-${book}-${chapter}-${verse}-${r.position}`,
-              book_abbr: r.bookAbbr,
-              book_name: r.bookAbbr,
-              chapter: r.ch,
-              verse: r.v,
-              position: r.position,
-              token: r.tokenGreek,
-              lemma: r.lemma ?? '',
-              strongs_id: r.strongsId ?? null,
-              parsing: r.parsing ?? '',
-              glossPT: r.glossPT,
-              glossSource: r.glossSource,
-              translitPT: r.strongsId ? translitByStrongsId?.get(r.strongsId) : undefined,
-            }));
+            .map((r) => {
+              const lemma = r.lemma ?? '';
+              const glossPT = r.gloss_pt || (lemma ? getGlossaryGloss(lemma) : undefined);
+              return {
+                id: `i-${book}-${chapter}-${verse}-${r.position}`,
+                book_abbr: r.book_abbr,
+                book_name: r.book_abbr,
+                chapter: r.chapter,
+                verse: r.verse,
+                position: r.position,
+                token: r.token_greek,
+                lemma,
+                strongs_id: r.strongs_id ?? null,
+                parsing: r.parsing ?? '',
+                glossPT: glossPT || undefined,
+                glossSource: glossPT ? (r.gloss_pt ? (r.gloss_source ?? 'manual') : 'glossary') : undefined,
+                translitPT: r.strongs_id ? strongById?.get(r.strongs_id) : undefined,
+              };
+            });
         }
       } else {
         tokens = greek
           .sort((a, b) => a.position - b.position)
-          .map((t) => ({
-            ...t,
-            glossPT: undefined,
-            glossSource: undefined,
-            translitPT: t.strongs_id ? translitByStrongsId?.get(t.strongs_id) : undefined,
-          }));
+          .map((t) => {
+            const glossPT = getGlossaryGloss(t.lemma);
+            return {
+              ...t,
+              glossPT: glossPT || undefined,
+              glossSource: glossPT ? 'glossary' : undefined,
+              translitPT: t.strongs_id ? strongById?.get(t.strongs_id) : undefined,
+            };
+          });
       }
 
+      const ptVerse = ptByVerse.get(verse);
       return {
         verse,
         tokens,
-        fluentPT: ptByVerse.get(verse) ?? null,
+        fluentPT: ptVerse ? {
+          bookAbbr: ptVerse.book_abbr,
+          bookName: ptVerse.book_abbr,
+          ch: ptVerse.chapter,
+          v: ptVerse.verse,
+          text: ptVerse.text,
+          source: ptVerse.source ?? 'blivre',
+          version: ptVerse.version ?? '2018-02',
+        } : null,
       };
     });
   },
 
   async getChapterMaxVerse(book: string, chapter: number): Promise<number> {
-    await loadNT();
-    if (!cachedTokens) return 0;
-    let max = 0;
-    for (const t of cachedTokens) {
-      if (t.book_abbr === book && t.chapter === chapter && t.verse > max) {
-        max = t.verse;
-      }
-    }
-    return max;
+    await databaseService.waitForReady();
+    const tokens = await dbQueries.getChapterTokens(book, chapter);
+    if (!tokens || tokens.length === 0) return 0;
+    return Math.max(...tokens.map((t: any) => t.verse));
   },
 
-  // ─── METADADOS DOS 27 LIVROS ───────────────────────────────────
-
   async getAllBooks(): Promise<BookMeta[]> {
-    if (cachedBooks) return cachedBooks;
     try {
-      cachedBooks = await dbQueries.getAllBooksOrdered();
+      return await dbQueries.getAllBooksOrdered();
     } catch (e) {
-      console.warn('[ntService] getAllBooksOrdered falhou, fallback vazio:', e);
-      cachedBooks = [];
+      console.warn('[ntService] getAllBooksOrdered falhou:', e);
+      return [];
     }
-    return cachedBooks;
   },
 };

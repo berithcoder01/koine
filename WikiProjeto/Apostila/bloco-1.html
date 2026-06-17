@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloco 1 — Alfabeto</title>
+  <style>/* Apostila Koine — PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2cm;
+  @bottom-center {
+    content: "Koine — Apostila Coach";
+    font-size: 9pt;
+    color: #666;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+  @bottom-right { content: none; }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gentium Plus', 'Times New Roman', serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Cover page */
+.cover-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 6cm;
+}
+
+.cover-page h1 {
+  font-size: 32pt;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #1a1a1a;
+}
+
+.cover-page .subtitle {
+  font-size: 16pt;
+  color: #555;
+  margin-bottom: 4em;
+}
+
+.cover-page .date {
+  font-size: 12pt;
+  color: #888;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+}
+
+/* Lesson header */
+.lesson-header {
+  page-break-before: always;
+  text-align: center;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  border-bottom: 2px solid #333;
+}
+
+.lesson-header h2 {
+  font-size: 24pt;
+  margin: 0 0 0.2em 0;
+}
+
+.lesson-header .page-ref {
+  font-size: 12pt;
+  color: #666;
+}
+
+.lesson-header .meta {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+/* Step sections */
+.step {
+  margin-bottom: 1.5em;
+  page-break-inside: avoid;
+}
+
+.step-title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.6em;
+  border-left: 4px solid #333;
+  background: #f5f5f5;
+}
+
+/* Greek text */
+.greek-large {
+  font-family: 'SBL Greek', serif;
+  font-size: 28pt;
+  text-align: center;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.greek-medium {
+  font-family: 'SBL Greek', serif;
+  font-size: 18pt;
+}
+
+/* Transliteration & pronunciation */
+.translit {
+  font-style: italic;
+  color: #555;
+}
+
+.pronunciation {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Context boxes */
+.context-box {
+  background: #e8f4fd;
+  border: 1px solid #b3d9f2;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+.context-box .reference {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.context-box .verse {
+  font-style: italic;
+  margin-top: 0.3em;
+}
+
+/* Instruction boxes */
+.instruction-box {
+  background: #fef9e7;
+  border: 1px solid #f0e68c;
+  border-radius: 6px;
+  padding: 0.8em 1em;
+  margin: 0.8em 0;
+}
+
+/* Practice lines */
+.practice-lines {
+  margin: 0.8em 0;
+}
+
+.practice-line {
+  font-family: 'SBL Greek', serif;
+  font-size: 16pt;
+  line-height: 2.5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2em 0;
+  color: #999;
+}
+
+/* Etymology */
+.etymology {
+  background: #f5f0e8;
+  border: 1px solid #e0d5c0;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 0.5em 0;
+  font-size: 10.5pt;
+}
+
+/* Pause / review section */
+.pause-section {
+  background: #f8f8f8;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 11pt;
+}
+
+/* Dictation section */
+.dictation-section {
+  margin: 1em 0;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.dictation-prompt {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.dictation-answer {
+  border-bottom: 1px solid #333;
+  height: 2em;
+  margin: 0.5em 0;
+}
+
+/* Page break utility */
+.page-break {
+  page-break-before: always;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Emphasis */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Horizontal rules as section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+}
+
+/* Blockquotes for narration */
+blockquote {
+  border-left: 3px solid #999;
+  margin: 0.8em 0;
+  padding: 0.5em 1em;
+  background: #fafafa;
+  font-style: italic;
+  color: #444;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="cover-page">
+  <h1>Koine — Apostila</h1>
+  <div class="subtitle">Bloco 1 — Alfabeto</div>
+  <p style="font-size:14pt;color:#444;margin-bottom:2em;">Aprenda as vogais e consoantes do grego bíblico</p>
+  <div class="date">Lições L01–L06</div>
+  <div style="margin-top:3em;font-size:11pt;color:#666;">
+    <p>6 lições · Estudo guiado por voz</p>
+    <p>Para uso com o aplicativo Koine</p>
+  </div>
+</div>
+<h1>Apostila L01 — As Primeiras Vogais (α, ε, η, ι)</h1>
+<p><strong>ID:</strong> apostila-L01
+<strong>Título:</strong> Lição 1 — As Primeiras Vogais
+<strong>Descrição:</strong> Alpha, Epsilon, Eta, Iota
+<strong>Página:</strong> 1
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 30</p>
+<hr>
+<h2>🎯 Objetivo da Lição</h2>
+<p>Aprender as quatro primeiras vogais do alfabeto grego do Novo Testamento: <strong>Alpha (α)</strong>, <strong>Epsilon (ε)</strong>, <strong>Eta (η)</strong> e <strong>Iota (ι)</strong> — base das primeiras palavras do NT.</p>
+<blockquote>
+<p>📄 <strong>Abra sua apostila na Página 1</strong></p>
+</blockquote>
+<hr>
+<h2>🏁 Step 1: Intro</h2>
+<hr>
+<h2>🅰️ Step 2: Word Intro — Alpha (Α α)</h2>
+<p><strong>Grego:</strong> Α α
+<strong>Transliteração:</strong> alfa
+<strong>Pronúncia:</strong> a (como em &quot;pai&quot;)
+<strong>Significado:</strong> Letra Alfa</p>
+<blockquote>
+<p>📖 <strong>Apocalipse 1:8</strong>
+&quot;Eu sou o Alfa e o Ômega&quot; — Deus usa esta letra para declarar sua eternidade</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 3: Alphabet Trace — Alpha (α)</h2>
+<p><strong>Grego:</strong> α
+Observe a ordem dos traços do alfa minúsculo:</p>
+<ol>
+<li>Traço diagonal da esquerda para baixo</li>
+<li>Traço diagonal da direita para baixo</li>
+<li>Traço horizontal no meio</li>
+</ol>
+<hr>
+<h2>✍️ Step 4: Write Practice — Alpha (α × 8)</h2>
+<p><strong>Grego:</strong> α</p>
+<blockquote>
+<p>&quot;Agora escreva o alfa minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 1: α α α α α α α α ]</p>
+<hr>
+<h2>🅴 Step 5: Word Intro — Épsilon (Ε ε)</h2>
+<p><strong>Grego:</strong> Ε ε
+<strong>Transliteração:</strong> épsilon
+<strong>Pronúncia:</strong> e breve (como em &quot;pé&quot;)
+<strong>Significado:</strong> Letra Épsilon</p>
+<blockquote>
+<p>📖 <strong>João 1:1</strong>
+&quot;No princípio era (ἦν) o Verbo&quot; — ε aparece na terminação do imperfeito</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 6: Alphabet Trace — Épsilon (ε)</h2>
+<p><strong>Grego:</strong> ε
+Observe a ordem dos traços do épsilon minúsculo:</p>
+<ol>
+<li>Traço vertical à esquerda de cima para baixo</li>
+<li>Traço horizontal do meio</li>
+<li>Arco curvo à direita</li>
+</ol>
+<hr>
+<h2>✍️ Step 7: Write Practice — Épsilon (ε × 8)</h2>
+<p><strong>Grego:</strong> ε</p>
+<p>[Linha 2: ε ε ε ε ε ε ε ε ]</p>
+<hr>
+<h2>🅷 Step 8: Word Intro — Éta (Η η)</h2>
+<p><strong>Grego:</strong> Η η
+<strong>Transliteração:</strong> éta
+<strong>Pronúncia:</strong> ê longo (como em &quot;mês&quot;)
+<strong>Significado:</strong> Letra Éta</p>
+<blockquote>
+<p>📖 <strong>Hebreus 11:1</strong>
+&quot;A fé (πίστις) é...&quot; — o η aparece em muitas terminações de substantivos femininos</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 9: Alphabet Trace — Éta (η)</h2>
+<p><strong>Grego:</strong> η
+Observe a ordem dos traços do éta minúsculo:</p>
+<ol>
+<li>Primeira haste vertical da esquerda para baixo</li>
+<li>Segunda haste vertical</li>
+<li>Traço horizontal conectando as duas hastes na altura do meio</li>
+</ol>
+<hr>
+<h2>✍️ Step 10: Write Practice — Éta (η × 8)</h2>
+<p><strong>Grego:</strong> η</p>
+<p>[Linha 3: η η η η η η η η ]</p>
+<hr>
+<h2>🅸 Step 11: Word Intro — Iota (Ι ι)</h2>
+<p><strong>Grego:</strong> Ι ι
+<strong>Transliteração:</strong> iôta
+<strong>Pronúncia:</strong> i (como em &quot;fio&quot;)
+<strong>Significado:</strong> Letra Iota</p>
+<blockquote>
+<p>📖 <strong>Mateus 5:18</strong>
+&quot;Nem um iota (ἰῶτα) passará da lei&quot; — Jesus usa esta própria letra como exemplo</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 12: Alphabet Trace — Iota (ι)</h2>
+<p><strong>Grego:</strong> ι
+Observe a ordem dos traços do iota minúsculo:</p>
+<ul>
+<li>Um único traço curvo de cima para baixo, levemente inclinado, com uma serifa no topo</li>
+</ul>
+<hr>
+<h2>✍️ Step 13: Write Practice — Iota (ι × 8)</h2>
+<p><strong>Grego:</strong> ι</p>
+<p>[Linha 4: ι ι ι ι ι ι ι ι ]</p>
+<hr>
+<h2>🧠 Step 14: Pause</h2>
+<blockquote>
+<p>&quot;Muito bem! Você acabou de aprender as quatro primeiras vogais gregas. Antes de continuar, olhe para o que escreveu e compare com o modelo na apostila. Cada letra deve ter a mesma forma que o modelo.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+Compare sua escrita com o modelo na apostila.
+Quando estiver pronto, continue.</p>
+<hr>
+<h2>✍️ Step 15: Ditado — Alfa</h2>
+<blockquote>
+<p>&quot;Escreva no papel: alfa.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> α / Α</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Α α aqui:
+[Resposta: α ]</p>
+<hr>
+<h2>✍️ Step 16: Ditado — Épsilon</h2>
+<blockquote>
+<p>&quot;Escreva no papel: épsilon.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> ε / Ε</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ε ε aqui:
+[Resposta: ε ]</p>
+<hr>
+<h2>✍️ Step 17: Ditado — Éta</h2>
+<blockquote>
+<p>&quot;Escreva no papel: éta.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> η / Η</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Η η aqui:
+[Resposta: η ]</p>
+<hr>
+<h2>✍️ Step 18: Ditado — Iota</h2>
+<blockquote>
+<p>&quot;Escreva no papel: iota.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> ι / Ι</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ι ι aqui:
+[Resposta: ι ]</p>
+<hr>
+<h2>🎉 Fim da Lição L01</h2>
+<p>Parabéns! Você concluiu <strong>Lição 1 — As Primeiras Vogais</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi α (alfa)</li>
+<li><input disabled="" type="checkbox"> Aprendi ε (épsilon)</li>
+<li><input disabled="" type="checkbox"> Aprendi η (éta)</li>
+<li><input disabled="" type="checkbox"> Aprendi ι (iota)</li>
+</ul>
+<p>📖 <strong>Próxima lição:</strong> L02 — As Vogais Longas e o Upsilon (ο, υ, ω)</p>
+<p>\newpage</p>
+<h1>Apostila L02 — Vogais Longas e o Upsilon</h1>
+<p><strong>ID:</strong> apostila-L02
+<strong>Título:</strong> Lição 2 — Vogais Longas e o Upsilon
+<strong>Descrição:</strong> Omicron, Upsilon, Omega
+<strong>Página:</strong> 3
+<strong>Tempo estimado:</strong> 10 min
+<strong>XP:</strong> 30</p>
+<hr>
+<h2>🎯 Objetivo da Lição</h2>
+<p>Completar o aprendizado das vogais gregas com <strong>Omicron (ο)</strong>, <strong>Upsilon (υ)</strong> e <strong>Omega (ω)</strong>, entendendo os pares longo/breve e suas pronúncias. </p>
+<blockquote>
+<p>📄 <strong>Abra sua apostila na Página 3</strong></p>
+</blockquote>
+<hr>
+<h2>🔤 Referência Rápida: Vogais Gregas</h2>
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Nome</th>
+<th>Maiúscula</th>
+<th>Minúscula</th>
+<th>Som</th>
+<th>Exemplo PT</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>α</td>
+<td>alpha</td>
+<td>Α</td>
+<td>α</td>
+<td>a breve</td>
+<td>pai</td>
+</tr>
+<tr>
+<td>ε</td>
+<td>epsilon</td>
+<td>Ε</td>
+<td>ε</td>
+<td>e breve</td>
+<td>pé</td>
+</tr>
+<tr>
+<td>η</td>
+<td>eta</td>
+<td>Η</td>
+<td>η</td>
+<td>ê longo</td>
+<td>mês</td>
+</tr>
+<tr>
+<td>ι</td>
+<td>iota</td>
+<td>Ι</td>
+<td>ι</td>
+<td>i</td>
+<td>fio</td>
+</tr>
+<tr>
+<td>ο</td>
+<td>omicron</td>
+<td>Ο</td>
+<td>ο</td>
+<td>o breve</td>
+<td>sol</td>
+</tr>
+<tr>
+<td>υ</td>
+<td>upsilon</td>
+<td>Υ</td>
+<td>υ</td>
+<td>u/ü</td>
+<td>tu (ou alemão &quot;ü&quot;)</td>
+</tr>
+<tr>
+<td>ω</td>
+<td>omega</td>
+<td>Ω</td>
+<td>ω</td>
+<td>ô longo</td>
+<td>avô</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🎯 Step 1: intro</h2>
+<blockquote>
+<p>&quot;Hoje completaremos as vogais gregas começando com ο micr(on) — o &#39;o&#39; pequeno. Você aprenderá também o υ (upsilon), que pode soar como &#39;u&#39; ou &#39;ü&#39;, e finalmente o ω (omega) — o &#39;o&#39; grande. Estas letras são essenciais para pronunciar corretamente as palavras do Novo Testamento. Abra sua apostila na página 3 e acompanhe comigo.&quot;</p>
+</blockquote>
+<hr>
+<h2>🅾️ Step 2: Word Intro — Omicron (Ο ο)</h2>
+<p><strong>Grego:</strong> Ο ο
+<strong>Transliteração:</strong> omicron
+<strong>Pronúncia:</strong> o breve (como em &quot;sol&quot;)
+<strong>Significado:</strong> Letra Omicron</p>
+<blockquote>
+<p>📖 <strong>João 3:16</strong>
+&quot;...o mundo (κόσμον)&quot; — ο aparece como terminação de substantivos masculinos no acusativo</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 3: Alphabet Trace — Omicron (ο)</h2>
+<p><strong>Grego:</strong> ο
+Observe a ordem dos traços do omicron minúsculo:</p>
+<ol>
+<li>Um único círculo fechado, traçado no sentido horário.</li>
+</ol>
+<hr>
+<h2>✍️ Step 4: Write Practice — Omicron (ο × 8)</h2>
+<p><strong>Grego:</strong> ο</p>
+<blockquote>
+<p>&quot;Agora escreva o omicron minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 1: ο ο ο ο ο ο ο ο ]</p>
+<hr>
+<h2>🆄 Step 5: Word Intro — Upsilon (Υ υ)</h2>
+<p><strong>Grego:</strong> Υ υ
+<strong>Transliteração:</strong> upsilon
+<strong>Pronúncia:</strong> u ou ü (como em &quot;tu&quot; ou o alemão &quot;ü&quot;)
+<strong>Significado:</strong> Letra Upsilon</p>
+<blockquote>
+<p>📖 <strong>João 1:4</strong>
+&quot;...a vida (ζωή)&quot; — o υ aparece em combinações como αυ e ευ formando ditongos</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 6: Alphabet Trace — Upsilon (υ)</h2>
+<p><strong>Grego:</strong> υ
+Observe a ordem dos traços do upsilon minúsculo:</p>
+<ol>
+<li>Haste vertical de cima para baixo.</li>
+<li>Bifurcação no topo, formando um &quot;V&quot; invertido.</li>
+</ol>
+<hr>
+<h2>✍️ Step 7: Write Practice — Upsilon (υ × 8)</h2>
+<p><strong>Grego:</strong> υ</p>
+<blockquote>
+<p>&quot;Agora escreva o upsilon minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 2: υ υ υ υ υ υ υ υ ]</p>
+<hr>
+<h2>Ω Step 8: Word Intro — Omega (Ω ω)</h2>
+<p><strong>Grego:</strong> Ω ω
+<strong>Transliteração:</strong> omega
+<strong>Pronúncia:</strong> ô longo (como em &quot;avô&quot;)
+<strong>Significado:</strong> Letra Omega</p>
+<blockquote>
+<p>📖 <strong>Apocalipse 22:13</strong>
+&quot;Eu sou o Alfa e o Ômega (Ω), o primeiro e o último&quot; — última letra do alfabeto</p>
+</blockquote>
+<hr>
+<h2>🖋️ Step 9: Alphabet Trace — Omega (ω)</h2>
+<p><strong>Grego:</strong> ω
+Observe a ordem dos traços do omega minúsculo:</p>
+<ol>
+<li>Primeiro arco à esquerda, de cima para baixo.</li>
+<li>Segundo arco à direita, unindo-se ao primeiro na base.</li>
+</ol>
+<hr>
+<h2>✍️ Step 10: Write Practice — Omega (ω × 8)</h2>
+<p><strong>Grego:</strong> ω</p>
+<blockquote>
+<p>&quot;Agora escreva o omega minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 3: ω ω ω ω ω ω ω ω ]</p>
+<hr>
+<h2>🧠 Step 11: Pause</h2>
+<blockquote>
+<p>&quot;Muito bem! Agora você conhece todas as sete vogais gregas. Compare as letras que escreveu com o modelo na apostila, especialmente os pares ο/ω (breve vs longo) e o υ (som único).&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+Compare sua escrita com o modelo na apostila.
+Quando estiver pronto, continue.</p>
+<hr>
+<h2>📓 Step 12: Ditado — Omicron</h2>
+<blockquote>
+<p>&quot;Escreva no papel: omicron.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> ο / Ο</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ο ο aqui:
+[Resposta: ο ]</p>
+<hr>
+<h2>📓 Step 13: Ditado — Upsilon</h2>
+<blockquote>
+<p>&quot;Escreva no papel: upsilon.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> υ / Υ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Υ υ aqui:
+[Resposta: υ ]</p>
+<hr>
+<h2>📓 Step 14: Ditado — Omega</h2>
+<blockquote>
+<p>&quot;Escreva no papel: omega.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> ω / Ω</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ω ω aqui:
+[Resposta: ω ]</p>
+<hr>
+<h2>🎉 Fim da Lição L02</h2>
+<p>Parabéns! Você concluiu <strong>Lição 2 — Vogais Longas e o Upsilon</strong>. Agora você conhece todas as vogais gregas do Novo Testamento.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi ο (omicron)</li>
+<li><input disabled="" type="checkbox"> Aprendi υ (upsilon)</li>
+<li><input disabled="" type="checkbox"> Aprendi ω (omega)</li>
+</ul>
+<p>📖 <strong>Próxima lição:</strong> L03 — Consoantes Labiais (β, π, φ)</p>
+<p>\newpage</p>
+<h1>Apostila L03 — Consoantes Labiais (β, π, φ)</h1>
+<p><strong>ID:</strong> apostila-L03
+<strong>Título:</strong> Lição 3 — Consoantes com os Lábios
+<strong>Descrição:</strong> Beta, Pi, Fi
+<strong>Página:</strong> 5
+<strong>Tempo estimado:</strong> 10 min
+<strong>XP:</strong> 35</p>
+<hr>
+<h2>🎯 Objetivo da Lição</h2>
+<p>Aprender as três consoantes labiais do grego koiné: <strong>Beta (β)</strong>, <strong>Pi (π)</strong> e <strong>Fi (φ)</strong> — sons produzidos com os lábios, como em português.</p>
+<blockquote>
+<p>📄 <strong>Abra sua apostila na Página 5</strong></p>
+</blockquote>
+<hr>
+<h2>🔤 Referência Rápida: Consoantes Labiais</h2>
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Nome</th>
+<th>Maiúscula</th>
+<th>Minúscula</th>
+<th>Som</th>
+<th>Exemplo PT</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>β</td>
+<td>beta</td>
+<td>Β</td>
+<td>β</td>
+<td>b</td>
+<td>bola</td>
+</tr>
+<tr>
+<td>π</td>
+<td>pi</td>
+<td>Π</td>
+<td>π</td>
+<td>p</td>
+<td>pão</td>
+</tr>
+<tr>
+<td>φ</td>
+<td>fi</td>
+<td>Φ</td>
+<td>φ</td>
+<td>f</td>
+<td>fé</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🏁 Step 1: intro</h2>
+<blockquote>
+<p>&quot;Hoje começamos as consoantes gregas. Os sons β, π e φ são produzidos com os lábios — como em português. Abra sua apostila na página 5 e acompanhe comigo.&quot;</p>
+</blockquote>
+<hr>
+<h2>🅱️ Step 2: word_intro — Beta (Β β)</h2>
+<blockquote>
+<p>&quot;A primeira letra é o beta. Maiúsculo: Β. Minúsculo: β. O som é &#39;b&#39;, como em &#39;bola&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Β β
+<strong>Transliteração:</strong> beta
+<strong>Pronúncia:</strong> b (como em &#39;bola&#39;)
+<strong>Significado:</strong> Letra Beta
+<strong>Etiologia:</strong> Do Bet hebraico (ב); segunda letra do alfabeto — daí a palavra &#39;alfabeto&#39; (alpha + beta)</p>
+<hr>
+<h2>🖋️ Step 3: alphabet_trace — Beta (β)</h2>
+<p><strong>Grego:</strong> β
+Observe a ordem dos traços do beta minúsculo:</p>
+<ol>
+<li>Haste vertical à esquerda</li>
+<li>Primeiro arco à direita, na altura do meio</li>
+<li>Segundo arco à direita, na base</li>
+</ol>
+<hr>
+<h2>✍️ Step 4: write_practice — Beta (β × 8)</h2>
+<p><strong>Grego:</strong> β</p>
+<blockquote>
+<p>&quot;Agora escreva o beta minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 1: β β β β β β β β ]</p>
+<hr>
+<h2>🅿️ Step 5: word_intro — Pi (Π π)</h2>
+<blockquote>
+<p>&quot;A segunda letra é o pi. Maiúsculo: Π. Minúsculo: π. O som é &#39;p&#39;, como em &#39;pão&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Π π
+<strong>Transliteração:</strong> pi
+<strong>Pronúncia:</strong> p (como em &#39;pão&#39;)
+<strong>Significado:</strong> Letra Pi
+<strong>Etiologia:</strong> Do Pe hebraico (פ); famoso na matemática como π ≈ 3,14, mas no NT é apenas uma consoante</p>
+<hr>
+<h2>🖋️ Step 6: alphabet_trace — Pi (π)</h2>
+<p><strong>Grego:</strong> π
+Observe a ordem dos traços do pi minúsculo:</p>
+<ol>
+<li>Barra horizontal de cima para baixo</li>
+<li>Haste vertical curta à esquerda</li>
+<li>Haste vertical curta à direita</li>
+</ol>
+<hr>
+<h2>✍️ Step 7: write_practice — Pi (π × 8)</h2>
+<p><strong>Grego:</strong> π</p>
+<blockquote>
+<p>&quot;Agora escreva o pi minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 2: π π π π π π π π ]</p>
+<hr>
+<h2>Φ Step 8: word_intro — Fi (Φ φ)</h2>
+<blockquote>
+<p>&quot;A terceira letra é o fi. Maiúsculo: Φ. Minúsculo: φ. O som é &#39;f&#39;, como em &#39;fé&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Φ φ
+<strong>Transliteração:</strong> fi
+<strong>Pronúncia:</strong> f (como em &#39;fé&#39;)
+<strong>Significado:</strong> Letra Fi
+<strong>Etiologia:</strong> Aspirada bilabial; emprestada ao latim como &#39;ph&#39; para representar o som f</p>
+<hr>
+<h2>🖋️ Step 9: alphabet_trace — Fi (φ)</h2>
+<p><strong>Grego:</strong> φ
+Observe a ordem dos traços do fi minúsculo:</p>
+<ol>
+<li>Haste vertical de cima para baixo</li>
+<li>Círculo fechado no centro da haste</li>
+</ol>
+<hr>
+<h2>✍️ Step 10: write_practice — Fi (φ × 8)</h2>
+<p><strong>Grego:</strong> φ</p>
+<blockquote>
+<p>&quot;Agora escreva o fi minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 3: φ φ φ φ φ φ φ φ ]</p>
+<hr>
+<h2>🧠 Step 11: pause</h2>
+<blockquote>
+<p>&quot;Muito bem! Você acabou de aprender as três consoantes labiais: beta, pi e fi. Antes de continuar, olhe para o que escreveu e compare com o modelo na apostila.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+Compare sua escrita com o modelo na apostila.
+Quando estiver pronto, continue.</p>
+<hr>
+<h2>📓 Step 12: dictation — Beta</h2>
+<blockquote>
+<p>&quot;Escreva no papel: beta.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Β β</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Β β aqui:
+[Resposta: β ]</p>
+<hr>
+<h2>📓 Step 13: dictation — Pi</h2>
+<blockquote>
+<p>&quot;Escreva no papel: pi.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Π π</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Π π aqui:
+[Resposta: π ]</p>
+<hr>
+<h2>📓 Step 14: dictation — Fi</h2>
+<blockquote>
+<p>&quot;Escreva no papel: fi.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Φ φ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Φ φ aqui:
+[Resposta: φ ]</p>
+<hr>
+<h2>🎉 Fim da Lição L03</h2>
+<p>Parabéns! Você concluiu <strong>Lição 3 — Consoantes Labiais (β, π, φ)</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi β (beta)</li>
+<li><input disabled="" type="checkbox"> Aprendi π (pi)</li>
+<li><input disabled="" type="checkbox"> Aprendi φ (fi)</li>
+</ul>
+<p>📖 <strong>Próxima lição:</strong> L04 — Consoantes Dentais (δ, τ, θ)</p>
+<p>\newpage</p>
+<h1>Apostila L04 — Consoantes Dentais (δ, τ, θ)</h1>
+<p><strong>ID:</strong> apostila-L04
+<strong>Título:</strong> Lição 4 — Consoantes com a Língua
+<strong>Descrição:</strong> Delta, Tau, Teta
+<strong>Página:</strong> 7
+<strong>Tempo estimado:</strong> 10 min
+<strong>XP:</strong> 35</p>
+<hr>
+<h2>🎯 Objetivo da Lição</h2>
+<p>Aprender as três consoantes dentais do grego koiné: <strong>Delta (δ)</strong>, <strong>Tau (τ)</strong> e <strong>Teta (θ)</strong> — sons produzidos com a língua nos dentes.</p>
+<blockquote>
+<p>📄 <strong>Abra sua apostila na Página 7</strong></p>
+</blockquote>
+<hr>
+<h2>🔤 Referência Rápida: Consoantes Dentais</h2>
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Nome</th>
+<th>Maiúscula</th>
+<th>Minúscula</th>
+<th>Som</th>
+<th>Exemplo PT / EN</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>δ</td>
+<td>delta</td>
+<td>Δ</td>
+<td>δ</td>
+<td>d</td>
+<td>dado</td>
+</tr>
+<tr>
+<td>τ</td>
+<td>tau</td>
+<td>Τ</td>
+<td>τ</td>
+<td>t</td>
+<td>tudo</td>
+</tr>
+<tr>
+<td>θ</td>
+<td>teta</td>
+<td>Θ</td>
+<td>θ</td>
+<td>th aspirado (inglês)</td>
+<td>think (EN)</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🏁 Step 1: intro</h2>
+<blockquote>
+<p>&quot;Hoje vamos estudar as consoantes dentais. Esses sons são produzidos com a língua nos dentes: delta, tau e teta. Abra sua apostila na página 7.&quot;</p>
+</blockquote>
+<hr>
+<h2>🔺 Step 2: word_intro — Delta (Δ δ)</h2>
+<blockquote>
+<p>&quot;A primeira letra é o delta. Maiúsculo: Δ. Minúsculo: δ. O som é &#39;d&#39;, como em &#39;dado&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Δ δ
+<strong>Transliteração:</strong> delta
+<strong>Pronúncia:</strong> d (como em &#39;dado&#39;)
+<strong>Significado:</strong> Letra Delta
+<strong>Etiologia:</strong> Do Dalet hebraico (ד); forma triangular foi usada para representar o rio Nilo — daí &#39;delta&#39;</p>
+<hr>
+<h2>🖋️ Step 3: alphabet_trace — Delta (δ)</h2>
+<p><strong>Grego:</strong> δ
+Observe a ordem dos traços do delta minúsculo:</p>
+<ol>
+<li>Arco curvo da esquerda para baixo formando um semicírculo aberto</li>
+<li>Haste vertical à direita, levemente inclinada</li>
+</ol>
+<hr>
+<h2>✍️ Step 4: write_practice — Delta (δ × 8)</h2>
+<p><strong>Grego:</strong> δ</p>
+<blockquote>
+<p>&quot;Agora escreva o delta minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 1: δ δ δ δ δ δ δ δ ]</p>
+<hr>
+<h2>🆃 Step 5: word_intro — Tau (Τ τ)</h2>
+<blockquote>
+<p>&quot;A segunda letra é o tau. Maiúsculo: Τ. Minúsculo: τ. O som é &#39;t&#39;, como em &#39;tudo&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Τ τ
+<strong>Transliteração:</strong> tau
+<strong>Pronúncia:</strong> t (como em &#39;tudo&#39;)
+<strong>Significado:</strong> Letra Tau
+<strong>Etiologia:</strong> Do Taw hebraico (ת); forma em cruz (+) foi associada pelos primeiros cristãos à cruz de Cristo</p>
+<hr>
+<h2>🖋️ Step 6: alphabet_trace — Tau (τ)</h2>
+<p><strong>Grego:</strong> τ
+Observe a ordem dos traços do tau minúsculo:</p>
+<ol>
+<li>Barra horizontal de cima para baixo</li>
+<li>Haste vertical curta no centro, abaixo da barra</li>
+</ol>
+<hr>
+<h2>✍️ Step 7: write_practice — Tau (τ × 8)</h2>
+<p><strong>Grego:</strong> τ</p>
+<blockquote>
+<p>&quot;Agora escreva o tau minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 2: τ τ τ τ τ τ τ τ ]</p>
+<hr>
+<h2>Θ Step 8: word_intro — Teta (Θ θ)</h2>
+<blockquote>
+<p>&quot;A terceira letra é o teta. Maiúsculo: Θ. Minúsculo: θ. O som é &#39;th&#39; aspirado, como em &#39;think&#39; do inglês.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Θ θ
+<strong>Transliteração:</strong> teta
+<strong>Pronúncia:</strong> th aspirado (como &#39;think&#39; em inglês)
+<strong>Significado:</strong> Letra Teta
+<strong>Etiologia:</strong> Aspirada dental; não tem equivalente em português — soa como &#39;th&#39; do inglês &#39;think&#39;</p>
+<hr>
+<h2>🖋️ Step 9: alphabet_trace — Teta (θ)</h2>
+<p><strong>Grego:</strong> θ
+Observe a ordem dos traços do teta minúsculo:</p>
+<ol>
+<li>Círculo fechado completo</li>
+<li>Traço horizontal no centro do círculo</li>
+</ol>
+<hr>
+<h2>✍️ Step 10: write_practice — Teta (θ × 8)</h2>
+<p><strong>Grego:</strong> θ</p>
+<blockquote>
+<p>&quot;Agora escreva o teta minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 3: θ θ θ θ θ θ θ θ ]</p>
+<hr>
+<h2>🧠 Step 11: pause</h2>
+<blockquote>
+<p>&quot;Excelente! Você aprendeu as três consoantes dentais: delta, tau e teta. Antes de continuar, olhe para o que escreveu e compare com o modelo.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+Compare sua escrita com o modelo na apostila.
+Quando estiver pronto, continue.</p>
+<hr>
+<h2>📓 Step 12: dictation — Delta</h2>
+<blockquote>
+<p>&quot;Escreva no papel: delta.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Δ δ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Δ δ aqui:
+[Resposta: δ ]</p>
+<hr>
+<h2>📓 Step 13: dictation — Tau</h2>
+<blockquote>
+<p>&quot;Escreva no papel: tau.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Τ τ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Τ τ aqui:
+[Resposta: τ ]</p>
+<hr>
+<h2>📓 Step 14: dictation — Teta</h2>
+<blockquote>
+<p>&quot;Escreva no papel: teta.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Θ θ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Θ θ aqui:
+[Resposta: θ ]</p>
+<hr>
+<h2>🎉 Fim da Lição L04</h2>
+<p>Parabéns! Você concluiu <strong>Lição 4 — Consoantes Dentais (δ, τ, θ)</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi δ (delta)</li>
+<li><input disabled="" type="checkbox"> Aprendi τ (tau)</li>
+<li><input disabled="" type="checkbox"> Aprendi θ (teta)</li>
+</ul>
+<p>📖 <strong>Próxima lição:</strong> L05 — ...</p>
+<p>\newpage</p>
+<h1>Apostila L05 — Velares e Líquidas (γ, κ, χ, λ, ρ)</h1>
+<p><strong>ID:</strong> apostila-L05
+<strong>Título:</strong> Lição 5 — Velares e Líquidas
+<strong>Descrição:</strong> Gama, Capa, Chi, Lambda, Rô
+<strong>Página:</strong> 9
+<strong>Tempo estimado:</strong> 12 min
+<strong>XP:</strong> 35</p>
+<hr>
+<h2>🎯 Objetivo da Lição</h2>
+<p>Aprender as cinco consoantes velares (produzidas no fundo da garganta): <strong>Gama (γ)</strong>, <strong>Capa (κ)</strong>, <strong>Chi (χ)</strong>, e as líquidas <strong>Lambda (λ)</strong> e <strong>Rô (ρ)</strong>.</p>
+<blockquote>
+<p>📄 <strong>Abra sua apostila na Página 9</strong></p>
+</blockquote>
+<hr>
+<h2>🔤 Referência Rápida: Velares e Líquidas</h2>
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Nome</th>
+<th>Maiúscula</th>
+<th>Minúscula</th>
+<th>Som</th>
+<th>Exemplo PT / EN</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>γ</td>
+<td>gama</td>
+<td>Γ</td>
+<td>γ</td>
+<td>g (como em &#39;gato&#39;)</td>
+<td>gato</td>
+</tr>
+<tr>
+<td>κ</td>
+<td>capa</td>
+<td>Κ</td>
+<td>κ</td>
+<td>k (como em &#39;casa&#39;)</td>
+<td>casa</td>
+</tr>
+<tr>
+<td>χ</td>
+<td>chi</td>
+<td>Χ</td>
+<td>χ</td>
+<td>ch aspirado (Bach em alemão)</td>
+<td>Bach (DE)</td>
+</tr>
+<tr>
+<td>λ</td>
+<td>lambda</td>
+<td>Λ</td>
+<td>λ</td>
+<td>l (como em &#39;lua&#39;)</td>
+<td>lua</td>
+</tr>
+<tr>
+<td>ρ</td>
+<td>rô</td>
+<td>Ρ</td>
+<td>ρ</td>
+<td>r vibrante (como em &#39;rato&#39;)</td>
+<td>rato</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🏁 Step 1: intro</h2>
+<blockquote>
+<p>&quot;Hoje vamos aprender cinco letras: as velares (produzidas no fundo da garganta) gama, capa e chi, e as líquidas lambda e rô. Abra sua apostila na página 9.&quot;</p>
+</blockquote>
+<hr>
+<h2>Γ Step 2: word_intro — Gama (Γ γ)</h2>
+<blockquote>
+<p>&quot;A primeira letra é o gama. Maiúsculo: Γ. Minúsculo: γ. O som é &#39;g&#39;, como em &#39;gato&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Γ γ
+<strong>Transliteração:</strong> gama
+<strong>Pronúncia:</strong> g (como em &#39;gato&#39;)
+<strong>Significado:</strong> Letra Gama
+<strong>Etiologia:</strong> Do Gimel hebraico (ג); antes do κ em grego (γγ) faz som nasal: &#39;ng&#39;</p>
+<hr>
+<h2>🖋️ Step 3: alphabet_trace — Gama (γ)</h2>
+<p><strong>Grego:</strong> γ
+Observe a ordem dos traços do gama minúsculo:</p>
+<ol>
+<li>Traço horizontal curto no topo</li>
+<li>Traço vertical descendente que faz uma curva suave para a direita na base, como um gancho</li>
+</ol>
+<hr>
+<h2>✍️ Step 4: write_practice — Gama (γ × 8)</h2>
+<p><strong>Grego:</strong> γ</p>
+<blockquote>
+<p>&quot;Agora escreva o gama minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 1: γ γ γ γ γ γ γ γ ]</p>
+<hr>
+<h2>Κ Step 5: word_intro — Capa (Κ κ)</h2>
+<blockquote>
+<p>&quot;A segunda letra é o capa. Maiúsculo: Κ. Minúsculo: κ. O som é &#39;k&#39;, como em &#39;casa&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Κ κ
+<strong>Transliteração:</strong> capa
+<strong>Pronúncia:</strong> k (como em &#39;casa&#39;)
+<strong>Significado:</strong> Letra Capa
+<strong>Etiologia:</strong> Do Qoph hebraico (ק); deu origem ao &#39;Q&#39; latino; em grego substituiu o qoppa arcaico</p>
+<hr>
+<h2>🖋️ Step 6: alphabet_trace — Capa (κ)</h2>
+<p><strong>Grego:</strong> κ
+Observe a ordem dos traços do capa minúsculo:</p>
+<ol>
+<li>Haste vertical de cima para baixo</li>
+<li>Primeiro ramo diagonal saindo da haste para baixo e à esquerda</li>
+<li>Segundo ramo diagonal saindo da haste para baixo e à direita</li>
+</ol>
+<hr>
+<h2>✍️ Step 7: write_practice — Capa (κ × 8)</h2>
+<p><strong>Grego:</strong> κ</p>
+<blockquote>
+<p>&quot;Agora escreva o capa minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 2: κ κ κ κ κ κ κ κ ]</p>
+<hr>
+<h2>Χ Step 8: word_intro — Chi (Χ χ)</h2>
+<blockquote>
+<p>&quot;A terceira letra é o chi. Maiúsculo: Χ. Minúsculo: χ. O som é &#39;ch&#39; aspirado, como &#39;Bach&#39; em alemão.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Χ χ
+<strong>Transliteração:</strong> chi
+<strong>Pronúncia:</strong> ch aspirado (como &#39;Bach&#39; em alemão)
+<strong>Significado:</strong> Letra Chi
+<strong>Etiologia:</strong> Aspirada velar; deu origem ao &#39;X&#39; latino quando usado na grafia de palavras gregas (ex: Χριστός = Christus)</p>
+<hr>
+<h2>🖋️ Step 9: alphabet_trace — Chi (χ)</h2>
+<p><strong>Grego:</strong> χ
+Observe a ordem dos traços do chi minúsculo:</p>
+<ol>
+<li>Diagonal da esquerda para baixo e para a direita</li>
+<li>Diagonal da direita para baixo e para a esquerda (cruzando a primeira no centro)</li>
+</ol>
+<hr>
+<h2>✍️ Step 10: write_practice — Chi (χ × 8)</h2>
+<p><strong>Grego:</strong> χ</p>
+<blockquote>
+<p>&quot;Agora escreva o chi minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 3: χ χ χ χ χ χ χ χ ]</p>
+<hr>
+<h2>Λ Step 11: word_intro — Lambda (Λ λ)</h2>
+<blockquote>
+<p>&quot;A quarta letra é o lambda. Maiúsculo: Λ. Minúsculo: λ. O som é &#39;l&#39;, como em &#39;lua&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Λ λ
+<strong>Transliteração:</strong> lambda
+<strong>Pronúncia:</strong> l (como em &#39;lua&#39;)
+<strong>Significado:</strong> Letra Lambda
+<strong>Etiologia:</strong> Do Lamed hebraico (ל); forma triangular representava balança ou estaca; deu origem ao &#39;L&#39; latino</p>
+<hr>
+<h2>🖋️ Step 12: alphabet_trace — Lambda (λ)</h2>
+<p><strong>Grego:</strong> λ
+Observe a ordem dos traços do lambda minúsculo:</p>
+<ol>
+<li>Arco curvo da esquerda para baixo e para a direita</li>
+<li>Haste diagonal curta saindo da parte inferior direita do arco (forma de &#39;v&#39; invertido assimétrico)</li>
+</ol>
+<hr>
+<h2>✍️ Step 13: write_practice — Lambda (λ × 8)</h2>
+<p><strong>Grego:</strong> λ</p>
+<blockquote>
+<p>&quot;Agora escreva o lambda minúsculo oito vezes na linha 4 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 4: λ λ λ λ λ λ λ λ ]</p>
+<hr>
+<h2>Ρ Step 14: word_intro — Rô (Ρ ρ)</h2>
+<blockquote>
+<p>&quot;A quinta letra é o rô. Maiúsculo: Ρ. Minúsculo: ρ. O som é &#39;r&#39; vibrante, como em &#39;rato&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Ρ ρ
+<strong>Transliteração:</strong> rô
+<strong>Pronúncia:</strong> r vibrante (como em &#39;rato&#39;)
+<strong>Significado:</strong> Letra Rô
+<strong>Etiologia:</strong> Do Resh hebraico (ר); corresponde ao &#39;R&#39; latino; no início de palavra pode ser aspirado (ῥ)</p>
+<hr>
+<h2>🖋️ Step 15: alphabet_trace — Rô (ρ)</h2>
+<p><strong>Grego:</strong> ρ
+Observe a ordem dos traços do rô minúsculo:</p>
+<ol>
+<li>Círculo fechado no topo</li>
+<li>Haste vertical descendente saindo da base do círculo</li>
+</ol>
+<hr>
+<h2>✍️ Step 16: write_practice — Rô (ρ × 8)</h2>
+<p><strong>Grego:</strong> ρ</p>
+<blockquote>
+<p>&quot;Agora escreva o rô minúsculo oito vezes na linha 5 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 5: ρ ρ ρ ρ ρ ρ ρ ρ ]</p>
+<hr>
+<h2>🧠 Step 17: pause</h2>
+<blockquote>
+<p>&quot;Muito bem! Você aprendeu as velares e líquidas. Antes de continuar, olhe para o que escreveu nas cinco linhas e compare com o modelo.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+Compare sua escrita com o modelo na apostila.
+Quando estiver pronto, continue.</p>
+<hr>
+<h2>📓 Step 18: dictation — Gama</h2>
+<blockquote>
+<p>&quot;Escreva no papel: gama.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Γ γ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Γ γ aqui:
+[Resposta: γ ]</p>
+<hr>
+<h2>📓 Step 19: dictation — Capa</h2>
+<blockquote>
+<p>&quot;Escreva no papel: capa.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Κ κ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Κ κ aqui:
+[Resposta: κ ]</p>
+<hr>
+<h2>📓 Step 20: dictation — Chi</h2>
+<blockquote>
+<p>&quot;Escreva no papel: chi.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Χ χ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Χ χ aqui:
+[Resposta: χ ]</p>
+<hr>
+<h2>📓 Step 21: dictation — Lambda</h2>
+<blockquote>
+<p>&quot;Escreva no papel: lambda.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Λ λ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Λ λ aqui:
+[Resposta: λ ]</p>
+<hr>
+<h2>📓 Step 22: dictation — Rô</h2>
+<blockquote>
+<p>&quot;Escreva no papel: rô.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Ρ ρ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ρ ρ aqui:
+[Resposta: ρ ]</p>
+<hr>
+<h2>🎉 Fim da Lição L05</h2>
+<p>Parabéns! Você concluiu <strong>Lição 5 — Velares e Líquidas (γ, κ, χ, λ, ρ)</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi γ (gama)</li>
+<li><input disabled="" type="checkbox"> Aprendi κ (capa)</li>
+<li><input disabled="" type="checkbox"> Aprendi χ (chi)</li>
+<li><input disabled="" type="checkbox"> Aprendi λ (lambda)</li>
+<li><input disabled="" type="checkbox"> Aprendi ρ (rô)</li>
+</ul>
+<p>📖 <strong>Próxima lição:</strong> L06 — Nasais, Sigma e Letras Duplas (μ, ν, σ/ς, ζ, ξ, ψ)</p>
+<p>\newpage</p>
+<h1>Apostila L06 — Nasais, Sigma e Letras Duplas (μ, ν, σ/ς, ζ, ξ, ψ)</h1>
+<p><strong>ID:</strong> apostila-L06
+<strong>Título:</strong> Lição 6 — Nasais, Sigma e Letras Duplas
+<strong>Descrição:</strong> Mu, Nu, Sigma, Zeta, Xi, Psi
+<strong>Página:</strong> 12
+<strong>Tempo estimado:</strong> 14 min
+<strong>XP:</strong> 35</p>
+<hr>
+<h2>🎯 Objetivo da Lição</h2>
+<p>Completar o alfabeto grego aprendendo as <strong>nasais (μ, ν)</strong>, o <strong>sigma (σ/ς)</strong> com sua forma final, e as <strong>letras duplas ζ (z=ds), ξ (x=ks), ψ (ps)</strong>.</p>
+<blockquote>
+<p>📄 <strong>Abra sua apostila na Página 12</strong></p>
+</blockquote>
+<hr>
+<h2>🔤 Referência Rápida: Nasais, Sigma e Letras Duplas</h2>
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Nome</th>
+<th>Maiúscula</th>
+<th>Minúscula</th>
+<th>Som</th>
+<th>Exemplo PT / EN</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>μ</td>
+<td>mu</td>
+<td>Μ</td>
+<td>μ</td>
+<td>m (como em &#39;mar&#39;)</td>
+<td>mar</td>
+</tr>
+<tr>
+<td>ν</td>
+<td>nu</td>
+<td>Ν</td>
+<td>ν</td>
+<td>n (como em &#39;nós&#39;)</td>
+<td>nós</td>
+</tr>
+<tr>
+<td>σ/ς</td>
+<td>sigma</td>
+<td>Σ</td>
+<td>σ / ς</td>
+<td>s (como em &#39;sol&#39;)</td>
+<td>sol</td>
+</tr>
+<tr>
+<td>ζ</td>
+<td>zeta</td>
+<td>Ζ</td>
+<td>ζ</td>
+<td>z (como em &#39;zebra&#39;)</td>
+<td>zebra</td>
+</tr>
+<tr>
+<td>ξ</td>
+<td>xi</td>
+<td>Ξ</td>
+<td>ξ</td>
+<td>ks (como em &#39;táxi&#39;)</td>
+<td>táxi</td>
+</tr>
+<tr>
+<td>ψ</td>
+<td>psi</td>
+<td>Ψ</td>
+<td>ψ</td>
+<td>ps (como em &#39;psicologia&#39;)</td>
+<td>psicologia</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🏁 Step 1: intro</h2>
+<blockquote>
+<p>&quot;Esta é a última lição do alfabeto. Hoje você vai completar as 24 letras com as nasais mu e nu, o sigma (com sua forma final), e as letras duplas zeta, xi e psi. Abra sua apostila na página 12.&quot;</p>
+</blockquote>
+<hr>
+<h2>Μ Step 2: word_intro — Mu (Μ μ)</h2>
+<blockquote>
+<p>&quot;A primeira letra é o mu. Maiúsculo: Μ. Minúsculo: μ. O som é &#39;m&#39;, como em &#39;mar&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Μ μ
+<strong>Transliteração:</strong> mu
+<strong>Pronúncia:</strong> m (como em &#39;mar&#39;)
+<strong>Significado:</strong> Letra Mu
+<strong>Etiologia:</strong> Do Mem hebraico (מ); corresponde ao &#39;M&#39; latino</p>
+<hr>
+<h2>🖋️ Step 3: alphabet_trace — Mu (μ)</h2>
+<p><strong>Grego:</strong> μ
+Observe a ordem dos traços do mu minúsculo:</p>
+<ol>
+<li>Primeira haste vertical à esquerda</li>
+<li>Arco da esquerda para o centro na base</li>
+<li>Segundo arco do centro para a direita na base (formando um &#39;u&#39; alongado)</li>
+</ol>
+<hr>
+<h2>✍️ Step 4: write_practice — Mu (μ × 8)</h2>
+<p><strong>Grego:</strong> μ</p>
+<blockquote>
+<p>&quot;Agora escreva o mu minúsculo oito vezes na linha 1 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 1: μ μ μ μ μ μ μ μ ]</p>
+<hr>
+<h2>Ν Step 5: word_intro — Nu (Ν ν)</h2>
+<blockquote>
+<p>&quot;A segunda letra é o nu. Maiúsculo: Ν. Minúsculo: ν. O som é &#39;n&#39;, como em &#39;nós&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Ν ν
+<strong>Transliteração:</strong> nu
+<strong>Pronúncia:</strong> n (como em &#39;nós&#39;)
+<strong>Significado:</strong> Letra Nu
+<strong>Etiologia:</strong> Do Nun hebraico (נ); corresponde ao &#39;N&#39; latino</p>
+<hr>
+<h2>🖋️ Step 6: alphabet_trace — Nu (ν)</h2>
+<p><strong>Grego:</strong> ν
+Observe a ordem dos traços do nu minúsculo:</p>
+<ol>
+<li>Haste diagonal da esquerda para baixo e para a direita</li>
+<li>Haste vertical curta na extremidade direita, descendo para baixo (forma de &#39;v&#39; com haste à direita)</li>
+</ol>
+<hr>
+<h2>✍️ Step 7: write_practice — Nu (ν × 8)</h2>
+<p><strong>Grego:</strong> ν</p>
+<blockquote>
+<p>&quot;Agora escreva o nu minúsculo oito vezes na linha 2 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 2: ν ν ν ν ν ν ν ν ]</p>
+<hr>
+<h2>Σ Step 8: word_intro — Sigma (Σ σ/ς)</h2>
+<blockquote>
+<p>&quot;A terceira letra é o sigma. Maiúsculo: Σ. Minúsculo: σ. O sigma tem duas formas: σ (sigma normal) quando aparece no início ou meio da palavra, e ς (sigma final) quando aparece no final. Veja a diferença: σωτηρία (salvação) — o sigma inicial é σ. Χριστός (Cristo) — o sigma final é ς. O som é &#39;s&#39;, como em &#39;sol&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Σ σ/ς
+<strong>Transliteração:</strong> sigma
+<strong>Pronúncia:</strong> s (como em &#39;sol&#39;) — forma final ς
+<strong>Significado:</strong> Letra Sigma
+<strong>Etiologia:</strong> Do Shin hebraico (ש); a letra mais frequente do grego — como o &#39;s&#39; em português</p>
+<hr>
+<h2>🖋️ Step 9: alphabet_trace — Sigma (σ)</h2>
+<p><strong>Grego:</strong> σ
+Observe a ordem dos traços do sigma minúsculo σ:</p>
+<ol>
+<li>Semicírculo aberto à direita</li>
+<li>Pequeno traço horizontal no topo</li>
+<li>Pequeno traço horizontal na base
+O sigma final ς é uma variação com um gancho descendo abaixo da linha.</li>
+</ol>
+<hr>
+<h2>✍️ Step 10: write_practice — Sigma (σ × 8)</h2>
+<p><strong>Grego:</strong> σ</p>
+<blockquote>
+<p>&quot;Agora escreva o sigma minúsculo oito vezes na linha 3 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 3: σ σ σ σ σ σ σ σ ]</p>
+<hr>
+<h2>Ζ Step 11: word_intro — Zeta (Ζ ζ)</h2>
+<blockquote>
+<p>&quot;A quarta letra é o zeta. Maiúsculo: Ζ. Minúsculo: ζ. O som é &#39;z&#39;, como em &#39;zebra&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Ζ ζ
+<strong>Transliteração:</strong> zeta
+<strong>Pronúncia:</strong> z (como em &#39;zebra&#39;)
+<strong>Significado:</strong> Letra Zeta
+<strong>Etiologia:</strong> Do Zayin hebraico (ז); originalmente &#39;dz&#39; no grego clássico, simplificado para &#39;z&#39;</p>
+<hr>
+<h2>🖋️ Step 12: alphabet_trace — Zeta (ζ)</h2>
+<p><strong>Grego:</strong> ζ
+Observe a ordem dos traços do zeta minúsculo:</p>
+<ol>
+<li>Barra superior horizontal</li>
+<li>Diagonal da direita para baixo e para a esquerda</li>
+<li>Barra inferior horizontal</li>
+</ol>
+<hr>
+<h2>✍️ Step 13: write_practice — Zeta (ζ × 8)</h2>
+<p><strong>Grego:</strong> ζ</p>
+<blockquote>
+<p>&quot;Agora escreva o zeta minúsculo oito vezes na linha 4 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 4: ζ ζ ζ ζ ζ ζ ζ ζ ]</p>
+<hr>
+<h2>Ξ Step 14: word_intro — Xi (Ξ ξ)</h2>
+<blockquote>
+<p>&quot;A quinta letra é o xi. Maiúsculo: Ξ. Minúsculo: ξ. O som é &#39;ks&#39;, como em &#39;táxi&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Ξ ξ
+<strong>Transliteração:</strong> xi
+<strong>Pronúncia:</strong> ks (como em &#39;táxi&#39;)
+<strong>Significado:</strong> Letra Xi
+<strong>Etiologia:</strong> Do Samekh hebraico (ס); som duplo de κ + ς (k + s)</p>
+<hr>
+<h2>🖋️ Step 15: alphabet_trace — Xi (ξ)</h2>
+<p><strong>Grego:</strong> ξ
+Observe a ordem dos traços do xi minúsculo:</p>
+<ol>
+<li>Traço horizontal superior</li>
+<li>Traço horizontal médio</li>
+<li>Traço horizontal inferior</li>
+<li>Traço vertical curvo conectando as três linhas à direita</li>
+</ol>
+<hr>
+<h2>✍️ Step 16: write_practice — Xi (ξ × 8)</h2>
+<p><strong>Grego:</strong> ξ</p>
+<blockquote>
+<p>&quot;Agora escreva o xi minúsculo oito vezes na linha 5 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 5: ξ ξ ξ ξ ξ ξ ξ ξ ]</p>
+<hr>
+<h2>Ψ Step 17: word_intro — Psi (Ψ ψ)</h2>
+<blockquote>
+<p>&quot;A sexta letra é o psi. Maiúsculo: Ψ. Minúsculo: ψ. O som é &#39;ps&#39;, como em &#39;psicologia&#39;.&quot;</p>
+</blockquote>
+<p><strong>Grego:</strong> Ψ ψ
+<strong>Transliteração:</strong> psi
+<strong>Pronúncia:</strong> ps (como em &#39;psicologia&#39;)
+<strong>Significado:</strong> Letra Psi
+<strong>Etiologia:</strong> Som duplo de π + ς (p + s); deu origem ao símbolo da psicologia (Ψ)</p>
+<hr>
+<h2>🖋️ Step 18: alphabet_trace — Psi (ψ)</h2>
+<p><strong>Grego:</strong> ψ
+Observe a ordem dos traços do psi minúsculo:</p>
+<ol>
+<li>Haste vertical central de cima para baixo</li>
+<li>Ramo curvo saindo do topo da haste para a esquerda</li>
+<li>Ramo curvo saindo do topo da haste para a direita (formando um tridente)</li>
+</ol>
+<hr>
+<h2>✍️ Step 19: write_practice — Psi (ψ × 8)</h2>
+<p><strong>Grego:</strong> ψ</p>
+<blockquote>
+<p>&quot;Agora escreva o psi minúsculo oito vezes na linha 6 da sua apostila. Mantenha o ritmo: uma letra por clique.&quot;</p>
+</blockquote>
+<p>[Linha 6: ψ ψ ψ ψ ψ ψ ψ ψ ]</p>
+<hr>
+<h2>🧠 Step 20: pause</h2>
+<blockquote>
+<p>&quot;Parabéns! Você acaba de aprender todas as 24 letras do alfabeto grego. O mesmo alfabeto que os discípulos de Jesus usavam. O mesmo alfabeto do apóstolo Paulo. Agora você pode começar a ler as primeiras palavras do Novo Testamento. Antes de continuar, olhe para tudo que escreveu nas seis linhas da apostila — é o alfabeto completo, na sua própria letra.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong>
+Compare sua escrita com o modelo na apostila.
+Quando estiver pronto, continue.</p>
+<hr>
+<h2>📓 Step 21: dictation — Mu</h2>
+<blockquote>
+<p>&quot;Escreva no papel: mu.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Μ μ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Μ μ aqui:
+[Resposta: μ ]</p>
+<hr>
+<h2>📓 Step 22: dictation — Nu</h2>
+<blockquote>
+<p>&quot;Escreva no papel: nu.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Ν ν</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ν ν aqui:
+[Resposta: ν ]</p>
+<hr>
+<h2>📓 Step 23: dictation — Sigma</h2>
+<blockquote>
+<p>&quot;Escreva no papel: sigma.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Σ σ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Σ σ aqui:
+[Resposta: σ ]</p>
+<hr>
+<h2>📓 Step 24: dictation — Zeta</h2>
+<blockquote>
+<p>&quot;Escreva no papel: zeta.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Ζ ζ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ζ ζ aqui:
+[Resposta: ζ ]</p>
+<hr>
+<h2>📓 Step 25: dictation — Xi</h2>
+<blockquote>
+<p>&quot;Escreva no papel: xi.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Ξ ξ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ξ ξ aqui:
+[Resposta: ξ ]</p>
+<hr>
+<h2>📓 Step 26: dictation — Psi</h2>
+<blockquote>
+<p>&quot;Escreva no papel: psi.&quot;</p>
+</blockquote>
+<p><strong>Exibição Padrão:</strong></p>
+<p><strong>Resposta Esperada:</strong> Ψ ψ</p>
+<p>📓 <strong>Tarefa:</strong> Escreva Ψ ψ aqui:
+[Resposta: ψ ]</p>
+<hr>
+<h2>🎉 Fim da Lição L06</h2>
+<p>Parabéns! Você concluiu <strong>Lição 6 — Nasais, Sigma e Letras Duplas (μ, ν, σ/ς, ζ, ξ, ψ)</strong>.</p>
+<p>☑️ <strong>Checklist:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Aprendi μ (mu)</li>
+<li><input disabled="" type="checkbox"> Aprendi ν (nu)</li>
+<li><input disabled="" type="checkbox"> Aprendi σ/ς (sigma)</li>
+<li><input disabled="" type="checkbox"> Aprendi ζ (zeta)</li>
+<li><input disabled="" type="checkbox"> Aprendi ξ (xi)</li>
+<li><input disabled="" type="checkbox"> Aprendi ψ (psi)</li>
+</ul>
+<p>📖 <strong>Agora você conhece todas as 24 letras do alfabeto grego!</strong> 🎓
+Continue para L07 — Palavras de Fé e Graça (ἀγάπη, πίστις, χάρις, εἰρήνη, ζωή)</p>
+<p>\newpage</p>
+
+</body>
+</html>

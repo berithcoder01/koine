@@ -33,7 +33,7 @@ import { ApostilaPage } from '@/ui/pages/apostila/ApostilaPage';
 import { ApostilaSessionPage } from '@/ui/pages/apostila/ApostilaSessionPage';
 import { useProgressSync } from '@/features/progress/useProgressSync';
 import { initializeDatabase } from '@/features/database';
-import { startSessionTimeout, stopSessionTimeout } from '@/features/auth/auth';
+
 
 const SyncWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   useProgressSync();
@@ -87,15 +87,6 @@ export const App: React.FC = () => {
     StatusBar.setStyle({ style: Style.Dark }).catch(() => {});
   }, []);
 
-  // Session timeout: auto-logout após 15 min de inatividade
-  useEffect(() => {
-    if (isAuthenticated) {
-      startSessionTimeout();
-    } else {
-      stopSessionTimeout();
-    }
-    return () => stopSessionTimeout();
-  }, [isAuthenticated]);
 
   if (isLoading || !minLoadingTimePassed) {
     return <LoadingScreen />;

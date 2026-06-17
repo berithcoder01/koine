@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { format } from 'date-fns';
 
 interface StudyGoalState {
   dailyTarget: number;
@@ -11,7 +12,7 @@ interface StudyGoalState {
   resetDailyProgress: () => void;
 }
 
-const getToday = () => new Date().toISOString().split('T')[0];
+const getToday = () => format(new Date(), 'yyyy-MM-dd');
 
 export const useStudyGoalStore = create<StudyGoalState>()(
   persist(

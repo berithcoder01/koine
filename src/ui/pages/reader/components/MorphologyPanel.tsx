@@ -61,7 +61,7 @@ export const MorphologyPanel: React.FC<Props> = ({
         <div className="flex items-start gap-4 mb-4">
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2">
-              <p className="greek-text text-3xl font-bold text-primary dark:text-secondary-light leading-tight" style={{ fontFamily: "'SBL Greek', 'Gentium Plus', serif" }}>
+              <p className="greek-text font-bold text-primary dark:text-secondary-light leading-tight" style={{ fontSize: 'calc(1.875rem * var(--koine-font-scale))' }}>
                 {token.token}
               </p>
               <button
@@ -75,7 +75,7 @@ export const MorphologyPanel: React.FC<Props> = ({
               </button>
             </div>
             {entry?.translit && (
-              <p className="text-text-secondary text-sm mt-0.5 italic">{entry.translit}</p>
+              <p className="text-text-secondary koine-text-body mt-0.5 italic">{entry.translit}</p>
             )}
           </div>
           <div className="flex flex-col items-end gap-1.5 shrink-0">
@@ -101,15 +101,15 @@ export const MorphologyPanel: React.FC<Props> = ({
           <div className="grid grid-cols-3 gap-3 mb-4">
             <div>
               <p className="text-text-secondary text-[10px] uppercase tracking-wider font-bold">Gloss</p>
-              <p className="text-text-primary font-semibold text-sm">{token.gloss_pt}</p>
+              <p className="text-text-primary font-semibold koine-text-body">{token.gloss_pt}</p>
             </div>
             <div>
               <p className="text-text-secondary text-[10px] uppercase tracking-wider font-bold">Lemma</p>
-              <p className="text-text-primary text-sm" style={{ fontFamily: "'SBL Greek', 'Gentium Plus', serif" }}>{token.lemma}</p>
+              <p className="greek-text text-text-primary koine-text-greek">{token.lemma}</p>
             </div>
             <div>
               <p className="text-text-secondary text-[10px] uppercase tracking-wider font-bold">Parsing</p>
-              <p className="text-text-primary font-mono text-sm">{token.parsing}</p>
+              <p className="text-text-primary font-mono koine-text-body">{token.parsing}</p>
             </div>
           </div>
         )}
@@ -132,7 +132,7 @@ export const MorphologyPanel: React.FC<Props> = ({
         {entry?.origin && (
           <div className="mb-4 bg-background/60 dark:bg-surface-alt/40 rounded-2xl p-4">
             <p className="text-text-secondary text-[10px] uppercase tracking-wider font-bold mb-1.5">Origem</p>
-            <p className="text-text-primary dark:text-zinc-200 text-sm leading-relaxed">{entry.origin}</p>
+            <p className="text-text-primary dark:text-zinc-200 koine-text-body leading-relaxed">{entry.origin}</p>
           </div>
         )}
 
@@ -146,7 +146,7 @@ export const MorphologyPanel: React.FC<Props> = ({
               {entry.definitions.map((def, i) => (
                 <li key={i} className="flex gap-2.5 text-sm leading-relaxed">
                   <span className="text-primary dark:text-secondary-light font-bold shrink-0 mt-0.5">{i + 1}.</span>
-                  <span className="text-text-primary dark:text-zinc-200">{def}</span>
+                  <span className="text-text-primary dark:text-zinc-200 koine-text-body">{def}</span>
                 </li>
               ))}
             </ul>

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useStudyGoalStore } from '@/features/settings/studyGoalStore';
 import { CircularProgress } from '@/ui/components/CircularProgress';
 import { Slider } from '@/ui/components/Slider';
+import { format } from 'date-fns';
 
 interface DailyGoalSettingProps {
   onChange?: (value: number) => void;
@@ -18,7 +19,7 @@ export const DailyGoalSetting: React.FC<DailyGoalSettingProps> = ({ onChange }) 
   const progressPercentage = Math.min(100, Math.round((completedMinutes / dailyTarget) * 100));
 
   useEffect(() => {
-    const today = new Date().toISOString().split('T')[0];
+    const today = format(new Date(), 'yyyy-MM-dd');
     const { lastReset } = useStudyGoalStore.getState();
     if (lastReset !== today) {
       resetDailyProgress();

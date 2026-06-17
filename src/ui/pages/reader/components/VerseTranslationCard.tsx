@@ -98,14 +98,14 @@ export const VerseTranslationCard: React.FC<Props> = ({
               {copied ? '✓ Copiado' : '🔗 Compartilhar'}
             </button>
           )}
-          {onToggleVisibility && (
+          {onToggleVisibility && isVisible && (
             <button
               type="button"
               onClick={onToggleVisibility}
               className="text-[10px] font-bold uppercase tracking-wide text-text-secondary hover:text-primary transition-colors"
-              aria-label={isVisible ? 'Esconder tradução' : 'Mostrar tradução'}
+              aria-label="Esconder tradução"
             >
-              {isVisible ? '🙈 Ocultar' : '👁 Mostrar'}
+              🙈 Ocultar
             </button>
           )}
         </div>
@@ -114,16 +114,25 @@ export const VerseTranslationCard: React.FC<Props> = ({
       {isVisible ? (
         <p
           className={clsx(
-            'text-text-primary dark:text-zinc-200 text-sm leading-relaxed font-medium transition-opacity',
+            'text-text-primary dark:text-zinc-200 koine-text-verse leading-relaxed font-medium transition-opacity',
             hover && 'opacity-90',
           )}
         >
           {textPT}
         </p>
       ) : (
-        <p className="text-text-secondary/60 text-sm italic select-none">
-          ▒▒▒▒▒▒▒▒ ▒▒▒▒ ▒▒▒▒▒▒▒▒▒▒ ▒▒▒▒▒▒ ▒▒▒▒▒▒ ▒▒▒▒▒▒▒.
-        </p>
+        <div className="py-2 flex flex-col items-center justify-center text-center">
+          <p className="text-text-secondary/80 dark:text-zinc-400 text-xs font-semibold mb-3">
+            Tente traduzir mentalmente este versículo antes de revelar!
+          </p>
+          <button
+            type="button"
+            onClick={onToggleVisibility}
+            className="px-5 py-2.5 bg-secondary/15 hover:bg-secondary/25 dark:bg-secondary/20 dark:hover:bg-secondary/30 text-secondary dark:text-secondary-light font-extrabold text-xs tracking-wider uppercase rounded-full shadow-sm hover:shadow-md transition-all active:scale-[0.97]"
+          >
+            👁️ Revelar Tradução
+          </button>
+        </div>
       )}
 
       <div className="flex items-center justify-between mt-3 pt-2 border-t border-secondary/15">

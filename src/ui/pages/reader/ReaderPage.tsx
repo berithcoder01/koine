@@ -7,7 +7,7 @@ import { VerseTranslationCard } from './components/VerseTranslationCard';
 import { ReaderModeSelector, type ReaderMode, getModeConfig } from './components/ReaderModeSelector';
 import { ntService, type ChapterVerse } from '@/features/reader/ntService';
 import type { InterlinearTokenData } from './components/InterlinearToken';
-import { alignFluentToTokens } from '@/core/utils/alignFluentToTokens';
+import { FontSizeButton } from '@/ui/components/FontSizeButton';
 
 const SAMPLE_CHAPTER: ChapterVerse[] = [
   {
@@ -274,9 +274,9 @@ export const ReaderPage: React.FC = () => {
 
   // ─── Derivados ─────────────────────────────────────────────────
 
-  const showGloss = readerMode === 'assisted' || readerMode === 'interlinear' || readerMode === 'transliteration';
-  const showLemma = readerMode === 'interlinear';
-  const showParsing = readerMode === 'interlinear';
+  const showGloss = readerMode === 'assisted' || readerMode === 'transliteration';
+  const showLemma = false;
+  const showParsing = false;
   const showTranslit = readerMode === 'transliteration';
 
   // Calcula destino da navegação para mostrar nos botões
@@ -304,9 +304,13 @@ export const ReaderPage: React.FC = () => {
       >
         {/* Sticky Header com o Title, Mode Selector e Chapter Selector */}
         <div className="sticky top-0 z-30 px-4 pt-[max(env(safe-area-inset-top),1rem)] pb-3 bg-background/90 dark:bg-[#121212]/90 backdrop-blur-md border-b border-border/20 dark:border-border/10">
-          <h1 className="text-2xl font-extrabold text-text-primary dark:text-white mb-2 tracking-tight">
-            Leitor do Novo Testamento
-          </h1>
+          {/* Linha do título: texto à esquerda, botão Aa à direita */}
+          <div className="flex items-center justify-between mb-2">
+            <h1 className="text-2xl font-extrabold text-text-primary dark:text-white tracking-tight">
+              Leitor do Novo Testamento
+            </h1>
+            <FontSizeButton />
+          </div>
           <p className="text-text-secondary text-[9px] font-bold uppercase tracking-widest leading-none mb-1.5 px-1">
             Modo de Leitura
           </p>
@@ -423,9 +427,8 @@ export const ReaderPage: React.FC = () => {
             {chapterData.map((v) => {
               const ptVisible = visiblePT.has(v.verse);
               const isInterlinear = readerMode === 'interlinear';
-              const alignedWords = isInterlinear && v.fluentPT?.text
-                ? alignFluentToTokens(v.tokens as InterlinearTokenData[], v.fluentPT.text)
-                : undefined;
+              // Desativado o alinhamento complexo que poluía o modo interlinear
+              const alignedWords = undefined;
               return (
                 <div
                   key={v.verse}
@@ -446,6 +449,7 @@ export const ReaderPage: React.FC = () => {
                     filterStrong={filterStrong}
                     onVersePress={handleVersePress}
                     onFilterByStrong={handleFilterByStrong}
+                    fluentPT={isInterlinear ? v.fluentPT?.text : undefined}
                   />
                   {v.fluentPT && readerMode !== 'immersion' && readerMode !== 'interlinear' && readerMode !== 'transliteration' && (
                     <VerseTranslationCard
@@ -453,8 +457,8 @@ export const ReaderPage: React.FC = () => {
                       chapter={currentRef.chapter}
                       verse={v.verse}
                       textPT={v.fluentPT.text}
-                      isVisible={ptVisible}
-                      onToggleVisibility={() => togglePT(v.verse)}
+                      isVisible={readerMode === 'assisted' ? true : ptVisible}
+                      onToggleVisibility={readerMode === 'assisted' ? undefined : () => togglePT(v.verse)}
                     />
                   )}
                 </div>

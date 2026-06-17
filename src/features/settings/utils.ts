@@ -1,4 +1,4 @@
-import { format, isToday } from 'date-fns';
+import { isToday } from 'date-fns';
 
 /**
  * Verifica se a data fornecida é hoje.

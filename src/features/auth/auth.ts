@@ -208,29 +208,3 @@ export function onAuthChange(callback: (user: FirebaseUser | null) => void) {
   return onAuthStateChanged(auth, callback);
 }
 
-// ── Session Timeout (auto-logout após 15 min de inatividade) ─────
-const SESSION_TIMEOUT_MS = 15 * 60 * 1000; // 15 minutos
-let sessionTimer: ReturnType<typeof setTimeout> | null = null;
-
-function resetSessionTimer() {
-  if (sessionTimer) clearTimeout(sessionTimer);
-  sessionTimer = setTimeout(() => {
-    // Auto-logout silencioso
-    signOut();
-  }, SESSION_TIMEOUT_MS);
-}
-
-export function startSessionTimeout() {
-  resetSessionTimer();
-  // Reset timer em qualquer interação do usuário
-  const events = ['mousedown', 'keydown', 'touchstart', 'scroll'];
-  const handler = () => resetSessionTimer();
-  events.forEach((e) => document.addEventListener(e, handler, { passive: true }));
-}
-
-export function stopSessionTimeout() {
-  if (sessionTimer) {
-    clearTimeout(sessionTimer);
-    sessionTimer = null;
-  }
-}

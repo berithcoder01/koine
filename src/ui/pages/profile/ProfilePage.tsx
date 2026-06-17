@@ -28,7 +28,7 @@ const getStatCardTheme = (label: string) => {
         border: 'border-card-amber-border/50 dark:border-card-amber-border/20',
         text: 'text-card-amber-text dark:text-amber-300',
       };
-    case 'Streak':
+    case 'Perseverança':
     case 'Recorde':
       return {
         bg: 'bg-card-rose/60 dark:bg-card-rose/10',
@@ -206,7 +206,7 @@ export const ProfilePage: React.FC = () => {
             <div className="grid grid-cols-2 gap-3">
               {[
                 { icon: '⚡', label: 'XP Total', value: totalXP.toLocaleString('pt-BR') },
-                { icon: '🔥', label: 'Streak', value: `${streakDays} dias` },
+                { icon: '🔥', label: 'Perseverança', value: `${streakDays} dias` },
                 { icon: '🏆', label: 'Recorde', value: `${streakRecord} dias` },
                 { icon: '📚', label: 'Lições', value: `${lessonCount}` },
                 { icon: '🏛️', label: 'Ciclos', value: `${completedUnits.length}/8` },

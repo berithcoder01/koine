@@ -115,7 +115,7 @@ export const CanvasPage: React.FC = () => {
     // Ghost letter guide
     ctx.globalAlpha = 0.12;
     ctx.fillStyle = '#1A3A5C';
-    ctx.font = `bold ${canvas.width * 0.75}px SBL Greek, Gentium Plus, serif`;
+    ctx.font = `bold ${canvas.width * 0.75}px Gentium Plus, SBL Greek, serif`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(letter.lowerCase, canvas.width / 2, canvas.height / 2);

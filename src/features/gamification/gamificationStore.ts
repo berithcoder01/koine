@@ -1,7 +1,10 @@
 // src/store/gamificationStore.ts
 import { create } from 'zustand';
 import { immer } from 'zustand/middleware/immer';
-import { isYesterday } from 'date-fns';
+import { differenceInCalendarDays, parseISO, format } from 'date-fns';
+
+/** Returns today's date in local timezone as 'yyyy-MM-dd' */
+const getLocalToday = (): string => format(new Date(), 'yyyy-MM-dd');
 import { XP_VALUES } from '@/core/constants/config';
 import { TrophyTier } from '@/core/constants/trophies';
 import { useStudyGoalStore } from '@/features/settings/studyGoalStore';
@@ -118,7 +121,7 @@ export const useGamificationStore = create<GamificationState>()(
     incrementStreak: () =>
       set((state) => {
         state.streakDays += 1;
-        state.lastStudyDate = new Date().toISOString().split('T')[0];
+        state.lastStudyDate = getLocalToday();
         if (state.streakDays > state.streakRecord) {
           state.streakRecord = state.streakDays;
         }
@@ -174,7 +177,7 @@ export const useGamificationStore = create<GamificationState>()(
 
     recordStudyActivity: () =>
       set((state) => {
-        const today = new Date().toISOString().split('T')[0];
+        const today = getLocalToday();
         const isNewDay = state.lastStudyDate !== today;
         const prevLastStudyDate = state.lastStudyDate;
 
@@ -182,8 +185,11 @@ export const useGamificationStore = create<GamificationState>()(
         if (!state.lastStudyDate) {
           state.streakDays = 1;
         } else if (isNewDay) {
-          const last = new Date(state.lastStudyDate);
-          if (isYesterday(last)) {
+          const daysDiff = differenceInCalendarDays(
+            parseISO(today),
+            parseISO(state.lastStudyDate)
+          );
+          if (daysDiff === 1) {
             state.streakDays += 1;
           } else {
             state.streakDays = 1;
@@ -195,8 +201,14 @@ export const useGamificationStore = create<GamificationState>()(
           state.dailyGoalMet = false;
           state.completedMinutes = 0;
           // Reset daily goal streak if user missed a day
-          if (prevLastStudyDate && !isYesterday(new Date(prevLastStudyDate))) {
-            state.dailyGoalStreak = 0;
+          if (prevLastStudyDate) {
+            const goalDaysDiff = differenceInCalendarDays(
+              parseISO(today),
+              parseISO(prevLastStudyDate)
+            );
+            if (goalDaysDiff > 1) {
+              state.dailyGoalStreak = 0;
+            }
           }
         }
 
